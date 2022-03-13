@@ -3121,7 +3121,7 @@ const webAPIs = {
       sectionExplanations: [],
       sectionArticles: [
         {
-          title: 'o	new FormData()',
+          title: 'new FormData()',
           links: [],
           explanations: [],
         },
