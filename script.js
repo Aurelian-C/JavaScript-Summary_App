@@ -20,10 +20,10 @@ const createHtmlString = function (data) {
                 <ul class="sub_section--articles">
                 ${section.sectionArticles
                   .map(title => {
-                    if (!title.title) return '';
+                    if (!title.articleTitle) return '';
                     return `
                         <li class="sub_section--article">
-                          ${title.title}
+                          ${title.articleTitle}
                         </li>
                   `;
                   })
