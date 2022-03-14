@@ -196,7 +196,7 @@ const javascriptEngineAndRuntime = {
 };
 
 const variablesValues = {
-  title: 'Variables, Values and Data Structures in JavaScript',
+  title: 'Variables, Values and Primitive/Reference Types in JavaScript',
   sections: [
     {
       sectionTitle: 'Statements vs Expressions',
@@ -315,7 +315,7 @@ const variablesValues = {
       ],
     },
     {
-      sectionTitle: 'Primitives vs. Objects (Primitive vs. Reference Types',
+      sectionTitle: 'Primitives vs. Objects (Primitive vs. Reference Types)',
       sectionLinks: [],
       sectionExplanations: [],
       sectionArticles: [
