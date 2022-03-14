@@ -156,7 +156,9 @@ const javascriptEngineAndRuntime = {
     },
     {
       sectionTitle: 'Activating Strict Mode',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -198,7 +200,9 @@ const variablesValues = {
   sections: [
     {
       sectionTitle: 'Statements vs Expressions',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://medium.com/launch-school/javascript-expressions-and-statements-4d32ac9c0e74`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -342,7 +346,9 @@ const javascriptOperators = {
   sections: [
     {
       sectionTitle: 'Type Conversion and Coercion',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -354,7 +360,23 @@ const javascriptOperators = {
     },
     {
       sectionTitle: 'Operator precedence',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence`,
+      ],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          title: '',
+          links: [],
+          explanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Expressions and operators',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -393,7 +415,9 @@ const javascriptOperators = {
       sectionArticles: [
         {
           title: 'Postfix increment operator (A++)',
-          links: [],
+          links: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment`,
+          ],
           explanations: [],
         },
         {
@@ -403,7 +427,9 @@ const javascriptOperators = {
         },
         {
           title: 'Prefix increment operator (++A)',
-          links: [],
+          links: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment`,
+          ],
           explanations: [],
         },
         {
@@ -420,7 +446,9 @@ const javascriptOperators = {
       sectionArticles: [
         {
           title: 'typeof',
-          links: [],
+          links: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof`,
+          ],
           explanations: [],
         },
         {
@@ -484,12 +512,16 @@ const javascriptOperators = {
         },
         {
           title: 'Short Circuiting with && and ||',
-          links: [],
+          links: [
+            `https://medium.com/@ezekielphlat/a-simpler-understanding-of-the-short-circuit-operators-in-javascript-d275a313cef1`,
+          ],
           explanations: [],
         },
         {
           title: 'Nullish coalescing operator (??)',
-          links: [],
+          links: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator`,
+          ],
           explanations: [],
         },
       ],
@@ -555,7 +587,9 @@ const javascriptOperators = {
     },
     {
       sectionTitle: 'Optional chaining (?.)',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -567,7 +601,9 @@ const javascriptOperators = {
     },
     {
       sectionTitle: 'Remainder (%)',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -579,7 +615,9 @@ const javascriptOperators = {
     },
     {
       sectionTitle: 'Conditional (ternary) operator',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -705,7 +743,10 @@ const controlingProgamLogicAndFlow = {
     },
     {
       sectionTitle: 'The Switch Statement',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch`,
+        `https://www.w3schools.com/js/js_switch.asp`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -735,7 +776,9 @@ const loops = {
   sections: [
     {
       sectionTitle: 'Intro to Loops',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -746,8 +789,8 @@ const loops = {
       ],
     },
     {
-      sectionTitle: 'For Loops',
-      sectionLinks: [],
+      sectionTitle: 'For Loop',
+      sectionLinks: [`https://www.w3schools.com/js/js_loop_for.asp`],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -770,8 +813,8 @@ const loops = {
       ],
     },
     {
-      sectionTitle: 'For Loops & Arrays',
-      sectionLinks: [],
+      sectionTitle: 'For Loop & Arrays',
+      sectionLinks: [`https://alligator.io/js/foreach-vs-for-loops/`],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -794,8 +837,10 @@ const loops = {
       ],
     },
     {
-      sectionTitle: 'Intro to While Loops',
-      sectionLinks: [],
+      sectionTitle: 'Intro to While Loop',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -807,7 +852,7 @@ const loops = {
     },
     {
       sectionTitle: 'Break and Continue Keywords',
-      sectionLinks: [],
+      sectionLinks: [`https://www.w3schools.com/js/js_break.asp`],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -819,7 +864,9 @@ const loops = {
     },
     {
       sectionTitle: 'For...Of',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -855,7 +902,9 @@ const loops = {
     },
     {
       sectionTitle: 'For...In',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -869,7 +918,11 @@ const loops = {
       sectionTitle:
         'Looping Objects: Object.keys(), Object.values() and Object.entries()',
       sectionLinks: [],
-      sectionExplanations: [],
+      sectionExplanations: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys`,
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values`,
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries`,
+      ],
       sectionArticles: [
         {
           title: '',
@@ -958,7 +1011,10 @@ const dataStructuresArrays = {
     },
     {
       sectionTitle: 'Spread in Array Literals',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax`,
+        `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -969,7 +1025,7 @@ const dataStructuresArrays = {
       ],
     },
     {
-      sectionTitle: 'Rest Pattern and Parameters',
+      sectionTitle: 'Rest Pattern in Arrays',
       sectionLinks: [],
       sectionExplanations: [],
       sectionArticles: [
@@ -982,7 +1038,10 @@ const dataStructuresArrays = {
     },
     {
       sectionTitle: 'Destructuring Arrays',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f`,
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1172,7 +1231,10 @@ const dataStructuresObjects = {
     },
     {
       sectionTitle: 'Spread in Object Literals',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax`,
+        `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1183,7 +1245,7 @@ const dataStructuresObjects = {
       ],
     },
     {
-      sectionTitle: 'Rest Pattern and Parameters',
+      sectionTitle: 'Rest Pattern in Objects',
       sectionLinks: [],
       sectionExplanations: [],
       sectionArticles: [
@@ -1196,7 +1258,11 @@ const dataStructuresObjects = {
     },
     {
       sectionTitle: 'Destructuring Objects',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f`,
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment`,
+        `https://dmitripavlutin.com/javascript-object-destructuring/`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1724,7 +1790,9 @@ const functionalProgramming = {
   sections: [
     {
       sectionTitle: 'Function Declarations vs. Expressions',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1736,7 +1804,9 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Introducing Arguments',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1784,7 +1854,9 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Default Parameters',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1796,7 +1868,9 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Rest Parameters',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1832,7 +1906,10 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'this keyword',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://www.w3schools.com/js/js_this.asp`,
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1844,7 +1921,11 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'this – call(), apply(), bind()',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call`,
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply`,
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1868,7 +1949,9 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Arrow Functions',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1897,7 +1980,7 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Immediately Invoked Function Expressions (IIFE)',
-      sectionLinks: [],
+      sectionLinks: [`https://developer.mozilla.org/en-US/docs/Glossary/IIFE`],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1909,7 +1992,10 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Spread for Function Calls',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax`,
+        `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1921,7 +2007,9 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'The Return Statement',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1933,7 +2021,9 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Closures',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1945,7 +2035,10 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Higher-Order Functions',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function`,
+        `https://eloquentjavascript.net/05_higher_order.html`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1960,7 +2053,9 @@ const functionalProgramming = {
         },
         {
           title: 'A Function Can Be Returned By Another Function',
-          links: [],
+          links: [
+            `https://medium.com/@iampika/part-6-javascript-functions-returning-functions-from-functions-429a3d9a55d1`,
+          ],
           explanations: [],
         },
         {
