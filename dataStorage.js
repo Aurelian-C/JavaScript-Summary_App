@@ -17,7 +17,7 @@ const test = {
 };
 
 const javascriptEngineAndRuntime = {
-  title: 'Javascript Engine & Runtime',
+  title: 'JavaScript Engine & Runtime',
   sections: [
     {
       sectionTitle: 'Javascript Engine',
@@ -194,7 +194,7 @@ const javascriptEngineAndRuntime = {
 };
 
 const variablesValues = {
-  title: 'Variables, Values and Data Structures in Javascript',
+  title: 'Variables, Values and Data Structures in JavaScript',
   sections: [
     {
       sectionTitle: 'Statements vs Expressions',
@@ -338,7 +338,7 @@ const variablesValues = {
 };
 
 const javascriptOperators = {
-  title: 'Javascript Operators',
+  title: 'JavaScript Operators',
   sections: [
     {
       sectionTitle: 'Type Conversion and Coercion',
@@ -730,8 +730,8 @@ const controlingProgamLogicAndFlow = {
   ],
 };
 
-const theWorldOfLoops = {
-  title: 'The World of Loops',
+const loops = {
+  title: 'Loops',
   sections: [
     {
       sectionTitle: 'Intro to Loops',
@@ -2082,7 +2082,7 @@ const functionalProgramming = {
 };
 
 const asynchronousJavascript = {
-  title: 'Asynchronous Javascript',
+  title: 'Asynchronous JavaScript',
   sections: [
     {
       sectionTitle: 'Web APIs',
@@ -2432,7 +2432,7 @@ const asynchronousJavascript = {
 };
 
 const domManipulation = {
-  title: 'JS In the Browser - DOM Manipulation',
+  title: 'Document Object Model (DOM)',
   sections: [
     {
       sectionTitle: 'The Document Object',
@@ -2775,7 +2775,7 @@ const domManipulation = {
 };
 
 const events = {
-  title: 'JS In the Browser - Communicating with Events',
+  title: 'JavaScript Events',
   sections: [
     {
       sectionTitle: '2 Ways NOT to Add Events',
@@ -3424,7 +3424,7 @@ export const data = [
   variablesValues,
   javascriptOperators,
   controlingProgamLogicAndFlow,
-  theWorldOfLoops,
+  loops,
   dataStructuresArrays,
   dataStructuresObjects,
   oop,
