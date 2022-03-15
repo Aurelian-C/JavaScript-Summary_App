@@ -4879,18 +4879,18 @@ const modulesAndTooling = {
       sectionTitle: 'Exporting and Importing in native ES6 Modules',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [
-        `In moduleName.js names, it's also a convention to use camelCase names`,
-        `ES6 Modules are native to Javascript`,
-        `There is no need to use the defer attribute when loading a module script; modules are deferred automatically`,
-        `Module features are imported into the scope of a single script — they aren't available in the global scope. Therefore, you will only be able to access imported features in the script they are imported into, and you won't be able to access them from the JavaScript console, for example`,
-        `Normal code (without asynchronous code) inside imports are executed first, so before the code in the module that we make the imports`,
-        `All the importing statements are hoisted to the top and because this we usually write all the imports statements at the top of the file`,
-        `All modules are executed in ‘strict mode’ by default, so you don’t need to write ‘use strict’ at the beginning of the module`,
-        `Understand how to export and import values between modules`,
+        `In moduleName.js names, it's also a convention to use camelCase names.`,
+        `ES6 Modules are native to Javascript.`,
+        `There is no need to use the defer attribute when loading a module script; modules are deferred automatically.`,
+        `Module features are imported into the scope of a single script — they aren't available in the global scope. Therefore, you will only be able to access imported features in the script they are imported into, and you won't be able to access them from the JavaScript console, for example.`,
+        `Normal code (without asynchronous code) inside imports are executed first, so before the code in the module that we make the imports.`,
+        `All the importing statements are hoisted to the top and because this we usually write all the imports statements at the top of the file.`,
+        `All modules are executed in ‘strict mode’ by default, so you don’t need to write ‘use strict’ at the beginning of the module.`,
+        `Understand how to export and import values between modules.`,
         `You can import a module without importing any value.`,
-        `When you use Parcel you can omit the .js because with Parcel ES6 modules also work without the extension ( import './moduleName'; )`,
-        `We can say that a module exports kind of a public API because everything else that we don’t export stays private inside of the module`,
-        `Imports are a live connection to exports (imports are not copies of the export)`,
+        `When you use Parcel you can omit the .js because with Parcel ES6 modules also work without the extension ( import './moduleName'; ).`,
+        `We can say that a module exports kind of a public API because everything else that we don’t export stays private inside of the module.`,
+        `Imports are a live connection to exports (imports are not copies of the export).`,
       ],
       sectionArticles: [
         {
@@ -4904,8 +4904,8 @@ const modulesAndTooling = {
       sectionTitle: 'Named exports/imports in ES6 Modules',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [
-        'Export/import multiple things with {} & change name of exports/imports using ‘as’ (with Named Imports you have to give to imports values the same name as name you defined in export module and you have to put them inside curly braces)',
-        `Import all the exports of a module at the same time with * and ‘as’ by creating a module object (when we import everything from a module with * the convention is to use the first letter of the namespace as capital letter, just like in classes. This will create a namespace for all of the values exported from that module, so basically this we'll create an object containing everything that is exported from the module)`,
+        'Export/import multiple things with {} & change name of exports/imports using ‘as’ (with Named Imports you have to give to imports values the same name as name you defined in export module and you have to put them inside curly braces).',
+        `Import all the exports of a module at the same time with * and ‘as’ by creating a module object (when we import everything from a module with * the convention is to use the first letter of the namespace as capital letter, just like in classes. This will create a namespace for all of the values exported from that module, so basically this we'll create an object containing everything that is exported from the module).`,
       ],
       sectionArticles: [
         {
@@ -4921,7 +4921,7 @@ const modulesAndTooling = {
       sectionExplanations: [
         `Use only one default export per module`,
         `When you import a default export you can imported without {} and you can give any name that you want. We can give to default import any name that we want because default export don’t have a name.`,
-        `Default Export is designed to make it easy to have a default function provided by a module, and also helps JavaScript modules to interoperate with existing CommonJS and AMD module systems`,
+        `Default Export is designed to make it easy to have a default function provided by a module, and also helps JavaScript modules to interoperate with existing CommonJS and AMD module systems.`,
       ],
       sectionArticles: [
         {
@@ -4935,11 +4935,11 @@ const modulesAndTooling = {
       sectionTitle: 'The Module Pattern with IIFE',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [
-        `Module Pattern was used before ES6 Modules in order to implement modules in Javascript`,
+        `Module Pattern was used before ES6 Modules in order to implement modules in Javascript.`,
         `Just like in regular modules, the main goal of the Module Pattern is to encapsulate functionality, to have private data and to expose a public API and the best way of achieving all that is by simply using a function, because functions give us private data by default and allow us to return values, which can become our public API.`,
-        `We implement Module Pattern by writing a function and usually we write an IIFE (Immediately Invoked Function Expression) and the reason for that is because this way we don't have to call it separately and we can also ensure that it's only called once. So it's very important that this function is only created once because the goal of this function is not to reuse code by running it multiple times, the only purpose of this function is to create a new scope and return data just once`,
-        `All the data that IIFE returns need to be stored in a variable because if you don’t do that the return data kind of disappears into nothing`,
-        `The problem with Module Pattern is that if we wanted one module per file, like we have with ES6 modules, then we would have to create different scripts and link all of them in the HTML file and that then creates a couple of problems, like we have to be careful with the order in which we declare them in HTML, and we would have all of the variables living in the global scope, and finally, we also couldn't bundle them together using a module bundler. So the module pattern that we just learned about does indeed work quite good but it has some limitations and that's exactly the reason why native modules were added to the language in ES6`,
+        `We implement Module Pattern by writing a function and usually we write an IIFE (Immediately Invoked Function Expression) and the reason for that is because this way we don't have to call it separately and we can also ensure that it's only called once. So it's very important that this function is only created once because the goal of this function is not to reuse code by running it multiple times, the only purpose of this function is to create a new scope and return data just once.`,
+        `All the data that IIFE returns need to be stored in a variable because if you don’t do that the return data kind of disappears into nothing.`,
+        `The problem with Module Pattern is that if we wanted one module per file, like we have with ES6 modules, then we would have to create different scripts and link all of them in the HTML file and that then creates a couple of problems, like we have to be careful with the order in which we declare them in HTML, and we would have all of the variables living in the global scope, and finally, we also couldn't bundle them together using a module bundler. So the module pattern that we just learned about does indeed work quite good but it has some limitations and that's exactly the reason why native modules were added to the language in ES6.`,
       ],
       sectionArticles: [
         {
@@ -4953,10 +4953,10 @@ const modulesAndTooling = {
       sectionTitle: 'CommonJS & AMD Modules',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [
-        `Besides native ES6 Module and the Module Pattern, there are also other module systems that have been used by JavaScript in the past, but again, they were not native Javascript, so they relied on some external implementations, and two examples are AMD Modules and CommonJS module`,
+        `Besides native ES6 Module and the Module Pattern, there are also other module systems that have been used by JavaScript in the past, but again, they were not native Javascript, so they relied on some external implementations, and two examples are AMD Modules and CommonJS module.`,
         `CommonJS modules are important for us because they have been used in Node.js for almost all of its existence, so only very recently ES6 Modules have actually been implemented in Node.js. The big consequence of this is that almost all the modules in the NPM repository, so all these modules that we can use in our own code still use the CommonJS module system  and the reason for that is that NPM was originally only intended for Node.js. Only later NPM became the standard repository for the whole JavaScript world and so now we are basically stuck with CommonJS and so therefore, you will see probably a lot of CommonJS still around.`,
-        `Just like ES6 modules, in CommonJS one file is one module. And we export something from a module using ' export. ' and then the name of the export. Now of course, this is not going to work in the browser but it would work in Node.js. The imports are made using <  const { importedValue } = require('./moduleName.js');   >`,
-        `We can’t use libraries that uses the commonJS module system without a module bundler, so we cannot directly import it into our code without a module bundler`,
+        `Just like ES6 modules, in CommonJS one file is one module. And we export something from a module using ' export. ' and then the name of the export. Now of course, this is not going to work in the browser but it would work in Node.js. The imports are made using <  const { importedValue } = require('./moduleName.js');   >.`,
+        `We can’t use libraries that uses the commonJS module system without a module bundler, so we cannot directly import it into our code without a module bundler.`,
       ],
       sectionArticles: [
         {
@@ -4970,19 +4970,19 @@ const modulesAndTooling = {
       sectionTitle: 'Introduction to NPM',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [
-        `If you want to use NPM you need to install Node.js first, because NPM comes together with Node.js`,
+        `If you want to use NPM you need to install Node.js first, because NPM comes together with Node.js.`,
       ],
       sectionArticles: [
         {
           articleTitle: `What is NPM? `,
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleExplanations: [
-            `Node Package Manager`,
-            `Pre-installed with Node.js`,
-            `NPM it's both a software on our computer and a package repository`,
-            `Easily install modules/packages on your system`,
-            `Modules are basically Javascript libraries`,
-            `Makes it easy for developers to share & reuse code`,
+            `Node Package Manager.`,
+            `Pre-installed with Node.js.`,
+            `NPM it's both a software on our computer and a package repository.`,
+            `Easily install modules/packages on your system.`,
+            `Modules are basically Javascript libraries.`,
+            `Makes it easy for developers to share & reuse code.`,
           ],
         },
         {
@@ -4999,24 +4999,24 @@ const modulesAndTooling = {
           articleTitle: `package.json file`,
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleExplanations: [
-            `Stores the entire configuration of our project`,
-            `Manifest file that have all your app info`,
-            `List dependencies (name & version)`,
-            `Specify if versions should be updated`,
-            `Create NPM scripts`,
-            `Easily create with 'npm init'`,
+            `Stores the entire configuration of our project.`,
+            `Manifest file that have all your app info.`,
+            `List dependencies (name & version).`,
+            `Specify if versions should be updated.`,
+            `Create NPM scripts.`,
+            `Easily create with 'npm init'.`,
           ],
         },
         {
           articleTitle: `node_modules folder`,
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleExplanations: [
-            `Contains everything about package.json dependecies, and of course the more packages we install they will all get stored into the node_modules folder`,
-            `Manifest file that have all your app info`,
-            `List dependencies (name & version)`,
-            `Specify if versions should be updated`,
-            `Create NPM scripts`,
-            `Easily create with 'npm init'`,
+            `Contains everything about package.json dependecies, and of course the more packages we install they will all get stored into the node_modules folder.`,
+            `Manifest file that have all your app info.`,
+            `List dependencies (name & version).`,
+            `Specify if versions should be updated.`,
+            `Create NPM scripts.`,
+            `Easily create with 'npm init'.`,
           ],
         },
       ],
@@ -5030,11 +5030,11 @@ const modulesAndTooling = {
         },
       ],
       sectionExplanations: [
-        'Parcel is just another build tool which is also on NPM and you need to use NPM to install it',
-        `A devDependency is like a tool that we need to build our application but it's not a dependency that we actually include in our code, so it's simply a tool and so that's why it's called a devDependency because we can use it to develop our project and so therefore it appears in a new field in our package.json file`,
-        'We use Parcel in the terminal because Parcel is basically just another command line interface. In order to still be able to use Parcel in the terminal, we have two options: so we can use something called NPX or we can use NPM scripts',
-        `With Parcel you don't need to specify the entire path to a library. In all module bundlers there's no need for specifying the entire path to any module, it’s enough to write the name of the package/module and Parcel will then automatically find the path to the package/module and will import it like when we specified the entire path without us having to manually type the entire path to the package/module`,
-        `Parcel works with all kinds of assets, even with HTML, CSS, SASS files, images, svg and of course also all kinds of modules, so not only ES6 modules but this is also going to work with CommonJS modules`,
+        'Parcel is just another build tool which is also on NPM and you need to use NPM to install it.',
+        `A devDependency is like a tool that we need to build our application but it's not a dependency that we actually include in our code, so it's simply a tool and so that's why it's called a devDependency because we can use it to develop our project and so therefore it appears in a new field in our package.json file.`,
+        'We use Parcel in the terminal because Parcel is basically just another command line interface. In order to still be able to use Parcel in the terminal, we have two options: so we can use something called NPX or we can use NPM scripts.',
+        `With Parcel you don't need to specify the entire path to a library. In all module bundlers there's no need for specifying the entire path to any module, it’s enough to write the name of the package/module and Parcel will then automatically find the path to the package/module and will import it like when we specified the entire path without us having to manually type the entire path to the package/module.`,
+        `Parcel works with all kinds of assets, even with HTML, CSS, SASS files, images, svg and of course also all kinds of modules, so not only ES6 modules but this is also going to work with CommonJS modules.`,
       ],
       sectionArticles: [
         {
