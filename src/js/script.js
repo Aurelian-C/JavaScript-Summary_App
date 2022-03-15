@@ -1,4 +1,9 @@
-import { data } from './dataStorage.js';
+import { data } from './model/modelDataStorage.js';
+import { allTitlesInformation } from './model/modelDataTransformation.js';
+console.log(data);
+
+console.log(data);
+console.log(allTitlesInformation);
 
 const createHtmlString = function (data) {
   const html = data
@@ -64,15 +69,17 @@ window.addEventListener('click', function (e) {
   });
 });
 
-// document.addEventListener('click', function (e) {
-//   if (e.target.classList.contains('sub_section--title')) {
-//     e.target
-//       .closest('.sub_section--info')
-//       .querySelector('.arrow')
-//       .classList.toggle('clicked');
-//     e.target
-//       .closest('.sub_section--info')
-//       .querySelector('.sub_section--articles')
-//       .classList.toggle('hidden');
-//   }
-// });
+/*
+document.addEventListener('click', function (e) {
+  if (e.target.classList.contains('sub_section--title')) {
+    e.target
+      .closest('.sub_section--info')
+      .querySelector('.arrow')
+      .classList.toggle('clicked');
+    e.target
+      .closest('.sub_section--info')
+      .querySelector('.sub_section--articles')
+      .classList.toggle('hidden');
+  }
+});
+*/
