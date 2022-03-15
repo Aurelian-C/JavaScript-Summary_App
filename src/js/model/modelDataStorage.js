@@ -1,8 +1,8 @@
-const test = {
-  title: 'Variables, Values and Data Structures in Javascript',
+const pattern = {
+  title: 'Main Ttile',
   sections: [
     {
-      sectionTitle: 'Statements',
+      sectionTitle: 'Section Title',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [],
       sectionArticles: [
