@@ -129,9 +129,10 @@ body {
   height: 50vh;
   width: 85%;
   border-radius: 15px;
-  background: #9e9e9e;
+  background: linear-gradient(3deg, rgb(32, 32, 32) 0%, rgb(33, 33, 33) 50%);
   padding: 1rem 2rem;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   z-index: 100;
 }
 
@@ -140,17 +141,29 @@ body {
 }
 
 .modal__info--text-style {
-  margin: 3px 0;
+  margin: 10px 0;
   text-indent: 20px;
   text-align: justify;
+  line-height: 23px;
 }
 
-.modal__info--link {
-  text-decoration: none;
+.modal__info--links {
+  margin: 5px 0 0 0;
+  color: wheat;
+}
+
+.modal__info--links-title {
+  text-align: center;
+  margin: 5px 0 0 0;
 }
 
 .modal__info--link-title {
   margin: 5px 0;
+}
+
+.modal__info--link {
+  text-decoration: none;
+  color: wheat;
 }
 
 .button {

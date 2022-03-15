@@ -30,7 +30,7 @@ class ModalView {
           .map(text => `<p class="modal__info--text-style">${text}</p>`)
           .join('')}
         </div>
-        <div class="modal__info--links">
+        <div class="modal__info--links"><h4 class="modal__info--links-title">Links</h4>
             <div>
             ${element.links
               .map(

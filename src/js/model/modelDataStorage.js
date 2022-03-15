@@ -22,7 +22,9 @@ const javascriptEngineAndRuntime = {
     {
       sectionTitle: 'Javascript Engine',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionExplanations: [
+        "Javascript Engine is a 'program' that executes JavaScript code. Any JavaScript engine (ex. V8 for Google Chrome) always contains a Call Stack and a Memory Heap. The Call Stack is where our code is actually executed, using something called execution contexts. The Memory Heap is an unstructured memory pool which stores all the objects that our application needs.",
+      ],
       sectionArticles: [
         {
           articleTitle:
@@ -61,7 +63,14 @@ const javascriptEngineAndRuntime = {
             '`https://medium.com/@gemma.stiles/understanding-the-javascript-runtime-environment-4dd8f52f6fca`',
         },
       ],
-      sectionExplanations: [],
+      sectionExplanations: [
+        'Javascript is a <u><b>single threaded language</b></u>. This means it has <u>one Call Stack</u> and <u>one Memory Heap</u>. As expected, it executes code in order and must finish executing a piece code before moving onto the next.',
+        '<b>The heart of any JavaScript <u>Runtime</u> is always a JavaScript <u>Engine</u>. Without an engine there is no runtime and there is no JavaScript at all</b>.',
+        'However, <i><b><u>the engine alone is not enough</i>. In order to work properly, we also need access to the <i>web APIs</i></u> (ex. DOM, Timers, Fetch API etc)</b>.',
+        'So essentially <b>web APIs are functionalities provided to the engine, but which are actually not part of the JavaScript language itself</b>. <i>JavaScript simply gets access to these APIs through the global window object</i>.',
+        'A typical JavaScript runtime also includes a so called <b><u>callback queue</u>. This is a data structure that contains all the callback functions that are ready to be executed</b>. For example we attach event handler functions to DOM elements like a button to react to certain events, and these event handler functions are also called callback functions. So as the event happens, for example a click, the callback function will be called. And here is how that actually works behind the scenes: so the first thing that actually happens after the event is that <u>the callback function is put into the callback queue</u>. Then <u>when the stack is empty the callback function is passed to the call stack</u> so that it can be executed (this happens by something called the <b>event loop</b>). <i><b>So basically the <u>event loop</u> takes <u>callback functions</u> from the <u>callback queue</u> and puts them in the <u>call stack</u> so that they can be executed. The event loop only runs once the call stack is empty and the entire Javascript file has been run once</b></i>.',
+        'JavaScript is a single threaded language that can be non blocking. It has one Call Stack and it does one thing at a time. In order to not block the single thread, it can be <i><b>asynchronous with callback functions</b> and these callback functions gets run in the background through the Callback queue and then the Event Loop bring it back into the Call Stack</i>.',
+      ],
       sectionArticles: [
         {
           articleTitle: 'Web APIs',
@@ -228,7 +237,9 @@ const variablesValues = {
     {
       sectionTitle: 'Static vs Dynamically Typed',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionExplanations: [
+        "JavaScript has dynamic typing: we don't have to manually define the data type of the value stored in a variable (value has type, NOT variable!). Instead, data types are determined automatically.",
+      ],
       sectionArticles: [
         {
           articleTitle: '',
@@ -3620,7 +3631,10 @@ const domManipulation = {
           linkSource: `https://dmitripavlutin.com/dom-node-element/`,
         },
       ],
-      sectionExplanations: [],
+      sectionExplanations: [
+        'The DOM is automatically created by the browser as soon as the HTML page loads.',
+        'The DOM, DOM methods and DOM properties are actually part of something called the web APIs. Now, besides the DOM, there are actually a ton more web APIs, such as Timers, the Fetch API and many more.',
+      ],
       sectionArticles: [
         {
           articleTitle: 'DOM Methods (actions you can perform)',
