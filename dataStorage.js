@@ -54,7 +54,9 @@ const javascriptEngineAndRuntime = {
     },
     {
       sectionTitle: 'Javascript Runtime',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://medium.com/@gemma.stiles/understanding-the-javascript-runtime-environment-4dd8f52f6fca`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -939,8 +941,10 @@ const dataStructuresArrays = {
   title: 'Data structures: Arrays',
   sections: [
     {
-      sectionTitle: 'Intro to Reference Types',
-      sectionLinks: [],
+      sectionTitle: 'Intro to Arrays and Reference Types',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -952,7 +956,9 @@ const dataStructuresArrays = {
     },
     {
       sectionTitle: 'Creating Arrays',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1068,105 +1074,207 @@ const dataStructuresArrays = {
       ],
     },
     {
-      sectionTitle: 'Array Methods',
+      sectionTitle: 'Array Methods (mutate original array)',
       sectionLinks: [],
       sectionExplanations: [],
       sectionArticles: [
         {
-          articleTitle: 'push() & pop()',
-          articleLinks: [],
+          articleTitle: 'push() --- add to original (end)',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_push.asp`],
           articleExplanations: [],
         },
         {
-          articleTitle: 'shift() & unshift()',
-          articleLinks: [],
+          articleTitle: 'unshift() --- add to original (start)',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_unshift.asp`],
           articleExplanations: [],
         },
         {
-          articleTitle: 'concat()',
-          articleLinks: [],
+          articleTitle: 'pop() --- remove from original(end)',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_pop.asp`],
           articleExplanations: [],
         },
         {
-          articleTitle: 'includes() & indexOf()',
-          articleLinks: [],
+          articleTitle: 'shift() --- remove from original(start)',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_shift.asp`],
           articleExplanations: [],
         },
         {
-          articleTitle: 'reverse() and join()',
-          articleLinks: [],
+          articleTitle: 'splice() --- remove from original(any)',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_splice.asp`],
           articleExplanations: [],
         },
         {
-          articleTitle: 'slice()',
-          articleLinks: [],
+          articleTitle: 'reverse() --- others',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_reverse.asp`],
           articleExplanations: [],
         },
         {
-          articleTitle: 'splice()',
-          articleLinks: [],
+          articleTitle: 'sort() --- others',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_sort.asp`],
           articleExplanations: [],
         },
         {
-          articleTitle: 'sort()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'Array.isArray()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'Array.from()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'Array.entries()',
-          articleLinks: [],
+          articleTitle: 'fill() --- others',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_fill.asp`],
           articleExplanations: [],
         },
       ],
     },
     {
-      sectionTitle: 'Array Callback Methods',
+      sectionTitle: 'Array Methods (a new array)',
       sectionLinks: [],
       sectionExplanations: [],
       sectionArticles: [
         {
-          articleTitle: 'forEach()',
-          articleLinks: [],
+          articleTitle: 'map() --- computed from original',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_map.asp`],
           articleExplanations: [],
         },
         {
-          articleTitle: 'map()',
-          articleLinks: [],
+          articleTitle: 'filter() --- filtered using condition',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_filter.asp`],
           articleExplanations: [],
         },
         {
-          articleTitle: 'find()',
-          articleLinks: [],
+          articleTitle: 'slice() --- copy portion/entire of original',
+          articleLinks: [
+            `https://www.w3schools.com/jsref/jsref_slice_array.asp`,
+          ],
           articleExplanations: [],
         },
         {
-          articleTitle: 'filter()',
-          articleLinks: [],
+          articleTitle: 'concat() --- adding original to other',
+          articleLinks: [
+            `https://www.w3schools.com/jsref/jsref_concat_array.asp`,
+          ],
           articleExplanations: [],
         },
         {
-          articleTitle: 'some() & every()',
-          articleLinks: [],
+          articleTitle: 'flat() & flatMap() --- flattening the original',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat`,
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap`,
+          ],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Array Methods (an array index)',
+      sectionLinks: [],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: 'indexOf() --- based on value',
+          articleLinks: [
+            `https://www.w3schools.com/jsref/jsref_indexof_array.asp`,
+          ],
           articleExplanations: [],
         },
         {
-          articleTitle: 'reduce()',
-          articleLinks: [],
+          articleTitle: 'findIndex() --- based on test condition',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_findindex.asp`],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Array Methods (an array element)',
+      sectionLinks: [],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: 'find() --- based on test condition',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_find.asp`],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Array Methods (know if array includes)',
+      sectionLinks: [],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: 'includes() --- based on value',
+          articleLinks: [
+            `https://www.w3schools.com/jsref/jsref_includes_array.asp`,
+          ],
           articleExplanations: [],
         },
         {
-          articleTitle: 'flat() & flatMap()',
-          articleLinks: [],
+          articleTitle: 'some() --- based on test condition',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_some.asp`],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'every() --- based on test condition',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_every.asp`],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Array Methods (a new string)',
+      sectionLinks: [],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: 'join() --- based on separator string',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_join.asp`],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Array Methods (to transform to value)',
+      sectionLinks: [],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: 'reduce() --- based on accumulator',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_reduce.asp`],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Array Methods (to just loop array)',
+      sectionLinks: [],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle:
+            'forEach() --- based on callback ((Does not create a new array, just loops over it)',
+          articleLinks: [`https://www.w3schools.com/jsref/jsref_foreach.asp`],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Array Methods (others array methods)',
+      sectionLinks: [],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: 'Array.isArray()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'Array.from()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'Array.entries()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries`,
+          ],
           articleExplanations: [],
         },
       ],
@@ -1189,6 +1297,20 @@ const dataStructuresArrays = {
 const dataStructuresObjects = {
   title: 'Data structures: Objects',
   sections: [
+    {
+      sectionTitle: 'Introducing JavaScript objects',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects`,
+      ],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [],
+          articleExplanations: [],
+        },
+      ],
+    },
     {
       sectionTitle: 'Dot vs. Bracket Notation',
       sectionLinks: [],
@@ -1332,8 +1454,72 @@ const dataStructuresObjects = {
       ],
     },
     {
-      sectionTitle: 'Object.fromEntries() vs Object.entries()',
+      sectionTitle: 'Object methods',
       sectionLinks: [],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: 'Object.fromEntries() vs Object.entries()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries`,
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'Object.assign()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'Object.freeze()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'Object.create()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create`,
+          ],
+          articleExplanations: [],
+        },
+      ],
+    },
+  ],
+};
+
+const dataStructuresSets = {
+  title: 'Data structures: Sets',
+  sections: [
+    {
+      sectionTitle: 'Intro to Sets',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set`,
+      ],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [],
+          articleExplanations: [],
+        },
+      ],
+    },
+  ],
+};
+
+const dataStructuresMaps = {
+  title: 'Data structures: Maps',
+  sections: [
+    {
+      sectionTitle: 'Intro to Maps',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1349,6 +1535,20 @@ const dataStructuresObjects = {
 const oop = {
   title: 'Object Oriented Programming (OOP)',
   sections: [
+    {
+      sectionTitle: 'Introduction to OOP',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript`,
+      ],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [],
+          articleExplanations: [],
+        },
+      ],
+    },
     {
       sectionTitle: 'Java',
       sectionLinks: [],
@@ -1402,7 +1602,10 @@ const oop = {
     },
     {
       sectionTitle: 'Constructor Functions',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://www.w3schools.com/js/js_object_constructors.asp`,
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1412,12 +1615,16 @@ const oop = {
         },
         {
           articleTitle: 'new keyword',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'Prototype',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes`,
+          ],
           articleExplanations: [],
         },
         {
@@ -1429,7 +1636,9 @@ const oop = {
     },
     {
       sectionTitle: 'Object.create()',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1441,22 +1650,36 @@ const oop = {
     },
     {
       sectionTitle: 'ES6 Classes - Syntactical Sugar',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://www.w3schools.com/js/js_classes.asp`,
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
           articleTitle: 'Setters and Getters',
-          articleLinks: [],
+          articleLinks: [
+            `https://www.w3schools.com/js/js_object_accessors.asp`,
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get`,
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'Static Methods',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static`,
+          ],
           articleExplanations: [],
         },
         {
-          articleTitle: 'Extends, Super, Subclasses',
-          articleLinks: [],
+          articleTitle: 'Extends, Super and Subclasses',
+          articleLinks: [
+            `https://www.w3schools.com/jsref/jsref_class_extends.asp`,
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends`,
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super`,
+            `https://www.w3schools.com/jsref/jsref_class_super.asp`,
+          ],
           articleExplanations: [],
         },
         {
@@ -1524,90 +1747,152 @@ const standardBuildInObjects = {
   title: 'Standard Build-In Objects',
   sections: [
     {
-      sectionTitle: 'Strings',
-      sectionLinks: [],
+      sectionTitle: 'Introduction to Standard Build-in Objects',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
-          articleTitle: 'indexOf()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'lastIndexOf()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'slice()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'toLowerCase()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'toUpperCase()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'trim()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'replace()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'replaceAll()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'includes()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'startsWith()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'endsWith()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'split()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'padStart()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'padEnd()',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'repeat()',
+          articleTitle: '',
           articleLinks: [],
           articleExplanations: [],
         },
       ],
     },
     {
-      sectionTitle: 'Numbers',
-      sectionLinks: [],
+      sectionTitle: 'Regular expressions',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions`,
+      ],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'String',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String`,
+      ],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: 'indexOf()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'lastIndexOf()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'slice()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'toLowerCase()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'toUpperCase()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'trim()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'replace()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'replaceAll()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'includes()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'startsWith()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'endsWith()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'split()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'padStart()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'padEnd()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'repeat()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat`,
+          ],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Number',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1617,78 +1902,122 @@ const standardBuildInObjects = {
         },
         {
           articleTitle: 'Number.parseInt()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'Number.parseFloat()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'Number.isNaN()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'Number.isFinite()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'Number.isInteger()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'toFixed()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed`,
+          ],
           articleExplanations: [],
         },
       ],
     },
     {
       sectionTitle: 'Math',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
           articleTitle: 'max()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'min()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'round()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'ceil()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'floor()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'trunc()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'random()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'abs()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs`,
+          ],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'BigInt',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt`,
+      ],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
           articleLinks: [],
           articleExplanations: [],
         },
@@ -1696,7 +2025,9 @@ const standardBuildInObjects = {
     },
     {
       sectionTitle: 'Date',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -1711,69 +2042,98 @@ const standardBuildInObjects = {
         },
         {
           articleTitle: 'getFullYear()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getMonth()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getDate()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getDay()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getHours()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getMinutes()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getSeconds()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getTime() vs Convert a date to a number',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'toISOString()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'setFullYear()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear`,
+          ],
           articleExplanations: [],
         },
       ],
     },
     {
       sectionTitle: 'Intl',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
           articleTitle: 'DateTimeFormat()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat`,
+            `http://www.lingoes.net/en/translator/langcode.htm`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'NumberFormat()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat`,
+            `http://www.lingoes.net/en/translator/langcode.htm`,
+            `https://en.wikipedia.org/wiki/ISO_4217`,
+          ],
           articleExplanations: [],
         },
         {
@@ -1789,6 +2149,20 @@ const standardBuildInObjects = {
 const functionalProgramming = {
   title: 'Functional Programming (FP)',
   sections: [
+    {
+      sectionTitle: 'Introduction to FP',
+      sectionLinks: [
+        `https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0`,
+      ],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [],
+          articleExplanations: [],
+        },
+      ],
+    },
     {
       sectionTitle: 'Function Declarations vs. Expressions',
       sectionLinks: [
@@ -2153,7 +2527,9 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Compose',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -2165,7 +2541,9 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Pipe',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -2182,8 +2560,27 @@ const asynchronousJavascript = {
   title: 'Asynchronous JavaScript',
   sections: [
     {
+      sectionTitle: 'Introduction to Asynchronous Javascript',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous`,
+        `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing`,
+        `https://thecodest.co/blog/asynchronous-and-single-threaded-javascript-meet-the-event-loop/`,
+      ],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
       sectionTitle: 'Web APIs',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://www.w3schools.com/js/js_api_intro.asp`,
+        `https://developer.mozilla.org/en-US/docs/Web/API`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -2219,7 +2616,9 @@ const asynchronousJavascript = {
     },
     {
       sectionTitle: 'Event Loop',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://thecodest.co/blog/asynchronous-and-single-threaded-javascript-meet-the-event-loop/`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -2230,21 +2629,43 @@ const asynchronousJavascript = {
       ],
     },
     {
-      sectionTitle:
-        'Timers: setTimeout() & clearTimeout(), setInterval() & clearInterval()',
+      sectionTitle: 'Timers',
       sectionLinks: [],
       sectionExplanations: [],
       sectionArticles: [
         {
-          articleTitle: '',
-          articleLinks: [],
+          articleTitle: 'setTimeout()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/setTimeout`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'clearTimeout()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'setInterval()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/setInterval`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'clearInterval()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/clearInterval`,
+          ],
           articleExplanations: [],
         },
       ],
     },
     {
       sectionTitle: 'Intro to AJAX',
-      sectionLinks: [],
+      sectionLinks: [`https://www.w3schools.com/js/js_ajax_intro.asp`],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -2256,7 +2677,7 @@ const asynchronousJavascript = {
     },
     {
       sectionTitle: 'JSON & XML',
-      sectionLinks: [],
+      sectionLinks: [`https://www.w3schools.com/js/js_json_intro.asp`],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -2268,7 +2689,9 @@ const asynchronousJavascript = {
     },
     {
       sectionTitle: 'XMLHttpRequests: The Basics',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -2307,7 +2730,11 @@ const asynchronousJavascript = {
     },
     {
       sectionTitle: 'Promises and the Fetch API',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises`,
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise`,
+        `https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -2369,7 +2796,9 @@ const asynchronousJavascript = {
         },
         {
           articleTitle: '.finally(callback function)',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally`,
+          ],
           articleExplanations: [],
         },
       ],
@@ -2381,7 +2810,10 @@ const asynchronousJavascript = {
       sectionArticles: [
         {
           articleTitle: 'throw new Error()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw`,
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error`,
+          ],
           articleExplanations: [],
         },
       ],
@@ -2411,12 +2843,16 @@ const asynchronousJavascript = {
       sectionArticles: [
         {
           articleTitle: '‘async’ funtions',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: '‘await’ keyword',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await`,
+          ],
           articleExplanations: [],
         },
         {
@@ -2451,7 +2887,9 @@ const asynchronousJavascript = {
       sectionArticles: [
         {
           articleTitle: 'try {} catch(error) {}',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch`,
+          ],
           articleExplanations: [],
         },
         {
@@ -2481,7 +2919,9 @@ const asynchronousJavascript = {
       sectionArticles: [
         {
           articleTitle: 'Promise.all([ ])',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch`,
+          ],
           articleExplanations: [],
         },
       ],
@@ -2493,17 +2933,23 @@ const asynchronousJavascript = {
       sectionArticles: [
         {
           articleTitle: 'Promise.race([ ])',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'Promise.allSettled([ ])',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'Promise.any([ ])',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any`,
+          ],
           articleExplanations: [],
         },
       ],
@@ -2535,119 +2981,178 @@ const domManipulation = {
   sections: [
     {
       sectionTitle: 'The Document Object',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction`,
+        `https://www.w3schools.com/js/js_htmldom.asp`,
+        `https://developer.mozilla.org/en-US/docs/Web/API/Document`,
+        `https://developer.mozilla.org/en-US/docs/Web/API/Node`,
+        `https://developer.mozilla.org/en-US/docs/Web/API/Element`,
+        `https://dmitripavlutin.com/dom-node-element/`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
           articleTitle: 'DOM Methods (actions you can perform)',
-          articleLinks: [],
+          articleLinks: [`https://www.w3schools.com/js/js_htmldom_methods.asp`],
           articleExplanations: [],
         },
         {
           articleTitle: 'DOM Properties (values that you can set or change)',
-          articleLinks: [],
+          articleLinks: [`https://www.w3schools.com/js/js_htmldom_methods.asp`],
           articleExplanations: [],
         },
       ],
     },
     {
       sectionTitle: 'Select DOM elements & DOM Traversing',
-      sectionLinks: [],
+      sectionLinks: [`https://zellwk.com/blog/dom-traversals/`],
       sectionExplanations: [],
       sectionArticles: [
         {
           articleTitle: 'document.documentElement',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'document.head',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/head`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'document.body',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/body`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getElementById()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getElementsByTagName()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getElementsByClassName()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'querySelector() (document/element)',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'querySelectorAll() (document/element)',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'children',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/children`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'childNodes',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'firstElementChild',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/firstElementChild`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'lastElementChild',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/lastElementChild`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'firstChild',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild`,
+          ],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'lastChild',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Node/lastChild`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'closest()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/closest`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'parentElement',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'parentNode',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'previousElementSibling',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'nextElementSibling',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'previousSibling',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Node/previousSibling`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'nextSibling',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling`,
+          ],
           articleExplanations: [],
         },
       ],
@@ -2659,62 +3164,86 @@ const domManipulation = {
       sectionArticles: [
         {
           articleTitle: 'document.createElement()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'prepend()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'append()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/append`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'before()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/before`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'after()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/after`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'insertAdjacentHTML()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'insertAdjacentText()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentText`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'cloneNode()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'remove()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/remove`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'innerHTML',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'innerText',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'textContent',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent`,
+          ],
           articleExplanations: [],
         },
       ],
@@ -2726,37 +3255,51 @@ const domManipulation = {
       sectionArticles: [
         {
           articleTitle: 'style',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getComputedStyle()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'setProperty()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'setAttribute()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getAttribute()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'alt',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'src',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/src`,
+          ],
           articleExplanations: [],
         },
         {
@@ -2766,27 +3309,39 @@ const domManipulation = {
         },
         {
           articleTitle: 'hidden',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'value',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/value`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'dataset',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes`,
+            `https://medium.com/@adamkearney124/using-dataset-in-javascript-5331af3ec6c3`,
+            `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'classList (add, remove, toggle, contains)',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/classList`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'className',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/className`,
+          ],
           articleExplanations: [],
         },
       ],
@@ -2798,62 +3353,87 @@ const domManipulation = {
       sectionArticles: [
         {
           articleTitle: 'clientHeight',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'clientWidth',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/clientWidth`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'offsetHeight',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'getBoundingClientRect()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'scrollIntoView()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'blur()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/blur`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'focus()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'attributes',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'isEqualNode()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Node/isEqualNode`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'nodeValue',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'Node.contains()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Node/contains`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'document.createRange().createContextualFragment()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/createRange`,
+            `https://developer.mozilla.org/en-US/docs/Web/API/Range/createContextualFragment`,
+          ],
           articleExplanations: [],
         },
       ],
@@ -2877,6 +3457,20 @@ const events = {
   title: 'JavaScript Events',
   sections: [
     {
+      sectionTitle: 'Introduction to Events',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events`,
+      ],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
       sectionTitle: '2 Ways NOT to Add Events',
       sectionLinks: [],
       sectionExplanations: [],
@@ -2890,7 +3484,11 @@ const events = {
     },
     {
       sectionTitle: 'addEventListener() & removeEventListener()',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://www.w3schools.com/jsref/met_element_addeventlistener.asp`,
+        `https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener`,
+        `https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -2902,7 +3500,7 @@ const events = {
     },
     {
       sectionTitle: 'Types of Events and Event Handlers',
-      sectionLinks: [],
+      sectionLinks: [`https://www.w3schools.com/jsref/dom_obj_event.asp`],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -2953,8 +3551,13 @@ const events = {
       ],
     },
     {
-      sectionTitle: 'Event Propagation',
-      sectionLinks: [],
+      sectionTitle: 'Event Propagation & Delegation',
+      sectionLinks: [
+        `https://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing`,
+        `https://www.quirksmode.org/js/events_order.html`,
+        `https://medium.com/@marjuhirsh/event-propagation-event-delegation-7d3db1baf02a`,
+        `https://www.w3schools.com/jsref/event_stoppropagation.asp`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -2964,18 +3567,6 @@ const events = {
         },
         {
           articleTitle: 'Capturing',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Event Delegation',
-      sectionLinks: [],
-      sectionExplanations: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
           articleLinks: [],
           articleExplanations: [],
         },
@@ -3007,32 +3598,48 @@ const events = {
     },
     {
       sectionTitle: 'The Event Object',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/Events`,
+        `https://www.w3schools.com/jsref/obj_events.asp`,
+        `https://stackoverflow.com/questions/35936365/what-exactly-is-the-parameter-e-event-and-why-pass-it-to-javascript-functions`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
           articleTitle: 'e.preventDefault()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'e.target',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Event/target`,
+            `https://www.w3schools.com/jsref/event_target.asp`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'e.currentTarget',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget`,
+            `https://www.w3schools.com/jsref/event_currenttarget.asp`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'e.composedPath()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'e.stopPropagation()',
-          articleLinks: [],
+          articleLinks: [
+            `https://www.w3schools.com/jsref/event_stoppropagation.asp`,
+          ],
           articleExplanations: [],
         },
         {
@@ -3043,23 +3650,31 @@ const events = {
       ],
     },
     {
-      sectionTitle: 'Key Events',
-      sectionLinks: [],
+      sectionTitle: 'Keyboard Events',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
           articleTitle: 'keypress',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/keypress_event`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'keyup',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/keyup_event`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'keydown',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event`,
+          ],
           articleExplanations: [],
         },
       ],
@@ -3090,7 +3705,9 @@ const events = {
     },
     {
       sectionTitle: 'The Intersection Observer API',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -3125,19 +3742,25 @@ const webAPIs = {
       sectionArticles: [
         {
           articleTitle: 'navigator.language',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Navigator/language`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'navigator.geolocation.getCurrentPosition()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API`,
+          ],
           articleExplanations: [],
         },
       ],
     },
     {
       sectionTitle: 'localStorage',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -3157,71 +3780,97 @@ const webAPIs = {
         },
         {
           articleTitle: 'JSON.stringify()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'JSON.parse()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse`,
+          ],
           articleExplanations: [],
         },
       ],
     },
     {
       sectionTitle: 'window',
-      sectionLinks: [],
+      sectionLinks: [`https://developer.mozilla.org/en-US/docs/Web/API/Window`],
       sectionExplanations: [],
       sectionArticles: [
         {
           articleTitle: 'window.location.reload()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Window/location`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'window.location.hash',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Window/location`,
+            `https://developer.mozilla.org/en-US/docs/Web/API/Location/hash`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'window.history.pushState()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Window/history`,
+            `https://developer.mozilla.org/en-US/docs/Web/API/History/pushState`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'window.open(‘url’, ‘_blank’)',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Window/open`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'window.pageXOffset vs scrollX',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'window.pageYOffset vs scrollY',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY`,
+          ],
           articleExplanations: [],
         },
         {
-          articleTitle: 'window.scroolTo()',
-          articleLinks: [],
+          articleTitle: 'window.scrollTo()',
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo`,
+          ],
           articleExplanations: [],
         },
         {
           articleTitle: 'window.innerHeight',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight`,
+          ],
           articleExplanations: [],
         },
       ],
     },
     {
       sectionTitle: 'FormData',
-      sectionLinks: [],
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/API/FormData`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
           articleTitle: 'new FormData()',
-          articleLinks: [],
+          articleLinks: [
+            `https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData`,
+          ],
           articleExplanations: [],
         },
       ],
@@ -3233,67 +3882,43 @@ const modulesAndTooling = {
   title: 'Modern JavaScript Development: Modules and Tooling',
   sections: [
     {
-      sectionTitle: 'Exporting and Importing in native ES6 Modules',
-      sectionLinks: [],
+      sectionTitle: 'Introducing to Javascript Modules',
+      sectionLinks: [
+        `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules`,
+        `https://medium.com/@cgcrutch18/commonjs-what-why-and-how-64ed9f31aa46`,
+        `https://www.sitepoint.com/understanding-es6-modules/`,
+        `https://blog.sessionstack.com/how-javascript-works-the-module-pattern-comparing-commonjs-amd-umd-and-es6-modules-437f77548437`,
+        `https://hacks.mozilla.org/2015/08/es6-in-depth-modules/`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
-          articleTitle: `In moduleName.js names, it's also a convention to use camelCase names`,
+          articleTitle: '',
           articleLinks: [],
           articleExplanations: [],
         },
+      ],
+    },
+    {
+      sectionTitle: 'Exporting and Importing in native ES6 Modules',
+      sectionLinks: [],
+      sectionExplanations: [
+        `In moduleName.js names, it's also a convention to use camelCase names`,
+        `ES6 Modules are native to Javascript`,
+        `There is no need to use the defer attribute when loading a module script; modules are deferred automatically`,
+        `Module features are imported into the scope of a single script — they aren't available in the global scope. Therefore, you will only be able to access imported features in the script they are imported into, and you won't be able to access them from the JavaScript console, for example`,
+        `Normal code (without asynchronous code) inside imports are executed first, so before the code in the module that we make the imports`,
+        `All the importing statements are hoisted to the top and because this we usually write all the imports statements at the top of the file`,
+        `All modules are executed in ‘strict mode’ by default, so you don’t need to write ‘use strict’ at the beginning of the module`,
+        `Understand how to export and import values between modules`,
+        `You can import a module without importing any value.`,
+        `When you use Parcel you can omit the .js because with Parcel ES6 modules also work without the extension ( import './moduleName'; )`,
+        `We can say that a module exports kind of a public API because everything else that we don’t export stays private inside of the module`,
+        `Imports are a live connection to exports (imports are not copies of the export)`,
+      ],
+      sectionArticles: [
         {
-          articleTitle: `ES6 Modules are native to Javascript`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `There is no need to use the defer attribute when loading a module script; modules are deferred automatically`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `Module features are imported into the scope of a single script — they aren't available in the global scope. Therefore, you will only be able to access imported features in the script they are imported into, and you won't be able to access them from the JavaScript console, for example`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `Normal code (without asynchronous code) inside imports are executed first, so before the code in the module that we make the imports`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `All the importing statements are hoisted to the top and because this we usually write all the imports statements at the top of the file`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `All modules are executed in ‘strict mode’ by default, so you don’t need to write ‘use strict’ at the beginning of the module`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `Understand how to export and import values between modules`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `You can import a module without importing any value.`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `When you use Parcel you can omit the .js because with Parcel ES6 modules also work without the extension ( import './moduleName'; )`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `We can say that a module exports kind of a public API because everything else that we don’t export stays private inside of the module`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `Imports are a live connection to exports (imports are not copies of the export)`,
+          articleTitle: '',
           articleLinks: [],
           articleExplanations: [],
         },
@@ -3302,16 +3927,13 @@ const modulesAndTooling = {
     {
       sectionTitle: 'Named exports/imports in ES6 Modules',
       sectionLinks: [],
-      sectionExplanations: [],
+      sectionExplanations: [
+        'Export/import multiple things with {} & change name of exports/imports using ‘as’ (with Named Imports you have to give to imports values the same name as name you defined in export module and you have to put them inside curly braces)',
+        `Import all the exports of a module at the same time with * and ‘as’ by creating a module object (when we import everything from a module with * the convention is to use the first letter of the namespace as capital letter, just like in classes. This will create a namespace for all of the values exported from that module, so basically this we'll create an object containing everything that is exported from the module)`,
+      ],
       sectionArticles: [
         {
-          articleTitle:
-            'Export/import multiple things with {} & change name of exports/imports using ‘as’ (with Named Imports you have to give to imports values the same name as name you defined in export module and you have to put them inside curly braces)',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `Import all the exports of a module at the same time with * and ‘as’ by creating a module object (when we import everything from a module with * the convention is to use the first letter of the namespace as capital letter, just like in classes. This will create a namespace for all of the values exported from that module, so basically this we'll create an object containing everything that is exported from the module)`,
+          articleTitle: '',
           articleLinks: [],
           articleExplanations: [],
         },
@@ -3320,20 +3942,14 @@ const modulesAndTooling = {
     {
       sectionTitle: 'Default exports/imports in ES6 Modules',
       sectionLinks: [],
-      sectionExplanations: [],
+      sectionExplanations: [
+        `Use only one default export per module`,
+        `When you import a default export you can imported without {} and you can give any name that you want. We can give to default import any name that we want because default export don’t have a name.`,
+        `Default Export is designed to make it easy to have a default function provided by a module, and also helps JavaScript modules to interoperate with existing CommonJS and AMD module systems`,
+      ],
       sectionArticles: [
         {
-          articleTitle: `Use only one default export per module`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `When you import a default export you can imported without {} and you can give any name that you want. We can give to default import any name that we want because default export don’t have a name.`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `Default Export is designed to make it easy to have a default function provided by a module, and also helps JavaScript modules to interoperate with existing CommonJS and AMD module systems`,
+          articleTitle: '',
           articleLinks: [],
           articleExplanations: [],
         },
@@ -3342,30 +3958,16 @@ const modulesAndTooling = {
     {
       sectionTitle: 'The Module Pattern with IIFE',
       sectionLinks: [],
-      sectionExplanations: [],
+      sectionExplanations: [
+        `Module Pattern was used before ES6 Modules in order to implement modules in Javascript`,
+        `Just like in regular modules, the main goal of the Module Pattern is to encapsulate functionality, to have private data and to expose a public API and the best way of achieving all that is by simply using a function, because functions give us private data by default and allow us to return values, which can become our public API.`,
+        `We implement Module Pattern by writing a function and usually we write an IIFE (Immediately Invoked Function Expression) and the reason for that is because this way we don't have to call it separately and we can also ensure that it's only called once. So it's very important that this function is only created once because the goal of this function is not to reuse code by running it multiple times, the only purpose of this function is to create a new scope and return data just once`,
+        `All the data that IIFE returns need to be stored in a variable because if you don’t do that the return data kind of disappears into nothing`,
+        `The problem with Module Pattern is that if we wanted one module per file, like we have with ES6 modules, then we would have to create different scripts and link all of them in the HTML file and that then creates a couple of problems, like we have to be careful with the order in which we declare them in HTML, and we would have all of the variables living in the global scope, and finally, we also couldn't bundle them together using a module bundler. So the module pattern that we just learned about does indeed work quite good but it has some limitations and that's exactly the reason why native modules were added to the language in ES6`,
+      ],
       sectionArticles: [
         {
-          articleTitle: `Module Pattern was used before ES6 Modules in order to implement modules in Javascript`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `Just like in regular modules, the main goal of the Module Pattern is to encapsulate functionality, to have private data and to expose a public API and the best way of achieving all that is by simply using a function, because functions give us private data by default and allow us to return values, which can become our public API.`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `We implement Module Pattern by writing a function and usually we write an IIFE (Immediately Invoked Function Expression) and the reason for that is because this way we don't have to call it separately and we can also ensure that it's only called once. So it's very important that this function is only created once because the goal of this function is not to reuse code by running it multiple times, the only purpose of this function is to create a new scope and return data just once`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `All the data that IIFE returns need to be stored in a variable because if you don’t do that the return data kind of disappears into nothing`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `The problem with Module Pattern is that if we wanted one module per file, like we have with ES6 modules, then we would have to create different scripts and link all of them in the HTML file and that then creates a couple of problems, like we have to be careful with the order in which we declare them in HTML, and we would have all of the variables living in the global scope, and finally, we also couldn't bundle them together using a module bundler. So the module pattern that we just learned about does indeed work quite good but it has some limitations and that's exactly the reason why native modules were added to the language in ES6`,
+          articleTitle: '',
           articleLinks: [],
           articleExplanations: [],
         },
@@ -3374,25 +3976,15 @@ const modulesAndTooling = {
     {
       sectionTitle: 'CommonJS & AMD Modules',
       sectionLinks: [],
-      sectionExplanations: [],
+      sectionExplanations: [
+        `Besides native ES6 Module and the Module Pattern, there are also other module systems that have been used by JavaScript in the past, but again, they were not native Javascript, so they relied on some external implementations, and two examples are AMD Modules and CommonJS module`,
+        `CommonJS modules are important for us because they have been used in Node.js for almost all of its existence, so only very recently ES6 Modules have actually been implemented in Node.js. The big consequence of this is that almost all the modules in the NPM repository, so all these modules that we can use in our own code still use the CommonJS module system  and the reason for that is that NPM was originally only intended for Node.js. Only later NPM became the standard repository for the whole JavaScript world and so now we are basically stuck with CommonJS and so therefore, you will see probably a lot of CommonJS still around.`,
+        `Just like ES6 modules, in CommonJS one file is one module. And we export something from a module using ' export. ' and then the name of the export. Now of course, this is not going to work in the browser but it would work in Node.js. The imports are made using <  const { importedValue } = require('./moduleName.js');   >`,
+        `We can’t use libraries that uses the commonJS module system without a module bundler, so we cannot directly import it into our code without a module bundler`,
+      ],
       sectionArticles: [
         {
-          articleTitle: `Besides native ES6 Module and the Module Pattern, there are also other module systems that have been used by JavaScript in the past, but again, they were not native Javascript, so they relied on some external implementations, and two examples are AMD Modules and CommonJS module`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `CommonJS modules are important for us because they have been used in Node.js for almost all of its existence, so only very recently ES6 Modules have actually been implemented in Node.js. The big consequence of this is that almost all the modules in the NPM repository, so all these modules that we can use in our own code still use the CommonJS module system  and the reason for that is that NPM was originally only intended for Node.js. Only later NPM became the standard repository for the whole JavaScript world and so now we are basically stuck with CommonJS and so therefore, you will see probably a lot of CommonJS still around.`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `Just like ES6 modules, in CommonJS one file is one module. And we export something from a module using ' export. ' and then the name of the export. Now of course, this is not going to work in the browser but it would work in Node.js. The imports are made using <  const { importedValue } = require('./moduleName.js');   >`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `We can’t use libraries that uses the commonJS module system without a module bundler, so we cannot directly import it into our code without a module bundler`,
+          articleTitle: '',
           articleLinks: [],
           articleExplanations: [],
         },
@@ -3401,13 +3993,10 @@ const modulesAndTooling = {
     {
       sectionTitle: 'Introduction to NPM',
       sectionLinks: [],
-      sectionExplanations: [],
+      sectionExplanations: [
+        `If you want to use NPM you need to install Node.js first, because NPM comes together with Node.js`,
+      ],
       sectionArticles: [
-        {
-          articleTitle: `If you want to use NPM you need to install Node.js first, because NPM comes together with Node.js`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
         {
           articleTitle: `What is NPM? `,
           articleLinks: [],
@@ -3458,34 +4047,17 @@ const modulesAndTooling = {
     },
     {
       sectionTitle: 'Bundling With Parcel and NPM Scripts',
-      sectionLinks: [],
-      sectionExplanations: [],
+      sectionLinks: [`https://parceljs.org/`],
+      sectionExplanations: [
+        'Parcel is just another build tool which is also on NPM and you need to use NPM to install it',
+        `A devDependency is like a tool that we need to build our application but it's not a dependency that we actually include in our code, so it's simply a tool and so that's why it's called a devDependency because we can use it to develop our project and so therefore it appears in a new field in our package.json file`,
+        'We use Parcel in the terminal because Parcel is basically just another command line interface. In order to still be able to use Parcel in the terminal, we have two options: so we can use something called NPX or we can use NPM scripts',
+        `With Parcel you don't need to specify the entire path to a library. In all module bundlers there's no need for specifying the entire path to any module, it’s enough to write the name of the package/module and Parcel will then automatically find the path to the package/module and will import it like when we specified the entire path without us having to manually type the entire path to the package/module`,
+        `Parcel works with all kinds of assets, even with HTML, CSS, SASS files, images, svg and of course also all kinds of modules, so not only ES6 modules but this is also going to work with CommonJS modules`,
+      ],
       sectionArticles: [
         {
-          articleTitle:
-            'Parcel is just another build tool which is also on NPM and you need to use NPM to install it',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `A devDependency is like a tool that we need to build our application but it's not a dependency that we actually include in our code, so it's simply a tool and so that's why it's called a devDependency because we can use it to develop our project and so therefore it appears in a new field in our package.json file`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle:
-            'We use Parcel in the terminal because Parcel is basically just another command line interface. In order to still be able to use Parcel in the terminal, we have two options: so we can use something called NPX or we can use NPM scripts',
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: `With Parcel you don't need to specify the entire path to a library. In all module bundlers there's no need for specifying the entire path to any module, it’s enough to write the name of the package/module and Parcel will then automatically find the path to the package/module and will import it like when we specified the entire path without us having to manually type the entire path to the package/module`,
-          articleLinks: [],
-          articleExplanations: [],
-        },
-        {
-          articleTitle:
-            'Parcel works with all kinds of assets, even with HTML, CSS, SASS files, images, svg and of course also all kinds of modules, so not only ES6 modules but this is also going to work with CommonJS modules',
+          articleTitle: '',
           articleLinks: [],
           articleExplanations: [],
         },
@@ -3493,7 +4065,22 @@ const modulesAndTooling = {
     },
     {
       sectionTitle: 'Configuring Babel and Polyfilling',
-      sectionLinks: [],
+      sectionLinks: [`https://babeljs.io/`],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Version control with Git',
+      sectionLinks: [
+        `https://git-scm.com/`,
+        `https://education.github.com/git-cheat-sheet-education.pdf`,
+      ],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -3526,6 +4113,8 @@ export const data = [
   loops,
   dataStructuresArrays,
   dataStructuresObjects,
+  dataStructuresSets,
+  dataStructuresMaps,
   oop,
   standardBuildInObjects,
   functionalProgramming,
