@@ -4681,7 +4681,24 @@ const events = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener`,
         },
       ],
-      sectionExplanations: [],
+      sectionExplanations: [
+        `addEventListener():
+        <br>The recommended mechanism for adding event handlers in web pages is the addEventListener() method. Inside the addEventListener() function, we specify two parameters: the name of the event we want to register this handler for, and the code that comprises the handler function we want to run in response to it.`,
+        `It is fine to make the handler function a separate named function, like this:
+        <br><img src="../src/img/event_listener1.jpg">
+        <br>➣ The addEventListener() method attaches an event handler to the specified element.
+        <br>➣ The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.
+        <br>➣ You can add many event handlers to one element.
+        <br>➣ You can add many event handlers of the same type to one element, i.e two "click" events.
+        <br>➣ You can add event listeners to any DOM object not only HTML elements. i.e the window object.
+        <br>➣ The addEventListener() method makes it easier to control how the event reacts to bubbling.
+        <br>When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup. You can easily remove an event listener by using the removeEventListener() method.`,
+        `The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target. Common targets are Element, or its children, Document, and Window, but the target may be any object that supports events (such as XMLHttpRequest).`,
+        `removeEventListener():
+        <br>If you've added an event handler using addEventListener(), you can remove it again using the removeEventListener() method. For example, this would remove the changeBackground() event handler:
+        <br><img src="../src/img/event_listener2.jpg">
+        <br>For simple, small programs, cleaning up old, unused event handlers isn't necessary, but for larger, more complex programs, it can improve efficiency. Also, the ability to remove event handlers allows you to have the same button performing different actions in different circumstances: all you have to do is add or remove handlers.`,
+      ],
       sectionArticles: [
         {
           articleTitle: '',
@@ -4694,8 +4711,7 @@ const events = {
       sectionTitle: '2 Ways NOT to Add Events',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [
-        `Other event listener mechanisms
-        <br>We <b>recommend that you <i>use addEventListener() to register event handlers</i></b>. It's the most powerful method and scales best with more complex programs. However, there are two other ways of registering event handlers that you might see: <b>event handler properties</b> and <b>inline event handlers</b>.`,
+        `We <b>recommend that you <i>use addEventListener() to register event handlers</i></b>. It's the most powerful method and scales best with more complex programs. However, there are two other ways of registering event handlers that you might see: <b>event handler properties</b> and <b>inline event handlers</b>.`,
         `<b>Event handler properties</b>
         <br>Objects (such as buttons) that can fire events also usually have properties whose name is 'on' followed by the name of the event. For example, elements have a property 'onclick'. This is called an <i>event handler property</i>. To listen for the event, you can assign the handler function to the property.
         <br><img src="../src/img/events1.jpg">
