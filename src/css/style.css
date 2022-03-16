@@ -126,7 +126,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 50vh;
+  height: 80%;
   width: 85%;
   border-radius: 15px;
   background: linear-gradient(3deg, rgb(32, 32, 32) 0%, rgb(33, 33, 33) 50%);
