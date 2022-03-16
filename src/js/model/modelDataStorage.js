@@ -3811,7 +3811,7 @@ const asynchronousJavascript = {
 };
 
 const domManipulation = {
-  title: 'Document Object Model (DOM)',
+  title: 'Document Object Model (DOM) <br>- Properties & Methods -',
   sections: [
     {
       sectionTitle: 'Introduction to The Document Object',
@@ -4622,7 +4622,7 @@ const domManipulation = {
 };
 
 const events = {
-  title: 'JavaScript Events',
+  title: 'Document Object Model (DOM) <br>- Events -',
   sections: [
     {
       sectionTitle: 'Introduction to Events',
@@ -4631,20 +4631,32 @@ const events = {
           linkTitle: 'Introduction to events',
           linkSource: `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events`,
         },
-      ],
-      sectionExplanations: [],
-      sectionArticles: [
         {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          linkTitle: 'HTML DOM Events',
+          linkSource: `https://www.w3schools.com/js/js_htmldom_events.asp`,
+        },
+        {
+          linkTitle: 'Event reference',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/Events`,
         },
       ],
-    },
-    {
-      sectionTitle: '2 Ways NOT to Add Events',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionExplanations: [
+        `Events are <b>actions <i>or</i> occurrences</b> that happen in the system you are programming, which <b>the system tells you about so your code can react to them</b>. For example, if the user clicks a button on a webpage, you might want to react to that action by displaying an information box. In this article, we discuss some important concepts surrounding events, and look at how they work in browsers`,
+        `In the case of the Web, <i>events are fired inside the browser window</i>, and <i>tend to be attached to a specific item that resides in it</i>. This might be a single element, a set of elements, the HTML document loaded in the current tab, or the entire browser window. There are many different types of events that can occur. For example:
+        <br>➣ The user selects a certain element or hovers the cursor over a certain element.
+        <br>➣ The user chooses a key on the keyboard.
+        <br>➣ The user resizes or closes the browser window.
+        <br>➣ A web page finishes loading.
+        <br>➣ A form is submitted.
+        <br>➣ A video is played, paused, or finishes.
+        <br>➣ An error occurs.
+        <br>You can gather from this that there are a lot of events that can be fired (<a href="https://developer.mozilla.org/en-US/docs/Web/Events">Event reference</a>).`,
+        `<b>To react to an event, you attach an <i>event handler</i> to it</b>. <b>Event handler</b> <i>is a block of code (usually a JavaScript function that you as a programmer create) that runs when the event fires. When such a block of code is defined to run in response to an event, we say we are</i> <b>registering an event handler</b>. Note: <b>Event handlers</b> are sometimes called <b>event listeners</b> — they are pretty much interchangeable for our purposes, although strictly speaking, they work together. The <b>listener</b> <i>listens out for the event happening</i>, and the <b>handler</b> <i>is the code that is run in response to it happening</i>.`,
+        `<b>Note</b>: Web events are not part of the core JavaScript language — they are defined as part of the APIs built into the browser.`,
+        `Objects that can fire events have an addEventListener() method, that takes at least two arguments: the <b>name of the event</b> and <b>a function to handle the event</b>.`,
+        `It's not just web pages:
+        <br><b>Events are not unique to JavaScript</b> — most programming languages have some kind of event model, and the way the model works often differs from JavaScript's way. In fact, the event model in JavaScript for web pages differs from the event model for JavaScript as it is used in other environments. For example, Node.js is a very popular JavaScript runtime that enables developers to use JavaScript to build network and server-side applications. The Node.js event model relies on listeners to listen for events and emitters to emit events periodically — it doesn't sound that different, but the code is quite different, making use of functions like on() to register an event listener, and once() to register an event listener that unregisters after it has run once. You don't need to understand anything about other such environments at this stage in your learning; we just wanted to make it clear that events can differ in different programming environments.`,
+      ],
       sectionArticles: [
         {
           articleTitle: '',
@@ -4679,112 +4691,32 @@ const events = {
       ],
     },
     {
-      sectionTitle: 'Types of Events and Event Handlers',
-      sectionLinks: [
-        {
-          linkTitle: 'HTML DOM Events',
-          linkSource: `https://www.w3schools.com/jsref/dom_obj_event.asp`,
-        },
-      ],
-      sectionExplanations: [],
-      sectionArticles: [
-        {
-          articleTitle: '‘click’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: '‘keypress’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: '‘scroll’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: '‘mouseover’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: '‘mouseout’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: '‘change’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: '‘hashchange’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: '‘load’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: '‘input’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Event Propagation & Delegation',
-      sectionLinks: [
-        {
-          linkTitle: 'What is event bubbling and capturing?',
-          linkSource: `https://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing`,
-        },
-        {
-          linkTitle: 'Event order',
-          linkSource: `https://www.quirksmode.org/js/events_order.html`,
-        },
-        {
-          linkTitle: 'Event Propagation & Event delegation',
-          linkSource: `https://medium.com/@marjuhirsh/event-propagation-event-delegation-7d3db1baf02a`,
-        },
-        {
-          linkTitle: 'stopPropagation() Event Method',
-          linkSource: `https://www.w3schools.com/jsref/event_stoppropagation.asp`,
-        },
-      ],
-      sectionExplanations: [],
-      sectionArticles: [
-        {
-          articleTitle: 'Bubbling',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-        {
-          articleTitle: 'Capturing',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Passing Arguments to Event Handlers',
+      sectionTitle: '2 Ways NOT to Add Events',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
+      sectionExplanations: [
+        `Other event listener mechanisms
+        <br>We <b>recommend that you <i>use addEventListener() to register event handlers</i></b>. It's the most powerful method and scales best with more complex programs. However, there are two other ways of registering event handlers that you might see: <b>event handler properties</b> and <b>inline event handlers</b>.`,
+        `<b>Event handler properties</b>
+        <br>Objects (such as buttons) that can fire events also usually have properties whose name is 'on' followed by the name of the event. For example, elements have a property 'onclick'. This is called an <i>event handler property</i>. To listen for the event, you can assign the handler function to the property.
+        <br><img src="../src/img/events1.jpg">
+        <br>You can also set the handler property to a named function:
+        <br><img src="../src/img/events2.jpg">
+        <br>With event handler properties, you can't add more than one handler for a single event. For example, you can call addEventListener('click', handler) on an element multiple times, with different functions specified in the second argument:
+        <br><img src="../src/img/events3.jpg">
+        <br>This is impossible with event handler properties because any subsequent attempts to set the property will overwrite earlier ones:
+        <br><img src="../src/img/events4.jpg">`,
+        `<b>Inline event handlers — don't use these</b>
+        <br>You might also see a pattern like this in your code:
+        <br><img src="../src/img/events5.jpg">
+        <br><img src="../src/img/events6.jpg">
+        <br>The earliest method of registering event handlers found on the Web involved event handler HTML attributes (or inline event handlers) like the one shown above - the attribute value is literally the JavaScript code you want to run when the event occurs. The above example invokes a function defined inside a 'script' element on the same page, but you could also insert JavaScript directly inside the attribute, for example:
+        <br><img src="../src/img/events7.jpg">
+        <br>You can find HTML attribute equivalents for many of the event handler properties; however, you shouldn't use these — they are considered bad practice. It might seem easy to use an event handler attribute if you are doing something really quick, but they quickly become unmanageable and inefficient.
+        <br>For a start, it is not a good idea to mix up your HTML and your JavaScript, as it becomes hard to read. Keeping your JavaScript separate is a good practice, and if it is in a separate file you can apply it to multiple HTML documents.
+        <br>Even in a single file, inline event handlers are not a good idea. One button is OK, but what if you had 100 buttons? You'd have to add 100 attributes to the file; it would quickly turn into a maintenance nightmare. With JavaScript, you could easily add an event handler function to all the buttons on the page no matter how many there were, using something like this:
+        <br><img src="../src/img/events8.jpg">
+        <br>Finally, many common server configurations will disallow inline JavaScript, as a security measure. <b>You should never use the HTML event handler attributes</b> — those are outdated, and using them is bad practice.`,
       ],
-    },
-    {
-      sectionTitle: 'Events on Multiple Elements',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
       sectionArticles: [
         {
           articleTitle: '',
@@ -4878,6 +4810,103 @@ const events = {
       ],
     },
     {
+      sectionTitle: 'Event Propagation & Delegation',
+      sectionLinks: [
+        {
+          linkTitle: 'What is event bubbling and capturing?',
+          linkSource: `https://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing`,
+        },
+        {
+          linkTitle: 'Event order',
+          linkSource: `https://www.quirksmode.org/js/events_order.html`,
+        },
+        {
+          linkTitle: 'Event Propagation & Event delegation',
+          linkSource: `https://medium.com/@marjuhirsh/event-propagation-event-delegation-7d3db1baf02a`,
+        },
+        {
+          linkTitle: 'stopPropagation() Event Method',
+          linkSource: `https://www.w3schools.com/jsref/event_stoppropagation.asp`,
+        },
+      ],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: 'Bubbling',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: 'Capturing',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Types of Events',
+      sectionLinks: [
+        {
+          linkTitle: 'HTML DOM Events',
+          linkSource: `https://www.w3schools.com/jsref/dom_obj_event.asp`,
+        },
+        {
+          linkTitle: 'Event reference',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/Events`,
+        },
+      ],
+      sectionExplanations: [
+        `Some events, such as click, are available on nearly any element. Others are more specific and only useful in certain situations: for example, the play event is only available on some elements, such as 'video' tag.`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '‘click’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: '‘keypress’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: '‘scroll’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: '‘mouseover’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: '‘mouseout’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: '‘change’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: '‘hashchange’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: '‘load’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+        {
+          articleTitle: '‘input’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
       sectionTitle: 'Keyboard Events',
       sectionLinks: [
         {
@@ -4944,13 +4973,20 @@ const events = {
       ],
     },
     {
-      sectionTitle: 'The Intersection Observer API',
-      sectionLinks: [
+      sectionTitle: 'Passing Arguments to Event Handlers',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionExplanations: [],
+      sectionArticles: [
         {
-          linkTitle: 'Intersection Observer API',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API`,
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
         },
       ],
+    },
+    {
+      sectionTitle: 'Events on Multiple Elements',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [],
       sectionArticles: [
         {
@@ -4978,6 +5014,23 @@ const events = {
 const webAPIs = {
   title: 'Web APIs',
   sections: [
+    {
+      sectionTitle: 'The Intersection Observer API',
+      sectionLinks: [
+        {
+          linkTitle: 'Intersection Observer API',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API`,
+        },
+      ],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
     {
       sectionTitle: 'navigator',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
