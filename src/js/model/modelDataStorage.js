@@ -3814,15 +3814,15 @@ const domManipulation = {
   title: 'Document Object Model (DOM)',
   sections: [
     {
-      sectionTitle: 'The Document Object',
+      sectionTitle: 'Introduction to The Document Object',
       sectionLinks: [
+        {
+          linkTitle: 'DOM Intro - w3schools',
+          linkSource: `https://www.w3schools.com/js/js_htmldom.asp`,
+        },
         {
           linkTitle: 'Introduction to the DOM',
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction`,
-        },
-        {
-          linkTitle: 'HTML DOM',
-          linkSource: `https://www.w3schools.com/js/js_htmldom.asp`,
         },
         {
           linkTitle: 'Document interface',
@@ -3842,28 +3842,146 @@ const domManipulation = {
         },
       ],
       sectionExplanations: [
-        'The DOM is automatically created by the browser as soon as the HTML page loads.',
-        'The DOM, DOM methods and DOM properties are actually part of something called the web APIs. Now, besides the DOM, there are actually a ton more web APIs, such as Timers, the Fetch API and many more.',
+        `What is the DOM?
+        <br>The Document Object Model (DOM) is a programming interface for web documents. It <b>represents the page so that programs can change the document structure, style and content</b>. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page. The DOM is <b>automatically created by the browser</b> as soon as the HTML page loads. The DOM is built using multiple APIs that work together so the DOM, DOM methods and DOM properties are actually <b>part of something called the Web APIs</b>. Now, besides the DOM, there are actually a ton more Web APIs, such as Timers, the Fetch API and many more.`,
+        `A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an <b>object-oriented representation of the web page</b>, it can be modified with a scripting language such as JavaScript. <b>All of the properties, methods and events available for manipulating and creating web pages are organized into objects</b>.`,
+        `The DOM is not a programming language, but without it, the JavaScript language wouldn't have any model or notion of web pages, HTML documents, SVG documents, and their component parts. The document as a whole, the head, tables within the document, table headers, text within the table cells, and all other elements in a document are parts of the document object model for that document. They can all be accessed and manipulated using the DOM and a scripting language like JavaScript. <b>The DOM is not part of the JavaScript language</b>, but is instead a Web API used to build websites. <b>The DOM was designed to be independent of any particular programming language</b>, making the structural representation of the document available from a single, consistent API. Even if most web developers will only use the DOM through JavaScript, implementations of the DOM can be built for any language, even Python.`,
+        `<b>With the HTML DOM, JavaScript can <i>access</i> and <i>change</i> all the elements of an HTML document</b>. The HTML DOM model is constructed as a <b>tree of Objects</b>:`,
+        `<img src="../src/img/dom_tree-of-objects.jpg">`,
+        `With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+        <br>➣ JavaScript can <b><i>change</i></b> all the HTML elements in the page
+        <br>➣ JavaScript can <b><i>change</i></b> all the HTML attributes in the page
+        <br>➣ JavaScript can <b><i>change</i></b> all the CSS styles in the page
+        <br>➣ JavaScript can <b><i>remove</i></b> existing HTML elements and attributes
+        <br>➣ JavaScript can <b><i>add</i></b> new HTML elements and attributes
+        <br>➣ JavaScript can <b><i>react</i></b> to all existing HTML events in the page
+        <br>➣ JavaScript can <b><i>create</i></b> new HTML events in the page`,
+        `What is the DOM?
+        <br>➣ The DOM is a W3C (World Wide Web Consortium) standard.
+        <br>➣ The DOM defines a standard for accessing documents.
+        `,
+        `What is the HTML DOM Document?
+        <br>The HTML DOM is a standard <b>object</b> model and <b>programming interface</b> for HTML. It defines:
+        <br>➣ The HTML elements as <b>objects</b>
+        <br>➣ The <b>properties</b> of all HTML elements
+        <br>➣ The <b>methods</b> to access all HTML elements
+        <br>➣ The <b>events</b> for all HTML elements
+        <br>In other words: The HTML DOM is a standard for how to get, change, add or delete HTML elements.
+        <br>The <b>HTML DOM Document object is the owner of all other objects in your web page</b>. The document object represents your web page. If you want to access any element in an HTML page, you always start with accessing the document object (ex: document.getElementById(id)).`,
+        `The DOM Programming Interface
+        <br>The HTML DOM can be accessed with JavaScript (and with other programming languages). <b>In the DOM, all HTML elements are defined as objects</b>. The programming interface is the properties and methods of each object.
+        <br>➣ HTML <b>DOM methods</b> are <b><i>actions</i></b> you can perform (on HTML Elements).
+        <br>➣ HTML <b>DOM properties</b> are <b><i>values</i></b> (of HTML Elements) that you can set or change.`,
+        `Finding HTML Objects:
+        <br>➣ The first HTML DOM Level 1 (1998), defined 11 HTML objects, object collections, and properties. These are still valid in HTML5.
+        <br>➣ Later, in HTML DOM Level 3, more objects, collections, and properties were added.`,
       ],
       sectionArticles: [
         {
-          articleTitle: 'DOM Methods (actions you can perform)',
+          articleTitle: '',
           articleLinks: [
             {
-              linkTitle: 'HTML DOM Methods',
-              linkSource: `https://www.w3schools.com/js/js_htmldom_methods.asp`,
+              linkTitle: '',
+              linkSource: '',
             },
           ],
           articleExplanations: [],
         },
+      ],
+    },
+    {
+      sectionTitle: 'HTML DOM Elements',
+      sectionLinks: [
         {
-          articleTitle: 'DOM Properties (values that you can set or change)',
-          articleLinks: [
-            {
-              linkTitle: 'HTML DOM Methods',
-              linkSource: `https://www.w3schools.com/js/js_htmldom_methods.asp`,
-            },
-          ],
+          linkTitle: 'HTML DOM Elements - w3schools',
+          linkSource: 'https://www.w3schools.com/js/js_htmldom_elements.asp',
+        },
+      ],
+      sectionExplanations: [
+        `Finding HTML Elements:
+        <br>Often, with JavaScript, you want to <b>manipulate HTML elements</b>. To do so, you have to <b>find the elements first</b>. There are several ways to do this:
+        <br>➣ Finding HTML elements by <b><i>id</i></b>
+        <br>➣ Finding HTML elements by <b><i>tag name</i></b>
+        <br>➣ Finding HTML elements by <b><i>class name</i></b>
+        <br>➣ Finding HTML elements by <b><i>CSS selectors</b> (id, class names, types, attributes, values of attributes, combinators, * , etc)</i>
+        <br>➣ Finding HTML elements by <b><i>HTML object collections</i></b>
+        <br><i>If the element is found, <b>the method will return the element as an object (in element)</b>. If the element is not found, element will contain <b>null</b></i>.`,
+        `After you find the element, the HTML DOM allows JavaScript to change the content, style of HTML elements. HTML DOM also allows JavaScript to react to HTML events.`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'HTML DOM Nodes & Node Lists',
+      sectionLinks: [
+        {
+          linkTitle: `What's the Difference between DOM Node and Element?`,
+          linkSource: 'https://dmitripavlutin.com/dom-node-element/',
+        },
+      ],
+      sectionExplanations: [
+        `The Document Object Model (DOM) is an interface that treats HTML or XML document as a tree structure, where <b>each node is an object of the document</b>. DOM also provides a set of methods to query the tree, alter the structure, style. DOM also uses the term <i>element</i>: which is quite similar to a node. So, what's the difference between a DOM node and an element? Let's find out!`,
+        `<b>What's a DOM node?</b>
+        <br>The key to understanding the difference between a node and an element is to understand what a node is. From a higher viewpoint, a DOM document consists of a hierarchy of nodes. Each node can have a parent and/or children. Let's look at the following HTML document:
+        <br><img src="../src/img/node-vs-element1.jpg">
+        <br>The document contains the following hierarchy of nodes:
+        <br><img src="../src/img/node-vs-element2.jpg">
+        <br>'html' is a node in the document tree. It has 2 children: 'head' and 'body' nodes.
+        <br>'body' is also a node having 3 children: a comment '!-- Page Body --', heading 'h2', and paragraph 'p'. The parent of the 'body' node is 'html' node.
+        <br>The tags in the HTML document represent a node, what's interesting is that regular text is also a node. The paragraph node 'p' has 1 child: the text node "Thank you for visiting my web page!".`,
+        `<b>Note Types</b>
+        <br>How can you distinguish these different types of nodes? The answer lays in the DOM Node interface, particularly in the Node.nodeType property. Node.nodeType can have one of the following values that represents the type of the node:
+        <br>➣ Node.ELEMENT_NODE
+        <br>➣ Node.ATTRIBUTE_NODE
+        <br>➣ Node.TEXT_NODE
+        <br>➣ Node.CDATA_SECTION_NODE
+        <br>➣ Node.PROCESSING_INSTRUCTION_NODE
+        <br>➣ Node.COMMENT_NODE
+        <br>➣ Node.DOCUMENT_NODE
+        <br>➣ Node.DOCUMENT_TYPE_NODE
+        <br>➣ Node.DOCUMENT_FRAGMENT_NODE
+        <br>➣ Node.NOTATION_NODE
+        <br>The constants meaningfully indicate the node type: for example Node.ELEMENT_NODE represents an element node, Node.TEXT_NODE represents a text node, Node.DOCUMENT_NODE the document node, and so on.`,
+        `<b>What is a NodeList?</b>
+        <br>➣ A NodeList object is a list (collection) of nodes extracted from a document. 
+        <br>➣ A NodeList object is almost the same as an HTMLCollection object. 
+        <br>➣ Some (older) browsers return a NodeList object instead of an HTMLCollection for methods like getElementsByClassName(). 
+        <br>➣ All browsers return a NodeList object for the property childNodes. 
+        <br>➣ Most browsers return a NodeList object for the method querySelectorAll().`,
+        `DOM Element:
+        <br>After getting a good grasp of what a DOM node is, now is the time to differentiate the DOM node and element.
+        <br>If you get well the node term, then the answer is obvious: <b>an element is a node of a specific type — element (Node.ELEMENT_NODE)</b>. Along with types like document, comment, text, etc.
+        <br>In simple words, <b>an element is a node that's written using a tag in the HTML document</b> ('html', 'head', 'title', 'body', 'h2', 'p' are all elements because they are represented by tags.
+        <br>The document type, the comment, the text nodes aren't elements because they are not written with tags:
+        <br><img src="../src/img/node-vs-element3.jpg">
+        <br>Node is constructor of a node, and HTMLElement is a constructor of an element in JavaScript DOM. A paragraph, being a node and also an element, is an instance of both Node and HTMLElement`,
+        `<b>Summary:</b>
+        <br>➣ A DOM document is a hierarchical collection of nodes. Each node can have a parent and/or children.
+        <br>➣ Understanding the difference between a DOM node and an element is easy if you understand what a node is.      
+        <br>➣ Nodes have types, the element type being one of them. The element is represented by a tag in the HTML document.      
+        <br><i>Quiz: What type of node never has a parent node?</i>`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'HTML DOM Collections',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionExplanations: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleExplanations: [],
         },
       ],
