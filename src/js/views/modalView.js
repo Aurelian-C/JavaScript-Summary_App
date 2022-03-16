@@ -36,7 +36,7 @@ class ModalView {
               .map(
                 link =>
                   `<h4 class="modal__info--link-title">
-                    <a href="${link.linkSource}" class="modal__info--link">${link.linkTitle}</a>
+                    <a href="${link.linkSource}" class="modal__info--link" target="_blank">${link.linkTitle}</a>
                     </h4>`
               )
               .join(' ')}

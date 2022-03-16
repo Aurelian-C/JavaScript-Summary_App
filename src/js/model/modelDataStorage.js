@@ -16,8 +16,8 @@ const pattern = {
   ],
 };
 
-const javascriptEngineAndRuntime = {
-  title: 'JavaScript Engine & Runtime',
+const engineAndRuntime = {
+  title: 'Engine & Runtime',
   sections: [
     {
       sectionTitle: 'Javascript Engine',
@@ -366,7 +366,7 @@ const javascriptEngineAndRuntime = {
 };
 
 const variablesValues = {
-  title: 'Variables, Values and Primitive/Reference Types in JavaScript',
+  title: 'Variables, Values and Primitive/Reference Types',
   sections: [
     {
       sectionTitle: 'Statements vs Expressions',
@@ -516,8 +516,8 @@ const variablesValues = {
   ],
 };
 
-const javascriptOperators = {
-  title: 'JavaScript Operators',
+const operators = {
+  title: 'Operators',
   sections: [
     {
       sectionTitle: 'Type Conversion and Coercion',
@@ -3310,8 +3310,8 @@ const functionalProgramming = {
   ],
 };
 
-const asynchronousJavascript = {
-  title: 'Asynchronous JavaScript',
+const asynchronous = {
+  title: 'Asynchronous',
   sections: [
     {
       sectionTitle: 'Introduction to Asynchronous Javascript',
@@ -5382,10 +5382,35 @@ const modulesAndTooling = {
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [
         `If you want to use NPM you need to install Node.js first, because NPM comes together with Node.js.`,
-        `What is NPM? <br>- Node Package Manager. <br>- Pre-installed with Node.js. <br>- NPM it's both a software on our computer and a package repository. <br>- Easily install modules/packages on your system.<br>- Modules are basically Javascript libraries. <br>- Makes it easy for developers to share & reuse code.`,
-        `Why we actually need something like NPM. Why do we actually need a way of managing packages or dependencies in our project? <br>- Back in the day before we had NPM, we used to include external libraries right into our HTML, so basically using the script tag and this would then expose a global variable that we could use. This actually creates a couple of problems, at least in a big project. <br>- First, it doesn't make much sense having the html loading all our javascript, that is just really messy. <br>- Second, many times we would actually download a library file to our computer directly, for example, a jQuery JavaScript file but then whenever a new version would come out, we would have to manually go to the site, download the new version, change the file in our file system manually and then include it in the HTML again, maybe with some other name, with some other version number. <br>- And a third reason is that before NPM there simply wasn't a single repository that contained all the packages that we might need and so this made it even worse and more difficult to manually download libraries and manage them on our computers`,
-        `package.json file <br>- Stores the entire configuration of our project. <br>- Manifest file that have all your app info. <br>- List dependencies (name & version). <br>- Specify if versions should be updated. <br>- Create NPM scripts. <br>- Easily create with 'npm init'.`,
-        `node_modules folder <br>- Contains everything about package.json dependecies, and of course the more packages we install they will all get stored into the node_modules folder. <br>- Manifest file that have all your app info. <br>- List dependencies (name & version). <br>- Specify if versions should be updated. <br>- Create NPM scripts. <br>- Easily create with 'npm init'.`,
+        `<b>NPM steps to install a package</b>:
+        <br>1. Checking if we actually have NPM installed ' <b>npm -v</b> ' . If you get any number in the terminal and it doesn't matter which one, then you're good. If you don’t get any number and want to use NPM you need to install Node.js first, because NPM comes together with Node.js.
+        <br>2. In each project in which we want to use NPM, we need to start by initializing it ' npm init ' . Is important that before you run ' <b>npm init</b> ' make sure that you are in your actual application folder.
+        <br>3. ' npm init ' creates automatically <b>package.json</b> and <b>node_modules</b> folder
+        <br>4. Install a package ' <b>npm install <i>packageName</i></b> ' or ' <b>npm i <i>packageName</i></b> '`,
+        `<b>NPM shortcuts</b>:
+        <br>1.  npm <b>-v</b>
+        <br>2.  npm <b>init</b>
+        <br>3.  npm <b>i</b> packageName   or   npm i packageName --save-dev         
+        `,
+        `<b>What is NPM?</b> <br>- Node Package Manager. <br>- Pre-installed with Node.js. <br>- NPM it's both a software on our computer and a package repository. <br>- Easily install modules/packages on your system.<br>- Modules are basically Javascript libraries. <br>- Makes it easy for developers to share & reuse code.`,
+        `<b>Why we actually need something like NPM? Why do we actually need a way of managing packages or dependencies in our project?</b>
+        <br>- Back in the day before we had NPM, we used to include external libraries right into our HTML, so basically using the script tag and this would then expose a global variable that we could use. This actually creates a couple of problems, at least in a big project.
+        <br>- First, it doesn't make much sense having the html loading all our javascript, that is just really messy. <br>- Second, many times we would actually download a library file to our computer directly, for example, a jQuery JavaScript file but then whenever a new version would come out, we would have to manually go to the site, download the new version, change the file in our file system manually and then include it in the HTML again, maybe with some other name, with some other version number.
+        <br>- And a third reason is that before NPM there simply wasn't a single repository that contained all the packages that we might need and so this made it even worse and more difficult to manually download libraries and manage them on our computers`,
+        `<b>package.json file</b>
+        <br>- Stores the entire configuration of our project.
+        <br>- Manifest file that have all your app info.
+        <br>- List dependencies (name & version).
+        <br>- Specify if versions should be updated.
+        <br>- Create NPM scripts.
+        <br>- Easily create with 'npm init'.`,
+        `<b>node_modules folder</b>
+        <br>- Contains everything about package.json dependecies, and of course the more packages we install they will all get stored into the node_modules folder.
+        <br>- Manifest file that have all your app info.
+        <br>- List dependencies (name & version).
+        <br>- Specify if versions should be updated.
+        <br>- Create NPM scripts.
+        <br>- Easily create with 'npm init'.`,
       ],
       sectionArticles: [
         {
@@ -5444,7 +5469,40 @@ const modulesAndTooling = {
           linkSource: `https://education.github.com/git-cheat-sheet-education.pdf`,
         },
       ],
-      sectionExplanations: [],
+      sectionExplanations: [
+        `<b>Configure git and create a repository + .gitignore for specify folders/files that you don't want into your repository</b>
+        <br>1. git init
+        <br>2.1. You need to have an account on Github or any other service that is similar to GitHub in order to store our local repository in the cloud.
+        <br>2.1. git config --global user.name GithubUsername
+        <br>2.2. git config --global user.email e-mailAdress
+      `,
+        `Before steps below we need to have in our directory created the .gitignore file. If VScode didn't create it automatically for you, then you need to create this file manually.`,
+        `<b>Commit files to repository</b>
+        <br>3. git status
+        <br>4. git add -A
+        <br>5. git commit -m “commitMessage”
+        `,
+        `<b>Restore a previous commit</b>   or   <b>restore a commit by ids</b>
+        <br>6.1. git log
+        <br>6.2. git reset --hard HEAD   or   git reset --hard idOfCommit
+        `,
+        `<b>Create, switch and merge a branch</b>
+        <br>7.1. git branch (list branch/s that you currently have)
+        <br>7.2. git branch nameOfBranch (create)
+        <br>7.3. git checkout nameOfBranch (switch)
+        <br>7.4. git merge nameOfBranch (merge)
+        `,
+        `<b>Share</b>   &   <b>update</b>
+        <br>7.1. git remote add origin https://github.com/GithubUsername/projectName.git
+        <br>(with this code we let our local repository know about this https://github.com/GithubUsername/projectName.git remote repository)
+        <br>7.2. git push origin [name of branch you want to push. ex: master]
+        <br>(we can now push code to this remote branch, which remember is called "origin", and of course, you could give this “origin” another name, but "origin" is simply the standard name)
+        `,
+        `<b>Delete branch locally</b>   &   <b>remotely</b>
+        <br>7.1. git branch -d localBranchName (delete branch locally)
+        <br>7.2. git push origin --delete remoteBranchName (delete branch remotely)
+        `,
+      ],
       sectionArticles: [
         {
           articleTitle: '',
@@ -5465,13 +5523,59 @@ const modulesAndTooling = {
         },
       ],
     },
+    {
+      sectionTitle: 'Prettier',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionExplanations: [
+        `Steps to install and format Prettier:
+        <br>1. Install the extension globally
+        <br>2. Settings → Default Formatter → select Prettier
+        <br>3. Settings → Format on Save
+        <br>4. Create .prettierrc with you own preferences
+        <br>// prettier-ignore
+      `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Terminal commands',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionExplanations: [
+        `dir = show you the contents of the current folder.
+        <br>cd .. = we can go up and down the file tree.
+        <br>cd ../.. = move up two levels.
+        <br>cd folderName = move into a folder. Remember Tab key for autocomplete!
+        <br>cd /d D:╲ = change the drive
+        <br>mkdir folderName = create a folder.
+        <br>rmdir folderName = delete a empty folder.
+        <br>edit fileName.js = create a file.
+        <br>edit fileName1.js fileName2.js fileName3.js = create multiple files at once.
+        <br>del fileName.js = delete a file.
+        <br>mv fileName.js ../ = move a file to the parent folder.
+        <br>clear = clear the terminal.
+      `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
   ],
 };
 
 export const data = [
-  javascriptEngineAndRuntime,
+  engineAndRuntime,
   variablesValues,
-  javascriptOperators,
+  operators,
   controlingProgamLogicAndFlow,
   loops,
   dataStructuresArrays,
@@ -5481,7 +5585,7 @@ export const data = [
   oop,
   standardBuildInObjects,
   functionalProgramming,
-  asynchronousJavascript,
+  asynchronous,
   domManipulation,
   events,
   webAPIs,
