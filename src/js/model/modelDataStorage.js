@@ -2772,7 +2772,7 @@ const functionalProgramming = {
   title: 'Functional Programming (FP)',
   sections: [
     {
-      sectionTitle: 'Introduction to FP',
+      sectionTitle: 'Function introduction',
       sectionLinks: [
         {
           linkTitle:
@@ -2780,7 +2780,13 @@ const functionalProgramming = {
           linkSource: `https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0`,
         },
       ],
-      sectionExplanations: [],
+      sectionExplanations: [
+        `A JavaScript function is a <b>block of code designed to perform a particular task</b>. A JavaScript function is <b>executed when "something" invokes it (calls it)</b>.`,
+        `<b class="pre-title">Why Functions?</b>
+        <br>➣ You can reuse code: Define the code once, and use it many times.
+        <br>➣ You can use the same code many times with different arguments, to produce different results.
+      `,
+      ],
       sectionArticles: [
         {
           articleTitle: '',
@@ -2790,14 +2796,244 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Function Declarations vs. Expressions',
+      sectionTitle: 'Function syntax',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionExplanations: [
+        `JavaScript functions are defined with the <b>function keyword</b>. You can use a function <b>declaration</b> or a function <b>expression</b>.`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: 'Function Declarations',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [
+            `A JavaScript function declaration is defined with the <b>function keyword</b>, followed by a <b>name</b>, followed by parentheses <b>()</b>. Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). The parentheses may include parameter names separated by commas: (<b>parameter1</b>, <b>parameter2</b>, ...). The code to be executed, by the function, is placed inside curly brackets: <b>{}</b>`,
+            `Function <b>parameters</b> are listed inside the parentheses () in the function definition. Function <b>arguments</b> are the <b>values</b> received by the function when it is invoked. <i>Inside the function, <b>the arguments (the parameters) behave as local variables<b></i>. Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon).
+            <br><img src="../src/img/function_declarations.jpg">
+            `,
+          ],
+        },
+        {
+          articleTitle: 'Function Expressions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [
+            `A JavaScript function can also be defined using an <b>expression</b>. A function expression can be stored in a variable:
+            <br><img src="../src/img/function_expressions1.jpg">
+          `,
+            `After a function expression has been stored in a variable, the variable can be used as a function:
+            <br><img src="../src/img/function_expressions2.jpg">
+            <br>The function above is actually an <b>anonymous function</b> (<i>a function without a name</i>). Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
+          `,
+          ],
+        },
+        {
+          articleTitle: 'Arrow Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [
+            `Arrow functions allows a <b>short syntax</b> for writing <b>function expressions</b>. You don't need the function keyword, the return keyword, and the curly brackets. 
+            <br><img src="../src/img/function_arrow1.jpg">
+          `,
+            `Arrow functions do not have their own this. They are not well suited for defining object methods. Arrow functions are not hoisted. They must be defined before they are used. Using const is safer than using var, because a function expression is always constant value. You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
+            <br><img src="../src/img/function_arrow2.jpg">
+          `,
+          ],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function parameters',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionExplanations: [
+        `A JavaScript function does not perform any checking on parameter values (arguments). Earlier in this chapter, you learned that functions can have parameters. Function <b>parameters</b> are the names listed in the function definition. Function <b>arguments</b> are the real values passed to (and received by) the function.
+      `,
+        `<b class="pre-title">Parameter Rules</b>
+        <br>➣ JavaScript function definitions do not specify data types for parameters.
+        <br>➣ JavaScript functions do not perform type checking on the passed arguments.
+        <br>➣ JavaScript functions do not check the number of arguments received.
+      `,
+        `<b class="pre-title">Default Parameters</b>
+        <br>If a function is called with missing arguments (less than declared), the missing values are set to undefined. Sometimes this is acceptable, but sometimes it is better to assign a default value to the parameter: 
+        <br><img src="../src/img/function_parameters1.jpg">
+      `,
+        `<b class="pre-title">The Arguments Object</b>
+        <br>JavaScript functions have a built-in object called the arguments object. The argument object contains an array of the arguments used when the function was called (invoked). This way you can simply use a function to find (for instance) the highest value in a list of numbers:
+        <br><img src="../src/img/function_parameters2.jpg">
+        <br>If a function is called with too many arguments (more than declared), these arguments can be reached using the arguments object.
+      `,
+        `<b class="pre-title">Arguments are <i>Passed by Value</i> vs Objects are <i>Passed by Reference</i></b>
+        <br>The parameters, in a function call, are the function's arguments. JavaScript arguments are passed by value: The function only gets to know the values, not the argument's locations. If a function changes an argument's value, it does not change the parameter's original value. Changes to arguments are not visible (reflected) outside the function.
+        <br>In JavaScript, object references are values. Because of this, objects will behave like they are passed by reference: If a function changes an object property, it changes the original value. Changes to object properties are visible (reflected) outside the function.
+      `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function invocation',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionExplanations: [
+        `<b class="pre-title">Invoking a JavaScript Function</b>
+        <br>The code inside a function is not executed when the function is defined. The code inside a function is executed when the function is invoked. It is common to use the term "call a function" instead of "invoke a function". It is also common to say "call upon a function", "start a function", or "execute a function". In this tutorial, we will use invoke, because a JavaScript function can be invoked without being called.
+        <br>The code inside the function will execute when "something" invokes (calls) the function:
+        <br>➣ When an event occurs (when a user clicks a button)
+        <br>➣ When it is invoked (called) from JavaScript code
+        <br>➣ Automatically (self invoked)
+        <br>The () Operator Invokes the Function: accessing a function without () will return the function object instead of the function result.
+      `,
+        `<b class="pre-title">Invoking a Function as a Function</b>
+        <br><img src="../src/img/function_invocation1.jpg">
+        <br>The function above does not belong to any object. But in JavaScript there is always a default global object. In HTML the default global object is the HTML page itself, so the function above "belongs" to the HTML page. In a browser the page object is the browser window. The function above automatically becomes a window function.
+        <br>Note: This is a common way to invoke a JavaScript function, but not a very good practice. Global variables, methods, or functions can easily create name conflicts and bugs in the global object. myFunction() and window.myFunction() is the same function:
+        <br><img src="../src/img/function_invocation2.jpg">
+      `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function invocation & this keyword',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionExplanations: [
+        `<b class="pre-title">What is 'this'?</b>
+        <br>In JavaScript, the this keyword refers to an object. Which object depends on how this is being invoked (used or called). The this keyword refers to different objects depending on how it is used:
+        <br>➣ In an object method, this refers to the object.
+        <br>➣ Alone, this refers to the global object.
+        <br>➣ In a function, this refers to the global object.
+        <br>➣ In a function, in strict mode, this is undefined.
+        <br>➣ In an event, this refers to the element that received the event.
+        <br>➣ Methods like call(), apply(), and bind() can refer this to any object.
+        <br>Note: this is not a variable, this is a keyword. You cannot change the value of this.
+      `,
+        `<b class="pre-title">The Global Object</b>
+        <br>When a function is called without an owner object, the value of this becomes the global object. In a web browser the global object is the browser window. This example returns the window object as the value of this:
+        <br><img src="../src/img/function_invocation3.jpg">
+        <br>Invoking a function as a global function, causes the value of this to be the global object. Using the window object as a variable can easily crash your program.
+      `,
+        `<b class="pre-title">Invoking a Function as a Method</b>
+        <br>In JavaScript you can define functions as object methods. The following example creates an object (myObject), with two properties (firstName and lastName), and a method (fullName):
+        <br><img src="../src/img/function_invocation4.jpg">
+        <br>The fullName method is a function (method). The function (method) belongs to the myObject object. myObject is the owner of the function (method). The thing called this, is the object that "owns" the JavaScript code. In this case the value of this is myObject.
+        <br>Note: Invoking a function as an object method, causes the value of this to be the object itself.
+      `,
+        `<b class="pre-title">Invoking a Function with a Function Constructor</b>
+        <br>If a function invocation is preceded with the new keyword, it is a constructor invocation. It looks like you create a new function, but since JavaScript functions are objects you actually create a new object:
+        <br><img src="../src/img/function_invocation5.jpg">
+        <br>A constructor invocation creates a new object. The new object inherits the properties and methods from its constructor.
+        <br>Note: the this keyword in the constructor does not have a value. The value of this will be the new object created when the function is invoked.
+      `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'The this keyword & call(), apply() and bind()',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionExplanations: [
+        `<b class="pre-title">All Functions are Methods</b>
+        <br>In JavaScript all functions are object methods. If a function is not a method of a JavaScript object, it is a function of the global object (Function Invocation & this keyword - The Global Object).
+      `,
+        `<b class="pre-title">call() method</b>
+        <br>The call() method is a predefined JavaScript method. It can be used to invoke (call) a method with an owner object as an argument (parameter).
+        <br>Method Reuse: with the call() method, you can write a method that can be used on different objects.
+        <br><img src="../src/img/function_invocation6.jpg">
+      `,
+        `<b class="pre-title">apply() method</b>
+        <br>The apply() method is similar to the call() method. The difference between call() and apply() are:
+        <br>➣ The call() method takes arguments separately.
+        <br>➣ The apply() method takes arguments as an array.
+        <br>Note: The apply() method is very handy if you want to use an array instead of an argument list.
+        <br>JavaScript Strict Mode: in JavaScript strict mode, if the first argument of the apply() method is not an object, it becomes the owner (object) of the invoked function. In "non-strict" mode, it becomes the global object.
+      `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function return statement',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionExplanations: [
+        `When JavaScript reaches a return statement, the function will stop executing. If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement. Functions often compute a return value. The return value is "returned" back to the "caller".`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Functions used as variable values',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionExplanations: [
+        `Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.
+        <br><img src="../src/img/function_as_variable_values.jpg">
+        `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Closures & local vs global variables',
       sectionLinks: [
         {
-          linkTitle: 'Functions',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions`,
+          linkTitle: '',
+          linkSource: '',
         },
       ],
-      sectionExplanations: [],
+      sectionExplanations: [
+        `Variables declared within a JavaScript function, become LOCAL to the function. Local variables can only be accessed from within the function. Since local variables are only recognized inside their functions, variables with the same name can be used in different functions. Local variables are created when a function starts, and deleted when the function is completed.`,
+        `<b class="pre-title">Local vs global variables</b>
+        <br>JavaScript variables can belong to the local or global scope. Global variables can be made local (private) with closures. A function can access all variables defined inside (local variables) and outside (global variables) the function. In a web page, global variables belong to the window object.
+        <br>Global variables can be used (and changed) by all scripts in the page (and in the window). A local variable can only be used inside the function where it is defined, it is hidden from other functions and other scripting code. Global and local variables with the same name are different variables, modifying one does not modify the other.
+        <br>Note: Variables created without a declaration keyword (var, let, or const) are always global, even if they are created inside a function.
+        `,
+        `<b class="pre-title">Variable Lifetime</b>
+        <br>Global variables live until the page is discarded, like when you navigate to another page or close the window. Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished. Suppose you want to use a variable for counting something, and you want this counter to be available to all functions. You could use a global variable, and a function to increase the counter:
+        <br><img src="../src/img/function_invocation7.jpg">
+        <br>There is a problem with the solution above: Any code on the page can change the counter, without calling add(). The counter should be local to the add() function, to prevent other code from changing it.
+        `,
+        `<b class="pre-title">JavaScript Nested Functions</b>
+        <br>All functions have access to the global scope.  In fact, in JavaScript, all functions have access to the scope "above" them. JavaScript supports nested functions. Nested functions have access to the scope "above" them. In this example, the inner function plus() has access to the counter variable in the parent function:
+        <br><img src="../src/img/function_invocation8.jpg">
+        <br>This could have solved the counter dilemma, if we could reach the plus() function from the outside. We also need to find a way to execute counter = 0 only once. We need a closure.
+        `,
+        `<b class="pre-title">Closures</b>
+        <br>Remember self-invoking functions? What does this function do?
+        <br><img src="../src/img/function_invocation9.jpg">
+        <br>Example Explained
+        <br>➣ The variable add is assigned to the return value of a self-invoking function.
+        <br>➣ The self-invoking function only runs once. It sets the counter to zero (0), and returns a function expression.
+        <br>➣ This way add becomes a function. The "wonderful" part is that it can access the counter in the parent scope.
+        <br>➣ This is called a JavaScript closure. It makes it possible for a function to have "private" variables.
+        <br>➣ The counter is protected by the scope of the anonymous function, and can only be changed using the add function.
+        <br>Note: A closure is a function having access to the parent scope, even after the parent function has closed.
+        `,
+      ],
       sectionArticles: [
         {
           articleTitle: '',
@@ -2807,14 +3043,18 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Introducing Arguments',
+      sectionTitle: 'Function hoisting',
       sectionLinks: [
         {
-          linkTitle: 'The arguments object',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments`,
+          linkTitle: '',
+          linkSource: '',
         },
       ],
-      sectionExplanations: [],
+      sectionExplanations: [
+        `Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope. Hoisting applies to variable declarations and to function declarations. Because of this, JavaScript functions can be called before they are declared:
+        <br><img src="../src/img/function_hoisting.jpg">`,
+        `Functions defined using an expression are not hoisted.`,
+      ],
       sectionArticles: [
         {
           articleTitle: '',
@@ -2824,50 +3064,43 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'How Passing Arguments Works: Value vs. Reference',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Functions With Multiple Args',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'The Arguments Object',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Default Parameters',
+      sectionTitle: 'Self-Invoking functions (IIFE)',
       sectionLinks: [
         {
-          linkTitle: 'Default parameters',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters`,
+          linkTitle: '',
+          linkSource: '',
         },
       ],
-      sectionExplanations: [],
+      sectionExplanations: [
+        `Function expressions can be made "self-invoking". A self-invoking expression is invoked (started) automatically, without being called. Function expressions will execute automatically if the expression is followed by (). You cannot self-invoke a function declaration. You have to add parentheses around the function to indicate that it is a function expression:
+        <br><img src="../src/img/function_self_invoking.jpg">`,
+        `The function above is actually an anonymous self-invoking function (function without name).`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleExplanations: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Functions are objects',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionExplanations: [
+        `The typeof operator in JavaScript returns "function" for functions. But, JavaScript functions can best be described as objects. JavaScript functions have both properties and methods. The arguments.length property returns the number of arguments received when the function was invoked:
+        <br><img src="../src/img/function_argument_object.jpg">
+      `,
+        `The toString() method returns the function as a string:
+      <br><img src="../src/img/function_method.jpg">
+      `,
+        `A function defined as the property of an object, is called a method to the object. A function designed to create new objects, is called an object constructor.`,
+      ],
       sectionArticles: [
         {
           articleTitle: '',
@@ -2895,18 +3128,6 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Destructuring Parameters',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function invocation',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [],
       sectionArticles: [
@@ -3031,7 +3252,7 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Arrow Functions',
+      sectionTitle: 'Arrow Function',
       sectionLinks: [
         {
           linkTitle: 'Arrow function expressions',
@@ -3041,12 +3262,12 @@ const functionalProgramming = {
       sectionExplanations: [],
       sectionArticles: [
         {
-          articleTitle: 'Arrow Functions: Implicit Returns',
+          articleTitle: 'Arrow Function: Implicit Returns',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleExplanations: [],
         },
         {
-          articleTitle: 'Arrow Functions and THIS keyword',
+          articleTitle: 'Arrow Function and THIS keyword',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleExplanations: [],
         },
@@ -3099,40 +3320,6 @@ const functionalProgramming = {
         {
           linkTitle: 'How to Use the Spread Operator (…) in JavaScript',
           linkSource: `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
-        },
-      ],
-      sectionExplanations: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'The Return Statement',
-      sectionLinks: [
-        {
-          linkTitle: 'return statement',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return`,
-        },
-      ],
-      sectionExplanations: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Closures',
-      sectionLinks: [
-        {
-          linkTitle: 'Closures',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures`,
         },
       ],
       sectionExplanations: [],
@@ -5548,6 +5735,9 @@ const modulesAndTooling = {
         <br>2. Settings → Default Formatter → select Prettier
         <br>3. Settings → Format on Save
         <br>4. Create .prettierrc with you own preferences
+      `,
+        `<b class="pre-title">Prettier in Visual Studio Code</b>:
+        <br>{ "singleQuote": true, "arrowParens": "avoid" }
         <br>// prettier-ignore
       `,
       ],
