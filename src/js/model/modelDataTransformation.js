@@ -7,7 +7,7 @@ const sectionsArray = data
     return {
       title: obj.sectionTitle,
       links: obj.sectionLinks,
-      explanations: obj.sectionExplanations,
+      text: obj.sectionText,
     };
   });
 
@@ -20,7 +20,7 @@ const articlesArray = data
     return {
       title: item.articleTitle,
       links: item.articleLinks,
-      explanations: item.articleExplanations,
+      text: item.articleText,
     };
   });
 

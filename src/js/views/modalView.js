@@ -26,7 +26,7 @@ class ModalView {
     return `
         <div class="modal__info">
         <h3 class="modal__info--title">${element.title}</h3>
-        <div class="modal__info--text">${element.explanations
+        <div class="modal__info--text">${element.text
           .map(text => `<p class="modal__info--text-style">${text}</p>`)
           .join('')}
         </div>

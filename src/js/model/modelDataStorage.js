@@ -4,12 +4,12 @@ const pattern = {
     {
       sectionTitle: 'Section Title',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -22,7 +22,7 @@ const engineAndRuntime = {
     {
       sectionTitle: 'Javascript Engine',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `Javascript Engine is a 'program' that executes JavaScript code. Any JavaScript engine (ex. V8 for Google Chrome) always contains a Call Stack and a Memory Heap. The Call Stack is where our code is actually executed, using something called execution contexts. The Memory Heap is an unstructured memory pool which stores all the objects that our application needs.`,
         `Almost everyone that has worked with JavaScript has heard of the <b>V8 engine, the idea of the JavaScript engine</b>, and most people know that <b>JavaScript is a single threaded language</b> that it uses a <b>Callback Queue</b>. You may also hear phrases like <b>JavaScript is an interpreted language</b>. What is this engine that we speak of? If I write some code like ' const isHappy = true;  ', how does the computer read this code?`,
         `If I gave a computer with a CPU a file that is a JavaScript file and I tell it 'Read this file and do something for me', the computer only understands 1 and 0 at the end of the day, so <b>the computer doesn't really know what JavaScript is</b>. So how are we able to communicate using a JavaScript file so that the computer do something for me? And this is the first step in our learning, and that is the JavaScript engine, <b>by having a JavaScript engine, it allows you to give this engine the JavaScript file and this engine is going to understand the Javascript file and tell the computer what to do</b>. <i>In a sense, you just created a translator so you can communicate with somebody that doesn't know your language</i>, and <b>this special engine called JavaScript Engine understands JavaScript</b>. Our computer finally understands us because of this JavaScript engine.`,
@@ -39,7 +39,7 @@ const engineAndRuntime = {
           articleTitle:
             'Interpreter/Compiler/JIT Compiler and Writing Optimized Code',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
+          articleText: [
             `<img src="../src/img/Interpreter_Compiler_JIT_Compiler.jpg">`,
             `<b>The Parser</b>: Parsing is the <b>process of analyzing the source code</b>, checking it for errors, and breaking it up into parts.`,
             `<b>The Interpreter</b>: An interpreter directly <b>executes each line of code line by line, without requiring them to be compiled into a machine language program</b>. Interpreters can use different strategies to increase performance. They can parse the source code and execute it immediately, translate it into more efficient machine code, execute precompiled code made by a compiler, or some combination of these. <b>In the V8 engine, the interpreter outputs bytecode</b>.`,
@@ -62,7 +62,7 @@ const engineAndRuntime = {
         {
           articleTitle: 'Memoization',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
+          articleText: [
             'Memoization is a way to <b>cache a return value of a function based on its parameters</b>. This makes the function that takes a long time run much faster after one execution. If the parameter changes, it will still have to reevaluate the function.',
             '<img src="../src/img/memoization.jpg">',
           ],
@@ -70,7 +70,7 @@ const engineAndRuntime = {
         {
           articleTitle: 'Memory Heap & Call Stack',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
+          articleText: [
             `The JavaScript engine does a lot of work for us, but 2 of the biggest jobs are reading and executing it. We need <b>a place to store and write our data</b> and <b>a place to keep track line by line of what's executing</b>. That's where the <b>Call Stack</b> and the <b>Memory Heap</b> come in.`,
             `The Memory Heap is <b>a place to store and write information</b> so that we can use our memory appropriately. It is <b>a place to allocate, use, and remove memory as needed</b>.`,
             `<img src="../src/img/memory_heap.jpg">`,
@@ -89,7 +89,7 @@ const engineAndRuntime = {
         {
           articleTitle: 'Memory Leaks & Stack Overflow',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
+          articleText: [
             `<b>Memory leaks</b> happen when you have <b>unused memory</b>, such as variables that are declared globally but you don't use them, but they's still there. Well, <i>by having unused memory just laying around, it fills up the Memory Heap</i> and that's why you might hear why global variables are bad. Global variables are bad because if we don't forget to clean up after ourselves, we fill up the Memory Heap and eventually the browser will not be able to work.`,
             `So what happens if you keep calling functions that are nested inside each other? When this happens it’s called a <b>stack overflow</b>. Example below:`,
             `<img src="../src/img/recursion.jpg">`,
@@ -107,7 +107,7 @@ const engineAndRuntime = {
         {
           articleTitle: 'Garbage Collection',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
+          articleText: [
             `JavaScript is a garbage collected language. If you allocate memory inside of a function, JavaScript will automatically remove it from the memory heap when the function is done being called.`,
             `JavaScript completes garbage collection with a <b>mark</b> and <b>sweep</b> method.`,
             `<img src="../src/img/garbage_collection.jpg">`,
@@ -117,7 +117,7 @@ const engineAndRuntime = {
         {
           articleTitle: 'Single Threaded Model',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
+          articleText: [
             `Each browser has its own version of <b>JavaScript Runtime</b> with a set of <b>Web API's</b>, methods that developers can access from the <b>window object</b>. <b>In a synchronous language, only one thing can be done at a time</b>. Imagine an alert on the page, blocking the user from accessing any part of the page until the OK button is clicked. If everything in JavaScript that took a significant amount of time, blocked the browser, then we would have a pretty bad user experience. This is where <b>concurrency</b> and the <b>event loop</b> come in.`,
           ],
         },
@@ -132,7 +132,7 @@ const engineAndRuntime = {
             'https://medium.com/@gemma.stiles/understanding-the-javascript-runtime-environment-4dd8f52f6fca',
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `Javascript is a <b>single threaded language</b>. This means it has one Call Stack and one Memory Heap. As expected, it executes code in order and must finish executing a piece code before moving onto the next.`,
         `<b>The heart of any JavaScript Runtime is always a JavaScript Engine. Without an engine there is no runtime and there is no JavaScript at all</b>.`,
         `However, <i><b>the engine alone is not enough</i>. In order to work properly, we also need access to the <i>web APIs</i> (ex. DOM, Timers, Fetch API etc)</b>.`,
@@ -144,17 +144,17 @@ const engineAndRuntime = {
         {
           articleTitle: 'Web APIs',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Global Object (window object)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Event Loop & Callback Queue',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
+          articleText: [
             `When you run some JavaScript code in a browser, <b>the engine starts to parse the code. Each line is executed and popped on and off the call stack</b>. But, what about Web API's? Web API's are not something JavaScript recognizes, so the parser knows to pass it off to the browser for it to handle. When the browser has finished running its method, it puts what is needed to be ran by JavaScript into the <b>callback queue</b>. <b>The callback queue cannot be ran until the call stack is completely empty</b>. So, the <b>event loop</b> is constantly checking the call stack to see if it is empty so that it can add anything in the callback queue back into the call stack. And finally, once it is back in the call stack, it is ran and then popped off the stack.`,
             `<img src="../src/img/event_loop.jpg">`,
             `In the last example above, we get the same output. How does this work if it waits 0 seconds? The JavaScript engine will still send off the setTimeout() to the Web API to be ran and it will then go into the callback queue and wait until the call stack is empty to be ran. So, we end up with the exact same end point.`,
@@ -165,7 +165,7 @@ const engineAndRuntime = {
         {
           articleTitle: 'Job Queue or Microtask Queue',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
+          articleText: [
             `The <b>job queue</b> or <b>microtask queue</b> came about with promises in ES6. With promises we needed <b>another callback queue that would give higher priority to promise calls</b>. The JavaScript engine is going to <b>check the job queue before the callback queue</b>.`,
             `<img src="../src/img/job_queue.jpg">`,
           ],
@@ -175,7 +175,7 @@ const engineAndRuntime = {
     {
       sectionTitle: 'Execution Context and the Call Stack',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `Code in JavaScript is always ran inside a type of <b>execution context</b>. Execution context is simply the environment within which your code is ran. There are <i>2 types of execution context in JavaScript</i>, <b>global</b> or <b>function</b>. There are <i>2 stages as well to each context</i>, <b>the creation</b> and <b>executing phase</b>. As the <i>JavaScript engine starts to read your code, it creates something called the</i><b>Global Execution Context</b>.`,
         `How do we run code in JavaScript? Well, we assign variables and then we run functions, right? That's all we really do in a language.`,
         `<i>Initially, our JavaScript engine is going to create a</i><b>global execution context</b>, we don't see this, it's underneath the hood, but it's saying 'Hey, here's the JavaScript file for you, just start reading it for me', <i>and on top of global execution context, that's when we start adding functions calls and then eventually, as these execution context (execution context for the functions calls) get popped off, the last thing that remains is the global execution context. And when the final line of our code runs and we're done with the JavaScript engine, global execution context is going to get popped off the stack</i>.`,
@@ -192,7 +192,7 @@ const engineAndRuntime = {
         {
           articleTitle: 'Global execution context',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
+          articleText: [
             `Creation Phase <br>1. Global Object created (in the browser the global object is <b>'window'</b>)<br>2. Initializes <b>this</b> keyword to global`,
             `Executing Phase <br>3. <b>Variable Environment</b> created - memory space for var variables and functions created <br>4. <b>Initializes all variables</b> to <i>undefined</i> (also known as <b>hoisting</b>) and places them with any functions into memory`,
             `<img src="../src/img/execution_phase.jpg">`,
@@ -201,7 +201,7 @@ const engineAndRuntime = {
         {
           articleTitle: 'Function execution Context',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
+          articleText: [
             `A function context is created by the JavaScript engine <b>when it sees a function call</b>. Each <b>function gets its own execution context</b>.`,
             `Creation Phase <br>1. <b>Argument object</b> created with any arguments (on each execution context we create a new arguments object)<br>2. Sets <b>this</b> to the global object unless in strict mode, where it's undefined`,
             `Executing Phase <br>3. <b>Variable Environment</b> created - <i>memory space for variable and functions created</i> <br>4. <b>Initializes all variables</b> to <i>undefined</i> and places them into memory with any new functions`,
@@ -221,7 +221,7 @@ const engineAndRuntime = {
     {
       sectionTitle: 'Hoisting',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `Hoisting is the <b>process of putting all <i>variable</i> and <i>function declarations</i> into memory during the compile phase</b>. In JavaScript, <i>functions are fully hoisted</i>, <i>var variables are hoisted and initialized to undefined</i>, and <i>let and const variables are hoisted but not initialized a value</i>. Var variables are given a memory allocation and initialized a value of undefined until they are set to a value in line. So if a var variable is used in the code before it is initialized, then it will return undefined. However, a function can be called from anywhere in the code base because it is fully hoisted. If let and const are used before they are declared, then they will throw a reference error because they have not yet been initialized.`,
         `<img src="../src/img/hoisting1.jpg">`,
         `<img src="../src/img/hoisting2.jpg">`,
@@ -236,14 +236,14 @@ const engineAndRuntime = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Lexical Environment',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `A lexical environment is basically the scope or environment the engine is currently reading code in. <b>A new lexical environment is created when curly brackets {} are used</b>, even nested brackets {{...}} create a new lexical environment. The execution context tells the engine which lexical environment it is currently working in and the lexical scope determines the available variables.`,
         `<img src="../src/img/lexical_environment.jpg">`,
         `<i>Lexical environment is simply <b>where you write something</b>, because we now know how our JavaScript engine works. That is, it looks through our code and read through our code and <b>where we write something is important</b></i>. A lexical environment simply means that.`,
@@ -253,14 +253,14 @@ const engineAndRuntime = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Scope Chain',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `<img src="../src/img/scope_chain1.jpg">`,
         `Each environment context that is created has a link outside of its lexical environment called the scope chain. <b>The scope chain gives us access to variables in the parent environment</b>`,
         `<img src="../src/img/scope_chain2.jpg">`,
@@ -277,14 +277,14 @@ const engineAndRuntime = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Leakage of Global Variables',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `<img src="../src/img/leakage_of_global_variables.jpg">`,
         `<i>Is 'height' being created in the variable environment of 'weird'? Well, no, and that's because JavaScript is a little bit weird here. This is actually called</i> <b>leakage of global variables</b>, <i>because what JavaScript does underneath the hood is that it looks at 'height', it says 'This isn't in my nothing's been declared. I haven't seen a var or a const or a let keyword, so I don't have it'. Those keywords (var, let, const) tell JavaScript to put those in our variable environment, but it's not there. So it's going to go up the scope chain to the global environment and says 'Hey, is there such a thing as a height?'. And the global environment is going to say 'No, I don't have it', but it's not throwing in the air, is it? And that's because the global environment actually sees that this doesn't exist and will create it for you</i>.`,
         `This is something that in the past with JavaScript you could do and it caused a lot of problems, so now we have something like <b>'use strict'</b>. That if I add 'use strict' to the top of a page,  'use strict' was introduced as a way to prevent JavaScript for doing these weird, unpredictable edge cases because JavaScript was written by a programmer and there's no such thing as a perfect programming language or a perfect program, and 'use strict' allows us to avoid these pitfalls that shouldn't happen.`,
@@ -294,14 +294,14 @@ const engineAndRuntime = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Function Scope vs Block Scope',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `Most programming languages are block scoped, meaning every time you see a new { } (curly braces) is a new lexical environment. However, <b>JavaScript is function scoped</b>, <i>meaning it only creates a new local environment if it sees the keyword function on the global scope</i>. <b>To give us access to block scope, in ES6 let and const were added to the language</b>. <i>Using these can prevent memory leaks</i>, but there is still an argument to be made for using var.`,
         `<img src="../src/img/scope_function_vs_block.jpg">`,
         `Oh, I get a reference here, 'i' is not defined and why is that? Well, because we use 'let' and not 'var' keyword and we're trying to use 'i' outside of its environment, with 'let' keyword 'i' is block scoped, so the environment that it's in while it's inside of the curly brackets {}, so we can't really access it outside of those brackets, so this isn't going to work.`,
@@ -317,19 +317,19 @@ const engineAndRuntime = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Global Variables & Variable Collisions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -341,24 +341,24 @@ const engineAndRuntime = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Efficient Script Loading: defer & async',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -376,140 +376,140 @@ const variablesValues = {
           linkSource: `https://medium.com/launch-school/javascript-expressions-and-statements-4d32ac9c0e74`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Static vs Dynamically Typed',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         "JavaScript has dynamic typing: we don't have to manually define the data type of the value stored in a variable (value has type, NOT variable!). Instead, data types are determined automatically.",
       ],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Strongly vs Weakly Typed',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Variables & Values',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'var, let & const',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Primitive Types',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Numbers',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Strings & Template Literals',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Booleans',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Null',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Undefined',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Reference Types',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Arrays',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Objects',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Primitives vs. Objects (Primitive vs. Reference Types)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Pass by Value vs Pass by Reference',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -527,12 +527,12 @@ const operators = {
           linkSource: `https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -544,12 +544,12 @@ const operators = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -561,41 +561,41 @@ const operators = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Assignment operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Assignment operator (=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Addition assignment (+=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Subtraction assignment (-=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Increment and decrement',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Postfix increment operator (A++)',
@@ -605,12 +605,12 @@ const operators = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Postfix decrement operator (A--)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Prefix increment operator (++A)',
@@ -620,19 +620,19 @@ const operators = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Prefix decrement operator(--A)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Unary operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'typeof',
@@ -642,66 +642,66 @@ const operators = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'plus operator (+)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'negation operator (-)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Arithmetic operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Addition operator (+)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Subtraction operator (-)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Division operator (/)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Multiplication operator (*)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Remainder operator (%)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Binary logical operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Logical AND (&&)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Logical OR (||)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Short Circuiting with && and ||',
@@ -712,7 +712,7 @@ const operators = {
               linkSource: `https://medium.com/@ezekielphlat/a-simpler-understanding-of-the-short-circuit-operators-in-javascript-d275a313cef1`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Nullish coalescing operator (??)',
@@ -722,66 +722,66 @@ const operators = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Equality operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Equality operator (==)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Inequality operator (!=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Identity operator (===)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Nonidentity operator (!==)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Relational operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'instanceof',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Less than operator (<)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Greater than operator (>)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Less than or equal operator (<=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Greater than or equal operator (>=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -793,12 +793,12 @@ const operators = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -810,12 +810,12 @@ const operators = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -827,12 +827,12 @@ const operators = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -845,108 +845,108 @@ const controlingProgamLogicAndFlow = {
     {
       sectionTitle: 'Taking Decisions in JavaSript',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Boolean Logic',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'If Statements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Else If',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Else',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Nesting Conditionals',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Truthy & Falsy Values',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Logical operators (&&, ||, !)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Comparison Operators (== vs ===)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -962,24 +962,24 @@ const controlingProgamLogicAndFlow = {
           linkSource: `https://www.w3schools.com/js/js_switch.asp`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'The Conditional (Ternary) Operator',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -997,12 +997,12 @@ const loops = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1014,24 +1014,24 @@ const loops = {
           linkSource: `https://www.w3schools.com/js/js_loop_for.asp`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Infinite Loops!',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1043,24 +1043,24 @@ const loops = {
           linkSource: `https://alligator.io/js/foreach-vs-for-loops/`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Nested For Loops',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1072,12 +1072,12 @@ const loops = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1089,12 +1089,12 @@ const loops = {
           linkSource: `https://www.w3schools.com/js/js_break.asp`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1106,36 +1106,36 @@ const loops = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Comparing For and For...Of',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'For...Of with Objects',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1147,12 +1147,12 @@ const loops = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1173,12 +1173,12 @@ const loops = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1196,12 +1196,12 @@ const dataStructuresArrays = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1213,60 +1213,60 @@ const dataStructuresArrays = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Using Const with Arrays',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Array Indices',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Modifying Arrays',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Working with Nested Arrays',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1282,24 +1282,24 @@ const dataStructuresArrays = {
           linkSource: `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Rest Pattern in Arrays',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1315,34 +1315,34 @@ const dataStructuresArrays = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Nested destructuring & skipping items',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Switching variables with destructuring',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Destructuring & Default Values',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Variables assignment with destructuring',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Array Methods (mutate original array)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'push() --- add to original (end)',
@@ -1352,7 +1352,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_push.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'unshift() --- add to original (start)',
@@ -1362,7 +1362,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_unshift.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'pop() --- remove from original(end)',
@@ -1372,7 +1372,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_pop.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'shift() --- remove from original(start)',
@@ -1382,7 +1382,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_shift.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'splice() --- remove from original(any)',
@@ -1392,7 +1392,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_splice.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'reverse() --- others',
@@ -1402,7 +1402,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_reverse.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'sort() --- others',
@@ -1412,7 +1412,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_sort.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'fill() --- others',
@@ -1422,14 +1422,14 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_fill.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Array Methods (a new array)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'map() --- computed from original',
@@ -1439,7 +1439,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_map.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'filter() --- filtered using condition',
@@ -1449,7 +1449,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_filter.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'slice() --- copy portion/entire of original',
@@ -1459,7 +1459,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_slice_array.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'concat() --- adding original to other',
@@ -1469,7 +1469,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_concat_array.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'flat() & flatMap() --- flattening the original',
@@ -1483,14 +1483,14 @@ const dataStructuresArrays = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Array Methods (an array index)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'indexOf() --- based on value',
@@ -1500,7 +1500,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_indexof_array.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'findIndex() --- based on test condition',
@@ -1510,14 +1510,14 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_findindex.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Array Methods (an array element)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'find() --- based on test condition',
@@ -1527,14 +1527,14 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_find.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Array Methods (know if array includes)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'includes() --- based on value',
@@ -1544,7 +1544,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_includes_array.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'some() --- based on test condition',
@@ -1554,7 +1554,7 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_some.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'every() --- based on test condition',
@@ -1564,14 +1564,14 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_every.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Array Methods (a new string)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'join() --- based on separator string',
@@ -1581,14 +1581,14 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_join.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Array Methods (to transform to value)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'reduce() --- based on accumulator',
@@ -1598,14 +1598,14 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_reduce.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Array Methods (to just loop array)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle:
@@ -1616,14 +1616,14 @@ const dataStructuresArrays = {
               linkSource: `https://www.w3schools.com/jsref/jsref_foreach.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Array Methods (others array methods)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Array.isArray()',
@@ -1633,7 +1633,7 @@ const dataStructuresArrays = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Array.from()',
@@ -1643,7 +1643,7 @@ const dataStructuresArrays = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Array.entries()',
@@ -1653,19 +1653,19 @@ const dataStructuresArrays = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'The Magic of Chaining Methods',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1683,53 +1683,53 @@ const dataStructuresObjects = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Dot vs. Bracket Notation',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Enhanced Object Literals',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Properties Shorthand Syntax',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Method Shorthand Syntax',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Computed Properties',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1745,24 +1745,24 @@ const dataStructuresObjects = {
           linkSource: `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Rest Pattern in Objects',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1782,77 +1782,77 @@ const dataStructuresObjects = {
           linkSource: `https://dmitripavlutin.com/javascript-object-destructuring/`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Nested Destructuring',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle:
             'Destructuring & Default Values & Using Different Variable Names',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Destructuring Assignment',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Variables assignment with destructuring',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle:
             'Unpacking properties from objects passed as a function parameter',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Adding Methods to Objects',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Using THIS keyword in methods',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'THIS: Invocation Context',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Object methods',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Object.fromEntries() vs Object.entries()',
@@ -1866,7 +1866,7 @@ const dataStructuresObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Object.assign()',
@@ -1876,7 +1876,7 @@ const dataStructuresObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Object.freeze()',
@@ -1886,7 +1886,7 @@ const dataStructuresObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Object.create()',
@@ -1896,7 +1896,7 @@ const dataStructuresObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1914,12 +1914,12 @@ const dataStructuresSets = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1937,12 +1937,12 @@ const dataStructuresMaps = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -1960,63 +1960,63 @@ const oop = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Java',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: '4 Principles of OOP',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Abstraction',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Encapsulation',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Inheritance',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Polymorphism',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Factory Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -2032,12 +2032,12 @@ const oop = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'this keyword',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'new keyword',
@@ -2047,7 +2047,7 @@ const oop = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Prototype',
@@ -2057,12 +2057,12 @@ const oop = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Prototypal Inheritance and The Prototype Chain',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -2074,12 +2074,12 @@ const oop = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -2095,7 +2095,7 @@ const oop = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Setters and Getters',
@@ -2113,7 +2113,7 @@ const oop = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Static Methods',
@@ -2123,7 +2123,7 @@ const oop = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Extends, Super and Subclasses',
@@ -2145,63 +2145,63 @@ const oop = {
               linkSource: `https://www.w3schools.com/jsref/jsref_class_super.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Encapsulation: Protected Properties and Methods',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Encapsulation: Private Class Fields and Methods',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Inheritance Between "Classes":',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Constructor Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Object.create()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'ES6 Classes',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Standard build-in objects',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Prototypal Inheritance on Built-In Objects',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -2219,12 +2219,12 @@ const standardBuildInObjects = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -2236,12 +2236,12 @@ const standardBuildInObjects = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -2253,7 +2253,7 @@ const standardBuildInObjects = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'indexOf()',
@@ -2263,7 +2263,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'lastIndexOf()',
@@ -2273,7 +2273,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'slice()',
@@ -2283,7 +2283,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'toLowerCase()',
@@ -2293,7 +2293,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'toUpperCase()',
@@ -2303,7 +2303,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'trim()',
@@ -2313,7 +2313,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'replace()',
@@ -2323,7 +2323,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'replaceAll()',
@@ -2333,7 +2333,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'includes()',
@@ -2343,7 +2343,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'startsWith()',
@@ -2353,7 +2353,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'endsWith()',
@@ -2363,7 +2363,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'split()',
@@ -2373,7 +2373,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'padStart()',
@@ -2383,7 +2383,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'padEnd()',
@@ -2393,7 +2393,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'repeat()',
@@ -2403,7 +2403,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -2415,12 +2415,12 @@ const standardBuildInObjects = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Number() & Addition operator (+)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Number.parseInt()',
@@ -2430,7 +2430,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Number.parseFloat()',
@@ -2440,7 +2440,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Number.isNaN()',
@@ -2450,7 +2450,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Number.isFinite()',
@@ -2460,7 +2460,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Number.isInteger()',
@@ -2470,7 +2470,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'toFixed()',
@@ -2480,7 +2480,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -2492,7 +2492,7 @@ const standardBuildInObjects = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'max()',
@@ -2502,7 +2502,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'min()',
@@ -2512,7 +2512,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'round()',
@@ -2522,7 +2522,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'ceil()',
@@ -2532,7 +2532,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'floor()',
@@ -2542,7 +2542,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'trunc()',
@@ -2552,7 +2552,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'random()',
@@ -2562,7 +2562,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'abs()',
@@ -2572,7 +2572,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -2584,12 +2584,12 @@ const standardBuildInObjects = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -2602,17 +2602,17 @@ const standardBuildInObjects = {
             'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date',
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'new Date()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Date.now()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getFullYear()',
@@ -2622,7 +2622,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getMonth()',
@@ -2632,7 +2632,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getDate()',
@@ -2642,7 +2642,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getDay()',
@@ -2652,7 +2652,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getHours()',
@@ -2662,7 +2662,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getMinutes()',
@@ -2672,7 +2672,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getSeconds()',
@@ -2682,7 +2682,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getTime() vs Convert a date to a number',
@@ -2692,7 +2692,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'toISOString()',
@@ -2702,7 +2702,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'setFullYear()',
@@ -2712,7 +2712,7 @@ const standardBuildInObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -2724,7 +2724,7 @@ const standardBuildInObjects = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'DateTimeFormat()',
@@ -2738,7 +2738,7 @@ const standardBuildInObjects = {
               linkSource: `http://www.lingoes.net/en/translator/langcode.htm`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'NumberFormat()',
@@ -2756,12 +2756,12 @@ const standardBuildInObjects = {
               linkSource: `https://en.wikipedia.org/wiki/ISO_4217`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'navigator.language',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -2780,7 +2780,7 @@ const functionalProgramming = {
           linkSource: `https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0`,
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `A JavaScript function is a <b>block of code designed to perform a particular task</b>. A JavaScript function is <b>executed when "something" invokes it (calls it)</b>.`,
         `<b class="pre-title">Why Functions?</b>
         <br>➣ You can reuse code: Define the code once, and use it many times.
@@ -2791,58 +2791,54 @@ const functionalProgramming = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Function syntax',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `JavaScript functions are defined with the <b>function keyword</b>. You can use a function <b>declaration</b> or a function <b>expression</b>.`,
+        `<b class="pre-title">Function Declarations</b>
+        <br>A JavaScript function declaration is defined with the <b>function keyword</b>, followed by a <b>name</b>, followed by parentheses <b>()</b>. Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). The parentheses may include parameter names separated by commas: (<b>parameter1</b>, <b>parameter2</b>, ...). The code to be executed, by the function, is placed inside curly brackets: <b>{}</b>
+        <br>Function <b>parameters</b> are listed inside the parentheses () in the function definition. Function <b>arguments</b> are the <b>values</b> received by the function when it is invoked. <i>Inside the function, <b>the arguments (the parameters) behave as local variables</b></i>. Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon).
+        <br><img src="../src/img/function_declarations.jpg">`,
+        `<b class="pre-title">Function Expressions</b>
+        <br>A JavaScript function can also be defined using an <b>expression</b>. A function expression can be stored in a variable:
+        <br><img src="../src/img/function_expressions1.jpg">
+        <br>After a function expression has been stored in a variable, the variable can be used as a function:
+        <br><img src="../src/img/function_expressions2.jpg">
+        <br>The function above is actually an <b>anonymous function</b> (<i>a function without a name</i>). Functions stored in variables do not need function names. They are always invoked (called) using the variable name.`,
+        `<b class="pre-title">Arrow Functions</b>
+        <br>Arrow functions allows a <b>short syntax</b> for writing <b>function expressions</b>. You don't need the function keyword, the return keyword, and the curly brackets. 
+        <br><img src="../src/img/function_arrow1.jpg">
+        <br>Arrow functions do not have their own this. They are not well suited for defining object methods. Arrow functions are not hoisted. They must be defined before they are used. Using const is safer than using var, because a function expression is always constant value. You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
+        <br><img src="../src/img/function_arrow2.jpg">
+        `,
       ],
       sectionArticles: [
         {
           articleTitle: 'Function Declarations',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
-            `A JavaScript function declaration is defined with the <b>function keyword</b>, followed by a <b>name</b>, followed by parentheses <b>()</b>. Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). The parentheses may include parameter names separated by commas: (<b>parameter1</b>, <b>parameter2</b>, ...). The code to be executed, by the function, is placed inside curly brackets: <b>{}</b>`,
-            `Function <b>parameters</b> are listed inside the parentheses () in the function definition. Function <b>arguments</b> are the <b>values</b> received by the function when it is invoked. <i>Inside the function, <b>the arguments (the parameters) behave as local variables<b></i>. Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon).
-            <br><img src="../src/img/function_declarations.jpg">
-            `,
-          ],
+          articleText: [],
         },
         {
           articleTitle: 'Function Expressions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
-            `A JavaScript function can also be defined using an <b>expression</b>. A function expression can be stored in a variable:
-            <br><img src="../src/img/function_expressions1.jpg">
-          `,
-            `After a function expression has been stored in a variable, the variable can be used as a function:
-            <br><img src="../src/img/function_expressions2.jpg">
-            <br>The function above is actually an <b>anonymous function</b> (<i>a function without a name</i>). Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
-          `,
-          ],
+          articleText: [],
         },
         {
           articleTitle: 'Arrow Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
-            `Arrow functions allows a <b>short syntax</b> for writing <b>function expressions</b>. You don't need the function keyword, the return keyword, and the curly brackets. 
-            <br><img src="../src/img/function_arrow1.jpg">
-          `,
-            `Arrow functions do not have their own this. They are not well suited for defining object methods. Arrow functions are not hoisted. They must be defined before they are used. Using const is safer than using var, because a function expression is always constant value. You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
-            <br><img src="../src/img/function_arrow2.jpg">
-          `,
-          ],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Function parameters',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `A JavaScript function does not perform any checking on parameter values (arguments). Earlier in this chapter, you learned that functions can have parameters. Function <b>parameters</b> are the names listed in the function definition. Function <b>arguments</b> are the real values passed to (and received by) the function.
       `,
         `<b class="pre-title">Parameter Rules</b>
@@ -2866,16 +2862,32 @@ const functionalProgramming = {
       ],
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Parameter Rules',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Default Parameters',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'The Arguments Object',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle:
+            'Arguments are <i>Passed by Value</i> vs Objects are <i>Passed by Reference</i>',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Function invocation',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `<b class="pre-title">Invoking a JavaScript Function</b>
         <br>The code inside a function is not executed when the function is defined. The code inside a function is executed when the function is invoked. It is common to use the term "call a function" instead of "invoke a function". It is also common to say "call upon a function", "start a function", or "execute a function". In this tutorial, we will use invoke, because a JavaScript function can be invoked without being called.
         <br>The code inside the function will execute when "something" invokes (calls) the function:
@@ -2893,16 +2905,21 @@ const functionalProgramming = {
       ],
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Invoking a JavaScript Function',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Invoking a Function as a Function',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Function invocation & this keyword',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `<b class="pre-title">What is 'this'?</b>
         <br>In JavaScript, the this keyword refers to an object. Which object depends on how this is being invoked (used or called). The this keyword refers to different objects depending on how it is used:
         <br>➣ In an object method, this refers to the object.
@@ -2933,16 +2950,31 @@ const functionalProgramming = {
       ],
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: `What is 'this'?`,
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
+        },
+        {
+          articleTitle: 'The Global Object',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Invoking a Function as a Method',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Invoking a Function with a Function Constructor',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'The this keyword & call(), apply() and bind()',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `<b class="pre-title">All Functions are Methods</b>
         <br>In JavaScript all functions are object methods. If a function is not a method of a JavaScript object, it is a function of the global object (Function Invocation & this keyword - The Global Object).
       `,
@@ -2961,30 +2993,40 @@ const functionalProgramming = {
       ],
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'All Functions are Methods',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
+        },
+        {
+          articleTitle: 'call() method',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'apply() method',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Function return statement',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `When JavaScript reaches a return statement, the function will stop executing. If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement. Functions often compute a return value. The return value is "returned" back to the "caller".`,
       ],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Functions used as variable values',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.
         <br><img src="../src/img/function_as_variable_values.jpg">
         `,
@@ -2993,7 +3035,7 @@ const functionalProgramming = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3005,7 +3047,7 @@ const functionalProgramming = {
           linkSource: '',
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `Variables declared within a JavaScript function, become LOCAL to the function. Local variables can only be accessed from within the function. Since local variables are only recognized inside their functions, variables with the same name can be used in different functions. Local variables are created when a function starts, and deleted when the function is completed.`,
         `<b class="pre-title">Local vs global variables</b>
         <br>JavaScript variables can belong to the local or global scope. Global variables can be made local (private) with closures. A function can access all variables defined inside (local variables) and outside (global variables) the function. In a web page, global variables belong to the window object.
@@ -3017,7 +3059,7 @@ const functionalProgramming = {
         <br><img src="../src/img/function_invocation7.jpg">
         <br>There is a problem with the solution above: Any code on the page can change the counter, without calling add(). The counter should be local to the add() function, to prevent other code from changing it.
         `,
-        `<b class="pre-title">JavaScript Nested Functions</b>
+        `<b class="pre-title">Nested Functions</b>
         <br>All functions have access to the global scope.  In fact, in JavaScript, all functions have access to the scope "above" them. JavaScript supports nested functions. Nested functions have access to the scope "above" them. In this example, the inner function plus() has access to the counter variable in the parent function:
         <br><img src="../src/img/function_invocation8.jpg">
         <br>This could have solved the counter dilemma, if we could reach the plus() function from the outside. We also need to find a way to execute counter = 0 only once. We need a closure.
@@ -3036,9 +3078,19 @@ const functionalProgramming = {
       ],
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Variable Lifetime',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Nested Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Closures',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
         },
       ],
     },
@@ -3050,7 +3102,7 @@ const functionalProgramming = {
           linkSource: '',
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope. Hoisting applies to variable declarations and to function declarations. Because of this, JavaScript functions can be called before they are declared:
         <br><img src="../src/img/function_hoisting.jpg">`,
         `Functions defined using an expression are not hoisted.`,
@@ -3059,19 +3111,20 @@ const functionalProgramming = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
-      sectionTitle: 'Self-Invoking functions (IIFE)',
+      sectionTitle:
+        'Self-Invoking functions / Immediately Invoked Function Expressions (IIFE)',
       sectionLinks: [
         {
           linkTitle: '',
           linkSource: '',
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `Function expressions can be made "self-invoking". A self-invoking expression is invoked (started) automatically, without being called. Function expressions will execute automatically if the expression is followed by (). You cannot self-invoke a function declaration. You have to add parentheses around the function to indicate that it is a function expression:
         <br><img src="../src/img/function_self_invoking.jpg">`,
         `The function above is actually an anonymous self-invoking function (function without name).`,
@@ -3080,7 +3133,7 @@ const functionalProgramming = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3092,7 +3145,7 @@ const functionalProgramming = {
           linkSource: '',
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `The typeof operator in JavaScript returns "function" for functions. But, JavaScript functions can best be described as objects. JavaScript functions have both properties and methods. The arguments.length property returns the number of arguments received when the function was invoked:
         <br><img src="../src/img/function_argument_object.jpg">
       `,
@@ -3105,7 +3158,7 @@ const functionalProgramming = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3117,24 +3170,24 @@ const functionalProgramming = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Destructuring Parameters',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3150,7 +3203,7 @@ const functionalProgramming = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this`,
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `<b>this</b> is the <b>object</b> that the <b>function</b> is a property of (<i><b>the 'this' keyword acts as a placeholder</b> and we'll refer to whichever object called that method 'window' object or other object)</i>.`,
         `There that's simple right? Well, maybe not, what does that mean? Back in Execution Context, we talked about how the <i>JavaScript engine creates the global execution context and <b>initializes this to the global window object</b></i>.`,
         `<img src="../src/img/this1.jpg">`,
@@ -3176,14 +3229,14 @@ const functionalProgramming = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Lexical vs Dynamic Scope',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `A big gotcha for a lot of people working with *this is when a function is ran inside of another function. It gets a little confusing, but we can remember who called the function.`,
         `<img src="../src/img/lexical_dynamic_scope_this1.jpg">`,
         `<b>Functions inside of method</b> <i>is, well, a function inside of a function. That means <b>'this' keyword is not assigned to the object itself, but actually to the 'window' object</b></i>.`,
@@ -3206,7 +3259,7 @@ const functionalProgramming = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3226,7 +3279,7 @@ const functionalProgramming = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind`,
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `In order for us to <b>manipulate the 'this' keyword</b>, there are 3 important methods (call, apply and bind).`,
         `Underneath the hood, all functions use call() when invoking a function. Let me show you what I mean.`,
         `<img src="../src/img/this_call1.jpg">`,
@@ -3243,7 +3296,7 @@ const functionalProgramming = {
         {
           articleTitle: 'Currying with bind()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [
+          articleText: [
             `Currying is <b>breaking down a function with <i>multiple arguments</i> into one or more functions that each accept a <i>single argument</i></b>. <br><img src="../src/img/currying_bind1.jpg">`,
             `Exercise 1: Find the largest number in an array <br><img src="../src/img/currying_bind2.jpg">`,
             `Exercise 2: How would you fix this?<br><img src="../src/img/currying_bind3.jpg">`,
@@ -3259,29 +3312,29 @@ const functionalProgramming = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Arrow Function: Implicit Returns',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Arrow Function and THIS keyword',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Regular Functions vs. Arrow Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3293,7 +3346,7 @@ const functionalProgramming = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Glossary/IIFE`,
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `Immediately Invoked Function Expression or more simply IIFE is <b>a JavaScript function that runs as soon as it is defined</b>. Can also be referred to as a Self-Executing Anonymous Function.`,
         `<img src="../src/img/iife.jpg">`,
         `We already know this code and we should already understand what the JavaScript engine is going to do with this code, you see IIFE are common JavaScript design pattern use by a lot of popular libraries, especially back in the day like jQuery or even BackboneJS, <b>the idea was using this IIFE code pattern, we can place all library code inside of local scope to avoid any namespace collisions</b>.`,
@@ -3306,7 +3359,7 @@ const functionalProgramming = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3322,12 +3375,12 @@ const functionalProgramming = {
           linkSource: `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3343,18 +3396,18 @@ const functionalProgramming = {
           linkSource: `https://eloquentjavascript.net/05_higher_order.html`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Functions Accepting Callback Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle:
             'A Function Can Be Passed As An Argument To Other Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'A Function Can Be Returned By Another Function',
@@ -3365,96 +3418,96 @@ const functionalProgramming = {
               linkSource: `https://medium.com/@iampika/part-6-javascript-functions-returning-functions-from-functions-429a3d9a55d1`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'A Function Can Be Assigned As A Value To A Variable',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Callbacks',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Functions vs Objects',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Scheme + Java',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Curry',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Partial Application',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Pure Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Referential Transparency',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3467,12 +3520,12 @@ const functionalProgramming = {
           linkSource: `https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3485,12 +3538,12 @@ const functionalProgramming = {
           linkSource: `https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3517,12 +3570,12 @@ const asynchronous = {
           linkSource: `https://thecodest.co/blog/asynchronous-and-single-threaded-javascript-meet-the-event-loop/`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3538,36 +3591,36 @@ const asynchronous = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/API`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Microtask Queue (Job Queue)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Task Queue (Callback Queue)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3580,19 +3633,19 @@ const asynchronous = {
           linkSource: `https://thecodest.co/blog/asynchronous-and-single-threaded-javascript-meet-the-event-loop/`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Timers',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'setTimeout()',
@@ -3602,7 +3655,7 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/setTimeout`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'clearTimeout()',
@@ -3612,7 +3665,7 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'setInterval()',
@@ -3622,7 +3675,7 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/setInterval`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'clearInterval()',
@@ -3632,7 +3685,7 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/clearInterval`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3644,12 +3697,12 @@ const asynchronous = {
           linkSource: `https://www.w3schools.com/js/js_ajax_intro.asp`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3661,12 +3714,12 @@ const asynchronous = {
           linkSource: `https://www.w3schools.com/js/js_json_intro.asp`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3678,39 +3731,39 @@ const asynchronous = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'const request = new XMLHttpRequest()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'request.open(‘GET’, ‘url’)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'request.send()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'request.addEventListener(‘load’, function)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'XMLHttpRequests: Chaining Requests',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Welcome to Callback Hell',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -3730,64 +3783,64 @@ const asynchronous = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'fetch(‘url’)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle:
             'fetch() will always return a promise that need to by handled by consuming it',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Consuming Promises',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '.then(callback function with ‘response’ parameter)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'returning a Promise with response.json()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'returning a Promise with response.text()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Chaining Promises',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'returning a Promise and handle it outside the chain',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Handling Rejected Promises',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '.catch(callback function with ‘error’ parameter)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: '.finally(callback function)',
@@ -3797,14 +3850,14 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Throwing Errors Manually',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'throw new Error()',
@@ -3818,32 +3871,32 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Building a Simple Promise',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle:
             'new Promise(function(resolve, reject) {      resolve(fulfilled value);  reject(rejected value)  })',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Wrap old callback based functions into Promises',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Consuming Promises with Async/Await',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '‘async’ funtions',
@@ -3853,7 +3906,7 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: '‘await’ keyword',
@@ -3863,37 +3916,37 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'An ‘async function’ will always return a promise',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle:
             'Store ‘await’ Promises results in variables like const',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Multiple Awaits',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Error Handling in Async Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'try {} catch(error) {}',
@@ -3903,32 +3956,32 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle:
             'Rethrowing an error when you have multiple async funtions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Returning Values from Async Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'An async function always returns a Promise',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Parallel Vs. Sequential Requests',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Promise.all([ ])',
@@ -3938,14 +3991,14 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Other Promise Combinators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Promise.race([ ])',
@@ -3955,7 +4008,7 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Promise.allSettled([ ])',
@@ -3965,7 +4018,7 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Promise.any([ ])',
@@ -3975,14 +4028,14 @@ const asynchronous = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: `Top-Level ' await ' (ES2022)`,
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `Top-Level 'await' work only in modules. With ES2022 you can use 'await' keyword outside of an 'async function', but only in modules.`,
         `If one module imports a module which has a Top-Level 'await', then the importing module will wait for the imported module to finish the blocking code. So Top-Level 'await' is in fact blocking the execution not only in the imported module, but also in the module that is importing the imported module.`,
       ],
@@ -3990,7 +4043,7 @@ const asynchronous = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -4028,7 +4081,7 @@ const domManipulation = {
           linkSource: `https://dmitripavlutin.com/dom-node-element/`,
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `<b class="pre-title">What is the DOM?</b>
         <br>The Document Object Model (DOM) is a programming interface for web documents. It <b>represents the page so that programs can change the document structure, style and content</b>. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page. The DOM is <b>automatically created by the browser</b> as soon as the HTML page loads. The DOM is built using multiple APIs that work together so the DOM, DOM methods and DOM properties are actually <b>part of something called the Web APIs</b>. Now, besides the DOM, there are actually a ton more Web APIs, such as Timers, the Fetch API and many more.
         <br>A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an <b>object-oriented representation of the web page</b>, it can be modified with a scripting language such as JavaScript. <b>All of the properties, methods and events available for manipulating and creating web pages are organized into objects</b>.
@@ -4072,7 +4125,7 @@ const domManipulation = {
               linkSource: '',
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -4084,7 +4137,7 @@ const domManipulation = {
           linkSource: 'https://www.w3schools.com/js/js_htmldom_elements.asp',
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `Finding HTML Elements:
         <br>Often, with JavaScript, you want to <b>manipulate HTML elements</b>. To do so, you have to <b>find the elements first</b>. There are several ways to do this:
         <br>➣ Finding HTML elements by <b><i>id</i></b>
@@ -4099,7 +4152,7 @@ const domManipulation = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -4111,7 +4164,7 @@ const domManipulation = {
           linkSource: 'https://dmitripavlutin.com/dom-node-element/',
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `The Document Object Model (DOM) is an interface that treats HTML or XML document as a tree structure, where <b>each node is an object of the document</b>. DOM also provides a set of methods to query the tree, alter the structure, style. DOM also uses the term <i>element</i>: which is quite similar to a node. So, what's the difference between a DOM node and an element? Let's find out!`,
         `<b>What's a DOM node?</b>
         <br>The key to understanding the difference between a node and an element is to understand what a node is. From a higher viewpoint, a DOM document consists of a hierarchy of nodes. Each node can have a parent and/or children. Let's look at the following HTML document:
@@ -4157,19 +4210,19 @@ const domManipulation = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'HTML DOM Collections',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -4181,7 +4234,7 @@ const domManipulation = {
           linkSource: `https://zellwk.com/blog/dom-traversals/`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'document.documentElement',
@@ -4191,7 +4244,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'document.head',
@@ -4201,7 +4254,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/head`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'document.body',
@@ -4211,7 +4264,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/body`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getElementById()',
@@ -4221,7 +4274,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getElementsByTagName()',
@@ -4231,7 +4284,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getElementsByClassName()',
@@ -4241,7 +4294,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'querySelector() (document/element)',
@@ -4251,7 +4304,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'querySelectorAll() (document/element)',
@@ -4261,7 +4314,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'children',
@@ -4271,7 +4324,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/children`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'childNodes',
@@ -4281,7 +4334,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'firstElementChild',
@@ -4291,7 +4344,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/firstElementChild`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'lastElementChild',
@@ -4301,7 +4354,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/lastElementChild`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'firstChild',
@@ -4311,7 +4364,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'lastChild',
@@ -4321,7 +4374,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/lastChild`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'closest()',
@@ -4331,7 +4384,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/closest`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'parentElement',
@@ -4341,7 +4394,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'parentNode',
@@ -4351,7 +4404,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'previousElementSibling',
@@ -4361,7 +4414,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'nextElementSibling',
@@ -4371,7 +4424,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'previousSibling',
@@ -4381,7 +4434,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/previousSibling`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'nextSibling',
@@ -4391,14 +4444,14 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Create, insert & remove DOM elements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'document.createElement()',
@@ -4408,7 +4461,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'prepend()',
@@ -4418,7 +4471,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'append()',
@@ -4428,7 +4481,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/append`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'before()',
@@ -4438,7 +4491,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/before`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'after()',
@@ -4448,7 +4501,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/after`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'insertAdjacentHTML()',
@@ -4458,7 +4511,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'insertAdjacentText()',
@@ -4468,7 +4521,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentText`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'cloneNode()',
@@ -4478,7 +4531,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'remove()',
@@ -4488,7 +4541,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/remove`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'innerHTML',
@@ -4498,7 +4551,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'innerText',
@@ -4508,7 +4561,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'textContent',
@@ -4518,14 +4571,14 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Styles, Attributes & Classes',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'style',
@@ -4535,7 +4588,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getComputedStyle()',
@@ -4545,7 +4598,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'setProperty()',
@@ -4555,7 +4608,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'setAttribute()',
@@ -4565,7 +4618,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getAttribute()',
@@ -4575,7 +4628,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'alt',
@@ -4585,7 +4638,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'src',
@@ -4595,12 +4648,12 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/src`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'href',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'hidden',
@@ -4610,7 +4663,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'value',
@@ -4620,7 +4673,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/value`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'dataset',
@@ -4638,7 +4691,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'classList (add, remove, toggle, contains)',
@@ -4648,7 +4701,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/classList`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'className',
@@ -4658,14 +4711,14 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/className`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Other methods & properties',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'clientHeight',
@@ -4675,7 +4728,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'clientWidth',
@@ -4685,7 +4738,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/clientWidth`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'offsetHeight',
@@ -4695,7 +4748,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'getBoundingClientRect()',
@@ -4705,7 +4758,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'scrollIntoView()',
@@ -4715,7 +4768,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'blur()',
@@ -4725,7 +4778,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/blur`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'focus()',
@@ -4735,7 +4788,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'attributes',
@@ -4745,7 +4798,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'isEqualNode()',
@@ -4755,7 +4808,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/isEqualNode`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'nodeValue',
@@ -4765,7 +4818,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Node.contains()',
@@ -4775,7 +4828,7 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/contains`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'document.createRange().createContextualFragment()',
@@ -4789,19 +4842,19 @@ const domManipulation = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Range/createContextualFragment`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Changing Multiple Elements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -4827,7 +4880,7 @@ const events = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/Events`,
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `Events are <b>actions <i>or</i> occurrences</b> that happen in the system you are programming, which <b>the system tells you about so your code can react to them</b>. For example, if the user clicks a button on a webpage, you might want to react to that action by displaying an information box. In this article, we discuss some important concepts surrounding events, and look at how they work in browsers`,
         `In the case of the Web, <i>events are fired inside the browser window</i>, and <i>tend to be attached to a specific item that resides in it</i>. This might be a single element, a set of elements, the HTML document loaded in the current tab, or the entire browser window. There are many different types of events that can occur. For example:
         <br>➣ The user selects a certain element or hovers the cursor over a certain element.
@@ -4848,7 +4901,7 @@ const events = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -4868,7 +4921,7 @@ const events = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener`,
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `addEventListener():
         <br>The recommended mechanism for adding event handlers in web pages is the addEventListener() method. Inside the addEventListener() function, we specify two parameters: the name of the event we want to register this handler for, and the code that comprises the handler function we want to run in response to it.`,
         `It is fine to make the handler function a separate named function, like this:
@@ -4890,14 +4943,14 @@ const events = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: '2 Ways NOT to Add Events',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `We <b>recommend that you <i>use addEventListener() to register event handlers</i></b>. It's the most powerful method and scales best with more complex programs. However, there are two other ways of registering event handlers that you might see: <b>event handler properties</b> and <b>inline event handlers</b>.`,
         `<b>Event handler properties</b>
         <br>Objects (such as buttons) that can fire events also usually have properties whose name is 'on' followed by the name of the event. For example, elements have a property 'onclick'. This is called an <i>event handler property</i>. To listen for the event, you can assign the handler function to the property.
@@ -4924,7 +4977,7 @@ const events = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -4945,7 +4998,7 @@ const events = {
           linkSource: `https://stackoverflow.com/questions/35936365/what-exactly-is-the-parameter-e-event-and-why-pass-it-to-javascript-functions`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'e.preventDefault()',
@@ -4955,7 +5008,7 @@ const events = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'e.target',
@@ -4969,7 +5022,7 @@ const events = {
               linkSource: `https://www.w3schools.com/jsref/event_target.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'e.currentTarget',
@@ -4983,7 +5036,7 @@ const events = {
               linkSource: `https://www.w3schools.com/jsref/event_currenttarget.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'e.composedPath()',
@@ -4993,7 +5046,7 @@ const events = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'e.stopPropagation()',
@@ -5003,12 +5056,12 @@ const events = {
               linkSource: `https://www.w3schools.com/jsref/event_stoppropagation.asp`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'e.key',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -5032,17 +5085,17 @@ const events = {
           linkSource: `https://www.w3schools.com/jsref/event_stoppropagation.asp`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'Bubbling',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'Capturing',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -5058,54 +5111,54 @@ const events = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/Events`,
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `Some events, such as click, are available on nearly any element. Others are more specific and only useful in certain situations: for example, the play event is only available on some elements, such as 'video' tag.`,
       ],
       sectionArticles: [
         {
           articleTitle: '‘click’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: '‘keypress’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: '‘scroll’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: '‘mouseover’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: '‘mouseout’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: '‘change’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: '‘hashchange’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: '‘load’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: '‘input’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -5117,7 +5170,7 @@ const events = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'keypress',
@@ -5127,7 +5180,7 @@ const events = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/keypress_event`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'keyup',
@@ -5137,7 +5190,7 @@ const events = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/keyup_event`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'keydown',
@@ -5147,67 +5200,67 @@ const events = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Form Events & PreventDefault',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Input & Change Events',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Passing Arguments to Event Handlers',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Events on Multiple Elements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Lifecycle DOM Events',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -5225,19 +5278,19 @@ const webAPIs = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'navigator',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'navigator.language',
@@ -5247,7 +5300,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Navigator/language`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'navigator.geolocation.getCurrentPosition()',
@@ -5257,7 +5310,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -5269,22 +5322,22 @@ const webAPIs = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'localStorage.setItem()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'localStorage.getItem()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'localStorage.removeItem()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'JSON.stringify()',
@@ -5294,7 +5347,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'JSON.parse()',
@@ -5304,7 +5357,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -5316,7 +5369,7 @@ const webAPIs = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'window.location.reload()',
@@ -5326,7 +5379,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/location`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'window.location.hash',
@@ -5340,7 +5393,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Location/hash`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'window.history.pushState()',
@@ -5354,7 +5407,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/History/pushState`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'window.open(‘url’, ‘_blank’)',
@@ -5364,7 +5417,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/open`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'window.pageXOffset vs scrollX',
@@ -5375,7 +5428,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'window.pageYOffset vs scrollY',
@@ -5386,7 +5439,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'window.scrollTo()',
@@ -5396,7 +5449,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
         {
           articleTitle: 'window.innerHeight',
@@ -5407,7 +5460,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -5419,7 +5472,7 @@ const webAPIs = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/FormData`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: 'new FormData()',
@@ -5429,7 +5482,7 @@ const webAPIs = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData`,
             },
           ],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -5464,19 +5517,19 @@ const modulesAndTooling = {
           linkSource: `https://hacks.mozilla.org/2015/08/es6-in-depth-modules/`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Exporting and Importing in native ES6 Modules',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `In moduleName.js names, it's also a convention to use camelCase names.`,
         `ES6 Modules are native to Javascript.`,
         `There is no need to use the defer attribute when loading a module script; modules are deferred automatically.`,
@@ -5494,14 +5547,14 @@ const modulesAndTooling = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Named exports/imports in ES6 Modules',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `Export/import multiple things with {} & change name of exports/imports using ‘as’ (with Named Imports you have to give to imports values the same name as name you defined in export module and you have to put them inside curly braces).`,
         `Import all the exports of a module at the same time with * and 'as' by creating a module object (when we import everything from a module with * the convention is to use the first letter of the namespace as capital letter, just like in classes. This will create a namespace for all of the values exported from that module, so basically this we'll create an object containing everything that is exported from the module).`,
       ],
@@ -5509,14 +5562,14 @@ const modulesAndTooling = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Default exports/imports in ES6 Modules',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `Use only one default export per module`,
         `When you import a default export you can imported without {} and you can give any name that you want. We can give to default import any name that we want because default export don't have a name.`,
         `Default Export is designed to make it easy to have a default function provided by a module, and also helps JavaScript modules to interoperate with existing CommonJS and AMD module systems.`,
@@ -5525,14 +5578,14 @@ const modulesAndTooling = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'The Module Pattern with IIFE',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `Module Pattern was used before ES6 Modules in order to implement modules in Javascript.`,
         `Just like in regular modules, the main goal of the Module Pattern is to encapsulate functionality, to have private data and to expose a public API and the best way of achieving all that is by simply using a function, because functions give us private data by default and allow us to return values, which can become our public API.`,
         `We implement Module Pattern by writing a function and usually we write an IIFE (Immediately Invoked Function Expression) and the reason for that is because this way we don't have to call it separately and we can also ensure that it's only called once. So it's very important that this function is only created once because the goal of this function is not to reuse code by running it multiple times, the only purpose of this function is to create a new scope and return data just once.`,
@@ -5543,14 +5596,14 @@ const modulesAndTooling = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'CommonJS & AMD Modules',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `Besides native ES6 Module and the Module Pattern, there are also other module systems that have been used by JavaScript in the past, but again, they were not native Javascript, so they relied on some external implementations, and two examples are AMD Modules and CommonJS module.`,
         `CommonJS modules are important for us because they have been used in Node.js for almost all of its existence, so only very recently ES6 Modules have actually been implemented in Node.js. The big consequence of this is that almost all the modules in the NPM repository, so all these modules that we can use in our own code still use the CommonJS module system  and the reason for that is that NPM was originally only intended for Node.js. Only later NPM became the standard repository for the whole JavaScript world and so now we are basically stuck with CommonJS and so therefore, you will see probably a lot of CommonJS still around.`,
         `Just like ES6 modules, in CommonJS one file is one module. And we export something from a module using ' export. ' and then the name of the export. Now of course, this is not going to work in the browser but it would work in Node.js. The imports are made using <  const { importedValue } = require('./moduleName.js');   >.`,
@@ -5560,14 +5613,14 @@ const modulesAndTooling = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Introduction to NPM',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `If you want to use NPM you need to install Node.js first, because NPM comes together with Node.js.`,
         `<b class="pre-title">NPM steps to install a package</b>:
         <br>1. Checking if we actually have NPM installed ' <b>npm -v</b> ' . If you get any number in the terminal and it doesn't matter which one, then you're good. If you don’t get any number and want to use NPM you need to install Node.js first, because NPM comes together with Node.js.
@@ -5609,7 +5662,7 @@ const modulesAndTooling = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -5621,7 +5674,7 @@ const modulesAndTooling = {
           linkSource: `https://parceljs.org/`,
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `<b class="pre-title">Install and configure Parcel</b>:
         <br>1. Install ' <b>npm i parcel --save-dev</b> '
         <br>2. Acces package.json → write <b>"start": "parcel index.html"</b> in "script" object → in terminal write ' <b>npm run start</b> ' or just simple ' <b>npm start</b> '
@@ -5642,7 +5695,7 @@ const modulesAndTooling = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -5654,12 +5707,12 @@ const modulesAndTooling = {
           linkSource: `https://babeljs.io/`,
         },
       ],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
@@ -5672,7 +5725,7 @@ const modulesAndTooling = {
           linkSource: `https://education.github.com/git-cheat-sheet-education.pdf`,
         },
       ],
-      sectionExplanations: [
+      sectionText: [
         `<b class="pre-title">Configure git and create a repository + .gitignore for specify folders/files that you don't want into your repository</b>
         <br>1. git init
         <br>2.1. You need to have an account on Github or any other service that is similar to GitHub in order to store our local repository in the cloud.
@@ -5710,26 +5763,26 @@ const modulesAndTooling = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Refactoring Our Code: The DRY Principle',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [],
+      sectionText: [],
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Prettier',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `<b class="pre-title">Steps to install and format Prettier</b>:
         <br>1. Install the extension globally
         <br>2. Settings → Default Formatter → select Prettier
@@ -5745,14 +5798,14 @@ const modulesAndTooling = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },
     {
       sectionTitle: 'Terminal commands',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionExplanations: [
+      sectionText: [
         `<b class="pre-title">Summary:</b>
         <br>dir = show you the contents of the current folder.
         <br>cd .. = we can go up and down the file tree.
@@ -5772,7 +5825,7 @@ const modulesAndTooling = {
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleExplanations: [],
+          articleText: [],
         },
       ],
     },

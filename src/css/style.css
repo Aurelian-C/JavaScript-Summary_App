@@ -76,7 +76,7 @@ body {
 
 .sub_section--info-title {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .sub_section--title {
@@ -85,7 +85,7 @@ body {
   letter-spacing: 0.2px;
   margin: 0 0 0 10px;
   word-spacing: 1px;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .sub_section--articles {
