@@ -3842,13 +3842,13 @@ const domManipulation = {
         },
       ],
       sectionExplanations: [
-        `What is the DOM?
-        <br>The Document Object Model (DOM) is a programming interface for web documents. It <b>represents the page so that programs can change the document structure, style and content</b>. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page. The DOM is <b>automatically created by the browser</b> as soon as the HTML page loads. The DOM is built using multiple APIs that work together so the DOM, DOM methods and DOM properties are actually <b>part of something called the Web APIs</b>. Now, besides the DOM, there are actually a ton more Web APIs, such as Timers, the Fetch API and many more.`,
-        `A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an <b>object-oriented representation of the web page</b>, it can be modified with a scripting language such as JavaScript. <b>All of the properties, methods and events available for manipulating and creating web pages are organized into objects</b>.`,
-        `The DOM is not a programming language, but without it, the JavaScript language wouldn't have any model or notion of web pages, HTML documents, SVG documents, and their component parts. The document as a whole, the head, tables within the document, table headers, text within the table cells, and all other elements in a document are parts of the document object model for that document. They can all be accessed and manipulated using the DOM and a scripting language like JavaScript. <b>The DOM is not part of the JavaScript language</b>, but is instead a Web API used to build websites. <b>The DOM was designed to be independent of any particular programming language</b>, making the structural representation of the document available from a single, consistent API. Even if most web developers will only use the DOM through JavaScript, implementations of the DOM can be built for any language, even Python.`,
-        `<b>With the HTML DOM, JavaScript can <i>access</i> and <i>change</i> all the elements of an HTML document</b>. The HTML DOM model is constructed as a <b>tree of Objects</b>:`,
-        `<img src="../src/img/dom_tree-of-objects.jpg">`,
-        `With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+        `<b class="pre-title">What is the DOM?</b>
+        <br>The Document Object Model (DOM) is a programming interface for web documents. It <b>represents the page so that programs can change the document structure, style and content</b>. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page. The DOM is <b>automatically created by the browser</b> as soon as the HTML page loads. The DOM is built using multiple APIs that work together so the DOM, DOM methods and DOM properties are actually <b>part of something called the Web APIs</b>. Now, besides the DOM, there are actually a ton more Web APIs, such as Timers, the Fetch API and many more.
+        <br>A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an <b>object-oriented representation of the web page</b>, it can be modified with a scripting language such as JavaScript. <b>All of the properties, methods and events available for manipulating and creating web pages are organized into objects</b>.
+        <br>The DOM is not a programming language, but without it, the JavaScript language wouldn't have any model or notion of web pages, HTML documents, SVG documents, and their component parts. The document as a whole, the head, tables within the document, table headers, text within the table cells, and all other elements in a document are parts of the document object model for that document. They can all be accessed and manipulated using the DOM and a scripting language like JavaScript. <b>The DOM is not part of the JavaScript language</b>, but is instead a Web API used to build websites. <b>The DOM was designed to be independent of any particular programming language</b>, making the structural representation of the document available from a single, consistent API. Even if most web developers will only use the DOM through JavaScript, implementations of the DOM can be built for any language, even Python.
+        <br><b>With the HTML DOM, JavaScript can <i>access</i> and <i>change</i> all the elements of an HTML document</b>. The HTML DOM model is constructed as a <b>tree of Objects</b>:
+        <br><img src="../src/img/dom_tree-of-objects.jpg">`,
+        `<b class="pre-title">With the object model, JavaScript gets all the power it needs to create dynamic HTML</b>:
         <br>➣ JavaScript can <b><i>change</i></b> all the HTML elements in the page
         <br>➣ JavaScript can <b><i>change</i></b> all the HTML attributes in the page
         <br>➣ JavaScript can <b><i>change</i></b> all the CSS styles in the page
@@ -3856,11 +3856,11 @@ const domManipulation = {
         <br>➣ JavaScript can <b><i>add</i></b> new HTML elements and attributes
         <br>➣ JavaScript can <b><i>react</i></b> to all existing HTML events in the page
         <br>➣ JavaScript can <b><i>create</i></b> new HTML events in the page`,
-        `What is the DOM?
+        `<b class="pre-title">What is the DOM?</b>
         <br>➣ The DOM is a W3C (World Wide Web Consortium) standard.
         <br>➣ The DOM defines a standard for accessing documents.
         `,
-        `What is the HTML DOM Document?
+        `<b class="pre-title">What is the HTML DOM Document?</b>
         <br>The HTML DOM is a standard <b>object</b> model and <b>programming interface</b> for HTML. It defines:
         <br>➣ The HTML elements as <b>objects</b>
         <br>➣ The <b>properties</b> of all HTML elements
@@ -3868,11 +3868,11 @@ const domManipulation = {
         <br>➣ The <b>events</b> for all HTML elements
         <br>In other words: The HTML DOM is a standard for how to get, change, add or delete HTML elements.
         <br>The <b>HTML DOM Document object is the owner of all other objects in your web page</b>. The document object represents your web page. If you want to access any element in an HTML page, you always start with accessing the document object (ex: document.getElementById(id)).`,
-        `The DOM Programming Interface
+        `<b class="pre-title">The DOM Programming Interface</b>
         <br>The HTML DOM can be accessed with JavaScript (and with other programming languages). <b>In the DOM, all HTML elements are defined as objects</b>. The programming interface is the properties and methods of each object.
         <br>➣ HTML <b>DOM methods</b> are <b><i>actions</i></b> you can perform (on HTML Elements).
         <br>➣ HTML <b>DOM properties</b> are <b><i>values</i></b> (of HTML Elements) that you can set or change.`,
-        `Finding HTML Objects:
+        `<b class="pre-title">Finding HTML Objects</b>:
         <br>➣ The first HTML DOM Level 1 (1998), defined 11 HTML objects, object collections, and properties. These are still valid in HTML5.
         <br>➣ Later, in HTML DOM Level 3, more objects, collections, and properties were added.`,
       ],
@@ -5382,29 +5382,35 @@ const modulesAndTooling = {
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [
         `If you want to use NPM you need to install Node.js first, because NPM comes together with Node.js.`,
-        `<b>NPM steps to install a package</b>:
+        `<b class="pre-title">NPM steps to install a package</b>:
         <br>1. Checking if we actually have NPM installed ' <b>npm -v</b> ' . If you get any number in the terminal and it doesn't matter which one, then you're good. If you don’t get any number and want to use NPM you need to install Node.js first, because NPM comes together with Node.js.
         <br>2. In each project in which we want to use NPM, we need to start by initializing it ' npm init ' . Is important that before you run ' <b>npm init</b> ' make sure that you are in your actual application folder.
         <br>3. ' npm init ' creates automatically <b>package.json</b> and <b>node_modules</b> folder
         <br>4. Install a package ' <b>npm install <i>packageName</i></b> ' or ' <b>npm i <i>packageName</i></b> '`,
-        `<b>NPM shortcuts</b>:
+        `<b class="pre-title">NPM shortcuts</b>:
         <br>1.  npm <b>-v</b>
         <br>2.  npm <b>init</b>
         <br>3.  npm <b>i</b> packageName   or   npm i packageName --save-dev         
         `,
-        `<b>What is NPM?</b> <br>- Node Package Manager. <br>- Pre-installed with Node.js. <br>- NPM it's both a software on our computer and a package repository. <br>- Easily install modules/packages on your system.<br>- Modules are basically Javascript libraries. <br>- Makes it easy for developers to share & reuse code.`,
-        `<b>Why we actually need something like NPM? Why do we actually need a way of managing packages or dependencies in our project?</b>
+        `<b class="pre-title">What is NPM?</b> 
+        <br>- Node Package Manager.
+        <br>- Pre-installed with Node.js.
+        <br>- NPM it's both a software on our computer and a package repository.
+        <br>- Easily install modules/packages on your system.
+        <br>- Modules are basically Javascript libraries.
+        <br>- Makes it easy for developers to share & reuse code.`,
+        `<b class="pre-title">Why we actually need something like NPM? Why do we actually need a way of managing packages or dependencies in our project?</b>
         <br>- Back in the day before we had NPM, we used to include external libraries right into our HTML, so basically using the script tag and this would then expose a global variable that we could use. This actually creates a couple of problems, at least in a big project.
         <br>- First, it doesn't make much sense having the html loading all our javascript, that is just really messy. <br>- Second, many times we would actually download a library file to our computer directly, for example, a jQuery JavaScript file but then whenever a new version would come out, we would have to manually go to the site, download the new version, change the file in our file system manually and then include it in the HTML again, maybe with some other name, with some other version number.
         <br>- And a third reason is that before NPM there simply wasn't a single repository that contained all the packages that we might need and so this made it even worse and more difficult to manually download libraries and manage them on our computers`,
-        `<b>package.json file</b>
+        `<b class="pre-title">package.json file</b>
         <br>- Stores the entire configuration of our project.
         <br>- Manifest file that have all your app info.
         <br>- List dependencies (name & version).
         <br>- Specify if versions should be updated.
         <br>- Create NPM scripts.
         <br>- Easily create with 'npm init'.`,
-        `<b>node_modules folder</b>
+        `<b class="pre-title">node_modules folder</b>
         <br>- Contains everything about package.json dependecies, and of course the more packages we install they will all get stored into the node_modules folder.
         <br>- Manifest file that have all your app info.
         <br>- List dependencies (name & version).
@@ -5429,7 +5435,7 @@ const modulesAndTooling = {
         },
       ],
       sectionExplanations: [
-        `Install and configure Parcel:
+        `<b class="pre-title">Install and configure Parcel</b>:
         <br>1. Install ' <b>npm i parcel --save-dev</b> '
         <br>2. Acces package.json → write <b>"start": "parcel index.html"</b> in "script" object → in terminal write ' <b>npm run start</b> ' or just simple ' <b>npm start</b> '
         <br>3. Write <b>"build": "parcel build index.html –dist-dir ./dist"</b> in "script" object → in terminal write ' <b>npm run build</b> '
@@ -5437,7 +5443,7 @@ const modulesAndTooling = {
         <br>In Parcel 2, before you run the build script, you need to modify "main": "index.js" in "default": "index.js".
 
       `,
-        `<b>Summary</b>:
+        `<b class="pre-title">Summary</b>:
       <br>➣ Parcel is just another build tool which is also on NPM and you need to use NPM to install it.
       <br>➣ A devDependency is like a tool that we need to build our application but it's not a dependency that we actually include in our code, so it's simply a tool and so that's why it's called a devDependency because we can use it to develop our project and so therefore it appears in a new field in our package.json file.
       <br>➣ We use Parcel in the terminal because Parcel is basically just another command line interface. In order to still be able to use Parcel in the terminal, we have two options: so we can use something called NPX or we can use NPM scripts.
@@ -5480,35 +5486,35 @@ const modulesAndTooling = {
         },
       ],
       sectionExplanations: [
-        `<b>Configure git and create a repository + .gitignore for specify folders/files that you don't want into your repository</b>
+        `<b class="pre-title">Configure git and create a repository + .gitignore for specify folders/files that you don't want into your repository</b>
         <br>1. git init
         <br>2.1. You need to have an account on Github or any other service that is similar to GitHub in order to store our local repository in the cloud.
         <br>2.1. git config --global user.name GithubUsername
         <br>2.2. git config --global user.email e-mailAdress
       `,
         `Before steps below we need to have in our directory created the .gitignore file. If VScode didn't create it automatically for you, then you need to create this file manually.`,
-        `<b>Commit files to repository</b>
+        `<b class="pre-title">Commit files to repository</b>
         <br>3. git status
         <br>4. git add -A
         <br>5. git commit -m “commitMessage”
         `,
-        `<b>Restore a previous commit</b>   or   <b>restore a commit by ids</b>
+        `<b class="pre-title">Restore a previous commit</b>   or   <b class="pre-title">restore a commit by ids</b>
         <br>6.1. git log
         <br>6.2. git reset --hard HEAD   or   git reset --hard idOfCommit
         `,
-        `<b>Create, switch and merge a branch</b>
+        `<b class="pre-title">Create, switch and merge a branch</b>
         <br>7.1. git branch (list branch/s that you currently have)
         <br>7.2. git branch nameOfBranch (create)
         <br>7.3. git checkout nameOfBranch (switch)
         <br>7.4. git merge nameOfBranch (merge)
         `,
-        `<b>Share</b>   &   <b>update</b>
+        `<b class="pre-title">Share</b>   &   <b class="pre-title">update</b>
         <br>7.1. git remote add origin https://github.com/GithubUsername/projectName.git
         <br>(with this code we let our local repository know about this https://github.com/GithubUsername/projectName.git remote repository)
         <br>7.2. git push origin [name of branch you want to push. ex: master]
         <br>(we can now push code to this remote branch, which remember is called "origin", and of course, you could give this “origin” another name, but "origin" is simply the standard name)
         `,
-        `<b>Delete branch locally</b>   &   <b>remotely</b>
+        `<b class="pre-title">Delete branch locally</b>   &   <b class="pre-title">remotely</b>
         <br>7.1. git branch -d localBranchName (delete branch locally)
         <br>7.2. git push origin --delete remoteBranchName (delete branch remotely)
         `,
@@ -5537,7 +5543,7 @@ const modulesAndTooling = {
       sectionTitle: 'Prettier',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [
-        `Steps to install and format Prettier:
+        `<b class="pre-title">Steps to install and format Prettier</b>:
         <br>1. Install the extension globally
         <br>2. Settings → Default Formatter → select Prettier
         <br>3. Settings → Format on Save
@@ -5557,7 +5563,8 @@ const modulesAndTooling = {
       sectionTitle: 'Terminal commands',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionExplanations: [
-        `dir = show you the contents of the current folder.
+        `<b class="pre-title">Summary:</b>
+        <br>dir = show you the contents of the current folder.
         <br>cd .. = we can go up and down the file tree.
         <br>cd ../.. = move up two levels.
         <br>cd folderName = move into a folder. Remember Tab key for autocomplete!

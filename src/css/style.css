@@ -176,6 +176,10 @@ body {
   outline: none;
 }
 
+.pre-title {
+  font-size: 1.3rem;
+}
+
 img {
   max-width: 90%;
 }
