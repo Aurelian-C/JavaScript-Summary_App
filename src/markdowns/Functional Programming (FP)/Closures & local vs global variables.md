@@ -1,6 +1,8 @@
+# Closures & local vs global variables
+
 Variables declared within a JavaScript function, become LOCAL to the function. Local variables can only be accessed from within the function. Since local variables are only recognized inside their functions, variables with the same name can be used in different functions. Local variables are created when a function starts, and deleted when the function is completed.
 
-# Local vs global variables
+## Local vs global variables
 
 JavaScript variables can belong to the local or global scope. Global variables can be made local (private) with closures. A function can access all variables defined inside (local variables) and outside (global variables) the function. In a web page, global variables belong to the window object.
 
@@ -8,7 +10,7 @@ Global variables can be used (and changed) by all scripts in the page (and in th
 
 Note: Variables created without a declaration keyword (var, let, or const) are always global, even if they are created inside a function.
 
-# Variable Lifetime
+## Variable Lifetime
 
 Global variables live until the page is discarded, like when you navigate to another page or close the window. Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished. Suppose you want to use a variable for counting something, and you want this counter to be available to all functions. You could use a global variable, and a function to increase the counter:
 
@@ -31,7 +33,7 @@ add();
 
 There is a problem with the solution above: Any code on the page can change the counter, without calling add(). The counter should be local to the add() function, to prevent other code from changing it.
 
-# Nested Functions
+## Nested Functions
 
 All functions have access to the global scope. In fact, in JavaScript, all functions have access to the scope "above" them. JavaScript supports nested functions. Nested functions have access to the scope "above" them. In this example, the inner function plus() has access to the counter variable in the parent function:
 
@@ -48,7 +50,7 @@ function add() {
 
 This could have solved the counter dilemma, if we could reach the plus() function from the outside. We also need to find a way to execute counter = 0 only once. We need a closure.
 
-# Closures
+## Closures
 
 Remember self-invoking functions? What does this function do?
 

@@ -1,6 +1,8 @@
+# 2 Ways NOT to Add Events
+
 We **recommend that you use `addEventListener()` to register event handlers**. It's the most powerful method and scales best with more complex programs. However, there are two other ways of registering event handlers that you might see: **event handler properties** and inline **event handlers**.
 
-# Event handler properties
+## Event handler properties
 
 Objects (such as buttons) that can fire events also usually have properties whose name is `on` followed by the name of the event. For example, elements have a property `onclick`. This is called an _event handler property_. To listen for the event, you can assign the handler function to the property.
 
@@ -48,7 +50,7 @@ element.onclick = function1;
 element.onclick = function2;
 ```
 
-# Inline event handlers — don't use these
+## Inline event handlers — don't use these
 
 You might also see a pattern like this in your code:
 

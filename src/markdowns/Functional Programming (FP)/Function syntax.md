@@ -1,6 +1,8 @@
+# Function syntax
+
 JavaScript functions are defined with the `function` keyword. You can use a function declaration or a function expression.
 
-# Function Declarations
+## Function Declarations
 
 A JavaScript function declaration is defined with the `function` keyword, followed by a **name**, followed by parentheses **()**. Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). The parentheses may include parameter names separated by commas: (**parameter1**, **parameter2**, ...). The code to be executed, by the function, is placed inside curly brackets: {}
 
@@ -14,7 +16,7 @@ function name(parameter1, parameter2, parameter3) {
 }
 ```
 
-# Function Expressions
+## Function Expressions
 
 A JavaScript function can also be defined using an **expression**. A function expression can be stored in a variable:
 
@@ -35,7 +37,7 @@ let z = x(4, 3);
 
 The function above is actually an **anonymous function** (_a function without a name_). Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
 
-# Arrow Functions
+## Arrow Functions
 
 Arrow functions allows a **short syntax** for writing **function expressions**. You don't need the function keyword, the return keyword, and the curly brackets.
 

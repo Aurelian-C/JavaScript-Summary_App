@@ -1,8 +1,10 @@
-# All Functions are Methods
+# The this keyword & call(), apply() and bind()
+
+## All Functions are Methods
 
 In JavaScript all functions are object methods. If a function is not a method of a JavaScript object, it is a function of the global object (Function Invocation & this keyword - The Global Object).
 
-# call() method
+## call() method
 
 The call() method is a predefined JavaScript method. It can be used to invoke (call) a method with an owner object as an argument (parameter).
 Method Reuse: with the call() method, you can write a method that can be used on different objects.
@@ -27,7 +29,7 @@ const person2 = {
 person.fullName.call(person1); // This will return 'John Doe'
 ```
 
-# apply() method
+## apply() method
 
 The apply() method is similar to the call() method. The difference between call() and apply() are:
 

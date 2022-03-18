@@ -1,6 +1,8 @@
+# DOM Nodes & Node Lists
+
 The Document Object Model (DOM) is an interface that treats HTML or XML document as a tree structure, where **each node is an object of the document**. DOM also provides a set of methods to query the tree, alter the structure, style. DOM also uses the term _element: which is quite similar to a node_. So, what's the difference between a DOM node and an element? Let's find out!
 
-# What's a DOM node?
+## What's a DOM node?
 
 The key to understanding the difference between a node and an element is to understand what a node is. From a higher viewpoint, a DOM document consists of a hierarchy of nodes. Each node can have a parent and/or children. Let's look at the following HTML document:
 
@@ -24,7 +26,7 @@ The document contains the following hierarchy of nodes:
 `<body>` is also a node having 3 children: a comment `<!-- Page Body -->`, heading `<h2>`, and paragraph `<p>`. The parent of the `<body>` node is `<html>` node.
 The tags in the HTML document represent a node, what's interesting is that regular text is also a node. The paragraph node `<p>` has 1 child: the text node "Thank you for visiting my web page!".
 
-# Note Types
+## Note Types
 
 How can you distinguish these different types of nodes? The answer lays in the DOM Node interface, particularly in the `Node.nodeType` property. `Node.nodeType` can have one of the following values that represents the type of the node:
 
@@ -41,7 +43,7 @@ How can you distinguish these different types of nodes? The answer lays in the D
 
   The constants meaningfully indicate the node type: for example `Node.ELEMENT_NODE` represents an element node, `Node.TEXT_NODE` represents a text node, `Node.DOCUMENT_NODE` the document node, and so on.
 
-# What is a NodeList?
+## What is a NodeList?
 
 - A NodeList object is a list (collection) of nodes extracted from a document.
 - A NodeList object is almost the same as an HTMLCollection object.
@@ -49,7 +51,7 @@ How can you distinguish these different types of nodes? The answer lays in the D
 - All browsers return a NodeList object for the property childNodes.
 - Most browsers return a NodeList object for the method querySelectorAll().
 
-# DOM Element:
+## DOM Element:
 
 After getting a good grasp of what a DOM node is, now is the time to differentiate the DOM node and element.
 If you get well the node term, then the answer is obvious: an element is a node of a specific type — element (`Node.ELEMENT_NODE`). Along with types like document, comment, text, etc.

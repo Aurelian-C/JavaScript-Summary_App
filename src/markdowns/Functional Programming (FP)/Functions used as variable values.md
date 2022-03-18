@@ -1,3 +1,5 @@
+# Functions used as variable values
+
 Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.
 
 ```js

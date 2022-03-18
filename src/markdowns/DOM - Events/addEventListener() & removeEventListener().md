@@ -1,4 +1,6 @@
-# addEventListener():
+# `addEventListener()` & `removeEventListener()`
+
+## addEventListener():
 
 The recommended mechanism for adding event handlers in web pages is the `addEventListener()` method. Inside the `addEventListener()` function, we specify two parameters: the name of the event we want to register this handler for, and the code that comprises the handler function we want to run in response to it.
 

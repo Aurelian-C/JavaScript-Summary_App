@@ -1,4 +1,6 @@
-# Invoking a JavaScript Function
+# Function invocation
+
+## Invoking a JavaScript Function
 
 The code inside a function is not executed when the function is defined. The code inside a function is executed when the function is invoked. It is common to use the term "call a function" instead of "invoke a function". It is also common to say "call upon a function", "start a function", or "execute a function". In this tutorial, we will use invoke, because a JavaScript function can be invoked without being called.
 
@@ -9,7 +11,7 @@ The code inside the function will execute when "something" invokes (calls) the f
 - Automatically (self invoked)
   The () Operator Invokes the Function: accessing a function without () will return the function object instead of the function result.
 
-# Invoking a Function as a Function
+## Invoking a Function as a Function
 
 ```js
 function myFunction(a, b) {

@@ -1,3 +1,5 @@
+# Functions are objects
+
 The typeof operator in JavaScript returns "function" for functions. But, JavaScript functions can best be described as objects. JavaScript functions have both properties and methods. The arguments.length property returns the number of arguments received when the function was invoked:
 
 ```js
