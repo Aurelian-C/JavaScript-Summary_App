@@ -987,7 +987,7 @@ const controlingProgamLogicAndFlow = {
 };
 
 const loops = {
-  title: 'Loops',
+  title: 'Loops & Iteration',
   sections: [
     {
       sectionTitle: 'Intro to Loops',
@@ -997,7 +997,14 @@ const loops = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration`,
         },
       ],
-      sectionText: [],
+      sectionText: [
+        `Loops offer a quick and easy way to do something <b>repeatedly</b>. Loops can <b>execute a block of code a number of times</b>. Loops are handy, if you want to <b>run the same code over and over again, each time with a different value</b>. There are <b>many different kinds of loops</b>, but they all essentially do the same thing: they <b>repeat</b> an action some number of times. The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others.`,
+        `JavaScript supports <b>different kinds of loops</b>:
+        <br>➣ <b>for</b> - loops through a block of code a number of times
+        <br>➣ <b>for/of</b> - loops through the values of an <i>iterable object</i>
+        <br>➣ <b>for/in</b> - loops through the <i>properties of an object</i>
+        <br>➣ <b>while</b> - loops through a block of code <i>while a specified condition is true</i>`,
+      ],
       sectionArticles: [
         {
           articleTitle: '',
@@ -1014,7 +1021,19 @@ const loops = {
           linkSource: `https://www.w3schools.com/js/js_loop_for.asp`,
         },
       ],
-      sectionText: [],
+      sectionText: [
+        `<b class="pre-title">Syntax:</b>
+        <br><img src="../src/img/loops1.jpg">
+        <br><b>Statement 1</b> is executed (one time) before the execution of the code block.
+        <br><b>Statement 2</b> defines the condition for executing the code block.
+        <br><b>Statement 3</b> is executed (every time) after the code block has been executed.
+        <br><img src="../src/img/loops2.jpg">
+        <br>From the example above, you can read:
+        <br>Statement 1 sets a variable before the loop starts (let i = 0).
+        <br>Statement 2 defines the condition for the loop to run (i must be less than 5).
+        <br>Statement 3 increases a value (i++) each time the code block in the loop has been executed.`,
+        `<b class="pre-title">Statement 1</b>`,
+      ],
       sectionArticles: [
         {
           articleTitle: '',
@@ -1055,40 +1074,6 @@ const loops = {
     {
       sectionTitle: 'Nested For Loops',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Intro to While Loop',
-      sectionLinks: [
-        {
-          linkTitle: 'While loop',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Break and Continue Keywords',
-      sectionLinks: [
-        {
-          linkTitle: 'Break and Continue Keywords',
-          linkSource: `https://www.w3schools.com/js/js_break.asp`,
-        },
-      ],
       sectionText: [],
       sectionArticles: [
         {
@@ -1145,6 +1130,40 @@ const loops = {
         {
           linkTitle: 'for...in statement',
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Intro to While Loop',
+      sectionLinks: [
+        {
+          linkTitle: 'While loop',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Break and Continue Keywords',
+      sectionLinks: [
+        {
+          linkTitle: 'Break and Continue Keywords',
+          linkSource: `https://www.w3schools.com/js/js_break.asp`,
         },
       ],
       sectionText: [],
@@ -5820,6 +5839,42 @@ const modulesAndTooling = {
         <br>mv fileName.js ../ = move a file to the parent folder.
         <br>clear = clear the terminal.
       `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Markdown',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [
+        `<b class="pre-title">What is Markdown?</b>
+        <br>➣ <b>Lightweight markup language</b> with a plain text formatting syntax
+        <br>➣ Can be converted into HTML/XHTML and other formats
+        <br>➣ It's main purpose is readability and ease of use`,
+        `<b class="pre-title">What is used for?</b>
+        <br>➣ Readme Files (Github, etc)
+        <br>➣ Forum & Blog Posts
+        <br>➣ Used in many static site generators`,
+        `<b class="pre-title">Some things you can format:</b>
+        <br>➣ Headings
+        <br>➣ Lists
+        <br>➣ Emphasis
+        <br>➣ Links
+        <br>➣ <b>Blocks of code</b>
+        <br>➣ Images
+        <br>➣ Blockquotes
+        <br>➣ Horizontal rules`,
+        `<b class="pre-title">Markdown Editors:</b>
+        <br>➣ <b>Text Editor Extensions</b> (VSCode, Atom, etc)
+        <br>➣ MarkPad
+        <br>➣ HarooPad
+        <br>➣ MarkdownPad 2
+        <br>➣ Typora`,
       ],
       sectionArticles: [
         {
