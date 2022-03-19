@@ -1,4 +1,4 @@
-# for...of loop
+# `for...of` loop
 
 The `for...of` statement creates a _loop iterating_ over **iterable objects**, including: built-in `String`, `Array`, array-like objects (e.g., `arguments` or `NodeList`), `TypedArray`, `Map`, `Set`, and user-defined iterables.
 
@@ -32,9 +32,13 @@ for (const o of foo()) {
 console.log('done');
 ```
 
-## Difference between for...of and for...in
+## Difference between `for...of` and `for...in`
 
 Both `for...in` and `for...of` statements iterate over something. The main difference between them is in what they iterate over.
 
 - The `for...in` statement iterates over the **enumerable properties** of an object.
 - The `for...of` statement iterates over values that the **iterable object** defines to be iterated over.
+
+## Comparing For and For...Of
+
+## For...Of with Objects

@@ -1055,35 +1055,6 @@ const loops = {
       ],
     },
     {
-      sectionTitle: 'For Loop & Arrays',
-      sectionLinks: [
-        {
-          linkTitle: `forEach vs for Loops in JavaScript: What's the Difference?`,
-          linkSource: `https://alligator.io/js/foreach-vs-for-loops/`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Nested For Loops',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
       sectionTitle: 'For...Of',
       sectionLinks: [
         {
@@ -1091,30 +1062,6 @@ const loops = {
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of`,
         },
       ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Comparing For and For...Of',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'For...Of with Objects',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
         {
