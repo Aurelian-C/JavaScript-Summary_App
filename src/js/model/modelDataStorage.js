@@ -4096,34 +4096,7 @@ const domManipulation = {
       ],
     },
     {
-      sectionTitle: 'HTML DOM Elements',
-      sectionLinks: [
-        {
-          linkTitle: 'HTML DOM Elements - w3schools',
-          linkSource: 'https://www.w3schools.com/js/js_htmldom_elements.asp',
-        },
-      ],
-      sectionText: [
-        `Finding HTML Elements:
-        <br>Often, with JavaScript, you want to <b>manipulate HTML elements</b>. To do so, you have to <b>find the elements first</b>. There are several ways to do this:
-        <br>➣ Finding HTML elements by <b><i>id</i></b>
-        <br>➣ Finding HTML elements by <b><i>tag name</i></b>
-        <br>➣ Finding HTML elements by <b><i>class name</i></b>
-        <br>➣ Finding HTML elements by <b><i>CSS selectors</b> (id, class names, types, attributes, values of attributes, combinators, * , etc)</i>
-        <br>➣ Finding HTML elements by <b><i>HTML object collections</i></b>
-        <br><i>If the element is found, <b>the method will return the element as an object (in element)</b>. If the element is not found, element will contain <b>null</b></i>.`,
-        `After you find the element, the HTML DOM allows JavaScript to change the content, style of HTML elements. HTML DOM also allows JavaScript to react to HTML events.`,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'HTML DOM Nodes & Node Lists',
+      sectionTitle: 'DOM Nodes & Node Lists',
       sectionLinks: [
         {
           linkTitle: `What's the Difference between DOM Node and Element?`,
@@ -4181,7 +4154,35 @@ const domManipulation = {
       ],
     },
     {
-      sectionTitle: 'HTML DOM Collections',
+      sectionTitle: 'DOM Elements',
+      sectionLinks: [
+        {
+          linkTitle: 'HTML DOM Elements - w3schools',
+          linkSource: 'https://www.w3schools.com/js/js_htmldom_elements.asp',
+        },
+      ],
+      sectionText: [
+        `Finding HTML Elements:
+        <br>Often, with JavaScript, you want to <b>manipulate HTML elements</b>. To do so, you have to <b>find the elements first</b>. There are several ways to do this:
+        <br>➣ Finding HTML elements by <b><i>id</i></b>
+        <br>➣ Finding HTML elements by <b><i>tag name</i></b>
+        <br>➣ Finding HTML elements by <b><i>class name</i></b>
+        <br>➣ Finding HTML elements by <b><i>CSS selectors</b> (id, class names, types, attributes, values of attributes, combinators, * , etc)</i>
+        <br>➣ Finding HTML elements by <b><i>HTML object collections</i></b>
+        <br><i>If the element is found, <b>the method will return the element as an object (in element)</b>. If the element is not found, element will contain <b>null</b></i>.`,
+        `After you find the element, the HTML DOM allows JavaScript to change the content, style of HTML elements. HTML DOM also allows JavaScript to react to HTML events.`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+
+    {
+      sectionTitle: 'DOM Collections',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
