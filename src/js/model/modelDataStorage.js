@@ -1306,12 +1306,12 @@ const dataStructuresArrays = {
       ],
     },
     {
-      sectionTitle: 'Array Methods (mutate original array)',
+      sectionTitle: 'Array Methods',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: 'push() --- add to original (end)',
+          articleTitle: 'push()',
           articleLinks: [
             {
               linkTitle: 'Array push()',
@@ -1321,7 +1321,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'unshift() --- add to original (start)',
+          articleTitle: 'unshift()',
           articleLinks: [
             {
               linkTitle: 'Array unshift()',
@@ -1331,7 +1331,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'pop() --- remove from original(end)',
+          articleTitle: 'pop()',
           articleLinks: [
             {
               linkTitle: 'Array pop()',
@@ -1341,7 +1341,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'shift() --- remove from original(start)',
+          articleTitle: 'shift()',
           articleLinks: [
             {
               linkTitle: 'Array shift()',
@@ -1351,7 +1351,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'splice() --- remove from original(any)',
+          articleTitle: 'splice()',
           articleLinks: [
             {
               linkTitle: 'Array splice()',
@@ -1361,7 +1361,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'reverse() --- others',
+          articleTitle: 'reverse()',
           articleLinks: [
             {
               linkTitle: 'Array reverse()',
@@ -1371,7 +1371,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'sort() --- others',
+          articleTitle: 'sort()',
           articleLinks: [
             {
               linkTitle: 'Array sort()',
@@ -1381,7 +1381,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'fill() --- others',
+          articleTitle: 'fill()',
           articleLinks: [
             {
               linkTitle: 'Array fill()',
@@ -1390,15 +1390,8 @@ const dataStructuresArrays = {
           ],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Array Methods (a new array)',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
         {
-          articleTitle: 'map() --- computed from original',
+          articleTitle: 'map()',
           articleLinks: [
             {
               linkTitle: 'Array map()',
@@ -1408,7 +1401,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'filter() --- filtered using condition',
+          articleTitle: 'filter()',
           articleLinks: [
             {
               linkTitle: 'Array filter()',
@@ -1418,7 +1411,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'slice() --- copy portion/entire of original',
+          articleTitle: 'slice()',
           articleLinks: [
             {
               linkTitle: 'Array slice()',
@@ -1428,7 +1421,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'concat() --- adding original to other',
+          articleTitle: 'concat()',
           articleLinks: [
             {
               linkTitle: 'Array concat()',
@@ -1438,7 +1431,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'flat() & flatMap() --- flattening the original',
+          articleTitle: 'flat() & flatMap()',
           articleLinks: [
             {
               linkTitle: 'Array.prototype.flat()',
@@ -1451,15 +1444,8 @@ const dataStructuresArrays = {
           ],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Array Methods (an array index)',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
         {
-          articleTitle: 'indexOf() --- based on value',
+          articleTitle: 'indexOf()',
           articleLinks: [
             {
               linkTitle: 'Array indexOf()',
@@ -1469,7 +1455,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'findIndex() --- based on test condition',
+          articleTitle: 'findIndex()',
           articleLinks: [
             {
               linkTitle: 'Array findIndex()',
@@ -1478,15 +1464,8 @@ const dataStructuresArrays = {
           ],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Array Methods (an array element)',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
         {
-          articleTitle: 'find() --- based on test condition',
+          articleTitle: 'find()',
           articleLinks: [
             {
               linkTitle: 'Array find()',
@@ -1495,15 +1474,8 @@ const dataStructuresArrays = {
           ],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Array Methods (know if array includes)',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
         {
-          articleTitle: 'includes() --- based on value',
+          articleTitle: 'includes()',
           articleLinks: [
             {
               linkTitle: 'Array includes()',
@@ -1513,7 +1485,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'some() --- based on test condition',
+          articleTitle: 'some()',
           articleLinks: [
             {
               linkTitle: 'Array some()',
@@ -1523,7 +1495,7 @@ const dataStructuresArrays = {
           articleText: [],
         },
         {
-          articleTitle: 'every() --- based on test condition',
+          articleTitle: 'every()',
           articleLinks: [
             {
               linkTitle: 'Array every()',
@@ -1532,15 +1504,8 @@ const dataStructuresArrays = {
           ],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Array Methods (a new string)',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
         {
-          articleTitle: 'join() --- based on separator string',
+          articleTitle: 'join()',
           articleLinks: [
             {
               linkTitle: 'Array join()',
@@ -1549,15 +1514,8 @@ const dataStructuresArrays = {
           ],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Array Methods (to transform to value)',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
         {
-          articleTitle: 'reduce() --- based on accumulator',
+          articleTitle: 'reduce()',
           articleLinks: [
             {
               linkTitle: 'Array reduce()',
@@ -1566,16 +1524,8 @@ const dataStructuresArrays = {
           ],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Array Methods (to just loop array)',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
         {
-          articleTitle:
-            'forEach() --- based on callback ((Does not create a new array, just loops over it)',
+          articleTitle: 'forEach()',
           articleLinks: [
             {
               linkTitle: 'Array forEach()',
@@ -1584,13 +1534,6 @@ const dataStructuresArrays = {
           ],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Array Methods (others array methods)',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
         {
           articleTitle: 'Array.isArray()',
           articleLinks: [
@@ -1619,6 +1562,18 @@ const dataStructuresArrays = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries`,
             },
           ],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Which array method to use?',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
       ],
