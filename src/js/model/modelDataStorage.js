@@ -867,31 +867,7 @@ const controlingProgamLogicAndFlow = {
       ],
     },
     {
-      sectionTitle: 'If Statements',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Else If',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Else',
+      sectionTitle: 'if, else if, else Statements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
@@ -1123,27 +1099,43 @@ const loops = {
       ],
     },
     {
-      sectionTitle:
-        'Looping Objects: Object.keys(), Object.values() and Object.entries()',
+      sectionTitle: 'Looping Objects',
       sectionLinks: [
         {
-          linkTitle: 'Object.keys() method',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys`,
-        },
-        {
-          linkTitle: 'Object.values() method',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values`,
-        },
-        {
-          linkTitle: 'Object.entries() method',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries`,
+          linkTitle: '',
+          linkSource: '',
         },
       ],
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleTitle: 'Object.keys()',
+          articleLinks: [
+            {
+              linkTitle: 'Object.keys() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Object.values()',
+          articleLinks: [
+            {
+              linkTitle: 'Object.values() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Object.entries()',
+          articleLinks: [
+            {
+              linkTitle: 'Object.entries() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries`,
+            },
+          ],
           articleText: [],
         },
       ],
@@ -1165,72 +1157,32 @@ const dataStructuresArrays = {
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Creating Arrays',
+          articleLinks: [
+            {
+              linkTitle: 'Array() constructor',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Using Const with Arrays',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Creating Arrays',
-      sectionLinks: [
         {
-          linkTitle: 'Array() constructor',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
+          articleTitle: 'Array Indices',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Using Const with Arrays',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Modifying Arrays',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Array Indices',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
         {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Modifying Arrays',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Working with Nested Arrays',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
+          articleTitle: 'Working with Nested Arrays',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
@@ -1284,22 +1236,7 @@ const dataStructuresArrays = {
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: 'Nested destructuring & skipping items',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Switching variables with destructuring',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Destructuring & Default Values',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Variables assignment with destructuring',
+          articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
@@ -1706,29 +1643,7 @@ const dataStructuresObjects = {
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: 'Nested Destructuring',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle:
-            'Destructuring & Default Values & Using Different Variable Names',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Destructuring Assignment',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Variables assignment with destructuring',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle:
-            'Unpacking properties from objects passed as a function parameter',
+          articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
