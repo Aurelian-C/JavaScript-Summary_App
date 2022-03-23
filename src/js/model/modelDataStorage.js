@@ -1143,6 +1143,52 @@ const loops = {
   ],
 };
 
+const dataStructuresSets = {
+  title: 'Data structures: Sets',
+  sections: [
+    {
+      sectionTitle: 'Intro to Sets',
+      sectionLinks: [
+        {
+          linkTitle: 'Set object',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+  ],
+};
+
+const dataStructuresMaps = {
+  title: 'Data structures: Maps',
+  sections: [
+    {
+      sectionTitle: 'Intro to Maps',
+      sectionLinks: [
+        {
+          linkTitle: 'Map object',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+  ],
+};
+
 const dataStructuresArrays = {
   title: 'Data structures: Arrays',
   sections: [
@@ -1551,36 +1597,7 @@ const dataStructuresObjects = {
       ],
     },
     {
-      sectionTitle: 'Dot vs. Bracket Notation',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Enhanced Object Literals',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'Properties Shorthand Syntax',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Method Shorthand Syntax',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Computed Properties',
+      sectionTitle: `Object methods and the 'this' keyword`,
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
@@ -1650,42 +1667,6 @@ const dataStructuresObjects = {
       ],
     },
     {
-      sectionTitle: 'Adding Methods to Objects',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Using THIS keyword in methods',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'THIS: Invocation Context',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
       sectionTitle: 'Object methods',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
@@ -1732,52 +1713,6 @@ const dataStructuresObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create`,
             },
           ],
-          articleText: [],
-        },
-      ],
-    },
-  ],
-};
-
-const dataStructuresSets = {
-  title: 'Data structures: Sets',
-  sections: [
-    {
-      sectionTitle: 'Intro to Sets',
-      sectionLinks: [
-        {
-          linkTitle: 'Set object',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-  ],
-};
-
-const dataStructuresMaps = {
-  title: 'Data structures: Maps',
-  sections: [
-    {
-      sectionTitle: 'Intro to Maps',
-      sectionLinks: [
-        {
-          linkTitle: 'Map object',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
       ],
@@ -2596,1288 +2531,6 @@ const standardBuildInObjects = {
         },
         {
           articleTitle: 'navigator.language',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-  ],
-};
-
-const functionalProgramming = {
-  title: 'Functional Programming (FP)',
-  sections: [
-    {
-      sectionTitle: 'Function introduction',
-      sectionLinks: [
-        {
-          linkTitle:
-            'Master the JavaScript Interview: What is Functional Programming?',
-          linkSource: `https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0`,
-        },
-      ],
-      sectionText: [
-        `A JavaScript function is a <b>block of code designed to perform a particular task</b>. A JavaScript function is <b>executed when "something" invokes it (calls it)</b>.`,
-        `<b class="pre-title">Why Functions?</b>
-        <br>➣ You can reuse code: Define the code once, and use it many times.
-        <br>➣ You can use the same code many times with different arguments, to produce different results.
-      `,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function syntax',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [
-        `JavaScript functions are defined with the <b>function keyword</b>. You can use a function <b>declaration</b> or a function <b>expression</b>.`,
-        `<b class="pre-title">Function Declarations</b>
-        <br>A JavaScript function declaration is defined with the <b>function keyword</b>, followed by a <b>name</b>, followed by parentheses <b>()</b>. Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). The parentheses may include parameter names separated by commas: (<b>parameter1</b>, <b>parameter2</b>, ...). The code to be executed, by the function, is placed inside curly brackets: <b>{}</b>
-        <br>Function <b>parameters</b> are listed inside the parentheses () in the function definition. Function <b>arguments</b> are the <b>values</b> received by the function when it is invoked. <i>Inside the function, <b>the arguments (the parameters) behave as local variables</b></i>. Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon).
-        <br><img src="../src/img/function_declarations.jpg">`,
-        `<b class="pre-title">Function Expressions</b>
-        <br>A JavaScript function can also be defined using an <b>expression</b>. A function expression can be stored in a variable:
-        <br><img src="../src/img/function_expressions1.jpg">
-        <br>After a function expression has been stored in a variable, the variable can be used as a function:
-        <br><img src="../src/img/function_expressions2.jpg">
-        <br>The function above is actually an <b>anonymous function</b> (<i>a function without a name</i>). Functions stored in variables do not need function names. They are always invoked (called) using the variable name.`,
-        `<b class="pre-title">Arrow Functions</b>
-        <br>Arrow functions allows a <b>short syntax</b> for writing <b>function expressions</b>. You don't need the function keyword, the return keyword, and the curly brackets. 
-        <br><img src="../src/img/function_arrow1.jpg">
-        <br>Arrow functions do not have their own this. They are not well suited for defining object methods. Arrow functions are not hoisted. They must be defined before they are used. Using const is safer than using var, because a function expression is always constant value. You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
-        <br><img src="../src/img/function_arrow2.jpg">
-        `,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: 'Function Declarations',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Function Expressions',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Arrow Functions',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function parameters',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [
-        `A JavaScript function does not perform any checking on parameter values (arguments). Earlier in this chapter, you learned that functions can have parameters. Function <b>parameters</b> are the names listed in the function definition. Function <b>arguments</b> are the real values passed to (and received by) the function.
-      `,
-        `<b class="pre-title">Parameter Rules</b>
-        <br>➣ JavaScript function definitions do not specify data types for parameters.
-        <br>➣ JavaScript functions do not perform type checking on the passed arguments.
-        <br>➣ JavaScript functions do not check the number of arguments received.
-      `,
-        `<b class="pre-title">Default Parameters</b>
-        <br>If a function is called with missing arguments (less than declared), the missing values are set to undefined. Sometimes this is acceptable, but sometimes it is better to assign a default value to the parameter: 
-        <br><img src="../src/img/function_parameters1.jpg">
-      `,
-        `<b class="pre-title">The Arguments Object</b>
-        <br>JavaScript functions have a built-in object called the arguments object. The argument object contains an array of the arguments used when the function was called (invoked). This way you can simply use a function to find (for instance) the highest value in a list of numbers:
-        <br><img src="../src/img/function_parameters2.jpg">
-        <br>If a function is called with too many arguments (more than declared), these arguments can be reached using the arguments object.
-      `,
-        `<b class="pre-title">Arguments are <i>Passed by Value</i> vs Objects are <i>Passed by Reference</i></b>
-        <br>The parameters, in a function call, are the function's arguments. JavaScript arguments are passed by value: The function only gets to know the values, not the argument's locations. If a function changes an argument's value, it does not change the parameter's original value. Changes to arguments are not visible (reflected) outside the function.
-        <br>In JavaScript, object references are values. Because of this, objects will behave like they are passed by reference: If a function changes an object property, it changes the original value. Changes to object properties are visible (reflected) outside the function.
-      `,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: 'Parameter Rules',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Default Parameters',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'The Arguments Object',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle:
-            'Arguments are <i>Passed by Value</i> vs Objects are <i>Passed by Reference</i>',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function invocation',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [
-        `<b class="pre-title">Invoking a JavaScript Function</b>
-        <br>The code inside a function is not executed when the function is defined. The code inside a function is executed when the function is invoked. It is common to use the term "call a function" instead of "invoke a function". It is also common to say "call upon a function", "start a function", or "execute a function". In this tutorial, we will use invoke, because a JavaScript function can be invoked without being called.
-        <br>The code inside the function will execute when "something" invokes (calls) the function:
-        <br>➣ When an event occurs (when a user clicks a button)
-        <br>➣ When it is invoked (called) from JavaScript code
-        <br>➣ Automatically (self invoked)
-        <br>The () Operator Invokes the Function: accessing a function without () will return the function object instead of the function result.
-      `,
-        `<b class="pre-title">Invoking a Function as a Function</b>
-        <br><img src="../src/img/function_invocation1.jpg">
-        <br>The function above does not belong to any object. But in JavaScript there is always a default global object. In HTML the default global object is the HTML page itself, so the function above "belongs" to the HTML page. In a browser the page object is the browser window. The function above automatically becomes a window function.
-        <br>Note: This is a common way to invoke a JavaScript function, but not a very good practice. Global variables, methods, or functions can easily create name conflicts and bugs in the global object. myFunction() and window.myFunction() is the same function:
-        <br><img src="../src/img/function_invocation2.jpg">
-      `,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: 'Invoking a JavaScript Function',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Invoking a Function as a Function',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function invocation & this keyword',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [
-        `<b class="pre-title">What is 'this'?</b>
-        <br>In JavaScript, the this keyword refers to an object. Which object depends on how this is being invoked (used or called). The this keyword refers to different objects depending on how it is used:
-        <br>➣ In an object method, this refers to the object.
-        <br>➣ Alone, this refers to the global object.
-        <br>➣ In a function, this refers to the global object.
-        <br>➣ In a function, in strict mode, this is undefined.
-        <br>➣ In an event, this refers to the element that received the event.
-        <br>➣ Methods like call(), apply(), and bind() can refer this to any object.
-        <br>Note: this is not a variable, this is a keyword. You cannot change the value of this.
-      `,
-        `<b class="pre-title">The Global Object</b>
-        <br>When a function is called without an owner object, the value of this becomes the global object. In a web browser the global object is the browser window. This example returns the window object as the value of this:
-        <br><img src="../src/img/function_invocation3.jpg">
-        <br>Invoking a function as a global function, causes the value of this to be the global object. Using the window object as a variable can easily crash your program.
-      `,
-        `<b class="pre-title">Invoking a Function as a Method</b>
-        <br>In JavaScript you can define functions as object methods. The following example creates an object (myObject), with two properties (firstName and lastName), and a method (fullName):
-        <br><img src="../src/img/function_invocation4.jpg">
-        <br>The fullName method is a function (method). The function (method) belongs to the myObject object. myObject is the owner of the function (method). The thing called this, is the object that "owns" the JavaScript code. In this case the value of this is myObject.
-        <br>Note: Invoking a function as an object method, causes the value of this to be the object itself.
-      `,
-        `<b class="pre-title">Invoking a Function with a Function Constructor</b>
-        <br>If a function invocation is preceded with the new keyword, it is a constructor invocation. It looks like you create a new function, but since JavaScript functions are objects you actually create a new object:
-        <br><img src="../src/img/function_invocation5.jpg">
-        <br>A constructor invocation creates a new object. The new object inherits the properties and methods from its constructor.
-        <br>Note: the this keyword in the constructor does not have a value. The value of this will be the new object created when the function is invoked.
-      `,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: `What is 'this'?`,
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'The Global Object',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Invoking a Function as a Method',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Invoking a Function with a Function Constructor',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'The this keyword & call(), apply() and bind()',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [
-        `<b class="pre-title">All Functions are Methods</b>
-        <br>In JavaScript all functions are object methods. If a function is not a method of a JavaScript object, it is a function of the global object (Function Invocation & this keyword - The Global Object).
-      `,
-        `<b class="pre-title">call() method</b>
-        <br>The call() method is a predefined JavaScript method. It can be used to invoke (call) a method with an owner object as an argument (parameter).
-        <br>Method Reuse: with the call() method, you can write a method that can be used on different objects.
-        <br><img src="../src/img/function_invocation6.jpg">
-      `,
-        `<b class="pre-title">apply() method</b>
-        <br>The apply() method is similar to the call() method. The difference between call() and apply() are:
-        <br>➣ The call() method takes arguments separately.
-        <br>➣ The apply() method takes arguments as an array.
-        <br>Note: The apply() method is very handy if you want to use an array instead of an argument list.
-        <br>JavaScript Strict Mode: in JavaScript strict mode, if the first argument of the apply() method is not an object, it becomes the owner (object) of the invoked function. In "non-strict" mode, it becomes the global object.
-      `,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: 'All Functions are Methods',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'call() method',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'apply() method',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function return statement',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [
-        `When JavaScript reaches a return statement, the function will stop executing. If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement. Functions often compute a return value. The return value is "returned" back to the "caller".`,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Functions used as variable values',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [
-        `Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.
-        <br><img src="../src/img/function_as_variable_values.jpg">
-        `,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Closures & local vs global variables',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [
-        `Variables declared within a JavaScript function, become LOCAL to the function. Local variables can only be accessed from within the function. Since local variables are only recognized inside their functions, variables with the same name can be used in different functions. Local variables are created when a function starts, and deleted when the function is completed.`,
-        `<b class="pre-title">Local vs global variables</b>
-        <br>JavaScript variables can belong to the local or global scope. Global variables can be made local (private) with closures. A function can access all variables defined inside (local variables) and outside (global variables) the function. In a web page, global variables belong to the window object.
-        <br>Global variables can be used (and changed) by all scripts in the page (and in the window). A local variable can only be used inside the function where it is defined, it is hidden from other functions and other scripting code. Global and local variables with the same name are different variables, modifying one does not modify the other.
-        <br>Note: Variables created without a declaration keyword (var, let, or const) are always global, even if they are created inside a function.
-        `,
-        `<b class="pre-title">Variable Lifetime</b>
-        <br>Global variables live until the page is discarded, like when you navigate to another page or close the window. Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished. Suppose you want to use a variable for counting something, and you want this counter to be available to all functions. You could use a global variable, and a function to increase the counter:
-        <br><img src="../src/img/function_invocation7.jpg">
-        <br>There is a problem with the solution above: Any code on the page can change the counter, without calling add(). The counter should be local to the add() function, to prevent other code from changing it.
-        `,
-        `<b class="pre-title">Nested Functions</b>
-        <br>All functions have access to the global scope.  In fact, in JavaScript, all functions have access to the scope "above" them. JavaScript supports nested functions. Nested functions have access to the scope "above" them. In this example, the inner function plus() has access to the counter variable in the parent function:
-        <br><img src="../src/img/function_invocation8.jpg">
-        <br>This could have solved the counter dilemma, if we could reach the plus() function from the outside. We also need to find a way to execute counter = 0 only once. We need a closure.
-        `,
-        `<b class="pre-title">Closures</b>
-        <br>Remember self-invoking functions? What does this function do?
-        <br><img src="../src/img/function_invocation9.jpg">
-        <br>Example Explained
-        <br>➣ The variable add is assigned to the return value of a self-invoking function.
-        <br>➣ The self-invoking function only runs once. It sets the counter to zero (0), and returns a function expression.
-        <br>➣ This way add becomes a function. The "wonderful" part is that it can access the counter in the parent scope.
-        <br>➣ This is called a JavaScript closure. It makes it possible for a function to have "private" variables.
-        <br>➣ The counter is protected by the scope of the anonymous function, and can only be changed using the add function.
-        <br>Note: A closure is a function having access to the parent scope, even after the parent function has closed.
-        `,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: 'Variable Lifetime',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Nested Functions',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Closures',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function hoisting',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [
-        `Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope. Hoisting applies to variable declarations and to function declarations. Because of this, JavaScript functions can be called before they are declared:
-        <br><img src="../src/img/function_hoisting.jpg">`,
-        `Functions defined using an expression are not hoisted.`,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle:
-        'Self-Invoking functions / Immediately Invoked Function Expressions (IIFE)',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [
-        `Function expressions can be made "self-invoking". A self-invoking expression is invoked (started) automatically, without being called. Function expressions will execute automatically if the expression is followed by (). You cannot self-invoke a function declaration. You have to add parentheses around the function to indicate that it is a function expression:
-        <br><img src="../src/img/function_self_invoking.jpg">`,
-        `The function above is actually an anonymous self-invoking function (function without name).`,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Functions are objects',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [
-        `The typeof operator in JavaScript returns "function" for functions. But, JavaScript functions can best be described as objects. JavaScript functions have both properties and methods. The arguments.length property returns the number of arguments received when the function was invoked:
-        <br><img src="../src/img/function_argument_object.jpg">
-      `,
-        `The toString() method returns the function as a string:
-      <br><img src="../src/img/function_method.jpg">
-      `,
-        `A function defined as the property of an object, is called a method to the object. A function designed to create new objects, is called an object constructor.`,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Rest Parameters',
-      sectionLinks: [
-        {
-          linkTitle: 'Rest parameters',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Destructuring Parameters',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'this keyword',
-      sectionLinks: [
-        {
-          linkTitle: 'this keyword',
-          linkSource: `https://www.w3schools.com/js/js_this.asp`,
-        },
-        {
-          linkTitle: 'this keyword',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this`,
-        },
-      ],
-      sectionText: [
-        `<b>this</b> is the <b>object</b> that the <b>function</b> is a property of (<i><b>the 'this' keyword acts as a placeholder</b> and we'll refer to whichever object called that method 'window' object or other object)</i>.`,
-        `There that's simple right? Well, maybe not, what does that mean? Back in Execution Context, we talked about how the <i>JavaScript engine creates the global execution context and <b>initializes this to the global window object</b></i>.`,
-        `<img src="../src/img/this1.jpg">`,
-        `In the example above, it is easy to understand that this is equal to the window object, but what about inside of function a? Well, what object is function a apart of? In the dev tools, if you expand the window object and scroll down the list, <i>you will see a() is a method on the window object</i>. By calling a(), you are essentially saying window.a() to the console.`,
-        `<img src="../src/img/this2.jpg">`,
-        `<b>this</b> refers to <b>whatever is on the left of the . (dot) when calling a method</b>`,
-        `<img src="../src/img/this3.jpg">`,
-        `Still confused? Try this:`,
-        `<img src="../src/img/this4.jpg">`,
-        `Another way to look at <b>this</b> is to check <b>which object called it</b>.`,
-        `<img src="../src/img/this5.jpg">`,
-        `Here is <b>this</b> 4 ways: <br>1. <b>new keyword</b> binding - the <i>new keyword changes the meaning of this</i> to be <i>the object that is being created</i>. <br>2. <b>implicit binding</b> - <i>'this' refers to the object that is calling it</i>. It is implied, without doing anything it's just how the language works. <br>3. <b>explicit binding</b> - using the <i>'bind' keyword to change the meaning of 'this'</i>. <br>4. <b>arrow functions as methods</b> - <i>'this' is lexically scoped, refers to it's current surroundings and no further</i>. However, if 'this' is inside of a method's function, it falls out of scope and belongs to the window object. To correct this, you can use a higher order function to return an arrow function that calls 'this'.`,
-        `<img src="../src/img/this6.jpg">`,
-        `<i>When the global execution context starts during the creation phase, we create the 'global object' and 'this' and they equal each other. In this case, <b>the 'window' object is our global object</b></i>.`,
-        `So what if we do something like:`,
-        `<img src="../src/img/this7.jpg">`,
-        `If I run a() what do you think the answer will be? Well, we get 'window', so 'this' is equal to window and why is that? Remember the definition, <b>'this is the object that the function is a property of'. That means we're calling window.a() and running it</b>, <i>that's what we're doing above with calling a(). So what is the object that the function a() is a property of? Well, the function a() is a property of the 'window' object, so that's what 'this' is, it's the 'window'</i>.`,
-        `<img src="../src/img/this8.jpg">`,
-        `<i><b>'use strict' was added to JavaScript as a way for us to avoid the common mistakes that can happen with JavaScript</b>, when the language was originally designed, it wasn't perfect and there were bits and pieces of mistake and things like 'use strict' allow us to not have this kind of errors where 'this' refers to the 'window' object.  And 'use strict' can be added at the beginning, the first line of a function or the beginning of our script</i>.`,
-        `<b><i>The 'this' keyword acts as a placeholder<i> and we'll refer to whichever object called that method ('window' object or other object)</b>.`,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Lexical vs Dynamic Scope',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [
-        `A big gotcha for a lot of people working with *this is when a function is ran inside of another function. It gets a little confusing, but we can remember who called the function.`,
-        `<img src="../src/img/lexical_dynamic_scope_this1.jpg">`,
-        `<b>Functions inside of method</b> <i>is, well, a function inside of a function. That means <b>'this' keyword is not assigned to the object itself, but actually to the 'window' object</b></i>.`,
-        `In the example above, the obj called sing() and then anotherFunc() was called within the sing() function. In JavaScript, that function defaults to the Window object. It happens because <b>everything in JavaScript is lexically scoped except for the this keyword. <i>It doesn't matter where it is written, it matters how it is called</i></b>. Changing anotherFunc() instead to an arrow function will fix this problem, as seen below. <i>Arrow functions do not bind or set their own context for this. If this is used in an arrow function, it is taken from the outside. Arrow functions also have no arguments created as functions do</i>.`,
-        `<img src="../src/img/lexical_dynamic_scope_this2.jpg">`,
-        `Okay, last example to really solidify our knowledge of <b>this</b>.`,
-        `<img src="../src/img/lexical_dynamic_scope_this3.jpg">`,
-        `This is unlike anything we've seen before. I remember when I told you about lexical scope, lexical environment, how the compiler knew right away without running any piece of code what variables functions had access to? It almost looks like <b>lexical scope doesn't work with 'this', it doesn't really matter where we write 'this' in the piece of code, all that matters is how 'this' gets called during invocation. Who calls it? <i>It matters how the function was called, like a regular function or like a method</i></b>.`,
-        `<img src="../src/img/lexical_dynamic_scope_this4.jpg">`,
-        `<b>The 'this' keyword is not lexically scoped, it doesn't matter where 'this' is write in our code, it matters <i>how the function was called</i></b>.`,
-        `<i>Everything in JavaScript is actually lexically scoped, how you write it determines what we have available, except for the 'this' keyword. <b>The 'this' keyword is actually dynamically scoped</b>, it doesn't matter where 'this' is written, it matters how the function was called</i>.`,
-        `<b>Arrow functions are lexically bound, <i>arrow functions</i> has a lexical 'this' behavior unlike <i>normal functions</i></b>.`,
-        `If I change the anotherFunc with an arrow function I solve the problem of 'this' target the window object.`,
-        `<img src="../src/img/lexical_dynamic_scope_this5.jpg">`,
-        `Before ES6 arrow function, we can make this:`,
-        `<img src="../src/img/lexical_dynamic_scope_this6.jpg">`,
-        `Because we return ' anotherFunc.bind(this) ' outside of anotherFunc, 'this' is going to refer to the object.`,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'this – call(), apply(), bind()',
-      sectionLinks: [
-        {
-          linkTitle: 'Function.prototype.call()',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call`,
-        },
-        {
-          linkTitle: 'Function.prototype.apply()',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply`,
-        },
-        {
-          linkTitle: 'Function.prototype.bind()',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind`,
-        },
-      ],
-      sectionText: [
-        `In order for us to <b>manipulate the 'this' keyword</b>, there are 3 important methods (call, apply and bind).`,
-        `Underneath the hood, all functions use call() when invoking a function. Let me show you what I mean.`,
-        `<img src="../src/img/this_call1.jpg">`,
-        `<b>Underneath the hood, in JavaScript, when I do a() to invoke the function, <i>all functions when created have this property called call() that allows us to call the function</i></b>, <i>so a() is just a shorthand that we can use</i>.`,
-        `<b>Call</b> is a method of an object that <i>can substitute a different object than the one it is written on</i>. In this example below call is used to borrow the heal method from the wizard and is used on the archer (which is actually pointing this to archer), with the optional arguments added.`,
-        `<img src="../src/img/this_call.jpg">`,
-        `<b>Apply</b> is <i>almost identical to call</i>, except that instead of a comma separated list of arguments, <b>it takes an array of arguments</b>.`,
-        `<img src="../src/img/this_apply.jpg">`,
-        `Unlike call and apply, <b>bind</b> does not run the method it is used on, but rather returns a new function that can then be called later. bind() <b>returns a new function</b> with a certain context and parameters, and it's <b>usually used when we want a function to be called later on</b>, with a certain type of context or a certain type of 'this' keyword.`,
-        `<img src="../src/img/this_bind.jpg">`,
-        `So to review, call() and apply(), when are they useful? Well, <b>call() and apply() are useful for <i>borrowing methods from an object</i></b>, while <b>bind() is useful for us to <i>call functions later on</i></b> with a certain context or certain 'this' keyword.`,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: 'Currying with bind()',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [
-            `Currying is <b>breaking down a function with <i>multiple arguments</i> into one or more functions that each accept a <i>single argument</i></b>. <br><img src="../src/img/currying_bind1.jpg">`,
-            `Exercise 1: Find the largest number in an array <br><img src="../src/img/currying_bind2.jpg">`,
-            `Exercise 2: How would you fix this?<br><img src="../src/img/currying_bind3.jpg">`,
-          ],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Arrow Function',
-      sectionLinks: [
-        {
-          linkTitle: 'Arrow function expressions',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'Arrow Function: Implicit Returns',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Arrow Function and THIS keyword',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Regular Functions vs. Arrow Functions',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Immediately Invoked Function Expressions (IIFE)',
-      sectionLinks: [
-        {
-          linkTitle: 'IIFE (Immediately Invoked Function Expression)',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Glossary/IIFE`,
-        },
-      ],
-      sectionText: [
-        `Immediately Invoked Function Expression or more simply IIFE is <b>a JavaScript function that runs as soon as it is defined</b>. Can also be referred to as a Self-Executing Anonymous Function.`,
-        `<img src="../src/img/iife.jpg">`,
-        `We already know this code and we should already understand what the JavaScript engine is going to do with this code, you see IIFE are common JavaScript design pattern use by a lot of popular libraries, especially back in the day like jQuery or even BackboneJS, <b>the idea was using this IIFE code pattern, we can place all library code inside of local scope to avoid any namespace collisions</b>.`,
-        `<img src="../src/img/iife1.jpg">`,
-        `So let's have a look one by one. <i>The first thing we're doing is we're saying with this brackets () 'Hey, this isn't a function declaration, it's a function expression', because the JavaScript engine won't see function as the first item on the line, instead it's going to see these brackets (). So this brackets () will automatically makes it into a function expression</i>. And then after we've done that, we've created an anonymous function because there's no name attached to the function and then we immediately invoke it.`,
-        `Now, what's the benefit in doing this IIFE? You see, since the anonymous function within this, if he is a function expression and it's not being assigned to any global variables, no global property is really being created. And all of the properties created inside this IIFE are going to be scoped inside IIFE, so it's only going to be available inside this IIFE, but not outside.`,
-        `<b>Takeaways</b>: Avoid polluting the global namespace or scope when possible.`,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Spread for Function Calls',
-      sectionLinks: [
-        {
-          linkTitle: 'Spread syntax (...)',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax`,
-        },
-        {
-          linkTitle: 'How to Use the Spread Operator (…) in JavaScript',
-          linkSource: `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Higher-Order Functions',
-      sectionLinks: [
-        {
-          linkTitle: 'First-class Function',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function`,
-        },
-        {
-          linkTitle: 'Higher-Order Functions',
-          linkSource: `https://eloquentjavascript.net/05_higher_order.html`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'Functions Accepting Callback Functions',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle:
-            'A Function Can Be Passed As An Argument To Other Functions',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'A Function Can Be Returned By Another Function',
-          articleLinks: [
-            {
-              linkTitle:
-                'JavaScript Functions → Returning Functions from Functions',
-              linkSource: `https://medium.com/@iampika/part-6-javascript-functions-returning-functions-from-functions-429a3d9a55d1`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'A Function Can Be Assigned As A Value To A Variable',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Callbacks',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Functions vs Objects',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Scheme + Java',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Curry',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Partial Application',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Pure Functions',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Referential Transparency',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Compose',
-      sectionLinks: [
-        {
-          linkTitle:
-            'A quick introduction to pipe() and compose() in JavaScript',
-          linkSource: `https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Pipe',
-      sectionLinks: [
-        {
-          linkTitle:
-            'A quick introduction to pipe() and compose() in JavaScript',
-          linkSource: `https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-  ],
-};
-
-const asynchronous = {
-  title: 'Asynchronous',
-  sections: [
-    {
-      sectionTitle: 'Introduction to Asynchronous Javascript',
-      sectionLinks: [
-        {
-          linkTitle: 'Asynchronous JavaScript',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous`,
-        },
-        {
-          linkTitle: 'Introducing asynchronous JavaScript',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing`,
-        },
-        {
-          linkTitle:
-            'Asynchronous and Single-threaded JavaScript? Meet the Event Loop',
-          linkSource: `https://thecodest.co/blog/asynchronous-and-single-threaded-javascript-meet-the-event-loop/`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Web APIs',
-      sectionLinks: [
-        {
-          linkTitle: 'Web APIs - Introduction',
-          linkSource: `https://www.w3schools.com/js/js_api_intro.asp`,
-        },
-        {
-          linkTitle: 'Web APIs',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Microtask Queue (Job Queue)',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Task Queue (Callback Queue)',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Event Loop',
-      sectionLinks: [
-        {
-          linkTitle:
-            'Asynchronous and Single-threaded JavaScript? Meet the Event Loop',
-          linkSource: `https://thecodest.co/blog/asynchronous-and-single-threaded-javascript-meet-the-event-loop/`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Timers',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'setTimeout()',
-          articleLinks: [
-            {
-              linkTitle: 'The global setTimeout() method',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/setTimeout`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'clearTimeout()',
-          articleLinks: [
-            {
-              linkTitle: 'The global clearTimeout() method',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'setInterval()',
-          articleLinks: [
-            {
-              linkTitle: 'The global setInterval() method',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/setInterval`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'clearInterval()',
-          articleLinks: [
-            {
-              linkTitle: 'The global clearInterval() method',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/clearInterval`,
-            },
-          ],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Intro to AJAX',
-      sectionLinks: [
-        {
-          linkTitle: 'AJAX Introduction',
-          linkSource: `https://www.w3schools.com/js/js_ajax_intro.asp`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'JSON & XML',
-      sectionLinks: [
-        {
-          linkTitle: 'JSON - Introduction',
-          linkSource: `https://www.w3schools.com/js/js_json_intro.asp`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'XMLHttpRequests: The Basics',
-      sectionLinks: [
-        {
-          linkTitle: 'Using XMLHttpRequest',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'const request = new XMLHttpRequest()',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'request.open(‘GET’, ‘url’)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'request.send()',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'request.addEventListener(‘load’, function)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'XMLHttpRequests: Chaining Requests',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'Welcome to Callback Hell',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Promises and the Fetch API',
-      sectionLinks: [
-        {
-          linkTitle: 'Using Promises',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises`,
-        },
-        {
-          linkTitle: 'Promise object',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise`,
-        },
-        {
-          linkTitle: 'Fetch API',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'fetch(‘url’)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle:
-            'fetch() will always return a promise that need to by handled by consuming it',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Consuming Promises',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '.then(callback function with ‘response’ parameter)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'returning a Promise with response.json()',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'returning a Promise with response.text()',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Chaining Promises',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'returning a Promise and handle it outside the chain',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Handling Rejected Promises',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '.catch(callback function with ‘error’ parameter)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: '.finally(callback function)',
-          articleLinks: [
-            {
-              linkTitle: 'Promise.prototype.finally()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally`,
-            },
-          ],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Throwing Errors Manually',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'throw new Error()',
-          articleLinks: [
-            {
-              linkTitle: 'The throw statement',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw`,
-            },
-            {
-              linkTitle: 'Error objects',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error`,
-            },
-          ],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Building a Simple Promise',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle:
-            'new Promise(function(resolve, reject) {      resolve(fulfilled value);  reject(rejected value)  })',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Wrap old callback based functions into Promises',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Consuming Promises with Async/Await',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '‘async’ funtions',
-          articleLinks: [
-            {
-              linkTitle: 'The async function',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: '‘await’ keyword',
-          articleLinks: [
-            {
-              linkTitle: 'The await operator',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'An ‘async function’ will always return a promise',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle:
-            'Store ‘await’ Promises results in variables like const',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Multiple Awaits',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Error Handling in Async Functions',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'try {} catch(error) {}',
-          articleLinks: [
-            {
-              linkTitle: 'The try...catch statement',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle:
-            'Rethrowing an error when you have multiple async funtions',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Returning Values from Async Functions',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'An async function always returns a Promise',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Parallel Vs. Sequential Requests',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'Promise.all([ ])',
-          articleLinks: [
-            {
-              linkTitle: 'The try...catch statement',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch`,
-            },
-          ],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Other Promise Combinators',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'Promise.race([ ])',
-          articleLinks: [
-            {
-              linkTitle: 'The Promise.race() method',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Promise.allSettled([ ])',
-          articleLinks: [
-            {
-              linkTitle: 'The Promise.allSettled() method',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Promise.any([ ])',
-          articleLinks: [
-            {
-              linkTitle: 'The Promise.any() method',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any`,
-            },
-          ],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: `Top-Level ' await ' (ES2022)`,
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [
-        `Top-Level 'await' work only in modules. With ES2022 you can use 'await' keyword outside of an 'async function', but only in modules.`,
-        `If one module imports a module which has a Top-Level 'await', then the importing module will wait for the imported module to finish the blocking code. So Top-Level 'await' is in fact blocking the execution not only in the imported module, but also in the module that is importing the imported module.`,
-      ],
-      sectionArticles: [
-        {
-          articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
@@ -5326,6 +3979,1288 @@ const webAPIs = {
   ],
 };
 
+const functionalProgramming = {
+  title: 'Functional Programming (FP)',
+  sections: [
+    {
+      sectionTitle: 'Function introduction',
+      sectionLinks: [
+        {
+          linkTitle:
+            'Master the JavaScript Interview: What is Functional Programming?',
+          linkSource: `https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0`,
+        },
+      ],
+      sectionText: [
+        `A JavaScript function is a <b>block of code designed to perform a particular task</b>. A JavaScript function is <b>executed when "something" invokes it (calls it)</b>.`,
+        `<b class="pre-title">Why Functions?</b>
+        <br>➣ You can reuse code: Define the code once, and use it many times.
+        <br>➣ You can use the same code many times with different arguments, to produce different results.
+      `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function syntax',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [
+        `JavaScript functions are defined with the <b>function keyword</b>. You can use a function <b>declaration</b> or a function <b>expression</b>.`,
+        `<b class="pre-title">Function Declarations</b>
+        <br>A JavaScript function declaration is defined with the <b>function keyword</b>, followed by a <b>name</b>, followed by parentheses <b>()</b>. Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). The parentheses may include parameter names separated by commas: (<b>parameter1</b>, <b>parameter2</b>, ...). The code to be executed, by the function, is placed inside curly brackets: <b>{}</b>
+        <br>Function <b>parameters</b> are listed inside the parentheses () in the function definition. Function <b>arguments</b> are the <b>values</b> received by the function when it is invoked. <i>Inside the function, <b>the arguments (the parameters) behave as local variables</b></i>. Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon).
+        <br><img src="../src/img/function_declarations.jpg">`,
+        `<b class="pre-title">Function Expressions</b>
+        <br>A JavaScript function can also be defined using an <b>expression</b>. A function expression can be stored in a variable:
+        <br><img src="../src/img/function_expressions1.jpg">
+        <br>After a function expression has been stored in a variable, the variable can be used as a function:
+        <br><img src="../src/img/function_expressions2.jpg">
+        <br>The function above is actually an <b>anonymous function</b> (<i>a function without a name</i>). Functions stored in variables do not need function names. They are always invoked (called) using the variable name.`,
+        `<b class="pre-title">Arrow Functions</b>
+        <br>Arrow functions allows a <b>short syntax</b> for writing <b>function expressions</b>. You don't need the function keyword, the return keyword, and the curly brackets. 
+        <br><img src="../src/img/function_arrow1.jpg">
+        <br>Arrow functions do not have their own this. They are not well suited for defining object methods. Arrow functions are not hoisted. They must be defined before they are used. Using const is safer than using var, because a function expression is always constant value. You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
+        <br><img src="../src/img/function_arrow2.jpg">
+        `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: 'Function Declarations',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Function Expressions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Arrow Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function parameters',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [
+        `A JavaScript function does not perform any checking on parameter values (arguments). Earlier in this chapter, you learned that functions can have parameters. Function <b>parameters</b> are the names listed in the function definition. Function <b>arguments</b> are the real values passed to (and received by) the function.
+      `,
+        `<b class="pre-title">Parameter Rules</b>
+        <br>➣ JavaScript function definitions do not specify data types for parameters.
+        <br>➣ JavaScript functions do not perform type checking on the passed arguments.
+        <br>➣ JavaScript functions do not check the number of arguments received.
+      `,
+        `<b class="pre-title">Default Parameters</b>
+        <br>If a function is called with missing arguments (less than declared), the missing values are set to undefined. Sometimes this is acceptable, but sometimes it is better to assign a default value to the parameter: 
+        <br><img src="../src/img/function_parameters1.jpg">
+      `,
+        `<b class="pre-title">The Arguments Object</b>
+        <br>JavaScript functions have a built-in object called the arguments object. The argument object contains an array of the arguments used when the function was called (invoked). This way you can simply use a function to find (for instance) the highest value in a list of numbers:
+        <br><img src="../src/img/function_parameters2.jpg">
+        <br>If a function is called with too many arguments (more than declared), these arguments can be reached using the arguments object.
+      `,
+        `<b class="pre-title">Arguments are <i>Passed by Value</i> vs Objects are <i>Passed by Reference</i></b>
+        <br>The parameters, in a function call, are the function's arguments. JavaScript arguments are passed by value: The function only gets to know the values, not the argument's locations. If a function changes an argument's value, it does not change the parameter's original value. Changes to arguments are not visible (reflected) outside the function.
+        <br>In JavaScript, object references are values. Because of this, objects will behave like they are passed by reference: If a function changes an object property, it changes the original value. Changes to object properties are visible (reflected) outside the function.
+      `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: 'Parameter Rules',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Default Parameters',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'The Arguments Object',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle:
+            'Arguments are <i>Passed by Value</i> vs Objects are <i>Passed by Reference</i>',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function invocation',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [
+        `<b class="pre-title">Invoking a JavaScript Function</b>
+        <br>The code inside a function is not executed when the function is defined. The code inside a function is executed when the function is invoked. It is common to use the term "call a function" instead of "invoke a function". It is also common to say "call upon a function", "start a function", or "execute a function". In this tutorial, we will use invoke, because a JavaScript function can be invoked without being called.
+        <br>The code inside the function will execute when "something" invokes (calls) the function:
+        <br>➣ When an event occurs (when a user clicks a button)
+        <br>➣ When it is invoked (called) from JavaScript code
+        <br>➣ Automatically (self invoked)
+        <br>The () Operator Invokes the Function: accessing a function without () will return the function object instead of the function result.
+      `,
+        `<b class="pre-title">Invoking a Function as a Function</b>
+        <br><img src="../src/img/function_invocation1.jpg">
+        <br>The function above does not belong to any object. But in JavaScript there is always a default global object. In HTML the default global object is the HTML page itself, so the function above "belongs" to the HTML page. In a browser the page object is the browser window. The function above automatically becomes a window function.
+        <br>Note: This is a common way to invoke a JavaScript function, but not a very good practice. Global variables, methods, or functions can easily create name conflicts and bugs in the global object. myFunction() and window.myFunction() is the same function:
+        <br><img src="../src/img/function_invocation2.jpg">
+      `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: 'Invoking a JavaScript Function',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Invoking a Function as a Function',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function invocation & this keyword',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [
+        `<b class="pre-title">What is 'this'?</b>
+        <br>In JavaScript, the this keyword refers to an object. Which object depends on how this is being invoked (used or called). The this keyword refers to different objects depending on how it is used:
+        <br>➣ In an object method, this refers to the object.
+        <br>➣ Alone, this refers to the global object.
+        <br>➣ In a function, this refers to the global object.
+        <br>➣ In a function, in strict mode, this is undefined.
+        <br>➣ In an event, this refers to the element that received the event.
+        <br>➣ Methods like call(), apply(), and bind() can refer this to any object.
+        <br>Note: this is not a variable, this is a keyword. You cannot change the value of this.
+      `,
+        `<b class="pre-title">The Global Object</b>
+        <br>When a function is called without an owner object, the value of this becomes the global object. In a web browser the global object is the browser window. This example returns the window object as the value of this:
+        <br><img src="../src/img/function_invocation3.jpg">
+        <br>Invoking a function as a global function, causes the value of this to be the global object. Using the window object as a variable can easily crash your program.
+      `,
+        `<b class="pre-title">Invoking a Function as a Method</b>
+        <br>In JavaScript you can define functions as object methods. The following example creates an object (myObject), with two properties (firstName and lastName), and a method (fullName):
+        <br><img src="../src/img/function_invocation4.jpg">
+        <br>The fullName method is a function (method). The function (method) belongs to the myObject object. myObject is the owner of the function (method). The thing called this, is the object that "owns" the JavaScript code. In this case the value of this is myObject.
+        <br>Note: Invoking a function as an object method, causes the value of this to be the object itself.
+      `,
+        `<b class="pre-title">Invoking a Function with a Function Constructor</b>
+        <br>If a function invocation is preceded with the new keyword, it is a constructor invocation. It looks like you create a new function, but since JavaScript functions are objects you actually create a new object:
+        <br><img src="../src/img/function_invocation5.jpg">
+        <br>A constructor invocation creates a new object. The new object inherits the properties and methods from its constructor.
+        <br>Note: the this keyword in the constructor does not have a value. The value of this will be the new object created when the function is invoked.
+      `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: `What is 'this'?`,
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'The Global Object',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Invoking a Function as a Method',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Invoking a Function with a Function Constructor',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'The this keyword & call(), apply() and bind()',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [
+        `<b class="pre-title">All Functions are Methods</b>
+        <br>In JavaScript all functions are object methods. If a function is not a method of a JavaScript object, it is a function of the global object (Function Invocation & this keyword - The Global Object).
+      `,
+        `<b class="pre-title">call() method</b>
+        <br>The call() method is a predefined JavaScript method. It can be used to invoke (call) a method with an owner object as an argument (parameter).
+        <br>Method Reuse: with the call() method, you can write a method that can be used on different objects.
+        <br><img src="../src/img/function_invocation6.jpg">
+      `,
+        `<b class="pre-title">apply() method</b>
+        <br>The apply() method is similar to the call() method. The difference between call() and apply() are:
+        <br>➣ The call() method takes arguments separately.
+        <br>➣ The apply() method takes arguments as an array.
+        <br>Note: The apply() method is very handy if you want to use an array instead of an argument list.
+        <br>JavaScript Strict Mode: in JavaScript strict mode, if the first argument of the apply() method is not an object, it becomes the owner (object) of the invoked function. In "non-strict" mode, it becomes the global object.
+      `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: 'All Functions are Methods',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'call() method',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'apply() method',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function return statement',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [
+        `When JavaScript reaches a return statement, the function will stop executing. If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement. Functions often compute a return value. The return value is "returned" back to the "caller".`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Functions used as variable values',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [
+        `Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.
+        <br><img src="../src/img/function_as_variable_values.jpg">
+        `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Closures & local vs global variables',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [
+        `Variables declared within a JavaScript function, become LOCAL to the function. Local variables can only be accessed from within the function. Since local variables are only recognized inside their functions, variables with the same name can be used in different functions. Local variables are created when a function starts, and deleted when the function is completed.`,
+        `<b class="pre-title">Local vs global variables</b>
+        <br>JavaScript variables can belong to the local or global scope. Global variables can be made local (private) with closures. A function can access all variables defined inside (local variables) and outside (global variables) the function. In a web page, global variables belong to the window object.
+        <br>Global variables can be used (and changed) by all scripts in the page (and in the window). A local variable can only be used inside the function where it is defined, it is hidden from other functions and other scripting code. Global and local variables with the same name are different variables, modifying one does not modify the other.
+        <br>Note: Variables created without a declaration keyword (var, let, or const) are always global, even if they are created inside a function.
+        `,
+        `<b class="pre-title">Variable Lifetime</b>
+        <br>Global variables live until the page is discarded, like when you navigate to another page or close the window. Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished. Suppose you want to use a variable for counting something, and you want this counter to be available to all functions. You could use a global variable, and a function to increase the counter:
+        <br><img src="../src/img/function_invocation7.jpg">
+        <br>There is a problem with the solution above: Any code on the page can change the counter, without calling add(). The counter should be local to the add() function, to prevent other code from changing it.
+        `,
+        `<b class="pre-title">Nested Functions</b>
+        <br>All functions have access to the global scope.  In fact, in JavaScript, all functions have access to the scope "above" them. JavaScript supports nested functions. Nested functions have access to the scope "above" them. In this example, the inner function plus() has access to the counter variable in the parent function:
+        <br><img src="../src/img/function_invocation8.jpg">
+        <br>This could have solved the counter dilemma, if we could reach the plus() function from the outside. We also need to find a way to execute counter = 0 only once. We need a closure.
+        `,
+        `<b class="pre-title">Closures</b>
+        <br>Remember self-invoking functions? What does this function do?
+        <br><img src="../src/img/function_invocation9.jpg">
+        <br>Example Explained
+        <br>➣ The variable add is assigned to the return value of a self-invoking function.
+        <br>➣ The self-invoking function only runs once. It sets the counter to zero (0), and returns a function expression.
+        <br>➣ This way add becomes a function. The "wonderful" part is that it can access the counter in the parent scope.
+        <br>➣ This is called a JavaScript closure. It makes it possible for a function to have "private" variables.
+        <br>➣ The counter is protected by the scope of the anonymous function, and can only be changed using the add function.
+        <br>Note: A closure is a function having access to the parent scope, even after the parent function has closed.
+        `,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: 'Variable Lifetime',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Nested Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Closures',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function hoisting',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [
+        `Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope. Hoisting applies to variable declarations and to function declarations. Because of this, JavaScript functions can be called before they are declared:
+        <br><img src="../src/img/function_hoisting.jpg">`,
+        `Functions defined using an expression are not hoisted.`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle:
+        'Self-Invoking functions / Immediately Invoked Function Expressions (IIFE)',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [
+        `Function expressions can be made "self-invoking". A self-invoking expression is invoked (started) automatically, without being called. Function expressions will execute automatically if the expression is followed by (). You cannot self-invoke a function declaration. You have to add parentheses around the function to indicate that it is a function expression:
+        <br><img src="../src/img/function_self_invoking.jpg">`,
+        `The function above is actually an anonymous self-invoking function (function without name).`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Functions are objects',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [
+        `The typeof operator in JavaScript returns "function" for functions. But, JavaScript functions can best be described as objects. JavaScript functions have both properties and methods. The arguments.length property returns the number of arguments received when the function was invoked:
+        <br><img src="../src/img/function_argument_object.jpg">
+      `,
+        `The toString() method returns the function as a string:
+      <br><img src="../src/img/function_method.jpg">
+      `,
+        `A function defined as the property of an object, is called a method to the object. A function designed to create new objects, is called an object constructor.`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Rest Parameters',
+      sectionLinks: [
+        {
+          linkTitle: 'Rest parameters',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Destructuring Parameters',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'this keyword',
+      sectionLinks: [
+        {
+          linkTitle: 'this keyword',
+          linkSource: `https://www.w3schools.com/js/js_this.asp`,
+        },
+        {
+          linkTitle: 'this keyword',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this`,
+        },
+      ],
+      sectionText: [
+        `<b>this</b> is the <b>object</b> that the <b>function</b> is a property of (<i><b>the 'this' keyword acts as a placeholder</b> and we'll refer to whichever object called that method 'window' object or other object)</i>.`,
+        `There that's simple right? Well, maybe not, what does that mean? Back in Execution Context, we talked about how the <i>JavaScript engine creates the global execution context and <b>initializes this to the global window object</b></i>.`,
+        `<img src="../src/img/this1.jpg">`,
+        `In the example above, it is easy to understand that this is equal to the window object, but what about inside of function a? Well, what object is function a apart of? In the dev tools, if you expand the window object and scroll down the list, <i>you will see a() is a method on the window object</i>. By calling a(), you are essentially saying window.a() to the console.`,
+        `<img src="../src/img/this2.jpg">`,
+        `<b>this</b> refers to <b>whatever is on the left of the . (dot) when calling a method</b>`,
+        `<img src="../src/img/this3.jpg">`,
+        `Still confused? Try this:`,
+        `<img src="../src/img/this4.jpg">`,
+        `Another way to look at <b>this</b> is to check <b>which object called it</b>.`,
+        `<img src="../src/img/this5.jpg">`,
+        `Here is <b>this</b> 4 ways: <br>1. <b>new keyword</b> binding - the <i>new keyword changes the meaning of this</i> to be <i>the object that is being created</i>. <br>2. <b>implicit binding</b> - <i>'this' refers to the object that is calling it</i>. It is implied, without doing anything it's just how the language works. <br>3. <b>explicit binding</b> - using the <i>'bind' keyword to change the meaning of 'this'</i>. <br>4. <b>arrow functions as methods</b> - <i>'this' is lexically scoped, refers to it's current surroundings and no further</i>. However, if 'this' is inside of a method's function, it falls out of scope and belongs to the window object. To correct this, you can use a higher order function to return an arrow function that calls 'this'.`,
+        `<img src="../src/img/this6.jpg">`,
+        `<i>When the global execution context starts during the creation phase, we create the 'global object' and 'this' and they equal each other. In this case, <b>the 'window' object is our global object</b></i>.`,
+        `So what if we do something like:`,
+        `<img src="../src/img/this7.jpg">`,
+        `If I run a() what do you think the answer will be? Well, we get 'window', so 'this' is equal to window and why is that? Remember the definition, <b>'this is the object that the function is a property of'. That means we're calling window.a() and running it</b>, <i>that's what we're doing above with calling a(). So what is the object that the function a() is a property of? Well, the function a() is a property of the 'window' object, so that's what 'this' is, it's the 'window'</i>.`,
+        `<img src="../src/img/this8.jpg">`,
+        `<i><b>'use strict' was added to JavaScript as a way for us to avoid the common mistakes that can happen with JavaScript</b>, when the language was originally designed, it wasn't perfect and there were bits and pieces of mistake and things like 'use strict' allow us to not have this kind of errors where 'this' refers to the 'window' object.  And 'use strict' can be added at the beginning, the first line of a function or the beginning of our script</i>.`,
+        `<b><i>The 'this' keyword acts as a placeholder<i> and we'll refer to whichever object called that method ('window' object or other object)</b>.`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Lexical vs Dynamic Scope',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [
+        `A big gotcha for a lot of people working with *this is when a function is ran inside of another function. It gets a little confusing, but we can remember who called the function.`,
+        `<img src="../src/img/lexical_dynamic_scope_this1.jpg">`,
+        `<b>Functions inside of method</b> <i>is, well, a function inside of a function. That means <b>'this' keyword is not assigned to the object itself, but actually to the 'window' object</b></i>.`,
+        `In the example above, the obj called sing() and then anotherFunc() was called within the sing() function. In JavaScript, that function defaults to the Window object. It happens because <b>everything in JavaScript is lexically scoped except for the this keyword. <i>It doesn't matter where it is written, it matters how it is called</i></b>. Changing anotherFunc() instead to an arrow function will fix this problem, as seen below. <i>Arrow functions do not bind or set their own context for this. If this is used in an arrow function, it is taken from the outside. Arrow functions also have no arguments created as functions do</i>.`,
+        `<img src="../src/img/lexical_dynamic_scope_this2.jpg">`,
+        `Okay, last example to really solidify our knowledge of <b>this</b>.`,
+        `<img src="../src/img/lexical_dynamic_scope_this3.jpg">`,
+        `This is unlike anything we've seen before. I remember when I told you about lexical scope, lexical environment, how the compiler knew right away without running any piece of code what variables functions had access to? It almost looks like <b>lexical scope doesn't work with 'this', it doesn't really matter where we write 'this' in the piece of code, all that matters is how 'this' gets called during invocation. Who calls it? <i>It matters how the function was called, like a regular function or like a method</i></b>.`,
+        `<img src="../src/img/lexical_dynamic_scope_this4.jpg">`,
+        `<b>The 'this' keyword is not lexically scoped, it doesn't matter where 'this' is write in our code, it matters <i>how the function was called</i></b>.`,
+        `<i>Everything in JavaScript is actually lexically scoped, how you write it determines what we have available, except for the 'this' keyword. <b>The 'this' keyword is actually dynamically scoped</b>, it doesn't matter where 'this' is written, it matters how the function was called</i>.`,
+        `<b>Arrow functions are lexically bound, <i>arrow functions</i> has a lexical 'this' behavior unlike <i>normal functions</i></b>.`,
+        `If I change the anotherFunc with an arrow function I solve the problem of 'this' target the window object.`,
+        `<img src="../src/img/lexical_dynamic_scope_this5.jpg">`,
+        `Before ES6 arrow function, we can make this:`,
+        `<img src="../src/img/lexical_dynamic_scope_this6.jpg">`,
+        `Because we return ' anotherFunc.bind(this) ' outside of anotherFunc, 'this' is going to refer to the object.`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'this – call(), apply(), bind()',
+      sectionLinks: [
+        {
+          linkTitle: 'Function.prototype.call()',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call`,
+        },
+        {
+          linkTitle: 'Function.prototype.apply()',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply`,
+        },
+        {
+          linkTitle: 'Function.prototype.bind()',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind`,
+        },
+      ],
+      sectionText: [
+        `In order for us to <b>manipulate the 'this' keyword</b>, there are 3 important methods (call, apply and bind).`,
+        `Underneath the hood, all functions use call() when invoking a function. Let me show you what I mean.`,
+        `<img src="../src/img/this_call1.jpg">`,
+        `<b>Underneath the hood, in JavaScript, when I do a() to invoke the function, <i>all functions when created have this property called call() that allows us to call the function</i></b>, <i>so a() is just a shorthand that we can use</i>.`,
+        `<b>Call</b> is a method of an object that <i>can substitute a different object than the one it is written on</i>. In this example below call is used to borrow the heal method from the wizard and is used on the archer (which is actually pointing this to archer), with the optional arguments added.`,
+        `<img src="../src/img/this_call.jpg">`,
+        `<b>Apply</b> is <i>almost identical to call</i>, except that instead of a comma separated list of arguments, <b>it takes an array of arguments</b>.`,
+        `<img src="../src/img/this_apply.jpg">`,
+        `Unlike call and apply, <b>bind</b> does not run the method it is used on, but rather returns a new function that can then be called later. bind() <b>returns a new function</b> with a certain context and parameters, and it's <b>usually used when we want a function to be called later on</b>, with a certain type of context or a certain type of 'this' keyword.`,
+        `<img src="../src/img/this_bind.jpg">`,
+        `So to review, call() and apply(), when are they useful? Well, <b>call() and apply() are useful for <i>borrowing methods from an object</i></b>, while <b>bind() is useful for us to <i>call functions later on</i></b> with a certain context or certain 'this' keyword.`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: 'Currying with bind()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [
+            `Currying is <b>breaking down a function with <i>multiple arguments</i> into one or more functions that each accept a <i>single argument</i></b>. <br><img src="../src/img/currying_bind1.jpg">`,
+            `Exercise 1: Find the largest number in an array <br><img src="../src/img/currying_bind2.jpg">`,
+            `Exercise 2: How would you fix this?<br><img src="../src/img/currying_bind3.jpg">`,
+          ],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Arrow Function',
+      sectionLinks: [
+        {
+          linkTitle: 'Arrow function expressions',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'Arrow Function: Implicit Returns',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Arrow Function and THIS keyword',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Regular Functions vs. Arrow Functions',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Immediately Invoked Function Expressions (IIFE)',
+      sectionLinks: [
+        {
+          linkTitle: 'IIFE (Immediately Invoked Function Expression)',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Glossary/IIFE`,
+        },
+      ],
+      sectionText: [
+        `Immediately Invoked Function Expression or more simply IIFE is <b>a JavaScript function that runs as soon as it is defined</b>. Can also be referred to as a Self-Executing Anonymous Function.`,
+        `<img src="../src/img/iife.jpg">`,
+        `We already know this code and we should already understand what the JavaScript engine is going to do with this code, you see IIFE are common JavaScript design pattern use by a lot of popular libraries, especially back in the day like jQuery or even BackboneJS, <b>the idea was using this IIFE code pattern, we can place all library code inside of local scope to avoid any namespace collisions</b>.`,
+        `<img src="../src/img/iife1.jpg">`,
+        `So let's have a look one by one. <i>The first thing we're doing is we're saying with this brackets () 'Hey, this isn't a function declaration, it's a function expression', because the JavaScript engine won't see function as the first item on the line, instead it's going to see these brackets (). So this brackets () will automatically makes it into a function expression</i>. And then after we've done that, we've created an anonymous function because there's no name attached to the function and then we immediately invoke it.`,
+        `Now, what's the benefit in doing this IIFE? You see, since the anonymous function within this, if he is a function expression and it's not being assigned to any global variables, no global property is really being created. And all of the properties created inside this IIFE are going to be scoped inside IIFE, so it's only going to be available inside this IIFE, but not outside.`,
+        `<b>Takeaways</b>: Avoid polluting the global namespace or scope when possible.`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Spread for Function Calls',
+      sectionLinks: [
+        {
+          linkTitle: 'Spread syntax (...)',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax`,
+        },
+        {
+          linkTitle: 'How to Use the Spread Operator (…) in JavaScript',
+          linkSource: `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Higher-Order Functions',
+      sectionLinks: [
+        {
+          linkTitle: 'First-class Function',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function`,
+        },
+        {
+          linkTitle: 'Higher-Order Functions',
+          linkSource: `https://eloquentjavascript.net/05_higher_order.html`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'Functions Accepting Callback Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle:
+            'A Function Can Be Passed As An Argument To Other Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'A Function Can Be Returned By Another Function',
+          articleLinks: [
+            {
+              linkTitle:
+                'JavaScript Functions → Returning Functions from Functions',
+              linkSource: `https://medium.com/@iampika/part-6-javascript-functions-returning-functions-from-functions-429a3d9a55d1`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'A Function Can Be Assigned As A Value To A Variable',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Callbacks',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Functions vs Objects',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Scheme + Java',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Curry',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Partial Application',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Pure Functions',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Referential Transparency',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Compose',
+      sectionLinks: [
+        {
+          linkTitle:
+            'A quick introduction to pipe() and compose() in JavaScript',
+          linkSource: `https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Pipe',
+      sectionLinks: [
+        {
+          linkTitle:
+            'A quick introduction to pipe() and compose() in JavaScript',
+          linkSource: `https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+  ],
+};
+
+const asynchronous = {
+  title: 'Asynchronous',
+  sections: [
+    {
+      sectionTitle: 'Introduction to Asynchronous Javascript',
+      sectionLinks: [
+        {
+          linkTitle: 'Asynchronous JavaScript',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous`,
+        },
+        {
+          linkTitle: 'Introducing asynchronous JavaScript',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing`,
+        },
+        {
+          linkTitle:
+            'Asynchronous and Single-threaded JavaScript? Meet the Event Loop',
+          linkSource: `https://thecodest.co/blog/asynchronous-and-single-threaded-javascript-meet-the-event-loop/`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Web APIs',
+      sectionLinks: [
+        {
+          linkTitle: 'Web APIs - Introduction',
+          linkSource: `https://www.w3schools.com/js/js_api_intro.asp`,
+        },
+        {
+          linkTitle: 'Web APIs',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Microtask Queue (Job Queue)',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Task Queue (Callback Queue)',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Event Loop',
+      sectionLinks: [
+        {
+          linkTitle:
+            'Asynchronous and Single-threaded JavaScript? Meet the Event Loop',
+          linkSource: `https://thecodest.co/blog/asynchronous-and-single-threaded-javascript-meet-the-event-loop/`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Timers',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'setTimeout()',
+          articleLinks: [
+            {
+              linkTitle: 'The global setTimeout() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/setTimeout`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'clearTimeout()',
+          articleLinks: [
+            {
+              linkTitle: 'The global clearTimeout() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'setInterval()',
+          articleLinks: [
+            {
+              linkTitle: 'The global setInterval() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/setInterval`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'clearInterval()',
+          articleLinks: [
+            {
+              linkTitle: 'The global clearInterval() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/clearInterval`,
+            },
+          ],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Intro to AJAX',
+      sectionLinks: [
+        {
+          linkTitle: 'AJAX Introduction',
+          linkSource: `https://www.w3schools.com/js/js_ajax_intro.asp`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'JSON & XML',
+      sectionLinks: [
+        {
+          linkTitle: 'JSON - Introduction',
+          linkSource: `https://www.w3schools.com/js/js_json_intro.asp`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'XMLHttpRequests: The Basics',
+      sectionLinks: [
+        {
+          linkTitle: 'Using XMLHttpRequest',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'const request = new XMLHttpRequest()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'request.open(‘GET’, ‘url’)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'request.send()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'request.addEventListener(‘load’, function)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'XMLHttpRequests: Chaining Requests',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'Welcome to Callback Hell',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Promises and the Fetch API',
+      sectionLinks: [
+        {
+          linkTitle: 'Using Promises',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises`,
+        },
+        {
+          linkTitle: 'Promise object',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise`,
+        },
+        {
+          linkTitle: 'Fetch API',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API`,
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'fetch(‘url’)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle:
+            'fetch() will always return a promise that need to by handled by consuming it',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Consuming Promises',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '.then(callback function with ‘response’ parameter)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'returning a Promise with response.json()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'returning a Promise with response.text()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Chaining Promises',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'returning a Promise and handle it outside the chain',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Handling Rejected Promises',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '.catch(callback function with ‘error’ parameter)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: '.finally(callback function)',
+          articleLinks: [
+            {
+              linkTitle: 'Promise.prototype.finally()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally`,
+            },
+          ],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Throwing Errors Manually',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'throw new Error()',
+          articleLinks: [
+            {
+              linkTitle: 'The throw statement',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw`,
+            },
+            {
+              linkTitle: 'Error objects',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error`,
+            },
+          ],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Building a Simple Promise',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle:
+            'new Promise(function(resolve, reject) {      resolve(fulfilled value);  reject(rejected value)  })',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Wrap old callback based functions into Promises',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Consuming Promises with Async/Await',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '‘async’ funtions',
+          articleLinks: [
+            {
+              linkTitle: 'The async function',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: '‘await’ keyword',
+          articleLinks: [
+            {
+              linkTitle: 'The await operator',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'An ‘async function’ will always return a promise',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle:
+            'Store ‘await’ Promises results in variables like const',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Multiple Awaits',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Error Handling in Async Functions',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'try {} catch(error) {}',
+          articleLinks: [
+            {
+              linkTitle: 'The try...catch statement',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle:
+            'Rethrowing an error when you have multiple async funtions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Returning Values from Async Functions',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'An async function always returns a Promise',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Parallel Vs. Sequential Requests',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'Promise.all([ ])',
+          articleLinks: [
+            {
+              linkTitle: 'The try...catch statement',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch`,
+            },
+          ],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Other Promise Combinators',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'Promise.race([ ])',
+          articleLinks: [
+            {
+              linkTitle: 'The Promise.race() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Promise.allSettled([ ])',
+          articleLinks: [
+            {
+              linkTitle: 'The Promise.allSettled() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Promise.any([ ])',
+          articleLinks: [
+            {
+              linkTitle: 'The Promise.any() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any`,
+            },
+          ],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: `Top-Level ' await ' (ES2022)`,
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [
+        `Top-Level 'await' work only in modules. With ES2022 you can use 'await' keyword outside of an 'async function', but only in modules.`,
+        `If one module imports a module which has a Top-Level 'await', then the importing module will wait for the imported module to finish the blocking code. So Top-Level 'await' is in fact blocking the execution not only in the imported module, but also in the module that is importing the imported module.`,
+      ],
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+  ],
+};
+
 const modulesAndTooling = {
   title: 'Modern JavaScript Development: Modules and Tooling',
   sections: [
@@ -5711,16 +5646,16 @@ export const data = [
   operators,
   controlingProgamLogicAndFlow,
   loops,
-  dataStructuresArrays,
-  dataStructuresObjects,
   dataStructuresSets,
   dataStructuresMaps,
+  dataStructuresArrays,
+  dataStructuresObjects,
   oop,
   standardBuildInObjects,
-  functionalProgramming,
-  asynchronous,
   domManipulation,
   events,
   webAPIs,
+  functionalProgramming,
+  asynchronous,
   modulesAndTooling,
 ];
