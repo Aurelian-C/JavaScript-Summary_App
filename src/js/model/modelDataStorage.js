@@ -1734,14 +1734,62 @@ const oop = {
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'OOP characteristics',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: '4 fundamental principles of OOP',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Traditional OOP (Classes and Instances)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
       ],
     },
     {
-      sectionTitle: 'Java',
+      sectionTitle: 'OOP in Javascript',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle:
+            'Classical OOP: Classes vs OOP in Javascript: Prototypes',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Prototypal Inheritance & The Prototype Chain',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Prototypes and inheritance',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Setting a prototype',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Shadowing properties',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Implementing Prototypal Inheritance with Object.create()',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
@@ -1753,46 +1801,8 @@ const oop = {
       ],
     },
     {
-      sectionTitle: '4 Principles of OOP',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'Abstraction',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Encapsulation',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Inheritance',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Polymorphism',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Factory Functions',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Constructor Functions',
+      sectionTitle:
+        'Implementing Prototypal Inheritance with Constructor Functions',
       sectionLinks: [
         {
           linkTitle: 'Object Constructors',
@@ -1806,48 +1816,6 @@ const oop = {
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: 'this keyword',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'new keyword',
-          articleLinks: [
-            {
-              linkTitle: 'The new operator',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Prototype',
-          articleLinks: [
-            {
-              linkTitle: 'Object prototypes',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Prototypal Inheritance and The Prototype Chain',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Object.create()',
-      sectionLinks: [
-        {
-          linkTitle: 'Object.create() method',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
@@ -1855,7 +1823,7 @@ const oop = {
       ],
     },
     {
-      sectionTitle: 'ES6 Classes - Syntactical Sugar',
+      sectionTitle: 'ES6 Classes - Syntactical Sugar to Constructor Functions',
       sectionLinks: [
         {
           linkTitle: 'Classes',
@@ -1919,12 +1887,12 @@ const oop = {
           articleText: [],
         },
         {
-          articleTitle: 'Encapsulation: Protected Properties and Methods',
+          articleTitle: 'Protected Properties and Methods',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
         {
-          articleTitle: 'Encapsulation: Private Class Fields and Methods',
+          articleTitle: 'Private Class Fields and Methods',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
