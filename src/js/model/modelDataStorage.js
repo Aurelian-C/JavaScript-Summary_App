@@ -1789,41 +1789,24 @@ const oop = {
       ],
     },
     {
-      sectionTitle: 'Implementing Prototypal Inheritance with Object.create()',
+      sectionTitle: 'Constructor Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Syntax',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'The prototype property',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
       ],
     },
     {
-      sectionTitle:
-        'Implementing Prototypal Inheritance with Constructor Functions',
-      sectionLinks: [
-        {
-          linkTitle: 'Object Constructors',
-          linkSource: `https://www.w3schools.com/js/js_object_constructors.asp`,
-        },
-        {
-          linkTitle: 'Function() constructor',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'ES6 Classes - Syntactical Sugar to Constructor Functions',
+      sectionTitle: 'ES6 Classes',
       sectionLinks: [
         {
           linkTitle: 'Classes',
@@ -1837,53 +1820,33 @@ const oop = {
       sectionText: [],
       sectionArticles: [
         {
+          articleTitle: 'Defining classes',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Class body',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Constructor method',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Prototype methods',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Static methods and properties',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
           articleTitle: 'Setters and Getters',
-          articleLinks: [
-            {
-              linkTitle: 'Object Accessors',
-              linkSource: `https://www.w3schools.com/js/js_object_accessors.asp`,
-            },
-            {
-              linkTitle: 'The get syntax',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get`,
-            },
-            {
-              linkTitle: 'The set syntax',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Static Methods',
-          articleLinks: [
-            {
-              linkTitle: 'The static keyword',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Extends, Super and Subclasses',
-          articleLinks: [
-            {
-              linkTitle: 'JavaScript Class extends',
-              linkSource: `https://www.w3schools.com/jsref/jsref_class_extends.asp`,
-            },
-            {
-              linkTitle: 'The extends keyword',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends`,
-            },
-            {
-              linkTitle: 'The super keyword',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super`,
-            },
-            {
-              linkTitle: 'JavaScript Class super',
-              linkSource: `https://www.w3schools.com/jsref/jsref_class_super.asp`,
-            },
-          ],
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
         {
@@ -1896,25 +1859,48 @@ const oop = {
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
+        {
+          articleTitle: 'Chaining Methods',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
       ],
     },
     {
-      sectionTitle: 'Inheritance Between "Classes":',
+      sectionTitle: 'Object.create()',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: 'Constructor Functions',
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle:
+        'More real inheritance than Prototypal Inheritance (Child class and Parent class)',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
+        {
+          articleTitle: 'Prototypes and inheritance',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
         {
-          articleTitle: 'Object.create()',
+          articleTitle: 'Inheritance Between "Classes": Constructor Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
         {
-          articleTitle: 'ES6 Classes',
+          articleTitle: 'Inheritance Between "Classes": ES6 Classes',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Inheritance Between "Classes": Object.create',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
