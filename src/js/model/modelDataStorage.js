@@ -520,52 +520,28 @@ const operators = {
   title: 'Operators',
   sections: [
     {
-      sectionTitle: 'Type Conversion and Coercion',
-      sectionLinks: [
-        {
-          linkTitle: 'Type coercion explained',
-          linkSource: `https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/`,
-        },
-      ],
+      sectionTitle: 'Introduction to JavaScript Operators',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleTitle: 'Type Conversion and Coercion',
+          articleLinks: [
+            {
+              linkTitle: 'Type coercion explained',
+              linkSource: `https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/`,
+            },
+          ],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Operator precedence',
-      sectionLinks: [
         {
-          linkTitle: 'Operator precedence',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Expressions and operators',
-      sectionLinks: [
-        {
-          linkTitle: 'Expressions and operators',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators`,
-        },
-      ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleTitle: 'Operator precedence',
+          articleLinks: [
+            {
+              linkTitle: 'Operator precedence',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence`,
+            },
+          ],
           articleText: [],
         },
       ],
@@ -1590,7 +1566,27 @@ const dataStructuresObjects = {
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Creating an object - Object literals',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Creating an object - Constructors',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Accesing an object (. vs [] notation)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Modifying an object',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'ES6 enhanced object literals',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
