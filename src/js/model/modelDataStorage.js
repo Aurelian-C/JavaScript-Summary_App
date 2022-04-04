@@ -17,7 +17,7 @@ const pattern = {
 };
 
 const engineAndRuntime = {
-  title: 'Engine & Runtime',
+  title: 'JavaScript in the Browser: Engine & Runtime',
   sections: [
     {
       sectionTitle: 'Javascript Engine',
