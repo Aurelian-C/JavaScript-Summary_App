@@ -1169,42 +1169,57 @@ const dataStructuresArrays = {
   title: 'Data structures: Arrays',
   sections: [
     {
-      sectionTitle: 'Intro to Arrays and Reference Types',
-      sectionLinks: [
-        {
-          linkTitle: 'Array object',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array`,
-        },
-      ],
+      sectionTitle: 'Introduction to Arrays',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: 'Creating Arrays',
-          articleLinks: [
-            {
-              linkTitle: 'Array() constructor',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Using Const with Arrays',
+          articleTitle: 'What is an array?',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
         {
-          articleTitle: 'Array Indices',
+          articleTitle: 'Creating arrays',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
         {
-          articleTitle: 'Modifying Arrays',
+          articleTitle: 'Array constructor',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
         {
-          articleTitle: 'Working with Nested Arrays',
+          articleTitle: 'Array literal notation',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Arrays length property',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Arrays indices',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Manipulation arrays',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Arrays are reference types',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Accessing every item / Iterating over arrays',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Nested / multidimensional arrays',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
