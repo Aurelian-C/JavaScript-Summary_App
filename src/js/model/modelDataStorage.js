@@ -490,7 +490,8 @@ const variablesValues = {
       ],
     },
     {
-      sectionTitle: 'Primitives vs. Objects (Primitive vs. Reference Types)',
+      sectionTitle:
+        'Primitive Types vs Reference Types (Primitives vs Objects)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
