@@ -501,18 +501,6 @@ const variablesValues = {
         },
       ],
     },
-    {
-      sectionTitle: 'Pass by Value vs Pass by Reference',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
   ],
 };
 
