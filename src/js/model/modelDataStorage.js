@@ -366,7 +366,7 @@ const engineAndRuntime = {
 };
 
 const variablesValues = {
-  title: 'Variables, Values and Primitive/Reference Types',
+  title: 'Variables, Values & Primitive/Reference Types',
   sections: [
     {
       sectionTitle: 'Statements vs Expressions',
