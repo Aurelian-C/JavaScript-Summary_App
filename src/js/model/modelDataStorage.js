@@ -370,12 +370,7 @@ const variablesValues = {
   sections: [
     {
       sectionTitle: 'Statements vs Expressions',
-      sectionLinks: [
-        {
-          linkTitle: 'JavaScript Expressions and Statements',
-          linkSource: `https://medium.com/launch-school/javascript-expressions-and-statements-4d32ac9c0e74`,
-        },
-      ],
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
         {
@@ -436,67 +431,23 @@ const variablesValues = {
       ],
     },
     {
-      sectionTitle: 'Primitive Types',
+      sectionTitle: 'Primitives vs References Types (Primitives vs Objects)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
         {
-          articleTitle: 'Numbers',
+          articleTitle:
+            'Primitive Types (Numbers, Strings, Booleans, null, undefined, Symbol)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
         {
-          articleTitle: 'Strings & Template Literals',
+          articleTitle: 'Reference Types (Arrays, Objects, Functions)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
         {
-          articleTitle: 'Booleans',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Null',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Undefined',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Reference Types',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: 'Arrays',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Objects',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-        {
-          articleTitle: 'Functions',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-    {
-      sectionTitle:
-        'Primitive Types vs Reference Types (Primitives vs Objects)',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
+          articleTitle: 'Pass by Value vs Pass by Reference',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
         },
