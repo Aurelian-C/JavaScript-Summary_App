@@ -28,60 +28,40 @@ The Intersection Observer API allows you to **configure a callback** that is cal
 - A **target element** _intersects_ either the device's **viewport** or a **specified element**. That specified element is called the **root element** or root for the purposes of the Intersection Observer API.
 - The first time the observer is initially asked to watch a target element.
 
-Typically, you'll want to watch for intersection changes with regard to the target element's closest scrollable ancestor, or, if the target element isn't a descendant of a scrollable element, the device's viewport. To watch for intersection relative to the device's viewport, specify `null` for `root` option.
+Typically, you'll want to watch for intersection changes with regard to the target element's closest scrollable ancestor, or, if the target element isn't a descendant of a scrollable element, the device's viewport.
 
 Whether you're using the viewport or some other element as the root, the API works the same way, executing a callback function you provide whenever the visibility of the target element changes so that it crosses desired amounts of intersection with the root.
 
-The degree of intersection between the target element and its root is the **intersection ratio**. This is a representation of the percentage of the target element which is visible as a value between 0.0 and 1.0.
-
 ## Creating an intersection observer
 
-Create the intersection observer by calling its constructor and passing it a callback function to be run whenever a threshold is crossed in one direction or the other:
+You create the intersection observer by calling its constructor and passing it a callback function to be run whenever a threshold is crossed in one direction or the other:
 
 ```js
-let options = {
-  root: document.querySelector('#scrollArea'),
+const callback = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entries);
+  console.log(entry)
+};
+
+const options = {
+  root: document.querySelector('#idElement'),
   rootMargin: '0px',
   threshold: 1.0,
 };
 
-let observer = new IntersectionObserver(callback, options);
+const observer = new IntersectionObserver(callback, options);
+
+observer.observe(targetElement);
 ```
 
-A threshold of 1.0 means that when 100% of the target is visible within the element specified by the `root` option, the callback is invoked.
+### Intersection observer callback
 
-### Intersection observer options
+ The `callback` function will get called with two arguments and that's the **entries** and the **observer object** itself (`new IntersectionObserver()`).
 
-The `options` object passed into the `IntersectionObserver()` constructor let you control the circumstances under which the observer's callback is invoked. It has the following fields:
-
-###### `root`
-
-The element that is used as the viewport for checking visibility of the target. Must be the ancestor of the target. Defaults to the browser viewport if not specified or if `null`.
-
-###### rootMargin
-
-Margin around the root. Can have values similar to the CSS `margin` property, e.g. "10px 20px 30px 40px" (top, right, bottom, left). The values can be percentages. This set of values serves to grow or shrink each side of the root element's bounding box before computing intersections. Defaults to all zeros.
-
-###### threshold
-
-Either a single number or an array of numbers which indicate at what percentage of the target's visibility the observer's callback should be executed. If you only want to detect when visibility passes the 50% mark, you can use a value of 0.5. If you want the callback to run every time visibility passes another 25%, you would specify the array [0, 0.25, 0.5, 0.75, 1]. The default is 0 (meaning as soon as even one pixel is visible, the callback will be run). A value of 1.0 means that the threshold isn't considered passed until every pixel is visible.
-
-### Targeting an element to be observed
-
-Once you have created the observer, you need to give it a target element to watch:
+The callback receives a list of `IntersectionObserverEntry` objects and the observer:
 
 ```js
-let target = document.querySelector('#listItem');
-observer.observe(target);
-
-// the callback we setup for the observer will be executed now for the first time
-// it waits until we assign a target to our observer (even if the target is currently not visible)
-```
-
-Whenever the target meets a threshold specified for the `IntersectionObserver`, the callback is invoked. The callback receives a list of `IntersectionObserverEntry` objects and the observer:
-
-```js
-let callback = (entries, observer) => {
+const callback = (entries, observer) => {
   entries.forEach(entry => {
     // Each entry describes an intersection change for one observed
     // target element:
@@ -98,9 +78,39 @@ let callback = (entries, observer) => {
 
 The list of entries received by the callback includes one entry for each target which reported a change in its intersection status. Check the value of the `isIntersecting` property to see if the entry represents an element that currently intersects with the root.
 
-Be aware that your callback is executed on the main thread. It should operate as quickly as possible; if anything time-consuming needs to be done, use `Window.requestIdleCallback()`.
+The `callback` function will get called each time that the **observed element** _(target element) is intersecting the_ **root element** _at the threshold that we defined, no matter if we are scrolling up or down_.
 
-Also, note that if you specified the `root` option, the target must be a descendant of the root element.
+### Intersection observer options
+
+The `options` object passed into the `IntersectionObserver()` constructor let you control the circumstances under which the observer's callback is invoked. It has the following fields:
+
+###### `root`
+
+The element that is used as the viewport for **checking visibility of the target**. Must be the **ancestor of the target**. Defaults to the browser viewport if not specified or if `null`.
+
+###### rootMargin
+
+Margin around the root. Can have values similar to the CSS `margin` property, e.g. "10px 20px 30px 40px" (top, right, bottom, left). The values can be percentages. This set of values serves to grow or shrink each side of the root element's bounding box before computing intersections. Defaults to all zeros.
+
+###### threshold
+
+Either a single **number** or an **array of numbers** which indicate at **what percentage of the target's visibility the observer's callback should be executed**.
+If you only want to detect when visibility passes the 50% mark, you can use a value of 0.5. If you want the callback to run every time visibility passes another 25%, you would specify the array [0, 0.25, 0.5, 0.75, 1]. **The default is 0** (meaning as soon as even one pixel is visible, the callback will be run). A value of 1.0 means that the threshold isn't considered passed until every pixel is visible.
+A threshold of 1.0 means that when 100% of the target is visible within the element specified by the `root` option, the callback is invoked.
+
+### Targeting an element to be observed
+
+Once you have created the observer, you need to give it a target element to watch:
+
+```js
+let target = document.querySelector('#listItem');
+observer.observe(targetElement);
+
+// the callback we setup for the observer will be executed now for the first time
+// it waits until we assign a target to our observer (even if the target is currently not visible)
+```
+
+Whenever the target meets a threshold specified for the `IntersectionObserver`, the callback is invoked.  Also, note that if you specified the `root` option, **the target must be a descendant of the root element**.
 
 ## Intersection change callbacks
 
