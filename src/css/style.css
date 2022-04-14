@@ -88,6 +88,11 @@ body {
   cursor: pointer;
 }
 
+.sub_section--anchor {
+  text-decoration: none;
+  color: white;
+}
+
 .sub_section--articles {
   font-size: 0.8rem;
   font-weight: 300;

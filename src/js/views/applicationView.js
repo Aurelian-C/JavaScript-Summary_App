@@ -24,7 +24,11 @@ class ApplicationView {
                           <i class="fa-solid fa-angle-right arrow"></i>
                           <h3 class="sub_section--title" data-title="${
                             section.sectionTitle
-                          }">${section.sectionTitle}</h3>
+                          }"><a href="${
+                        section.sectionSource
+                      }" class="sub_section--anchor">${
+                        section.sectionTitle
+                      }</a></h3>
                         </div>
                         <ul class="sub_section--articles">
                         ${section.sectionArticles
