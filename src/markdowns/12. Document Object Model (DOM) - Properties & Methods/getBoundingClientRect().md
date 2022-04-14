@@ -1,6 +1,6 @@
 # getBoundingClientRect()
 
-The `Element.getBoundingClientRect()` method returns a **DOMRect** object **providing information** about the **size of an element** and its **position relative to the viewport**.
+The `Element.getBoundingClientRect()` method returns a **DOMRect** object **providing information** about the **size** of an element and its **position** relative to the viewport.
 
 ## Syntax
 
@@ -10,7 +10,7 @@ domRect = element.getBoundingClientRect();
 
 ### Value
 
-The `getBoundingClientRect()` method returns a **DOMRect object** with eight properties:
+The `getBoundingClientRect()` method returns a **DOMRect object** with **8 properties**:
 
 - `left`
 - `top`
