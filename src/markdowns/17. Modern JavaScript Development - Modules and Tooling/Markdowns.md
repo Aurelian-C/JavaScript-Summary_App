@@ -2,7 +2,7 @@
 
 ## What is Markdown?
 
-- **Lightweight markup language** with a plain text formatting syntax
+- ==Lightweight markup language== with a plain text formatting syntax
 - Can be converted into HTML/XHTML and other formats
 - It's main purpose is readability and ease of use
 
@@ -25,7 +25,7 @@
 
 ## Markdown Editors:
 
-- **Text Editor Extensions** (VSCode, Atom, etc)
+- ==Text Editor Extensions== (VSCode, Atom, etc)
 - MarkPad
 - HarooPad
 - MarkdownPad 2
