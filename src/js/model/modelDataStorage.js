@@ -2584,6 +2584,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/Element.innerHTML.html`,
         },
         {
           articleTitle: 'insertAdjacentHTML()',
@@ -2721,6 +2722,16 @@ const domManipulation = {
             {
               linkTitle: 'Node.cloneNode()',
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'Summary: Insert, Replace, Remove',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
             },
           ],
           articleText: [],

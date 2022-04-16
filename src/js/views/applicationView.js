@@ -36,7 +36,7 @@ class ApplicationView {
                             if (!title.articleTitle) return '';
                             return `
                                 <li class="sub_section--article" data-title="${title.articleTitle}">
-                                  ${title.articleTitle}
+                                <a href="${title.articleSource}" class="sub_section--anchor">${title.articleTitle}</a>
                                 </li>
                           `;
                           })
