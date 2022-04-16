@@ -2735,6 +2735,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/Summary - Insert, Replace, Remove.html`,
         },
       ],
     },
