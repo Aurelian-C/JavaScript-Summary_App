@@ -2314,7 +2314,7 @@ const domManipulation = {
       ],
     },
     {
-      sectionTitle: 'DOM Nodes & Node Lists',
+      sectionTitle: 'DOM Node Types (Node vs Element)',
       sectionLinks: [
         {
           linkTitle: `What's the Difference between DOM Node and Element?`,
@@ -2331,26 +2331,13 @@ const domManipulation = {
       ],
     },
     {
-      sectionTitle: 'DOM Elements',
+      sectionTitle: 'Live Node Lists vs Static Node Lists',
       sectionLinks: [
         {
-          linkTitle: 'HTML DOM Elements - w3schools',
-          linkSource: 'https://www.w3schools.com/js/js_htmldom_elements.asp',
+          linkTitle: '',
+          linkSource: '',
         },
       ],
-      sectionText: [],
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-        },
-      ],
-    },
-
-    {
-      sectionTitle: 'DOM Collections',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
         {
@@ -2588,11 +2575,51 @@ const domManipulation = {
       sectionText: [],
       sectionArticles: [
         {
+          articleTitle: 'innerHTML',
+          articleLinks: [
+            {
+              linkTitle: 'Element.innerHTML',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'insertAdjacentHTML()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.insertAdjacentHTML()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML`,
+            },
+          ],
+          articleText: [],
+        },
+        {
           articleTitle: 'document.createElement()',
           articleLinks: [
             {
               linkTitle: 'Document.createElement()',
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'append()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.append()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/append`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'appendChild()',
+          articleLinks: [
+            {
+              linkTitle: 'Node.appendChild()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild`,
             },
           ],
           articleText: [],
@@ -2608,11 +2635,11 @@ const domManipulation = {
           articleText: [],
         },
         {
-          articleTitle: 'append()',
+          articleTitle: 'insertBefore()',
           articleLinks: [
             {
-              linkTitle: 'Element.append()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/append`,
+              linkTitle: 'Node.insertBefore()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore`,
             },
           ],
           articleText: [],
@@ -2638,31 +2665,31 @@ const domManipulation = {
           articleText: [],
         },
         {
-          articleTitle: 'insertAdjacentHTML()',
+          articleTitle: 'insertAdjacentElement()',
           articleLinks: [
             {
-              linkTitle: 'Element.insertAdjacentHTML()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML`,
+              linkTitle: 'Element.insertAdjacentElement()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement`,
             },
           ],
           articleText: [],
         },
         {
-          articleTitle: 'insertAdjacentText()',
+          articleTitle: 'replaceWith()',
           articleLinks: [
             {
-              linkTitle: 'Element.insertAdjacentText()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentText`,
+              linkTitle: 'Element.replaceWith()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/web/api/element/replacewith`,
             },
           ],
           articleText: [],
         },
         {
-          articleTitle: 'cloneNode()',
+          articleTitle: 'replaceChild()',
           articleLinks: [
             {
-              linkTitle: 'Node.cloneNode()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode`,
+              linkTitle: 'Node.replaceChild()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild`,
             },
           ],
           articleText: [],
@@ -2678,15 +2705,32 @@ const domManipulation = {
           articleText: [],
         },
         {
-          articleTitle: 'innerHTML',
+          articleTitle: 'removeChild()',
           articleLinks: [
             {
-              linkTitle: 'Element.innerHTML',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML`,
+              linkTitle: 'Node.removeChild()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild`,
             },
           ],
           articleText: [],
         },
+        {
+          articleTitle: 'cloneNode()',
+          articleLinks: [
+            {
+              linkTitle: 'Node.cloneNode()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode`,
+            },
+          ],
+          articleText: [],
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Text, Styles, Classes & Attributes',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionArticles: [
         {
           articleTitle: 'innerText',
           articleLinks: [
@@ -2707,13 +2751,16 @@ const domManipulation = {
           ],
           articleText: [],
         },
-      ],
-    },
-    {
-      sectionTitle: 'Styles, Attributes & Classes',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionArticles: [
+        {
+          articleTitle: 'insertAdjacentText()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.insertAdjacentText()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentText`,
+            },
+          ],
+          articleText: [],
+        },
         {
           articleTitle: 'style',
           articleLinks: [
@@ -2735,21 +2782,21 @@ const domManipulation = {
           articleText: [],
         },
         {
-          articleTitle: 'setProperty()',
+          articleTitle: 'className',
           articleLinks: [
             {
-              linkTitle: 'CSSStyleDeclaration.setProperty()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty`,
+              linkTitle: 'Element.className',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/className`,
             },
           ],
           articleText: [],
         },
         {
-          articleTitle: 'setAttribute()',
+          articleTitle: 'classList (add, remove, toggle, contains)',
           articleLinks: [
             {
-              linkTitle: 'Element.setAttribute()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute`,
+              linkTitle: 'Element.classList',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/classList`,
             },
           ],
           articleText: [],
@@ -2765,11 +2812,41 @@ const domManipulation = {
           articleText: [],
         },
         {
-          articleTitle: 'alt',
+          articleTitle: 'setAttribute()',
           articleLinks: [
             {
-              linkTitle: 'HTMLImageElement.alt',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt`,
+              linkTitle: 'Element.setAttribute()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'setProperty()',
+          articleLinks: [
+            {
+              linkTitle: 'CSSStyleDeclaration.setProperty()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'attributes',
+          articleLinks: [
+            {
+              linkTitle: 'Element.attributes',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes`,
+            },
+          ],
+          articleText: [],
+        },
+        {
+          articleTitle: 'value',
+          articleLinks: [
+            {
+              linkTitle: 'DOMTokenList.value',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/value`,
             },
           ],
           articleText: [],
@@ -2785,6 +2862,16 @@ const domManipulation = {
           articleText: [],
         },
         {
+          articleTitle: 'alt',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLImageElement.alt',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt`,
+            },
+          ],
+          articleText: [],
+        },
+        {
           articleTitle: 'href',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
@@ -2795,16 +2882,6 @@ const domManipulation = {
             {
               linkTitle: 'HTMLElement.hidden',
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'value',
-          articleLinks: [
-            {
-              linkTitle: 'DOMTokenList.value',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/value`,
             },
           ],
           articleText: [],
@@ -2827,26 +2904,6 @@ const domManipulation = {
           ],
           articleText: [],
         },
-        {
-          articleTitle: 'classList (add, remove, toggle, contains)',
-          articleLinks: [
-            {
-              linkTitle: 'Element.classList',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/classList`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'className',
-          articleLinks: [
-            {
-              linkTitle: 'Element.className',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/className`,
-            },
-          ],
-          articleText: [],
-        },
       ],
     },
     {
@@ -2854,6 +2911,16 @@ const domManipulation = {
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionArticles: [
+        {
+          articleTitle: 'getBoundingClientRect()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.getBoundingClientRect()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect`,
+            },
+          ],
+          articleText: [],
+        },
         {
           articleTitle: 'clientHeight',
           articleLinks: [
@@ -2885,16 +2952,6 @@ const domManipulation = {
           articleText: [],
         },
         {
-          articleTitle: 'getBoundingClientRect()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.getBoundingClientRect()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect`,
-            },
-          ],
-          articleText: [],
-        },
-        {
           articleTitle: 'scrollIntoView()',
           articleLinks: [
             {
@@ -2920,16 +2977,6 @@ const domManipulation = {
             {
               linkTitle: 'HTMLElement.focus()',
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus`,
-            },
-          ],
-          articleText: [],
-        },
-        {
-          articleTitle: 'attributes',
-          articleLinks: [
-            {
-              linkTitle: 'Element.attributes',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes`,
             },
           ],
           articleText: [],

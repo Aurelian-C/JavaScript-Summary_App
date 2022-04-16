@@ -26,7 +26,7 @@ The document contains the following hierarchy of nodes:
 `<body>` is also a node having 3 children: a comment `<!-- Page Body -->`, heading `<h2>`, and paragraph `<p>`. The parent of the `<body>` node is `<html>` node.
 The tags in the HTML document represent a node, what's interesting is that regular text is also a node. The paragraph node `<p>` has 1 child: the text node "Thank you for visiting my web page!".
 
-## Note Types
+## Node Types
 
 How can you distinguish these different types of nodes? The answer lays in the DOM Node interface, particularly in the `Node.nodeType` property. `Node.nodeType` can have one of the following values that represents the type of the node:
 
