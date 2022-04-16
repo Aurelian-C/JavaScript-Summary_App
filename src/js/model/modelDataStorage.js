@@ -2322,6 +2322,7 @@ const domManipulation = {
         },
       ],
       sectionText: [],
+      sectionSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/DOM Node Types (Node vs Element).html`,
       sectionArticles: [
         {
           articleTitle: '',
