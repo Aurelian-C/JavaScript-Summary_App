@@ -41,6 +41,8 @@ You can remove elements with three main methods:
 - `someElement.remove()` => ==Removes a single element== (`someElement`) from the DOM. Browser support is good, IE again doesn't like it though. Use `removeChild()` instead.
 - `someElement.parentNode.removeChild(someElement)` => ==Removes the provided child element== (NOT the element on which you call it). Provides broad browser support but of course requires a bit more code.
 
+> **Remove Objects from DOM and Memory Leaks**: if you delete/remove an object from the DOM and you have no reference to that object in your code anymore , then JavaScript or the browser will automatically clear everything that is related to that DOM object including any event listeners, so it will clear the event listeners for you automatically.
+
 ## What about Text Nodes?
 
 You can easily create & insert text nodes in one go:

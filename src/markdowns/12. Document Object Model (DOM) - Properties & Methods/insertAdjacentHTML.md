@@ -30,7 +30,7 @@ node.insertAdjacentHTML(position, text);
 
 We can visualize the possible positions for the inserted content as follows:
 
-```js
+```html
 <!-- beforebegin -->
 <p>
   <!-- afterbegin -->

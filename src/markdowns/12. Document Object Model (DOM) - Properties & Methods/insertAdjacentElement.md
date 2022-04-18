@@ -30,7 +30,7 @@ targetNode.insertAdjacentElement(position, element);
 
 We can visualize the possible positions for the inserted element as follows:
 
-```js
+```html
 <!-- beforebegin -->
 <p>
   <!-- afterbegin -->

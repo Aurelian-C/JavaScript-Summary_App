@@ -2642,7 +2642,27 @@ const domManipulation = {
       ],
     },
     {
-      sectionTitle: 'Select DOM elements & DOM Traversing',
+      sectionTitle: 'HTML Attributes vs DOM Properties',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'DOM Traversing & select DOM elements',
       sectionLinks: [
         {
           linkTitle: 'Traversing the DOM with JavaScript',
@@ -2652,6 +2672,17 @@ const domManipulation = {
       sectionText: [],
       sectionSource: '',
       sectionArticles: [
+        {
+          articleTitle: 'Introduction to DOM Traversing',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
         {
           articleTitle: 'document.documentElement',
           articleLinks: [
@@ -2891,6 +2922,18 @@ const domManipulation = {
       sectionText: [],
       sectionSource: '',
       sectionArticles: [
+        {
+          articleTitle: 'Introduction to create, insert and remove elements',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+          articleSource: '',
+        },
         {
           articleTitle: 'innerHTML',
           articleLinks: [

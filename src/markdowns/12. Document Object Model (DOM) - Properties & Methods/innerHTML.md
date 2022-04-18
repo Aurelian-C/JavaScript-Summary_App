@@ -84,7 +84,21 @@ el.innerHTML = name; // harmless in this case
 | :---------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
 | Return the text content of the element, _including all spacing and inner HTML tags_ | Return the text content of the element and all its children, _without CSS hidden text spacing and tags_, except `<script>` and `<style>` elements | Return the text content of the element and all descendaces, _with spacing and CSS hidden text, but without tags_. |
 
+## Some considerations about `innerHTML`
+
+The `innerHTML` method is ==not great for performance==. Whenever you using `innerHTML` you are forcing the browser to re-parse and re-render a lot of HTML which maybe didn't change at all or have small changes. Now of course for a short list on a simple page or a small website it doesn't really matter but if you're working with bigger web sites, bigger applications, that might be super bad and really hurt the user experience.
+
+All the content which you swapped with `innerHTML` is ==re-rendered==, even if it's based on old content.
+
+```js
+const div = document.querySelector('div');
+div.innerHTML = div.innerHTML + '<p>Something went wrong!</p>
+```
+
+So `innerHTML` is ==useful whenever you want to change everything, all the HTML content of an element==, it's ==not so good if you only want to add something to the existing content==, that's one thing to keep in mind.
+
 ## Reference
 
 1. [Element.innerHTML - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
 2. [innerHTML - w3schools](https://www.w3schools.com/jsref/prop_html_innerhtml.asp)
+3. [JavaScript - The Complete Guide (Beginner + Advanced) - Maximilian Schwarzmüller](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=Cj0KCQjw0umSBhDrARIsAH7FCoeU9W1FhcfHq4JH6InuqwKQdlnXPY4wnIG6-ZrfGPJ6hyB9zTE0NW8aAvGkEALw_wcB)

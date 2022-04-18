@@ -41,6 +41,14 @@ let p = document.getElementById('para1');
 let p_prime = p.cloneNode(true);
 ```
 
+
+
+## Summary
+
+You learned that inserting an element more than once will **move** that element and **not copy** it.  If you would want to copy an element, well then you can do this with another method which is available on every DOM node object an is called `cloneNode()`. This method will clone a node and will really **return a brand new one**.
+
+It takes ==one optional argument== and that's a Boolean which can be `true` or `false`, which by default is `false`, which simply determines whether a deep clone, so with all child and descendant elements should be done or not. If you pass `true` as argument, then not only the direct child element but also all child elements of that element and all descendants in general will be part of the clone.
+
 ## Reference
 
 1. [Node.cloneNode() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode)

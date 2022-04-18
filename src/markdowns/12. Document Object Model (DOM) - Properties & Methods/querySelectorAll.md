@@ -4,6 +4,8 @@ The `Document` method `querySelectorAll()` takes as parameter any **CSS selector
 
 > Note: You may also call `querySelectorAll()` on any element; it will return only elements which are descendants of the specified root element with the given CSS selectors.
 
+> Note: You can only query for `Element` nodes.
+
 ## Syntax
 
 ```js

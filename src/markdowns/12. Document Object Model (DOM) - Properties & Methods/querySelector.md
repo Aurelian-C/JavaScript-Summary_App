@@ -4,6 +4,8 @@ The `Document` method `querySelector()` takes as parameter any **CSS selectors**
 
 > **Note**: You may also call `querySelector()` on any element; it will return only element which is descendant of the specified root element with the given CSS selectors.
 
+> Note: You can only query for `Element` nodes.
+
 ## Syntax
 
 ```js

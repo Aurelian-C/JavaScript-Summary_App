@@ -4,7 +4,7 @@ Now what is that DOM thing? Before we ask to that question, let's understand ==w
 
 ## HTML, DOM & JavaScript
 
-So we get ==JavaScript== and we get the ==browser==, these two pieces which ==interact all the time==. Now don't forget that ==JavaScript is a **hosted language**==, that means ==the browser provides the environment for JavaScript to run==, it provides the ==JavaScript Engine== which in the end ==parses and understands all the JavaScript code and executes it== in the end. So the browser provides that, it also provides a bunch of ==APIs==, a bunch of functionalities into which JavaScript can tap so that ==JavaScript can interact with the browser==.
+So we get ==JavaScript== and we get the ==browser==, these two pieces which ==interact all the time==. Now don't forget that ==JavaScript is a **hosted language**==, that means ==the browser provides the environment for JavaScript to run==, it provides the ==JavaScript Engine== which in the end ==parses and understands all the JavaScript code and executes it==. So the browser provides the Engine, it also provides a bunch of ==APIs==, a bunch of functionalities into which JavaScript can tap so that ==JavaScript can interact with the browser==.
 
 ## Understanding the DOM and how it's created
 
