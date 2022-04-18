@@ -2587,7 +2587,7 @@ const domManipulation = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/Introduction to The Document Object.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -2631,7 +2631,7 @@ const domManipulation = {
       ],
       sectionText: [],
       sectionSource: '',
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/Live Node Lists vs Static Node Lists.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -2651,7 +2651,7 @@ const domManipulation = {
       ],
       sectionText: [],
       sectionSource: '',
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/HTML Attributes vs DOM Properties.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -2681,7 +2681,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/Introduction to DOM Traversing.html`,
         },
         {
           articleTitle: 'document.documentElement',
@@ -2692,7 +2692,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/document.documentElement.html`,
         },
         {
           articleTitle: 'document.head',
@@ -2703,7 +2703,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/document.head.html`,
         },
         {
           articleTitle: 'document.body',
@@ -2714,7 +2714,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/document.body.html`,
         },
         {
           articleTitle: 'getElementById()',
@@ -2725,7 +2725,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/getElementById.html`,
         },
         {
           articleTitle: 'getElementsByTagName()',
@@ -2736,7 +2736,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/getElementsByTagName.html`,
         },
         {
           articleTitle: 'getElementsByClassName()',
@@ -2747,7 +2747,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/getElementsByClassName.html`,
         },
         {
           articleTitle: 'querySelector() (document/element)',
@@ -2758,7 +2758,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/querySelector.html`,
         },
         {
           articleTitle: 'querySelectorAll() (document/element)',
@@ -2769,7 +2769,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/querySelectorAll.html`,
         },
         {
           articleTitle: 'children',
@@ -2780,7 +2780,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/children.html`,
         },
         {
           articleTitle: 'childNodes',
@@ -2791,7 +2791,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/childNodes.html`,
         },
         {
           articleTitle: 'firstElementChild',
@@ -2802,7 +2802,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/firstElementChild.html`,
         },
         {
           articleTitle: 'lastElementChild',
@@ -2813,7 +2813,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/lastElementChild.html`,
         },
         {
           articleTitle: 'firstChild',
@@ -2824,7 +2824,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/firstChild.html`,
         },
         {
           articleTitle: 'lastChild',
@@ -2835,7 +2835,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/lastChild.html`,
         },
         {
           articleTitle: 'closest()',
@@ -2846,7 +2846,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/closest.html`,
         },
         {
           articleTitle: 'parentElement',
@@ -2857,7 +2857,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/parentElement.html`,
         },
         {
           articleTitle: 'parentNode',
@@ -2868,7 +2868,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/parentNode.html`,
         },
         {
           articleTitle: 'previousElementSibling',
@@ -2879,7 +2879,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/previousElementSibling.html`,
         },
         {
           articleTitle: 'nextElementSibling',
@@ -2890,7 +2890,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/nextElementSibling.html`,
         },
         {
           articleTitle: 'previousSibling',
@@ -2901,7 +2901,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/previousSibling.html`,
         },
         {
           articleTitle: 'nextSibling',
@@ -2912,7 +2912,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/nextSibling.html`,
         },
       ],
     },
@@ -2932,7 +2932,7 @@ const domManipulation = {
           ],
           articleText: [],
           articleSource: '',
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/Introduction to create, insert and remove elements.html`,
         },
         {
           articleTitle: 'innerHTML',
@@ -2955,7 +2955,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/insertAdjacentHTML.html`,
         },
         {
           articleTitle: 'document.createElement()',
@@ -2966,7 +2966,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/document.createElement.html`,
         },
         {
           articleTitle: 'append()',
@@ -2999,7 +2999,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/prepend.html`,
         },
         {
           articleTitle: 'insertBefore()',
@@ -3010,7 +3010,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/insertBefore.html`,
         },
         {
           articleTitle: 'before()',
@@ -3021,7 +3021,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/before.html`,
         },
         {
           articleTitle: 'after()',
@@ -3043,7 +3043,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/insertAdjacentElement.html`,
         },
         {
           articleTitle: 'replaceWith()',
@@ -3054,7 +3054,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/replaceWith.html`,
         },
         {
           articleTitle: 'replaceChild()',
@@ -3065,7 +3065,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/replaceChild.html`,
         },
         {
           articleTitle: 'remove()',
@@ -3076,7 +3076,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/remove.html`,
         },
         {
           articleTitle: 'removeChild()',
@@ -3087,7 +3087,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/removeChild.html`,
         },
         {
           articleTitle: 'cloneNode()',
@@ -3098,7 +3098,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/cloneNode.html`,
         },
         {
           articleTitle: 'Summary: Insert, Replace, Remove',
@@ -3128,7 +3128,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/innerText.html`,
         },
         {
           articleTitle: 'textContent',
@@ -3139,7 +3139,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/textContent.html`,
         },
         {
           articleTitle: 'insertAdjacentText()',
@@ -3150,7 +3150,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/insertAdjacentText.html`,
         },
         {
           articleTitle: 'style',
@@ -3161,7 +3161,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/style.html`,
         },
         {
           articleTitle: 'getComputedStyle()',
@@ -3172,7 +3172,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/getComputedStyle.html`,
         },
         {
           articleTitle: 'className',
@@ -3183,7 +3183,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/className.html`,
         },
         {
           articleTitle: 'classList (add, remove, toggle, contains)',
@@ -3194,7 +3194,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/classList.html`,
         },
         {
           articleTitle: 'getAttribute()',
@@ -3205,7 +3205,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/getAttribute.html`,
         },
         {
           articleTitle: 'setAttribute()',
@@ -3216,7 +3216,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/setAttribute.html`,
         },
         {
           articleTitle: 'setProperty()',
@@ -3227,7 +3227,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/setProperty.html`,
         },
         {
           articleTitle: 'attributes',
@@ -3238,7 +3238,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/attributes.html`,
         },
         {
           articleTitle: 'value',
@@ -3249,7 +3249,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/value.html`,
         },
         {
           articleTitle: 'src',
@@ -3260,7 +3260,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/src.html`,
         },
         {
           articleTitle: 'alt',
@@ -3271,13 +3271,13 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/alt.html`,
         },
         {
           articleTitle: 'href',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/href.html`,
         },
         {
           articleTitle: 'hidden',
@@ -3288,7 +3288,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/hidden.html`,
         },
         {
           articleTitle: 'dataset',
@@ -3307,7 +3307,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/dataset.html`,
         },
       ],
     },
@@ -3326,7 +3326,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/getBoundingClientRect.html`,
         },
         {
           articleTitle: 'clientHeight',
@@ -3337,7 +3337,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/clientHeight.html`,
         },
         {
           articleTitle: 'clientWidth',
@@ -3348,7 +3348,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/clientWidth.html`,
         },
         {
           articleTitle: 'offsetHeight',
@@ -3359,7 +3359,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/offsetHeight.html`,
         },
         {
           articleTitle: 'scrollIntoView()',
@@ -3370,7 +3370,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/scrollIntoView.html`,
         },
         {
           articleTitle: 'blur()',
@@ -3381,7 +3381,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/blur.html`,
         },
         {
           articleTitle: 'focus()',
@@ -3392,7 +3392,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/focus.html`,
         },
         {
           articleTitle: 'isEqualNode()',
@@ -3403,7 +3403,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/isEqualNode.html`,
         },
         {
           articleTitle: 'nodeValue',
@@ -3414,7 +3414,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/nodeValue.html`,
         },
         {
           articleTitle: 'Node.contains()',
@@ -3425,7 +3425,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/contains.html`,
         },
         {
           articleTitle: 'document.createRange().createContextualFragment()',
@@ -3440,7 +3440,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/_____________________.html`,
         },
       ],
     },

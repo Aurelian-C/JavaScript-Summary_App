@@ -1,8 +1,8 @@
 # classList
 
-The `Element.classList` is a **read-only** property that returns a **live DOMTokenList collection** of the class attributes of the element. This can then be used to manipulate the class list.
+The `Element.classList` is a ==read-only== property that returns a ==live== **DOMTokenList collection** of the ==class attributes== of the element. This can then be used to manipulate the class list.
 
-Using `classList` is a convenient alternative to accessing an element's list of classes as a space-delimited string via `element.className`.
+> **Note**: Using `classList` is a convenient alternative to accessing an element's list of classes as a space-delimited string via `element.className`.
 
 The `classList` property is read-only, but you can use the methods listed below, to add, remove, toggle CSS classes from the list:
 

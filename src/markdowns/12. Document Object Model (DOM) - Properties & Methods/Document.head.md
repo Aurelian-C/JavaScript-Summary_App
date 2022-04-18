@@ -1,10 +1,10 @@
 # Document.head
 
-The `head` property returns the `<head>` element of the document.
+The `head` property ==returns== the `<head>` element of the document.
 
-> **Note**: If there are no `<head>` element, HTML adds an empty one. If there are more than one `<head>` element, this property returns the first.
+> **Note**: If there are no `<head>` element, HTML adds an ==empty== one. If there are more than one `<head>` element, this property returns the ==first==.
 
-`document.head` is **read-only**. Trying to assign a value to this property will fail silently or, in Strict Mode, throws a `TypeError`.
+`document.head` is ==read-only==. Trying to assign a value to this property will fail silently or, in Strict Mode, throws a `TypeError`.
 
 ## Syntax
 
@@ -14,7 +14,7 @@ document.head;
 
 ## Return Value
 
-The head element of the document (an `HTMLHeadElement`).
+The <head> element of the document (an `HTMLHeadElement`).
 
 ## Reference
 

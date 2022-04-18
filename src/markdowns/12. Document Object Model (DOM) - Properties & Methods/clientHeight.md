@@ -1,8 +1,8 @@
 # clientHeight
 
-The `clientHeight` property **returns the viewable height of an element** in pixels, including padding, but not the border, scrollbar or margin.
+The `clientHeight` property **returns the ==viewable height== of an element** in pixels, including padding, but not the border, scrollbar or margin.
 
-The `clientHeight` property is **read-only**.
+The `clientHeight` property is ==read-only==.
 
 The `Element.clientHeight` read-only property is zero for elements with no CSS or inline layout boxes; otherwise, it's the inner height of an element in pixels. It includes padding but excludes borders, margins, and horizontal scrollbars (if present).
 

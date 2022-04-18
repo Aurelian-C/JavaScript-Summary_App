@@ -1,8 +1,8 @@
 # clientWidth
 
-The `clientWidth` property **returns the viewable width of an element** in pixels, including padding, but not the border, scrollbar or margin.
+The `clientWidth` property **returns the ==viewable width== of an element** in pixels, including padding, but not the border, scrollbar or margin.
 
-The `clientWidth` property is **read-only**.
+The `clientWidth` property is ==read-only==.
 
 The `Element.clientWidth` read-only property is zero for elements with no CSS or inline layout boxes; otherwise, it's the inner width of an element in pixels. It includes padding but excludes borders, margins, and horizontal scrollbars (if present).
 

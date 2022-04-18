@@ -1,6 +1,8 @@
 # Document.documentElement
 
-The `documentElement` property returns a document's element (as an Element object). The documentElement is read-only. For HTML documents the returned object is the `<html>` element.
+The `documentElement` property ==returns a document's element== (as an `Element` object). The `documentElement` is ==read-only==. 
+
+For HTML documents the returned object is the `<html>` element.
 
 ## Syntax
 

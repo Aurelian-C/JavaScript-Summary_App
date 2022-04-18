@@ -7,7 +7,7 @@ What the browser does with these attributes is it creates such a DOM object base
 
 ==Objects in Javascript have properties==, no matter if there are some DOM objects or not. So of course for DOM objects, we also have properties and these simply reflect the configuration and setup and positioning and so on of the rendered DOM node, of the DOM object, and the idea of attributes is that you, if you're writing HTML code, can provide a certain default configuration to this to be created DOM object.
 
-It's important to understand that ==not every attribute has a one-to-one mapping in properties== though. It's just important to know that ==not always the attribute name is equal to the property name==.
+It's important to understand that ==not every attribute has a one-to-one mapping in properties== though. It's just important to know that ==not always the **attribute name** is equal to the **property name**==.
 
 ![attributes_vs_properties](../../img/attributes_vs_properties.jpg)
 

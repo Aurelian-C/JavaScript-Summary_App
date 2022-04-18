@@ -1,7 +1,8 @@
 # Element.closest()
 
-The `closest()` method searches **up** the DOM tree. This method ==traverses the Element and its parents== (heading toward the document root) until it finds a node that matches the provided selector string.
-The method ==starts at the element itself, then the anchestors== (parent, grandparent, ...) until a match is found. Will return itself or the matching ancestor. If no match is found, it returns `null`.
+The `closest()` method searches ==**up** the DOM tree==. This method ==traverses the Element and its parents== (heading toward the document root) until it finds a node that matches the provided selector string.
+
+The method ==starts at the **element itself**, then the **anchestors**== (parent, grandparent, ...) until a match is found. Will return itself or the matching ancestor. If no match is found, it returns `null`.
 
 ## Syntax
 
@@ -15,7 +16,7 @@ element.closest(CSSselectors)
 
 ## Return Value
 
-**Object** - the closest ancestor element, or the element itself, that matches the specified CSS selector(s). If no matches are found, `null` is returned.
+**Object** - the ==closest ancestor== element, or the ==element itself==, that matches the specified CSS selector(s). If no matches are found, ==null== is returned.
 
 ## Reference
 

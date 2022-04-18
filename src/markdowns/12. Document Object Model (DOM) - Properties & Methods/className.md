@@ -1,6 +1,6 @@
 # Element.className
 
-The `className` property of the Element interface ==gets== and ==sets== the value of the ==class attribute== of the specified element.
+The `className` property  ==gets== or ==sets== the value of the ==class attribute== of the specified element.
 
 > **Note**: The `class` is an **HTML Attribute**, while the `className` is a **DOM Property**.
 

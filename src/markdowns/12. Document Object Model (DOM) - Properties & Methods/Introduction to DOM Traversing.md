@@ -4,11 +4,11 @@ There is another connected concept, connected to selecting elements which is typ
 
 It means that once you selected one element, one node therefore, you might be interested in diving into all of its child nodes, for example to add it all list items in a list or anything like that, so rather than manually selecting every element you might be interested in with `querySelector()` or so on, you could take an element which you already did select and then move to its children or its siblings and so on based on that element, that's what's traversing the DOM means.
 
-Now as i said, DOM traversal means that you have a selected element, a selected node, and now you want to dive into some of the surrounding or nested elements or nested nodes and there, you've got a couple of directions into which you can go.
+Now as i said, DOM traversal means that you have a ==selected element==, a selected node, and now you want to dive into some of the ==surrounding== or ==nested elements== or ==nested nodes== and there, you've got a ==couple of directions into which you can go==.
 
 ![dom_traversing1](../../img/dom_traversing1.jpg)
 
-> **Note**: Only element nodes can have child nodes and therefore of course if you're on a child node so to say and you want to know all about the parent, it's an element node, ==text nodes can't have child nodes==, _you can't nest other content into text nodes for example, they can only hold text, no other nested content_.
+> **Note**: Only `Element` nodes can have child nodes and therefore of course if you're on a child node so to say and you want to know all about the parent, it's an element node, ==Text Nodes can't have child nodes==, _you can't nest other content into text nodes for example, they can only hold text, no other nested content_.
 
 ![dom_traversing2](../../img/dom_traversing2.jpg)
 
