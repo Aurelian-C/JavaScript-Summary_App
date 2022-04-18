@@ -1,12 +1,16 @@
 # Element.append()
 
-The `Element.append()` method inserts a set of **Node** objects or **DOMString** objects **after the last child** of the `Element`. DOMString objects are inserted as equivalent Text nodes.
+The `Element.append()` method ==inserts== a set of ==Node== objects or ==DOMString== objects ==after the last child== of the `Element`.
+
+DOMString objects are inserted as equivalent Text nodes.
 
 Differences from `Node.appendChild()`:
 
-- `Element.append()` allows you to also append **DOMString** objects, whereas `Node.appendChild()` only accepts **Node** objects.
-- `Element.append()` has **no return value**, whereas `Node.appendChild()` **returns** the appended Node object.
-- `Element.append()` can append **several nodes and strings**, whereas `Node.appendChild()` can only append **one node**.
+|                 `Element.append()`                  |         `Node.appendChild()`         |
+| :-------------------------------------------------: | :----------------------------------: |
+| allows you to ==also== append **DOMString** objects |  ==only== accepts **Node** objects   |
+|                 ==no return== value                 | ==returns== the appended Node object |
+|    can append ==several== **nodes and strings**     |   can ==only== append **one node**   |
 
 ## Syntax
 

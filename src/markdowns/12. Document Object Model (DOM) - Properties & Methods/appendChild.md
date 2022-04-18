@@ -1,23 +1,23 @@
 # Node.appendChild()
 
-The `appendChild()` method of the Node interface **adds a node to the end of the list of children of a specified parent node**.
+The `appendChild()` method **adds a node to the ==end of the list of children== of a specified parent node**.
 
-If the given child is a reference to an existing node in the document, `appendChild()` **moves** it from its current position to the new position (there is no requirement to remove the node from its parent node before appending it to some other node). This means that **a node can't be in two points of the document simultaneously**.
+If the given child is a reference to an existing node in the document, `appendChild()` ==**moves** it from its current position to the new position== (there is no requirement to remove the node from its parent node before appending it to some other node). This means that ==**a node can't be in two points of the document simultaneously**==.
 
-> **Note**: Unlike this method, the `Element.append()` method supports multiple arguments and appending strings. You can prefer using it if your node is an element.
+> **Note**: Unlike this method, the `Element.append()` method supports ==multiple arguments== and appending strings. You can prefer using it if your node is an Element.
 
 ## Syntax
 
 ```js
-element.appendChild(node);
+element.appendChild(aChild);
 
 // or
-node.appendChild(node);
+node.appendChild(aChild);
 ```
 
 ## Parameters
 
-**aChild** - the node to append to the given parent node (commonly an element).
+**aChild** - the ==node== to append to the given parent node (commonly an Element).
 
 ## Return Value
 

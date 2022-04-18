@@ -2977,7 +2977,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/append.html`,
         },
         {
           articleTitle: 'appendChild()',
@@ -2988,7 +2988,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/appendChild.html`,
         },
         {
           articleTitle: 'prepend()',
@@ -3032,7 +3032,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/after.html`,
         },
         {
           articleTitle: 'insertAdjacentElement()',
