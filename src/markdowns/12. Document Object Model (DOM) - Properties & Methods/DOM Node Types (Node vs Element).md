@@ -82,6 +82,24 @@ The `Document` type, the `Comment`, the `Text` nodes aren't elements because the
 
 ![node-vs-element4](../../img/node-vs-element4.jpg)
 
+### HTML Nodes vs Elements
+
+- In the **HTML DOM** (Document Object Model), an HTML document is a collection of nodes with (or without) child nodes
+- **Nodes** are ==element== nodes, ==text== nodes, and ==comment== nodes
+- **Whitespace** between elements are also **text nodes**
+- **Elements** are only element nodes.
+
+### childNodes vs children
+
+- **childNodes** returns child **nodes** (**element** nodes, **text** nodes, and **comment** nodes).
+- **children** returns child **elements** (not text and comment nodes).
+
+### Siblings vs Element Siblings
+
+- **Siblings** are "brothers" and "sisters".
+- **Siblings** are nodes with the ==same parent== (in the same **childNodes** list).
+- **Element Siblings** are elements with the ==same parent== (in the same **children** list)
+
 ## `Node` vs `Element`. Why matter?
 
 Elements therefore are in the end just element Nodes as I just explained, so ==Elements are really just the Nodes which are created of HTML tags which were rendered, NOT the text in there==. Now why does this matter? Because on Element nodes, on Elements therefore, you have special properties and methods to interact with the elements, to change their style, to change their content and so on.

@@ -5,11 +5,13 @@ const pattern = {
       sectionTitle: 'Section Title',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -23,37 +25,44 @@ const engineAndRuntime = {
       sectionTitle: 'Javascript Engine',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle:
             'Interpreter/Compiler/JIT Compiler and Writing Optimized Code',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Memoization',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Memory Heap & Call Stack',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Memory Leaks & Stack Overflow',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Garbage Collection',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Single Threaded Model',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -67,26 +76,31 @@ const engineAndRuntime = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Web APIs',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Global Object (window object)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Event Loop & Callback Queue',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Job Queue or Microtask Queue',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -94,16 +108,19 @@ const engineAndRuntime = {
       sectionTitle: 'Execution Context and the Call Stack',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Global execution context',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Function execution Context',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -111,11 +128,13 @@ const engineAndRuntime = {
       sectionTitle: 'Hoisting',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -123,11 +142,13 @@ const engineAndRuntime = {
       sectionTitle: 'Lexical Environment',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -135,11 +156,13 @@ const engineAndRuntime = {
       sectionTitle: 'Scope Chain',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -147,11 +170,13 @@ const engineAndRuntime = {
       sectionTitle: 'Leakage of Global Variables',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -159,11 +184,13 @@ const engineAndRuntime = {
       sectionTitle: 'Function Scope vs Block Scope',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -171,11 +198,13 @@ const engineAndRuntime = {
       sectionTitle: 'Global Variables & Variable Collisions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -188,11 +217,13 @@ const engineAndRuntime = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -200,11 +231,13 @@ const engineAndRuntime = {
       sectionTitle: 'Efficient Script Loading: defer & async',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -218,11 +251,13 @@ const variablesValues = {
       sectionTitle: 'Statements vs Expressions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -230,11 +265,13 @@ const variablesValues = {
       sectionTitle: 'Static vs Dynamically Typed',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -242,11 +279,13 @@ const variablesValues = {
       sectionTitle: 'Strongly vs Weakly Typed',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -254,11 +293,13 @@ const variablesValues = {
       sectionTitle: 'Variables & Values',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -266,11 +307,13 @@ const variablesValues = {
       sectionTitle: 'var, let & const',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -278,22 +321,26 @@ const variablesValues = {
       sectionTitle: 'Primitives vs References Types (Primitives vs Objects)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle:
             'Primitive Types (Numbers, Strings, Booleans, null, undefined, Symbol)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Reference Types (Arrays, Objects, Functions)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Pass by Value vs Pass by Reference',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -307,6 +354,7 @@ const operators = {
       sectionTitle: 'Introduction to JavaScript Operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Type Conversion and Coercion',
@@ -317,6 +365,7 @@ const operators = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Operator precedence',
@@ -327,6 +376,7 @@ const operators = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -334,21 +384,25 @@ const operators = {
       sectionTitle: 'Assignment operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Assignment operator (=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Addition assignment (+=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Subtraction assignment (-=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -356,6 +410,7 @@ const operators = {
       sectionTitle: 'Increment and decrement',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Postfix increment operator (A++)',
@@ -366,11 +421,13 @@ const operators = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Postfix decrement operator (A--)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Prefix increment operator (++A)',
@@ -381,11 +438,13 @@ const operators = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Prefix decrement operator(--A)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -393,6 +452,7 @@ const operators = {
       sectionTitle: 'Unary operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'typeof',
@@ -403,16 +463,19 @@ const operators = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'plus operator (+)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'negation operator (-)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -420,31 +483,37 @@ const operators = {
       sectionTitle: 'Arithmetic operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Addition operator (+)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Subtraction operator (-)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Division operator (/)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Multiplication operator (*)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Remainder operator (%)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -452,16 +521,19 @@ const operators = {
       sectionTitle: 'Binary logical operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Logical AND (&&)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Logical OR (||)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Short Circuiting with && and ||',
@@ -473,6 +545,7 @@ const operators = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Nullish coalescing operator (??)',
@@ -483,6 +556,7 @@ const operators = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -490,26 +564,31 @@ const operators = {
       sectionTitle: 'Equality operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Equality operator (==)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Inequality operator (!=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Identity operator (===)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Nonidentity operator (!==)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -517,31 +596,37 @@ const operators = {
       sectionTitle: 'Relational operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'instanceof',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Less than operator (<)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Greater than operator (>)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Less than or equal operator (<=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Greater than or equal operator (>=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -554,11 +639,13 @@ const operators = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -571,11 +658,13 @@ const operators = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -588,11 +677,13 @@ const operators = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -606,11 +697,13 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Taking Decisions in JavaSript',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -618,11 +711,13 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Boolean Logic',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -630,11 +725,13 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'if, else if, else Statements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -642,11 +739,13 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Nesting Conditionals',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -654,11 +753,13 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Truthy & Falsy Values',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -666,11 +767,13 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Logical operators (&&, ||, !)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -678,11 +781,13 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Comparison Operators (== vs ===)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -699,11 +804,13 @@ const controlingProgamLogicAndFlow = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -711,11 +818,13 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'The Conditional (Ternary) Operator',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -734,11 +843,13 @@ const loops = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -751,11 +862,13 @@ const loops = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -763,11 +876,13 @@ const loops = {
       sectionTitle: 'Infinite Loops!',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -780,11 +895,13 @@ const loops = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -797,11 +914,13 @@ const loops = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -814,11 +933,13 @@ const loops = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -831,11 +952,13 @@ const loops = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -848,6 +971,7 @@ const loops = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Object.keys()',
@@ -858,6 +982,7 @@ const loops = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Object.values()',
@@ -868,6 +993,7 @@ const loops = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Object.entries()',
@@ -878,6 +1004,7 @@ const loops = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -896,11 +1023,13 @@ const dataStructuresSets = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -919,11 +1048,13 @@ const dataStructuresMaps = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -937,56 +1068,67 @@ const dataStructuresArrays = {
       sectionTitle: 'Introduction to Arrays',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'What is an array?',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Creating arrays',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Array constructor',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Array literal notation',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Arrays length property',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Arrays indices',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Manipulation arrays',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Arrays are reference types',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Accessing every item / Iterating over arrays',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Nested / multidimensional arrays',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1003,11 +1145,13 @@ const dataStructuresArrays = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1015,11 +1159,13 @@ const dataStructuresArrays = {
       sectionTitle: 'Rest Pattern in Arrays',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1036,11 +1182,13 @@ const dataStructuresArrays = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1048,6 +1196,7 @@ const dataStructuresArrays = {
       sectionTitle: 'Array Methods',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'push()',
@@ -1058,6 +1207,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'unshift()',
@@ -1068,6 +1218,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'pop()',
@@ -1078,6 +1229,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'shift()',
@@ -1088,6 +1240,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'splice()',
@@ -1098,6 +1251,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'reverse()',
@@ -1108,6 +1262,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'sort()',
@@ -1118,6 +1273,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'fill()',
@@ -1128,6 +1284,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'map()',
@@ -1138,6 +1295,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'filter()',
@@ -1148,6 +1306,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'slice()',
@@ -1158,6 +1317,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'concat()',
@@ -1168,6 +1328,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'flat() & flatMap()',
@@ -1182,6 +1343,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'indexOf()',
@@ -1192,6 +1354,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'findIndex()',
@@ -1202,6 +1365,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'find()',
@@ -1212,6 +1376,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'includes()',
@@ -1222,6 +1387,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'some()',
@@ -1232,6 +1398,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'every()',
@@ -1242,6 +1409,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'join()',
@@ -1252,6 +1420,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'reduce()',
@@ -1262,6 +1431,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'forEach()',
@@ -1272,6 +1442,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Array.isArray()',
@@ -1282,6 +1453,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Array.from()',
@@ -1292,6 +1464,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Array.entries()',
@@ -1302,6 +1475,7 @@ const dataStructuresArrays = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1309,11 +1483,13 @@ const dataStructuresArrays = {
       sectionTitle: 'Which array method to use?',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1321,11 +1497,13 @@ const dataStructuresArrays = {
       sectionTitle: 'The Magic of Chaining Methods',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1344,31 +1522,37 @@ const dataStructuresObjects = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Creating an object - Object literals',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Creating an object - Constructors',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Accesing an object (. vs [] notation)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Modifying an object',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'ES6 enhanced object literals',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1376,11 +1560,13 @@ const dataStructuresObjects = {
       sectionTitle: `Object methods and the 'this' keyword`,
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1397,11 +1583,13 @@ const dataStructuresObjects = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1409,11 +1597,13 @@ const dataStructuresObjects = {
       sectionTitle: 'Rest Pattern in Objects',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1434,11 +1624,13 @@ const dataStructuresObjects = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1446,6 +1638,7 @@ const dataStructuresObjects = {
       sectionTitle: 'Object methods',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Object.fromEntries() vs Object.entries()',
@@ -1460,6 +1653,7 @@ const dataStructuresObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Object.assign()',
@@ -1470,6 +1664,7 @@ const dataStructuresObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Object.freeze()',
@@ -1480,6 +1675,7 @@ const dataStructuresObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Object.create()',
@@ -1490,6 +1686,7 @@ const dataStructuresObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1508,21 +1705,25 @@ const oop = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'OOP characteristics',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: '4 fundamental principles of OOP',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Traditional OOP (Classes and Instances)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1535,32 +1736,38 @@ const oop = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle:
             'Classical OOP: Classes vs OOP in Javascript: Prototypes',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Prototypal Inheritance & The Prototype Chain',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Prototypes and inheritance',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Setting a prototype',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Shadowing properties',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1568,16 +1775,19 @@ const oop = {
       sectionTitle: 'Constructor Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Syntax',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'The prototype property',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1594,51 +1804,61 @@ const oop = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Defining classes',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Class body',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Constructor method',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Prototype methods',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Static methods and properties',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Setters and Getters',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Protected Properties and Methods',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Private Class Fields and Methods',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Chaining Methods',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1646,11 +1866,13 @@ const oop = {
       sectionTitle: 'Object.create()',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1659,26 +1881,31 @@ const oop = {
         'More real inheritance than Prototypal Inheritance (Child class and Parent class)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Prototypes and inheritance',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Inheritance Between "Classes": Constructor Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Inheritance Between "Classes": ES6 Classes',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Inheritance Between "Classes": Object.create',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1686,11 +1913,13 @@ const oop = {
       sectionTitle: 'Standard build-in objects',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1698,11 +1927,13 @@ const oop = {
       sectionTitle: 'Prototypal Inheritance on Built-In Objects',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1721,11 +1952,13 @@ const standardBuildInObjects = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1738,11 +1971,13 @@ const standardBuildInObjects = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1755,6 +1990,7 @@ const standardBuildInObjects = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'indexOf()',
@@ -1765,6 +2001,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'lastIndexOf()',
@@ -1775,6 +2012,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'slice()',
@@ -1785,6 +2023,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'toLowerCase()',
@@ -1795,6 +2034,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'toUpperCase()',
@@ -1805,6 +2045,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'trim()',
@@ -1815,6 +2056,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'replace()',
@@ -1825,6 +2067,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'replaceAll()',
@@ -1835,6 +2078,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'includes()',
@@ -1845,6 +2089,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'startsWith()',
@@ -1855,6 +2100,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'endsWith()',
@@ -1865,6 +2111,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'split()',
@@ -1875,6 +2122,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'padStart()',
@@ -1885,6 +2133,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'padEnd()',
@@ -1895,6 +2144,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'repeat()',
@@ -1905,6 +2155,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1917,11 +2168,13 @@ const standardBuildInObjects = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Number() & Addition operator (+)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Number.parseInt()',
@@ -1932,6 +2185,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Number.parseFloat()',
@@ -1942,6 +2196,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Number.isNaN()',
@@ -1952,6 +2207,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Number.isFinite()',
@@ -1962,6 +2218,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Number.isInteger()',
@@ -1972,6 +2229,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'toFixed()',
@@ -1982,6 +2240,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -1994,6 +2253,7 @@ const standardBuildInObjects = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'max()',
@@ -2004,6 +2264,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'min()',
@@ -2014,6 +2275,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'round()',
@@ -2024,6 +2286,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'ceil()',
@@ -2034,6 +2297,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'floor()',
@@ -2044,6 +2308,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'trunc()',
@@ -2054,6 +2319,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'random()',
@@ -2064,6 +2330,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'abs()',
@@ -2074,6 +2341,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -2086,11 +2354,13 @@ const standardBuildInObjects = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -2103,16 +2373,19 @@ const standardBuildInObjects = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'new Date()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Date.now()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getFullYear()',
@@ -2123,6 +2396,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getMonth()',
@@ -2133,6 +2407,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getDate()',
@@ -2143,6 +2418,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getDay()',
@@ -2153,6 +2429,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getHours()',
@@ -2163,6 +2440,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getMinutes()',
@@ -2173,6 +2451,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getSeconds()',
@@ -2183,6 +2462,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getTime() vs Convert a date to a number',
@@ -2193,6 +2473,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'toISOString()',
@@ -2203,6 +2484,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'setFullYear()',
@@ -2213,6 +2495,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -2225,6 +2508,7 @@ const standardBuildInObjects = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'DateTimeFormat()',
@@ -2239,6 +2523,7 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'NumberFormat()',
@@ -2257,11 +2542,13 @@ const standardBuildInObjects = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'navigator.language',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -2300,6 +2587,7 @@ const domManipulation = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
@@ -2310,6 +2598,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -2328,6 +2617,7 @@ const domManipulation = {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -2340,11 +2630,14 @@ const domManipulation = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -2357,6 +2650,7 @@ const domManipulation = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'document.documentElement',
@@ -2367,6 +2661,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'document.head',
@@ -2377,6 +2672,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'document.body',
@@ -2387,6 +2683,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getElementById()',
@@ -2397,6 +2694,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getElementsByTagName()',
@@ -2407,6 +2705,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getElementsByClassName()',
@@ -2417,6 +2716,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'querySelector() (document/element)',
@@ -2427,6 +2727,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'querySelectorAll() (document/element)',
@@ -2437,6 +2738,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'children',
@@ -2447,6 +2749,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'childNodes',
@@ -2457,6 +2760,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'firstElementChild',
@@ -2467,6 +2771,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'lastElementChild',
@@ -2477,6 +2782,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'firstChild',
@@ -2487,6 +2793,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'lastChild',
@@ -2497,6 +2804,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'closest()',
@@ -2507,6 +2815,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'parentElement',
@@ -2517,6 +2826,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'parentNode',
@@ -2527,6 +2837,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'previousElementSibling',
@@ -2537,6 +2848,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'nextElementSibling',
@@ -2547,6 +2859,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'previousSibling',
@@ -2557,6 +2870,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'nextSibling',
@@ -2567,6 +2881,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -2574,6 +2889,7 @@ const domManipulation = {
       sectionTitle: 'Create, insert & remove DOM elements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'innerHTML',
@@ -2584,7 +2900,8 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/Element.innerHTML.html`,
+          articleSource: '',
+          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/innerHTML.html`,
         },
         {
           articleTitle: 'insertAdjacentHTML()',
@@ -2595,6 +2912,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'document.createElement()',
@@ -2605,6 +2923,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'append()',
@@ -2615,6 +2934,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'appendChild()',
@@ -2625,6 +2945,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'prepend()',
@@ -2635,6 +2956,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'insertBefore()',
@@ -2645,6 +2967,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'before()',
@@ -2655,6 +2978,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'after()',
@@ -2665,6 +2989,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'insertAdjacentElement()',
@@ -2675,6 +3000,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'replaceWith()',
@@ -2685,6 +3011,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'replaceChild()',
@@ -2695,6 +3022,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'remove()',
@@ -2705,6 +3033,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'removeChild()',
@@ -2715,6 +3044,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'cloneNode()',
@@ -2725,6 +3055,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Summary: Insert, Replace, Remove',
@@ -2743,6 +3074,7 @@ const domManipulation = {
       sectionTitle: 'Text, Styles, Classes & Attributes',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'innerText',
@@ -2753,6 +3085,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'textContent',
@@ -2763,6 +3096,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'insertAdjacentText()',
@@ -2773,6 +3107,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'style',
@@ -2783,6 +3118,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getComputedStyle()',
@@ -2793,6 +3129,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'className',
@@ -2803,6 +3140,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'classList (add, remove, toggle, contains)',
@@ -2813,6 +3151,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'getAttribute()',
@@ -2823,6 +3162,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'setAttribute()',
@@ -2833,6 +3173,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'setProperty()',
@@ -2843,6 +3184,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'attributes',
@@ -2853,6 +3195,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'value',
@@ -2863,6 +3206,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'src',
@@ -2873,6 +3217,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'alt',
@@ -2883,11 +3228,13 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'href',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'hidden',
@@ -2898,6 +3245,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'dataset',
@@ -2916,6 +3264,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -2923,6 +3272,7 @@ const domManipulation = {
       sectionTitle: 'Other methods & properties',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'getBoundingClientRect()',
@@ -2933,6 +3283,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'clientHeight',
@@ -2943,6 +3294,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'clientWidth',
@@ -2953,6 +3305,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'offsetHeight',
@@ -2963,6 +3316,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'scrollIntoView()',
@@ -2973,6 +3327,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'blur()',
@@ -2983,6 +3338,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'focus()',
@@ -2993,6 +3349,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'isEqualNode()',
@@ -3003,6 +3360,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'nodeValue',
@@ -3013,6 +3371,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Node.contains()',
@@ -3023,6 +3382,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'document.createRange().createContextualFragment()',
@@ -3037,6 +3397,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3044,11 +3405,13 @@ const domManipulation = {
       sectionTitle: 'Changing Multiple Elements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3075,11 +3438,13 @@ const events = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3100,11 +3465,13 @@ const events = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3112,11 +3479,13 @@ const events = {
       sectionTitle: '2 Ways NOT to Add Events',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3137,6 +3506,7 @@ const events = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'e.preventDefault()',
@@ -3147,6 +3517,7 @@ const events = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'e.target',
@@ -3161,6 +3532,7 @@ const events = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'e.currentTarget',
@@ -3175,6 +3547,7 @@ const events = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'e.composedPath()',
@@ -3185,6 +3558,7 @@ const events = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'e.stopPropagation()',
@@ -3195,11 +3569,13 @@ const events = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'e.key',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3224,16 +3600,19 @@ const events = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Bubbling',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Capturing',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3250,51 +3629,61 @@ const events = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '‘click’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: '‘keypress’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: '‘scroll’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: '‘mouseover’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: '‘mouseout’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: '‘change’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: '‘hashchange’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: '‘load’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: '‘input’ event',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3307,6 +3696,7 @@ const events = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'keypress',
@@ -3317,6 +3707,7 @@ const events = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'keyup',
@@ -3327,6 +3718,7 @@ const events = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'keydown',
@@ -3337,6 +3729,7 @@ const events = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3344,11 +3737,13 @@ const events = {
       sectionTitle: 'Form Events & PreventDefault',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3356,11 +3751,13 @@ const events = {
       sectionTitle: 'Input & Change Events',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3368,11 +3765,13 @@ const events = {
       sectionTitle: 'Passing Arguments to Event Handlers',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3380,11 +3779,13 @@ const events = {
       sectionTitle: 'Events on Multiple Elements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3392,11 +3793,13 @@ const events = {
       sectionTitle: 'Lifecycle DOM Events',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3415,11 +3818,13 @@ const webAPIs = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3427,6 +3832,7 @@ const webAPIs = {
       sectionTitle: 'navigator',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'navigator.language',
@@ -3437,6 +3843,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'navigator.geolocation.getCurrentPosition()',
@@ -3447,6 +3854,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3459,21 +3867,25 @@ const webAPIs = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'localStorage.setItem()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'localStorage.getItem()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'localStorage.removeItem()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'JSON.stringify()',
@@ -3484,6 +3896,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'JSON.parse()',
@@ -3494,6 +3907,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3506,6 +3920,7 @@ const webAPIs = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'window.location.reload()',
@@ -3516,6 +3931,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'window.location.hash',
@@ -3530,6 +3946,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'window.history.pushState()',
@@ -3544,6 +3961,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'window.open(‘url’, ‘_blank’)',
@@ -3554,6 +3972,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'window.pageXOffset vs scrollX',
@@ -3565,6 +3984,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'window.pageYOffset vs scrollY',
@@ -3576,6 +3996,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'window.scrollTo()',
@@ -3586,6 +4007,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'window.innerHeight',
@@ -3597,6 +4019,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3609,6 +4032,7 @@ const webAPIs = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'new FormData()',
@@ -3619,6 +4043,7 @@ const webAPIs = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3638,11 +4063,13 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3650,21 +4077,25 @@ const functionalProgramming = {
       sectionTitle: 'Function syntax',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Function Declarations',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Function Expressions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Arrow Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3672,27 +4103,32 @@ const functionalProgramming = {
       sectionTitle: 'Function parameters',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Parameter Rules',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Default Parameters',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'The Arguments Object',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle:
             'Arguments are <i>Passed by Value</i> vs Objects are <i>Passed by Reference</i>',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3700,16 +4136,19 @@ const functionalProgramming = {
       sectionTitle: 'Function invocation',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Invoking a JavaScript Function',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Invoking a Function as a Function',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3717,26 +4156,31 @@ const functionalProgramming = {
       sectionTitle: 'Function invocation & this keyword',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: `What is 'this'?`,
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'The Global Object',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Invoking a Function as a Method',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Invoking a Function with a Function Constructor',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3744,21 +4188,25 @@ const functionalProgramming = {
       sectionTitle: 'The this keyword & call(), apply() and bind()',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'All Functions are Methods',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'call() method',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'apply() method',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3766,11 +4214,13 @@ const functionalProgramming = {
       sectionTitle: 'Function return statement',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3778,11 +4228,13 @@ const functionalProgramming = {
       sectionTitle: 'Functions used as variable values',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3795,21 +4247,25 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Variable Lifetime',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Nested Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Closures',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3822,11 +4278,13 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3840,11 +4298,13 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3857,11 +4317,13 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3874,11 +4336,13 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3886,11 +4350,13 @@ const functionalProgramming = {
       sectionTitle: 'Destructuring Parameters',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3907,11 +4373,13 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3919,11 +4387,13 @@ const functionalProgramming = {
       sectionTitle: 'Lexical vs Dynamic Scope',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3944,11 +4414,13 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Currying with bind()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3961,16 +4433,19 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Arrow Function: Implicit Returns',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Arrow Function and THIS keyword',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3978,11 +4453,13 @@ const functionalProgramming = {
       sectionTitle: 'Regular Functions vs. Arrow Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -3995,11 +4472,13 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4016,11 +4495,13 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4037,17 +4518,20 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Functions Accepting Callback Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle:
             'A Function Can Be Passed As An Argument To Other Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'A Function Can Be Returned By Another Function',
@@ -4059,11 +4543,13 @@ const functionalProgramming = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'A Function Can Be Assigned As A Value To A Variable',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4071,11 +4557,13 @@ const functionalProgramming = {
       sectionTitle: 'Callbacks',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4083,11 +4571,13 @@ const functionalProgramming = {
       sectionTitle: 'Functions vs Objects',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4095,11 +4585,13 @@ const functionalProgramming = {
       sectionTitle: 'Scheme + Java',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4107,11 +4599,13 @@ const functionalProgramming = {
       sectionTitle: 'Curry',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4119,11 +4613,13 @@ const functionalProgramming = {
       sectionTitle: 'Partial Application',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4131,11 +4627,13 @@ const functionalProgramming = {
       sectionTitle: 'Pure Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4143,11 +4641,13 @@ const functionalProgramming = {
       sectionTitle: 'Referential Transparency',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4161,11 +4661,13 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4179,11 +4681,13 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4211,11 +4715,13 @@ const asynchronous = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4232,11 +4738,13 @@ const asynchronous = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4244,11 +4752,13 @@ const asynchronous = {
       sectionTitle: 'Microtask Queue (Job Queue)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4256,11 +4766,13 @@ const asynchronous = {
       sectionTitle: 'Task Queue (Callback Queue)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4274,11 +4786,13 @@ const asynchronous = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4286,6 +4800,7 @@ const asynchronous = {
       sectionTitle: 'Timers',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'setTimeout()',
@@ -4296,6 +4811,7 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'clearTimeout()',
@@ -4306,6 +4822,7 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'setInterval()',
@@ -4316,6 +4833,7 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'clearInterval()',
@@ -4326,6 +4844,7 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4338,11 +4857,13 @@ const asynchronous = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4355,11 +4876,13 @@ const asynchronous = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4372,26 +4895,31 @@ const asynchronous = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'const request = new XMLHttpRequest()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'request.open(‘GET’, ‘url’)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'request.send()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'request.addEventListener(‘load’, function)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4399,11 +4927,13 @@ const asynchronous = {
       sectionTitle: 'XMLHttpRequests: Chaining Requests',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Welcome to Callback Hell',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4424,17 +4954,20 @@ const asynchronous = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'fetch(‘url’)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle:
             'fetch() will always return a promise that need to by handled by consuming it',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4442,21 +4975,25 @@ const asynchronous = {
       sectionTitle: 'Consuming Promises',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '.then(callback function with ‘response’ parameter)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'returning a Promise with response.json()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'returning a Promise with response.text()',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4464,11 +5001,13 @@ const asynchronous = {
       sectionTitle: 'Chaining Promises',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'returning a Promise and handle it outside the chain',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4476,11 +5015,13 @@ const asynchronous = {
       sectionTitle: 'Handling Rejected Promises',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '.catch(callback function with ‘error’ parameter)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: '.finally(callback function)',
@@ -4491,6 +5032,7 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4498,6 +5040,7 @@ const asynchronous = {
       sectionTitle: 'Throwing Errors Manually',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'throw new Error()',
@@ -4512,6 +5055,7 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4519,17 +5063,20 @@ const asynchronous = {
       sectionTitle: 'Building a Simple Promise',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle:
             'new Promise(function(resolve, reject) {      resolve(fulfilled value);  reject(rejected value)  })',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Wrap old callback based functions into Promises',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4537,6 +5084,7 @@ const asynchronous = {
       sectionTitle: 'Consuming Promises with Async/Await',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '‘async’ funtions',
@@ -4547,6 +5095,7 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: '‘await’ keyword',
@@ -4557,17 +5106,20 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'An ‘async function’ will always return a promise',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle:
             'Store ‘await’ Promises results in variables like const',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4575,11 +5127,13 @@ const asynchronous = {
       sectionTitle: 'Multiple Awaits',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4587,6 +5141,7 @@ const asynchronous = {
       sectionTitle: 'Error Handling in Async Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'try {} catch(error) {}',
@@ -4597,12 +5152,14 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle:
             'Rethrowing an error when you have multiple async funtions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4610,11 +5167,13 @@ const asynchronous = {
       sectionTitle: 'Returning Values from Async Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'An async function always returns a Promise',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4622,6 +5181,7 @@ const asynchronous = {
       sectionTitle: 'Parallel Vs. Sequential Requests',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Promise.all([ ])',
@@ -4632,6 +5192,7 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4639,6 +5200,7 @@ const asynchronous = {
       sectionTitle: 'Other Promise Combinators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Promise.race([ ])',
@@ -4649,6 +5211,7 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Promise.allSettled([ ])',
@@ -4659,6 +5222,7 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
         {
           articleTitle: 'Promise.any([ ])',
@@ -4669,6 +5233,7 @@ const asynchronous = {
             },
           ],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4676,11 +5241,13 @@ const asynchronous = {
       sectionTitle: `Top-Level ' await ' (ES2022)`,
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4716,11 +5283,13 @@ const modulesAndTooling = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4734,6 +5303,7 @@ const modulesAndTooling = {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4741,11 +5311,13 @@ const modulesAndTooling = {
       sectionTitle: 'Named exports/imports in ES6 Modules',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4753,11 +5325,13 @@ const modulesAndTooling = {
       sectionTitle: 'Default exports/imports in ES6 Modules',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4765,11 +5339,13 @@ const modulesAndTooling = {
       sectionTitle: 'The Module Pattern with IIFE',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4777,11 +5353,13 @@ const modulesAndTooling = {
       sectionTitle: 'CommonJS & AMD Modules',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4789,11 +5367,13 @@ const modulesAndTooling = {
       sectionTitle: 'Introduction to NPM',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4806,11 +5386,13 @@ const modulesAndTooling = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4823,11 +5405,13 @@ const modulesAndTooling = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4841,11 +5425,13 @@ const modulesAndTooling = {
         },
       ],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4853,11 +5439,13 @@ const modulesAndTooling = {
       sectionTitle: 'Refactoring Our Code: The DRY Principle',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4865,11 +5453,13 @@ const modulesAndTooling = {
       sectionTitle: 'Prettier',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4877,11 +5467,13 @@ const modulesAndTooling = {
       sectionTitle: 'Terminal commands',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
@@ -4889,11 +5481,13 @@ const modulesAndTooling = {
       sectionTitle: 'Markdown',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
+      sectionSource: '',
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
+          articleSource: '',
         },
       ],
     },
