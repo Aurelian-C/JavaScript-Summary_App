@@ -2278,6 +2278,19 @@ kbd {
   box-shadow: 0 2px 0 #333;
 }
 
+p {
+text-align: justify;
+text-indent: 30px;
+}
+
+blockquote > p {
+text-indent: 0px;
+}
+
+li {
+text-align: justify;
+}
+
 @media only screen and (max-width: 850px) {
   #write {
     padding-left: 20px;
@@ -2296,13 +2309,17 @@ kbd {
   h2:after {
     width: 160px;
   }
+
+  p {
+    text-indent: 20px;
+  }
 }
 
 
 </style><title>document.body</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='documentbody'><span>Document.body</span></h1><p><span>The </span><code>body</code><span> property </span><mark><span>sets</span></mark><span> or </span><mark><span>returns</span></mark><span> a document&#39;s </span><code>&lt;body&gt;</code><span> element.</span></p><blockquote><p><strong><span>Note</span></strong><span>: Setting the </span><code>body</code><span> property overwrites all elements in the document&#39;s </span><code>&lt;body&gt;</code><span>.</span></p></blockquote><h2 id='syntax'><span>Syntax</span></h2><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="js"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.51875px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// Return the body property</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">document</span>.<span class="cm-property">body</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+<div id='write'  class=''><h1 id='documentbody'><span>Document.body</span></h1><p><span>The </span><code>body</code><span> property </span><mark><span>sets</span></mark><span> or </span><mark><span>returns</span></mark><span> a document&#39;s </span><code>&lt;body&gt;</code><span> element.</span></p><blockquote><p><strong><span>Note</span></strong><span>: Setting the </span><code>body</code><span> property overwrites all elements in the document&#39;s </span><code>&lt;body&gt;</code><span>.</span></p></blockquote><h2 id='syntax'><span>Syntax</span></h2><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="js"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.52344px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// Return the body property</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">document</span>.<span class="cm-property">body</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
 </span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// Set the body property</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">document</span>.<span class="cm-property">body</span> <span class="cm-operator">=</span> <span class="cm-variable">newContent</span>;</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 115px;"></div><div class="CodeMirror-gutters" style="display: none; height: 115px;"></div></div></div></pre><h2 id='return-value'><span>Return Value</span></h2><p><span>An </span><strong><span>Object</span></strong><span> (the </span><body><span> element of the document).</span></p><h2 id='property-values'><span>Property Values</span></h2><p><strong><span>newContent</span></strong><span>: The new content for the </span><code>&lt;body&gt;</code><span> element.</span></p><h2 id='the-difference-between-documentbody-and-documentdocumentelement'><span>The difference between </span><code>document.body</code><span> and </span><code>document.documentElement</code></h2><ul><li><code>document.body</code><span> returns the </span><code>&lt;body&gt;</code><span> element.</span></li><li><code>document.documentElement</code><span> returns the </span><code>&lt;html&gt;</code><span> element.</span></li></ul><h2 id='reference'><span>Reference</span></h2><ol start='' ><li><a href='https://www.w3schools.com/jsref/prop_doc_body.asp'><span>Document body - w3schools</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/API/Document/body'><span>Document.body - MDN</span></a></li></ol></div></div>
 </body>
 </html>

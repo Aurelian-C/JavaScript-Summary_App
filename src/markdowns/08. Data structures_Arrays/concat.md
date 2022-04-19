@@ -1,6 +1,10 @@
 # Array.prototype.concat()
 
-The `concat()` method is used to ==merge== two or more arrays. This method does ==not change the existing arrays==, but instead ==returns a new array== containing the merged arrays.
+The `concat()` method:
+
+- ==merge== two or more arrays;
+- does ==not change the existing arrays==;
+- ==returns a **new array**== containing the merged arrays.
 
 ## Syntax
 
@@ -13,15 +17,15 @@ array.concat(item0, item1, ... , itemN)
 
 ## Parameters
 
-==**itemN**== (optional) - arrays and/or values to concatenate (merge) into a new array. If all `itemN` parameters are omitted, `concat()` ==returns a shallow copy== of the existing array on which it is called.
+==**itemN**== (optional) - ==**arrays** and/or **values**== to concatenate (merge) into a new array. If all `itemN` parameters are omitted, `concat()` ==returns a shallow copy== of the existing array on which it is called.
 
 ## Return value
 
-A ==new Array== instance.
+A ==**new** Array== instance.
 
 ## Some considerations about `concat()` method
 
-The `concat()` method ==creates a new array== consisting of the elements in the object on which it is called, followed in order by, for each argument, the elements of that argument (if the argument is an array) or the argument itself (if the argument is not an array). ==It does not recurse into nested array arguments==.
+The `concat()` method ==creates a **new** array== consisting of the elements in the object on which it is called, followed in order by, for each argument, the elements of that argument (if the argument is an array) or the argument itself (if the argument is not an array). ==It does not recurse into nested array arguments==.
 
 The `concat()` method does not alter `this` or any of the arrays provided as arguments but instead returns a ==shallow copy== that ==contains copies of the same elements combined from the original arrays==. Elements of the original arrays are copied into the new array as follows:
 
