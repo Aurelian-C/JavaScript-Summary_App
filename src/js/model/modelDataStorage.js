@@ -1357,6 +1357,17 @@ const dataStructuresArrays = {
           articleSource: '',
         },
         {
+          articleTitle: 'lastIndexOf()',
+          articleLinks: [
+            {
+              linkTitle: 'Array lastIndexOf()',
+              linkSource: `https://www.w3schools.com/jsref/jsref_lastindexof_array.asp`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
           articleTitle: 'findIndex()',
           articleLinks: [
             {
