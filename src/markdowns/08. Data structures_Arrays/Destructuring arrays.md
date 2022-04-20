@@ -1,6 +1,6 @@
 # Destructuring arrays
 
-In array destructuring, you **use an array literal on the left-hand-side of an assignment expression**. Each variable name on the array literal maps to the corresponding item at the same index on the destructured array:
+In array destructuring, you ==use an **array literal** on the **left-hand-side of an assignment expression**==. Each variable name on the array literal maps to the corresponding item at the same index on the destructured array:
 
 ```js
 const rgb = [255, 200, 0];
@@ -13,6 +13,20 @@ console.log(`R: ${red}, G: ${green}, B: ${blue}`);
 ```
 
 In this example, we have assigned the items in the `rgb` array to three local variables: `red`, `green` and `blue` using array destructuring. Notice that each variable is mapped to the corresponding item at the same index on the `rgb` array.
+
+> Note: Destructuring arrays is a ==shortcut== for assign arrays items to variables. Is a feature that help you to split up an array into variables or constants which you then can use throughout your code. It simply saves you the extra work of doing this manually and therefore can speed up your development process.
+>
+> ```js
+> const rgb = [255, 200, 0];
+>
+> // WITHOUT array destructuring:
+> const red = rgb[0];
+> const green = rgb[1];
+> const blue = rgb[2];
+>
+> // WITH array destructuring:
+> const [red, green, blue] = rgb;
+> ```
 
 ## Default Values
 

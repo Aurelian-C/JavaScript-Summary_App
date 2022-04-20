@@ -2,36 +2,41 @@
 
 ## What is an array?
 
-Arrays are a way of storing a **list of data items** under a single variable name. Arrays are **collections of data** which are **ordered** by an **index** value.
+Arrays are a way of storing a ==**list** of data items== under a single variable name. Arrays are ==**collections** of data== which are ==**ordered**== by an ==**index**== value.
 
-Arrays are generally described as "list-like objects"; they are basically **single objects that contain multiple values stored in a list**. Array objects can be **stored in variables** and dealt with in much the same way as any other type of value, the difference being that we can **access each value inside the list individually**, and do super useful and efficient things with the list, like loop through it and do the same thing to every value.
+Arrays are generally described as "list-like objects"; they are basically ==single objects that contain multiple values stored in a list==. Array objects can be ==stored in variables== and dealt with in much the same way as any other type of value, the difference being that we can ==access each value inside the list individually==, and do super useful and efficient things with the list, like loop through it and do the same thing to every value.
 
-**If we didn't have arrays, we'd have to store every data item in a separate variable**. This would be much longer to write out, less efficient, and more error-prone.
+==If we didn't have arrays, we'd have to **store every data item in a separate variable**==. This would be much longer to write out, less efficient, and more error-prone.
 
-JavaScript does not have an explicit array data type. However, you can use the predefined `Array` object and its methods to work with arrays in your applications. The `Array` object has methods for manipulating arrays in various ways, such as joining, reversing, and sorting them. It has a property for determining the array length and other properties for use with regular expressions.
+JavaScript does not have an explicit array data type. However, you can use the predefined `Array` object and its methods to work with arrays in your applications. The `Array` object has ==methods for **manipulating** arrays== in various ways, such as joining, reversing, and sorting them. It has a `length` property for determining the array length and other properties for use with regular expressions.
 
 ## Creating arrays
+
+![creating_arrays](../../img/creating_arrays.jpg)
 
 The following statements create equivalent arrays:
 
 ```js
+// Array literal notation
+let arr = [element0, element1, ..., elementN]
+
 // Array constructor
 let arr = new Array(element0, element1, ..., elementN)
 let arr = Array(element0, element1, ..., elementN)
 
-// Array literal notation
-let arr = [element0, element1, ..., elementN]
+// Array.from() method
+const arr = Array.from('array') // ['a', 'r', 'r', 'a', 'y']
 ```
 
-`element0, element1, ..., elementN` is a **list of values** for the **array's elements**. When these values are specified, the array is initialized with them as the array's elements.
+`element0, element1, ..., elementN` is a ==**list** of values== for the ==array's **elements**==. When these values are specified, the array is initialized with them as the array's elements.
 
-Arrays can be created with the shorthand syntax of **square brackets** and items that are **separated by commas**. The bracket syntax is called an "**array literal**" or "**array initializer**". It's shorter than other forms of array creation, and so is generally preferred.
+Arrays can be created with the shorthand syntax of ==square brackets== `[]` and items that are ==separated by commas== `,`. The bracket syntax is called an ==**array literal**== or **array initializer**. It's shorter than other forms of array creation, and so is ==generally preferred==.
 
 ```js
 const shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];
 ```
 
-In the above example, each item is a string, but in an array **we can store various data types** — strings, numbers, objects, functions and even other arrays. We can also mix data types in a single array — we do not have to limit ourselves to storing only numbers in one array, and in another only strings. In arrays we can store even expressions or functions calls that returns a value.
+In the above example, each item is a string, but in an array ==we can store **various data types**== — strings, numbers, objects, functions and even other arrays. We can also mix data types in a single array — we do not have to limit ourselves to storing only numbers in one array, and in another only strings. In arrays we can store even expressions or functions calls that returns a value.
 
 ```js
 function double(num1, num2) {
@@ -51,7 +56,7 @@ const random = [
 ];
 ```
 
-In addition to a newly defined variable as shown above, **arrays can also be assigned as a property of a new or an existing object**:
+In addition to a newly defined variable as shown above, **arrays can also be ==assigned as a property== of a new or an existing object**:
 
 ```js
 let obj = {}
@@ -68,9 +73,8 @@ If you wish to initialize an array with a single element, and the element happen
 let arr = [42]; // Creates an array with only one element:
 // the number 42.
 
-let arr = Array(42); // Creates an array with no elements
-// and arr.length set to 42.
-//
+let arr = Array(42); // Creates an array with no elements and arr.length set to 42.
+
 // This is equivalent to:
 let arr = [];
 arr.length = 42;
@@ -78,14 +82,14 @@ arr.length = 42;
 
 ## Understanding length
 
-You can find out the length of an array (how many items are in it) in exactly the same way as you find out the length (in characters) of a string — by using the `length` property. The `length` property is special, it always returns the **index of the last element plus one**.
+You can find out the length of an array (how many items are in it) in exactly the same way as you find out the length (in characters) of a string — by using the `length` property. The `length` property is special, it always returns the ==index of the last element plus one==.
 
 ```js
 onst shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];
 shopping.length;  // 5
 ```
 
-> **Note**: Remember, array indexes are 0-based: they start at 0, not 1. This means that the `length` property will be one more than the highest index stored in the array.
+> **Note**: Remember, array indexes are `0`-based: they start at 0, not 1. This means that the `length` property will be one more than the highest index stored in the array.
 
 You can also assign to the `length` property. Writing a value that is shorter than the number of stored items truncates the array. Writing 0 empties it entirely:
 

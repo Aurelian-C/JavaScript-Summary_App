@@ -1,30 +1,35 @@
 # Spread syntax (...) and arays
 
-`spread` syntax `...` allows an **iterable** such as an array expression or string to be **expanded** in places where zero or more arguments (for **_function calls_**) or elements (for **_array_** literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for **_object_** literals) are expected.
+Spread syntax `...` allows an ==**iterable**== such as an ==array== expression or ==string== to be ==**expanded**== in places where zero or more arguments (for ==**function** calls==) or elements (for ==**array** literals==) are expected, or an _object expression to be expanded_ in places where zero or more key-value pairs (for ==**object** literals==) are expected.
+
+> Note: spread operator `...` is an operator that in the end pulls out all elements of an array and gives them to you as a standalone list of elements.
 
 ## Syntax
 
 ### For **_function calls_**:
 
 ```js
-myFunction(...iterableObj); // pass all elements of iterableObj as arguments to function myFunction
+// pass all elements of iterableObj as arguments to function myFunction
+myFunction(...iterableObj);
 ```
 
-### For **_array_** literals:
+### For **array literals**:
 
 ```js
-[...iterableObj, '4', 'five', 6]; // combine two arrays by inserting all elements from iterableObj
+// combine two arrays by inserting all elements from iterableObj
+[...iterableObj, '4', 'five', 6];
 ```
 
-### For **_object_** literals:
+### For **object literals**:
 
 ```js
-let objClone = { ...obj }; // pass all key:value pairs from an object
+// pass all key-value pairs from an object
+let objClone = { ...obj };
 ```
 
 ## `spread` syntax vs `rest` syntax (parameters)
 
-`rest` _syntax looks exactly like_ `spread` _syntax_. In a way, `rest` _syntax is the opposite of_ `spread` _syntax_. `spread` syntax **"expands" an array into its elements**, while `rest` syntax **collects multiple elements and "condenses" them into a single element**.
+Rest syntax `...` looks exactly like Spread syntax `...`. In a way, ==Rest syntax is the opposite of Spread syntax==. ==Spread syntax "**expands**"== an array into its elements, while ==Rest syntax **collects**== multiple elements and "condenses" them into a single element.
 
 ## Spread in array literals
 
@@ -37,6 +42,8 @@ let parts = ['shoulders', 'knees'];
 let lyrics = ['head', ...parts, 'and', 'toes'];
 //  ["head", "shoulders", "knees", "and", "toes"]
 ```
+
+> Note: spread operator `...` is an operator that in the end pulls out all elements of an array and gives them to you as a standalone list of elements.
 
 > Note: just like `spread` for functions argument lists, `...` can be used anywhere in the array literal, and may be used more than once.
 
@@ -51,7 +58,7 @@ arr2.push(4);
 //  arr remains unaffected
 ```
 
-> Note: Spread syntax effectively goes one level deep while copying an array. Therefore, it may be unsuitable for copying multidimensional arrays, as the following example shows. (The same is true with Object.assign() and spread syntax)
+> Note: Spread syntax effectively goes one level deep while copying an array. Therefore, it may be unsuitable for copying multidimensional arrays, as the following example shows. (The same is true with `Object.assign()` and spread syntax)
 >
 > ```js
 > let a = [[1], [2], [3]];
@@ -64,6 +71,23 @@ arr2.push(4);
 > a;
 > //  [[], [2], [3]]
 > ```
+
+An important thing to keep in mind is when you use the spread operator to copies items that are reference values (arrays/objects), you are copy the reference value of that items. The `persons` array store in fact a bunch of address to the places in memory of the items, so `copiesPersons` is a brand new array but you are copying inside of it all these address that you have in `persons` array. So the objects inside the `copiedPersons` array are still the old objects inside `persons` array.
+
+```js
+const persons = [
+  { name: 'Tom', age: 32 },
+  { name: 'Anna', age: 25 },
+];
+const copiedPersons = [...persons];
+
+persons[0].name = 'Brad';
+console.log(person[0].name); // Brad
+console.log(copiedPersons[0].name); // Brad
+
+persons === copiedPersons; //false
+persons[0] === copiedPersons[0]; //true
+```
 
 ### A better way to concatenate arrays
 
