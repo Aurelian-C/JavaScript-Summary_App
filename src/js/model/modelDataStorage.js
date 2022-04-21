@@ -1011,58 +1011,8 @@ const loops = {
   ],
 };
 
-const dataStructuresSets = {
-  title: 'Data structures: Sets',
-  sections: [
-    {
-      sectionTitle: 'Intro to Sets',
-      sectionLinks: [
-        {
-          linkTitle: 'Set object',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-  ],
-};
-
-const dataStructuresMaps = {
-  title: 'Data structures: Maps',
-  sections: [
-    {
-      sectionTitle: 'Intro to Maps',
-      sectionLinks: [
-        {
-          linkTitle: 'Map object',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-  ],
-};
-
 const dataStructuresArrays = {
-  title: 'Data structures: Arrays',
+  title: 'Data structures: Arrays & Sets',
   sections: [
     {
       sectionTitle: 'Introduction to Arrays',
@@ -1518,11 +1468,34 @@ const dataStructuresArrays = {
         },
       ],
     },
+    {
+      sectionTitle: 'Data structures - Sets',
+      sectionLinks: [
+        {
+          linkTitle: 'Set',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set`,
+        },
+        {
+          linkTitle: 'Set',
+          linkSource: `https://www.w3schools.com/js/js_object_sets.asp`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
   ],
 };
 
 const dataStructuresObjects = {
-  title: 'Data structures: Objects',
+  title: 'Data structures: Objects & Maps',
   sections: [
     {
       sectionTitle: 'Introducing JavaScript objects',
@@ -1696,6 +1669,29 @@ const dataStructuresObjects = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create`,
             },
           ],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Data structures - Maps',
+      sectionLinks: [
+        {
+          linkTitle: 'Map',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map`,
+        },
+        {
+          linkTitle: 'Maps',
+          linkSource: `https://www.w3schools.com/js/js_object_maps.asp`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
@@ -5554,8 +5550,6 @@ export const data = [
   operators,
   controlingProgamLogicAndFlow,
   loops,
-  dataStructuresSets,
-  dataStructuresMaps,
   dataStructuresArrays,
   dataStructuresObjects,
   oop,
