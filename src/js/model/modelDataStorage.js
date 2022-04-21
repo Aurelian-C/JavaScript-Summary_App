@@ -18,7 +18,7 @@ const pattern = {
   ],
 };
 
-const engineAndRuntime = {
+const browserEngineAndRuntime = {
   title: 'JavaScript in the Browser: Engine & Runtime',
   sections: [
     {
@@ -244,7 +244,7 @@ const engineAndRuntime = {
   ],
 };
 
-const variablesValues = {
+const variablesAndValues = {
   title: 'Variables, Values & Primitive/Reference Types',
   sections: [
     {
@@ -1011,7 +1011,651 @@ const loops = {
   ],
 };
 
-const dataStructuresArrays = {
+const functionalProgramming = {
+  title: 'Functional Programming (FP)',
+  sections: [
+    {
+      sectionTitle: 'Function introduction',
+      sectionLinks: [
+        {
+          linkTitle:
+            'Master the JavaScript Interview: What is Functional Programming?',
+          linkSource: `https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function syntax',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Function Declarations',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Function Expressions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Arrow Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function parameters',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Parameter Rules',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Default Parameters',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'The Arguments Object',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Arguments are <i>Passed by Value</i> vs Objects are <i>Passed by Reference</i>',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function invocation',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Invoking a JavaScript Function',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Invoking a Function as a Function',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function invocation & this keyword',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: `What is 'this'?`,
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'The Global Object',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Invoking a Function as a Method',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Invoking a Function with a Function Constructor',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'The this keyword & call(), apply() and bind()',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'All Functions are Methods',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'call() method',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'apply() method',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function return statement',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Functions used as variable values',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Closures & local vs global variables',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Variable Lifetime',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Nested Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Closures',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function hoisting',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle:
+        'Self-Invoking functions / Immediately Invoked Function Expressions (IIFE)',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Functions are objects',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Rest Parameters',
+      sectionLinks: [
+        {
+          linkTitle: 'Rest parameters',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Destructuring Parameters',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'this keyword',
+      sectionLinks: [
+        {
+          linkTitle: 'this keyword',
+          linkSource: `https://www.w3schools.com/js/js_this.asp`,
+        },
+        {
+          linkTitle: 'this keyword',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Lexical vs Dynamic Scope',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'this – call(), apply(), bind()',
+      sectionLinks: [
+        {
+          linkTitle: 'Function.prototype.call()',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call`,
+        },
+        {
+          linkTitle: 'Function.prototype.apply()',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply`,
+        },
+        {
+          linkTitle: 'Function.prototype.bind()',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Currying with bind()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Arrow Function',
+      sectionLinks: [
+        {
+          linkTitle: 'Arrow function expressions',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Arrow Function: Implicit Returns',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Arrow Function and THIS keyword',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Regular Functions vs. Arrow Functions',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Immediately Invoked Function Expressions (IIFE)',
+      sectionLinks: [
+        {
+          linkTitle: 'IIFE (Immediately Invoked Function Expression)',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Glossary/IIFE`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Spread for Function Calls',
+      sectionLinks: [
+        {
+          linkTitle: 'Spread syntax (...)',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax`,
+        },
+        {
+          linkTitle: 'How to Use the Spread Operator (…) in JavaScript',
+          linkSource: `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Higher-Order Functions',
+      sectionLinks: [
+        {
+          linkTitle: 'First-class Function',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function`,
+        },
+        {
+          linkTitle: 'Higher-Order Functions',
+          linkSource: `https://eloquentjavascript.net/05_higher_order.html`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Functions Accepting Callback Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'A Function Can Be Passed As An Argument To Other Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'A Function Can Be Returned By Another Function',
+          articleLinks: [
+            {
+              linkTitle:
+                'JavaScript Functions → Returning Functions from Functions',
+              linkSource: `https://medium.com/@iampika/part-6-javascript-functions-returning-functions-from-functions-429a3d9a55d1`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'A Function Can Be Assigned As A Value To A Variable',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Callbacks',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Functions vs Objects',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Scheme + Java',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Curry',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Partial Application',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Pure Functions',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Referential Transparency',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Compose',
+      sectionLinks: [
+        {
+          linkTitle:
+            'A quick introduction to pipe() and compose() in JavaScript',
+          linkSource: `https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Pipe',
+      sectionLinks: [
+        {
+          linkTitle:
+            'A quick introduction to pipe() and compose() in JavaScript',
+          linkSource: `https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+  ],
+};
+
+const arraysAndSets = {
   title: 'Data structures: Arrays & Sets',
   sections: [
     {
@@ -1494,7 +2138,7 @@ const dataStructuresArrays = {
   ],
 };
 
-const dataStructuresObjects = {
+const objectsAndMaps = {
   title: 'Data structures: Objects & Maps',
   sections: [
     {
@@ -2562,2188 +3206,6 @@ const standardBuildInObjects = {
   ],
 };
 
-const domManipulation = {
-  title: 'Document Object Model (DOM) <br>- Properties & Methods -',
-  sections: [
-    {
-      sectionTitle: 'Introduction to The Document Object',
-      sectionLinks: [
-        {
-          linkTitle: 'DOM Intro - w3schools',
-          linkSource: `https://www.w3schools.com/js/js_htmldom.asp`,
-        },
-        {
-          linkTitle: 'Introduction to the DOM',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction`,
-        },
-        {
-          linkTitle: 'Document interface',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document`,
-        },
-        {
-          linkTitle: 'DOM Node interface',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node`,
-        },
-        {
-          linkTitle: 'Element',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element`,
-        },
-        {
-          linkTitle: `What's the Difference between DOM Node and Element?`,
-          linkSource: `https://dmitripavlutin.com/dom-node-element/`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/Introduction to The Document Object.html`,
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [
-            {
-              linkTitle: '',
-              linkSource: '',
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'DOM Node Types (Node vs Element)',
-      sectionLinks: [
-        {
-          linkTitle: `What's the Difference between DOM Node and Element?`,
-          linkSource: 'https://dmitripavlutin.com/dom-node-element/',
-        },
-      ],
-      sectionText: [],
-      sectionSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/DOM Node Types (Node vs Element).html`,
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Live Node Lists vs Static Node Lists',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/Live Node Lists vs Static Node Lists.html`,
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'HTML Attributes vs DOM Properties',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/HTML Attributes vs DOM Properties.html`,
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'DOM Traversing & select DOM elements',
-      sectionLinks: [
-        {
-          linkTitle: 'Traversing the DOM with JavaScript',
-          linkSource: `https://zellwk.com/blog/dom-traversals/`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Introduction to DOM Traversing',
-          articleLinks: [
-            {
-              linkTitle: '',
-              linkSource: '',
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/Introduction to DOM Traversing.html`,
-        },
-        {
-          articleTitle: 'document.documentElement',
-          articleLinks: [
-            {
-              linkTitle: 'Document.documentElement',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/document.documentElement.html`,
-        },
-        {
-          articleTitle: 'document.head',
-          articleLinks: [
-            {
-              linkTitle: 'Document.head',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/head`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/document.head.html`,
-        },
-        {
-          articleTitle: 'document.body',
-          articleLinks: [
-            {
-              linkTitle: 'Document.body',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/body`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/document.body.html`,
-        },
-        {
-          articleTitle: 'getElementById()',
-          articleLinks: [
-            {
-              linkTitle: 'Document.getElementById()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/getElementById.html`,
-        },
-        {
-          articleTitle: 'getElementsByTagName()',
-          articleLinks: [
-            {
-              linkTitle: 'Document.getElementsByTagName()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/getElementsByTagName.html`,
-        },
-        {
-          articleTitle: 'getElementsByClassName()',
-          articleLinks: [
-            {
-              linkTitle: 'Document.getElementsByClassName()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/getElementsByClassName.html`,
-        },
-        {
-          articleTitle: 'querySelector() (document/element)',
-          articleLinks: [
-            {
-              linkTitle: 'Document.querySelector()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/querySelector.html`,
-        },
-        {
-          articleTitle: 'querySelectorAll() (document/element)',
-          articleLinks: [
-            {
-              linkTitle: 'Document.querySelectorAll()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/querySelectorAll.html`,
-        },
-        {
-          articleTitle: 'children',
-          articleLinks: [
-            {
-              linkTitle: 'Element.children',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/children`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/children.html`,
-        },
-        {
-          articleTitle: 'childNodes',
-          articleLinks: [
-            {
-              linkTitle: 'Node.childNodes',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/childNodes.html`,
-        },
-        {
-          articleTitle: 'firstElementChild',
-          articleLinks: [
-            {
-              linkTitle: 'Element.firstElementChild',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/firstElementChild`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/firstElementChild.html`,
-        },
-        {
-          articleTitle: 'lastElementChild',
-          articleLinks: [
-            {
-              linkTitle: 'Element.lastElementChild',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/lastElementChild`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/lastElementChild.html`,
-        },
-        {
-          articleTitle: 'firstChild',
-          articleLinks: [
-            {
-              linkTitle: 'Node.firstChild',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/firstChild.html`,
-        },
-        {
-          articleTitle: 'lastChild',
-          articleLinks: [
-            {
-              linkTitle: 'Node.lastChild',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/lastChild`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/lastChild.html`,
-        },
-        {
-          articleTitle: 'closest()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.closest()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/closest`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/closest.html`,
-        },
-        {
-          articleTitle: 'parentElement',
-          articleLinks: [
-            {
-              linkTitle: 'Node.parentElement',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/parentElement.html`,
-        },
-        {
-          articleTitle: 'parentNode',
-          articleLinks: [
-            {
-              linkTitle: 'Node.parentNode',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/parentNode.html`,
-        },
-        {
-          articleTitle: 'previousElementSibling',
-          articleLinks: [
-            {
-              linkTitle: 'Element.previousElementSibling',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/previousElementSibling.html`,
-        },
-        {
-          articleTitle: 'nextElementSibling',
-          articleLinks: [
-            {
-              linkTitle: 'Element.nextElementSibling',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/nextElementSibling.html`,
-        },
-        {
-          articleTitle: 'previousSibling',
-          articleLinks: [
-            {
-              linkTitle: 'Node.previousSibling',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/previousSibling`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/previousSibling.html`,
-        },
-        {
-          articleTitle: 'nextSibling',
-          articleLinks: [
-            {
-              linkTitle: 'Node.nextSibling',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/nextSibling.html`,
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Create, insert & remove DOM elements',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Introduction to create, insert and remove elements',
-          articleLinks: [
-            {
-              linkTitle: '',
-              linkSource: '',
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/Introduction to create, insert and remove elements.html`,
-        },
-        {
-          articleTitle: 'innerHTML',
-          articleLinks: [
-            {
-              linkTitle: 'Element.innerHTML',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/innerHTML.html`,
-        },
-        {
-          articleTitle: 'insertAdjacentHTML()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.insertAdjacentHTML()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/insertAdjacentHTML.html`,
-        },
-        {
-          articleTitle: 'document.createElement()',
-          articleLinks: [
-            {
-              linkTitle: 'Document.createElement()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/document.createElement.html`,
-        },
-        {
-          articleTitle: 'append()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.append()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/append`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/append.html`,
-        },
-        {
-          articleTitle: 'appendChild()',
-          articleLinks: [
-            {
-              linkTitle: 'Node.appendChild()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/appendChild.html`,
-        },
-        {
-          articleTitle: 'prepend()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.prepend()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/prepend.html`,
-        },
-        {
-          articleTitle: 'insertBefore()',
-          articleLinks: [
-            {
-              linkTitle: 'Node.insertBefore()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/insertBefore.html`,
-        },
-        {
-          articleTitle: 'before()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.before()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/before`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/before.html`,
-        },
-        {
-          articleTitle: 'after()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.after()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/after`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/after.html`,
-        },
-        {
-          articleTitle: 'insertAdjacentElement()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.insertAdjacentElement()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/insertAdjacentElement.html`,
-        },
-        {
-          articleTitle: 'replaceWith()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.replaceWith()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/web/api/element/replacewith`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/replaceWith.html`,
-        },
-        {
-          articleTitle: 'replaceChild()',
-          articleLinks: [
-            {
-              linkTitle: 'Node.replaceChild()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/replaceChild.html`,
-        },
-        {
-          articleTitle: 'remove()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.remove()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/remove`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/remove.html`,
-        },
-        {
-          articleTitle: 'removeChild()',
-          articleLinks: [
-            {
-              linkTitle: 'Node.removeChild()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/removeChild.html`,
-        },
-        {
-          articleTitle: 'cloneNode()',
-          articleLinks: [
-            {
-              linkTitle: 'Node.cloneNode()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/cloneNode.html`,
-        },
-        {
-          articleTitle: 'Summary: Insert, Replace, Remove',
-          articleLinks: [
-            {
-              linkTitle: '',
-              linkSource: '',
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/Summary - Insert, Replace, Remove.html`,
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Text, Styles, Classes & Attributes',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'innerText',
-          articleLinks: [
-            {
-              linkTitle: 'HTMLElement.innerText',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/innerText.html`,
-        },
-        {
-          articleTitle: 'textContent',
-          articleLinks: [
-            {
-              linkTitle: 'Node.textContent',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/textContent.html`,
-        },
-        {
-          articleTitle: 'insertAdjacentText()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.insertAdjacentText()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentText`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/insertAdjacentText.html`,
-        },
-        {
-          articleTitle: 'style',
-          articleLinks: [
-            {
-              linkTitle: 'HTMLElement.style',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/style.html`,
-        },
-        {
-          articleTitle: 'getComputedStyle()',
-          articleLinks: [
-            {
-              linkTitle: 'Window.getComputedStyle()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/getComputedStyle.html`,
-        },
-        {
-          articleTitle: 'className',
-          articleLinks: [
-            {
-              linkTitle: 'Element.className',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/className`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/className.html`,
-        },
-        {
-          articleTitle: 'classList (add, remove, toggle, contains)',
-          articleLinks: [
-            {
-              linkTitle: 'Element.classList',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/classList`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/classList.html`,
-        },
-        {
-          articleTitle: 'getAttribute()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.getAttribute()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/getAttribute.html`,
-        },
-        {
-          articleTitle: 'setAttribute()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.setAttribute()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/setAttribute.html`,
-        },
-        {
-          articleTitle: 'setProperty()',
-          articleLinks: [
-            {
-              linkTitle: 'CSSStyleDeclaration.setProperty()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/setProperty.html`,
-        },
-        {
-          articleTitle: 'attributes',
-          articleLinks: [
-            {
-              linkTitle: 'Element.attributes',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/attributes.html`,
-        },
-        {
-          articleTitle: 'value',
-          articleLinks: [
-            {
-              linkTitle: 'DOMTokenList.value',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/value`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/value.html`,
-        },
-        {
-          articleTitle: 'src',
-          articleLinks: [
-            {
-              linkTitle: 'HTMLMediaElement.src',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/src`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/src.html`,
-        },
-        {
-          articleTitle: 'alt',
-          articleLinks: [
-            {
-              linkTitle: 'HTMLImageElement.alt',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/alt.html`,
-        },
-        {
-          articleTitle: 'href',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/href.html`,
-        },
-        {
-          articleTitle: 'hidden',
-          articleLinks: [
-            {
-              linkTitle: 'HTMLElement.hidden',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/hidden.html`,
-        },
-        {
-          articleTitle: 'dataset',
-          articleLinks: [
-            {
-              linkTitle: 'Using data attributes',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes`,
-            },
-            {
-              linkTitle: 'Using Dataset in JavaScript',
-              linkSource: `https://medium.com/@adamkearney124/using-dataset-in-javascript-5331af3ec6c3`,
-            },
-            {
-              linkTitle: 'HTMLElement.dataset',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/dataset.html`,
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Other methods & properties',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'getBoundingClientRect()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.getBoundingClientRect()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/getBoundingClientRect.html`,
-        },
-        {
-          articleTitle: 'clientHeight',
-          articleLinks: [
-            {
-              linkTitle: 'Element.clientHeight',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/clientHeight.html`,
-        },
-        {
-          articleTitle: 'clientWidth',
-          articleLinks: [
-            {
-              linkTitle: 'Element.clientWidth',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/clientWidth`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/clientWidth.html`,
-        },
-        {
-          articleTitle: 'offsetHeight',
-          articleLinks: [
-            {
-              linkTitle: 'HTMLElement.offsetHeight',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/offsetHeight.html`,
-        },
-        {
-          articleTitle: 'scrollIntoView()',
-          articleLinks: [
-            {
-              linkTitle: 'Element.scrollIntoView()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/scrollIntoView.html`,
-        },
-        {
-          articleTitle: 'blur()',
-          articleLinks: [
-            {
-              linkTitle: 'HTMLElement.blur()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/blur`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/blur.html`,
-        },
-        {
-          articleTitle: 'focus()',
-          articleLinks: [
-            {
-              linkTitle: 'HTMLElement.focus()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/focus.html`,
-        },
-        {
-          articleTitle: 'isEqualNode()',
-          articleLinks: [
-            {
-              linkTitle: 'Node.isEqualNode()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/isEqualNode`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/isEqualNode.html`,
-        },
-        {
-          articleTitle: 'nodeValue',
-          articleLinks: [
-            {
-              linkTitle: 'Node.nodeValue',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/nodeValue.html`,
-        },
-        {
-          articleTitle: 'Node.contains()',
-          articleLinks: [
-            {
-              linkTitle: 'Node.contains()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/contains`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/contains.html`,
-        },
-        {
-          articleTitle: 'document.createRange().createContextualFragment()',
-          articleLinks: [
-            {
-              linkTitle: 'Document.createRange()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/createRange`,
-            },
-            {
-              linkTitle: 'Range.createContextualFragment()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Range/createContextualFragment`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Document Object Model (DOM) - Properties & Methods/_____________________.html`,
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Changing Multiple Elements',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-  ],
-};
-
-const events = {
-  title: 'Document Object Model (DOM) <br>- Events -',
-  sections: [
-    {
-      sectionTitle: 'Introduction to Events',
-      sectionLinks: [
-        {
-          linkTitle: 'Introduction to events',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events`,
-        },
-        {
-          linkTitle: 'HTML DOM Events',
-          linkSource: `https://www.w3schools.com/js/js_htmldom_events.asp`,
-        },
-        {
-          linkTitle: 'Event reference',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/Events`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'addEventListener() & removeEventListener()',
-      sectionLinks: [
-        {
-          linkTitle: 'HTML DOM Element addEventListener()',
-          linkSource: `https://www.w3schools.com/jsref/met_element_addeventlistener.asp`,
-        },
-        {
-          linkTitle: 'EventTarget.addEventListener()',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener`,
-        },
-        {
-          linkTitle: 'EventTarget.removeEventListener()',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: '2 Ways NOT to Add Events',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'The Event Object',
-      sectionLinks: [
-        {
-          linkTitle: 'Event reference',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/Events`,
-        },
-        {
-          linkTitle: 'HTML DOM Event Objects',
-          linkSource: `https://www.w3schools.com/jsref/obj_events.asp`,
-        },
-        {
-          linkTitle: `What exactly is the parameter e (event) and why pass it to JavaScript functions?`,
-          linkSource: `https://stackoverflow.com/questions/35936365/what-exactly-is-the-parameter-e-event-and-why-pass-it-to-javascript-functions`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'e.preventDefault()',
-          articleLinks: [
-            {
-              linkTitle: 'Event.preventDefault()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'e.target',
-          articleLinks: [
-            {
-              linkTitle: 'Event.target',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Event/target`,
-            },
-            {
-              linkTitle: 'target Event Property',
-              linkSource: `https://www.w3schools.com/jsref/event_target.asp`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'e.currentTarget',
-          articleLinks: [
-            {
-              linkTitle: 'Event.currentTarget',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget`,
-            },
-            {
-              linkTitle: 'currentTarget Event Property',
-              linkSource: `https://www.w3schools.com/jsref/event_currenttarget.asp`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'e.composedPath()',
-          articleLinks: [
-            {
-              linkTitle: 'Event.composedPath()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'e.stopPropagation()',
-          articleLinks: [
-            {
-              linkTitle: 'stopPropagation() Event Method',
-              linkSource: `https://www.w3schools.com/jsref/event_stoppropagation.asp`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'e.key',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Event Propagation & Delegation',
-      sectionLinks: [
-        {
-          linkTitle: 'What is event bubbling and capturing?',
-          linkSource: `https://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing`,
-        },
-        {
-          linkTitle: 'Event order',
-          linkSource: `https://www.quirksmode.org/js/events_order.html`,
-        },
-        {
-          linkTitle: 'Event Propagation & Event delegation',
-          linkSource: `https://medium.com/@marjuhirsh/event-propagation-event-delegation-7d3db1baf02a`,
-        },
-        {
-          linkTitle: 'stopPropagation() Event Method',
-          linkSource: `https://www.w3schools.com/jsref/event_stoppropagation.asp`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Bubbling',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Capturing',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Types of Events',
-      sectionLinks: [
-        {
-          linkTitle: 'HTML DOM Events',
-          linkSource: `https://www.w3schools.com/jsref/dom_obj_event.asp`,
-        },
-        {
-          linkTitle: 'Event reference',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/Events`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '‘click’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: '‘keypress’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: '‘scroll’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: '‘mouseover’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: '‘mouseout’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: '‘change’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: '‘hashchange’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: '‘load’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: '‘input’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Keyboard Events',
-      sectionLinks: [
-        {
-          linkTitle: 'KeyboardEvent',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'keypress',
-          articleLinks: [
-            {
-              linkTitle: 'Document: keypress event',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/keypress_event`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'keyup',
-          articleLinks: [
-            {
-              linkTitle: 'Document: keyup event',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/keyup_event`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'keydown',
-          articleLinks: [
-            {
-              linkTitle: 'Document: keydown event',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Form Events & PreventDefault',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Input & Change Events',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Passing Arguments to Event Handlers',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Events on Multiple Elements',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Lifecycle DOM Events',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-  ],
-};
-
-const webAPIs = {
-  title: 'Web APIs',
-  sections: [
-    {
-      sectionTitle: 'The Intersection Observer API',
-      sectionLinks: [
-        {
-          linkTitle: 'Intersection Observer API',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'navigator',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'navigator.language',
-          articleLinks: [
-            {
-              linkTitle: 'Navigator.language',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Navigator/language`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'navigator.geolocation.getCurrentPosition()',
-          articleLinks: [
-            {
-              linkTitle: 'Geolocation API',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'localStorage',
-      sectionLinks: [
-        {
-          linkTitle: 'Window.localStorage',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'localStorage.setItem()',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'localStorage.getItem()',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'localStorage.removeItem()',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'JSON.stringify()',
-          articleLinks: [
-            {
-              linkTitle: 'JSON.stringify()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'JSON.parse()',
-          articleLinks: [
-            {
-              linkTitle: 'JSON.parse()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'window',
-      sectionLinks: [
-        {
-          linkTitle: 'Window interface',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'window.location.reload()',
-          articleLinks: [
-            {
-              linkTitle: 'The Window.location read-only property',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/location`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'window.location.hash',
-          articleLinks: [
-            {
-              linkTitle: 'The Window.location read-only property',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/location`,
-            },
-            {
-              linkTitle: 'The hash property',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Location/hash`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'window.history.pushState()',
-          articleLinks: [
-            {
-              linkTitle: 'The Window.history read-only property',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/history`,
-            },
-            {
-              linkTitle: 'The history.pushState() method',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/History/pushState`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'window.open(‘url’, ‘_blank’)',
-          articleLinks: [
-            {
-              linkTitle: `The Window interface's open() method`,
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/open`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'window.pageXOffset vs scrollX',
-          articleLinks: [
-            {
-              linkTitle:
-                'The read-only scrollX property of the Window interface',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'window.pageYOffset vs scrollY',
-          articleLinks: [
-            {
-              linkTitle:
-                'The read-only scrollY property of the Window interface',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'window.scrollTo()',
-          articleLinks: [
-            {
-              linkTitle: 'Window.scrollTo()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'window.innerHeight',
-          articleLinks: [
-            {
-              linkTitle:
-                'The read-only innerHeight property of the Window interface',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'FormData',
-      sectionLinks: [
-        {
-          linkTitle: 'FormData interface',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/FormData`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'new FormData()',
-          articleLinks: [
-            {
-              linkTitle: 'The FormData() constructor',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-  ],
-};
-
-const functionalProgramming = {
-  title: 'Functional Programming (FP)',
-  sections: [
-    {
-      sectionTitle: 'Function introduction',
-      sectionLinks: [
-        {
-          linkTitle:
-            'Master the JavaScript Interview: What is Functional Programming?',
-          linkSource: `https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function syntax',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Function Declarations',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Function Expressions',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Arrow Functions',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function parameters',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Parameter Rules',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Default Parameters',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'The Arguments Object',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Arguments are <i>Passed by Value</i> vs Objects are <i>Passed by Reference</i>',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function invocation',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Invoking a JavaScript Function',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Invoking a Function as a Function',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function invocation & this keyword',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: `What is 'this'?`,
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'The Global Object',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Invoking a Function as a Method',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Invoking a Function with a Function Constructor',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'The this keyword & call(), apply() and bind()',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'All Functions are Methods',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'call() method',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'apply() method',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function return statement',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Functions used as variable values',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Closures & local vs global variables',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Variable Lifetime',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Nested Functions',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Closures',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function hoisting',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle:
-        'Self-Invoking functions / Immediately Invoked Function Expressions (IIFE)',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Functions are objects',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Rest Parameters',
-      sectionLinks: [
-        {
-          linkTitle: 'Rest parameters',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Destructuring Parameters',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'this keyword',
-      sectionLinks: [
-        {
-          linkTitle: 'this keyword',
-          linkSource: `https://www.w3schools.com/js/js_this.asp`,
-        },
-        {
-          linkTitle: 'this keyword',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Lexical vs Dynamic Scope',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'this – call(), apply(), bind()',
-      sectionLinks: [
-        {
-          linkTitle: 'Function.prototype.call()',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call`,
-        },
-        {
-          linkTitle: 'Function.prototype.apply()',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply`,
-        },
-        {
-          linkTitle: 'Function.prototype.bind()',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Currying with bind()',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Arrow Function',
-      sectionLinks: [
-        {
-          linkTitle: 'Arrow function expressions',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Arrow Function: Implicit Returns',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Arrow Function and THIS keyword',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Regular Functions vs. Arrow Functions',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Immediately Invoked Function Expressions (IIFE)',
-      sectionLinks: [
-        {
-          linkTitle: 'IIFE (Immediately Invoked Function Expression)',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Glossary/IIFE`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Spread for Function Calls',
-      sectionLinks: [
-        {
-          linkTitle: 'Spread syntax (...)',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax`,
-        },
-        {
-          linkTitle: 'How to Use the Spread Operator (…) in JavaScript',
-          linkSource: `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Higher-Order Functions',
-      sectionLinks: [
-        {
-          linkTitle: 'First-class Function',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function`,
-        },
-        {
-          linkTitle: 'Higher-Order Functions',
-          linkSource: `https://eloquentjavascript.net/05_higher_order.html`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Functions Accepting Callback Functions',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'A Function Can Be Passed As An Argument To Other Functions',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'A Function Can Be Returned By Another Function',
-          articleLinks: [
-            {
-              linkTitle:
-                'JavaScript Functions → Returning Functions from Functions',
-              linkSource: `https://medium.com/@iampika/part-6-javascript-functions-returning-functions-from-functions-429a3d9a55d1`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'A Function Can Be Assigned As A Value To A Variable',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Callbacks',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Functions vs Objects',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Scheme + Java',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Curry',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Partial Application',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Pure Functions',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Referential Transparency',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Compose',
-      sectionLinks: [
-        {
-          linkTitle:
-            'A quick introduction to pipe() and compose() in JavaScript',
-          linkSource: `https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Pipe',
-      sectionLinks: [
-        {
-          linkTitle:
-            'A quick introduction to pipe() and compose() in JavaScript',
-          linkSource: `https://medium.com/free-code-camp/pipe-and-compose-in-javascript-5b04004ac937`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-  ],
-};
-
 const asynchronous = {
   title: 'Asynchronous',
   sections: [
@@ -5304,6 +3766,1544 @@ const asynchronous = {
   ],
 };
 
+const domManipulation = {
+  title: 'Document Object Model (DOM) <br>- Properties & Methods -',
+  sections: [
+    {
+      sectionTitle: 'Introduction to The Document Object',
+      sectionLinks: [
+        {
+          linkTitle: 'DOM Intro - w3schools',
+          linkSource: `https://www.w3schools.com/js/js_htmldom.asp`,
+        },
+        {
+          linkTitle: 'Introduction to the DOM',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction`,
+        },
+        {
+          linkTitle: 'Document interface',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document`,
+        },
+        {
+          linkTitle: 'DOM Node interface',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node`,
+        },
+        {
+          linkTitle: 'Element',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element`,
+        },
+        {
+          linkTitle: `What's the Difference between DOM Node and Element?`,
+          linkSource: `https://dmitripavlutin.com/dom-node-element/`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/Introduction to The Document Object.html`,
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'DOM Node Types (Node vs Element)',
+      sectionLinks: [
+        {
+          linkTitle: `What's the Difference between DOM Node and Element?`,
+          linkSource: 'https://dmitripavlutin.com/dom-node-element/',
+        },
+      ],
+      sectionText: [],
+      sectionSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/DOM Node Types (Node vs Element).html`,
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Live Node Lists vs Static Node Lists',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/Live Node Lists vs Static Node Lists.html`,
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'HTML Attributes vs DOM Properties',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/HTML Attributes vs DOM Properties.html`,
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'DOM Traversing & select DOM elements',
+      sectionLinks: [
+        {
+          linkTitle: 'Traversing the DOM with JavaScript',
+          linkSource: `https://zellwk.com/blog/dom-traversals/`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Introduction to DOM Traversing',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/Introduction to DOM Traversing.html`,
+        },
+        {
+          articleTitle: 'document.documentElement',
+          articleLinks: [
+            {
+              linkTitle: 'Document.documentElement',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/document.documentElement.html`,
+        },
+        {
+          articleTitle: 'document.head',
+          articleLinks: [
+            {
+              linkTitle: 'Document.head',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/head`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/document.head.html`,
+        },
+        {
+          articleTitle: 'document.body',
+          articleLinks: [
+            {
+              linkTitle: 'Document.body',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/body`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/document.body.html`,
+        },
+        {
+          articleTitle: 'getElementById()',
+          articleLinks: [
+            {
+              linkTitle: 'Document.getElementById()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/getElementById.html`,
+        },
+        {
+          articleTitle: 'getElementsByTagName()',
+          articleLinks: [
+            {
+              linkTitle: 'Document.getElementsByTagName()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/getElementsByTagName.html`,
+        },
+        {
+          articleTitle: 'getElementsByClassName()',
+          articleLinks: [
+            {
+              linkTitle: 'Document.getElementsByClassName()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/getElementsByClassName.html`,
+        },
+        {
+          articleTitle: 'querySelector() (document/element)',
+          articleLinks: [
+            {
+              linkTitle: 'Document.querySelector()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/querySelector.html`,
+        },
+        {
+          articleTitle: 'querySelectorAll() (document/element)',
+          articleLinks: [
+            {
+              linkTitle: 'Document.querySelectorAll()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/querySelectorAll.html`,
+        },
+        {
+          articleTitle: 'children',
+          articleLinks: [
+            {
+              linkTitle: 'Element.children',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/children`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/children.html`,
+        },
+        {
+          articleTitle: 'childNodes',
+          articleLinks: [
+            {
+              linkTitle: 'Node.childNodes',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/childNodes.html`,
+        },
+        {
+          articleTitle: 'firstElementChild',
+          articleLinks: [
+            {
+              linkTitle: 'Element.firstElementChild',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/firstElementChild`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/firstElementChild.html`,
+        },
+        {
+          articleTitle: 'lastElementChild',
+          articleLinks: [
+            {
+              linkTitle: 'Element.lastElementChild',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/lastElementChild`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/lastElementChild.html`,
+        },
+        {
+          articleTitle: 'firstChild',
+          articleLinks: [
+            {
+              linkTitle: 'Node.firstChild',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/firstChild.html`,
+        },
+        {
+          articleTitle: 'lastChild',
+          articleLinks: [
+            {
+              linkTitle: 'Node.lastChild',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/lastChild`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/lastChild.html`,
+        },
+        {
+          articleTitle: 'closest()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.closest()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/closest`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/closest.html`,
+        },
+        {
+          articleTitle: 'parentElement',
+          articleLinks: [
+            {
+              linkTitle: 'Node.parentElement',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/parentElement.html`,
+        },
+        {
+          articleTitle: 'parentNode',
+          articleLinks: [
+            {
+              linkTitle: 'Node.parentNode',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/parentNode.html`,
+        },
+        {
+          articleTitle: 'previousElementSibling',
+          articleLinks: [
+            {
+              linkTitle: 'Element.previousElementSibling',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/previousElementSibling.html`,
+        },
+        {
+          articleTitle: 'nextElementSibling',
+          articleLinks: [
+            {
+              linkTitle: 'Element.nextElementSibling',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/nextElementSibling.html`,
+        },
+        {
+          articleTitle: 'previousSibling',
+          articleLinks: [
+            {
+              linkTitle: 'Node.previousSibling',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/previousSibling`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/previousSibling.html`,
+        },
+        {
+          articleTitle: 'nextSibling',
+          articleLinks: [
+            {
+              linkTitle: 'Node.nextSibling',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/nextSibling.html`,
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Create, insert & remove DOM elements',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Introduction to create, insert and remove elements',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/Introduction to create, insert and remove elements.html`,
+        },
+        {
+          articleTitle: 'innerHTML',
+          articleLinks: [
+            {
+              linkTitle: 'Element.innerHTML',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/innerHTML.html`,
+        },
+        {
+          articleTitle: 'insertAdjacentHTML()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.insertAdjacentHTML()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/insertAdjacentHTML.html`,
+        },
+        {
+          articleTitle: 'document.createElement()',
+          articleLinks: [
+            {
+              linkTitle: 'Document.createElement()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/document.createElement.html`,
+        },
+        {
+          articleTitle: 'append()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.append()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/append`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/append.html`,
+        },
+        {
+          articleTitle: 'appendChild()',
+          articleLinks: [
+            {
+              linkTitle: 'Node.appendChild()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/appendChild.html`,
+        },
+        {
+          articleTitle: 'prepend()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.prepend()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/prepend.html`,
+        },
+        {
+          articleTitle: 'insertBefore()',
+          articleLinks: [
+            {
+              linkTitle: 'Node.insertBefore()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/insertBefore.html`,
+        },
+        {
+          articleTitle: 'before()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.before()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/before`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/before.html`,
+        },
+        {
+          articleTitle: 'after()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.after()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/after`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/after.html`,
+        },
+        {
+          articleTitle: 'insertAdjacentElement()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.insertAdjacentElement()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/insertAdjacentElement.html`,
+        },
+        {
+          articleTitle: 'replaceWith()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.replaceWith()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/web/api/element/replacewith`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/replaceWith.html`,
+        },
+        {
+          articleTitle: 'replaceChild()',
+          articleLinks: [
+            {
+              linkTitle: 'Node.replaceChild()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/replaceChild.html`,
+        },
+        {
+          articleTitle: 'remove()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.remove()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/remove`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/remove.html`,
+        },
+        {
+          articleTitle: 'removeChild()',
+          articleLinks: [
+            {
+              linkTitle: 'Node.removeChild()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/removeChild.html`,
+        },
+        {
+          articleTitle: 'cloneNode()',
+          articleLinks: [
+            {
+              linkTitle: 'Node.cloneNode()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/cloneNode.html`,
+        },
+        {
+          articleTitle: 'Summary: Insert, Replace, Remove',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/Summary - Insert, Replace, Remove.html`,
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Text, Styles, Classes & Attributes',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'innerText',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLElement.innerText',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/innerText.html`,
+        },
+        {
+          articleTitle: 'textContent',
+          articleLinks: [
+            {
+              linkTitle: 'Node.textContent',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/textContent.html`,
+        },
+        {
+          articleTitle: 'insertAdjacentText()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.insertAdjacentText()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentText`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/insertAdjacentText.html`,
+        },
+        {
+          articleTitle: 'style',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLElement.style',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/style.html`,
+        },
+        {
+          articleTitle: 'getComputedStyle()',
+          articleLinks: [
+            {
+              linkTitle: 'Window.getComputedStyle()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/getComputedStyle.html`,
+        },
+        {
+          articleTitle: 'className',
+          articleLinks: [
+            {
+              linkTitle: 'Element.className',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/className`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/className.html`,
+        },
+        {
+          articleTitle: 'classList (add, remove, toggle, contains)',
+          articleLinks: [
+            {
+              linkTitle: 'Element.classList',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/classList`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/classList.html`,
+        },
+        {
+          articleTitle: 'getAttribute()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.getAttribute()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/getAttribute.html`,
+        },
+        {
+          articleTitle: 'setAttribute()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.setAttribute()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/setAttribute.html`,
+        },
+        {
+          articleTitle: 'setProperty()',
+          articleLinks: [
+            {
+              linkTitle: 'CSSStyleDeclaration.setProperty()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/setProperty.html`,
+        },
+        {
+          articleTitle: 'attributes',
+          articleLinks: [
+            {
+              linkTitle: 'Element.attributes',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/attributes.html`,
+        },
+        {
+          articleTitle: 'value',
+          articleLinks: [
+            {
+              linkTitle: 'DOMTokenList.value',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/value`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/value.html`,
+        },
+        {
+          articleTitle: 'src',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLMediaElement.src',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/src`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/src.html`,
+        },
+        {
+          articleTitle: 'alt',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLImageElement.alt',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/alt.html`,
+        },
+        {
+          articleTitle: 'href',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/href.html`,
+        },
+        {
+          articleTitle: 'hidden',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLElement.hidden',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/hidden.html`,
+        },
+        {
+          articleTitle: 'dataset',
+          articleLinks: [
+            {
+              linkTitle: 'Using data attributes',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes`,
+            },
+            {
+              linkTitle: 'Using Dataset in JavaScript',
+              linkSource: `https://medium.com/@adamkearney124/using-dataset-in-javascript-5331af3ec6c3`,
+            },
+            {
+              linkTitle: 'HTMLElement.dataset',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/dataset.html`,
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Other methods & properties',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'getBoundingClientRect()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.getBoundingClientRect()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/getBoundingClientRect.html`,
+        },
+        {
+          articleTitle: 'clientHeight',
+          articleLinks: [
+            {
+              linkTitle: 'Element.clientHeight',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/clientHeight.html`,
+        },
+        {
+          articleTitle: 'clientWidth',
+          articleLinks: [
+            {
+              linkTitle: 'Element.clientWidth',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/clientWidth`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/clientWidth.html`,
+        },
+        {
+          articleTitle: 'offsetHeight',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLElement.offsetHeight',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/offsetHeight.html`,
+        },
+        {
+          articleTitle: 'scrollIntoView()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.scrollIntoView()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/scrollIntoView.html`,
+        },
+        {
+          articleTitle: 'blur()',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLElement.blur()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/blur`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/blur.html`,
+        },
+        {
+          articleTitle: 'focus()',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLElement.focus()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/focus.html`,
+        },
+        {
+          articleTitle: 'isEqualNode()',
+          articleLinks: [
+            {
+              linkTitle: 'Node.isEqualNode()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/isEqualNode`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/isEqualNode.html`,
+        },
+        {
+          articleTitle: 'nodeValue',
+          articleLinks: [
+            {
+              linkTitle: 'Node.nodeValue',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/nodeValue.html`,
+        },
+        {
+          articleTitle: 'Node.contains()',
+          articleLinks: [
+            {
+              linkTitle: 'Node.contains()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Node/contains`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/contains.html`,
+        },
+        {
+          articleTitle: 'document.createRange().createContextualFragment()',
+          articleLinks: [
+            {
+              linkTitle: 'Document.createRange()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/createRange`,
+            },
+            {
+              linkTitle: 'Range.createContextualFragment()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Range/createContextualFragment`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/_____________________.html`,
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Changing Multiple Elements',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+  ],
+};
+
+const domEvents = {
+  title: 'Document Object Model (DOM) <br>- Events -',
+  sections: [
+    {
+      sectionTitle: 'Introduction to Events',
+      sectionLinks: [
+        {
+          linkTitle: 'Introduction to events',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events`,
+        },
+        {
+          linkTitle: 'HTML DOM Events',
+          linkSource: `https://www.w3schools.com/js/js_htmldom_events.asp`,
+        },
+        {
+          linkTitle: 'Event reference',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/Events`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'addEventListener() & removeEventListener()',
+      sectionLinks: [
+        {
+          linkTitle: 'HTML DOM Element addEventListener()',
+          linkSource: `https://www.w3schools.com/jsref/met_element_addeventlistener.asp`,
+        },
+        {
+          linkTitle: 'EventTarget.addEventListener()',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener`,
+        },
+        {
+          linkTitle: 'EventTarget.removeEventListener()',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: '2 Ways NOT to Add Events',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'The Event Object',
+      sectionLinks: [
+        {
+          linkTitle: 'Event reference',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/Events`,
+        },
+        {
+          linkTitle: 'HTML DOM Event Objects',
+          linkSource: `https://www.w3schools.com/jsref/obj_events.asp`,
+        },
+        {
+          linkTitle: `What exactly is the parameter e (event) and why pass it to JavaScript functions?`,
+          linkSource: `https://stackoverflow.com/questions/35936365/what-exactly-is-the-parameter-e-event-and-why-pass-it-to-javascript-functions`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'e.preventDefault()',
+          articleLinks: [
+            {
+              linkTitle: 'Event.preventDefault()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'e.target',
+          articleLinks: [
+            {
+              linkTitle: 'Event.target',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Event/target`,
+            },
+            {
+              linkTitle: 'target Event Property',
+              linkSource: `https://www.w3schools.com/jsref/event_target.asp`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'e.currentTarget',
+          articleLinks: [
+            {
+              linkTitle: 'Event.currentTarget',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget`,
+            },
+            {
+              linkTitle: 'currentTarget Event Property',
+              linkSource: `https://www.w3schools.com/jsref/event_currenttarget.asp`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'e.composedPath()',
+          articleLinks: [
+            {
+              linkTitle: 'Event.composedPath()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'e.stopPropagation()',
+          articleLinks: [
+            {
+              linkTitle: 'stopPropagation() Event Method',
+              linkSource: `https://www.w3schools.com/jsref/event_stoppropagation.asp`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'e.key',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Event Propagation & Delegation',
+      sectionLinks: [
+        {
+          linkTitle: 'What is event bubbling and capturing?',
+          linkSource: `https://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing`,
+        },
+        {
+          linkTitle: 'Event order',
+          linkSource: `https://www.quirksmode.org/js/events_order.html`,
+        },
+        {
+          linkTitle: 'Event Propagation & Event delegation',
+          linkSource: `https://medium.com/@marjuhirsh/event-propagation-event-delegation-7d3db1baf02a`,
+        },
+        {
+          linkTitle: 'stopPropagation() Event Method',
+          linkSource: `https://www.w3schools.com/jsref/event_stoppropagation.asp`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Bubbling',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Capturing',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Types of Events',
+      sectionLinks: [
+        {
+          linkTitle: 'HTML DOM Events',
+          linkSource: `https://www.w3schools.com/jsref/dom_obj_event.asp`,
+        },
+        {
+          linkTitle: 'Event reference',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/Events`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '‘click’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '‘keypress’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '‘scroll’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '‘mouseover’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '‘mouseout’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '‘change’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '‘hashchange’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '‘load’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '‘input’ event',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Keyboard Events',
+      sectionLinks: [
+        {
+          linkTitle: 'KeyboardEvent',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'keypress',
+          articleLinks: [
+            {
+              linkTitle: 'Document: keypress event',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/keypress_event`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'keyup',
+          articleLinks: [
+            {
+              linkTitle: 'Document: keyup event',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/keyup_event`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'keydown',
+          articleLinks: [
+            {
+              linkTitle: 'Document: keydown event',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Form Events & PreventDefault',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Input & Change Events',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Passing Arguments to Event Handlers',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Events on Multiple Elements',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Lifecycle DOM Events',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+  ],
+};
+
+const otherWebAPIs = {
+  title: 'Others Web APIs',
+  sections: [
+    {
+      sectionTitle: 'The Intersection Observer API',
+      sectionLinks: [
+        {
+          linkTitle: 'Intersection Observer API',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'navigator',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'navigator.language',
+          articleLinks: [
+            {
+              linkTitle: 'Navigator.language',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Navigator/language`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'navigator.geolocation.getCurrentPosition()',
+          articleLinks: [
+            {
+              linkTitle: 'Geolocation API',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'localStorage',
+      sectionLinks: [
+        {
+          linkTitle: 'Window.localStorage',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'localStorage.setItem()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'localStorage.getItem()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'localStorage.removeItem()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'JSON.stringify()',
+          articleLinks: [
+            {
+              linkTitle: 'JSON.stringify()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'JSON.parse()',
+          articleLinks: [
+            {
+              linkTitle: 'JSON.parse()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'window',
+      sectionLinks: [
+        {
+          linkTitle: 'Window interface',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'window.location.reload()',
+          articleLinks: [
+            {
+              linkTitle: 'The Window.location read-only property',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/location`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'window.location.hash',
+          articleLinks: [
+            {
+              linkTitle: 'The Window.location read-only property',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/location`,
+            },
+            {
+              linkTitle: 'The hash property',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Location/hash`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'window.history.pushState()',
+          articleLinks: [
+            {
+              linkTitle: 'The Window.history read-only property',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/history`,
+            },
+            {
+              linkTitle: 'The history.pushState() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/History/pushState`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'window.open(‘url’, ‘_blank’)',
+          articleLinks: [
+            {
+              linkTitle: `The Window interface's open() method`,
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/open`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'window.pageXOffset vs scrollX',
+          articleLinks: [
+            {
+              linkTitle:
+                'The read-only scrollX property of the Window interface',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'window.pageYOffset vs scrollY',
+          articleLinks: [
+            {
+              linkTitle:
+                'The read-only scrollY property of the Window interface',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'window.scrollTo()',
+          articleLinks: [
+            {
+              linkTitle: 'Window.scrollTo()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'window.innerHeight',
+          articleLinks: [
+            {
+              linkTitle:
+                'The read-only innerHeight property of the Window interface',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'FormData',
+      sectionLinks: [
+        {
+          linkTitle: 'FormData interface',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/FormData`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'new FormData()',
+          articleLinks: [
+            {
+              linkTitle: 'The FormData() constructor',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+  ],
+};
+
 const modulesAndTooling = {
   title: 'Modern JavaScript Development: Modules and Tooling',
   sections: [
@@ -5347,7 +5347,7 @@ const modulesAndTooling = {
       sectionTitle: 'Exporting and Importing in native ES6 Modules',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/17. Modern JavaScript Development - Modules and Tooling/Exporting and Importing in native ES6 Modules.html`,
+      sectionSource: `../../src/markdowns/15. Modern JavaScript Development - Modules and Tooling/Exporting and Importing in native ES6 Modules.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -5528,7 +5528,7 @@ const modulesAndTooling = {
       ],
     },
     {
-      sectionTitle: 'Markdown',
+      sectionTitle: 'Markdowns',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: '',
@@ -5545,19 +5545,19 @@ const modulesAndTooling = {
 };
 
 export const data = [
-  engineAndRuntime,
-  variablesValues,
+  browserEngineAndRuntime,
+  variablesAndValues,
   operators,
   controlingProgamLogicAndFlow,
   loops,
-  dataStructuresArrays,
-  dataStructuresObjects,
+  functionalProgramming,
+  arraysAndSets,
+  objectsAndMaps,
   oop,
   standardBuildInObjects,
-  domManipulation,
-  events,
-  webAPIs,
-  functionalProgramming,
   asynchronous,
+  domManipulation,
+  domEvents,
+  otherWebAPIs,
   modulesAndTooling,
 ];
