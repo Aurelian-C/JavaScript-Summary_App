@@ -79,13 +79,13 @@ const browserEngineAndRuntime = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Web APIs',
+          articleTitle: 'Global Object (window object)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'Global Object (window object)',
+          articleTitle: 'Web APIs',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -4648,6 +4648,17 @@ const domManipulation = {
             {
               linkTitle: 'Range.createContextualFragment()',
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Range/createContextualFragment`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/_____________________.html`,
+        },
+        {
+          articleTitle: 'select()',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLInputElement.select()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/select`,
             },
           ],
           articleText: [],
