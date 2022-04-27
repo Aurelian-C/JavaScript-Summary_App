@@ -687,6 +687,25 @@ const operators = {
         },
       ],
     },
+    {
+      sectionTitle: `The 'in' operator`,
+      sectionLinks: [
+        {
+          linkTitle: 'in operator',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
   ],
 };
 
@@ -2313,6 +2332,35 @@ const objectsAndMaps = {
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create`,
             },
           ],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Object descriptors',
+      sectionLinks: [
+        {
+          linkTitle: 'Object.getOwnPropertyDescriptor()',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor`,
+        },
+        {
+          linkTitle: 'Object.defineProperty()',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Object.getOwnPropertyDescriptor()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Object.defineProperty()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },

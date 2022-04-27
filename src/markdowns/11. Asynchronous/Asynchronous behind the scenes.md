@@ -1,6 +1,6 @@
 # Introducing asynchronous JavaScript
 
-JavaScript is a **single-threaded language** and, at the same time, also **non-blocking**, **asynchronous** and **concurrent**.
+JavaScript is a ==single-threaded language== and, at the same time, also ==non-blocking**, **asynchronous== and ==concurrent==.
 
 JavaScript is a single-threaded programming language which means** only one thing can happen at a time**. That is, the **JavaScript Engine can only process one statement at a time in a single thread**.
 
