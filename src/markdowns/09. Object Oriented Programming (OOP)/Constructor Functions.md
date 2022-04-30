@@ -2,12 +2,14 @@
 
 Constructor functions:
 
-- Technique to **create objects from a function**;
+- Technique to ==**create objects from a function**==;
 - This is how built-in objects like Arrays, Maps or Sets are actually implemented.
 
-We can use Constructor Functions to **build an object using a function**. Now, a Constructor Function is actually a completely **normal function**. The only difference between a regular function and a function that we say Constructor Function, is that we call a Constructor Function with the **`new`** operator. You can use a function expression or a function declaration to create a Constructor Function, but **you can't create a Constructor Function with the arrow function** because arrow function doesn't have its own `this` keyword and we need that.
+We can use Constructor Functions to ==**build an object using a function**==. Now, a Constructor Function is actually a completely **normal function**. The only difference between a regular function and a function that we say Constructor Function, is that ==we call a Constructor Function with the **new** operator==. 
 
-In OOP there is a **convention** that Constructor Functions always start with a **capital letter** and in fact, other built-in constructors like `Array` or `String` follow that convention. Constructor Functions is a **pattern** that developers came up with and so now we just simply follow that pattern.
+You can use a function expression or a function declaration to create a Constructor Function, but ==you can't create a Constructor Function with the **arrow function**== because arrow function doesn't have its own `this` keyword and we need that.
+
+In OOP there is a ==convention== that Constructor Functions always start with a ==capital letter== and in fact, other built-in constructors like `Array` or `String` follow that convention. Constructor Functions is a ==**pattern**== that developers came up with and so now we just simply follow that pattern.
 
 ## Syntax
 
@@ -44,9 +46,9 @@ const matilda = new Person('Matilda', 2017);
 
 Only one `calcYears()` function and `species` property exists, but then all of the objects that are created using `Person` Constructor Function can basically reuse the `calcYears()` and `species` on themselves. So, the `this` keyword, in each of them, is as always set to the object that is calling the method.
 
-> Note: Every function in Javascript automatically has a property called `prototype` and that includes Constructor Functions. Every object that's created by a Constructor Function will get access to all the methods and properties that we define on the Constructor Function `prototype` property.
+> Note: ==Every function in JavaScript automatically has a property called **prototype** and that includes Constructor Functions==. Every object that's created by a Constructor Function will get access to all the methods and properties that we define on the Constructor Function `prototype` property.
 >
-> Every function that we create gets the `prototype` property, but **only Constructor Functions actually have used for this `prototype` object**.
+> Every function that we create gets the `prototype` property, but ==only Constructor Functions actually have used for this **prototype object**==.
 
 ```js
 Person.prototype; //{constructor: f}

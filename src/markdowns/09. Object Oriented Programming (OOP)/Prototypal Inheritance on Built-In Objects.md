@@ -12,7 +12,7 @@ arr.__proto__.__proto__; //Object.prototype
 
 **Extending the prototype of a built-in object is generally not a good idea**.
 
-- The first reason is that the next version of Javascript might add a method with the same name that we are adding, but it might work in a different way and so your code will then use that new method which, remember, works differently and then that will probably break your code.
+- The first reason is that the next version of JavaScript might add a method with the same name that we are adding, but it might work in a different way and so your code will then use that new method which, remember, works differently and then that will probably break your code.
 - The second reason why you shouldn't do this is because when you work on a team of developers, then this is really gonna be a bad idea because if multiple developers implement the same method with a different name, then that's just going to create so many bugs that it's just not worth doing this.
 
 ```js

@@ -1,8 +1,8 @@
-# Object-Oriented Programming in Javascript
+# Object-Oriented Programming in JavaScript
 
-## Classical OOP: Classes vs OOP in Javascript: Prototypes
+## Classical OOP: Classes vs OOP in JavaScript: Prototypes
 
-Prototypes are the mechanism by which JavaScript **objects inherit features from one another**.
+Prototypes are the mechanism by which JavaScript ==objects **inherit** features from one another==.
 
 ![prototype](../../img/oop_prototype.jpg)
 
@@ -21,7 +21,7 @@ const myObject = {
 myObject.greet(); // Greetings from Madrid
 ```
 
-This is an object with _one data property_, `city`, and _one method_, `greet()`. If you type the object's name _followed by a period_ into the console, like `myObject.`, then the console will pop up a list of all the properties available to `myObject` object. You'll see that besides `city` and `greet`, there are lots of other properties!
+This is an object with _one data property_, `city`, and _one method_, `greet()`. If you type the object's name _followed by a `.`_ into the console, like `myObject.`, then the console will pop up a list of all the properties available to `myObject` object. You'll see that besides `city` and `greet`, there are lots of other properties!
 
 ```
 __defineGetter__
@@ -42,7 +42,8 @@ toValueOf
 
 If you access a one of them `myObject.toString(); // "[object Object]"` it works. What are these extra properties, and where do they come from?
 
-Every object in JavaScript has a **built-in property**, which is called its `prototype`. The `prototype` **is itself an object**, so the `prototype` will have its own `prototype`, making what's called a **prototype chain**. The chain ends when we reach a prototype that has `null` for its own prototype. _**The property of an object that points to its prototype is not called `prototype`. Its name is not standard, but in practice all browsers use `__proto__`**_. The standard way to access an object's prototype is the `Object.getPrototypeOf()` method.
+Every object in JavaScript has a ==**built-in property**==, which is called its ==**prototype**==. The `prototype` ==is itself an **object**==, so the `prototype` will have its own prototype, making what's called a ==**prototype chain**==. The chain ends when we reach a prototype that has `null` for its own prototype.
+_**The property of an object that points to its prototype is not called `prototype`. Its name is not standard, but in practice all browsers use `__proto__`**_. The standard way to access an object's prototype is the `Object.getPrototypeOf()` method:
 
 ```js
 // __proto__ property
@@ -110,18 +111,18 @@ This is called **"shadowing" the property**.
 
 How do we actually create prototypes? And how do we link objects to prototypes? There are various ways of setting an object's prototype in JavaScript.
 
-1. `Object.create()`
+1. ==**Object.create()**==
 
-   - The easiest and most straightforward way of _**linking an object to a prototype object**_.
+   - The easiest and most straightforward way of ==linking an object to a prototype object==.
 
-2. Constructor functions
+2. ==**Constructor functions**==
 
-   - Technique to _**create objects from a function**_;
+   - Technique to ==create objects from a function==;
    - This is how built-in objects like Arrays, Maps or Sets are actually implemented.
 
-3. ES6 Classes
-   - Modern _**alternative to constructor function syntax**_;
-   - "_**Syntactic sugar**_": behind the scenes, ES6 classes work exactly like constructor functions;
+3. ==**ES6 Classes**==
+   - Modern ==alternative to constructor function syntax==;
+   - =="Syntactic sugar"==: behind the scenes, ES6 classes work exactly like constructor functions;
    - ES6 classes do NOT behave like classes in "classical OOP" like Java or C++.
 
 References

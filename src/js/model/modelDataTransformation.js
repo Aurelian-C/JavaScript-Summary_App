@@ -8,6 +8,7 @@ const sectionsArray = data
       title: obj.sectionTitle,
       links: obj.sectionLinks,
       text: obj.sectionText,
+      source: obj.sectionSource,
     };
   });
 
@@ -21,6 +22,7 @@ const articlesArray = data
       title: item.articleTitle,
       links: item.articleLinks,
       text: item.articleText,
+      source: item.articleSource,
     };
   });
 

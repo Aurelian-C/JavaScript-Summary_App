@@ -24,19 +24,17 @@ class ApplicationView {
                           <i class="fa-solid fa-angle-right arrow"></i>
                           <h3 class="sub_section--title" data-title="${
                             section.sectionTitle
-                          }"><a href="${
-                        section.sectionSource
-                      }" class="sub_section--anchor">${
-                        section.sectionTitle
-                      }</a></h3>
+                          }" data-source-link="${section.sectionSource}">
+                          ${section.sectionTitle}
+                          </h3>
                         </div>
                         <ul class="sub_section--articles">
                         ${section.sectionArticles
                           .map(title => {
                             if (!title.articleTitle) return '';
                             return `
-                                <li class="sub_section--article" data-title="${title.articleTitle}">
-                                <a href="${title.articleSource}" class="sub_section--anchor">${title.articleTitle}</a>
+                                <li class="sub_section--article" data-title="${title.articleTitle}" data-source-link="${title.articleSource}">
+                                ${title.articleTitle}
                                 </li>
                           `;
                           })
