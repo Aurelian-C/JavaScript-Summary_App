@@ -25,7 +25,7 @@ const browserEngineAndRuntime = {
       sectionTitle: 'Javascript Engine',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/01. Browser Engine & Runtime/________.html`,
       sectionArticles: [
         {
           articleTitle:
@@ -251,7 +251,7 @@ const variablesAndValues = {
       sectionTitle: 'Statements vs Expressions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -265,7 +265,7 @@ const variablesAndValues = {
       sectionTitle: 'Static vs Dynamically Typed',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -279,7 +279,7 @@ const variablesAndValues = {
       sectionTitle: 'Strongly vs Weakly Typed',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -293,7 +293,7 @@ const variablesAndValues = {
       sectionTitle: 'Variables & Values',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -307,7 +307,7 @@ const variablesAndValues = {
       sectionTitle: 'var, let & const',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -321,7 +321,7 @@ const variablesAndValues = {
       sectionTitle: 'Primitives vs References Types (Primitives vs Objects)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/________.html`,
       sectionArticles: [
         {
           articleTitle:
@@ -354,7 +354,7 @@ const operators = {
       sectionTitle: 'Introduction to JavaScript Operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/03. Operators/________.html`,
       sectionArticles: [
         {
           articleTitle: 'Type Conversion and Coercion',
@@ -390,19 +390,19 @@ const operators = {
           articleTitle: 'Assignment operator (=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Addition assignment (+=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Subtraction assignment (-=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
       ],
     },
@@ -421,13 +421,13 @@ const operators = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Postfix decrement operator (A--)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Prefix increment operator (++A)',
@@ -438,13 +438,13 @@ const operators = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Prefix decrement operator(--A)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
       ],
     },
@@ -463,19 +463,19 @@ const operators = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'plus operator (+)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'negation operator (-)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
       ],
     },
@@ -489,31 +489,31 @@ const operators = {
           articleTitle: 'Addition operator (+)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Subtraction operator (-)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Division operator (/)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Multiplication operator (*)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Remainder operator (%)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
       ],
     },
@@ -527,13 +527,13 @@ const operators = {
           articleTitle: 'Logical AND (&&)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Logical OR (||)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Short Circuiting with && and ||',
@@ -545,7 +545,7 @@ const operators = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Nullish coalescing operator (??)',
@@ -556,7 +556,7 @@ const operators = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
       ],
     },
@@ -570,25 +570,25 @@ const operators = {
           articleTitle: 'Equality operator (==)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Inequality operator (!=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Identity operator (===)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Nonidentity operator (!==)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
       ],
     },
@@ -602,31 +602,31 @@ const operators = {
           articleTitle: 'instanceof',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Less than operator (<)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Greater than operator (>)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Less than or equal operator (<=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
         {
           articleTitle: 'Greater than or equal operator (>=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/03. Operators/________.html`,
         },
       ],
     },
@@ -639,7 +639,7 @@ const operators = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/03. Operators/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -658,7 +658,7 @@ const operators = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/03. Operators/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -677,7 +677,7 @@ const operators = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/03. Operators/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -696,7 +696,7 @@ const operators = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/03. Operators/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -716,7 +716,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Taking Decisions in JavaSript',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -730,7 +730,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Boolean Logic',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -744,7 +744,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'if, else if, else Statements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -758,7 +758,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Nesting Conditionals',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -772,7 +772,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Truthy & Falsy Values',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -786,7 +786,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Logical operators (&&, ||, !)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -800,7 +800,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Comparison Operators (== vs ===)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -823,7 +823,7 @@ const controlingProgamLogicAndFlow = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -837,7 +837,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'The Conditional (Ternary) Operator',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -862,7 +862,7 @@ const loops = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -881,7 +881,7 @@ const loops = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -895,7 +895,7 @@ const loops = {
       sectionTitle: 'Infinite Loops!',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -914,7 +914,7 @@ const loops = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -933,7 +933,7 @@ const loops = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -952,7 +952,7 @@ const loops = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -971,57 +971,11 @@ const loops = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
       sectionArticles: [
         {
           articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Looping Objects',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Object.keys()',
-          articleLinks: [
-            {
-              linkTitle: 'Object.keys() method',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Object.values()',
-          articleLinks: [
-            {
-              linkTitle: 'Object.values() method',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Object.entries()',
-          articleLinks: [
-            {
-              linkTitle: 'Object.entries() method',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries`,
-            },
-          ],
           articleText: [],
           articleSource: '',
         },
@@ -2287,6 +2241,39 @@ const objectsAndMaps = {
       sectionText: [],
       sectionSource: '',
       sectionArticles: [
+        {
+          articleTitle: 'Object.keys()',
+          articleLinks: [
+            {
+              linkTitle: 'Object.keys() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Object.values()',
+          articleLinks: [
+            {
+              linkTitle: 'Object.values() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Object.entries()',
+          articleLinks: [
+            {
+              linkTitle: 'Object.entries() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
         {
           articleTitle: 'Object.fromEntries() vs Object.entries()',
           articleLinks: [

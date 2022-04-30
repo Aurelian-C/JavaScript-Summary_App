@@ -11,6 +11,7 @@ const controlPrintModal = async function (e) {
       item => item.title === e.target.dataset.title
     );
     const htmlString = await AJAX(element.source);
+    console.log(htmlString);
     const markup = ModalView.generateMarkup(htmlString);
     ModalView.printModalInfo(markup);
   } catch (err) {
