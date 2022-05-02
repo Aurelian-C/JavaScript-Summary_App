@@ -1,23 +1,52 @@
-const pattern = {
-  title: 'Main Ttile',
+const chapterPattern = {
+  chapterTitle: '',
+  sections: [],
+};
+
+const sectionPattern = {
+  title: '',
+  titleSource: '',
+  titleSnippets: [],
+  titleLinks: [{ linkTitle: '', linkSource: '' }],
+  titleArticles: [
+    {
+      articleTitle: '',
+      articleSource: '',
+      articleSnippets: [],
+      articleLinks: [{ linkTitle: '', linkSource: '' }],
+    },
+  ],
+};
+
+const browser_engine_runtime = {
+  chapterTitle: 'JavaScript in the Browser: Engine & Runtime',
   sections: [
     {
-      sectionTitle: 'Section Title',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
+      title: 'Browsers Engine',
+      titleSource: `../../src/markdowns/01. Browser Engine & Runtime/Browsers Engine.html`,
+      titleSnippets: [
+        'Interpreter/Compiler/JIT Compiler and Writing Optimized Code',
+        'Memoization',
+        'Memory Heap & Call Stack',
+        'Memory Leaks & Stack Overflow',
+        'Garbage Collection',
+        'Single Threaded Model',
+      ],
+      titleLinks: [{ linkTitle: '', linkSource: '' }],
+      titleArticles: [
         {
           articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
           articleSource: '',
+          articleSnippets: [],
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
         },
       ],
     },
   ],
 };
 
+// *********************************************************************
+// *************************** Old Structure ***************************
 const browserEngineAndRuntime = {
   title: 'JavaScript in the Browser: Engine & Runtime',
   sections: [
@@ -5588,6 +5617,44 @@ const modulesAndTooling = {
       sectionArticles: [
         {
           articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Model-View-Controller (MVC) Arhitecture',
+      sectionLinks: [
+        {
+          linkTitle: 'Model-View-Controller (MVC) Arhitecture',
+          linkSource: `https://blog.sessionstack.com/how-javascript-works-writing-modular-and-reusable-code-with-mvc-16c65cbd9f64`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Why we worry about software arhitecture?',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The perfect architecture (Structure, Maintainability, Expandability)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Components of any arhitecture',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'How the MVC architecture works in JavaScript',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
