@@ -5632,7 +5632,7 @@ const modulesAndTooling = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/15. Modern JavaScript Development - Modules and Tooling/Model-View-Controller (MVC) Arhitecture.html`,
       sectionArticles: [
         {
           articleTitle: 'Why we worry about software arhitecture?',
