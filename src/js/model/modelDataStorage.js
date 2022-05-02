@@ -3238,6 +3238,30 @@ const standardBuildInObjects = {
         },
       ],
     },
+    {
+      sectionTitle: 'Error',
+      sectionLinks: [
+        {
+          linkTitle: 'Error',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'new Error()',
+          articleLinks: [
+            {
+              linkTitle: 'Error() constructor',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/Error`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
   ],
 };
 
@@ -4608,6 +4632,28 @@ const domManipulation = {
           articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/offsetHeight.html`,
         },
         {
+          articleTitle: 'scrollTo()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.scrollTo()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/scrollTo.html`,
+        },
+        {
+          articleTitle: 'scrollBy()',
+          articleLinks: [
+            {
+              linkTitle: 'Element.scrollBy()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollBy`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/scrollBy.html`,
+        },
+        {
           articleTitle: 'scrollIntoView()',
           articleLinks: [
             {
@@ -4698,6 +4744,28 @@ const domManipulation = {
           ],
           articleText: [],
           articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/_____________________.html`,
+        },
+        {
+          articleTitle: 'content',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLTemplateElement.content',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLTemplateElement/content`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/content.html`,
+        },
+        {
+          articleTitle: 'importNode()',
+          articleLinks: [
+            {
+              linkTitle: 'Document.importNode()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Document/importNode`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/importNode.html`,
         },
       ],
     },
@@ -5243,6 +5311,21 @@ const otherWebAPIs = {
             {
               linkTitle: 'The hash property',
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Location/hash`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'window.location.href',
+          articleLinks: [
+            {
+              linkTitle: 'The Window.location read-only property',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Window/location`,
+            },
+            {
+              linkTitle: 'The location property',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Location/href`,
             },
           ],
           articleText: [],
