@@ -4851,17 +4851,6 @@ const domManipulation = {
           articleText: [],
           articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/importNode.html`,
         },
-        {
-          articleTitle: 'disabled',
-          articleLinks: [
-            {
-              linkTitle: 'HTMLSelectElement.disabled',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/disabled`,
-            },
-          ],
-          articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/disabled.html`,
-        },
       ],
     },
     {
