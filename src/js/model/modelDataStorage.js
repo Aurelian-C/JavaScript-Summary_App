@@ -3563,6 +3563,28 @@ const asynchronous = {
           articleSource: '',
         },
         {
+          articleTitle: 'response.json()',
+          articleLinks: [
+            {
+              linkTitle: 'Response.json()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Response/json`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'response.text()',
+          articleLinks: [
+            {
+              linkTitle: 'Response.text()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Response/text`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
           articleTitle:
             'fetch() will always return a promise that need to by handled by consuming it',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
@@ -4590,6 +4612,28 @@ const domManipulation = {
           articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/hidden.html`,
         },
         {
+          articleTitle: 'id',
+          articleLinks: [
+            {
+              linkTitle: 'Element.id',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/id`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/id.html`,
+        },
+        {
+          articleTitle: 'tagName',
+          articleLinks: [
+            {
+              linkTitle: 'Element.tagName',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/Element/tagName`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/tagName.html`,
+        },
+        {
           articleTitle: 'dataset',
           articleLinks: [
             {
@@ -4607,6 +4651,17 @@ const domManipulation = {
           ],
           articleText: [],
           articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/dataset.html`,
+        },
+        {
+          articleTitle: 'disabled',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLSelectElement.disabled',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/disabled`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/disabled.html`,
         },
       ],
     },
@@ -4795,6 +4850,17 @@ const domManipulation = {
           ],
           articleText: [],
           articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/importNode.html`,
+        },
+        {
+          articleTitle: 'disabled',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLSelectElement.disabled',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/disabled`,
+            },
+          ],
+          articleText: [],
+          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/disabled.html`,
         },
       ],
     },
@@ -5011,6 +5077,12 @@ const domEvents = {
           articleText: [],
           articleSource: '',
         },
+        {
+          articleTitle: 'Stop propagation with e.stopPropagation()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
       ],
     },
     {
@@ -5029,55 +5101,60 @@ const domEvents = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: '‘click’ event',
+          articleTitle: 'click',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: '‘keypress’ event',
+          articleTitle: 'keypress',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: '‘scroll’ event',
+          articleTitle: 'scroll',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: '‘mouseover’ event',
+          articleTitle: 'mouseover vs mouseenter vs mousemove',
+          articleLinks: [
+            {
+              linkTitle: 'mouseover vs mouseenter vs mousemove',
+              linkSource: `https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_event_mouseenter_mouseover#:~:text=mouseenter%20and%20mouseover.-,The%20mouseover%20event%20triggers%20when%20the%20mouse%20pointer%20enters%20the,moved%20over%20the%20div%20element.`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'mouseout',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: '‘mouseout’ event',
+          articleTitle: 'change',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: '‘change’ event',
+          articleTitle: 'hashchange',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: '‘hashchange’ event',
+          articleTitle: 'load',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: '‘load’ event',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: '‘input’ event',
+          articleTitle: 'input',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',

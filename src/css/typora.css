@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+.modal {
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 26px;
+}
+
+.modal h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+}
+
+.modal h2 {
+  margin: 2rem 0 1rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.modal h2::after {
+  width: 160px;
+  border-bottom: 1px solid white;
+  content: '';
+  width: 10rem;
+  display: block;
+  margin: 0.5rem auto;
+  height: 1px;
+}
+
+.modal h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  margin-top: 2rem;
+}
+
+.modal h4 {
+  font-size: 1.2rem;
+  text-indent: 20px;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.modal p {
+  text-indent: 20px;
+  text-align: justify;
+  margin: 0;
+  margin-top: 0, 5rem;
+}
+.modal ul {
+  text-align: justify;
+  margin: 0;
+}
+
+mark {
+  background-color: rgb(234, 255, 0);
+  padding: 2px 4px;
+  border-radius: 7px;
+}
+
+blockquote {
+  border-left: 4px solid #45a9f9;
+  padding: 4px 15px;
+  color: hsl(220, 6%, 60%);
+}
+
+.modal a {
+  color: wheat;
+  text-decoration: none;
+}

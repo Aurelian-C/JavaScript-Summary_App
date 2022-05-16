@@ -208,9 +208,9 @@ b {
 
   .modal {
     /* margin: 0 20px; */
-    height: 70%;
+    height: 85%;
     width: 21rem;
-    padding: 2.5rem 1rem;
+    padding: 0;
   }
 
   .button {
