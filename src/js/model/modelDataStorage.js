@@ -1210,7 +1210,7 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `../../src/markdowns/06. Functional Programming (FP)/Closures & local vs global variables.html`,
       sectionArticles: [
         {
           articleTitle: 'Variable Lifetime',
@@ -1803,7 +1803,7 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/07. Data structures - Arrays & Sets/push.html`,
         },
         {
           articleTitle: 'unshift()',

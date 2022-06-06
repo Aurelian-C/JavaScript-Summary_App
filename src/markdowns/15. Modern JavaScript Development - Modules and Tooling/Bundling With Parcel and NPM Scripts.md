@@ -8,6 +8,8 @@
 
 If you want to uninstall parcel then you write in the terminal `npm un parcel`. In Parcel 2, before you run the build script, you need to modify `"main": "index.js"` in `"default": "index.js"`.
 
+> You use ```--save-dev``` because development dependency (devDependencies) it's **not a third-party package** which you want to use as part of your project, it will **not be part of the code you want to upload to some server**, it's just a package that you need to do something with the code during development to optimize it, to check it, anything like that.
+
 ## Summary:
 
 - Parcel is just another ==build tool== which is also on NPM and you need to use NPM to install it.
