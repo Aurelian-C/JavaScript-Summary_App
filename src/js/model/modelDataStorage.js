@@ -280,7 +280,7 @@ const variablesAndValues = {
       sectionTitle: 'Statements vs Expressions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/________.html`,
+      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/Statements vs Expressions.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -333,10 +333,38 @@ const variablesAndValues = {
       ],
     },
     {
-      sectionTitle: 'var, let & const',
+      sectionTitle: 'var',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/________.html`,
+      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/var.html`,
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'const',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/const.html`,
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'let',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/let.html`,
       sectionArticles: [
         {
           articleTitle: '',
@@ -2071,7 +2099,7 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource: `../../src/markdowns/07. Data structures - Arrays & Sets/Array.from.html`,
         },
         {
           articleTitle: 'Array.entries()',
@@ -3196,6 +3224,17 @@ const standardBuildInObjects = {
             {
               linkTitle: 'Date.prototype.toISOString()',
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'toLocaleString()',
+          articleLinks: [
+            {
+              linkTitle: 'Date.prototype.toLocaleString()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString`,
             },
           ],
           articleText: [],
