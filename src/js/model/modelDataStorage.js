@@ -1141,6 +1141,18 @@ const functionalProgramming = {
           articleText: [],
           articleSource: '',
         },
+        {
+          articleTitle: 'Tagged templates',
+          articleLinks: [
+            {
+              linkTitle: 'Tagged templates',
+              linkSource:
+                'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
       ],
     },
     {
@@ -2735,6 +2747,17 @@ const standardBuildInObjects = {
       sectionText: [],
       sectionSource: '',
       sectionArticles: [
+        {
+          articleTitle: 'Template literals (Template strings)',
+          articleLinks: [
+            {
+              linkTitle: 'Template literals (Template strings)',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
         {
           articleTitle: 'indexOf()',
           articleLinks: [
