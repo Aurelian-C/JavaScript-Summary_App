@@ -2391,6 +2391,17 @@ const objectsAndMaps = {
           articleText: [],
           articleSource: '',
         },
+        {
+          articleTitle: 'Object.prototype.toString()',
+          articleLinks: [
+            {
+              linkTitle: 'Object.prototype.toString() method',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
       ],
     },
     {
