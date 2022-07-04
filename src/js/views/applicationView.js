@@ -1,10 +1,9 @@
 class ApplicationView {
   startApplication(data) {
     this._createHtmlString(data);
-    document.body.insertAdjacentHTML(
-      'afterbegin',
-      this._createHtmlString(data)
-    );
+    document
+      .querySelector('.container')
+      .insertAdjacentHTML('afterbegin', this._createHtmlString(data));
   }
 
   _createHtmlString(dataArray) {
