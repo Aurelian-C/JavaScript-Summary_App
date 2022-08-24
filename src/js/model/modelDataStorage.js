@@ -5198,8 +5198,19 @@ const domEvents = {
           articleSource: '',
         },
         {
-          articleTitle: 'change',
+          articleTitle: 'input',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'change',
+          articleLinks: [
+            {
+              linkTitle: 'HTMLElement: change event',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event`,
+            },
+          ],
           articleText: [],
           articleSource: '',
         },
@@ -5211,12 +5222,6 @@ const domEvents = {
         },
         {
           articleTitle: 'load',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'input',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',

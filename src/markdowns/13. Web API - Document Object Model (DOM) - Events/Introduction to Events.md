@@ -18,14 +18,14 @@ In the case of the Web, _events are fired inside the browser window, and tend to
 
   2. [DOM Events - w3schools](https://www.w3schools.com/jsref/dom_obj_event.asp)
 
-_To react to an event, you_ **attach an event handler** _to it_. **Event handler** _is a block of code (usually a JavaScript function that you as a programmer create) that runs when the event fires. When such a block of code is defined to run in response to an event, we say we are_ **registering an event handler**.
+_To react to an event, you_ **attach an event handler** _to it_. **Event handler** _is a block of code (usually a JavaScript function that you as a programmer create) that runs when the event fires. When such ==a block of code is defined to run in response to an event==, we say we are_ **registering an event handler**.
 
 > Note:
 >
-> - Event handlers are sometimes called **event listeners** — they are pretty much interchangeable for our purposes, although strictly speaking, they work together. The **listener** _listens out for the event happening_, and the **handler** _is the code that is run in response to it happening_.
-> - Web events are not part of the core JavaScript language — they are defined as part of the APIs built into the browser.
+> - Event handlers are sometimes called **event listeners** — they are pretty much interchangeable for our purposes, although strictly speaking, they work together. The **==listener==** _listens out for the event happening_, and the **==handler==** _is the code that is run in response to it happening_.
+> - ==**Web events are NOT part of the core JavaScript language** — they are defined as part of the APIs built into the browser==.
 
-Objects that can fire events have an addEventListener() method, that takes at least two arguments: the **name of the event** and a **function to handle the event**.
+Objects that can fire events have an ```addEventListener()``` method, that takes at least two arguments: the **==name of the event==** and a **==function to handle the event==**.
 
 ## It's not just web pages:
 
