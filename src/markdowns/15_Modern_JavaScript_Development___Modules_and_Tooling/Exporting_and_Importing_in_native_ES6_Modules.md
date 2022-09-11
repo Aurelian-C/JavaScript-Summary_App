@@ -2,7 +2,7 @@
 
 - In moduleName.js names, it's also a convention to use ==camelCase== names.
 
-- ES6 Modules are ==native== to Javascript.
+- ES6 Modules are ==native== to JavaScript.
 
 - There is no need to use the `defer` attribute when loading a module script; ==modules are deferred automatically==.
 

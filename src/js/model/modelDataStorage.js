@@ -5649,7 +5649,7 @@ const modulesAndTooling = {
       sectionTitle: 'Exporting and Importing in native ES6 Modules',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/15. Modern JavaScript Development - Modules and Tooling/Exporting and Importing in native ES6 Modules.html`,
+      sectionSource: `/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Exporting_and_Importing_in_native_ES6_Modules.html`,
       sectionArticles: [
         {
           articleTitle: '',

@@ -17,15 +17,16 @@ class ApplicationView {
                   <div class="sub_section info-container hidden">
                   ${obj.sections
                     .map(section => {
+                      console.log(section.sectionSource);
                       return `
                         <div class="sub_section--info">
                         <div class="sub_section--info-title">
                           <i class="fa-solid fa-angle-right arrow"></i>
-                          <h3 class="sub_section--title" data-title="${
+                          <a class="sub_section--title" data-title="${
                             section.sectionTitle
-                          }" data-source-link="${section.sectionSource}">
+                          }" href=${section.sectionSource}>
                           ${section.sectionTitle}
-                          </h3>
+                          </a>
                         </div>
                         <ul class="sub_section--articles">
                         ${section.sectionArticles
