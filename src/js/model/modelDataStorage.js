@@ -5199,10 +5199,15 @@ const domEvents = {
         },
         {
           articleTitle: 'wheel',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleLinks: [
+            {
+              linkTitle: 'Element: wheel event',
+              linkSource:
+                'https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event',
+            },
+          ],
           articleText: [],
-          articleSource:
-            'https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event',
+          articleSource: `/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___wheel.html`,
         },
         {
           articleTitle: 'input',
