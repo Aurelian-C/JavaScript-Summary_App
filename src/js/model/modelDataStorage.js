@@ -5198,6 +5198,13 @@ const domEvents = {
           articleSource: '',
         },
         {
+          articleTitle: 'wheel',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource:
+            'https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event',
+        },
+        {
           articleTitle: 'input',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
