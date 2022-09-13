@@ -5379,7 +5379,7 @@ const otherWebAPIs = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: `/src/markdowns/14_Others_Web_APIs/Intersection_Observer_API.html`,
       sectionArticles: [
         {
           articleTitle: '',
