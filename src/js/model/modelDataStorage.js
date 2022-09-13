@@ -54,7 +54,7 @@ const browserEngineAndRuntime = {
       sectionTitle: 'Javascript Engine',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/01. Browser Engine & Runtime/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle:
@@ -280,7 +280,7 @@ const variablesAndValues = {
       sectionTitle: 'Statements vs Expressions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/Statements vs Expressions.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -294,7 +294,7 @@ const variablesAndValues = {
       sectionTitle: 'Static vs Dynamically Typed',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -308,7 +308,7 @@ const variablesAndValues = {
       sectionTitle: 'Strongly vs Weakly Typed',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -322,7 +322,7 @@ const variablesAndValues = {
       sectionTitle: 'Variables & Values',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -336,7 +336,7 @@ const variablesAndValues = {
       sectionTitle: 'var',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/var.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -350,7 +350,7 @@ const variablesAndValues = {
       sectionTitle: 'const',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/const.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -364,7 +364,7 @@ const variablesAndValues = {
       sectionTitle: 'let',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/let.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -378,7 +378,7 @@ const variablesAndValues = {
       sectionTitle: 'Primitives vs References Types (Primitives vs Objects)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/02. Variables, Values and Primitive-Reference Types/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle:
@@ -411,7 +411,7 @@ const operators = {
       sectionTitle: 'Introduction to JavaScript Operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/03. Operators/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: 'Type Conversion and Coercion',
@@ -447,19 +447,19 @@ const operators = {
           articleTitle: 'Assignment operator (=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Addition assignment (+=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Subtraction assignment (-=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
       ],
     },
@@ -478,13 +478,13 @@ const operators = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Postfix decrement operator (A--)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Prefix increment operator (++A)',
@@ -495,13 +495,13 @@ const operators = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Prefix decrement operator(--A)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
       ],
     },
@@ -520,19 +520,19 @@ const operators = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'plus operator (+)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'negation operator (-)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
       ],
     },
@@ -546,31 +546,31 @@ const operators = {
           articleTitle: 'Addition operator (+)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Subtraction operator (-)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Division operator (/)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Multiplication operator (*)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Remainder operator (%)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
       ],
     },
@@ -584,13 +584,13 @@ const operators = {
           articleTitle: 'Logical AND (&&)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Logical OR (||)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Short Circuiting with && and ||',
@@ -602,7 +602,7 @@ const operators = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Nullish coalescing operator (??)',
@@ -613,7 +613,7 @@ const operators = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
       ],
     },
@@ -627,25 +627,25 @@ const operators = {
           articleTitle: 'Equality operator (==)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Inequality operator (!=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Identity operator (===)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Nonidentity operator (!==)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
       ],
     },
@@ -659,31 +659,31 @@ const operators = {
           articleTitle: 'instanceof',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Less than operator (<)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Greater than operator (>)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Less than or equal operator (<=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Greater than or equal operator (>=)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/03. Operators/________.html`,
+          articleSource: ``,
         },
       ],
     },
@@ -696,7 +696,7 @@ const operators = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/03. Operators/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -715,7 +715,7 @@ const operators = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/03. Operators/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -734,7 +734,7 @@ const operators = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/03. Operators/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -753,7 +753,7 @@ const operators = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/03. Operators/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -773,7 +773,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Taking Decisions in JavaSript',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -787,7 +787,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Boolean Logic',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -801,7 +801,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'if, else if, else Statements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -815,7 +815,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Nesting Conditionals',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -829,7 +829,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Truthy & Falsy Values',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -843,7 +843,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Logical operators (&&, ||, !)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -857,7 +857,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'Comparison Operators (== vs ===)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -880,7 +880,7 @@ const controlingProgamLogicAndFlow = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -894,7 +894,7 @@ const controlingProgamLogicAndFlow = {
       sectionTitle: 'The Conditional (Ternary) Operator',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/04. Controlling Program Logic & Flow/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -919,7 +919,7 @@ const loops = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -938,7 +938,7 @@ const loops = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -952,7 +952,7 @@ const loops = {
       sectionTitle: 'Infinite Loops!',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -971,7 +971,7 @@ const loops = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -990,7 +990,7 @@ const loops = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -1009,7 +1009,7 @@ const loops = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -1028,7 +1028,7 @@ const loops = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/05. Loops & Iteration/________.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -1250,7 +1250,7 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/06. Functional Programming (FP)/Closures & local vs global variables.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: 'Variable Lifetime',
@@ -1843,7 +1843,7 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/07. Data structures - Arrays & Sets/push.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'unshift()',
@@ -2111,7 +2111,7 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/07. Data structures - Arrays & Sets/Array.from.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Array.entries()',
@@ -3981,7 +3981,7 @@ const domManipulation = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/Introduction to The Document Object.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -4005,7 +4005,7 @@ const domManipulation = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/DOM Node Types (Node vs Element).html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -4024,8 +4024,7 @@ const domManipulation = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
-      sectionSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/Live Node Lists vs Static Node Lists.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -4044,8 +4043,7 @@ const domManipulation = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
-      sectionSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/HTML Attributes vs DOM Properties.html`,
+      sectionSource: ``,
       sectionArticles: [
         {
           articleTitle: '',
@@ -4075,7 +4073,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/Introduction to DOM Traversing.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'document.documentElement',
@@ -4086,7 +4084,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/document.documentElement.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'document.head',
@@ -4097,7 +4095,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/document.head.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'document.body',
@@ -4108,7 +4106,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/document.body.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'getElementById()',
@@ -4119,7 +4117,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/getElementById.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'getElementsByTagName()',
@@ -4130,7 +4128,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/getElementsByTagName.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'getElementsByClassName()',
@@ -4141,7 +4139,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/getElementsByClassName.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'querySelector() (document/element)',
@@ -4152,7 +4150,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/querySelector.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'querySelectorAll() (document/element)',
@@ -4163,7 +4161,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/querySelectorAll.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'children',
@@ -4174,7 +4172,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/children.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'childNodes',
@@ -4185,7 +4183,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/childNodes.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'firstElementChild',
@@ -4196,7 +4194,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/firstElementChild.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'lastElementChild',
@@ -4207,7 +4205,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/lastElementChild.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'firstChild',
@@ -4218,7 +4216,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/firstChild.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'lastChild',
@@ -4229,7 +4227,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/lastChild.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'closest()',
@@ -4240,7 +4238,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/closest.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'parentElement',
@@ -4251,7 +4249,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/parentElement.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'parentNode',
@@ -4262,7 +4260,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/parentNode.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'previousElementSibling',
@@ -4273,7 +4271,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/previousElementSibling.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'nextElementSibling',
@@ -4284,7 +4282,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/nextElementSibling.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'previousSibling',
@@ -4295,7 +4293,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/previousSibling.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'nextSibling',
@@ -4306,7 +4304,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/nextSibling.html`,
+          articleSource: ``,
         },
       ],
     },
@@ -4325,8 +4323,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/Introduction to create, insert and remove elements.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'innerHTML',
@@ -4337,8 +4334,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: '',
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/innerHTML.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'insertAdjacentHTML()',
@@ -4349,7 +4345,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/insertAdjacentHTML.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'document.createElement()',
@@ -4360,7 +4356,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/document.createElement.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'append()',
@@ -4371,7 +4367,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/append.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'appendChild()',
@@ -4382,7 +4378,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/appendChild.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'prepend()',
@@ -4393,7 +4389,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/prepend.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'insertBefore()',
@@ -4404,7 +4400,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/insertBefore.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'before()',
@@ -4415,7 +4411,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/before.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'after()',
@@ -4426,7 +4422,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/after.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'insertAdjacentElement()',
@@ -4437,7 +4433,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/insertAdjacentElement.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'replaceWith()',
@@ -4448,7 +4444,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/replaceWith.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'replaceChild()',
@@ -4459,7 +4455,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/replaceChild.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'remove()',
@@ -4470,7 +4466,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/remove.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'removeChild()',
@@ -4481,7 +4477,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/removeChild.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'cloneNode()',
@@ -4492,7 +4488,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/cloneNode.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Summary: Insert, Replace, Remove',
@@ -4503,7 +4499,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/Summary - Insert, Replace, Remove.html`,
+          articleSource: ``,
         },
       ],
     },
@@ -4522,7 +4518,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/innerText.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'textContent',
@@ -4533,7 +4529,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/textContent.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'insertAdjacentText()',
@@ -4544,7 +4540,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/insertAdjacentText.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'style',
@@ -4555,7 +4551,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/style.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'getComputedStyle()',
@@ -4566,7 +4562,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/getComputedStyle.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'className',
@@ -4577,7 +4573,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/className.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'classList (add, remove, toggle, contains)',
@@ -4588,7 +4584,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/classList.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'getAttribute()',
@@ -4599,7 +4595,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/getAttribute.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'setAttribute()',
@@ -4610,7 +4606,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/setAttribute.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'setProperty()',
@@ -4621,7 +4617,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/setProperty.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'attributes',
@@ -4632,7 +4628,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/attributes.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'value',
@@ -4643,7 +4639,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/value.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'src',
@@ -4654,7 +4650,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/src.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'alt',
@@ -4665,13 +4661,13 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/alt.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'href',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/href.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'hidden',
@@ -4682,7 +4678,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/hidden.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'id',
@@ -4693,7 +4689,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/id.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'tagName',
@@ -4704,7 +4700,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/tagName.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'dataset',
@@ -4723,7 +4719,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/dataset.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'disabled',
@@ -4734,7 +4730,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/disabled.html`,
+          articleSource: ``,
         },
       ],
     },
@@ -4753,7 +4749,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/getBoundingClientRect.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'clientHeight',
@@ -4764,7 +4760,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/clientHeight.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'clientWidth',
@@ -4775,7 +4771,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/clientWidth.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'offsetHeight',
@@ -4786,7 +4782,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/offsetHeight.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'scrollTo()',
@@ -4797,7 +4793,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/scrollTo.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'scrollBy()',
@@ -4808,7 +4804,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/scrollBy.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'scrollIntoView()',
@@ -4819,7 +4815,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/scrollIntoView.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'blur()',
@@ -4830,7 +4826,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/blur.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'focus()',
@@ -4841,7 +4837,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/focus.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'isEqualNode()',
@@ -4852,7 +4848,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/isEqualNode.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'nodeValue',
@@ -4863,7 +4859,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/nodeValue.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'Node.contains()',
@@ -4874,7 +4870,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/contains.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'document.createRange().createContextualFragment()',
@@ -4889,7 +4885,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/_____________________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'select()',
@@ -4900,7 +4896,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/_____________________.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'content',
@@ -4911,7 +4907,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/content.html`,
+          articleSource: ``,
         },
         {
           articleTitle: 'importNode()',
@@ -4922,7 +4918,7 @@ const domManipulation = {
             },
           ],
           articleText: [],
-          articleSource: `../../src/markdowns/12. Web API - Document Object Model (DOM) - Properties & Methods/importNode.html`,
+          articleSource: ``,
         },
       ],
     },
@@ -5237,6 +5233,18 @@ const domEvents = {
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
+        },
+        {
+          articleTitle: 'blur',
+          articleLinks: [
+            {
+              linkTitle: 'Element: blur event',
+              linkSource:
+                'https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event',
+            },
+          ],
+          articleText: [],
+          articleSource: `/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___blur.html`,
         },
       ],
     },

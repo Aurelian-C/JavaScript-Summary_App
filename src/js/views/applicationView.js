@@ -22,9 +22,9 @@ class ApplicationView {
                         <div class="sub_section--info">
                         <div class="sub_section--info-title">
                           <i class="fa-solid fa-angle-right arrow"></i>
-                          <a class="sub_section--title" data-title="${
-                            section.sectionTitle
-                          }" href=${section.sectionSource}>
+                          <a class="sub_section--title ${
+                            section.sectionSource && 'has-link'
+                          }" href="${section.sectionSource}">
                           ${section.sectionTitle}
                           </a>
                         </div>
@@ -33,8 +33,10 @@ class ApplicationView {
                           .map(title => {
                             if (!title.articleTitle) return '';
                             return `
-                                <li class="sub_section--article" data-title="${title.articleTitle}" data-source-link="${title.articleSource}">
-                                ${title.articleTitle}
+                                <li class="sub_section--article">
+                                  <a href="${title.articleSource}" class="${
+                              title.articleSource && 'has-link'
+                            }">${title.articleTitle}</a>
                                 </li>
                           `;
                           })

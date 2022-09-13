@@ -4,6 +4,10 @@
   display: none !important;
 }
 
+.has-link {
+  color: red !important;
+}
+
 .arrow {
   transform: rotate();
   transition: transform 0.5s;
@@ -122,6 +126,12 @@ body {
 .sub_section--article {
   margin: 3px 0;
   letter-spacing: 0.5px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 .sub_section--explanations {
