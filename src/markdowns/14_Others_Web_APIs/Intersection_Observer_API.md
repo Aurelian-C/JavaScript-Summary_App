@@ -68,7 +68,7 @@ const callback = function (entries, observer) {
 };
 
 const options = {
-  root: document.querySelector('#idElement'), // null is default
+  root: document.querySelector('anyCSSselector'), // null is default
   rootMargin: '0px',
   threshold: [0, 0.5, 1],
 };
@@ -131,7 +131,7 @@ The `options` object passed into the `IntersectionObserver()` constructor let yo
 Once you have created the observer, you need to give it a target element to watch:
 
 ```js
-const target = document.querySelector('anyCSSselector');
+const targetElement = document.querySelector('anyCSSselector');
 observer.observe(targetElement);
 
 // the callback we setup for the observer will be executed now for the first time. It waits until we assign a target to our observer (even if the target is currently not visible)
