@@ -23,7 +23,7 @@ const browser_engine_runtime = {
   sections: [
     {
       title: 'Browsers Engine',
-      titleSource: `../../src/markdowns/01. Browser Engine & Runtime/Browsers Engine.html`,
+      titleSource: ``,
       titleSnippets: [
         'Interpreter/Compiler/JIT Compiler and Writing Optimized Code',
         'Memoization',
@@ -54,23 +54,16 @@ const browserEngineAndRuntime = {
       sectionTitle: 'Javascript Engine',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: ``,
+      sectionSource: `/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Engine.html`,
       sectionArticles: [
         {
-          articleTitle:
-            'Interpreter/Compiler/JIT Compiler and Writing Optimized Code',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Memoization',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
           articleTitle: 'Memory Heap & Call Stack',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Single Threaded Model',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -87,12 +80,6 @@ const browserEngineAndRuntime = {
           articleText: [],
           articleSource: '',
         },
-        {
-          articleTitle: 'Single Threaded Model',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
       ],
     },
     {
@@ -105,20 +92,9 @@ const browserEngineAndRuntime = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Runtime.html',
       sectionArticles: [
-        {
-          articleTitle: 'Global Object (window object)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Web APIs',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
         {
           articleTitle: 'Event Loop & Callback Queue',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
@@ -131,13 +107,26 @@ const browserEngineAndRuntime = {
           articleText: [],
           articleSource: '',
         },
+        {
+          articleTitle: 'Global Object (window object)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Web APIs',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
       ],
     },
     {
       sectionTitle: 'Execution Context and the Call Stack',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/01_Browser_Engine_&_Runtime/Execution_Context_and_The_Call_Stack.html',
       sectionArticles: [
         {
           articleTitle: 'Global execution context',
@@ -146,7 +135,7 @@ const browserEngineAndRuntime = {
           articleSource: '',
         },
         {
-          articleTitle: 'Function execution Context',
+          articleTitle: 'Function execution context',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -5796,7 +5785,7 @@ const modulesAndTooling = {
         },
       ],
       sectionText: [],
-      sectionSource: `../../src/markdowns/15. Modern JavaScript Development - Modules and Tooling/Model-View-Controller (MVC) Arhitecture.html`,
+      sectionSource: `/src/markdowns/15. Modern JavaScript Development - Modules and Tooling/Model-View-Controller (MVC) Arhitecture.html`,
       sectionArticles: [
         {
           articleTitle: 'Why we worry about software arhitecture?',

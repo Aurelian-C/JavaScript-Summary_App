@@ -1,58 +1,60 @@
 class ApplicationView {
   startApplication(data) {
-    this._createHtmlString(data);
+    const markup = this._generateMarkup(data);
     document
       .querySelector('.container')
-      .insertAdjacentHTML('afterbegin', this._createHtmlString(data));
+      .insertAdjacentHTML('afterbegin', markup);
   }
 
-  _createHtmlString(dataArray) {
-    const html = dataArray
-      .map(obj => {
+  _generateMarkup(card) {
+    const markupString = card
+      .map(card => {
         return `
-                <div class="section">
-                  <i class="fa-solid fa-window-maximize section--icons nav__btn-min-max btn-maximize"></i>
-                  <i class="fa-solid fa-window-minimize section--icons nav__btn-min-max btn-minimize hidden"></i>
-                  <h2 class="section--title">${obj.title}</h2>
-                  <div class="sub_section info-container hidden">
-                  ${obj.sections
-                    .map(section => {
-                      console.log(section.sectionSource);
-                      return `
-                        <div class="sub_section--info">
-                        <div class="sub_section--info-title">
-                          <i class="fa-solid fa-angle-right arrow"></i>
-                          <a class="sub_section--title ${
-                            section.sectionSource && 'has-link'
-                          }" href="${section.sectionSource}">
-                          ${section.sectionTitle}
-                          </a>
-                        </div>
-                        <ul class="sub_section--articles">
-                        ${section.sectionArticles
-                          .map(title => {
-                            if (!title.articleTitle) return '';
-                            return `
-                                <li class="sub_section--article">
-                                  <a href="${title.articleSource}" class="${
-                              title.articleSource && 'has-link'
-                            }">${title.articleTitle}</a>
-                                </li>
-                          `;
-                          })
-                          .join('')}
-                          </ul>
-                        </div>
-                        
-                    `;
-                    })
-                    .join('')}
-                    </div>
-                </div>
-            `;
+          <div class="card">
+            <i class="fa-solid fa-window-maximize card__icon btn--min-max btn--max"></i>
+            <i class="fa-solid fa-window-minimize card__icon btn--min-max btn--min hidden"></i>
+            <h2 class="card__title">${card.title}</h2>
+            <div class="card__articles hidden">
+              ${card.sections.map(this._generateMarkupArticle).join('')}
+            </div>
+          </div>
+    `;
       })
       .join('');
-    return html;
+    return markupString;
+  }
+
+  _generateMarkupArticle(article) {
+    const descriptor = article.sectionArticles
+      .map(descriptor => {
+        if (!descriptor.articleTitle) return;
+
+        return `
+          <li class="card__descriptor">
+          ${
+            descriptor.articleSource
+              ? `<a class="card__descriptor-anchor" href="${descriptor.articleSource}">${descriptor.articleTitle}</a>`
+              : `<p class="card__descriptor-title">${descriptor.articleTitle}</p>`
+          }
+          </li>`;
+      })
+      .join('');
+
+    return `
+      <div class="card__article">
+        <div class="card__article-wrapper">
+          <i class="fa-solid fa-angle-right"></i>
+          ${
+            article.sectionSource
+              ? `<a class="card__article-anchor" href="${article.sectionSource}">${article.sectionTitle}</a>`
+              : `<p class="card__article-title">${article.sectionTitle}</p>`
+          }
+        </div>
+        <ul class="card__descriptors">
+          ${descriptor}
+        </ul>
+      </div>
+    `;
   }
 }
 

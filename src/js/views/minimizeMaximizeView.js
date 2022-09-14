@@ -8,16 +8,15 @@ class MinimizeMaximizeView {
 
   addHandlerToggleMenu() {
     window.addEventListener('click', this._toggleMenu);
-    this._btnMenu.addEventListener('click', this._toggleSections);
   }
 
   _toggleMenu = e => {
-    if (!e.target.classList.contains('nav__btn-min-max')) return;
+    if (!e.target.classList.contains('btn--min-max')) return;
 
-    this._section = e.target.closest('.section');
-    this._container = this._section.querySelector('.info-container');
-    this._btnMax = this._section.querySelector('.btn-maximize');
-    this._btnMin = this._section.querySelector('.btn-minimize');
+    this._section = e.target.closest('.card');
+    this._container = this._section.querySelector('.card__articles');
+    this._btnMax = this._section.querySelector('.btn--max');
+    this._btnMin = this._section.querySelector('.btn--min');
     this._container.classList.toggle('hidden');
 
     [this._btnMin, this._btnMax].forEach(btn => {

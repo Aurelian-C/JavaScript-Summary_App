@@ -13,16 +13,52 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/sass/main.scss" />
     <title>Javascript Resume</title>
-    <script defer type="module" src="./src/js/controller.js"></script>
+    <script type="module" src="./src/js/controller.js"></script>
   </head>
   <body>
-    <div class="buttons-container">
-      <button class="button-menu">Expande All</button>
+    <div class="info">
+      <div class="info__wrapper">
+        <div class="info__color info__color--has-content"></div>
+        <div class="info__title info__title--has-content">
+          Article has content
+        </div>
+      </div>
+      <div class="info__wrapper">
+        <div class="info__color info__color--no-content"></div>
+        <div class="info__title info__title--no-content">
+          Article has no content
+        </div>
+      </div>
     </div>
-    <div class="container"></div>
-    <div class="overlay hidden"></div>
-    <div class="modal hidden"></div>
+    <div class="container">
+      <div class="card">
+        <i
+          class="fa-solid fa-window-maximize card__icon btn--min-max btn--max"
+        ></i>
+        <i
+          class="fa-solid fa-window-minimize card__icon btn--min-max btn--min hidden"
+        ></i>
+        <h2 class="card__title">JavaScript in the Browser: Engine & Runtime</h2>
+        <div class="card__articles hidden">
+          <div class="card__article">
+            <div class="card__article-wrapper">
+              <i class="fa-solid fa-angle-right"></i>
+              <a class="card__article-anchor" href="">Javascript Engine</a>
+              <p class="card__article-title">Javascript Engine</p>
+            </div>
+            <ul class="card__descriptors">
+              <li class="card__descriptor">
+                <a class="card__descriptor-anchor" href=""
+                  >Memory Heap & Call Stack</a
+                >
+                <p class="card__descriptor-title">Memory Heap & Call Stack</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
