@@ -57,6 +57,31 @@ const browserEngineAndRuntime = {
       sectionSource: `/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Engine.html`,
       sectionArticles: [
         {
+          articleTitle: 'JavaScript language vs Computer language',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Interpreter and Compiler',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'JIT Compilers (Just In Time Compilers) & Optimized code',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Is JavaScript an interpreted language?',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
           articleTitle: 'Memory Heap & Call Stack',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
