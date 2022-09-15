@@ -13,7 +13,7 @@ function sayMyName() {
 }
 ```
 
-Each environment context that is created has a link outside of its lexical environment called the scope chain. **The scope chain gives us _access to variables in the parent environment_**.
+Each environment context that is created has a link outside of its lexical environment called the scope chain. ==The scope chain gives us **access to variables in the parent environment**==.
 
 ```js
 var x = 'x';
@@ -64,14 +64,20 @@ function sayMyName() {
 sayMyName()()(); //each function is returned and has to be called
 ```
 
-In this example, you can see that the functions only _get access to the variables in their parent container, not a child_. **The scope chain only links down the call stack, so you almost have to think of it in reverse. It goes up to the parent, but down the call stack**.
+In this example, you can see that the ==functions only get **access to the variables in their parent container, not a child**==. _The scope chain only links down the Call Stack, so you almost have to think of it in reverse. It goes up to the parent, but down the Call Stack_.
 
 ![Image](../../img/scope_chain4.jpg)
 
-We learned that the **global scope is the outermost scope**, so _variables declared outside a function are in what we call global_ scope and they can be access in any other scope that is inside of the functions, we can always access global scope.
+We learned that the ==**global scope is the outermost scope**==, so _variables declared outside a function are in what we call global scope and they can be access in any other scope that is inside of the functions, we can always access global scope_.
 
-Now, **local scope, that is any scope that is local to a function**, now **variables declared in this local scope are accessible within this scope as well as any scopes surrounding it**.
+Now, ==**local scope, that is any scope that is local to a function**==, now ==**variables declared in this local scope are accessible within this scope as well as any scopes surrounding it**==.
 
 _And that's scope is, it just **defines the accessibility of variables and functions in the code**, it tells us what we can access, what we can not_.
 
 _By the way, remember how I told you that `eval()` and the `with` statement are not a good idea, it doesn't help our JavaScript engine optimize our code? Well, it's because of the issues that it has with scope, because with `eval()` and `with` you can actually change how scope and scope chain work internally in JavaScript_.
+
+
+
+## References
+
+1. [JavaScript: The Advanced Concepts - Andrei Neagoie](https://www.udemy.com/course/advanced-javascript-concepts/)

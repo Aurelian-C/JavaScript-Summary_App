@@ -3,6 +3,10 @@
 :root {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  --card-title--font-size: 2.2rem;
+  --article-title--font-size: 1.6rem;
+  --descriptor-title--font-size: 1.2rem;
 }
 
 *,
@@ -93,7 +97,7 @@ body {
 }
 
 .card__title {
-  font-size: 2rem;
+  font-size: var(--card-title--font-size);
   text-align: center;
   margin: 1rem 3rem;
 }
@@ -104,12 +108,13 @@ body {
 
 .card__article {
   flex-direction: column;
-  margin: 4px 0;
+  margin: 9px 0;
   display: flex;
 }
 
 .card__article-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .card__article-anchor:link,
@@ -119,7 +124,7 @@ body {
   word-spacing: 1px;
   cursor: pointer;
   margin: 0 0 0 10px;
-  font-size: 1.4rem;
+  font-size: var(--article-title--font-size);
   font-weight: 400;
   text-decoration: none;
 }
@@ -128,15 +133,13 @@ body {
   letter-spacing: 0.2px;
   word-spacing: 1px;
   margin: 0 0 0 10px;
-  font-size: 1.4rem;
+  font-size: var(--article-title--font-size);
   font-weight: 400;
 }
 
 .card__descriptors {
   margin: 0;
   padding-left: 2rem;
-  font-size: 1.1rem;
-  font-weight: 300;
 }
 
 .card__descriptor {
@@ -148,10 +151,11 @@ body {
 .card__descriptor-anchor:visited {
   color: red;
   text-decoration: none;
+  font-size: var(--descriptor-title--font-size);
 }
 
 .card__descriptor-title {
-  font-size: 1.1rem;
+  font-size: var(--descriptor-title--font-size);
 }
 
 .hidden {

@@ -1,6 +1,6 @@
 # Function syntax
 
-JavaScript functions are defined with the `function` keyword. You can use a function declaration or a function expression.
+JavaScript functions are defined with the `function` keyword. You can use a ==function **declaration**== or a ==function **expression**==.
 
 ## Function Declarations
 
@@ -58,3 +58,7 @@ const x = (x, y) => {
   return x * y;
 };
 ```
+
+## References
+
+1. [Function expression - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)

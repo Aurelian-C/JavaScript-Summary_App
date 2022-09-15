@@ -146,7 +146,7 @@ const browserEngineAndRuntime = {
       sectionTitle: 'Hoisting',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource: '/src/markdowns/01_Browser_Engine_&_Runtime/Hoisting.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -160,7 +160,8 @@ const browserEngineAndRuntime = {
       sectionTitle: 'Lexical Environment',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/01_Browser_Engine_&_Runtime/Lexical_Environment.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -174,7 +175,8 @@ const browserEngineAndRuntime = {
       sectionTitle: 'Scope Chain',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/01_Browser_Engine_&_Runtime/Scope_Chain.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -419,6 +421,141 @@ const operators = {
             {
               linkTitle: 'Operator precedence',
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Expressions and operators',
+      sectionLinks: [
+        {
+          linkTitle: 'Expressions and operators',
+          linkSource:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators',
+        },
+      ],
+      sectionText: [],
+      sectionSource: ``,
+      sectionArticles: [
+        {
+          articleTitle: 'Primary expressions',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Left-hand-side expressions',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Increment and decrement',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Unary operators',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Arithmetic operators',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Relational operators',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Equality operators',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Binary logical operators',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Conditional (ternary) operator',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Optional Chaining operator',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Assignment operators',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
             },
           ],
           articleText: [],
