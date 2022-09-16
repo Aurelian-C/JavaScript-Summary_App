@@ -51,10 +51,11 @@ const browserEngineAndRuntime = {
   title: 'JavaScript in the Browser: Engine & Runtime',
   sections: [
     {
-      sectionTitle: 'Javascript Engine',
+      sectionTitle: 'Javascript Engine (part 1)',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: `/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Engine.html`,
+      sectionSource:
+        '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Engine1.html',
       sectionArticles: [
         {
           articleTitle: 'JavaScript language vs Computer language',
@@ -81,6 +82,15 @@ const browserEngineAndRuntime = {
           articleText: [],
           articleSource: '',
         },
+      ],
+    },
+    {
+      sectionTitle: 'Javascript Engine (part 2)',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource:
+        '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Engine2.html',
+      sectionArticles: [
         {
           articleTitle: 'Memory Heap & Call Stack',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
@@ -88,19 +98,28 @@ const browserEngineAndRuntime = {
           articleSource: '',
         },
         {
-          articleTitle: 'Single Threaded Model',
+          articleTitle: 'Call Stack & Stack Overflow',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'Memory Leaks & Stack Overflow',
+          articleTitle:
+            'Memory Heap & JavaScript is a Garbage Collection Language & Memory Leaks',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'Garbage Collection',
+          articleTitle:
+            'JavaScript is a Single Threaded Programming Language (Synchronous Language) and the JavaScript Engine have only a single Call Stack & Memory Heap',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'JavaScript Engine is synchronous, it executes code in order, and must finish executing a line of code before moving onto the next one',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -121,25 +140,26 @@ const browserEngineAndRuntime = {
         '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Runtime.html',
       sectionArticles: [
         {
-          articleTitle: 'Event Loop & Callback Queue',
+          articleTitle: 'JavaScript Runtime & Asynchronous code',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'Job Queue or Microtask Queue',
+          articleTitle:
+            'JavaScript Runtime provides asynchronous Web APIs, a way of communicating with the JavaScript Engine',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'Global Object (window object)',
+          articleTitle: 'Web APIs & global window object',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'Web APIs',
+          articleTitle: 'Callback Queue vs Job/Microtask Queue & Event Loop',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',

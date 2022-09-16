@@ -1,4 +1,4 @@
-# Introduction to JavaScript Engine
+# Introduction to JavaScript Engine (part 1)
 
 Almost everyone that has worked with JavaScript has heard of the V8 engine, the idea of the JavaScript Engine. You may also hear phrases like JavaScript is an ==**interpreted language**==. What is this engine that we speak of? If I write some code like `const isHappy = true;`, how does the computer read this code?
 
@@ -73,7 +73,7 @@ This is exactly what browsers started doing. ==Browsers started mixing Interpret
 
 Why do we just learn all of this? You can write JavaScript without knowing any of this stuff and you'll be fine. Now that we know how the JavaScript Engine works underneath the hood, we can ==write more optimized code==, code that the Compiler can take and run faster than our regular JavaScript. We also can use this knowledge to make sure that ==we don't confuse the Compiler==, *because the Compiler isn't perfect. It can make mistakes and it can try to optimize code that actually does the opposite. And if it makes a mistake and it does something unexpected, it does something called ==**deoptimization**==, which takes even longer time to revert it back to the Interpreter*.
 
-By learning this, we will learn how to write optimized code, so that we help out the Profiler and the Compiler to make sure that we're able to run the fastest code possible.
+By learning this, we will learn how to write optimized code, so that we help out the Profiler and the Compiler to make sure that we're able to run the fastest code possible. We want to ==write code in a way that helps the **Compiler make optimizations**==, we don't want to work against it and make things slow.
 
 ## Is JavaScript an interpreted language?
 
@@ -81,58 +81,6 @@ Is JavaScript an interpreted language? Initially, when JavaScript first came out
 
 When somebody says JavaScript is an interpreted language, there is some truth to it, but it actually depends on the implementation. You can make an implementation of the JavaScript Engine that perhaps only compiles, so it all matters depending on implementation.
 
-## Memory Heap & Call Stack
-
-So JavaScript Engine is ==**a "program" that executes JavaScript code**. Any JavaScript Engine (ex. V8 for Google Chrome) always contains a **Call Stack** and a **Memory Heap**. The Call Stack is _where our code is actually executed_, using something called **execution contexts**. The Memory Heap is an **unstructured memory** pool which _stores all the objects that our application needs_.==
-
-![javascript-engine](../../img/javascript-engine.jpg)
-
-What is a program? Well, a program has to do some simple things. It has to ==**allocate memory**==, otherwise we wouldn't be able to have variables or even have a file on our computer. It also has to ==**parse and execute scripts**==, which means read and run commands.
-
-The JavaScript Engine consists of two parts. First part is ==a place to **store and write our data**==, and second  part is ==a place to **keep track, line by line, of what's executing**==.
-
-The ==**Memory Heap**== is a place to ==**store and write information**==, so that we can use our memory appropriately. It is ==a place to **allocate**, **use**, and **remove** memory as needed==.
-
-```js
-// Tell the memory heap to allocate memory for a number
-const number = 11;
-
-// Allocate memory for a string
-const string = 'some text';
-
-// Allocate memory for an object and it's values
-const person = {
-  first: 'Brittney',
-  last: 'Postma',
-};
-```
-
-The ==**Call Stack**== ==**keeps track of where we are in the code, so we can run the program in order**. Things are placed into the Call Stack on top and removed as they are finished. It **runs in a "first in - last out" mode. Each call stack can point to a location inside the Memory Heap**==.
-
-```js
-function subtractTwo(num) {
-  return num - 2;
-}
-
-function calculate() {
-  const sumTotal = 4 + 5;
-  return subtractTwo(sumTotal);
-}
-
-debugger;
-calculate();
-```
-
-
-
-We need the Memory Heap as a place to store and write information, because at the end of the day all programs are just read and write operations, that way we have a place to allocate, use and release memory. And two, with the Call Stack, we need a place to keep track of where we are in the code so that we can run the code in order. And with these two things, the JavaScript Engine is able to do that.
-
-_Now, since every JavaScript Engine has different implementations, where variables are allocated is not 100% the same all the time. So a good way to think about it is that **simple variables can usually be stored on the stack** and **data structures like objects, arrays and functions are stored in Memory Heap**_.
-
 ## References
 
-1. [The Complete JavaScript Course. From Zero to Expert! - Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNCuaAhZ8UB5kIldtb76eeAyfM0SUKeceBq3FKF24pNxDVe-_g0-DPxoCnWwQAvD_BwE)
-
-2. [Understanding the JavaScript runtime environment - medium.com](https://medium.com/@gemma.stiles/understanding-the-javascript-runtime-environment-4dd8f52f6fca)
-
-3. [JavaScript: The Advanced Concepts - Andrei Neagoie](https://www.udemy.com/course/advanced-javascript-concepts/)
+1. [JavaScript: The Advanced Concepts - Andrei Neagoie](https://www.udemy.com/course/advanced-javascript-concepts/)
