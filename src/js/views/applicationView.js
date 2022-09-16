@@ -43,7 +43,6 @@ class ApplicationView {
     return `
       <div class="card__article">
         <div class="card__article-wrapper">
-          <i class="fa-solid fa-angle-right"></i>
           ${
             article.sectionSource
               ? `<a class="card__article-anchor" href="${article.sectionSource}">${article.sectionTitle}</a>`
