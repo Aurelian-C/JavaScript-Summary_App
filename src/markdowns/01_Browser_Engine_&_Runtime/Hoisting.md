@@ -1,8 +1,10 @@
 # Hoisting
 
-Hoisting refers to the process whereby the Interpreter appears to move the ==**declaration of functions**==, ==**variables**== or ==**classes**== to the top of their scope, prior to execution of the code.
+Hoisting refers to the process whereby the Interpreter appears to move the ==**declaration of functions**==, ==**variables**== or ==**classes**== to the top of their scope/environments, prior to execution of the code.
 
-Hoisting allows functions to be safely used in code before they are declared.
+![global_execution_context](../../img/global_execution_context.jpg)
+
+Hoisting allows functions to be safely used in code before they are declared. 
 
 Variable and class declarations are also hoisted, so they too can be referenced before they are declared. Note that doing so can lead to unexpected errors, and is not generally recommended.
 
