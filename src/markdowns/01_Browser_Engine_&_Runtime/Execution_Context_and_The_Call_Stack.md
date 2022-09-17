@@ -16,7 +16,9 @@ There are ==two **types**== of execution context in JavaScript:
 
 - **==global==** 
 -  **==function==**
-  There are ==two **stages**== as well to each context, **the ==creation==** and **==executing== phase**.
+  There are ==two **stages**== as well to each context:
+- ==**creation**== phase
+- ==**executing**== phase
 
 _Initially, our JavaScript Engine is going to create a Global Execution Context (GEC). We don't see this, it's underneath the hood, but it's saying "Hey, here's the JavaScript file for you, just start reading it for me", and on top of GEC, that's when we start adding functions calls and then eventually, as these execution context (execution context for the functions calls) get popped off, the last thing that remains is the GEC. And when the final line of our code runs and we're done with the JavaScript Engine, GEC is going to get popped off the Call Stack_.
 
@@ -65,6 +67,8 @@ Don't forget that ==**each execution context has its own _variable environment_*
 Whenever a function is called, the JavaScript Engine creates a different type of Execution Context known as a Function Execution Context (FEC) _within_ the Global Execution Context (GEC to evaluate and execute the code within that function. Since every function call gets its own FEC, there can be ==**more than one FEC** in the run-time of a script==.
 
 A function context is created by the JavaScript Engine ==when it sees a **function call**==. ==Each function gets its own execution context==.
+
+![function_execution_context](../../img/function_execution_context.jpg)
 
 ### Creation Phase
 

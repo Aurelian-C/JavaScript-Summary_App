@@ -213,7 +213,14 @@ const browserEngineAndRuntime = {
       sectionArticles: [
         {
           articleTitle:
-            'Interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code',
+            'Compiler appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Hoisting is happen on every execution context: global & function',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
