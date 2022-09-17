@@ -1,34 +1,32 @@
 # Execution Context and the Call Stack
 
-Code in JavaScript is always ran inside a type of execution context. ==**Execution context** is simply the **environment within which your code is ran**==.
+How do we run code in JavaScript? Well, we ==assign variables== and then we ==run functions==, right? That's all we really do in a programming language. When you give your JavaScript file to a browser, the JavaScript Engine start to read and execute the code inside your file, line by line, in order. As the JavaScript Engine starts to read your code, it creates something called the ==**global execution context**==. Whenever JavaScript Engine sees a function call in you code, it's going to create something called an ==**function execution context**==. Each function call gets its own execution context.
 
-There are ==two **types** of execution context== in JavaScript:
+Code in JavaScript is always ran inside a type of execution context. Execution context is simply the ==**environment within which your code is ran**==. So any time we run code in JavaScript, it's always going to be part of an execution context, it's part of global or inside of some function that we call.
+
+==Each execution context has its own **variable environment**==.
+
+There are ==two **types**== of execution context in JavaScript:
 
 - **==global==** 
 -  **==function==**
-  There are ==two **stages** as well to each context==, **the ==creation==** and **==executing== phase**.
+  There are ==two **stages**== as well to each context, **the ==creation==** and **==executing== phase**.
 
-==As the JavaScript Engine starts to read your code, it creates something called the **Global Execution Context**==.
+_Initially, our JavaScript Engine is going to create a global execution context. We don't see this, it's underneath the hood, but it's saying "Hey, here's the JavaScript file for you, just start reading it for me", and on top of global execution context, that's when we start adding functions calls and then eventually, as these execution context (execution context for the functions calls) get popped off, the last thing that remains is the global execution context. And when the final line of our code runs and we're done with the JavaScript Engine, global execution context is going to get popped off the Call Stack_.
 
-How do we run code in JavaScript? Well, we assign variables and then we run functions, right? That's all we really do in a language.
-
-==Initially, our JavaScript Engine is going to create a **global execution context**==. We don't see this, it's underneath the hood, but it's saying "Hey, here's the JavaScript file for you, just start reading it for me", and ==_on top of global execution context, that's when we start adding functions calls and then eventually, as these execution context (execution context for the functions calls) get popped off, the last thing that remains is the global execution context. And when the final line of our code runs and we're done with the JavaScript Engine, global execution context is going to get popped off the stack_==.
-
-So just from what we've learned, if I tell you whenever code is run in JavaScript, it is run inside of an execution context, is that a true statement or a false statement? Well, it's true because ==any time we run code in JavaScript, it's always going to be part of an execution context. That is, it's part of global or inside of some function that we call it==.
-
-==Global execution context is the very **first item on the Call Stack**==, _the first thing the JavaScript Engine does is to create the global execution context and it gives you two things: first thing is a **global object `window`** and the other thing is that **`this` keyword** in JavaScript_. 
-
-But to start things off, global execution context gives us these two things right off the JavaScript Engine starts up. So let's test this assumption: if what I just told you is correct, that means I can just give an empty JavaScript file to the browser and I should have a `window` object and the `this` keyword already defined without me having to do anything.  So I get these two things that `this` keyword and `window` object without even writing a piece of JavaScript, because the browser has created a global execution context for me. And you might be asking yourself, are these the same thing, `window === this` ? Well, that's true, that's the very first step that the JavaScript Engine does for us, the JavaScript Engine is going to create these two objects.
-
-_To the global object (in our case `window` object), we can assign variables, we can add functions and we can add different things to this global object_. And by the way, if we're using something like Node.js, the global object wouldn't be `window`, instead, it will be called global.
-
-So once we have done what we call a creation phase in our JavaScript Engine, we then have _a second phase and that second phase is called the ==execution phase==, where you actually run your code_.
-
-Now, we're going to expand on this a little bit, but to review **when code is run on the JavaScript Engine a global execution context is created, and when you run a function, a new execution context is added, a function execution context**, and we start running our code until everything gets popped up the stack and all of our code is run.
-
-Keep in mind, **each execution context has its own variable environment**.
+![execution_context](../../img/execution_context.jpg)
 
 ## Global execution context
+
+==Global execution context is the very **first item on the Call Stack**==, _the first thing the JavaScript Engine does is to create the global execution context, and it gives you two things: first thing is a **global object `window`** and the other thing is that **`this` keyword** in JavaScript_. 
+
+But to start things off, global execution context gives us these two things right off the JavaScript Engine starts up. So let's test this assumption: if what I just told you is correct, that means _I can just give an empty JavaScript file to the browser and I should have a `window` object and the `this` keyword already defined without me having to do anything_. So I get these two things that `this` keyword and `window` object without even writing a piece of JavaScript, because the browser has created a global execution context for me.
+
+_To the global object (in our case `window` object), we can assign variables, we can add functions and we can add different things to this global object_.
+
+![global_execution_context](../../img/global_execution_context.jpg)
+
+So once we have done what we call a creation phase in our JavaScript Engine, we then have a second phase and that second phase is called the _execution phase_, where you actually run your code.
 
 ### Creation Phase
 
@@ -49,7 +47,9 @@ this === window;
 // Window
 ```
 
-## Function execution Context
+Don't forget that ==**each execution context has its own _variable environment_**==.
+
+## Function execution context
 
 A function context is created by the JavaScript Engine ==when it sees a **function call**==. ==Each function gets its own execution context==.
 
@@ -111,11 +111,11 @@ showArgs2('hello', 'world');
 
 The keyword `arguments` can be dangerous to use in your code as is. In ES6, a few methods were introduced that can help better use `arguments`.
 
-We don't really get `arguments` in the global object, do we? If I run `arguments` in the console, I'll get an error "Argument is not defined" because, well, **`arguments` is only available to us when we create a new execution context with a function**.
+We don't really get `arguments` in the global object, do we? If I run `arguments` in the console, I'll get an error "Argument is not defined" because, well, **`arguments` is only available to us when we create a function execution context**.
 
 All right, so we got the `arguments` object, but you might remember something from our previous videos? **Remember when we talked about how to help the JavaScript Engine optimize our code, and I told you not to use `arguments`?**
 
-_Now, I said that `arguments` is a little bit dangerous to use. Why is that? Well, because **`arguments` looks like an array, but it's not really an array**, so there are many things that you can do with the `arguments` keyword that might make the compiler or the JavaScript engine less able to optimize your code because **you can't really use array methods on `arguments`**. And with the new JavaScript, they introduced a few little tools that we can use so that we avoid using `arguments` because there are some cases where we might want to iterate or loop through `arguments` instead of just accessing them regularly_.
+_Now, I said that `arguments` is a little bit dangerous to use. Why is that? Well, because **`arguments` looks like an array, but it's not really an array**, so there are many things that you can do with the `arguments` keyword that might make the Compiler or the JavaScript Engine less able to optimize your code because **you can't really use array methods on `arguments`**. And with the new JavaScript, they introduced a few little tools that we can use so that we avoid using `arguments` because there are some cases where we might want to iterate or loop through `arguments` instead of just accessing them regularly_.
 
 _One way to go about it is to say `console.log(Array.from(arguments))` and `Array.from()` method will create an array from whatever we give it_.
 
@@ -128,3 +128,4 @@ _Another way is to use the `spread` operator_.
 ## References
 
 1. [JavaScript: The Advanced Concepts - Andrei Neagoie](https://www.udemy.com/course/advanced-javascript-concepts/)
+1. [The Complete JavaScript Course. From Zero to Expert! - Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNCuaAhZ8UB5kIldtb76eeAyfM0SUKeceBq3FKF24pNxDVe-_g0-DPxoCnWwQAvD_BwE)

@@ -174,27 +174,15 @@ const browserEngineAndRuntime = {
         '/src/markdowns/01_Browser_Engine_&_Runtime/Execution_Context_and_The_Call_Stack.html',
       sectionArticles: [
         {
-          articleTitle: 'Global execution context',
+          articleTitle:
+            'Global execution context (global "window" object & "this" keyword)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'Function execution context',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Hoisting',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '/src/markdowns/01_Browser_Engine_&_Runtime/Hoisting.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
+          articleTitle:
+            'Function execution context ("arguments" & "this" keyword)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -209,7 +197,23 @@ const browserEngineAndRuntime = {
         '/src/markdowns/01_Browser_Engine_&_Runtime/Lexical_Environment.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle:
+            'Where we write code determines the available variables',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Hoisting',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '/src/markdowns/01_Browser_Engine_&_Runtime/Hoisting.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'Interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
