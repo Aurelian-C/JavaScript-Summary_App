@@ -156,6 +156,43 @@ function findMax() {
 
 If a function is called with too many arguments (more than declared), these arguments can be reached using the arguments object.
 
+The keyword `arguments` can be dangerous to use in your code as is. In ES6, a few methods were introduced that can help better use `arguments`.
+
+We don't really get `arguments` in the global object, do we? If I run `arguments` in the console, I'll get an error "Argument is not defined" because, well, **`arguments` is only available to us when we create a function execution context**.
+
+All right, so we got the `arguments` object, but you might remember something from our previous videos? **Remember when we talked about how to help the JavaScript Engine optimize our code, and I told you not to use `arguments`?**
+
+_Now, I said that `arguments` is a little bit dangerous to use. Why is that? Well, because **`arguments` looks like an array, but it's not really an array**, so there are many things that you can do with the `arguments` keyword that might make the Compiler or the JavaScript Engine less able to optimize your code because **you can't really use array methods on `arguments`**. And with the new JavaScript, they introduced a few little tools that we can use so that we avoid using `arguments` because there are some cases where we might want to iterate or loop through `arguments` instead of just accessing them regularly_.
+
+_One way to go about it is to say `console.log(Array.from(arguments))` and `Array.from()` method will create an array from whatever we give it_.
+
+_Another way is to use the `spread` operator_.
+
+**So with modern JavaScript, you most likely want to avoid `arguments`, it's one of those tricky things that was initially added to JavaScript that caused a lot of problems and headache**. _But using the techniques that I've shown you, we can actually convert `arguments` into an array like object so that when you do those operations, it'll be helpful for you_.
+
+```js
+// Function Execution Context creates arguments object
+function showArgs(arg1, arg2) {
+  console.log('arguments: ', arguments);
+  console.log(Array.from(arguments));
+}
+
+showArgs('hello', 'world');
+// arguments: { 0: 'hello', 1: 'world' }
+// [ 'hello', 'world' ]
+
+function showArgs2(...args) {
+  console.log(console.log('arguments: ', args));
+  console.log(Array.from(arguments));
+  return `${args[0]} ${args[1]}`;
+}
+
+showArgs2('hello', 'world');
+// arguments: [ 'hello', 'world' ]
+// [ 'hello', 'world' ]
+// hello world
+```
+
 ## Arguments are _Passed by Value_ vs Objects are _Passed by Reference_
 
 The parameters, in a function call, are the function's arguments. JavaScript arguments are passed by value: The function only gets to know the values, not the argument's locations. If a function changes an argument's value, it does not change the parameter's original value. Changes to arguments are not visible (reflected) outside the function.

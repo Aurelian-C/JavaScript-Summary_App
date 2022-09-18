@@ -6,7 +6,9 @@ For does who don't know, the browser doesn't natively understand the high-level 
 
 While reading through HTML, if the browser encounters JavaScript code to run via a `<script>` tag or an attribute that contains JavaScript code like `onClick`, it sends it to its JavaScript Engine. The browser's JavaScript Engine then creates a special environment to handle the transformation and execution of this JavaScript code. This environment is known as the **Execution Context**.
 
-How do we run code in JavaScript? Well, we ==assign variables== and then we ==run functions==, right? That's all we really do in a programming language. When you give your JavaScript file to a browser, the JavaScript Engine start to read and execute the code inside your file, line by line, in order. As the JavaScript Engine starts to read your code, it creates something called the ==**Global Execution Context (GEC)**==. Whenever JavaScript Engine sees a function call in you code, it's going to create something called an ==**Function Execution Context (FEC)**==. Each function call gets its own execution context.
+Programs are simply ==assigning memory==, for example assigning a value to a variable, and then ==running a function== for the program to do something with those variables. That's all we really do in a programming language.
+
+How do we run code in JavaScript? Well, we ==assign variables== and then we ==run functions==, right?  When you give your JavaScript file to a browser, the JavaScript Engine start to read and execute the code inside your file, line by line, in order. As the JavaScript Engine starts to read your code, it creates something called the ==**Global Execution Context (GEC)**==. Whenever JavaScript Engine sees a function call in you code, it's going to create something called an ==**Function Execution Context (FEC)**==. Each function call gets its own execution context.
 
 Code in JavaScript is always ran inside a type of execution context. Execution context is simply the ==**environment within which your code is ran**==. So any time we run code in JavaScript, it's always going to be part of an execution context, it's part of global or inside of some function that we call.
 
@@ -86,7 +88,6 @@ function showArgs(arg1, arg2) {
 }
 
 showArgs('hello', 'world');
-
 // arguments: { 0: 'hello', 1: 'world' }
 // argument 1 is hello and argument 2 is world
 
@@ -95,48 +96,9 @@ function noArgs() {
 }
 
 noArgs();
-
 // arguments: {}
 // even though there are no arguments, the object is still created
 ```
-
-```js
-function showArgs(arg1, arg2) {
-  console.log('arguments: ', arguments);
-  console.log(Array.from(arguments));
-}
-
-showArgs('hello', 'world');
-
-// arguments: { 0: 'hello', 1: 'world' }
-// [ 'hello', 'world' ]
-
-function showArgs2(...args) {
-  console.log(console.log('arguments: ', args));
-  console.log(Array.from(arguments));
-  return `${args[0]} ${args[1]}`;
-}
-
-showArgs2('hello', 'world');
-
-// arguments: [ 'hello', 'world' ]
-// [ 'hello', 'world' ]
-// hello world
-```
-
-The keyword `arguments` can be dangerous to use in your code as is. In ES6, a few methods were introduced that can help better use `arguments`.
-
-We don't really get `arguments` in the global object, do we? If I run `arguments` in the console, I'll get an error "Argument is not defined" because, well, **`arguments` is only available to us when we create a function execution context**.
-
-All right, so we got the `arguments` object, but you might remember something from our previous videos? **Remember when we talked about how to help the JavaScript Engine optimize our code, and I told you not to use `arguments`?**
-
-_Now, I said that `arguments` is a little bit dangerous to use. Why is that? Well, because **`arguments` looks like an array, but it's not really an array**, so there are many things that you can do with the `arguments` keyword that might make the Compiler or the JavaScript Engine less able to optimize your code because **you can't really use array methods on `arguments`**. And with the new JavaScript, they introduced a few little tools that we can use so that we avoid using `arguments` because there are some cases where we might want to iterate or loop through `arguments` instead of just accessing them regularly_.
-
-_One way to go about it is to say `console.log(Array.from(arguments))` and `Array.from()` method will create an array from whatever we give it_.
-
-_Another way is to use the `spread` operator_.
-
-**So with modern JavaScript, you most likely want to avoid `arguments`, it's one of those tricky things that was initially added to JavaScript that caused a lot of problems and headache**. _But using the techniques that I've shown you, we can actually convert `arguments` into an array like object so that when you do those operations, it'll be helpful for you_.
 
 ### Executing Phase
 

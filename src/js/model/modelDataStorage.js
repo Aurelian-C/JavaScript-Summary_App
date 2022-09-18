@@ -206,6 +206,21 @@ const browserEngineAndRuntime = {
       ],
     },
     {
+      sectionTitle: 'Variable Environment',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource:
+        '/src/markdowns/01_Browser_Engine_&_Runtime/Variable_Environment.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Variable Environment & Scope Chain',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Hoisting',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
@@ -221,21 +236,6 @@ const browserEngineAndRuntime = {
         {
           articleTitle:
             'Hoisting is happen on every execution context: global & function',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Scope Chain',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource:
-        '/src/markdowns/01_Browser_Engine_&_Runtime/Scope_Chain.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',

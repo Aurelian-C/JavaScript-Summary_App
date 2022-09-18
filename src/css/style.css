@@ -29,8 +29,9 @@ body {
 
 .info {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 15px;
+  align-items: center;
   margin-top: 1rem;
 }
 

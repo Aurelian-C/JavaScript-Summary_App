@@ -1,5 +1,9 @@
 # Function introduction
 
+Programs are simply assigning memory, for example assigning a value to a variable, and then running a function for the program to do something with those variables. That's all programs are, and without functions, our programs wouldn't do anything.
+
+Functions are an important concept in all programming languages.
+
 ## What is a function?
 
 A JavaScript function is a **block of code** designed to perform a particular task. A JavaScript function is **executed when "something" invokes it (calls it)**.
