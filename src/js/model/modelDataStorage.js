@@ -218,6 +218,26 @@ const browserEngineAndRuntime = {
           articleText: [],
           articleSource: '',
         },
+        {
+          articleTitle: 'Global Scope & Local Scope',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Function Scope (var, let & const) & Block Scope (let & const)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+
+        {
+          articleTitle: 'Variable Environment & Leakage of Global Variables',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
       ],
     },
     {
@@ -236,34 +256,6 @@ const browserEngineAndRuntime = {
         {
           articleTitle:
             'Hoisting is happen on every execution context: global & function',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Leakage of Global Variables',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Function Scope vs Block Scope',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
