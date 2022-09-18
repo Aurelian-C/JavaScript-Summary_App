@@ -231,9 +231,21 @@ const browserEngineAndRuntime = {
           articleText: [],
           articleSource: '',
         },
-
         {
           articleTitle: 'Variable Environment & Leakage of Global Variables',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Global variables & polluting the global namespace (having too much data on our global execution environment)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Global variables & variable collisions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',

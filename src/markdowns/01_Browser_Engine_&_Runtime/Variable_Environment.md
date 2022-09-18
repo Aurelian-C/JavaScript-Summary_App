@@ -135,6 +135,31 @@ heyhey(); // 'heyhey'
 doodle(); // Error! because it is enclosed in its own scope.
 ```
 
+## Polutting the global namespace & variable collisions
+
+Global variables are bad! There's a few issues with global variables what we call ==**polluting the global namespace**==, ==having too much data on our global execution environment==. Remember, we have limited space, limited memory. We talked about how memory leaks happen when we just have too much stuff in our Memory Heap that eventually it just overflows, making things slower and slower and slower until our browsers crash. ==One of the main ways that we have memory leaks is with global variables==.
+
+The issue with global variables is that we can have ==**variable collisions**==.
+
+```html
+<!DOCTYPE html>
+<html >
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>var z = 1</script> //variable collisions
+    <script>var zz = 1</script>
+    <script>var zzz = 1</script>
+    <script>var z = 1000</script> //variable collisions
+  </body>
+</html>
+```
+
+The issue with global variables and variable collisions is when we have the same variable/s in multiple scripts, everything gets bunched up together, everything is on the global execution context, and if there's any ==duplicates variables (variables with the same name) overwrite each other==.
+
+==How do we solve this issue? We have an entire section on this topic on the **idea of modules**==.
+
 ## References
 
 1. [JavaScript: The Advanced Concepts - Andrei Neagoie](https://www.udemy.com/course/advanced-javascript-concepts/)
