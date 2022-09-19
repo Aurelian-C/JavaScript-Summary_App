@@ -137,9 +137,11 @@ doodle(); // Error! because it is enclosed in its own scope.
 
 ## Polutting the global namespace & variable collisions
 
-Global variables are bad! There's a few issues with global variables what we call ==**polluting the global namespace**==, ==having too much data on our global execution environment==. Remember, we have limited space, limited memory. We talked about how memory leaks happen when we just have too much stuff in our Memory Heap that eventually it just overflows, making things slower and slower and slower until our browsers crash. ==One of the main ways that we have memory leaks is with global variables==.
+Global variables are bad! They can cause a lot of issues. 
 
-The issue with global variables is that we can have ==**variable collisions**==.
+One of the issue with global variables is what we call ==**polluting the global namespace**==, ==having too much data on our global execution environment==. Remember, we have limited space, limited memory. We talked about how memory leaks happen when we just have too much stuff in our Memory Heap that eventually it just overflows, making things slower and slower and slower until our browsers crash. ==One of the main ways that we have memory leaks is with global variables==.
+
+Another issue with global variables are ==**variable collisions**==.
 
 ```html
 <!DOCTYPE html>
@@ -148,17 +150,72 @@ The issue with global variables is that we can have ==**variable collisions**==.
     <title></title>
   </head>
   <body>
-    <script>var z = 1</script> //variable collisions
+    <script>
+        var z = 1 //variable collisions
+        function a() { return 5; } //variable collisions
+      </script>
     <script>var zz = 1</script>
     <script>var zzz = 1</script>
-    <script>var z = 1000</script> //variable collisions
+    <script>
+        var z = 1000 //variable collisions
+        function a() { return 'hahaha'; } //variable collisions
+      </script>
   </body>
 </html>
+
+console.log(z) // 1000
+a() //'hahaha'
 ```
 
-The issue with global variables and variable collisions is when we have the same variable/s in multiple scripts, everything gets bunched up together, everything is on the global execution context, and if there's any ==duplicates variables (variables with the same name) overwrite each other==.
+Variable collisions is when we have the same variable/s in multiple scripts, everything gets bunched up together, everything is on the global execution context, and if there's any ==duplicates variables (variables with the same name) overwrite each other==.
 
-==How do we solve this issue? We have an entire section on this topic on the **idea of modules**==.
+How do we solve these issues? With modern JavaScript, we have things like ==JavaScript **Modules**== and ==**module bundlers**==. But before we had those things, JavaScript developers used what we know now about the language itself to avoid this global variable issue and it's called ==**Immediately Invoked Function Expressions (IIFE)**==.
+
+The idea behind IIFE is we can place all library code inside of a local scope (function scope), to avoid any variable collisions.
+
+```js
+// IIFE
+(function() {
+    // Library code here...
+})()
+```
+
+```js
+<!DOCTYPE html>
+<html >
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script src="jquery-3.6.0.min.js"></script>  //we'll have access to the jQuery library
+    <script>
+        var z = 1 //variable collisions
+        const script1 = (function() { //avoid variable collisions with IIFE
+            function a() { return 5 }
+            return { a: a }
+        })()
+      </script>
+    <script>var zz = 1</script>
+    <script>var zzz = 1</script>
+    <script>
+        var z = 1000 //variable collisions
+        function a() {
+            return 'hahaha';
+        }
+      </script>
+  </body>
+</html>
+
+jQuery.each()
+script1.a() //5
+a() // 'hahaha'
+```
+
+With IIFE we still create the ``` script1``` global variable, but the good thing is that we can just have one variable, and this variable can be an object that contains many properties that we might want to use, and ==it only pollutes the global namespace _once_==. 
+
+For example, libraries like jQuery used to do IIFEs a lot. Inside of the jQuery library there are a ton of functions, a ton of variables, but inside it they can just create an IIFE and just expose for us only the jQuery object that we can use. Although it has many variables inside of it, with the help of IIFE the jQuery library only pollutes the global namespace once, with jQuery object. And we can access all the variables (only variables that jQuery exposes to us) inside of jQuery library through jQuery object.
+
+As we start to get _more and more JavaScript script files_, we want to make sure that we can wrap things in a function to scope things into their own environments, and minimize the amount of data that we place on the global execution context.
 
 ## References
 

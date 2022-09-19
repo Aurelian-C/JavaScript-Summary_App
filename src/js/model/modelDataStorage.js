@@ -250,6 +250,13 @@ const browserEngineAndRuntime = {
           articleText: [],
           articleSource: '',
         },
+        {
+          articleTitle:
+            'Variable collisions & Immediately Invoked Function Expressions (IIFE) & JavaScript Modules',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
       ],
     },
     {
@@ -268,20 +275,6 @@ const browserEngineAndRuntime = {
         {
           articleTitle:
             'Hoisting is happen on every execution context: global & function',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Global Variables & Variable Collisions',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
