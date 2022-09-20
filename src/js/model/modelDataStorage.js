@@ -282,6 +282,26 @@ const browserEngineAndRuntime = {
       ],
     },
     {
+      sectionTitle: 'What is JavaScript?',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [],
+      sectionSource:
+        '/src/markdowns/01_Browser_Engine_&_Runtime/What_is_JavaScript.html',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Activating Strict Mode',
       sectionLinks: [
         {
@@ -290,7 +310,8 @@ const browserEngineAndRuntime = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/01_Browser_Engine_&_Runtime/Activating_Strict_Mode.html',
       sectionArticles: [
         {
           articleTitle: '',

@@ -1,29 +1,29 @@
 # Activating Strict Mode
 
-JavaScript's Strict Mode, introduced in ECMAScript 5, is a way to opt in to a ==reStricted variant of JavaScript==, thereby implicitly opting-out of Sloppy Mode.
+JavaScript's Strict Mode, introduced in ECMAScript 5, is a way to opt into a ==**restricted variant of JavaScript**==, thereby implicitly opting-out of Sloppy Mode.
 
-> **Note**: Sometimes you'll see the default, ==non-Strict Mode referred to as Sloppy Mode==. This isn't an official term, but be aware of it, just in case.
+> **Note**: Sometimes you'll see the default, non-Strict Mode referred to as Sloppy Mode. This isn't an official term, but be aware of it, just in case.
 
-Strict Mode isn't just a subset: it intentionally has ==different semantics from normal code==. Browsers not supporting Strict Mode will run Strict Mode code with different behavior from browsers that do, so don't rely on Strict Mode without feature-testing for support for the relevant aspects of Strict Mode. ==Strict Mode code and non-Strict Mode code can coexist==, so scripts can opt into Strict Mode incrementally.
+Strict Mode isn't just a subset: it intentionally has different semantics from normal code. Browsers not supporting Strict Mode will run Strict Mode code with different behavior from browsers that do, so don't rely on Strict Mode without feature-testing for support for the relevant aspects of Strict Mode. ==Strict Mode code and non-Strict Mode code can coexist==, so scripts can opt into Strict Mode incrementally.
 
-Strict Mode makes ==several changes to normal JavaScript semantics==:
+Strict Mode makes several changes to normal JavaScript semantics:
 
-- **Eliminates some JavaScript ==silent errors==** by changing them to throw errors.
-- **==Fixes mistakes== that make it difficult for JavaScript Engine to perform optimizations**: Strict Mode code can sometimes be made to run faster than identical code that's not Strict Mode.
+- ==Eliminates some JavaScript **silent errors** by changing them to **throw errors**==.
+- ==**Fixes mistakes** that make it difficult for JavaScript Engine to perform **optimizations**==: Strict Mode code can sometimes be made to run faster than identical code that's not Strict Mode.
 - **==Prohibits some syntax==** likely to be defined in future versions of ECMAScript.
 
 Strict Mode makes it easier for us developers to ==avoid accidental errors==, so basically it helps us introduce the bugs into our code and that's because of 2 reasons:
 
 - first, **Strict Mode ==forbids us to do certain things==**;
-- second, it will actually **==create visible errors== for us in certain situations** in which without Strict Mode JavaScript will simply fail silently without letting us know that we did a mistake.
+- second, it will actually ==**create visible errors**== for us in certain situations, in which without Strict Mode JavaScript will simply fail silently without letting us know that we did a mistake.
 
-Strict Mode ==convert **mistakes** or **bad syntax** into **errors**==.
+Strict Mode ==_convert_ **mistakes** or **bad syntax** into **errors**==.
 
 ## Invoking Strict Mode
 
-Strict Mode applies to **entire ==scripts==** or to **individual ==functions==**. It **doesn't apply to block statements enclosed in `{}` braces**; attempting to apply it to such contexts does nothing.
+Strict Mode applies to ==entire **scripts**== or to ==individual **functions**==. It ==**doesn't apply to block statements enclosed in**== `{}` ==**braces**==; attempting to apply it to such contexts does nothing.
 
-> **Note**: If we have any code before 'use strict' then Strict Mode will not be activated. Comments are allowed because JavaScript will just ignore them.
+> **Note**: ==If we have any code before 'use strict' then Strict Mode will not be activated. Comments are allowed because JavaScript will just ignore them==.
 
 ### Strict Mode for scripts
 
@@ -58,7 +58,7 @@ function notStrict() {
 
 ### Strict Mode for ES6 Modules
 
-ECMAScript 2015 introduced JavaScript Modules and therefore a 3rd way to enter Strict Mode. The entire contents of JavaScript modules are **==automatically== in Strict Mode**, with **no statement needed to initiate it**.
+ECMAScript 2015 introduced JavaScript Modules and therefore a 3rd way to enter Strict Mode. The entire contents of JavaScript modules are ==**automatically in Strict Mode**, with no statement needed to initiate it==.
 
 ```js
 function strict() {
@@ -69,7 +69,7 @@ export default strict;
 
 ### Strict Mode for Classes
 
-All parts of ECMAScript ==classes are Strict Mode code==, including both class declarations and class expressions — and so also including all parts of class bodies.
+All parts of ECMAScript ==**classes are Strict Mode code**==, including both class declarations and class expressions — and so also including all parts of class bodies.
 
 ## Changes in Strict Mode
 
@@ -77,7 +77,7 @@ Strict Mode changes both **==syntax==** and **==runtime behavior==**.
 
 Changes generally fall into these categories:
 
-- changes converting mistakes into errors (as syntax errors or at runtime);
+- changes ==converting mistakes into errors== (as syntax errors or at runtime);
 - changes simplifying how the particular variable for a given use of a name is computed;
 - changes simplifying `eval` and `arguments`;
 - changes making it easier to write "secure" JavaScript;
@@ -85,16 +85,22 @@ Changes generally fall into these categories:
 
 ### Converting mistakes into errors
 
-Strict Mode **changes some ==previously-accepted mistakes into errors==**. JavaScript was designed to be easy for novice developers, and sometimes it gives operations which should be errors non-error semantics. Sometimes this fixes the immediate problem, but sometimes this creates worse problems in the future. Strict Mode treats these mistakes as errors so that they're discovered and promptly fixed.
+Strict Mode ==changes some **previously-accepted _mistakes_ into _errors_**==. JavaScript was designed to be easy for novice developers, and sometimes it gives operations which should be errors non-error semantics. Sometimes this fixes the immediate problem, but sometimes this creates worse problems in the future. Strict Mode treats these mistakes as errors so that they're discovered and promptly fixed.
 
-First, Strict Mode **makes it ==impossible to accidentally create global variables==**. In normal JavaScript mistyping a variable in an assignment creates a new property on the global object and continues to "work" (although future failure is possible: likely, in modern JavaScript).
+First, Strict Mode ==makes it impossible to **accidentally create global variables**==. In normal JavaScript mistyping a variable in an assignment creates a new property on the global object and continues to "work" (although future failure is possible: likely, in modern JavaScript).
 
 ```js
 'use strict';
+
 mistypeVariable = 17; // Assuming no global variable mistypeVariable exists this line throws a ReferenceError due to the misspelling of variable
+
+function weird() {
+  height = 50;
+}
+weird() //Uncaught ReferenceError: height is not defined
 ```
 
-Second, Strict Mode **makes assignments which would otherwise ==silently fail to throw an exception==**. For example, `NaN` is a non-writable global variable. In normal code assigning to `NaN` does nothing; the developer receives no failure feedback. In Strict Mode assigning to `NaN` throws an exception. Any assignment that silently fails in normal code (assignment to a non-writable global or property, assignment to a getter-only property, assignment to a new property on a non-extensible object) will throw in Strict Mode:
+Second, Strict Mode ==makes assignments which would otherwise **silently fail to throw an exception**==. For example, `NaN` is a non-writable global variable. In normal code assigning to `NaN` does nothing; the developer receives no failure feedback. In Strict Mode assigning to `NaN` throws an exception. Any assignment that silently fails in normal code (assignment to a non-writable global or property, assignment to a getter-only property, assignment to a new property on a non-extensible object) will throw in Strict Mode:
 
 ```js
 'use strict';
@@ -129,7 +135,7 @@ Third, Strict Mode **==makes attempts to delete undeletable properties throw==**
 delete Object.prototype; // throws a TypeError
 ```
 
-Fourth, Strict Mode **requires that ==function parameter names be unique==**. In normal code the last duplicated argument hides previous identically-named arguments. Those previous arguments remain available through `arguments[i]`, so they're not completely inaccessible. Still, this hiding makes little sense and is probably undesirable (it might hide a typo, for example), so in Strict Mode duplicate argument names are a syntax error:
+Fourth, Strict Mode ==requires that **function parameter names be unique**==. In normal code the last duplicated argument hides previous identically-named arguments. Those previous arguments remain available through `arguments[i]`, so they're not completely inaccessible. Still, this hiding makes little sense and is probably undesirable (it might hide a typo, for example), so in Strict Mode duplicate argument names are a syntax error:
 
 ```js
 function sum(a, a, c) {

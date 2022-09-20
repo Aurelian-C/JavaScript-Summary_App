@@ -34,7 +34,7 @@ What is the first lexical environment that we have? Well, _the very first lexica
 
 Lexical simply means where is the code written. Based on where is your code written, when the Compiler or the Interpreter sees your code, it will know different things about that code. With lexical environment (where your code is written), the Compiler, knowing where your code is was written, can decide and make decisions like "Where to put things?" and "What actions to take?" and "What code can have access to that lexical environment?".
 
-In JavaScript, the lexical environment (where you write your data & variables where the function was defined) determines the available variables.
+In JavaScript, the lexical environment (where you write your data/variables and where the function was defined) determines the available variables.
 
 ![lexical_environment1](../../img/lexical_environment1.jpg)
 

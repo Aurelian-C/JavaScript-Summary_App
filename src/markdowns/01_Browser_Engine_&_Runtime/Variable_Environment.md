@@ -1,6 +1,6 @@
 # Variable Environment
 
-We learned that can be many execution contexts (global & function), but you might be asking yourself, what about variables that are created inside of these individual execution contexts? They all technically live in our JavaScript Engine memory, but ==they need to know **how they relate to one another**==. Some functions have access to their certain variables and some don't.
+We learned that in the Call Stack can be many execution contexts (global & function), but you might be asking yourself, what about variables that are created inside of these individual execution contexts? They all technically live in our JavaScript Engine memory, but ==they need to know **how they relate to one another**==. Some functions have access to their certain variables and some don't.
 
 ![variable_environment](../../img/variable_environment.jpg)
 
@@ -8,7 +8,7 @@ Remember what I said in the Lexical Environment article? You can think of each e
 
 ![lexical_environment](../../img/lexical_environment.jpg)
 
-Remember from Lexical Environment article that where you write your code is Important? And the ==Lexical Environment (where you write your data & variables where the function was defined) determines the **available variables**==.
+Remember from Lexical Environment article that where you write code is important? And the ==Lexical Environment (where you write your data/variables and where the function was defined) determines the **available variables**==.
 
 ```js
 function one() {
@@ -62,7 +62,7 @@ function sayMyName() {
 sayMyName()()(); //each function is returned and has to be called
 ```
 
-Because of Lexical Environment/Scope we know what environments are linked to each other and we know what data can be accessed by which function.
+Because of Lexical Environment we know what environments/contexts are linked to each other, and we know what data can be accessed by which function.
 
 We learned that the ==**global scope is the outermost scope**==, so _variables declared outside a function are in what we call global scope and they can be access in any other scope that is inside of the functions, we can always access global scope_. Now, ==**local scope** is any scope that is **local to a function**==, now ==**variables declared in the local scope are accessible within this scope, as well as any scopes surrounding it**==.
 
@@ -70,7 +70,7 @@ _Scope just **defines the accessibility of variables in the code**, it tells us 
 
 ## Function Scope vs Block Scope
 
-Remember, scope means what variables we have access to and JavaScript has function scope, right? Every time we create a function, we create a new execution context which has its own variable environment. But you see, most other programming languages have something called block scope. So what's the difference?
+Remember, scope means what variables we have access to, and JavaScript has function scope, right? Every time we create a function, we create a new execution context which has its own variable environment. But you see, most other programming languages have something called block scope. So what's the difference?
 
 ```js
 // Function scope
@@ -87,7 +87,7 @@ if (5 > 4) {
 secret;  //12345
 ```
 
-Most programming languages are block scoped, meaning every time you see a new `{}` (curly braces) is a new lexical environment. However, **JavaScript is function scoped**, _meaning it only creates a new local environment if it sees the keyword `function` on the global scope_. **To give us access to block scope, in ES6 `let` and `const` were added to the language**.
+==Most programming languages are block scoped, meaning every time you see a new== `{}` ==(curly braces) is a new lexical environment. However, **JavaScript is function scoped**, meaning it only creates a new local environment if it sees the keyword== `function` ==on the global scope. **To give us access to block scope, in ES6**== `let` ==**and**== `const` ==**were added to the language**==.
 
 ```js
 // Variables declared with var are NOT BLOCK SCOPED
@@ -103,7 +103,7 @@ if (5 > 4) {
 secret;  //Uncaught ReferenceError: secret is not defined
 ```
 
-So to review, **block scoping means declaring a variable not just inside a function, but around any curly brackets `{}`**, like `if` statements or loops. Only variables declared with ```let``` or ```const``` are block scoped, variables declared with ```var``` are only function scoped (no block scoped).
+So to review, ==**block scoping means declaring a variable not just inside a function, but around any curly brackets**== `{}`, like `if` statements or loops. ==Only variables declared with== ```let``` ==or== ```const``` ==are block scoped, variables declared with== ```var``` ==are only function scoped (no block scoped)==.
 
 ## Leakage of Global Variables
 
@@ -122,9 +122,9 @@ weird() // 'weird' function looks at his own variable environment and sees that 
 
 _Is `height` being created in the variable environment of `weird`? Well, no, and that's because JavaScript is a little bit weird here. This is actually called **leakage of global variables**, because what JavaScript does underneath the hood is that it looks at `height`, it says "This isn't in my nothing's been declared. I haven't seen a `var` or a `const` or a `let` keyword, so I don't have it". Those keywords (`var`, `let`, `const`) tell JavaScript to put those in our variable environment, but it's not there. So it's going to go up the scope chain to the global environment and says "Hey, is there such a thing as a `height`?". And the global environment is going to say "No, I don't have it", but it's not throwing in the air, is it? And that's because the global environment actually sees that this doesn't exist and will create it for you_.
 
-This is something that in the past with JavaScript you could do and it caused a lot of problems, so now we have something like `use strict`. That if I add `use strict` to the top of a page, `use strict` was introduced as a way to prevent JavaScript for doing these weird, unpredictable edge cases because JavaScript was written by a programmer and there's no such thing as a perfect programming language or a perfect program, and `use strict` allows us to avoid these pitfalls that shouldn't happen.
+This is something that in the past with JavaScript you could do and it caused a lot of problems, so now we have something like `use strict`. That if I add `use strict` to the top of a page, `use strict` was introduced as a way to prevent JavaScript for doing these weird, unpredictable edge cases, because JavaScript was written by a programmer and there's no such thing as a perfect programming language or a perfect program, and `use strict` allows us to avoid these pitfalls that shouldn't happen.
 
-As soon as I used `use strict`, it's going to throw an error that says "height is not defined" because it's going to go up the scope chain and it's going to say "No, you've never really declared this variable. I have no idea what you're talking about".
+As soon as I used `use strict`, it's going to throw an error that says "```height``` is not defined!", because it's going to go up the scope chain and it's going to say "No, you've never really declared this variable. I have no idea what you're talking about".
 
 ```js
 var heyhey = function doodle() {
@@ -139,7 +139,7 @@ doodle(); // Error! because it is enclosed in its own scope.
 
 Global variables are bad! They can cause a lot of issues. 
 
-One of the issue with global variables is what we call ==**polluting the global namespace**==, ==having too much data on our global execution environment==. Remember, we have limited space, limited memory. We talked about how memory leaks happen when we just have too much stuff in our Memory Heap that eventually it just overflows, making things slower and slower and slower until our browsers crash. ==One of the main ways that we have memory leaks is with global variables==.
+One of the issue with global variables is what we call ==**polluting the global namespace**==, ==having too much data/variables on our global execution environment==. Remember, we have limited space, limited memory. We talked about how memory leaks happen when we just have too much stuff in our Memory Heap that eventually it just overflows, making things slower and slower and slower until our browsers crash. ==One of the main ways that we have memory leaks is with global variables==.
 
 Another issue with global variables are ==**variable collisions**==.
 

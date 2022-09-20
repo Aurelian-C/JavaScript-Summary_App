@@ -6,7 +6,7 @@ JavaScript is a:
 
 - High-level
 - Garbage-collected
-- Interpreted or just-in-time compiled
+- Interpreted or Just-In-Time compiled
 - Multi-paradigm
 - Prototype-based object-oriented
 - First-class functions
@@ -23,9 +23,9 @@ JavaScript is a:
 
 ![](../../img/javascript-definition2.jpg)
 
-JavaScript is a garbage collected language. If you allocate memory inside of a function, JavaScript will automatically remove it from the memory heap when the function is done being called. However, that does not mean you can forget about memory leaks. No system is perfect, so it is important to always remember memory management. JavaScript completes garbage collection with a mark and sweep method.
+JavaScript is a garbage collected language. If you allocate memory inside of a function, JavaScript will automatically remove it from the Memory Heap when the function is done being called. However, that does not mean you can forget about memory leaks. No system is perfect, so it is important to always remember memory management. JavaScript completes garbage collection with a mark and sweep method.
 
-## Interpreted or just-in-time compiled
+## Interpreted or Just-In-Time compiled
 
 ![](../../img/javascript-definition3.jpg)
 
@@ -33,7 +33,7 @@ You might hear the terms **interpreted** and **compiled** in the context of prog
 
 **Compiled languages** on the other hand are transformed (compiled) into another form before they are run by the computer. For example, C/C++ are compiled into machine code that is then run by the computer. The program is executed from a binary format, which was generated from the original program source code.
 
-**JavaScript is a lightweight interpreted programming language**. The web browser receives the JavaScript code in its original text form and runs the script from that. From a technical standpoint, most modern JavaScript interpreters actually use a technique called just-in-time compiling to improve performance; the JavaScript source code gets compiled into a faster, binary format while the script is being used, so that it can be run as quickly as possible. However, JavaScript is still considered an interpreted language, since the compilation is handled at run time, rather than ahead of time.
+**JavaScript is a lightweight interpreted programming language**. The web browser receives the JavaScript code in its original text form and runs the script from that. From a technical standpoint, most modern JavaScript interpreters actually use a technique called Just-In-Time compiling to improve performance; the JavaScript source code gets compiled into a faster, binary format while the script is being used, so that it can be run as quickly as possible. However, JavaScript is still considered an interpreted language, since the compilation is handled at run time, rather than ahead of time.
 
 ## Multi-paradigm
 
