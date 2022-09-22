@@ -25,9 +25,9 @@ someObject.a() //{a: ƒ}
 In JavaScript, the `this` keyword ==refers to an **object**==. Which object depends on how the function that has the `this` inside of it is being invoked (used or called). The `this` keyword ==**refers to different objects**== depending on how the function that have ```this```  inside of it is used/called/invoked:
 
 - In an _object method_, `this` refers to the object;
-- _Alone_, `this` refers to the global window object;
+- _Alone_, `this` refers to the global ```window``` object;
 - _Alone, in Strict Mode_, `this` is ```undefined```;
-- In a _function_, `this` refers to the global window object;
+- In a _function_, `this` refers to the global ```window ```object;
 - In a _function, in Strict Mode_, `this` is `undefined`;
 - In an _event_, `this` refers to the element that received the event;
 - _Arrow function_ don't have their own ```this```;

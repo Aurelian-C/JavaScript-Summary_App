@@ -1437,22 +1437,33 @@ const functionalProgramming = {
       sectionTitle: 'The "this" keyword & call(), apply() and bind()',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/06_Functional_Programming_(FP)/The_this_keyword_&_call__apply__and__bind.html',
       sectionArticles: [
         {
-          articleTitle: 'All Functions are Methods',
+          articleTitle:
+            'With call(), apply() and bind() you can assign a different "this" object when calling an existing function. Usually "this" refers to the current object (the calling object).',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'call() method',
+          articleTitle:
+            'call() method calls the function with a given "this" value and arguments provided individually',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'apply() method',
+          articleTitle:
+            'apply() method is similar to call(), the difference is with apply() you use an array instead of providing arguments individually',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'bind() method creates a new function that, when called, has its "this" set to the provided value, with a given sequence of arguments preceding any provided when the new function is called',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
