@@ -1356,31 +1356,77 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Function invocation & this keyword',
+      sectionTitle: 'Function invocation & "this" keyword',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/06_Functional_Programming_(FP)/Function_invocation_&_this_keyword.html',
       sectionArticles: [
         {
-          articleTitle: `What is 'this'?`,
+          articleTitle: `"this" is the object that the function is a property of`,
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'The Global Object',
+          articleTitle: `The value of "this" is always set when the function is invoked, not when the function is declared`,
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'Invoking a Function as a Method',
+          articleTitle:
+            'Invoking a function as a global object (function without an owner object)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'Invoking a Function with a Function Constructor',
+          articleTitle:
+            'Invoking a function as a method (function with an owner object)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Invoking a function with a Function Constructor',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The 2 main benefits of "this": gives methods access to their object & execute the same function code for multiple objects',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: `"this" acts as a placeholder for an object, and "this" we'll refer to whichever object called that function/method`,
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: `"this" & Dynamic Scope vs Lexical Scope`,
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: `"this" is not lexically scoped, it doesn't matter where "this" is write in our code, it matters how the function was called`,
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: `"this" & arrow functions `,
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: `Arrow functions don't have their own "this". It will lexically bound "this" to the surrounding object`,
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -1388,7 +1434,7 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'The this keyword & call(), apply() and bind()',
+      sectionTitle: 'The "this" keyword & call(), apply() and bind()',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: '',
@@ -1564,70 +1610,6 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'this keyword',
-      sectionLinks: [
-        {
-          linkTitle: 'this keyword',
-          linkSource: `https://www.w3schools.com/js/js_this.asp`,
-        },
-        {
-          linkTitle: 'this keyword',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Lexical vs Dynamic Scope',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'this – call(), apply(), bind()',
-      sectionLinks: [
-        {
-          linkTitle: 'Function.prototype.call()',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call`,
-        },
-        {
-          linkTitle: 'Function.prototype.apply()',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply`,
-        },
-        {
-          linkTitle: 'Function.prototype.bind()',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Currying with bind()',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
       sectionTitle: 'Arrow Function',
       sectionLinks: [
         {
@@ -1655,25 +1637,6 @@ const functionalProgramming = {
     {
       sectionTitle: 'Regular Functions vs. Arrow Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Immediately Invoked Function Expressions (IIFE)',
-      sectionLinks: [
-        {
-          linkTitle: 'IIFE (Immediately Invoked Function Expression)',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Glossary/IIFE`,
-        },
-      ],
       sectionText: [],
       sectionSource: '',
       sectionArticles: [
