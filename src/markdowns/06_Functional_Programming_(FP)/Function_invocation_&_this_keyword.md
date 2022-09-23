@@ -39,6 +39,10 @@ In JavaScript, the `this` keyword ==refers to an **object**==. Which object depe
 
 ==The value of== ```this``` ==is always set **when the function is invoked**, not when the function is declared==.
 
+## All functions are methods
+
+==In JavaScript all functions are object methods==. If a function is not a method of a JavaScript object, it is a function of the global object (see "Invoking a function as a global function" below).
+
 ## Invoking a function as a global function
 
 When a function is called without an owner object, the value of ```this``` becomes the global ```window``` object. This example returns the ```window``` object as the value of ```this```:

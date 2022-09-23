@@ -1375,6 +1375,12 @@ const functionalProgramming = {
           articleSource: '',
         },
         {
+          articleTitle: 'All functions are methods',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
           articleTitle:
             'Invoking a function as a global object (function without an owner object)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],

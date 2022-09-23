@@ -1,8 +1,6 @@
 # The `this` keyword & `call()`, `apply()` and `bind()`
 
-## All Functions are Methods
-
-In JavaScript all functions are object methods. If a function is not a method of a JavaScript object, it is a function of the global object (Function Invocation & this keyword - The Global Object).
+With With ```call()```, ```apply()``` and ```bind()``` you can manipulate the ```this``` keyword.
 
 With ```call()```, ```apply()``` and ```bind()``` you can ==**assign a different**== `this` ==**object** when calling an existing function==. `this` refers to the current object (the calling object).
 
@@ -31,6 +29,7 @@ const person2 = {
 };
 
 person.fullName.call(person1); // This will return 'John Doe'
+person.fullName.call(person2); // This will return 'Mary Doe'
 ```
 
 ==The== `call()` ==allows for a function/method belonging to one object to be assigned and called for a different object==. `call()` provides a new value of `this` to the function/method. ==With== `call()`, ==you can write a method once and then inherit it in another object, without having to rewrite the method for the new object==.
