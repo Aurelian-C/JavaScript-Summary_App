@@ -4,11 +4,11 @@
 
 - `dir` = show you the contents of the current folder.
 
-- `cd` .. = we can go up and down the file tree.
+- `cd ..` = we can go up and down the file tree.
 
-- `cd` ../.. = move up two levels.
+- `cd ../..` = move up two levels.
 
-- `cd` folderName = move into a folder. Remember Tab key for autocomplete!
+- `cd folderName` = move into a folder. Remember Tab key for autocomplete!
 
 - `cd /d` D:\ = change the drive
 

@@ -5926,7 +5926,30 @@ const modulesAndTooling = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Configuring_Babel_and_Polyfilling.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'Compile your modern JavaScript code back to ES5 code with Babel',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Version control with Git',
+      sectionLinks: [
+        { linkTitle: 'Git', linkSource: `https://git-scm.com/` },
+        {
+          linkTitle: 'Git cheat sheet',
+          linkSource: `https://education.github.com/git-cheat-sheet-education.pdf`,
+        },
+      ],
+      sectionText: [],
+      sectionSource:
+        '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Version_control_with_Git.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -5976,27 +5999,6 @@ const modulesAndTooling = {
       ],
     },
     {
-      sectionTitle: 'Version control with Git',
-      sectionLinks: [
-        { linkTitle: 'Git', linkSource: `https://git-scm.com/` },
-        {
-          linkTitle: 'Git cheat sheet',
-          linkSource: `https://education.github.com/git-cheat-sheet-education.pdf`,
-        },
-      ],
-      sectionText: [],
-      sectionSource:
-        '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Version_control_with_Git.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
       sectionTitle: 'Refactoring Our Code: The DRY Principle',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
@@ -6014,7 +6016,8 @@ const modulesAndTooling = {
       sectionTitle: 'Prettier',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Prettier.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -6028,7 +6031,8 @@ const modulesAndTooling = {
       sectionTitle: 'Terminal commands',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Terminal_commands.html',
       sectionArticles: [
         {
           articleTitle: '',
