@@ -339,38 +339,72 @@ const browserEngineAndRuntime = {
 };
 
 const variablesAndValues = {
-  title: 'Variables, Values & Primitive/Reference Types',
+  title: 'JavaScript Types and Variables',
   sections: [
     {
+      sectionTitle: 'JavaScript Types',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource:
+        '/src/markdowns/02_JavaScript_Types_&_Variables/JavaScript_Types.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Static vs Dynamically Typed languages',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Strongly vs Weakly Typed languages',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Primitives vs References Types',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Primitives vs References Types',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource:
+        '/src/markdowns/02_JavaScript_Types_&_Variables/Primitives_vs_Objects_(Primitive_vs_Reference_Types).html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'Primitive Types (Numbers, Strings, Booleans, null, undefined, Symbol, BigInt)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Reference Types (Arrays, Objects, Functions)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Pass by Value vs Pass by Reference',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'A variable that stores a reference object only stores a pointer, so the address of that place in memory, and not the value itself',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Statements vs Expressions',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: ``,
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Static vs Dynamically Typed',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: ``,
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Strongly vs Weakly Typed',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: ``,
@@ -433,33 +467,6 @@ const variablesAndValues = {
       sectionArticles: [
         {
           articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Primitives vs References Types (Primitives vs Objects)',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: ``,
-      sectionArticles: [
-        {
-          articleTitle:
-            'Primitive Types (Numbers, Strings, Booleans, null, undefined, Symbol)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Reference Types (Arrays, Objects, Functions)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Pass by Value vs Pass by Reference',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
