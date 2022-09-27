@@ -1,8 +1,8 @@
 # Version control with Git
 
-Git is a ==version control system== and allows you to manage your source code history efficiently. Whenever you work on your code, changes can be saved with Git and you can jump back to any previously saved versions. Without tools like Git, you would have to create manual copies of your code, which would be quite cumbersome and impossible to maintain once your application grows.
+Git is a ==version control system== and allows you to ==manage your source code history== efficiently. Whenever you work on your code, changes can be saved with Git and you can ==jump back to any previously saved versions==. ==Without tools like Git, you would have to create manual copies of your code==, which would be quite cumbersome and impossible to maintain once your application grows.
 
-Besides local version control and code management, you can also push your projects and all your commits ("snapshots") to remote storages. The most prominent (free!) remote service is GitHub.
+Besides local version control and code management, you can also ==push your projects and all your commits ("snapshots") to remote storages==. The most prominent (free!) remote service is GitHub.
 
 Using Git is totally optional! It's also not a tool that's related to JavaScript in any way - ==you can indeed use Git in ANY (programming) project==.
 
@@ -16,11 +16,11 @@ Uploading your code from your local Git environment to GitHub makes your code av
 
 ![git](../../img/git.webp)
 
-A ==Repository== is the location where your code is stored, so a folder on your machine containing your project code. After turning this folder into a Git Repository, Git manages the project code version history.
+A ==Repository== is the _location where your code is stored_, so a folder on your machine containing your project code. After turning this folder into a Git Repository, Git manages the project code version history.
 
-The code is not directly stored in the Repository though. Inside our Repository we have "subfolders", so-called ==Branches==. After we added the first code to our Repository, a default "master" Branch is created. We are not limited to one Branch though, a Repository typically contains multiple Branches. So these are Repositories and Branches, but where is our code stored?
+The code is not directly stored in the Repository though. Inside our Repository we have "subfolders", so-called ==Branches==. After we added the first code to our Repository, a default "master" Branch is created. We are not limited to one Branch though, _a Repository typically contains multiple Branches_. So these are Repositories and Branches, but where is our code stored?
 
-Inside our Branches! A Branch contains different versions of our code, our ==Commits==. Each Commit is a snapshot of a specific version of the code.
+Our code is stored inside our Branches! _A Branch contains different versions of our code, our_ ==Commits==. _Each Commit is a snapshot of a specific version of the code_.
 
 ## How to use Git
 
@@ -62,7 +62,7 @@ Before steps below we need to have in our directory created the .gitignore file.
 ### Share & update
 
 - `git remote add origin https://github.com/GithubUsername/projectName.git`
-  (with this code we let our local repository know about this https://github.com/GithubUsername/projectName.git remote repository)
+  (with this code we let our local repository know about this `https://github.com/GithubUsername/projectName.git remote repository)
 
 - `git push origin [name of branch you want to push. ex: master]`
   (we can now push code to this remote branch, which remember is called "origin", and of course, you could give this “origin” another name, but "origin" is simply the standard name)

@@ -5810,7 +5810,7 @@ const modulesAndTooling = {
   title: 'Modern JavaScript Development: Modules and Tooling',
   sections: [
     {
-      sectionTitle: 'Introducing to Javascript Modules',
+      sectionTitle: 'Introducing to JavaScript Modules',
       sectionLinks: [
         {
           linkTitle: 'JavaScript modules',
@@ -5835,80 +5835,47 @@ const modulesAndTooling = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Introducing_to_JavaScript_modules.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'The Module Pattern with IIFE',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Exporting and Importing in native ES6 Modules',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: `/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Exporting_and_Importing_in_native_ES6_Modules.html`,
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'CommonJS & AMD Modules',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Named exports/imports in ES6 Modules',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Exporting and importing in native ES6 Modules',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Default exports/imports in ES6 Modules',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Named exports/imports in ES6 Modules',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'The Module Pattern with IIFE',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Default exports/imports in ES6 Modules',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'CommonJS & AMD Modules',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Mixed imports in ES6 Modules',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Imports are a Live Connection to Exports',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -5919,7 +5886,8 @@ const modulesAndTooling = {
       sectionTitle: 'Introduction to NPM',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Introduction_to_NPM.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -5938,7 +5906,8 @@ const modulesAndTooling = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Bundling_With_Parcel_and_NPM_Scripts.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -5976,7 +5945,8 @@ const modulesAndTooling = {
         },
       ],
       sectionText: [],
-      sectionSource: `/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Model_View_Controller_(MVC)_Arhitecture.html`,
+      sectionSource:
+        '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Model_View_Controller_(MVC)_Arhitecture.html',
       sectionArticles: [
         {
           articleTitle: 'Why we worry about software arhitecture?',
@@ -6015,7 +5985,8 @@ const modulesAndTooling = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Version_control_with_Git.html',
       sectionArticles: [
         {
           articleTitle: '',
