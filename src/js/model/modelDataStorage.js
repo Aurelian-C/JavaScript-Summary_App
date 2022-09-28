@@ -2166,19 +2166,28 @@ const arraysAndSets = {
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/concat.html',
         },
         {
-          articleTitle: 'flat() & flatMap()',
+          articleTitle: 'flat()',
           articleLinks: [
             {
               linkTitle: 'Array.prototype.flat()',
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat`,
             },
+          ],
+          articleText: [],
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/flat.html',
+        },
+        {
+          articleTitle: 'flatMap()',
+          articleLinks: [
             {
               linkTitle: 'Array.prototype.flatMap()',
               linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap`,
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/flatMap.html',
         },
         {
           articleTitle: 'indexOf()',
@@ -2189,7 +2198,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/indexOf.html',
         },
         {
           articleTitle: 'lastIndexOf()',
@@ -2200,7 +2210,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/lastIndexOf.html',
         },
         {
           articleTitle: 'findIndex()',
@@ -2211,7 +2222,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/findIndex.html',
         },
         {
           articleTitle: 'find()',

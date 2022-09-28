@@ -15,7 +15,11 @@ array.flat(depth);
 
 ## Return value
 
-A ==new array== with the sub-array elements concatenated into it.
+A ==**new array** with the sub-array elements concatenated into it==.
+
+## Some considerations about `flat()` method
+
+The `flat()` method is a copying method. It does not alter `this` but instead returns a shallow copy that contains the same elements as the ones from the original array.
 
 ## Example
 

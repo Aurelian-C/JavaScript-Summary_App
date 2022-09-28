@@ -23,17 +23,21 @@ array.flatMap(function(currentValue, index, array) { ... }, thisArg)
 
 ## Parameters
 
-==**callbackFn**== - a function that produces an element of the new Array. The function is called with the following arguments:
+#### ==**callbackFn**== 
 
-- **currentValue** - the current element being processed in the array;
-- **index** - the index of the current element being processed in the array;
-- **array** - the array **flatMap()** was called upon.
+A function that produces an element of the new Array. The function is called with the following arguments:
 
-==**thisArgOptional**== - value to use as `this` when executing `callbackFn`.
+- ==currentValue== - the current element being processed in the array;
+- ==index== - the index of the current element being processed in the array;
+- ==array== - the array `flatMap()` was called upon.
+
+#### ==**thisArg**== _(optional)_
+
+Value to use as `this` when executing `callbackFn`.
 
 ## Return value
 
-A ==new array== with each element being the result of the callback function and flattened to a depth of 1.
+A ==**new array**== with each element being the result of the callback function and flattened to a depth of 1.
 
 ## Reference
 
