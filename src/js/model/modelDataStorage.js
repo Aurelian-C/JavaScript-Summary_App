@@ -2126,7 +2126,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/map.html',
         },
         {
           articleTitle: 'filter()',
@@ -2137,7 +2138,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/filter.html',
         },
         {
           articleTitle: 'slice()',
@@ -2148,7 +2150,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/slice.html',
         },
         {
           articleTitle: 'concat()',
