@@ -2265,7 +2265,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/reduce.html',
         },
         {
           articleTitle: 'forEach()',
