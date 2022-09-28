@@ -782,81 +782,6 @@ const operators = {
       ],
     },
     {
-      sectionTitle: 'Binary logical operators',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Logical AND (&&)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: ``,
-        },
-        {
-          articleTitle: 'Logical OR (||)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: ``,
-        },
-        {
-          articleTitle: 'Short Circuiting with && and ||',
-          articleLinks: [
-            {
-              linkTitle:
-                'A Simpler Understanding of the Short-circuit Operators in JavaScript',
-              linkSource: `https://medium.com/@ezekielphlat/a-simpler-understanding-of-the-short-circuit-operators-in-javascript-d275a313cef1`,
-            },
-          ],
-          articleText: [],
-          articleSource: ``,
-        },
-        {
-          articleTitle: 'Nullish coalescing operator (??)',
-          articleLinks: [
-            {
-              linkTitle: 'Nullish coalescing operator (??)',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator`,
-            },
-          ],
-          articleText: [],
-          articleSource: ``,
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Equality operators',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Equality operator (==)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: ``,
-        },
-        {
-          articleTitle: 'Inequality operator (!=)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: ``,
-        },
-        {
-          articleTitle: 'Identity operator (===)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: ``,
-        },
-        {
-          articleTitle: 'Nonidentity operator (!==)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: ``,
-        },
-      ],
-    },
-    {
       sectionTitle: 'Relational operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
@@ -868,27 +793,22 @@ const operators = {
           articleText: [],
           articleSource: ``,
         },
+      ],
+    },
+    {
+      sectionTitle: 'Binary logical operators',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
         {
-          articleTitle: 'Less than operator (<)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: ``,
-        },
-        {
-          articleTitle: 'Greater than operator (>)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: ``,
-        },
-        {
-          articleTitle: 'Less than or equal operator (<=)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: ``,
-        },
-        {
-          articleTitle: 'Greater than or equal operator (>=)',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleTitle: 'Nullish coalescing operator (??)',
+          articleLinks: [
+            {
+              linkTitle: 'Nullish coalescing operator (??)',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator`,
+            },
+          ],
           articleText: [],
           articleSource: ``,
         },
@@ -919,25 +839,6 @@ const operators = {
         {
           linkTitle: 'Remainder (%)',
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: ``,
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Conditional (ternary) operator',
-      sectionLinks: [
-        {
-          linkTitle: 'Conditional (ternary) operator',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator`,
         },
       ],
       sectionText: [],
@@ -1005,30 +906,98 @@ const controlingProgamLogicAndFlow = {
       ],
     },
     {
-      sectionTitle: 'if, else if, else Statements',
+      sectionTitle: 'Binary logical operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: ``,
+      sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Logical AND (&&)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: ``,
+        },
+        {
+          articleTitle: 'Logical OR (||)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: ``,
+        },
+        {
+          articleTitle: 'Short Circuiting with && and ||',
+          articleLinks: [
+            {
+              linkTitle:
+                'A Simpler Understanding of the Short-circuit Operators in JavaScript',
+              linkSource: `https://medium.com/@ezekielphlat/a-simpler-understanding-of-the-short-circuit-operators-in-javascript-d275a313cef1`,
+            },
+          ],
+          articleText: [],
+          articleSource: ``,
         },
       ],
     },
     {
-      sectionTitle: 'Nesting Conditionals',
+      sectionTitle: 'Equality operators',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: ``,
+      sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Equality operator (==)',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
-          articleSource: '',
+          articleSource: ``,
+        },
+        {
+          articleTitle: 'Inequality operator (!=)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: ``,
+        },
+        {
+          articleTitle: 'Identity operator (===)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: ``,
+        },
+        {
+          articleTitle: 'Nonidentity operator (!==)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: ``,
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Relational operators',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Less than operator (<)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: ``,
+        },
+        {
+          articleTitle: 'Greater than operator (>)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: ``,
+        },
+        {
+          articleTitle: 'Less than or equal operator (<=)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: ``,
+        },
+        {
+          articleTitle: 'Greater than or equal operator (>=)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: ``,
         },
       ],
     },
@@ -1047,7 +1016,7 @@ const controlingProgamLogicAndFlow = {
       ],
     },
     {
-      sectionTitle: 'Logical operators (&&, ||, !)',
+      sectionTitle: 'if, else if, else Statements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: ``,
@@ -1061,7 +1030,7 @@ const controlingProgamLogicAndFlow = {
       ],
     },
     {
-      sectionTitle: 'Comparison Operators (== vs ===)',
+      sectionTitle: 'Nesting Conditionals',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: ``,
@@ -1137,7 +1106,7 @@ const loops = {
       ],
     },
     {
-      sectionTitle: 'For Loop',
+      sectionTitle: '"for" Loop',
       sectionLinks: [
         {
           linkTitle: 'For Loop',
@@ -1170,7 +1139,7 @@ const loops = {
       ],
     },
     {
-      sectionTitle: 'For...Of',
+      sectionTitle: 'for...of',
       sectionLinks: [
         {
           linkTitle: 'for...of statement',
@@ -1189,7 +1158,7 @@ const loops = {
       ],
     },
     {
-      sectionTitle: 'For...In',
+      sectionTitle: 'for...in',
       sectionLinks: [
         {
           linkTitle: 'for...in statement',
@@ -1208,7 +1177,7 @@ const loops = {
       ],
     },
     {
-      sectionTitle: 'Intro to While Loop',
+      sectionTitle: 'Intro to "while" Loop',
       sectionLinks: [
         {
           linkTitle: 'While loop',
@@ -1227,7 +1196,7 @@ const loops = {
       ],
     },
     {
-      sectionTitle: 'Break and Continue Keywords',
+      sectionTitle: '"break" and "continue" Keywords',
       sectionLinks: [
         {
           linkTitle: 'Break and Continue Keywords',

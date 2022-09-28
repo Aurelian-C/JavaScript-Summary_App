@@ -50,8 +50,6 @@ for (let i = 0; i <= 1000000; i++) {
 // With a Compiler, the code is read and converted into a "computer language" code, and after that the "computer language" code is executed. With a Compiler, instead of calling someCalculation() 1.000.000 times like Interpreter does, Compiler can just replace someCalculation function with something like 9, because he know that we want to return 9. A Compiler doesn't need to repeat the translation for each pass through in that loop. These sort of edits that Compiler do are called optimizations.
 ```
 
-
-
 > Note: Have you heard of Babel or TypeScript? They are heavily used in the JavaScript ecosystem and you should now have a good idea of what they are:
 >
 > - [Babel](https://babeljs.io/) is a _JavaScript compiler_ that takes your modern JS code and returns browser compatible JS (older JS code).
