@@ -1,6 +1,6 @@
 # Array.prototype.reverse()
 
-The `reverse()` method ==**reverses the order** of the elements== in an array. The first array element becomes the last, and the last array element becomes the first. The `reverse()` method ==**overwrites** the original== array.
+The `reverse()` method ==**reverses the order** of the elements== in an array and ==returns the reference to the same array==. The first array element becomes the last, and the last array element becomes the first. The `reverse()` method ==**mutates** the original array==.
 
 ## Syntax
 
@@ -10,7 +10,7 @@ array.reverse();
 
 ## Return value
 
-The reversed array.
+The reference to the original array, now reversed.
 
 ## Reference
 

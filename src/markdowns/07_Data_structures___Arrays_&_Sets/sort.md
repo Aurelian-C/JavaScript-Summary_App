@@ -6,9 +6,15 @@ Without passing a `compareFn` as argument, the ==**default** sort order is **asc
 
 > **Note**: Sorting alphabetically works well for strings ("Apple" comes before "Banana"). But, sorting numbers can produce incorrect results: "25" is bigger than "100", because "2" is bigger than "1". You can fix this by providing a `compareFn` (compare function).
 
-The `sort()` ==**overwrites** the original array==.
+The `sort()` ==**mutates** the original array==.
 
 The time and space complexity of the `sort()` cannot be guaranteed as it depends on the implementation.
+
+The `sort()` method:
+
+- sorts the elements of an array;
+- mutates the original array;
+- sorts the elements as strings in alphabetical and ascending order.
 
 ## Syntax
 
@@ -28,7 +34,9 @@ array.sort(function compareFn(a, b) { ... })
 
 ## Parameters
 
-==**compareFn**== (optional) - specifies a ==**function** that defines the **sort order**==. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.
+#### ==**compareFn**== _(optional)_
+
+Specifies a ==**function** that defines the **sort order**==. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.
 
 - **a** - the first element for comparison.
 - **b** - the second element for comparison.
@@ -46,17 +54,18 @@ If `compareFn` is supplied, all non-`undefined` array elements are sorted accord
 The `compareFn` function has the following form:
 
 ```js
-function compare(a, b) {
+function compareFn(a, b) {
   if (a is less than b by some ordering criterion) {
-    return -1;
+    return -1; // sort a before b
   }
   if (a is greater than b by the ordering criterion) {
-    return 1;
+    return 1; // sort b before a
   }
-  // a must be equal to b
-  return 0;
+  return 0;	// keep original order of a and b
 }
 ```
+
+The `compareFn` defines a sort order. The `compareFn` should return a negative, zero, or positive value, depending on the arguments.
 
 | `compareFunction(a, b)` return value |             sort order             |
 | :----------------------------------: | :--------------------------------: |

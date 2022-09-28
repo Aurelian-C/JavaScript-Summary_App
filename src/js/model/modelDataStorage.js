@@ -2016,7 +2016,7 @@ const arraysAndSets = {
       ],
     },
     {
-      sectionTitle: 'Array Methods',
+      sectionTitle: 'Array Prototype Methods',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: '',
@@ -2030,7 +2030,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: ``,
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/push.html',
         },
         {
           articleTitle: 'unshift()',
@@ -2041,7 +2042,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/unshift.html',
         },
         {
           articleTitle: 'pop()',
@@ -2052,7 +2054,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/pop.html',
         },
         {
           articleTitle: 'shift()',
@@ -2063,7 +2066,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/shift.html',
         },
         {
           articleTitle: 'splice()',
@@ -2074,7 +2078,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/splice.html',
         },
         {
           articleTitle: 'reverse()',
@@ -2085,7 +2090,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/reverse.html',
         },
         {
           articleTitle: 'sort()',
@@ -2096,7 +2102,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/sort.html',
         },
         {
           articleTitle: 'fill()',
@@ -2107,7 +2114,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/fill.html',
         },
         {
           articleTitle: 'map()',
@@ -2151,7 +2159,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/concat.html',
         },
         {
           articleTitle: 'flat() & flatMap()',
@@ -2280,6 +2289,25 @@ const arraysAndSets = {
           articleSource: '',
         },
         {
+          articleTitle: 'entries()',
+          articleLinks: [
+            {
+              linkTitle: 'Array.prototype.entries()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Array Static Methods',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
           articleTitle: 'Array.isArray()',
           articleLinks: [
             {
@@ -2288,7 +2316,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/Array.isArray.html',
         },
         {
           articleTitle: 'Array.from()',
@@ -2299,18 +2328,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: ``,
-        },
-        {
-          articleTitle: 'Array.entries()',
-          articleLinks: [
-            {
-              linkTitle: 'Array.prototype.entries()',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/Array.from.html',
         },
       ],
     },

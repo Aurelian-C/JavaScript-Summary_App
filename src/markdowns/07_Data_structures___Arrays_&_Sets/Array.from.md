@@ -4,7 +4,7 @@ The `Array.from()` ==static method== creates a new, ==**shallow-copied**== Array
 
 > **Note**: `Array.from()` is a static property of the JavaScript Array object. You can only use it as `Array.from()`. Using `x.from()`, where `x` is an array will return `undefined`.
 
-`Array.from()` lets you create `Array`s from:
+`Array.from()` method returns an array from:
 
 - ==Array-Like== objects (objects with a `length` property and indexed elements);
 - ==Iterable== objects.

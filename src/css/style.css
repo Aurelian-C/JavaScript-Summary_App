@@ -206,7 +206,7 @@ body {
 
 .card__descriptor-anchor:link,
 .card__descriptor-anchor:visited {
-  color: red;
+  color: var(--has-content-color);
   text-decoration: none;
   font-size: var(--descriptor-title--font-size);
 }
