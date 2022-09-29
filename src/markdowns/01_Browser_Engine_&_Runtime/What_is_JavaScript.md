@@ -1,5 +1,7 @@
 # What is JavaScript?
 
+![what_is_javascript](../../img/what_is_javascript.jpg)
+
 JavaScript is a **scripting** or **programming language** that allows you to implement complex features on web pages.
 
 JavaScript is a:
