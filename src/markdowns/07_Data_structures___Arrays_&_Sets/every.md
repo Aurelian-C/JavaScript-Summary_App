@@ -1,6 +1,6 @@
 # Array.prototype.every()
 
-The `every()` method ==tests whether **all elements** in the array **pass the test** implemented by the **provided function**==. It ==returns a **Boolean** value==.
+The `every()` method ==tests whether **all elements** in the array **pass the test** implemented by the **provided function**==. It ==**returns a Boolean** value==.
 
 The `every()` method:
 
@@ -8,7 +8,7 @@ The `every()` method:
 - returns `true` if the function returns `true` for all elements;
 - returns `false` if the function returns `false` for one element;
 - does not execute the function for empty elements;
-- does not change the original array.
+- does not mutates the original array.
 
 ## Syntax
 
@@ -31,13 +31,17 @@ array.every(function(element, index, array) { ... }, thisArg)
 
 ## Parameters
 
-**callbackFn** - a function to test for each element. The function is called with the following arguments:
+#### ==**callbackFn**==
 
-- **element** - the current element being processed in the array;
-- **index** - the index of the current element being processed in the array;
-- **array** - the array `every()` was called upon.
+A function to test for each element. The function is called with the following arguments:
 
-==**thisArg**== (optional) - a value to use as `this` when executing `callbackFn`.
+- ==element== - the current element being processed in the array;
+- ==index== - the index of the current element being processed in the array;
+- ==array== - the array `every()` was called upon.
+
+#### ==**thisArg**== _(optional)_
+
+A value to use as `this` when executing `callbackFn`.
 
 ## Return value
 
@@ -45,9 +49,11 @@ array.every(function(element, index, array) { ... }, thisArg)
 
 ## Some considerations about the `every()` method
 
-The `every()` method executes the provided `callbackFn` function ==once for each element== present in the array until it finds the one where `callbackFn` returns a ==falsy value==. If such an element is found, the `every()` method immediately returns `false`. Otherwise, if `callbackFn` returns a ==truthy value== for all elements, `every()` returns `true`.
+The `every()` method executes the provided `callbackFn` function ==_once_ for each element== present in the array until it finds the one where `callbackFn` returns a ==falsy value==. If such an element is found, the `every()` method immediately returns `false`. Otherwise, if `callbackFn` returns a ==truthy value== for all elements, `every()` returns `true`.
 
-`callbackFn` is invoked only for array indexes which have assigned values. It is not invoked for indexes which have been deleted, or which have never been assigned values.
+`callbackFn` is ==invoked only for array indexes which have assigned values==. It is not invoked for indexes which have been deleted, or which have never been assigned values.
+
+If a `thisArg` parameter is provided to `every()`, it will be used as callback's `this` value. Otherwise, the value `undefined` will be used as its `this` value.
 
 `every` does ==**not mutate** the array== on which it is called.
 

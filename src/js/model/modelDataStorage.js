@@ -1860,10 +1860,12 @@ const arraysAndSets = {
       sectionTitle: 'Introduction to Arrays',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/07_Data_structures___Arrays_&_Sets/Introduction_to_Arrays.html',
       sectionArticles: [
         {
-          articleTitle: 'What is an array?',
+          articleTitle:
+            'An array is a single object that contain multiple values stored in a list',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -1899,13 +1901,7 @@ const arraysAndSets = {
           articleSource: '',
         },
         {
-          articleTitle: 'Manipulation arrays',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Arrays are reference types',
+          articleTitle: 'Accessing and modifying array items',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -1917,7 +1913,36 @@ const arraysAndSets = {
           articleSource: '',
         },
         {
+          articleTitle: 'Arrays are reference types',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
           articleTitle: 'Nested / multidimensional arrays',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Destructuring Arrays',
+      sectionLinks: [
+        {
+          linkTitle: 'ES6 Destructuring: The Complete Guide',
+          linkSource: `https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f`,
+        },
+        {
+          linkTitle: 'Destructuring assignment',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment`,
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -1950,29 +1975,6 @@ const arraysAndSets = {
     {
       sectionTitle: 'Rest Pattern in Arrays',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Destructuring Arrays',
-      sectionLinks: [
-        {
-          linkTitle: 'ES6 Destructuring: The Complete Guide',
-          linkSource: `https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f`,
-        },
-        {
-          linkTitle: 'Destructuring assignment',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment`,
-        },
-      ],
       sectionText: [],
       sectionSource: '',
       sectionArticles: [
@@ -2203,7 +2205,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/find.html',
         },
         {
           articleTitle: 'includes()',
@@ -2214,7 +2217,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/includes.html',
         },
         {
           articleTitle: 'some()',
@@ -2225,7 +2229,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/some.html',
         },
         {
           articleTitle: 'every()',
@@ -2236,7 +2241,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/every.html',
         },
         {
           articleTitle: 'join()',
@@ -2247,7 +2253,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/join.html',
         },
         {
           articleTitle: 'reduce()',
@@ -2270,7 +2277,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/forEach.html',
         },
         {
           articleTitle: 'entries()',
@@ -2281,7 +2289,8 @@ const arraysAndSets = {
             },
           ],
           articleText: [],
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/07_Data_structures___Arrays_&_Sets/entries.html',
         },
       ],
     },
@@ -2321,7 +2330,8 @@ const arraysAndSets = {
       sectionTitle: 'Which array method to use?',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/07_Data_structures___Arrays_&_Sets/Which_array_method_to_use.html',
       sectionArticles: [
         {
           articleTitle: '',
