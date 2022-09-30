@@ -3314,7 +3314,7 @@ const standardBuildInObjects = {
           articleSource: '',
         },
         {
-          articleTitle: 'toFixed()',
+          articleTitle: 'Number.prototype.toFixed()',
           articleLinks: [
             {
               linkTitle: 'toFixed() method',
