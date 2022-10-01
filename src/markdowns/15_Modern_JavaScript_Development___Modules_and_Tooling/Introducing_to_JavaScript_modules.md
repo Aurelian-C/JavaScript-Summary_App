@@ -185,6 +185,16 @@ However, what you probably should really not do is to mix Default and Named Impo
 
 Imports a ==**LIVE CONNECTION**== to exports, and that's something really important to keep in mind. So one more time, ==IMPORTS ARE **NOT COPIES** OF THE EXPORT==, and keep this in mind when you write your own programs because this can of course leads to bugs if you don't know what you're doing.
 
+## When Does Module Code Execute?
+
+==Code in your modules runs when the module is **imported and loaded for the _first time_**==.
+
+All code that you have in a module does execute but it only executes ==once== when a module is ==imported and used for the first time==.
+
+## Module Scope & [`globalThis`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis)
+
+==Modules have their **own scope**==, _something defined in a module is not shared with others unless you export it_.
+
 ## References
 
 1. [The Complete JavaScript Course. From Zero to Expert! - Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNCuaAhZ8UB5kIldtb76eeAyfM0SUKeceBq3FKF24pNxDVe-_g0-DPxoCnWwQAvD_BwE)

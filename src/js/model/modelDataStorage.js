@@ -434,6 +434,12 @@ const variablesAndValues = {
           articleText: [],
           articleSource: '',
         },
+        {
+          articleTitle: 'Truthy & Falsy Values',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
       ],
     },
     {
@@ -1019,6 +1025,20 @@ const controlingProgamLogicAndFlow = {
       ],
     },
     {
+      sectionTitle: 'Beware when comparing Objects & Arrays for equality',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: ``,
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'if, else if, else Statements',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
@@ -1247,6 +1267,24 @@ const functionalProgramming = {
           articleText: [],
           articleSource: '',
         },
+        {
+          articleTitle: 'Functions vs Methods',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Function Expressions: Storing Functions in Variables',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Functions used as variable values',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
       ],
     },
     {
@@ -1256,19 +1294,19 @@ const functionalProgramming = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Function Declarations',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Function Expressions',
+          articleTitle: 'Function Expressions vs Function Declarations',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
           articleTitle: 'Arrow Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Anonymous Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -1290,7 +1328,7 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Function parameters',
+      sectionTitle: 'Function parameters & arguments',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: '',
@@ -1540,20 +1578,6 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Functions used as variable values',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
       sectionTitle: 'Closures & local vs global variables',
       sectionLinks: [
         {
@@ -1578,6 +1602,12 @@ const functionalProgramming = {
         },
         {
           articleTitle: 'Closures',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Closures & Memory Management',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -1698,6 +1728,32 @@ const functionalProgramming = {
       ],
     },
     {
+      sectionTitle: 'Advanced Function Concepts',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Pure Functions & Side-Effects',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Impure vs Pure Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Factory Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Scheme + Java',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
@@ -1727,20 +1783,6 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Partial Application',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Pure Functions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: '',
@@ -1821,6 +1863,18 @@ const arraysAndSets = {
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Introduction_to_Arrays.html',
       sectionArticles: [
         {
+          articleTitle: 'What are "Iterables" and "Array-like Objects"?',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Arrays vs Primitive Values',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
           articleTitle:
             'An array is a single object that contain multiple values stored in a list',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
@@ -1877,6 +1931,12 @@ const arraysAndSets = {
         },
         {
           articleTitle: 'Nested / multidimensional arrays',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Which data can you store in arrays?',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -2299,6 +2359,17 @@ const arraysAndSets = {
           articleSource:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/entries.html',
         },
+        {
+          articleTitle: 'Chaining Methods in JavaScript',
+          articleLinks: [
+            {
+              linkTitle: 'Array.prototype.entries()',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
       ],
     },
     {
@@ -2349,20 +2420,6 @@ const arraysAndSets = {
       ],
     },
     {
-      sectionTitle: 'The Magic of Chaining Methods',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
       sectionTitle: 'Data structures - Sets',
       sectionLinks: [
         {
@@ -2403,6 +2460,18 @@ const objectsAndMaps = {
       sectionSource: '',
       sectionArticles: [
         {
+          articleTitle: "What's an object?",
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Objects vs Primitive Values',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
           articleTitle: 'Creating an object - Object literals',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
@@ -2415,19 +2484,32 @@ const objectsAndMaps = {
           articleSource: '',
         },
         {
-          articleTitle: 'Accesing an object (. vs [] notation)',
+          articleTitle: "Accesing object's properties (. vs [] notation)",
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'Modifying an object',
+          articleTitle: 'Special Key Names & Square Bracket Property Access',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'ES6 enhanced object literals',
+          articleTitle:
+            'Dynamic Property Access & Setting Properties Dynamically',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Adding, modifying & deleting properties',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Shorthand Property Syntax',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -2569,7 +2651,30 @@ const objectsAndMaps = {
       ],
     },
     {
-      sectionTitle: 'Object methods',
+      sectionTitle: 'Object Prototype Methods',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'toString()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Object Static Methods',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: '',
@@ -2655,17 +2760,6 @@ const objectsAndMaps = {
           articleText: [],
           articleSource: '',
         },
-        {
-          articleTitle: 'Object.prototype.toString()',
-          articleLinks: [
-            {
-              linkTitle: 'Object.prototype.toString() method',
-              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString`,
-            },
-          ],
-          articleText: [],
-          articleSource: '',
-        },
       ],
     },
     {
@@ -2738,6 +2832,12 @@ const oop = {
       sectionSource: '',
       sectionArticles: [
         {
+          articleTitle: 'What is "Object-Oriented Programming"?',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
           articleTitle: 'OOP characteristics',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
@@ -2789,6 +2889,12 @@ const oop = {
         },
         {
           articleTitle: 'Setting a prototype',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'The Prototype Chain and the Global Object',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -2855,6 +2961,12 @@ const oop = {
           articleSource: '',
         },
         {
+          articleTitle: 'Classes & Prototypes',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
           articleTitle: 'Prototype methods',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
@@ -2886,6 +2998,18 @@ const oop = {
         },
         {
           articleTitle: 'Chaining Methods',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '"super" keyword',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '"new" keyword',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -2993,11 +3117,15 @@ const standardBuildInObjects = {
       ],
     },
     {
-      sectionTitle: 'Regular expressions',
+      sectionTitle: 'Introducing Regular Expressions ("RegEx")',
       sectionLinks: [
         {
           linkTitle: 'Regular expressions',
           linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions`,
+        },
+        {
+          linkTitle: 'How to Split a String by a Regex in JavaScript',
+          linkSource: `https://bobbyhadz.com/blog/javascript-split-string-by-regex#:~:text=To%20split%20a%20string%20by%20a%20regular%20expression%2C%20pass%20a,into%20an%20array%20of%20substrings.`,
         },
       ],
       sectionText: [],
@@ -3786,6 +3914,91 @@ const asynchronous = {
       ],
     },
     {
+      sectionTitle: 'Working with Http Requests',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'How The Web Works',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Sending a GET Request',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'JSON Data & Parsing Data',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Promisifying Http Requests (with XMLHttpRequest)',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Sending Data with a POST Request',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Sending a DELETE Request',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Handling Errors',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Using the fetch() API',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'POSTing Data with the fetch() API',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Adding Request Headers',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'fetch() & Error Handling',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'XMLHttpRequest vs fetch()',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Intro to AJAX',
       sectionLinks: [
         {
@@ -3957,7 +4170,7 @@ const asynchronous = {
       ],
     },
     {
-      sectionTitle: 'Chaining Promises',
+      sectionTitle: 'Chaining Multiple Promises',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: '',
@@ -3996,11 +4209,26 @@ const asynchronous = {
       ],
     },
     {
-      sectionTitle: 'Throwing Errors Manually',
+      sectionTitle: 'Throwing Custom Errors Manually',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: '',
       sectionArticles: [
+        {
+          articleTitle: 'The "Error" Object',
+          articleLinks: [
+            {
+              linkTitle: 'The throw statement',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw`,
+            },
+            {
+              linkTitle: 'Error objects',
+              linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error`,
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
         {
           articleTitle: 'throw new Error()',
           articleLinks: [
@@ -4076,6 +4304,12 @@ const asynchronous = {
         {
           articleTitle:
             'Store ‘await’ Promises results in variables like const',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'async/ await vs "Raw Promises"',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -4248,7 +4482,18 @@ const domManipulation = {
       sectionSource: ``,
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Document and Window Object',
+          articleLinks: [
+            {
+              linkTitle: '',
+              linkSource: '',
+            },
+          ],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: "Understanding the DOM and how it's created",
           articleLinks: [
             {
               linkTitle: '',
@@ -5226,7 +5471,19 @@ const domEvents = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Different Ways of Listening to Events',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '2 Ways NOT to Add Events',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Supported Event Types',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -5261,8 +5518,13 @@ const domEvents = {
       ],
     },
     {
-      sectionTitle: '2 Ways NOT to Add Events',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionTitle: 'Event Handler Functions & "this" keyword',
+      sectionLinks: [
+        {
+          linkTitle: '',
+          linkSource: '',
+        },
+      ],
       sectionText: [],
       sectionSource: '',
       sectionArticles: [
@@ -5923,6 +6185,12 @@ const modulesAndTooling = {
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Introducing_to_JavaScript_modules.html',
       sectionArticles: [
         {
+          articleTitle: 'Splitting Code in a Sub-optimal Way',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
           articleTitle: 'The Module Pattern with IIFE',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
@@ -5964,6 +6232,18 @@ const modulesAndTooling = {
           articleText: [],
           articleSource: '',
         },
+        {
+          articleTitle: 'When Does Module Code Execute?',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Module Scope & "globalThis" object',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
       ],
     },
     {
@@ -5974,7 +6254,51 @@ const modulesAndTooling = {
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Introduction_to_NPM.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Project Limitations & Why We Need Tools',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Setting Up a npm Project',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Working with npm Packages',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Using Third Party Packages with npm',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Working with JavaScript Libraries',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'What & Why',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Adding Libraries',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Example: Axios Library & Http Requests',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -6016,6 +6340,42 @@ const modulesAndTooling = {
         {
           articleTitle:
             'Compile your modern JavaScript code back to ES5 code with Babel',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'What Is "Browser Support" About?',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Determining Browser Support For A JavaScript Feature',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Solution: Feature Detection + Fallback Code',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Solution: Using Polyfills',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Solution: Transpiling Code',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Improvement: Automatically Detect + Add Polyfills',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
