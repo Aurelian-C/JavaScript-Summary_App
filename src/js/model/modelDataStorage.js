@@ -404,6 +404,39 @@ const variablesAndValues = {
       ],
     },
     {
+      sectionTitle: 'Type Coercion',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource:
+        '/src/markdowns/02_JavaScript_Types_&_Variables/Type_coercion.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Type Coercion vs Type Conversion',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Implicit and Explicit Conversion',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Type Coercion for Primitive values',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Type Coercion for Objects',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Statements vs Expressions',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
@@ -424,49 +457,19 @@ const variablesAndValues = {
       sectionSource: ``,
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Declaring & defining variables',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'var',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: ``,
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'var',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'const',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: ``,
-      sectionArticles: [
         {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'let',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: ``,
-      sectionArticles: [
-        {
-          articleTitle: '',
+          articleTitle: 'let & const',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -1221,7 +1224,7 @@ const functionalProgramming = {
   title: 'Functional Programming (FP)',
   sections: [
     {
-      sectionTitle: 'Function introduction',
+      sectionTitle: 'Functions introduction',
       sectionLinks: [
         {
           linkTitle:
@@ -1233,7 +1236,13 @@ const functionalProgramming = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Functions are objects',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Function hoisting',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -1260,6 +1269,20 @@ const functionalProgramming = {
         },
         {
           articleTitle: 'Arrow Functions',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Function return statement',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -1300,11 +1323,51 @@ const functionalProgramming = {
       ],
     },
     {
+      sectionTitle: 'Rest Parameters',
+      sectionLinks: [
+        {
+          linkTitle: 'Rest parameters',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters`,
+        },
+      ],
+      sectionText: [],
+      sectionSource:
+        '/src/markdowns/06_Functional_Programming_(FP)/Rest_parameter_and_functions.html',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Destructuring Parameters',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Function invocation',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: '',
       sectionArticles: [
+        {
+          articleTitle: '"Direct" vs "Indirect" Function Execution',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
         {
           articleTitle: 'Invoking a JavaScript Function',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
@@ -1326,6 +1389,30 @@ const functionalProgramming = {
                 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates',
             },
           ],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Spread syntax for function calls',
+      sectionLinks: [
+        {
+          linkTitle: 'Spread syntax (...)',
+          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax`,
+        },
+        {
+          linkTitle: 'How to Use the Spread Operator (…) in JavaScript',
+          linkSource: `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
+        },
+      ],
+      sectionText: [],
+      sectionSource:
+        '/src/markdowns/06_Functional_Programming_(FP)/Spread_syntax_and_function_calls.html',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
@@ -1453,20 +1540,6 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Function return statement',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
       sectionTitle: 'Functions used as variable values',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
@@ -1512,25 +1585,6 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Function hoisting',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
       sectionTitle:
         'Self-Invoking functions / Immediately Invoked Function Expressions (IIFE)',
       sectionLinks: [
@@ -1551,59 +1605,7 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Functions are objects',
-      sectionLinks: [
-        {
-          linkTitle: '',
-          linkSource: '',
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Rest Parameters',
-      sectionLinks: [
-        {
-          linkTitle: 'Rest parameters',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters`,
-        },
-      ],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Destructuring Parameters',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Arrow Function',
+      sectionTitle: 'Arrow Functions',
       sectionLinks: [
         {
           linkTitle: 'Arrow function expressions',
@@ -1614,51 +1616,19 @@ const functionalProgramming = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Arrow Function: Implicit Returns',
+          articleTitle: 'Arrow Functions: Implicit Returns',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'Arrow Function and THIS keyword',
+          articleTitle: 'Arrow Functions and the "this" keyword',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Regular Functions vs. Arrow Functions',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Spread syntax for function calls',
-      sectionLinks: [
-        {
-          linkTitle: 'Spread syntax (...)',
-          linkSource: `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax`,
-        },
-        {
-          linkTitle: 'How to Use the Spread Operator (…) in JavaScript',
-          linkSource: `https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab`,
-        },
-      ],
-      sectionText: [],
-      sectionSource:
-        '/src/markdowns/06_Functional_Programming_(FP)/Spread_syntax_and_function_calls.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
+          articleTitle: 'Regular Functions vs Arrow Functions',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -1715,20 +1685,6 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Callbacks',
-      sectionLinks: [{ linkTitle: '', linkSource: '' }],
-      sectionText: [],
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleLinks: [{ linkTitle: '', linkSource: '' }],
-          articleText: [],
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Functions vs Objects',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
       sectionSource: '',
