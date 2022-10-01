@@ -1,8 +1,8 @@
 # Introduction to Standard Build-in Objects
 
-## Global objects vs Global Object
+## Global objects vs Global Object (`window`)
 
-The term =="global objects"== (or standard built-in objects) here is not to be confused with the ==global object== (window). Here, =="global objects" refer to **objects in the global scope**==.
+The term =="global objects"== (or standard built-in objects) here is not to be confused with the ==global object== `window`. Here, =="global objects" refer to **objects in the global scope**==.
 
 The global object itself can be accessed using the this operator in the global scope. In fact, the global scope consists of the properties of the global object, including inherited properties, if any.
 

@@ -1,4 +1,4 @@
-# Spread syntax (...) and arrays
+# Spread syntax (...) and function calls
 
 Spread syntax `...` allows an ==**iterable**==, such as an ==array== or ==string==, to be ==**expanded**== in places where zero or more arguments (for ==**function** calls==) or elements (for ==**array** literals==) are expected. In an ==**object ** literal== spread syntax allows an _object expression to be expanded_ in places where zero or more key-value pairs are expected.
 
@@ -7,13 +7,20 @@ Spread syntax `...` allows an ==**iterable**==, such as an ==array== or ==string
 Spread syntax looks exactly like rest syntax. In a way, _spread syntax is the opposite of [rest syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)_. ==Spread syntax **"expands"** an array into its elements, while rest syntax collects multiple elements and **"condenses"** them into a single element==.
 
 ```js
-// Spread syntax
-const arr1 = ['a', 1, false];
-const arr2 = [...arr1, 'c', true]
+// <<<<< Rest syntax >>>>>
+function a(param1, ...param2) {
+    console.log(param1, param2);
+}
+a(1, 2, 3, 4, 5); // 1  [2, 3, 4, 5]
 
-// Rest syntax
-const [a, ...b] = arr1;
-console.log(b) // [1, false]
+// <<<<< Spread syntax >>>>>
+const arg = [1, 2, 3, 4, 5];
+
+function a(param1, param2, param3) {
+    console.log(param1, param2, param3)
+}
+a(...arg); // 1 2 3
+
 ```
 
 ## Syntax
@@ -43,110 +50,46 @@ let objClone = { ...obj, key: 'value' };
 
 Rest syntax `...` looks exactly like Spread syntax `...`. In a way, ==Rest syntax is the opposite of Spread syntax==. ==Spread syntax "**expands**"== an array into its elements, while ==Rest syntax **collects**== multiple elements and "condenses" them into a single element.
 
-## Spread in array literals
+## Spread in function calls
 
-### A more powerful array literal
+### Replace `apply()`
 
-Without `spread` syntax, to create a new array using an existing array as one part of it, the array literal syntax is no longer sufficient and imperative code must be used instead using a combination of `push()`, `splice()`, `concat()`, etc. With `spread` syntax this becomes much more succinct:
-
-```js
-let parts = ['shoulders', 'knees'];
-let lyrics = ['head', ...parts, 'and', 'toes'];
-//  ["head", "shoulders", "knees", "and", "toes"]
-```
-
-> **Note**: spread operator `...` is an operator that in the end pulls out all elements of an array and gives them to you as a standalone list of elements.
-
-> **Note**: Just like `spread` for functions argument lists, `...` can be used anywhere in the array literal, and may be used more than once.
-
-### Copy an array
+It is common to use `Function.prototype.apply()` in cases where you want to use the elements of an array as arguments to a function.
 
 ```js
-let arr = [1, 2, 3];
-let arr2 = [...arr]; // like arr.slice()
-
-arr2.push(4);
-//  arr2 becomes [1, 2, 3, 4]
-//  arr remains unaffected
+function myFunction(x, y, z) {}
+let args = [0, 1, 2];
+myFunction.apply(null, args);
 ```
 
-> **Note**: Spread syntax effectively goes one level deep while copying an array. Therefore, it may be unsuitable for copying multidimensional arrays, as the following example shows. (The same is true with `Object.assign()` and spread syntax)
->
-> ```js
-> let a = [[1], [2], [3]];
-> let b = [...a];
->
-> b.shift().shift();
-> //  1
->
-> //  Oh no!  Now array 'a' is affected as well:
-> a;
-> //  [[], [2], [3]]
-> ```
-
-==An important thing to keep in mind is when you use the spread operator to copies items that are reference values (arrays/objects), **you are copy the reference value of that items**==. The `persons` array store in fact a bunch of address to the places in memory of the items, so `copiesPersons` is a brand new array but you are copying inside of it all these address that you have in `persons` array. So the objects inside the `copiedPersons` array are still the old objects inside `persons` array.
+With `spread` syntax the above can be written as:
 
 ```js
-const persons = [
-  { name: 'Tom', age: 32 },
-  { name: 'Anna', age: 25 },
-];
-const copiedPersons = [...persons];
-
-persons[0].name = 'Brad';
-console.log(person[0].name); // Brad
-console.log(copiedPersons[0].name); // Brad
-
-persons === copiedPersons; //false
-persons[0] === copiedPersons[0]; //true
+function myFunction(x, y, z) {}
+let args = [0, 1, 2];
+myFunction(...args);
 ```
 
-### A better way to concatenate arrays
-
-`Array.prototype.concat()` is often used to concatenate an array to the end of an existing array. Without spread syntax, this is done as:
+Any argument in the argument list can use `spread` syntax, and the `spread` syntax can be **used multiple times**.
 
 ```js
-let arr1 = [0, 1, 2];
-let arr2 = [3, 4, 5];
-
-//  Append all items from arr2 onto arr1
-arr1 = arr1.concat(arr2);
+function myFunction(v, w, x, y, z) {}
+let args = [0, 1];
+myFunction(-1, ...args, 2, ...[3]);
 ```
 
-With spread syntax this becomes:
+### Apply for new operator
+
+When calling a constructor with `new` it's not possible to **directly** use an array and `apply()` (`apply()` does a `[[Call]]` and not a `[[Construct]]`). However, an array can be easily used with new thanks to `spread` syntax:
 
 ```js
-let arr1 = [0, 1, 2];
-let arr2 = [3, 4, 5];
-
-arr1 = [...arr1, ...arr2];
-//  arr1 is now [0, 1, 2, 3, 4, 5]
-// Note: Not to use const otherwise, it will give TypeError (invalid assignment)
+let dateFields = [1970, 0, 1]; // 1 Jan 1970
+let d = new Date(...dateFields);
 ```
 
-`Array.prototype.unshift()` is often used to insert an array of values at the start of an existing array. Without spread syntax, this is done as:
+## Spread with many values
 
-```js
-let arr1 = [0, 1, 2];
-let arr2 = [3, 4, 5];
-
-//  Prepend all items from arr2 onto arr1
-Array.prototype.unshift.apply(arr1, arr2);
-
-//  arr1 is now [3, 4, 5, 0, 1, 2]
-```
-
-With spread syntax, this becomes:
-
-```js
-let arr1 = [0, 1, 2];
-let arr2 = [3, 4, 5];
-
-arr1 = [...arr2, ...arr1];
-//  arr1 is now [3, 4, 5, 0, 1, 2]
-```
-
-> Note: Unlike `unshift()`, this creates a new `arr1`, and does not modify the original `arr1` array in-place.
+==When using spread syntax for function calls, be aware of the possibility of exceeding the JavaScript engine's argument length limit==. See [`Function.prototype.apply()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) for more details.
 
 ## Some considerations about spread syntax
 
@@ -177,5 +120,5 @@ const obj = { ...array }; // { 0: 1, 1: 2, 2: 3 }
 ## References
 
 1. [Spread syntax (...) - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
-2. [ES6 Spread Operator - w3schools](https://www.w3schools.com/react/react_es6_spread.asp)
-3. [How to Use the Spread Operator (…) in JavaScript - medium.com](https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab)
+1. [ES6 Spread Operator - w3schools](https://www.w3schools.com/react/react_es6_spread.asp)
+1. [How to Use the Spread Operator (…) in JavaScript - medium.com](https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab)

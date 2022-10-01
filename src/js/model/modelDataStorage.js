@@ -1642,7 +1642,7 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Spread for Function Calls',
+      sectionTitle: 'Spread syntax for function calls',
       sectionLinks: [
         {
           linkTitle: 'Spread syntax (...)',
@@ -1654,7 +1654,8 @@ const functionalProgramming = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/06_Functional_Programming_(FP)/Spread_syntax_and_function_calls.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -1999,7 +2000,7 @@ const arraysAndSets = {
       ],
     },
     {
-      sectionTitle: 'Spread in Array Literals',
+      sectionTitle: 'Spread syntax & array literals',
       sectionLinks: [
         {
           linkTitle: 'Spread syntax (...)',
@@ -2011,7 +2012,8 @@ const arraysAndSets = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/07_Data_structures___Arrays_&_Sets/Spread_syntax_and_arrays.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -2491,7 +2493,7 @@ const objectsAndMaps = {
       ],
     },
     {
-      sectionTitle: 'Spread in Object Literals',
+      sectionTitle: 'Spread syntax & object literals',
       sectionLinks: [
         {
           linkTitle: 'Spread syntax (...)',
@@ -2503,7 +2505,8 @@ const objectsAndMaps = {
         },
       ],
       sectionText: [],
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/08_Data_structures___Objects_&_Maps/Spread_syntax_and_object_literals.html',
       sectionArticles: [
         {
           articleTitle: '',
