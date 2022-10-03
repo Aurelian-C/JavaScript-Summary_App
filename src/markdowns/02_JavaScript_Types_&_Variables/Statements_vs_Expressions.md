@@ -4,11 +4,11 @@
 
 ## Expressions
 
-==Any unit of code that can be evaluated to a **value** is an expression==. Since ==**expressions produce values**==, they can appear anywhere in a program where JavaScript expects a value such as the arguments of a function invocation.
+==Any unit of code that can be evaluated to a **value** is an expression==. Since ==**expressions produce values**==, _they can appear anywhere in a program where JavaScript expects a value_, such as the arguments of a function invocation. 
 
 JavaScript has the following ==expression **categories**==:
 
-### **Arithmetic** expressions
+#### ==Arithmetic== expressions
 
 Arithmetic expressions **evaluate to a numeric value**.
 
@@ -17,7 +17,7 @@ Arithmetic expressions **evaluate to a numeric value**.
 10 + 13; // This is another expression that is evaluated to produce the numeric value 23
 ```
 
-### **String** expressions
+#### ==String== expressions
 
 String expressions are expressions that **evaluate to a string**.
 
@@ -26,7 +26,7 @@ String expressions are expressions that **evaluate to a string**.
 'hello' + 'world'; // evaluates to the string 'hello world'
 ```
 
-### **Logical** expressions
+#### ==Logical== expressions
 
 Expressions that **evaluate to the Boolean value** ```true``` or ```false``` are considered to be logical expressions. This set of expressions often involve the usage of logical operators:
 
@@ -41,7 +41,7 @@ true; //evaluates to boolean value true
 a === 20 && b === 30; // evaluates to true or false based on the values of a and b
 ```
 
-### **Primary** expressions
+#### ==Primary== expressions
 
 Primary expressions refer to **stand alone expressions** such as _literal values_, certain _keywords_ and _variable values_.
 
@@ -53,7 +53,7 @@ sum; // Value of variable sum
 this; // A keyword that evaluates to the current object
 ```
 
-### **Left-hand-side** expressions
+#### ==Left-hand-side== expressions
 
 Left-hand-side expressions are those that can **appear on the left side of an assignment expression**.
 
@@ -74,7 +74,7 @@ array[1] = 'hello';
 ++(a+1); // SyntaxError. Attempting to increment or decrement an expression that is not an lvalue will lead to errors.
 ```
 
-### **Assignment** expressions
+#### ==Assignment== expressions
 
 When expressions use the `=` operator to assign a value to a variable, it is called an assignment expression.
 
@@ -85,7 +85,7 @@ var b = (a = 1); // here the assignment expression (a = 1) evaluates to a value 
 
 The `=` operator expects an value as its left-side operand. The value of an assignment expression is the value of the right-side operand such as `55` in the above example. As a side effect, the `=` operator assigns the value on the right side to the value on the left side.
 
-### Expressions with side effects
+#### ==Expressions with side effects==
 
 As we just saw with assignment expressions, expressions with side effects are those that result in a change or a side effect such as setting or modifying the value of a variable through the assignment operator `=`, function call, incrementing or decrementing the value of a variable.
 
@@ -105,7 +105,7 @@ modify(); // modifies the value of a to 100.
 
 Statements in JavaScript can be classified into the following categories:
 
-### **Declaration** statements
+#### ==Declaration== statements
 
 Such type of statements create variables and functions by using the `var`, `let` or `const` and function statements respectively.
 
@@ -120,7 +120,7 @@ function greet(message) {
 }
 ```
 
-### **Expression** statements
+#### ==Expression== statements
 
 Wherever JavaScript expects a statement, you can also write an expression. Such statements are referred to as expression statements. But the reverse does not hold. You cannot use a statement in the place of an expression.
 
@@ -139,23 +139,24 @@ sum;
 b = 4 + 38;
 ```
 
-### **Conditional** Statements
+#### ==Conditional== Statements
 
 Conditional statements execute statements based on the value of an expression. Examples of conditional statements includes the `if..else` and `switch` statements.
 
 ```js
 // Syntax of an if statement. If the expression following the if statement evaluates to a truthy value, statement 1 is executed else statement 2 is executed.
-if (expression)
-    statement 1
-else
-    statement 2
+if (expression) {
+  statement 1;
+} else {
+  statement 2; 
+}
 ```
 
-### **Loops** and **Jumps**
+#### ==Loops== and ==Jumps==
 
 Looping statements includes the following statements: `while`, `do/while`, `for` and `for/in`. Jump statements are used to make the JavaScript interpreter jump to a specific location within the program. Examples of jump statements includes `break`, `continue`, `return` and `throw`.
 
-### **Function** Expressions vs Function Declarations
+#### ==Function Expressions== _vs_ ==Function Declarations==
 
 A function expression, particularly a named function expression, and a function declaration may look the same but their behavior is very different.
 

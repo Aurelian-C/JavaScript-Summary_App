@@ -1,12 +1,14 @@
 # let statement
 
-The `let` statement declares a **block-scoped local variable**, _optionally_ initializing it to a value.
+The `let` statement declares a ==**block-scoped local variable**==, ==_optionally_ initializing it to a value==.
 
-`let` allows you to declare variables that are **limited to the scope of a block statement**, or expression on which it is used, unlike the `var` keyword, which declares a variable globally, or locally to an entire function regardless of block scope. The other difference between `var` and `let` is that `let` is initialized to a value only when a parser evaluates it.
+`let` allows you to declare variables that are **limited to the scope of a block statement _or_ expression on which it is used**, unlike the `var` keyword, which declares a variable globally, or locally to an entire function regardless of block scope. The other difference between `var` and `let` is that `let` is initialized to a value only when a parser evaluates it.
 
-Just like `const` the `let` does not create properties of the `window` object when declared globally (in the top-most scope).
+Just like `const`, the `let` does not create properties of the `window` object when declared globally (in the top-most scope).
 
 > **Note**: Many issues with `let` variables can be avoided by declaring them at the top of the scope in which they are used (doing so may impact readability).
+
+![const_vs_let](../../img/const_vs_let.jpg)
 
 ## Scoping rules
 
@@ -164,8 +166,8 @@ The `if` block is evaluated because the outer `var foo` has a value. However due
 
 ## References
 
-1. [Storing the information you need — Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
+1. [Storing the information you need — Variables - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
 
-2. [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+2. [let - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
    

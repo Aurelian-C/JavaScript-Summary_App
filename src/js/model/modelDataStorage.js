@@ -443,13 +443,26 @@ const variablesAndValues = {
       ],
     },
     {
-      sectionTitle: 'Statements vs Expressions',
+      sectionTitle: 'Introduction to Variables',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: ``,
+      sectionSource:
+        '/src/markdowns/02_JavaScript_Types_&_Variables/Introduction_to_Variables.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Declaring a variable',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Initializing a variable',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Variable naming rules',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -457,25 +470,159 @@ const variablesAndValues = {
       ],
     },
     {
-      sectionTitle: 'Variables & Values',
+      sectionTitle: 'var',
       sectionLinks: [{ linkTitle: '', linkSource: '' }],
       sectionText: [],
-      sectionSource: ``,
+      sectionSource: '/src/markdowns/02_JavaScript_Types_&_Variables/var.html',
       sectionArticles: [
         {
-          articleTitle: 'Declaring & defining variables',
+          articleTitle: '"var" & hoisting',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'var',
+          articleTitle: '"var" is only function scoped, NOT block scoped',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
-          articleTitle: 'let & const',
+          articleTitle: '"var" can be redeclared without trigger an error',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'let',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource: '/src/markdowns/02_JavaScript_Types_&_Variables/let.html',
+      sectionArticles: [
+        {
+          articleTitle: '"let" & hoisting',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: `"let" can't be used before it's declared`,
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '"let" is function scoped & block scoped',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: `"let" can't be redeclared like "var"`,
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'const',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource:
+        '/src/markdowns/02_JavaScript_Types_&_Variables/const.html',
+      sectionArticles: [
+        {
+          articleTitle: '"const" & hoisting',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: `"const" can't be used before it's declared`,
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: '"const" is function scoped & block scoped',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: `"const" must be initialized when it's declared`,
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: `"const" can't be changed through reassignment`,
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: `"const" can't be redeclared like "var"`,
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Differences between var, let & const',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource:
+        '/src/markdowns/02_JavaScript_Types_&_Variables/Differences_between_var_let_&_const.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Declaration, Initialization & Hoisting differences',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Scope differences',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Duplicate variable declarations (redeclarations) differences',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Statements vs Expressions',
+      sectionLinks: [{ linkTitle: '', linkSource: '' }],
+      sectionText: [],
+      sectionSource:
+        '/src/markdowns/02_JavaScript_Types_&_Variables/Statements_vs_Expressions.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'A statement is an instruction to perform a specific action: creating variables, functions, loops etc.',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Any unit of code that can be evaluated to a value is an expression',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Expressions produce values',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
