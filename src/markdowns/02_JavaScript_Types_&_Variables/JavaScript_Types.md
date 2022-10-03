@@ -19,9 +19,11 @@ foo = "bar"; // foo is now a string
 foo = true; // foo is now a boolean
 ```
 
+With a statically typed language we have to declare the variables explicitly before using them. Dynamically typed languages are not bound to this constraint, they're not bound to a particular type. TypeScript allows us to make JavaScript to behave like a statically typed language.
+
 ## Strongly vs Weakly Typed 
 
-==JavaScript is also a **weakly typed language**==, _which means it allows implicit ==**type conversion**== when an operation involves mismatched types, instead of throwing type errors_.
+==JavaScript is also a **weakly typed language**==, _which means it ==**allows implicit type conversion**== when an operation involves mismatched types, instead of throwing type errors_.
 
 ```js
 const foo = 42; // foo is a number

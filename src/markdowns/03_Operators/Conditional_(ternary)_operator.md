@@ -35,4 +35,4 @@ if (age >= 18 && age <= 65) {
 }
 ```
 
-Ternary operator is an expression vs if/else is a statement.
+Ternary operator is an expression because produce a value vs if/else is a statement.
