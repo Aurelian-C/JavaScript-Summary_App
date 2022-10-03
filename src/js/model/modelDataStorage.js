@@ -389,14 +389,33 @@ const variablesAndValues = {
           articleSource: '',
         },
         {
+          articleTitle:
+            'A variable that stores a reference object only stores a pointer, so the address of that place in memory, and not the value itself',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
           articleTitle: 'Pass by Value vs Pass by Reference',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
         },
         {
+          articleTitle: 'Comparing two objects for equality',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
           articleTitle:
-            'A variable that stores a reference object only stores a pointer, so the address of that place in memory, and not the value itself',
+            'Each object has its own reference location in memory, even is a nested object',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Shallow vs Deep Objects Copy',
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',
@@ -436,6 +455,13 @@ const variablesAndValues = {
         },
         {
           articleTitle: 'Truthy & Falsy Values',
+          articleLinks: [{ linkTitle: '', linkSource: '' }],
+          articleText: [],
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            "One operator that doesn't trigger implicit type coercion is Strict Equality Operator ===",
           articleLinks: [{ linkTitle: '', linkSource: '' }],
           articleText: [],
           articleSource: '',

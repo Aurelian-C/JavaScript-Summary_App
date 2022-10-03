@@ -1,10 +1,10 @@
-# Primitive vs Reference Values (Pass by Value vs Pass by Reference)
+# Primitive vs Reference Types
 
 In JavaScript, we have two categories or types or of values you could say. So with that, I don't mean strings and numbers because that would be wrong, we also have booleans, objects, null, undefined and so on, but I really mean these data types which you already learned about, so boolean, strings, numbers and objects and so on, these can be categorized into two categories. We have ==**primitive values**== and we have ==**reference values**== and that's an important differentiation which you need to understand.
 
 ![primitive_vs_references](../../img/primitives_vs_references.jpg)
 
-## Primitive Values
+## Primitive Types
 
 Now primitive values are these 7 types of data:
 
@@ -32,7 +32,7 @@ console.log(name1); // Manuel
 console.log(name2); // Max
 ```
 
-## Reference Values
+## Reference Types
 
 So we see the behavior of storing a primitive value in a variable. Now you can probably guess what behavior for reference values will be, but let's still have a look what are reference values to begin with? Well, all other objects or generally, all objects in JavaScript.
 
@@ -166,8 +166,58 @@ Event though `complexPerson` has multiple nested reference values (nested arrays
 
 So you could say: ==**Primitive** values are the **core building blocks** that hold your data, **objects (and arrays)** are helpful for **organizing** and **working** with that data==.
 
+## Pass by value vs Pass by reference
+
+==**Primitive**== - Primitive values are defined by being ==immutable==, they cannot be altered. _The variable assigned to a primitive type may be reassigned to a new value, but the original value can not be changed in the same way objects can be modified_. ==Primitives are **passed by value**, meaning their values are copied and then placed somewhere else in the memory. They are also **compared by value**==.
+
+==**Non Primitive**== - The only type that leaves us with is objects. ==Objects are able to be **mutated** and their properties are **passed by reference**==, meaning their properties are not stored separately in memory. _A new variable pointing to an object will not create a copy, but reference the original objects location in memory_. Therefore, changing the 2nd object will also change the first.
+
+There are two ways to get around this, `Object.assign()` or use the spread operator `...` to spread or expand the object into a new variable. By doing this, it will allow the new variable to be modified without changing the original. However, these only create a "shallow copy".
+
+```js
+const originalObj = { // originalObj points to location 1 in memory
+  key: 'value',
+  nested: {
+    nestedKey: 'nestedValue',
+  },
+};
+
+const assignObj = originalObj; // assignObj will point to 1 in memory
+
+const shallowCopyObj = { ...originalObj }; // shallowCopyObj points to a new location 2, but references location 1 for the nested object
+
+const deepCopyObj = JSON.parse(JSON.stringify(originalObj)); // deepCopyObj clones all parts of the object to a new memory address
+```
+
+> **Shallow copy**: Shallow copy is a bit-wise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.
+>
+> **Deep copy**: A deep copy copies all fields, and makes copies of dynamically allocated memory pointed to by the fields. A deep copy occurs when an object is copied along with the objects to which it refers.
+
+==**Each object has its own reference location in memory, even is a nested object**==.
+
+```js
+const originalObj = { //originalObj has its own reference in memory
+  key: 'value',
+  nested: { //nested has its own reference in memory, totally different than originalObj
+    nestedKey: 'nestedValue',
+  },
+};
+```
+
+## Compare two objects for equality
+
+If you try to check if 2 objects with the same properties are equal with `obj1 === obj2`, it will return `false`. It does this because each object has its own address in memory as we learned about. The easiest way to check the contents of the objects for equality is this:
+
+```js
+JSON.stringify(obj1) === JSON.stringify(obj2);
+```
+
+This code above will return `true` if all properties are the same.
+
 ## References
 
 1. [JavaScript - The Complete Guide (Beginner + Advanced) - Maximilian Schwarzmüller](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
 
 2. [Reference vs Primitive Values - academind.com](https://academind.com/tutorials/reference-vs-primitive-values)
+
+3. [JavaScript: The Advanced Concepts - Andrei Neagoie](https://www.udemy.com/course/advanced-javascript-concepts/)
