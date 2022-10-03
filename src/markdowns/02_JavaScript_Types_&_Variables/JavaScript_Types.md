@@ -2,6 +2,8 @@
 
 All programming languages have types. That is the building blocks that allow us to write in that language. We can have numbers, strings, booleans and many more. 
 
+![programming_types](../../img/programming_types.jpg)
+
 ## Dynamically vs Statically Typed
 
 In programming, there are two types of languages: 
