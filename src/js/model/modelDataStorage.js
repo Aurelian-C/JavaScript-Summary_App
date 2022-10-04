@@ -631,11 +631,12 @@ const operators = {
       sectionArticles: [
         {
           articleTitle: 'Logical AND (&&)',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/03_Operators/Logical_AND_operator.html',
         },
         {
           articleTitle: 'Logical OR (||)',
-          articleSource: '',
+          articleSource: '/src/markdowns/03_Operators/Logical_OR_operator.html',
         },
         {
           articleTitle: 'Nullish coalescing operator (??)',
