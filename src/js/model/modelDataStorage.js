@@ -429,10 +429,19 @@ const operators = {
   sections: [
     {
       sectionTitle: 'Introduction to JavaScript Operators',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/03_Operators/Introduction_to_Javascript_Operators.html',
       sectionArticles: [
         {
           articleTitle: 'Operator precedence',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Precedence & Associativity',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Note on grouping vs short-circuiting',
           articleSource: '',
         },
         {
@@ -443,7 +452,8 @@ const operators = {
     },
     {
       sectionTitle: 'Expressions and operators',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/03_Operators/Expressions_and_operators.html',
       sectionArticles: [
         {
           articleTitle: 'Primary expressions',
@@ -482,10 +492,6 @@ const operators = {
           articleSource: '',
         },
         {
-          articleTitle: 'Optional Chaining operator',
-          articleSource: '',
-        },
-        {
           articleTitle: 'Assignment operators',
           articleSource: '',
         },
@@ -493,20 +499,21 @@ const operators = {
     },
     {
       sectionTitle: 'Assignment operators',
-
       sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'Assignment operator (=)',
-          articleSource: '',
+          articleSource: '/src/markdowns/03_Operators/Assignment_operator.html',
         },
         {
           articleTitle: 'Addition assignment (+=)',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/03_Operators/Addition_assignment_operator.html',
         },
         {
           articleTitle: 'Subtraction assignment (-=)',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/03_Operators/Subtraction_assignment_operator.html',
         },
       ],
     },
@@ -515,20 +522,12 @@ const operators = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Postfix increment operator (A++)',
-          articleSource: '',
+          articleTitle: 'Increment operator (A++ <i>or</i> ++A)',
+          articleSource: '/src/markdowns/03_Operators/Increment_operator.html',
         },
         {
-          articleTitle: 'Postfix decrement operator (A--)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Prefix increment operator (++A)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Prefix decrement operator(--A)',
-          articleSource: '',
+          articleTitle: 'Decrement operator (A-- <i>or</i> --A)',
+          articleSource: '/src/markdowns/03_Operators/Decrement_operator.html',
         },
       ],
     },
@@ -541,12 +540,13 @@ const operators = {
           articleSource: '',
         },
         {
-          articleTitle: 'plus operator (+)',
-          articleSource: '',
+          articleTitle: 'Unary plus (+)',
+          articleSource: '/src/markdowns/03_Operators/Unary_plus_operator.html',
         },
         {
-          articleTitle: 'negation operator (-)',
-          articleSource: '',
+          articleTitle: 'Unary negation (-)',
+          articleSource:
+            '/src/markdowns/03_Operators/Unary_negation_operator.html',
         },
       ],
     },
@@ -556,11 +556,12 @@ const operators = {
       sectionArticles: [
         {
           articleTitle: 'Addition operator (+)',
-          articleSource: '',
+          articleSource: '/src/markdowns/03_Operators/Addition_operator.html',
         },
         {
           articleTitle: 'Subtraction operator (-)',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/03_Operators/Subtraction_operator.html',
         },
         {
           articleTitle: 'Division operator (/)',
@@ -572,100 +573,6 @@ const operators = {
         },
         {
           articleTitle: 'Remainder operator (%)',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Relational operators',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'instanceof',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Binary logical operators',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Nullish coalescing operator (??)',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Optional chaining (?.)',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Remainder (%)',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: `The 'in' operator`,
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-  ],
-};
-
-const controlingProgamLogicAndFlow = {
-  title: 'Controlling Program Logic and Flow',
-  sections: [
-    {
-      sectionTitle: 'Taking Decisions in JavaSript',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Boolean Logic',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Binary logical operators',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Logical AND (&&)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Logical OR (||)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Short Circuiting with && and ||',
           articleSource: '',
         },
       ],
@@ -710,6 +617,98 @@ const controlingProgamLogicAndFlow = {
         },
         {
           articleTitle: 'Greater than or equal operator (>=)',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'instanceof',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Binary logical operators',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Logical AND (&&)',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Logical OR (||)',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Nullish coalescing operator (??)',
+          articleSource:
+            '/src/markdowns/03_Operators/Nullish_coalescing_operator.html',
+        },
+        {
+          articleTitle: 'Short Circuiting with && and ||',
+          articleSource: '/src/markdowns/03_Operators/Short_Circuiting.html',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Optional Chaining operator (?.)',
+      sectionSource:
+        '/src/markdowns/03_Operators/Optional_Chaining_operator.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Optional chaining with objects',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Optional chaining with function calls',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Optional chaining with expressions',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'With nested structures, it is possible to use optional chaining multiple times',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The Nullish Coalescing Operator may be used <i>after</i> optional chaining in order to build a default value when none was found',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: `The 'in' operator`,
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+  ],
+};
+
+const controlingProgamLogicAndFlow = {
+  title: 'Controlling Program Logic and Flow',
+  sections: [
+    {
+      sectionTitle: 'Taking Decisions in JavaSript',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Boolean Logic',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
           articleSource: '',
         },
       ],
