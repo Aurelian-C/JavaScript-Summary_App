@@ -1,6 +1,6 @@
 # `in` operator
 
-The `in` operator returns `true` if the ==**specified property** is in the **specified object** or its prototype chain==.
+The `in` operator returns `true` if the ==**specified property** is in the **specified object** _or_ its prototype chain==.
 
 ## Syntax
 
@@ -10,13 +10,16 @@ prop in object;
 
 ## Parameters
 
-==**prop**== - a string or symbol representing a **property name** or **array index** (non-symbols will be coerced to strings).
+#### ==prop==
 
-==**object**== - **object** to check if it (or its prototype chain) contains the property with specified name (prop).
+A ==string== or symbol representing a ==**property name** _or_ **array index**== (non-symbols will be coerced to strings).
+
+#### ==object==
+
+An ==**object**== to check if it (or its prototype chain) contains the property with specified name `prop`. If the `object` parameter is not an object (i.e. a primitive) a `TypeError` will be thrown.
 
 ## Examples
 
-Basic usage
 The following examples show some uses of the in operator.
 
 ```js

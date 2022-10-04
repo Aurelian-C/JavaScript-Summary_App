@@ -488,10 +488,6 @@ const operators = {
           articleSource: '',
         },
         {
-          articleTitle: 'Conditional (ternary) operator',
-          articleSource: '',
-        },
-        {
           articleTitle: 'Assignment operators',
           articleSource: '',
         },
@@ -502,7 +498,7 @@ const operators = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Assignment operator (=)',
+          articleTitle: 'Assignment (=)',
           articleSource: '/src/markdowns/03_Operators/Assignment_operator.html',
         },
         {
@@ -522,11 +518,11 @@ const operators = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Increment operator (A++ <i>or</i> ++A)',
+          articleTitle: 'Increment (A++ <i>or</i> ++A)',
           articleSource: '/src/markdowns/03_Operators/Increment_operator.html',
         },
         {
-          articleTitle: 'Decrement operator (A-- <i>or</i> --A)',
+          articleTitle: 'Decrement (A-- <i>or</i> --A)',
           articleSource: '/src/markdowns/03_Operators/Decrement_operator.html',
         },
       ],
@@ -537,7 +533,7 @@ const operators = {
       sectionArticles: [
         {
           articleTitle: 'typeof',
-          articleSource: '',
+          articleSource: '/src/markdowns/03_Operators/typeof_operator.html',
         },
         {
           articleTitle: 'Unary plus (+)',
@@ -548,6 +544,11 @@ const operators = {
           articleSource:
             '/src/markdowns/03_Operators/Unary_negation_operator.html',
         },
+        {
+          articleTitle: 'Logical NOT (!)',
+          articleSource:
+            '/src/markdowns/03_Operators/Logical_NOT_operator.html',
+        },
       ],
     },
     {
@@ -555,25 +556,25 @@ const operators = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Addition operator (+)',
+          articleTitle: 'Addition (+)',
           articleSource: '/src/markdowns/03_Operators/Addition_operator.html',
         },
         {
-          articleTitle: 'Subtraction operator (-)',
+          articleTitle: 'Subtraction (-)',
           articleSource:
             '/src/markdowns/03_Operators/Subtraction_operator.html',
         },
         {
-          articleTitle: 'Division operator (/)',
+          articleTitle: 'Division (/)',
           articleSource: '',
         },
         {
-          articleTitle: 'Multiplication operator (*)',
+          articleTitle: 'Multiplication (*)',
           articleSource: '',
         },
         {
-          articleTitle: 'Remainder operator (%)',
-          articleSource: '',
+          articleTitle: 'Remainder (%)',
+          articleSource: '/src/markdowns/03_Operators/Remainder_operator.html',
         },
       ],
     },
@@ -582,19 +583,19 @@ const operators = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Equality operator (==)',
+          articleTitle: 'Equality (==)',
           articleSource: '',
         },
         {
-          articleTitle: 'Inequality operator (!=)',
+          articleTitle: 'Inequality (!=)',
           articleSource: '',
         },
         {
-          articleTitle: 'Identity operator (===)',
+          articleTitle: 'Identity (===)',
           articleSource: '',
         },
         {
-          articleTitle: 'Nonidentity operator (!==)',
+          articleTitle: 'Nonidentity (!==)',
           articleSource: '',
         },
       ],
@@ -604,24 +605,28 @@ const operators = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Less than operator (<)',
+          articleTitle: 'Less than (<)',
           articleSource: '',
         },
         {
-          articleTitle: 'Greater than operator (>)',
+          articleTitle: 'Greater than (>)',
           articleSource: '',
         },
         {
-          articleTitle: 'Less than or equal operator (<=)',
+          articleTitle: 'Less than or equal (<=)',
           articleSource: '',
         },
         {
-          articleTitle: 'Greater than or equal operator (>=)',
+          articleTitle: 'Greater than or equal (>=)',
           articleSource: '',
         },
         {
           articleTitle: 'instanceof',
           articleSource: '',
+        },
+        {
+          articleTitle: 'in',
+          articleSource: '/src/markdowns/03_Operators/in_operator.html',
         },
       ],
     },
@@ -639,13 +644,28 @@ const operators = {
           articleSource: '/src/markdowns/03_Operators/Logical_OR_operator.html',
         },
         {
-          articleTitle: 'Nullish coalescing operator (??)',
+          articleTitle: 'Nullish coalescing (??)',
           articleSource:
             '/src/markdowns/03_Operators/Nullish_coalescing_operator.html',
         },
         {
           articleTitle: 'Short Circuiting with && and ||',
           articleSource: '/src/markdowns/03_Operators/Short_Circuiting.html',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Conditional (ternary) operator',
+      sectionSource:
+        '/src/markdowns/03_Operators/Conditional_(ternary)_operator.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Ternary operator vs if...else statement',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Conditional chains',
+          articleSource: '',
         },
       ],
     },
@@ -674,16 +694,6 @@ const operators = {
         {
           articleTitle:
             'The Nullish Coalescing Operator may be used <i>after</i> optional chaining in order to build a default value when none was found',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: `The 'in' operator`,
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
           articleSource: '',
         },
       ],
