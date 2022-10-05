@@ -703,28 +703,8 @@ const operators = {
 };
 
 const controlingProgamLogicAndFlow = {
-  title: 'Controlling Program Logic and Flow',
+  title: 'Conditional statements',
   sections: [
-    {
-      sectionTitle: 'Taking Decisions in JavaSript',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Boolean Logic',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
     {
       sectionTitle: 'Truthy & Falsy Values',
       sectionSource:
@@ -749,41 +729,32 @@ const controlingProgamLogicAndFlow = {
       ],
     },
     {
-      sectionTitle: 'Beware when comparing Objects & Arrays for equality',
-      sectionSource: '',
+      sectionTitle: '"if... else", "else if" statements',
+      sectionSource:
+        '/src/markdowns/04_Controlling_Program_Logic_&_Flow/if__else__if_else_statements.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Nesting Conditionals',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'if, else if, else Statements',
-      sectionSource: '',
+      sectionTitle: 'The Switch statement',
+      sectionSource:
+        '/src/markdowns/04_Controlling_Program_Logic_&_Flow/The_Switch_Statement.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'The Switch Statement & "break" statement',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Nesting Conditionals',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'The Switch Statement & "default" statement',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'The Switch Statement',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle:
+            'The Switch Statement is an alternative to "if...else" chains',
           articleSource: '',
         },
       ],
