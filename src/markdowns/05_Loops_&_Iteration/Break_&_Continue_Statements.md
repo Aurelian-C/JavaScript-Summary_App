@@ -1,4 +1,4 @@
-# `break` and `continue` keywords
+# `break` and `continue` statements
 
 The `break` statement **"jumps out"** of a loop.
 

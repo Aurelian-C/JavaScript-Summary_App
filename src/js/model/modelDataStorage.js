@@ -766,7 +766,37 @@ const loops = {
   title: 'Loops & Iteration',
   sections: [
     {
-      sectionTitle: 'Intro to Loops',
+      sectionTitle: 'Introduction to Loops & Iteration',
+      sectionSource:
+        '/src/markdowns/05_Loops_&_Iteration/Introduction_to_Loops_and_Iteration.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'Loops offer a quick and easy way to do something <i>repeatedly</i>',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'JavaScript supports <i>different kinds of loops</i>',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: '"for" statement',
+      sectionSource: '/src/markdowns/05_Loops_&_Iteration/for_statement.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Infinite Loops!',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Nested loops',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: '"for...of" statement',
       sectionSource: '',
       sectionArticles: [
         {
@@ -776,7 +806,7 @@ const loops = {
       ],
     },
     {
-      sectionTitle: '"for" Loop',
+      sectionTitle: '"for...in" statement',
       sectionSource: '',
       sectionArticles: [
         {
@@ -786,7 +816,7 @@ const loops = {
       ],
     },
     {
-      sectionTitle: 'Infinite Loops!',
+      sectionTitle: '"while" statement',
       sectionSource: '',
       sectionArticles: [
         {
@@ -796,37 +826,7 @@ const loops = {
       ],
     },
     {
-      sectionTitle: 'for...of',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'for...in',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Intro to "while" Loop',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: '"break" and "continue" Keywords',
+      sectionTitle: '"break" and "continue" statements',
       sectionSource: '',
       sectionArticles: [
         {
