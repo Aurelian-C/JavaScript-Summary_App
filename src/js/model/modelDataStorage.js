@@ -729,7 +729,7 @@ const controlingProgamLogicAndFlow = {
       ],
     },
     {
-      sectionTitle: '"if... else", "else if" statements',
+      sectionTitle: '"if...else", "else if" statements',
       sectionSource:
         '/src/markdowns/04_Controlling_Program_Logic_&_Flow/if__else__if_else_statements.html',
       sectionArticles: [
