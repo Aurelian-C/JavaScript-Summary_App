@@ -36,3 +36,4 @@ bar += 'foo'; // "7foo"
 ## References
 
 1. [Addition assignment (+=) - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment)
+1. [Expressions and operators - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)

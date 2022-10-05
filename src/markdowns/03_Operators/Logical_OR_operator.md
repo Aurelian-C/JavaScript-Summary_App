@@ -47,3 +47,4 @@ true || false && false		// returns true, because && has a higher precedence than
 ## References
 
 1. [Logical OR (||) - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)
+1. [Expressions and operators - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)

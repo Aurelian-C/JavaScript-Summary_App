@@ -23,3 +23,4 @@ x = y = z // x, y and z are all 25
 ## References
 
 1. [Assignment (=) - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment)
+1. [Expressions and operators - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)

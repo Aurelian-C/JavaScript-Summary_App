@@ -142,3 +142,4 @@ printCustomerCity({
 ## References
 
 1. [Optional chaining (?.) - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining#optional_chaining_with_function_calls)
+1. [Expressions and operators - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)

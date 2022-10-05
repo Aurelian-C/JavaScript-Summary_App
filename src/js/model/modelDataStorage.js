@@ -584,19 +584,20 @@ const operators = {
       sectionArticles: [
         {
           articleTitle: 'Equality (==)',
-          articleSource: '',
+          articleSource: '/src/markdowns/03_Operators/Equality_operator.html',
         },
         {
           articleTitle: 'Inequality (!=)',
-          articleSource: '',
+          articleSource: '/src/markdowns/03_Operators/Inequality_operator.html',
         },
         {
           articleTitle: 'Identity (===)',
-          articleSource: '',
+          articleSource: '/src/markdowns/03_Operators/Identity_operator.html',
         },
         {
           articleTitle: 'Nonidentity (!==)',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/03_Operators/Nonidentity_operator.html',
         },
       ],
     },
@@ -606,23 +607,23 @@ const operators = {
       sectionArticles: [
         {
           articleTitle: 'Less than (<)',
-          articleSource: '',
+          articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
         },
         {
           articleTitle: 'Greater than (>)',
-          articleSource: '',
+          articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
         },
         {
           articleTitle: 'Less than or equal (<=)',
-          articleSource: '',
+          articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
         },
         {
           articleTitle: 'Greater than or equal (>=)',
-          articleSource: '',
+          articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
         },
         {
           articleTitle: 'instanceof',
-          articleSource: '',
+          articleSource: '/src/markdowns/03_Operators/instanceof_operator.html',
         },
         {
           articleTitle: 'in',
@@ -726,10 +727,23 @@ const controlingProgamLogicAndFlow = {
     },
     {
       sectionTitle: 'Truthy & Falsy Values',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/04_Controlling_Program_Logic_&_Flow/Truthy_&_Falsy_Values.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Type coercion',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Boolean context',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Truthy values & logical AND operator (&&)',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Falsy values & logical OR operator (||)',
           articleSource: '',
         },
       ],
@@ -766,16 +780,6 @@ const controlingProgamLogicAndFlow = {
     },
     {
       sectionTitle: 'The Switch Statement',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'The Conditional (Ternary) Operator',
       sectionSource: '',
       sectionArticles: [
         {

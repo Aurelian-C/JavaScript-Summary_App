@@ -31,3 +31,4 @@ The following table summarizes the possible return values of `typeof`.
 ## References
 
 1. [typeof - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+1. [Expressions and operators - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)

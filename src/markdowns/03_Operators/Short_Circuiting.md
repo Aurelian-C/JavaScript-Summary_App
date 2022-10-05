@@ -119,3 +119,5 @@ The short-circuit operators are very tricky because they can be used in more tha
 ## Reference
 
 1. [A Simpler Understanding of the Short-circuit Operators in JavaScript - medium.com](https://medium.com/@ezekielphlat/a-simpler-understanding-of-the-short-circuit-operators-in-javascript-d275a313cef1)
+1. [JavaScript: What is short-circuit evaluation? - codeburst.io](https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)
+1. [Expressions and operators - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)

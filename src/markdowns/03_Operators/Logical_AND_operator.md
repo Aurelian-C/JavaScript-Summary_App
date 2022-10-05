@@ -48,3 +48,4 @@ true && (false || false) // returns false because grouping has the highest prece
 ## References
 
 1. [Logical AND (&&) - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
+1. [Expressions and operators - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
