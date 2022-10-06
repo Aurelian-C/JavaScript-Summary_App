@@ -163,6 +163,6 @@ for (let i = 0; i <= 1; i++) {
 
 ## References
 
-1. [for loop - w3schools](https://www.w3schools.com/js/js_loop_for.asp)
-2. [for statement - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+1. [`for` loop - w3schools](https://www.w3schools.com/js/js_loop_for.asp)
+2. [`for` statement - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
 3. [Loops and iteration - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)

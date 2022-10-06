@@ -14,8 +14,8 @@ The statements for loops provided in JavaScript are:
 - [`for...of` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement) - loops through the values of an ==_**iterable**_ object==
 - [`for...in` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...in_statement) - loops through the ==_**properties**_ of an object==
 - [`while` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#while_statement) - loops through a block of code ==_while a specified condition_ is== `true`
-- [`break` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#break_statement)
-- [`continue` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#continue_statement)
+- [`break` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#break_statement) - breaks out of a loop
+- [`continue` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#continue_statement) - skips a value in a loop
 
 ## `for` statement
 

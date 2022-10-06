@@ -1,77 +1,77 @@
 # `for...in` loop
 
-The JavaScript `for...in` statement loops through the properties of an Object. `for...in` iterates over all **enumerable properties** of an object that are keyed by strings (ignoring ones keyed by Symbols), including inherited enumerable properties.
+The JavaScript `for...in` statement ==loops through the **properties** of an **object**==. `for...in` ==iterates over all **enumerable properties** of an object that are keyed by strings== (ignoring ones keyed by Symbols), ==**including inherited enumerable properties**==.
 
-A `for...in` loop _only iterates over_ **enumerable, non-Symbol properties**. A `for...in` loop iterates over the properties of an object in an **arbitrary order**.
+A `for...in` loop ==_only_ iterates over **enumerable, non-Symbol properties**==. A `for...in` loop iterates over the properties of an object in an ==arbitrary order==.
+
+> **Note**: Do not use `for...in` to iterate an array if the index order is important. Use a [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for) loop instead.
 
 ## Syntax
 
 ```js
 for (variable in object) {
-  statement;
+  // statement;
 }
 ```
 
-_variable_: a different **property name (key)** is assigned to variable on each iteration.
+## Parameters
 
-_object_: object whose non-Symbol **enumerable properties** are iterated over.
+#### `variable` 
 
-## For In Over Arrays
+Receives a ==string property name== on each iteration. May be either a declaration with `const`, `let` or `var`.
 
-The JavaScript for in statement can also loop over the properties of an Array:
+#### `object`
+
+An object whose non-Symbol ==enumerable properties== are iterated over.
+
+#### `statement`
+
+A statement to be executed on every iteration. May reference `variable`.
+
+## Description
+
+==The== `for...in` ==loop will iterate over **all enumerable properties of the object itself** _and_ **those the object inherits from its prototype chain**== (properties of nearer prototypes take precedence over those of prototypes further away from the object in its prototype chain).
+
+> If you only want to consider _properties attached to the **object itself** (iterating over own properties only) and not its prototypes_, you can use one of the following techniques:
+>
+> - [`Object.keys(myObject)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) - return a list of enumerable own string properties
+> - [`Object.getOwnPropertyNames(myObject)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames) - also contain non-enumerable ones
+
+A `for...in` loop ==_only_ iterates over _enumerable, non-symbol properties_==.
+
+The `variable` part of `for...in` accepts anything that can come before the `=` operator. You can use `const` to declare the variable as long as it's not reassigned within the loop body (it can change between iterations, because those are two separate variables). Otherwise, you can use `let`. You can use [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) or an object property like `for (x.y in iterable)` as well.
+
+## `for..in` over arrays
+
+==Array indexes are just _enumerable properties with integer names_== and are otherwise identical to general object properties:
 
 ```js
-// Syntax
-for (variable in array) {
-  code;
-}
+const numbers = [45, 4, 9];
 
-// Example
-const numbers = [45, 4, 9, 16, 25];
-
-let txt = '';
 for (let x in numbers) {
-  txt += numbers[x];
+  console.log(x)
 }
+// 0
+// 1
+// 2
 ```
 
-_Array indexes are just enumerable properties with integer names_ and are otherwise identical to general object properties. There is no guarantee that `for...in` will return the indexes in any particular order. The `for...in` loop statement will return all enumerable properties, including those with non–integer names and those that are inherited. Because the order of iteration is implementation-dependent, iterating over an array may not visit elements in a consistent order. Therefore, it is better to use a for loop with a numeric index (or `Array.prototype.forEach()` or the `for...of` loop) when iterating over arrays where the order of access is important.
+==There is no guarantee that== `for...in` ==will return the indexes in any particular order==. Therefore, it is better to use a `for` loop with a numeric index (or `Array.prototype.forEach()` or the `for...of` loop) when iterating over arrays where the order of access is important.
 
-Note:
+> **Note**: Do not use `for...in` over an Array if the index **order** is important.
 
-- Do not use `for...in` over an Array if the index **order** is important.
-- The index order is implementation-dependent, and array values may not be accessed in the order you expect.
-- It is better to use a **`for`** loop, a **`for...of`** loop, or **`Array.forEach()`** when the order is important.
+The `for...in` loop statement will return all enumerable properties, including those with non–integer names and those that are inherited. 
 
-## Iterating over own properties only
+Unlike `for...of`, `for...in` uses property enumeration instead of the array's iterator. In [sparse arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections#sparse_arrays), `for...of` will visit the empty slots, but `for...in` will not.
 
-If you only want to consider properties attached to the object itself, and not its prototypes, use `getOwnPropertyNames()` or perform a `hasOwnProperty()` check (`propertyIsEnumerable()` can also be used). Alternatively, if you know there won't be any outside code interference, you can extend built-in prototypes with a check method.
+## Why NOT use `for...in`?
 
-The following function illustrates the use of `hasOwnProperty()`: the inherited properties are not displayed.
+Many JavaScript style guides and linters recommend against the use of `for...in`, ==because it **iterates over the entire prototype chain**== which is rarely what one wants, and may be a confusion with the more widely-used `for...of` loop. 
 
-```js
-let triangle = { a: 1, b: 2, c: 3 };
+`for...in` is most practically used for debugging purposes, being an easy way to check the properties of an object (by outputting to the console or otherwise). In situations where objects are used as ad hoc key-value pairs, `for...in` allows you check if any of those keys hold a particular value.
 
-function ColoredTriangle() {
-  this.color = 'red';
-}
+## References
 
-ColoredTriangle.prototype = triangle;
-
-let obj = new ColoredTriangle();
-
-for (const prop in obj) {
-  if (obj.hasOwnProperty(prop)) {
-    console.log(`obj.${prop} = ${obj[prop]}`);
-  }
-}
-
-// Output:
-// "obj.color = red"
-```
-
-## Why Use `for...in`?
-
-Given that `for...in` is built for iterating object properties, not recommended for use with arrays, and options like `Array.prototype.forEach()` and `for...of` exist, what might be the use of `for...in` at all?
-
-It may be most practically used for debugging purposes, being an easy way to check the properties of an object (by outputting to the console or otherwise). Although arrays are often more practical for storing data, in situations where a key-value pair is preferred for working with data (with properties acting as the "key"), there may be instances where you want to check if any of those keys hold a particular value.
+1. [`for...in` statement - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+2. [`for...in` statement - w3schools](https://www.w3schools.com/jsref/jsref_forin.asp)
+3. [Loops and iteration - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)

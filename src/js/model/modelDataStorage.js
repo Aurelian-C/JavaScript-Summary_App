@@ -400,27 +400,6 @@ const variablesAndValues = {
         },
       ],
     },
-    {
-      sectionTitle: 'Statements vs Expressions',
-      sectionSource:
-        '/src/markdowns/02_JavaScript_Types_&_Variables/Statements_vs_Expressions.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'A statement is an instruction to perform a specific action: creating variables, functions, loops etc.',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Any unit of code that can be evaluated to a value is an expression',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Expressions produce values',
-          articleSource: '',
-        },
-      ],
-    },
   ],
 };
 
@@ -702,13 +681,34 @@ const operators = {
   ],
 };
 
-const controlingProgamLogicAndFlow = {
+const conditionalStatements = {
   title: 'Conditional statements',
   sections: [
     {
+      sectionTitle: 'Statements vs Expressions',
+      sectionSource:
+        '/src/markdowns/04_Conditional_statements/Statements_vs_Expressions.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'A statement is an instruction to perform a specific action: creating variables, functions, loops etc.',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Any unit of code that can be evaluated to a value is an expression',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Expressions produce values',
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Truthy & Falsy Values',
       sectionSource:
-        '/src/markdowns/04_Controlling_Program_Logic_&_Flow/Truthy_&_Falsy_Values.html',
+        '/src/markdowns/04_Conditional_statements/Truthy_&_Falsy_Values.html',
       sectionArticles: [
         {
           articleTitle: 'Type coercion',
@@ -731,7 +731,7 @@ const controlingProgamLogicAndFlow = {
     {
       sectionTitle: '"if...else", "else if" statements',
       sectionSource:
-        '/src/markdowns/04_Controlling_Program_Logic_&_Flow/if__else__if_else_statements.html',
+        '/src/markdowns/04_Conditional_statements/if__else__if_else_statements.html',
       sectionArticles: [
         {
           articleTitle: 'Nesting Conditionals',
@@ -742,7 +742,7 @@ const controlingProgamLogicAndFlow = {
     {
       sectionTitle: 'The Switch statement',
       sectionSource:
-        '/src/markdowns/04_Controlling_Program_Logic_&_Flow/The_Switch_Statement.html',
+        '/src/markdowns/04_Conditional_statements/The_Switch_Statement.html',
       sectionArticles: [
         {
           articleTitle: 'The Switch Statement & "break" statement',
@@ -771,8 +771,7 @@ const loops = {
         '/src/markdowns/05_Loops_&_Iteration/Introduction_to_Loops_and_Iteration.html',
       sectionArticles: [
         {
-          articleTitle:
-            'Loops offer a quick and easy way to do something <i>repeatedly</i>',
+          articleTitle: 'Loops offer a way to do something <i>repeatedly</i>',
           articleSource: '',
         },
         {
@@ -786,7 +785,7 @@ const loops = {
       sectionSource: '/src/markdowns/05_Loops_&_Iteration/for_statement.html',
       sectionArticles: [
         {
-          articleTitle: 'Infinite Loops!',
+          articleTitle: 'Avoid infinite loops!',
           articleSource: '',
         },
         {
@@ -797,37 +796,57 @@ const loops = {
     },
     {
       sectionTitle: '"for...of" statement',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/05_Loops_&_Iteration/for...of_statement.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: '<i>Iterable</i> object',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Destructuring in "for...of" statement',
           articleSource: '',
         },
       ],
     },
     {
       sectionTitle: '"for...in" statement',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/05_Loops_&_Iteration/for...in_statement.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle:
+            'Iterates over all <i>enumerable properties</i> of an object',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Iterates over the entire prototype chain',
+          articleSource: '',
+        },
+        {
+          articleTitle: '"for...in" vs Object.keys()',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Destructuring in "for...in" statement',
           articleSource: '',
         },
       ],
     },
     {
       sectionTitle: '"while" statement',
-      sectionSource: '',
+      sectionSource: '/src/markdowns/05_Loops_&_Iteration/while_statement.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Avoid infinite loops!',
           articleSource: '',
         },
       ],
     },
     {
       sectionTitle: '"break" and "continue" statements',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/05_Loops_&_Iteration/Break_&_Continue_Statements.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -3468,7 +3487,7 @@ export const data = [
   browserEngineAndRuntime,
   variablesAndValues,
   operators,
-  controlingProgamLogicAndFlow,
+  conditionalStatements,
   loops,
   functionalProgramming,
   arraysAndSets,
