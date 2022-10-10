@@ -4,8 +4,6 @@ The `insertAdjacentElement()` method of the `Element` interface ==inserts== a gi
 
 ## Syntax
 
-## Syntax
-
 ```js
 targetElement.insertAdjacentElement(position, element);
 

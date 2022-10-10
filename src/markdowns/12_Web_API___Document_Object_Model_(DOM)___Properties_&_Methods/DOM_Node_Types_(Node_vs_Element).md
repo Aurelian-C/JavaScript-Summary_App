@@ -23,7 +23,7 @@ The key to understanding the difference between a `Node` and an `Element` is to 
 ```
 
 The document contains the following hierarchy of nodes:
-![alt text](../../../src/img/node-vs-element2.jpg)
+![node-vs-element2](../../../src/img/node-vs-element2.jpg)
 `<html>` is a node in the document tree. It has 2 children: `<head>` and `<body>` nodes.
 `<body>` is also a node having 3 children: a comment `<!-- Page Body -->`, heading `<h2>`, and paragraph `<p>`. The parent of the `<body>` node is `<html>` node.
 The tags in the HTML document represent a node, what's interesting is that regular text is also a node. The paragraph node `<p>` has 1 child: the text node "Thank you for visiting my web page!".

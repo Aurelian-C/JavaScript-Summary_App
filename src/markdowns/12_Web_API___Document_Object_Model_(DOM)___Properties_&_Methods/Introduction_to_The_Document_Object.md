@@ -10,14 +10,14 @@ So we get ==JavaScript== and we get the ==browser==, these two pieces which ==in
 
 When we work with the loaded and rendered HTML code, the browser parse and render the HTML code and exposes functionality to let JavaScript interact with the rendered HTML. In other words ==the browser exposes a Web API to allow JavaScript to work with the parsed document (HTML)==, and in the end that's called the ==Document Object Model==.
 
-![DOM parsing](../src/img/DOM%20parsing.jpg)
+![DOM_parsing](../../img/DOM_parsing.jpg)
 
 So the DOM in the end is that loaded and rendered HTML code or to be precise, the ==**object representation of that HTML code** which the browser creates behind the scenes into which we can tap with JavaScript==. So JavaScript can work with a bunch of objects which will be exposed to us as JavaScript objects, which in the end represent what the browser rendered or what the browser made of that HTML code which was provided.
 So in other words, the browser exposes to you a ==Web API==, a `document` object, which is ==globally available==, which ==is **NOT created by you** but which the **browser exposes to you**== to give you access to all the different ways of ==interacting with the HTML page==.
 
 Now I mentioned the `document`, this is one important piece in working with the loaded HTML code, there also is another important global object and actually, document is a property of that other global object and that's the `window` object.
 
-![document vs window](../src/img/document%20vs%20window.jpg)
+![document_vs_window](../../img/document_vs_window.jpg)
 
 Now the difference is that `document` in the end is the root DOM node which the browser exposes to you. That means that this is really ==the topmost entry point to get access to all that rendered HTML code==. So this provides you various methods and functionalities to get access to the elements, to query for HTML elements, to interact with its DOM contents, so to interact with a loaded HTML code.
 

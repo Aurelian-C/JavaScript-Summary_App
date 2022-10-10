@@ -71,6 +71,24 @@ while (cars[i]) {
 }
 ```
 
+## Do NOT initialize a function inside of a loop
+
+The one thing is you want to be careful of initializing functions inside of loops:
+
+```js
+// Bad
+while (condition) {
+    function a() {}
+    a()
+}
+
+// Good
+function a() {}
+while (condition) {
+    a()
+}
+```
+
 ## References
 
 1. [`while` loop - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)

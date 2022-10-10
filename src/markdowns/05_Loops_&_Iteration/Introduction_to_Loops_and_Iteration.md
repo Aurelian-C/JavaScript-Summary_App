@@ -17,6 +17,8 @@ The statements for loops provided in JavaScript are:
 - [`break` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#break_statement) - breaks out of a loop
 - [`continue` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#continue_statement) - skips a value in a loop
 
+![loops](../../img/loops.jpg)
+
 ## `for` statement
 
 A [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for) loop ==**repeats until** a specified condition evaluates to== `false`.

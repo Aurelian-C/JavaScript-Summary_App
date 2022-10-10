@@ -87,7 +87,7 @@ for (; i < len; ) {
 }
 ```
 
-## You can also omit all three expressions
+## You can omit all three expressions
 
 ==**You can also omit all three expressions**. Again, make sure to use a [`break`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break) statement to end the loop and also modify (increase) a variable, so that the condition for the break statement is true at some point==.
 
@@ -159,6 +159,24 @@ for (let i = 0; i <= 1; i++) {
 // First level loop
 // Second level loop
 // Second level loop
+```
+
+## Do NOT initialize a function inside of a loop
+
+The one thing is you want to be careful of initializing functions inside of loops:
+
+```js
+// Bad
+for (let a = 1; a < 10; a++) {
+    function a() {}
+    a()
+}
+
+// Good
+function a() {}
+for (let a = 1; a < 10; a++) {
+    a()
+}
 ```
 
 ## References

@@ -792,6 +792,10 @@ const loops = {
           articleTitle: 'Nested loops',
           articleSource: '',
         },
+        {
+          articleTitle: 'Do NOT initialize a function inside of a loop',
+          articleSource: '',
+        },
       ],
     },
     {
@@ -841,6 +845,10 @@ const loops = {
           articleTitle: 'Avoid infinite loops!',
           articleSource: '',
         },
+        {
+          articleTitle: 'Do NOT initialize a function inside of a loop',
+          articleSource: '',
+        },
       ],
     },
     {
@@ -865,10 +873,6 @@ const functionalProgramming = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Functions are objects',
-          articleSource: '',
-        },
-        {
           articleTitle: 'Function hoisting',
           articleSource: '',
         },
@@ -887,6 +891,35 @@ const functionalProgramming = {
       ],
     },
     {
+      sectionTitle: 'Higher Order Functions',
+      sectionSource:
+        '/src/markdowns/06_Functional_Programming_(FP)/Higher_Order_Functions.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Functions are objects',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Functions are First-class citizen in JavaScript',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Functions can be assigned to variables and properties of objects',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'A function can be passed as an argument/parameter to other function (callback functions)',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'A function can be returned by another function',
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Function syntax',
       sectionSource: '',
       sectionArticles: [
@@ -900,6 +933,10 @@ const functionalProgramming = {
         },
         {
           articleTitle: 'Anonymous Functions',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Constructor Functions',
           articleSource: '',
         },
       ],
@@ -1123,39 +1160,6 @@ const functionalProgramming = {
         },
         {
           articleTitle: 'Regular Functions vs Arrow Functions',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Higher-Order Functions',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Functions Accepting Callback Functions',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'A Function Can Be Passed As An Argument To Other Functions',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'A Function Can Be Returned By Another Function',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'A Function Can Be Assigned As A Value To A Variable',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Callbacks',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
           articleSource: '',
         },
       ],
