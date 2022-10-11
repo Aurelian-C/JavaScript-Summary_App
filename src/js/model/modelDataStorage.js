@@ -920,6 +920,38 @@ const functionalProgramming = {
       ],
     },
     {
+      sectionTitle: 'Closures & local vs global variables',
+      sectionSource:
+        '/src/markdowns/06_Functional_Programming_(FP)/Closures_&_local_vs_global_variables.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Variable lifetime',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Nested functions',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Closures & Lexical Environment',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'A closure <i>always return a function/object</i> that <i>references to its surrounding</i>',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Closures & Memory Efficiency',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Closures & Encapsulation',
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Function syntax',
       sectionSource: '',
       sectionArticles: [
@@ -1109,28 +1141,6 @@ const functionalProgramming = {
         {
           articleTitle:
             'bind() method creates a new function that, when called, has its "this" set to the provided value, with a given sequence of arguments preceding any provided when the new function is called',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Closures & local vs global variables',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Variable Lifetime',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Nested Functions',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Closures',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Closures & Memory Management',
           articleSource: '',
         },
       ],
