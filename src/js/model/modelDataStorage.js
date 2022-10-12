@@ -952,6 +952,16 @@ const functionalProgramming = {
       ],
     },
     {
+      sectionTitle: 'Constructor Functions & Prototypal Inheritance',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Function syntax',
       sectionSource: '',
       sectionArticles: [
@@ -1759,73 +1769,128 @@ const oop = {
   sections: [
     {
       sectionTitle: 'Introduction to OOP',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Introduction_to_OOP.html',
       sectionArticles: [
         {
-          articleTitle: 'What is "Object-Oriented Programming"?',
+          articleTitle: 'OOP is a programming paradigm',
           articleSource: '',
         },
         {
-          articleTitle: 'OOP characteristics',
+          articleTitle: 'Traditional OOP: Classes vs Instances',
           articleSource: '',
         },
         {
-          articleTitle: '4 fundamental principles of OOP',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Traditional OOP (Classes and Instances)',
+          articleTitle:
+            '4 fundamental principles of OOP: abstraction, encapsulation, inheritance and polymorphism',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'OOP in Javascript',
-      sectionSource: '',
+      sectionTitle: 'Introduction to Constructor Function',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Introduction_to_Constructor_Function.html',
       sectionArticles: [
         {
           articleTitle:
-            'Classical OOP: Classes vs OOP in Javascript: Prototypes',
+            'Constructor Function create a "blueprint" for creating many objects of the same "type"',
           articleSource: '',
         },
         {
-          articleTitle: 'Prototypal Inheritance & The Prototype Chain',
+          articleTitle:
+            'We use Constructor Function to build an object using a function',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'A Constructor Function is just a function called using the "new" operator',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Constructors, by convention, start with a capital letter and are named for the type of object they create',
+          articleSource: '',
+        },
+        {
+          articleTitle: `You can't create a Constructor Function with the arrow function because arrow function doesn't have its own "this" keyword`,
+          articleSource: '',
+        },
+        {
+          articleTitle: `In a Constructor Function "this" does not have a value. It is a substitute for the new object. The value of "this" will become the new object when a new object is created`,
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'OOP in JavaScript: Objects prototypes',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/OOP_in_JavaScript_Object_prototypes.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'Classical OOP: Classes vs OOP in JavaScript: Prototypes',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Prototypes are the mechanism by which JavaScript objects inherit features from one another',
+          articleSource: '',
+        },
+        {
+          articleTitle: `Every object in JavaScript has a <i>built-in property which is called its prototype</i>. <i>The prototype is itself an object</i>, so the prototype will have its own prototype, making what's called a <i>prototype chain</i>. The chain ends when we reach a prototype that has "null" for its own prototype`,
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            "Shadowing properties happens when you define a property in an object, when a property with the same name is defined in the object's prototype",
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Setting a prototype: Object.create(), Constructors and ES6 Classes',
           articleSource: '',
         },
         {
           articleTitle: 'Prototypes and inheritance',
           articleSource: '',
         },
-        {
-          articleTitle: 'Setting a prototype',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'The Prototype Chain and the Global Object',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Shadowing properties',
-          articleSource: '',
-        },
       ],
     },
     {
-      sectionTitle: 'Constructor Functions',
-      sectionSource: '',
+      sectionTitle: 'Prototypal Inheritance: Object.create() & Prototypes',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Object.create()_&_Prototypes.html',
       sectionArticles: [
         {
-          articleTitle: 'Syntax',
+          articleTitle: 'Setting a prototype with Object.create()',
           articleSource: '',
         },
         {
-          articleTitle: 'The prototype property',
+          articleTitle:
+            'More real inheritance than Prototypal Inheritance (Child and Parent)',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'ES6 Classes',
+      sectionTitle: 'Prototypal Inheritance: Constructor Function & Prototypes',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Constructor_Function_&_Prototypes.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Setting a prototype with Constructor Function',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'More real inheritance than Prototypal Inheritance (Child and Parent)',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Prototypal Inheritance: ES6 Classes & Prototypes',
       sectionSource: '',
       sectionArticles: [
         {
@@ -1876,37 +1941,9 @@ const oop = {
           articleTitle: '"new" keyword',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Object.create()',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle:
-        'More real inheritance than Prototypal Inheritance (Child class and Parent class)',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Prototypes and inheritance',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Inheritance Between "Classes": Constructor Functions',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Inheritance Between "Classes": ES6 Classes',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Inheritance Between "Classes": Object.create',
+          articleTitle:
+            'More real inheritance than Prototypal Inheritance (Child and Parent)',
           articleSource: '',
         },
       ],
