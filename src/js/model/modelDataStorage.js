@@ -1858,6 +1858,17 @@ const oop = {
       ],
     },
     {
+      sectionTitle: 'What is the difference between __proto__ and prototype?',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Difference_between_proto_and_prototype.html',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Prototypal Inheritance: Object.create() & Prototypes',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Object.create()_&_Prototypes.html',

@@ -64,7 +64,7 @@ So when we call `myObject.toString()`, the browser:
 
 This is an object called `Object.prototype`, and it is the most basic prototype, that all objects have by default. The prototype of `Object.prototype` is `null`, so it's at the end of the prototype chain:
 
-![prototype-chain](D:\Websites\Projects\Cioloca Aurelian__Javascript Resume\src\img\oop_prototype-chain.jpg)
+![prototype-chain](..\..\img\oop_prototype-chain.jpg)
 
 The prototype of an object is not always `Object.prototype`:
 
@@ -84,7 +84,7 @@ do {
 
 This code creates a `Date` object, then walks up the prototype chain, logging the prototypes. It shows us that the prototype of `myDate` is a `Date.prototype` object, and the prototype of that is `Object.prototype`.
 
-![prototype-chain1](D:\Websites\Projects\Cioloca Aurelian__Javascript Resume\src\img\oop_prototype-chain1.jpg)
+![prototype-chain1](..\..\img\oop_prototype-chain1.jpg)
 
 In fact, when you call familiar methods, like `myDate2.getMonth()`, you are calling a method that's defined on `Date.prototype`.
 
