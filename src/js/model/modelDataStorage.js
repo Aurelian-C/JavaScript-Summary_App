@@ -1203,16 +1203,6 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Scheme + Java',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
       sectionTitle: 'Curry',
       sectionSource: '',
       sectionArticles: [
@@ -1768,6 +1758,28 @@ const oop = {
   title: 'Object Oriented Programming (OOP)',
   sections: [
     {
+      sectionTitle: 'Inspiration of JavaScript: Scheme & Java',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Scheme_&_Java.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'Scheme was a programming language that have <i>closures</i> and the idea of <i>functions as first class citizens</i>',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'In Java community, <i>classes and classical inheritance</i> was really, really important',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'JavaScript was inspired by Scheme and Java, and because of this inspiration we have this multi-paradigm language: functional and object oriented',
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Introduction to OOP',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Introduction_to_OOP.html',
@@ -1777,12 +1789,74 @@ const oop = {
           articleSource: '',
         },
         {
-          articleTitle: 'Traditional OOP: Classes vs Instances',
+          articleTitle: 'Traditional OOP: Classes & Instances',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Traditional OOP: Inheritance',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Traditional OOP: Encapsulation',
           articleSource: '',
         },
         {
           articleTitle:
             '4 fundamental principles of OOP: abstraction, encapsulation, inheritance and polymorphism',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Traditional OOP vs JavaScript',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'OOP in JavaScript: Objects prototypes',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/OOP_in_JavaScript_Object_prototypes.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'Classical OOP: Classes vs OOP in JavaScript: Prototypes',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Prototypes are the mechanism by which JavaScript objects inherit features from one another',
+          articleSource: '',
+        },
+        {
+          articleTitle: `Every object in JavaScript has a <i>built-in property which is called its prototype</i>. <i>The prototype is itself an object</i>, so the prototype will have its own prototype, making what's called a <i>prototype chain</i>. The chain ends when we reach a prototype that has "null" for its own prototype`,
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            "Shadowing properties happens when you define a property in an object, when a property with the same name is defined in the object's prototype",
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Setting a prototype: Object.create(), Constructors and ES6 Classes',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Prototypes and inheritance',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Prototypes & Memory Efficiency',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'What is the difference between __proto__ and prototype?',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Difference_between_proto_and_prototype.html',
+      sectionArticles: [
+        {
+          articleTitle: '',
           articleSource: '',
         },
       ],
@@ -1823,55 +1897,9 @@ const oop = {
       ],
     },
     {
-      sectionTitle: 'OOP in JavaScript: Objects prototypes',
-      sectionSource:
-        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/OOP_in_JavaScript_Object_prototypes.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Classical OOP: Classes vs OOP in JavaScript: Prototypes',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Prototypes are the mechanism by which JavaScript objects inherit features from one another',
-          articleSource: '',
-        },
-        {
-          articleTitle: `Every object in JavaScript has a <i>built-in property which is called its prototype</i>. <i>The prototype is itself an object</i>, so the prototype will have its own prototype, making what's called a <i>prototype chain</i>. The chain ends when we reach a prototype that has "null" for its own prototype`,
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            "Shadowing properties happens when you define a property in an object, when a property with the same name is defined in the object's prototype",
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Setting a prototype: Object.create(), Constructors and ES6 Classes',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Prototypes and inheritance',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'What is the difference between __proto__ and prototype?',
-      sectionSource:
-        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Difference_between_proto_and_prototype.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
       sectionTitle: 'Prototypal Inheritance: Object.create() & Prototypes',
       sectionSource:
-        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Object.create()_&_Prototypes.html',
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Object.create().html',
       sectionArticles: [
         {
           articleTitle: 'Setting a prototype with Object.create()',
@@ -1887,7 +1915,7 @@ const oop = {
     {
       sectionTitle: 'Prototypal Inheritance: Constructor Function & Prototypes',
       sectionSource:
-        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Constructor_Function_&_Prototypes.html',
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Constructor_Function.html',
       sectionArticles: [
         {
           articleTitle: 'Setting a prototype with Constructor Function',
@@ -1902,7 +1930,8 @@ const oop = {
     },
     {
       sectionTitle: 'Prototypal Inheritance: ES6 Classes & Prototypes',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_ES6_Classes.html',
       sectionArticles: [
         {
           articleTitle: 'Defining classes',
