@@ -1780,9 +1780,9 @@ const oop = {
       ],
     },
     {
-      sectionTitle: 'Introduction to OOP',
+      sectionTitle: 'Introduction to "traditional" OOP',
       sectionSource:
-        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Introduction_to_OOP.html',
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Introduction_to_traditional_OOP.html',
       sectionArticles: [
         {
           articleTitle: 'OOP is a programming paradigm',
@@ -1806,7 +1806,8 @@ const oop = {
           articleSource: '',
         },
         {
-          articleTitle: 'Traditional OOP vs JavaScript',
+          articleTitle:
+            'Traditional OOP: Classes & Instances vs JavaScript: Constructors & Prototypes',
           articleSource: '',
         },
       ],

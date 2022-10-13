@@ -1,4 +1,4 @@
-# Introduction to Object-Oriented Programming (OOP)
+# Introduction to "traditional" Object-Oriented Programming (OOP)
 
 Object-Oriented Programming (OOP) is a ==**programming paradigm**== fundamental to many programming languages, including Java and C++. JavaScript uses something called Prototypal Inheritance (via constructors and prototypes) to implement OOP, and Prototypal Inheritance differs from "classical" object-oriented programming. In this article, we'll describe some of the basic principles of "classical" object-oriented programming, and look at the ways it is different from the prototype model in JavaScript.
 
@@ -6,7 +6,7 @@ We'll describe three main concepts: **classes and instances**, **inheritance**, 
 
 ## OOP characteristics
 
-OOP, in general, is about ==**modeling a system** as a **collection of objects**, which each represent some particular aspect of the system==. Objects contain both ==functions (or methods)== _and_ ==data==. An object provides a ==**public interface**== to other code that wants to use it, but it maintains its own ==**private internal state**==; this means that other parts of the system don't have to care about what is going on inside the object.
+OOP is about ==**modeling a system** as a **collection of objects**, which each represent some particular aspect of the system==. Objects contain both ==functions (or methods)== _and_ ==data==. An object provides a ==**public interface**== to other code that wants to use it, but it maintains its own ==**private internal state**==; this means that other parts of the system don't have to care about what is going on inside the object.
 
 - We use objects to ==**model/describe**== ==real-world== (e.g. user or todo list item) or ==abstract features== (e.g. HTML component or data structure);
 - Objects may contain data (properties) and code (methods). By using objects, we ==pack **data** and the corresponding **behavior** into one block==;
@@ -41,7 +41,7 @@ class Professor
         introduceSelf()
 ```
 
-==**On its own, a class doesn't do anything**: it's a kind of **template for creating concrete objects of that type**==. Each concrete professor we create is called an ==**instance**== of the `Professor` class. The process of creating an instance is performed by a special function called a ==**constructor**==. We pass values to the constructor for any internal state that we want to initialize in the new instance.
+==**On its own, a class doesn't do anything**: it's a kind of **template for creating concrete objects of that type**==. _Each concrete professor we create is called an_ ==**instance**== _of the `Professor` class_. _The process of creating an instance is performed by a special function called a_ ==**constructor**==. We pass values to the constructor for any internal state that we want to initialize in the new instance.
 
 Generally, the constructor is written out as part of the class definition, and it usually has the same name as the class itself:
 
@@ -84,7 +84,7 @@ class Student
 
 ==It would be helpful if we could represent the fact that students and professors share some properties, or more accurately, the fact that on some level, they are the *same kind of thing*. **Inheritance** lets us do this==.
 
-We start by observing that students and professors are both people, and people have names and want to introduce themselves. We can model this by defining a new class `Person`, where we define all the common properties of people. Then, `Professor` and `Student` can both **derive** from `Person`, adding their extra properties:
+We start by observing that students and professors are both people, and people have names and want to introduce themselves. We can model this by defining a new class `Person`, where we define all the common properties of people. ==Then,== `Professor` ==and== `Student` ==can both **derive** from== `Person`, ==adding their extra properties==:
 
 ```
 class Person
@@ -113,7 +113,7 @@ class Student : extends Person
         introduceSelf()
 ```
 
-In this case, we would say that `Person` is the **superclass** or **parent class** of both `Professor` and `Student`. Conversely, `Professor` and `Student` are **subclasses** or **child classes** of `Person`.
+==In this case, we would say that== `Person` ==is the **superclass** or **parent class** of both== `Professor` ==and==`Student`. ==Conversely,== `Professor` ==and== `Student` ==are **subclasses** or **child classes** of== `Person`.
 
 You might notice that `introduceSelf()` is defined in all three classes. The reason for this is that while all people want to introduce themselves, the way they do so is different:
 
@@ -136,9 +136,9 @@ pratt.introduceSelf(); // 'My name is Pratt.'
 
 ### Encapsulation
 
-Objects provide an interface to other code that wants to use them but maintain their own internal state. The object's internal state is kept **private**, meaning that it can only be accessed by the object's own methods, not from other objects. ==Keeping an object's internal state private, and generally making a clear division between its public interface and its private internal state, is called **encapsulation**==.
+==_Objects provide an interface to other code that wants to use them but maintain their own internal state_. The object's internal state is kept **private**, meaning that it can only be accessed by the object's own methods, not from other objects. _Keeping an object's internal state private, and generally making a clear division between its public interface and its private internal state, is called_ **encapsulation**==.
 
-This is a useful feature because it enables the programmer to change the internal implementation of an object without having to find and update all the code that uses it: it creates a kind of firewall between this object and the rest of the system.
+This is a useful feature because it enables the programmer to _change the internal implementation of an object without having to find and update all the code that uses it_: it creates a kind of firewall between this object and the rest of the system.
 
 For example, suppose students are allowed to study archery if they are in the second year or above. We could implement this just by exposing the student's `year` property, and other code could examine that to decide whether the student can take the course:
 
@@ -169,7 +169,7 @@ if (student.canStudyArchery()) {
 
 That way, if we want to change the rules about studying archery, we only have to update the `Student` class, and all the code using it will still work.
 
-In many OOP languages, we can prevent other code from accessing an object's internal state by marking some properties as `private`. This will generate an error if code outside the object tries to access them:
+==In many OOP languages, we can prevent other code from accessing an object's internal state by marking some properties as== `private`. ==This will generate an error if code outside the object tries to access them==:
 
 ```
 class Student : extends Person
@@ -185,7 +185,7 @@ student = new Student('Weber', 1)
 student.year // error: 'year' is a private property of Student
 ```
 
-In languages that don't enforce access like this, programmers use naming conventions, such as starting the name with an underscore, to indicate that the property should be considered private.
+==In languages that don't enforce access like this, programmers use **naming conventions**, such as starting the name with an underscore, to indicate that the property should be considered private==.
 
 ## The 4 fundamental principles of OOP
 
@@ -206,10 +206,6 @@ Keeping ==properties and methods **private** inside the class==, so they are not
 
 ![encapsulation](../../img/oop_encapsulation.jpg)
 
-Objects provide an interface to other code that wants to use them but maintain their own internal state. The object's internal state is kept **private**, meaning that it can only be accessed by the object's own methods, not from other objects. Keeping an object's internal state private, and generally making a clear division between its public interface and its private internal state, is called **encapsulation**.
-
-This is a useful feature because it enables the programmer to change the internal implementation of an object without having to find and update all the code that uses it: it creates a kind of firewall between this object and the rest of the system.
-
 ### Inheritance
 
 Making all properties and methods of a certain class ==available to a child class==, forming a hierarchical relationship between classes. This allows us to ==**reuse common logic**== and to model real-world relationships.
@@ -224,16 +220,16 @@ Making all properties and methods of a certain class ==available to a child clas
 
 ## Traditional OOP vs JavaScript
 
-JavaScript uses something called Prototypal Inheritance (via constructors and prototypes) to implement OOP, and Prototypal Inheritance differs from "traditional" object-oriented programming. These features certainly have some relation to some of the OOP concepts described above:
+JavaScript uses something called Prototypal Inheritance (via constructors and prototypes) to implement OOP, and Prototypal Inheritance differs from "traditional" object-oriented programming. The JavaScript Prototypal Inheritance features certainly have some relation to some of the OOP concepts described above:
 
-- **constructors** in JavaScript provide us with something like a class definition, enabling us to define the "shape" of an object, including any methods it contains, in a single place. But prototypes can be used here, too. For example, if a method is defined on a constructor's `prototype` property, then all objects created using that constructor get that method via their prototype, and we don't need to define it in the constructor.
-- **the prototype chain** seems like a natural way to implement inheritance. For example, if we can have a `Student` object whose prototype is `Person`, then it can inherit `name` and override `introduceSelf()`.
+- ==**constructors** in JavaScript provide us with something like a class definition, enabling us to define the "shape" of an object, including any methods it contains, in a single place==. But prototypes can be used here, too. For example, if a method is defined on a constructor's `prototype` property, then all objects created using that constructor get that method via their prototype, and we don't need to define it in the constructor.
+- ==**the prototype chain** seems like a natural way to implement inheritance==. For example, if we can have a `Student` object whose prototype is `Person`, then it can inherit `name` and override `introduceSelf()`.
 
 But it's worth understanding the differences between these features and the "classical" OOP concepts described above. We'll highlight a couple of them here:
 
-1. First, in class-based OOP, classes and objects are two separate constructs, and objects are always created as instances of classes. Also, there is a distinction between the feature used to define a class (the class syntax itself) and the feature used to instantiate an object (a constructor). In JavaScript, we can and often do create objects without any separate class definition, either using a function or an object literal. This can make working with objects much more lightweight than it is in classical OOP.
+1. First, in class-based OOP, classes and objects are two separate constructs, and objects are always created as instances of classes. Also, there is a distinction between the feature used to define a class (the class syntax itself) and the feature used to instantiate an object (a constructor). ==In JavaScript, we can and often do create objects without any separate class definition, either using a function or an object literal==. This can make working with objects much more lightweight than it is in classical OOP.
 
-2. Second, although a prototype chain looks like an inheritance hierarchy and behaves like it in some ways, it's different in others. When a subclass is instantiated, a single object is created which combines properties defined in the subclass with properties defined further up the hierarchy. With prototyping, each level of the hierarchy is represented by a separate object, and they are linked together via the `__proto__` property. The prototype chain's behavior is less like inheritance and more like **delegation**. Delegation is a programming pattern where an object, when asked to perform a task, can perform the task itself or ask another object (its **delegate**) to perform the task on its behalf. In many ways, delegation is a more flexible way of combining objects than inheritance (for one thing, it's possible to change or completely replace the delegate at run time).
+2. Second, although a prototype chain looks like an inheritance hierarchy and behaves like it in some ways, it's different in others. When a subclass is instantiated, a single object is created which combines properties defined in the subclass with properties defined further up the hierarchy. With prototyping, each level of the hierarchy is represented by a separate object, and they are linked together via the `__proto__` property. ==The prototype chain's behavior is less like inheritance and more like **delegation**. Delegation is a programming pattern where an object, when asked to perform a task, can perform the task itself or ask another object (its **delegate**) to perform the task on its behalf==. In many ways, delegation is a more flexible way of combining objects than inheritance (for one thing, it's possible to change or completely replace the delegate at run time).
 
 That said, ==**constructors** and **prototypes** can be used to **implement class-based OOP patterns** in JavaScript==. But using them directly to implement features like inheritance is tricky, so JavaScript provides extra features, layered on top of the prototype model, that map more directly to the concepts of class-based OOP. These extra features comes with ES6 and are something called classes, and classes in JavaScript are only syntactic sugar, because JavaScript doesn't have real classes like Java or C++.
 
@@ -241,7 +237,7 @@ That said, ==**constructors** and **prototypes** can be used to **implement clas
 
 This article has described the basic features of class-based object oriented programming, and briefly looked at how JavaScript constructors and prototypes compare with these concepts.
 
-If you want to learn about classes in JavaScript, look at the the [Prototypal Inheritance: ES6 Classes & Prototypes](https://javascript-resume.netlify.app/src/markdowns/09_object_oriented_programming_(oop)/prototypal_inheritance_es6_classes_&_prototypes.html), article that describes the features JavaScript provides to support class-based object-oriented programming
+If you want to learn about classes in JavaScript, look at the the [Prototypal Inheritance: ES6 Classes & Prototypes](https://javascript-resume.netlify.app/src/markdowns/09_object_oriented_programming_(oop)/prototypal_inheritance_es6_classes), article that describes the features JavaScript provides to support class-based object-oriented programming
 
 ## References
 
