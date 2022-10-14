@@ -1304,7 +1304,7 @@ const arraysAndSets = {
       ],
     },
     {
-      sectionTitle: 'Array Prototype Methods',
+      sectionTitle: 'Array.prototype Methods',
       sectionSource: '',
       sectionArticles: [
         {
@@ -1605,11 +1605,19 @@ const objectsAndMaps = {
       ],
     },
     {
-      sectionTitle: 'Object Prototype Methods',
+      sectionTitle: 'Object.prototype Methods',
       sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'toString()',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'hasOwnProperty()',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'isPrototypeOf()',
           articleSource: '',
         },
       ],
