@@ -1945,8 +1945,30 @@ const oop = {
 };
 
 const functionalProgramming = {
-  title: 'Functional programming (FP)',
+  title: 'Functional Programming (FP)',
   sections: [
+    {
+      sectionTitle: 'Inspiration of JavaScript: Scheme & Java',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Scheme_&_Java.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'Scheme was a programming language that have <i>closures</i> and the idea of <i>functions as first class citizens</i>',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'In Java community, <i>classes and classical inheritance</i> was really, really important',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'JavaScript was inspired by Scheme and Java, and because of this inspiration we have this multi-paradigm language: functional and object oriented',
+          articleSource: '',
+        },
+      ],
+    },
     {
       sectionTitle: 'Advanced Function Concepts',
       sectionSource: '',
