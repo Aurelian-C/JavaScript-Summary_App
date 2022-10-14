@@ -865,8 +865,8 @@ const loops = {
   ],
 };
 
-const functionalProgramming = {
-  title: 'Functional Programming (FP)',
+const functions = {
+  title: 'Functions',
   sections: [
     {
       sectionTitle: 'Functions introduction',
@@ -892,8 +892,7 @@ const functionalProgramming = {
     },
     {
       sectionTitle: 'Higher Order Functions',
-      sectionSource:
-        '/src/markdowns/06_Functional_Programming_(FP)/Higher_Order_Functions.html',
+      sectionSource: '/src/markdowns/06_Functions/Higher_Order_Functions.html',
       sectionArticles: [
         {
           articleTitle: 'Functions are objects',
@@ -922,7 +921,7 @@ const functionalProgramming = {
     {
       sectionTitle: 'Closures & local vs global variables',
       sectionSource:
-        '/src/markdowns/06_Functional_Programming_(FP)/Closures_&_local_vs_global_variables.html',
+        '/src/markdowns/06_Functions/Closures_&_local_vs_global_variables.html',
       sectionArticles: [
         {
           articleTitle: 'Variable lifetime',
@@ -947,16 +946,6 @@ const functionalProgramming = {
         },
         {
           articleTitle: 'Closures & Encapsulation',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Constructor Functions & Prototypal Inheritance',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
           articleSource: '',
         },
       ],
@@ -1019,7 +1008,7 @@ const functionalProgramming = {
     {
       sectionTitle: 'Rest Parameters',
       sectionSource:
-        '/src/markdowns/06_Functional_Programming_(FP)/Rest_parameter_and_functions.html',
+        '/src/markdowns/06_Functions/Rest_parameter_and_functions.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -1062,7 +1051,7 @@ const functionalProgramming = {
     {
       sectionTitle: 'Spread syntax for function calls',
       sectionSource:
-        '/src/markdowns/06_Functional_Programming_(FP)/Spread_syntax_and_function_calls.html',
+        '/src/markdowns/06_Functions/Spread_syntax_and_function_calls.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -1073,7 +1062,7 @@ const functionalProgramming = {
     {
       sectionTitle: 'Function invocation & "this" keyword',
       sectionSource:
-        '/src/markdowns/06_Functional_Programming_(FP)/Function_invocation_&_this_keyword.html',
+        '/src/markdowns/06_Functions/Function_invocation_&_this_keyword.html',
       sectionArticles: [
         {
           articleTitle: `"this" is the object that the function is a property of`,
@@ -1131,7 +1120,7 @@ const functionalProgramming = {
     {
       sectionTitle: 'The "this" keyword & call(), apply() and bind()',
       sectionSource:
-        '/src/markdowns/06_Functional_Programming_(FP)/The_this_keyword_&_call__apply__and__bind.html',
+        '/src/markdowns/06_Functions/The_this_keyword_&_call__apply__and__bind.html',
       sectionArticles: [
         {
           articleTitle:
@@ -1180,74 +1169,6 @@ const functionalProgramming = {
         },
         {
           articleTitle: 'Regular Functions vs Arrow Functions',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Advanced Function Concepts',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Pure Functions & Side-Effects',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Impure vs Pure Functions',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Factory Functions',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Curry',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Partial Application',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Referential Transparency',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Compose',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Pipe',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
           articleSource: '',
         },
       ],
@@ -2012,6 +1933,80 @@ const oop = {
     },
     {
       sectionTitle: 'Prototypal Inheritance on Built-In Objects',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+  ],
+};
+
+const functionalProgramming = {
+  title: 'Functional programming (FP)',
+  sections: [
+    {
+      sectionTitle: 'Advanced Function Concepts',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Pure Functions & Side-Effects',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Impure vs Pure Functions',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Factory Functions',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Curry',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Partial Application',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Referential Transparency',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Compose',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Pipe',
       sectionSource: '',
       sectionArticles: [
         {
@@ -3592,10 +3587,11 @@ export const data = [
   operators,
   conditionalStatements,
   loops,
-  functionalProgramming,
+  functions,
   arraysAndSets,
   objectsAndMaps,
   oop,
+  functionalProgramming,
   standardBuildInObjects,
   asynchronous,
   domManipulation,
