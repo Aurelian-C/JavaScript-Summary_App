@@ -1819,16 +1819,30 @@ const oop = {
       sectionArticles: [
         {
           articleTitle:
-            'Classical OOP: Classes vs OOP in JavaScript: Prototypes',
-          articleSource: '',
-        },
-        {
-          articleTitle:
             'Prototypes are the mechanism by which JavaScript objects inherit features from one another',
           articleSource: '',
         },
         {
-          articleTitle: `Every object in JavaScript has a <i>built-in property which is called its prototype</i>. <i>The prototype is itself an object</i>, so the prototype will have its own prototype, making what's called a <i>prototype chain</i>. The chain ends when we reach a prototype that has "null" for its own prototype`,
+          articleTitle:
+            'With the help of prototypes objects inherit features from another object, not copy them',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            "With Prototypal Inheritance we're being efficient with our memory: the fact that objects can share prototypes means that you can have objects with properties that are pointing to the same place in memory",
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Every object in JavaScript has a built-in property (__proto__) which is called its prototype',
+          articleSource: '',
+        },
+        {
+          articleTitle: `The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has "null" for its own prototype`,
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Only functions have the prototype property',
           articleSource: '',
         },
         {
@@ -1863,10 +1877,30 @@ const oop = {
       ],
     },
     {
-      sectionTitle: 'Introduction to Constructor Function',
+      sectionTitle: 'Prototypal Inheritance: Object.create() & Prototypes',
       sectionSource:
-        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Introduction_to_Constructor_Function.html',
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Object.create().html',
       sectionArticles: [
+        {
+          articleTitle: 'Setting a prototype with Object.create()',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'More real inheritance than Prototypal Inheritance (Child and Parent)',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Prototypal Inheritance: Constructor Function & Prototypes',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Constructor_Function.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Factory Functions vs Constructor Function',
+          articleSource: '',
+        },
         {
           articleTitle:
             'Constructor Function create a "blueprint" for creating many objects of the same "type"',
@@ -1895,29 +1929,6 @@ const oop = {
           articleTitle: `In a Constructor Function "this" does not have a value. It is a substitute for the new object. The value of "this" will become the new object when a new object is created`,
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Prototypal Inheritance: Object.create() & Prototypes',
-      sectionSource:
-        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Object.create().html',
-      sectionArticles: [
-        {
-          articleTitle: 'Setting a prototype with Object.create()',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'More real inheritance than Prototypal Inheritance (Child and Parent)',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Prototypal Inheritance: Constructor Function & Prototypes',
-      sectionSource:
-        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Constructor_Function.html',
-      sectionArticles: [
         {
           articleTitle: 'Setting a prototype with Constructor Function',
           articleSource: '',

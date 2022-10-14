@@ -2,25 +2,37 @@
 
 In JavaScript, most things are objects, from core JavaScript features like arrays to the browser [APIs](https://developer.mozilla.org/en-US/docs/Glossary/API) built on top of JavaScript.
 
-![prototypal_inheritance](../../img/prototypal_inheritance.jpg)
+JavaScript using something called ==**Prototypal Inheritance**== to implement classes that are in "traditional" Object Oriented Programming like Java and C++. What does that mean? ==Prototypal Inheritance (via constructors and prototypes) is a mechanism by which JavaScript **objects inherit features from one another**==.
 
-JavaScript using something called ==**Prototypal Inheritance**==. What does that mean? ==Prototypal Inheritance (via prototypes) is a mechanism by which JavaScript **objects inherit features from one another**==.
+![prototypal_inheritance](../../img/prototypal_inheritance.jpg)
 
 ```js
 const arr = [];
 arr.__proto__	// [constructor: ƒ, at: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, …]
 Array.prototype // [constructor: ƒ, at: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, …]
-arr.__proto__ === Array.prototype	// true
-Array.prototype.isPrototypeOf(arr)	// true
+arr.__proto__ === Array.prototype		// true
+Array.prototype.isPrototypeOf(arr)		// true
+Object.prototype.isPrototypeOf(Array)	// true
 
 const func = function() {};
 func.__proto__		// ƒ () { [native code] }
 Function.prototype	// ƒ () { [native code] }
-func.__proto__ === Function.prototype	// true
-Function.prototype.isPrototypeOf(func)	// true
+func.__proto__ === Function.prototype		// true
+Function.prototype.isPrototypeOf(func)		// true
+Object.prototype.isPrototypeOf(Function)	// true
 ```
 
-==Is important to understand that via Prototypal Inheritance **objects INHERIT features, NOT COPY THEM**==.
+Prototypal Inheritance is quite unique and not that common in other popular languages like C# or Java, they use something called classical inheritance. JavaScript, on the other hand, uses Prototypal Inheritance.
+
+Now, even though in JavaScript we do have the `class` keyword, and it's something that we're going to talk about, this is what we call syntactic sugar. There's actually no classes in JavaScript, we only have Prototypal Inheritance.
+
+![prototype](../../img/oop_prototype.jpg)
+
+In this article, we explain ==what a prototype is==, ==how prototype chains work==, and ==how a prototype for an object can be set==.
+
+## With prototypes objects inherit features from another object, not copy them
+
+==Is important to understand that via Prototypal Inheritance **objects INHERIT features from another object, NOT COPY THEM**==.
 
 ```js
 const dragon = {
@@ -35,8 +47,8 @@ const lizard = {
     fight() { return 1 },
 };
 
-// You should never use __proto__ to set a object prototype. It's bad for performance and there's different ways that we want to inherit when it comes to prototype or inheritance. We never want to manually assign the prototype chain and create that chain ourselves. This is only demonstration purpose.
-lizard.__proto__ = dragon; // setting the prototype of lizard
+// Never use __proto__ to set a object prototype. This is only for demonstration purpose
+lizard.__proto__ = dragon; // setting the prototype of lizard 
 
 for (let prop in lizard) {
     if (lizard.hasOwnProperty(prop)) {
@@ -46,13 +58,15 @@ for (let prop in lizard) {
 // name
 // fight
 
-// We see that "lizard" object only inherits features from "dragon" object, NOT COPY THEM. Even hasOwnProperty method is inherit from other object, called Constructor.
-// The beauty is that JavaScript looks for you through the prototype chain automatically. We don't have to do any weird .__proto__.__proto__ to find hasOwnProperty method, JavaScript does it automatically for you.
+// We see that "lizard" object only inherits features from "dragon" object, NOT COPY THEM. Even "hasOwnProperty" method is inherit from other object, called Constructor.
+// The beauty is that JavaScript looks for you through the prototype chain automatically. We don't have to do any weird .__proto__.__proto__ to find "hasOwnProperty" method, JavaScript does it automatically for you.
 ```
 
-So why is Prototypal Inheritance so useful? The fact that objects can share prototypes means that you can have objects with properties that are pointing to the same place in memory, thus being more efficient. Imagine if we had a ton of lizards, right? And we just copied all the functionality of the dragon onto the lizard into a different place in memory. That can get overwhelming fairly soon. Instead, with Prototypal Inheritance, instead of just copying all the dragon functionality into different places in memory, we have it in just one place.
+> **Note**: ==You should never use==`__proto__`==to set a object prototype== like we did above with `lizard.__proto__ = dragon;`. It's bad for performance and there's different ways that we want to inherit when it comes to prototypes or inheritance. ==We never want to manually assign the prototype chain and create that chain ourselves==.
 
-Whenever the JavaScript Engine doesn't find anything up the prototype chain, we get errors or `undefined` because it goes all the way up to the base object and not find the method/property.
+So why is Prototypal Inheritance so useful? ==The fact that objects can share prototypes means that you can have objects with properties that are pointing to the same place in memory, thus being more efficient==. Imagine if we had a ton of lizards and we just copied all the functionality of the `dragon` onto the `lizard` into a different place in memory. That can get overwhelming fairly soon. With Prototypal Inheritance, instead of just copying all the `dragon` functionality into different places in memory, we have it in just one place.
+
+At the end of the day, Prototypal Inheritance is useful for us because using prototypes we avoid repeating ourselves, we avoid adding the same code over and over and over and being inefficient with our memory. With closures and prototypes we can start creating some interesting programming paradigms.
 
 ```js
 const arr = [];
@@ -63,59 +77,9 @@ Array.prototype.hasOwnProperty('map')	// true
 // With Prototypal Inheritance we're being efficient with our memory. "map" method should live only in one location in memory, up the prototype chain with the base array.
 ```
 
-Prototypal Inheritance is quite unique and not that common in other popular languages like C# or Java, they use something called classical inheritance. JavaScript, on the other hand, uses Prototypal Inheritance.
-
-Now, even though in JavaScript we do have the `class` keyword, and it's something that we're going to talk about, this is what we call syntactic sugar. There's actually no classes in JavaScript, we only have Prototypal Inheritance.
-
-![prototype](../../img/oop_prototype.jpg)
-
-In this article, we explain ==what a prototype is==, ==how prototype chains work==, and ==how a prototype for an object can be set==.
-
 ## The Prototype Chain
 
-Everything in JavaScript is an object, and arrays and functions in JavaScript are objects. They inherit through the prototype chain from the base object `Object.prototype`.
-
-At the end of the day, Prototypal Inheritance is useful for us because using prototypes we avoid repeating ourselves, we avoid adding the same code over and over and over and being inefficient with our memory. With closures and prototypes we can start creating some interesting programming paradigms.
-
-![prototypal_inheritance1](../../img/prototypal_inheritance1.jpg)
-
-![prototypal_inheritance3](../../img/prototypal_inheritance3.jpg)
-
-A function is a special type of object, it's a "callable object", where we have code that can be invoked, we have an optional "name" field, and we also have properties that we can add to the function because, well, it's an object.
-
-![prototypal_inheritance2](../../img/prototypal_inheritance2.jpg)
-
-
-
-![prototypal_inheritance4](../../img/prototypal_inheritance4.jpg)
-
-```js
-const func = function() {};
-func.prototype; // {constructor: ƒ}
-
-const obj = {};
-obj.prototype; // undefined
-Object.prototype // {constructor: ƒ, __defineGetter__: ƒ, ƒ, …}
-
-const arr = [];
-arr.prototype; // undefined
-Array.prototype; // [constructor: ƒ, at: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, …]
-
-String.prototype; // String {'', constructor: ƒ, anchor: ƒ, at: ƒ, big: ƒ, …}
-'string'.prototype; // undefined
-```
-
-When we create a function, we don't really use the prototype property, the prototype just gets created automatically. We never really make use of it because prototypes, although they are a property on all functions, the only time we really use prototypes is using what we call Constructor Functions. Constructor Functions usually start with a capital letter and they contain the actual "blueprint" or a prototype that we use:
-
-```js
-func.__proto__ === Function.prototype			// true
-func.__proto__.__proto__ === Object.prototype	// true
-typeof Object // 'function' because Object is a Constructor Function
-```
-
-The `Object.prototype` is what we call the base object. That's the very last piece or the very last object that we can look for properties on before we point to `null`.
-
-In the browser's console, try creating an object literal:
+Everything in JavaScript is an object, and arrays and functions in JavaScript are objects. They inherit through the prototype chain from the base object `Object.prototype`. In the browser's console, try creating an object literal:
 
 ```js
 const myObject = {
@@ -128,7 +92,7 @@ const myObject = {
 myObject.greet(); // Greetings from Madrid
 ```
 
-This is an object with _one data property_, `city`, and _one method_, `greet()`. If you type the object's name _followed by a `.`_ into the console, like `myObject.`, then the console will pop up a list of all the properties available to `myObject` object. You'll see that besides `city` and `greet`, there are lots of other properties!
+This is an object with one data property, `city`, and one method, `greet()`. If you type the object's name followed by a `.` into the console, like `myObject.`, then the console will pop up a list of all the properties available to `myObject` object. You'll see that besides `city` and `greet`, there are lots of other properties that you receive automatically!
 
 ```
 __defineGetter__
@@ -136,9 +100,9 @@ __defineSetter__
 __lookupGetter__
 __lookupSetter__
 __proto__
-city
+city	------------------------> only this property is defined by you
 constructor
-greet
+greet	------------------------> only this property is defined by you
 hasOwnProperty
 isPrototypeOf
 propertyIsEnumerable
@@ -149,7 +113,9 @@ toValueOf
 
 If you access a one of them `myObject.toString(); // "[object Object]"` it works. What are these extra properties, and where do they come from?
 
-==Every object in JavaScript has a **built-in property** _which is called its_ **prototype**==. The `prototype` ==is itself an **object**==, so the `prototype` will have its own prototype, making what's called a ==**prototype chain**==. The chain ends when we reach a prototype that has `null` for its own prototype.
+==Every object in JavaScript has a **built-in property**== `__proto__` ==which is called its **prototype**==. 
+
+==The== `prototype` ==property is itself an **object**, so the prototype will have its own prototype, making what's called a **prototype chain**==. The chain ends when we reach a prototype that has `null` for its own prototype.
 
 > **Note**: The property of an object that points to its prototype is not called `prototype`. Its name is not standard, but in practice all browsers use `__proto__`. The standard way to access an object's prototype is the `Object.getPrototypeOf()` method:
 >
@@ -169,24 +135,22 @@ So when we call `myObject.toString()`, the browser:
 - can't find it there, so looks in the prototype object of `myObject` for `toString`
 - finds it there, and calls it.
 
-This is an object called `Object.prototype`, and it is the most basic prototype, that all objects have by default. The prototype of `Object.prototype` is `null`, so it's at the end of the prototype chain:
+The prototype of `myObject` is an object called base object (`Object.prototype`), and it is the most basic prototype, that all objects have by default. The prototype of `Object.prototype` is `null`, so it's at the end of the prototype chain:
 
 ![prototype-chain](..\..\img\oop_prototype-chain.jpg)
 
-The prototype of an object is not always `Object.prototype`:
+==The prototype of an object is not always== `Object.prototype`:
 
 ```js
 const myDate = new Date();
-let object = myDate;
-
-do {
-  object = Object.getPrototypeOf(object);
-  console.log(object);
-} while (object);
-
 // Date.prototype
-// Object {...}
-// null
+myDate.__proto__			// {constructor: ƒ, getDate: ƒ, getDay: ƒ, …}
+// Object.prototype
+myDate.__proto__.__proto__	// {constructor: ƒ, isPrototypeOf: ƒ, hasOwnProperty: ƒ, …}
+
+myDate.__proto__ === Date.prototype				// true
+myDate.__proto__ === Object.prototype			// false
+myDate.__proto__.__proto__ === Object.prototype // true
 ```
 
 This code creates a `Date` object, then walks up the prototype chain, logging the prototypes. It shows us that the prototype of `myDate` is a `Date.prototype` object, and the prototype of that is `Object.prototype`.
@@ -194,6 +158,56 @@ This code creates a `Date` object, then walks up the prototype chain, logging th
 ![prototype-chain1](..\..\img\oop_prototype-chain1.jpg)
 
 In fact, when you call familiar methods, like `myDate2.getMonth()`, you are calling a method that's defined on `Date.prototype`.
+
+Whenever the JavaScript Engine doesn't find anything up the prototype chain, we get errors or `undefined`, because it goes all the way up to the base object and not find the method/property that we search for.
+
+```js
+Array.someMehtod()	// Uncaught TypeError: Array.someMehtod is not a function
+Array.someProperty	// undefined
+```
+
+## Only functions have the prototype property
+
+![prototypal_inheritance4](../../img/prototypal_inheritance4.jpg)
+
+```js
+const func = function() {};
+func.prototype; // {constructor: ƒ}
+
+const obj = {};
+obj.prototype; // undefined
+Object.prototype // {constructor: ƒ, __defineGetter__: ƒ, ƒ, …}
+
+const arr = [];
+arr.prototype; // undefined
+Array.prototype; // [constructor: ƒ, at: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, …]
+
+String.prototype; // String {'', constructor: ƒ, anchor: ƒ, at: ƒ, big: ƒ, …}
+'string'.prototype; // undefined
+```
+
+A function is a special type of object, it's a "callable object", where we have code that can be invoked, we have an optional "name" field, and we also have properties that we can add to the function because, well, it's an object.
+
+![prototypal_inheritance3](../../img/prototypal_inheritance3.jpg)
+
+```js
+const multiplyBy5 = function() {};
+multiplyBy5.__proto__ === Function.prototype			// true
+multiplyBy5.__proto__.__proto__ === Object.prototype	// true
+typeof Object // 'function' because Object is a Constructor Function
+```
+
+==When we create a function, we don't really use the prototype property, the prototype just gets created automatically. We never really make use of it because prototypes, although they are a property on all functions, **the only time we really use prototypes is using what we call Constructor Functions**==. Constructor Functions usually start with a capital letter and they contain the actual "blueprint" or a prototype that we use:
+
+![prototypal_inheritance1](../../img/prototypal_inheritance1.jpg)
+
+> Note: ==Every function in JavaScript automatically has a property called **prototype** and that includes Constructor Functions. Every object that's created by a Constructor Function will get access to all the methods and properties that we define on the Constructor Function== `prototype` ==property==.
+>
+> Every function that we create gets the `prototype` property, but ==only Constructor Functions actually have used for this **prototype object**==.
+
+Every object has a `__proto__` property points to its prototype, but objects don't have the `prototype` property. Only functions have the `prototype` property.
+
+![prototypal_inheritance2](../../img/prototypal_inheritance2.jpg)
 
 ## Shadowing properties
 
@@ -240,9 +254,7 @@ Prototypes are a powerful and very flexible feature of JavaScript, making it pos
 
 In particular they support a version of **inheritance**. Inheritance is a feature of OOP languages that lets programmers express the idea that some objects in a system are more specialized versions of other objects.
 
-For example, if we're modeling a school, we might have *professors* and *students*: they are both *people*, so have some features in common (for example, they both have names), but each might add extra features (for example, professors have a subject that they teach), or might implement the same feature in different ways. In an OOP system we might say that professors and students both **inherit from** people.
-
-You can see how in JavaScript, if `Professor` and `Student` objects can have `Person` prototypes, then they can inherit the common properties, while adding and redefining those properties which need to differ.
+For example, if we're modeling a school, we might have *professors* and *students*: they are both *people*, so have some features in common (for example, they both have names), but each might add extra features (for example, _professors_ have a subject that they teach), or might implement the same feature in different ways. In an OOP system we might say that _professors_ and _students_ both **inherit from** _people_. If _professor_ and _student_ objects can have _person_ prototypes, then they can inherit the common properties, while adding and redefining those properties which need to differ.
 
 ## References
 

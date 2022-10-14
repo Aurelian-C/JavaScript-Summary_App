@@ -119,14 +119,6 @@ In this version, with `Object.create()`, we don't even worry about Constructor F
 
 Some people think that this pattern is a lot better than basically trying to fake classes in JavaScript, because faking classes in the way that they exist in other languages like Java or C++, is exactly what we do by using Constructor Functions and even ES6 classes. But here, in this technique that I just showed you with `Object.create()`, we are, in fact, not faking classes. All we are doing is ==simply linking objects together, where some objects then serve as the prototype of other objects==. Personally, I wouldn't mind if this was the only way of doing OOP in JavaScript, but as I mentioned earlier, ES6 classes and Constructor Functions are actually way more used in the real world.
 
-## Summary
-
-In particular prototypes support a version of **inheritance**. Inheritance is a feature of OOP languages that lets programmers express the idea that some objects in a system are more specialized versions of other objects.
-
-For example, if we're modeling a school, we might have *professors* and *students*: they are both *people*, so have some features in common (for example, they both have names), but each might add extra features (for example, professors have a subject that they teach), or might implement the same feature in different ways. In an OOP system we might say that professors and students both **inherit from** people.
-
-You can see how in JavaScript, if `Professor` and `Student` objects can have `Person` prototypes, then they can inherit the common properties, while adding and redefining those properties which need to differ.
-
 ## References
 
 1. [The Complete JavaScript Course. From Zero to Expert! - Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNCuaAhZ8UB5kIldtb76eeAyfM0SUKeceBq3FKF24pNxDVe-_g0-DPxoCnWwQAvD_BwE)
