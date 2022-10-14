@@ -233,6 +233,8 @@ But it's worth understanding the differences between these features and the "cla
 
 That said, ==**constructors** and **prototypes** can be used to **implement class-based OOP patterns** in JavaScript==. But using them directly to implement features like inheritance is tricky, so JavaScript provides extra features, layered on top of the prototype model, that map more directly to the concepts of class-based OOP. These extra features comes with ES6 and are something called classes, and classes in JavaScript are only syntactic sugar, because JavaScript doesn't have real classes like Java or C++.
 
+![classes_and_instances](../../img/classes_and_instances.jpg)
+
 ## Summary
 
 This article has described the basic features of class-based object oriented programming, and briefly looked at how JavaScript constructors and prototypes compare with these concepts.
