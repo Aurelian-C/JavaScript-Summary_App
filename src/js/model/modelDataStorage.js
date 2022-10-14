@@ -1676,7 +1676,7 @@ const objectsAndMaps = {
 };
 
 const oop = {
-  title: 'Object Oriented Programming (OOP)',
+  title: 'Object-Oriented Programming (OOP)',
   sections: [
     {
       sectionTitle: 'Inspiration of JavaScript: Scheme & Java',
@@ -1695,7 +1695,7 @@ const oop = {
         },
         {
           articleTitle:
-            'JavaScript was inspired by Scheme and Java, and because of this inspiration we have this multi-paradigm language: functional and object oriented',
+            'JavaScript was inspired by Scheme and Java, and because of this inspiration we have this multi-paradigm language: functional and object-oriented',
           articleSource: '',
         },
       ],
@@ -1922,7 +1922,7 @@ const oop = {
       ],
     },
     {
-      sectionTitle: 'Standard build-in objects',
+      sectionTitle: 'Prototypal Inheritance on Built-In Objects',
       sectionSource: '',
       sectionArticles: [
         {
@@ -1932,7 +1932,7 @@ const oop = {
       ],
     },
     {
-      sectionTitle: 'Prototypal Inheritance on Built-In Objects',
+      sectionTitle: 'Object-Oriented vs Functional Programming',
       sectionSource: '',
       sectionArticles: [
         {
