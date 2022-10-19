@@ -1,33 +1,65 @@
 ## ES6 Classes
 
-A JavaScript class is **not an object**. It is a **template** for JavaScript objects.
+==A JavaScript class is **not an object**, it is a **template** for JavaScript objects. Classes are a **template for creating objects**. They encapsulate data with code to work on that data.==
 
-Classes are a **template for creating objects**. They encapsulate data with code to work on that data. Classes in JavaScript do not work like traditional classes in other languages like Java or C++. Classes in Javascript are built on prototypes, so classes are in fact "special functions", "syntetic sugar" over Constrcutor Functions.
+Classes in JavaScript do not work like traditional classes in other languages like Java or C++. Classes in JavaScript are built on prototypes, so classes are in fact "special functions", "syntactic sugar" over Constructor Function. Classes still implement Prototypal Inheritance behind the scenes, but where they syntax that makes more sense to people coming from other programming languages, and that was basically the goal of adding classes to JavaScript.
 
-Classes still implement prototypal inheritance behind the scenes, but where they syntax that makes more sense to people coming from other programming languages and that was basically the goal of adding classes to JavaScript.
+![classes_summary](../../img/classes_summary.jpg)
 
 ## Defining classes
 
-Like in functions, we have class **expression** and class **declaration**. In fact **classes are just a special type of functions**. So although we use the `class` keyword behind the scenes **classes are still functions** and therefore we have class expressions and class declarations.
+==Like in functions, we have class **expression** and class **declaration**. In fact **classes are just a special type of functions**==. So although we use the `class` keyword, behind the scenes **classes are still functions**, and therefore we have class expressions and class declarations.
 
-One way to define a class is using a **class declaration**. To declare a class, you use the `class` keyword with the name of the class.
+```js
+class Student extends Person {
+    university = 'University of Nicaragua';
+    #studyHours = 0;
+    #course;
+    static numSubjects = 10;
+    
+    constructor(fullName, birthYear, startYear, course) {
+        super(fullName, birthYear);
+        this.startYear = startYear;
+        this.#course = course;
+    }
+    
+    introduce() {
+        return `I study ${this.#course} at ${this.university}`;
+    }
+    
+    study(h) {
+        this.#makeCoffe();
+        this.#studyHours += h;
+    }
+    
+    #makeCoffe() {
+        return 'Here is a coffe for you'
+    }
+    
+    get testScore() {
+        return this._testScore;
+    }
+    
+    set testScore() {
+        this._testScore = score < 20 ? score : 0;
+    }
+    
+    static printCurriculum() {
+        return `There are ${this.numSubjects} subjects.`
+    }
+}
+
+const student = new Student('Richard', 2020, 2037, 'Medicine');
+```
+
+One way to define a class is using a **class declaration**. To declare a class, you use the `class` keyword with the name of the class:
 
 ```js
 // Class expression
-const Person = class {
-  constructor(firstName, birthYear) {
-    this.firstName = firstName;
-    this.birthYear = birthYear;
-  }
-};
+const Person = class {};
 
 // Class declaration
-class Person {
-  constructor(firstName, birthYear) {
-    this.firstName = firstName;
-    this.birthYear = birthYear;
-  }
-}
+class Person {};
 ```
 
 > **Note**: The `constructor` method works in a pretty similar way as a Constructor Function. Just like in Constructor Functions, we pass in `constructor` method arguments for the properties that we wanted to have every object created by `Person` class.
@@ -36,13 +68,12 @@ class Person {
 >
 > ```js
 > const p = new Person(); // ReferenceError
->
-> class Person {}
+>class Person {}
 > ```
->
-> This occurs because while the class is hoisted its values are not initialized.
+> 
+>This occurs because while the class is hoisted its values are not initialized.
 
-**Diferences between Constructor Function and classes are the syntax**. In classes we don't have to manually mess with the `prototype` property to create methods. All you have to do is to write the methods inside the class but outside of the `constructor` method, and then they will automatically be added to the `prototype` property of the class.
+==**Differences between Constructor Function and classes are the syntax**. In classes we don't have to manually mess with the== `prototype` ==property to create methods==. All you have to do is to write the methods inside the class but outside of the `constructor` method, and then they will automatically be added to the `prototype` property of the class.
 
 Just like functions, classes are also first class citizens and so what that means, is that we can pass them into functions and also return them from functions.
 
@@ -52,13 +83,13 @@ The body of a class is the part that is in curly brackets `{}`. This is where yo
 
 ## Constructor
 
-The `constructor` method is a special method for **creating and initializing an object** created with a `class`. There can only be one special method with the name "constructor" in a class. A `SyntaxError` will be thrown if the class contains more than one occurrence of a `constructor` method.
+The `constructor` method is a ==special method for **creating and initializing an object** created with a== `class`. ==There can only be **one** special method with the name "constructor" in a class==. A `SyntaxError` will be thrown if the class contains more than one occurrence of a `constructor` method.
 
 The constructor method is a special method:
 
-- It has to have the exact name "constructor"
-- It is executed automatically when a new object is created
-- It is used to initialize object properties
+- it has to have the exact name "constructor";
+- it is executed automatically when a new object is created;
+- it is used to initialize object properties.
 
 If you do not define a constructor method, JavaScript will add an empty constructor method.
 
@@ -73,9 +104,7 @@ class Person {
 
 ## Prototype methods
 
-Class methods are created with the same syntax as object methods.
-
-What's important to understand is that all of the methods that we write in a class, so outside of the `constructor`, will be on the prototype of the objects and not on the objects themselves. Methods will be added to `prototype` property.
+==Class methods are created with the same syntax as object methods==. What's important to understand is that all of the methods that we write in a class, so outside of the `constructor`, will be on the prototype of the objects, and not on the objects themselves. So ==methods write in a class, outside of the== `constructor`, ==will be added to== `prototype` ==property==.
 
 ```js
 class Rectangle {
@@ -91,7 +120,7 @@ class Rectangle {
 }
 ```
 
-You can also add method or properties directly on the `prototype` property.
+You can also add method or properties directly on the `prototype` property:
 
 ```js
 Person.prototype.greet = function () {
@@ -101,11 +130,9 @@ Person.prototype.greet = function () {
 
 ## Setters and Getters
 
-Classes also allows you to use getters and setters.
+Classes also allows you to use getters and setters. It can be smart to use getters and setters for your properties, especially if you want to do something special with the value before returning them, or before you set them.
 
-It can be smart to use getters and setters for your properties, especially if you want to do something special with the value before returning them, or before you set them.
-
-To add getters and setters in the class, use the `get` and `set` keywords.
+To add getters and setters in the class, use the `get` and `set` keywords:
 
 ```js
 class Car {
@@ -127,7 +154,7 @@ document.getElementById('demo').innerHTML = myCar.cnam;
 
 > **Note**: Even if the getter is a method, you do not use parentheses when you want to get the property value.
 
-The name of the getter/setter method cannot be the same as the name of the property, in this case carname. Many programmers use an underscore character \_ before the property name to separate the getter/setter from the actual property:
+The name of the getter/setter method cannot be the same as the name of the property, in this case carname. Many programmers use an underscore character `_` before the property name to separate the getter/setter from the actual property:
 
 ```js
 class Car {
@@ -169,9 +196,9 @@ document.getElementById('demo').innerHTML = myCar.carname;
 
 ## Static methods and properties
 
-Static class methods are defined on the class itself. You cannot call a `static` method on an object, only on an object class.
+==Static class methods are defined on the class itself. You cannot call a static method on an object instance, only on an object class==.
 
-The `static` keyword defines a static method or property for a class. Static members (properties and methods) are called without instantiating their class and cannot be called through a class instance. Static methods are often used to create utility functions for an application, whereas static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
+==The== `static` ==keyword defines a static method or property for a class. Static members (properties and methods) are called without instantiating their class and cannot be called through a class instance==. Static methods are often used to create utility functions for an application, whereas static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
 
 ```js
 class Point {
@@ -213,12 +240,12 @@ Another example is `Numbers.parsefloat()`, so that's the same thing like `Array.
 
 ## Encapsulation: Protected Properties and Methods
 
-Encapsulation basically means to keep some **properties and methods private inside the class** so that they are not accessible from outside of the class, then the rest of the methods are basically exposed as a public interface, which we can also call **public API**.
+==Encapsulation means to keep some **properties and methods private inside the class**==, so that they are not accessible from outside of the class, then the rest of the methods are exposed as a public interface, which we can also call **public API**.
 
 There are two big reasons why we need encapsulation and data privacy:
 
 - first is to prevent code from outside of a class to accidentally manipulate our data inside the class;
-- second reason is that when we expose only a small interface, so a small public API consisting only of a few public methods, then we can change all the other internal methods with more confidence because in this case we can be sure that external code does not rely on these private methods and so therefore our code will not break when we do internal changes.
+- second reason is that when we expose only a small interface, so a small public API consisting only of a few public methods, then we can change all the other internal methods with more confidence because in this case we can be sure that external code does not rely on these private methods, and so therefore our code will not break when we do internal changes.
 
 However, JavaScript **classes actually do not yet support real data privacy and encapsulation**. Now there is a **proposal to add truly private class fields and methods** to the language, but it's not completely ready yet. So in this lecture, we will basically fake encapsulation by simply using a convention.
 
@@ -262,11 +289,11 @@ class AccountEncapsulation {
 
 ## Encapsulation: Private Class Fields and Methods
 
-Private class fields and methods are actually part of a bigger proposal for improving and changing JavaScript classes, which is simply called Class Fields. Now this Class Fields proposal is currently at stage three and so right now it's actually not yet part of the JavaScript language. However, being at stage three means that it's very likely that at some point, it will move forward to stage number four and then it will actually become a part of the JavaScript language, and that's probably gonna happen some point soon in the future. in fact, some parts of this proposal actually already work in Google Chrome but other parts don't.
+Private class fields and methods are actually part of a bigger proposal for improving and changing JavaScript classes, which is simply called Class Fields. Now this Class Fields proposal is currently at stage three, and so right now it's actually not yet part of the JavaScript language. However, being at stage three means that it's very likely that at some point, it will move forward to stage number four and then it will actually become a part of the JavaScript language, and that's probably gonna happen some point soon in the future. in fact, some parts of this proposal actually already work in Google Chrome but other parts don't.
 
 Now for starters, why is this proposal actually called Class fields? Well, in traditional OOP languages like Java and C++, properties are usually called fields. So what this means is that with this new proposal, JavaScript is moving away from the idea that classes are just syntactic sugar over Constructor Functions. Because with this new class features classes actually start to have abilities that we didn't previously have with Constructor Functions.
 
-In this proposal, there are actually four different kinds of fields and methods, and actually it's even eight. But in this lecture, I'm just gonna focus on these four and that's **public fields**, **private fields**, **public methods** and **private methods**. So essentially there is a public and a private version of both fields and methods.
+In this proposal, there are actually four different kinds of fields and methods, and actually it's even eight. But in this lecture, I'm just gonna focus on these four and that's ==**public fields**==, ==**private fields**==, ==**public methods**== and ==**private methods**==. So essentially there is a public and a private version of both fields and methods:
 
 1. Public fields (we can think of a field as a property that will be on all instances)
 2. Private fields (we can not define a field in the constructor)
@@ -330,7 +357,7 @@ console.log(account.#movements); // Uncaught SyntaxError: Private field '#moveme
 
 ## Chaining Methods
 
-Do you remember how we chained array methods one after another, for example `filter`, `map` and `reduce`? So by chaining these methods, we could first `filter` an array, then `map` the result and finally `reduce` the results of the `map`, all in one line of code. And we can actually implement the same ability of chaining methods in the methods of our class. So all we have to do is to return the object itself at the end of a method that we want to be chainable.
+Do you remember how we chained array methods one after another, for example `filter`, `map` and `reduce`? So by chaining these methods, we could first `filter` an array, then `map` the result and finally `reduce` the results of the `map`, all in one line of code. And we can actually implement the same ability of chaining methods in the methods of our class. So ==all we have to do is to **return the object itself at the end of a method that we want to be chainable**==.
 
 ```js
 account
@@ -341,31 +368,15 @@ account
   .withdraw(4000);
 ```
 
-## Summary
-
-So, now at the end of this lecture, you might ask if you should use Constructor Functions or classes. The first remark I want to do is that Constructor Functions are not like old or deprecated syntax, so it's 100% fine to keep using them. So one more time, this is more a question of personal preference. Now, if you're asking, if you should use classes without understanding prototypal inheritance, well then, the reply is definitely "No!". Now, some people actually say that classes are really bad in general and that no one should ever be using them simply because they hide the true nature of JavaScript. But I actually don't agree with that and I think it's absolutely okay to use classes in your code, as long as you understand everything that I just showed you previously about the prototype and prototypal inheritance.
-
-Now, what I personally like about classes is that they visually put all the code that belongs to a certain class, so like all the data and all the methods, all into one nice code block. With Constructor Functions, in my opinion, it all looks just like a big mess.
-
-References
-
-1. [The Complete JavaScript Course. From Zero to Expert! - Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNCuaAhZ8UB5kIldtb76eeAyfM0SUKeceBq3FKF24pNxDVe-_g0-DPxoCnWwQAvD_BwE)
-2. [Classes - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-3. [JavaScript Classes - w3schools](https://www.w3schools.com/js/js_classes.asp)
-4. [static keyword - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static)
-5. [JavaScript Object Accessors - w3schools](https://www.w3schools.com/js/js_object_accessors.asp)
-
 # More real inheritance than Prototypal Inheritance (Child class and Parent class)
-
-## Inheritance Between "Classes": ES6 Classes
 
 Inheritance is useful for code reusability: reuse properties and methods of an existing class when you create a new class.
 
-To implement inheritance between ES6 classes, we only need two ingredients. We need the `extends` and the `super` keywords.
+==To implement inheritance between ES6 classes, we only need two ingredients. We need the== `extends` ==and the== `super` ==keywords==.
 
 - The `extends` keyword is used to create a child class of another class (parent). The child class inherits all the methods from another class.
 
-- The `super` keyword refers to the parent class. By calling the `super()` method in the constructor method, we call the parent's constructor method and gets access to the parent's properties and methods.
+- The `super` keyword refers to the parent class. By calling the `super()` method in the child constructor method, we call the parent's constructor method and gets access to the parent's properties and methods.
 
 ### Syntax
 
@@ -438,10 +449,20 @@ class Student extends Person {}
 const martha = new Student('Martha Jones', 2012);
 ```
 
+## Summary
+
+So, now at the end of this lecture, you might ask if you should use Constructor Functions or classes. The first remark I want to do is that Constructor Functions are not like old or deprecated syntax, so it's 100% fine to keep using them. So one more time, this is more a question of personal preference. Now, if you're asking, if you should use classes without understanding Prototypal Inheritance, well then, the reply is definitely "No!". Now, some people actually say that classes are really bad in general and that no one should ever be using them simply because they hide the true nature of JavaScript. But I actually don't agree with that and I think it's absolutely okay to use classes in your code, as long as you understand everything that I just showed you previously about the prototype and prototypal inheritance.
+
+Now, what I personally like about classes is that they visually put all the code that belongs to a certain class, so like all the data and all the methods, all into one nice code block. With Constructor Functions, in my opinion, it all looks just like a big mess.
+
 ## References
 
-1. [The Complete JavaScript Course. From Zero to Expert! - Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNCuaAhZ8UB5kIldtb76eeAyfM0SUKeceBq3FKF24pNxDVe-_g0-DPxoCnWwQAvD_BwE)
-2. [JavaScript Class extends - w3schools](https://www.w3schools.com/jsref/jsref_class_extends.asp)
-3. [extends keyword - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
-4. [JavaScript Class super - w3schools](https://www.w3schools.com/jsref/jsref_class_super.asp)
-5. [super keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
+1. [Classes in JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
+2. [JavaScript Classes - w3schools](https://www.w3schools.com/js/js_classes.asp)
+3. [Classes - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+4. [extends keyword - w3schools](https://www.w3schools.com/jsref/jsref_class_extends.asp)
+5. [extends keyword - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
+6. [super keyword - w3schools](https://www.w3schools.com/jsref/jsref_class_super.asp)
+7. [super keyword - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
+8. [static keyword - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static)
+9. [The Complete JavaScript Course. From Zero to Expert! - Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNCuaAhZ8UB5kIldtb76eeAyfM0SUKeceBq3FKF24pNxDVe-_g0-DPxoCnWwQAvD_BwE)

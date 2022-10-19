@@ -233,14 +233,14 @@ This is called **"shadowing" the property**.
 
 How do we actually create prototypes? And how do we link objects to prototypes? There are various ways of setting an object's prototype in JavaScript.
 
-#### 1. `Object.create()`
-
-- The easiest and most straightforward way of ==linking an object to a prototype object==.
-
-#### 2. Constructor functions
+#### 1. Constructor functions
 
 - Technique to ==create objects from a function==;
 - This is how built-in objects like `Arrays`, `Maps` or `Sets` are actually implemented.
+
+#### 2. `Object.create()`
+
+- The easiest and most straightforward way of ==linking an object to a prototype object==.
 
 #### 3. ES6 Classes
 

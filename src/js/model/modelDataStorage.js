@@ -1706,6 +1706,11 @@ const oop = {
             'JavaScript was inspired by Scheme and Java, and because of this inspiration we have this multi-paradigm language: functional and object-oriented',
           articleSource: '',
         },
+        {
+          articleTitle:
+            'OOP and Functional Programming are paradigms that allow us to organize code',
+          articleSource: '',
+        },
       ],
     },
     {
@@ -1714,7 +1719,8 @@ const oop = {
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Introduction_to_traditional_OOP.html',
       sectionArticles: [
         {
-          articleTitle: 'OOP is a programming paradigm',
+          articleTitle:
+            'OOP is a programming paradigm that allow us to organize code',
           articleSource: '',
         },
         {
@@ -1806,22 +1812,6 @@ const oop = {
       ],
     },
     {
-      sectionTitle: 'Prototypal Inheritance: Object.create() & Prototypes',
-      sectionSource:
-        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Object.create().html',
-      sectionArticles: [
-        {
-          articleTitle: 'Setting a prototype with Object.create()',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'More real inheritance than Prototypal Inheritance (Child and Parent)',
-          articleSource: '',
-        },
-      ],
-    },
-    {
       sectionTitle: 'Prototypal Inheritance: Constructor Function & Prototypes',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Constructor_Function.html',
@@ -1870,12 +1860,39 @@ const oop = {
       ],
     },
     {
+      sectionTitle: 'Prototypal Inheritance: Object.create() & Prototypes',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Object.create().html',
+      sectionArticles: [
+        {
+          articleTitle: 'Setting a prototype with Object.create()',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'More real inheritance than Prototypal Inheritance (Child and Parent)',
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Prototypal Inheritance: ES6 Classes & Prototypes',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_ES6_Classes.html',
       sectionArticles: [
         {
-          articleTitle: 'Defining classes',
+          articleTitle:
+            'A class is not an object, it is a template for creating an object',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'A class encapsulate data with code (methods) to work on that data',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'JavaScript classes are only "syntactic sugar" over Constructor Function',
           articleSource: '',
         },
         {
@@ -1973,6 +1990,11 @@ const functionalProgramming = {
         {
           articleTitle:
             'JavaScript was inspired by Scheme and Java, and because of this inspiration we have this multi-paradigm language: functional and object oriented',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'OOP and Functional Programming are paradigms that allow us to organize code',
           articleSource: '',
         },
       ],

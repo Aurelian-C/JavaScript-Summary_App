@@ -35,7 +35,7 @@ If specified and not `undefined`, an object whose [enumerable own properties](ht
 
 ## Return value
 
-A new object with the specified prototype object and properties.
+==A new object== with the specified prototype object and properties.
 
 ## Exceptions
 
