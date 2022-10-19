@@ -1,6 +1,6 @@
 # Introduction to JavaScript Operators
 
-An operator `(=,` `+`, `-`, `*`, `/`, `typeof`, etc) allows us to ==transform values== or ==combine multiple values== and do all kinds of work with values. 
+An operator (`=`, `+`, `-`, `*`, `/`, `typeof`, ...) allows us to ==transform values== or ==combine multiple values== and do all kinds of work with values. 
 
 There are many categories of operators like mathematical operators, comparison operators, logical operators, assignment operators and many more.
 

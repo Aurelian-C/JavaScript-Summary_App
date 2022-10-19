@@ -1961,7 +1961,7 @@ const oop = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Inheritance vs Composition',
           articleSource: '',
         },
       ],
