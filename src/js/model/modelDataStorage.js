@@ -2000,8 +2000,20 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Advanced Function Concepts',
-      sectionSource: '',
+      sectionTitle: 'Introduction to Functional Programming',
+      sectionSource:
+        '/src/markdowns/09A_Functional_Programming_(FP)/Introduction_to_FP.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Pure functions concept',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Pure functions',
+      sectionSource:
+        '/src/markdowns/09A_Functional_Programming_(FP)/Pure_functions.html',
       sectionArticles: [
         {
           articleTitle: 'Pure Functions & Side-Effects',
@@ -2012,57 +2024,35 @@ const functionalProgramming = {
           articleSource: '',
         },
         {
-          articleTitle: 'Factory Functions',
+          articleTitle: 'Referential transparency',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Curry',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Idempotence',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Partial Application',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Imperative vs Declarative',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Referential Transparency',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Immutability',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Compose',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Curry',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Pipe',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Partial Application',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Compose & Pipe',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Arity',
           articleSource: '',
         },
       ],
