@@ -1958,10 +1958,31 @@ const oop = {
     },
     {
       sectionTitle: 'Object-Oriented vs Functional Programming',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Object-oriented_vs_functional_programming.html',
       sectionArticles: [
         {
           articleTitle: 'Inheritance vs Composition',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Inheritance problems: tight coupling, fragile base class & hierarchy',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            "One of the drawbacks to OOP paradigm and inheritance is that it is based on the fact that things (classes) won't change in the future. We are structuring a class based on what it is",
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'With FP we focus and structure our code around "What it has?" or "What it does to data?"',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'FP is more declarative (what to do, not how), and OOP is more imperative (what and how to do something)',
           articleSource: '',
         },
       ],
