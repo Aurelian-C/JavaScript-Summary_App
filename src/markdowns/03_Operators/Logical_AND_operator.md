@@ -37,7 +37,7 @@ true && (false || false) // returns false because grouping has the highest prece
 
 ## Short-circuit evaluation
 
-==The logical AND expression is a **short-circuit operator**. As **each operand is converted to a boolean**, if the result of one conversion is found to be== `false`, ==the AND operator stops and _returns the original value of that falsy operand_; it does **not** evaluate any of the remaining operands==.
+==The logical AND expression is a **short-circuit operator**. As **each operand is converted to a boolean**, if the result of one conversion is found to be `false`, the AND operator stops and _returns the original value of that falsy operand_; it does **not** evaluate any of the remaining operands==.
 
 ```js
 (some falsy expression) && expression/statement

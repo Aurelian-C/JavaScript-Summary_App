@@ -87,7 +87,7 @@ if (5 > 4) {
 secret;  //12345
 ```
 
-==Most programming languages are block scoped, meaning every time you see a new== `{}` ==(curly braces) is a new lexical environment. However, **JavaScript is function scoped**, meaning it only creates a new local environment if it sees the keyword== `function` ==on the global scope. **To give us access to block scope, in ES6**== `let` ==**and**== `const` ==**were added to the language**==.
+==Most programming languages are block scoped, meaning every time you see a new `{}` (curly braces) is a new lexical environment. However, **JavaScript is function scoped**, meaning it only creates a new local environment if it sees the keyword `function` on the global scope. **To give us access to block scope, in ES6** `let` **and** `const` **were added to the language**==.
 
 ```js
 // Variables declared with var are NOT BLOCK SCOPED
@@ -103,7 +103,7 @@ if (5 > 4) {
 secret;  //Uncaught ReferenceError: secret is not defined
 ```
 
-So to review, ==**block scoping means declaring a variable not just inside a function, but around any curly brackets**== `{}`, like `if` statements or loops. ==Only variables declared with== ```let``` ==or== ```const``` ==are block scoped, variables declared with== ```var``` ==are only function scoped (no block scoped)==.
+So to review, ==**block scoping means declaring a variable not just inside a function, but around any curly brackets** `{}`, like `if` statements or loops. Only variables declared with ```let``` or ```const``` are block scoped, variables declared with ```var``` are only function scoped (no block scoped)==.
 
 ## Leakage of Global Variables
 

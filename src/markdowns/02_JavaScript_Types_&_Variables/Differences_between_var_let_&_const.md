@@ -130,7 +130,7 @@ window.myName; // undefined
 
 If you can't do as much with `const` as you can with `let`, why would you prefer to use it rather than `let`? In fact `const` is very useful. If you use `const` to name a value, it tells anyone looking at your code that this name will never be assigned to a different value. Any time they see this name, they will know what it refers to.
 
-You can following the principle about when to use `let` and when to use `const`: ==**Use**== `const` ==**when you can, and use**== `let` ==**when you have to**. This means that if you can initialize a variable when you declare it and don't need to reassign it later, make it a constant==.
+You can following the principle about when to use `let` and when to use `const`: ==**Use** `const` **when you can, and use** `let` **when you have to**. This means that if you can initialize a variable when you declare it and don't need to reassign it later, make it a constant==.
 
 ## Summary:
 

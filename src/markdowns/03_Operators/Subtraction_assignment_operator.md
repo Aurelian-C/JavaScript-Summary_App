@@ -2,7 +2,7 @@
 
 The subtraction assignment operator `-=` ==**subtracts the value of the right operand** from a variable and **assigns the result** to the variable==. 
 
-==**Concatenation is not possible** with== `-=` ==operator==, only `+` and `+=` operators trigger type coercion.
+==**Concatenation is not possible** with `-=` operator==, only `+` and `+=` operators trigger type coercion.
 
 ## Syntax
 

@@ -6,7 +6,7 @@ Global constants do not become properties of the `window` object, unlike `var` v
 
 ==**An initializer for a constant is required**==. You must specify its value in the same statement in which it's declared (this makes sense, given that it can't be changed later).
 
-==The== `const` ==declaration creates a **read-only reference to a value**. It does not mean the value it holds is immutable — just that the variable identifier cannot be reassigned. For instance, in the case where the content is an object, this means the object's contents (e.g., its properties) can be altered==.
+==The `const` declaration creates a **read-only reference to a value**. It does not mean the value it holds is immutable — just that the variable identifier cannot be reassigned. For instance, in the case where the content is an object, this means the object's contents (e.g., its properties) can be altered==.
 
 All the considerations about the "temporal dead zone" apply to both `let` and `const`.
 

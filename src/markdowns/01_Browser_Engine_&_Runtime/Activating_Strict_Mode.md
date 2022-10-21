@@ -21,7 +21,7 @@ Strict Mode ==_convert_ **mistakes** or **bad syntax** into **errors**==.
 
 ## Invoking Strict Mode
 
-Strict Mode applies to ==entire **scripts**== or to ==individual **functions**==. It ==**doesn't apply to block statements enclosed in**== `{}` ==**braces**==; attempting to apply it to such contexts does nothing.
+Strict Mode applies to ==entire **scripts**== or to ==individual **functions**==. It ==**doesn't apply to block statements enclosed in** `{}` **braces**==; attempting to apply it to such contexts does nothing.
 
 > **Note**: ==If we have any code before 'use strict' then Strict Mode will not be activated. Comments are allowed because JavaScript will just ignore them==.
 

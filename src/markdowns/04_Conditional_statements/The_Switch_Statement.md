@@ -1,6 +1,6 @@
 # The `switch` statement
 
-The `switch` statement is used to ==perform **different actions** based on **different conditions**. Use the== `switch` ==statement to select one of many code blocks to be executed==.
+The `switch` statement is used to ==perform **different actions** based on **different conditions**. Use the `switch` statement to select one of many code blocks to be executed==.
 
 This is how it works:
 
@@ -32,15 +32,15 @@ switch(expression) {
 
 #### `expression`
 
-==An expression whose result is matched against each== `case` ==clause==.
+==An expression whose result is matched against each `case` clause==.
 
 #### `case` valueN _(optional)_
 
-==A== `case` ==clause used to match against== `expression`. If the `expression` matches the specified `valueN` (which can be any expression), execution starts from the first statement after that `case` clause until either the end of the `switch` statement _or_ the first encountered `break`.
+==A `case` clause used to match against `expression`==. If the `expression` matches the specified `valueN` (which can be any expression), execution starts from the first statement after that `case` clause until either the end of the `switch` statement _or_ the first encountered `break`.
 
 #### `default` _(optional)_
 
-==A== `default` ==clause; if provided, this clause is executed if the value of== `expression` ==doesn't match any of the== `case` ==clauses. A== `switch` ==statement can only have **one**== `default` ==clause==.
+==A `default` clause; if provided, this clause is executed if the value of `expression` doesn't match any of the `case` clauses. A `switch` statement can only have **one** `default` clause==.
 
 ## Description
 
@@ -64,7 +64,7 @@ When JavaScript reaches a `break` keyword, it breaks out of the `switch` block. 
 
 > **Note**: It is not necessary to `break` the last case in a `switch` block. The block breaks (ends) there anyway. 
 >
-> ==If== `break` ==is omitted, execution will proceed to the next case clause, even to the== `default` ==clause, regardless of whether the value of that clause matches. This behavior is called **"fall-through"**==.
+> ==If `break` is omitted, execution will proceed to the next case clause, even to the `default` clause, regardless of whether the value of that clause matches. This behavior is called **"fall-through"**==.
 >
 > ```js
 > const foo = 0;
@@ -96,7 +96,7 @@ The `default` keyword ==specifies the code to run if there is **no case match**=
 
 - If ==**multiple cases matches a expression value**==, the _**first** case is selected_.
 - If ==**no matching cases are found**==, the program _continues to the `default` label_.
-- If ==**no**== `default` ==**label is found**==, the program _continues to the statement(s) **after** the `switch`_.
+- If ==**no** `default` **label is found**==, the program _continues to the statement(s) **after** the `switch`_.
 
 ## Strict Comparison
 
@@ -276,7 +276,7 @@ switch (true) {
 }
 ```
 
-==The== `switch (true)` ==pattern as an alternative to== `if...else` ==is especially useful if you want to utilize the **fall-through** behavior==.
+==The `switch (true)` pattern as an alternative to `if...else` is especially useful if you want to utilize the **fall-through** behavior==.
 
 ```js
 switch (true) {

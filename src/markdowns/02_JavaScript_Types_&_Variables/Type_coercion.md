@@ -15,7 +15,7 @@ const sum = val1 + val2; //"59"
 
 In the above example, JavaScript has *coerced* the `9` from a number into a string, and then concatenated the two values together, resulting in a string of `"59"`. JavaScript had a choice between a string or a number and decided to use a string. This behavior is also called ==**string concatenation**== because `+` operator also supports strings. 
 
-> **Note**: Keep in mind that ==only arithmetic operator==(`+`)==supports strings== though. For example, this will not work:
+> **Note**: Keep in mind that ==only arithmetic operator `+` supports strings== though. For example, this will not work:
 >
 > ```js
 > // Implicit type coercion
@@ -74,7 +74,7 @@ null + new Date() //"nullSat Oct 01 2022 11:52:01 GMT+0300 (Eastern European Sum
 
 Implicit type coercion can also be triggered by the surrounding context, like with `if (value) {…}`, where `value` is coerced to boolean.
 
-==One operator that does not trigger implicit type coercion is== `===`, ==which is called the strict equality operator==. The loose equality operator `==` on the other hand does both comparison and type coercion if needed.
+==One operator that does not trigger implicit type coercion is `===`, which is called the strict equality operator==. The loose equality operator `==` on the other hand does both comparison and type coercion if needed.
 
 ## Type Coercion for primitive values
 

@@ -2,7 +2,7 @@
 
 The subtraction operator `-` ==subtracts the two operands, producing their difference==.
 
-==**Concatenation is not possible** with== `-` ==operator==, only `+` and `+=` operators trigger type coercion.
+==**Concatenation is not possible** with `-` operator==, only `+` and `+=` operators trigger type coercion.
 
 ## Syntax
 

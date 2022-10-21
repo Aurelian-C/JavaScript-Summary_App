@@ -1,6 +1,6 @@
 # `for` statement
 
-A `for` statement ==**repeats until** a specified condition evaluates to== `false`.
+A `for` statement ==**repeats until** a specified condition evaluates to `false`==.
 
 The `for` statement creates a loop that consists of ==three _optional_ expressions==, enclosed in parentheses and separated by semicolons `;`, followed by a statement (usually a [block statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)) to be executed in the loop.
 

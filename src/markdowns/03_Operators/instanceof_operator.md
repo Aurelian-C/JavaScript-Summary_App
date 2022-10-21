@@ -1,6 +1,6 @@
 # `instanceof` operator
 
-The `instanceof` operator ==tests to see if the== `prototype` ==property of a constructor appears anywhere in the prototype chain of an object==. The ==return value is a boolean value==.
+The `instanceof` operator ==tests to see if the `prototype` property of a constructor appears anywhere in the prototype chain of an object==. The ==return value is a boolean value==.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ If `constructor` is not an object a [`TypeError`](https://developer.mozilla.org/
 
 ## Description
 
-The `instanceof` operator ==tests the presence of== `constructor.prototype` ==in== `object`=='s prototype chain. This usually means== `object` ==was constructed with== `constructor`.
+The `instanceof` operator ==tests the presence of `constructor.prototype` in `object`'s prototype chain. This usually means `object` was constructed with `constructor`==.
 
 ```js
 // Defining constructors

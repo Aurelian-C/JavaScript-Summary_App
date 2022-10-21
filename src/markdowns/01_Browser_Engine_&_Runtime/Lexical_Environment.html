@@ -199,6 +199,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
 .typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
 .md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
 
 
 .CodeMirror { height: auto; }
@@ -1294,6 +1295,11 @@ code {
   	padding-bottom: 0.15em;
   border: 2px solid #666;
   border-radius: 0.25rem;
+  color: var(--text-color1);	
+}
+
+a code {
+  color: var(--link-color) !important;
 }
 
 /* codeblock */

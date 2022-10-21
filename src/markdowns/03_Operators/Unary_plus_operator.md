@@ -10,7 +10,7 @@ The unary plus operator `+` ==precedes its operand and evaluates to its operand 
 
 ## Description
 
-Although unary negation `-` also can convert non-numbers, ==unary plus is the fastest and preferred way of converting something into a number, because it does not perform any other operations on the number==. It can convert string representations of integers and floats, as well as the non-string values `true`, `false` and `null`. Integers in both decimal and hexadecimal (`0x`-prefixed) formats are supported. Negative numbers are supported (though not for hex). Using the operator on BigInt values throws a TypeError. ==If it cannot parse a particular value, it will evaluate to== [`NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN).
+Although unary negation `-` also can convert non-numbers, ==unary plus is the fastest and preferred way of converting something into a number, because it does not perform any other operations on the number==. It can convert string representations of integers and floats, as well as the non-string values `true`, `false` and `null`. Integers in both decimal and hexadecimal (`0x`-prefixed) formats are supported. Negative numbers are supported (though not for hex). Using the operator on BigInt values throws a TypeError. ==If it cannot parse a particular value, it will evaluate to [`NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)==.
 
 ## Examples
 

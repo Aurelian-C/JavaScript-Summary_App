@@ -1,6 +1,6 @@
 # Optional chaining operator `?.`
 
-The optional chaining operator `?.` ==accesses an object's property _or_ calls a function. If the object is== `undefined` ==_or_== `null`, ==it returns== `undefined` ==instead of throwing an error==.
+The optional chaining operator `?.` ==accesses an object's property _or_ calls a function. If the object is `undefined` _or_ `null`, it returns `undefined` instead of throwing an error==.
 
 ## Syntax
 
@@ -12,7 +12,7 @@ obj.func?.(args)
 
 ## Description
 
-The `?.` operator is like the `.` chaining operator, except that ==instead of causing an error if a reference is nullish== (`null` _or_ `undefined`), ==the expression short-circuits with a return value of== `undefined`. ==When used with function calls, it returns== `undefined` ==if the given function does not exist==.
+The `?.` operator is like the `.` chaining operator, except that ==instead of causing an error if a reference is nullish (`null` _or_ `undefined`), the expression short-circuits with a return value of `undefined`. When used with function calls, it returns `undefined` if the given function does not exist==.
 
 > **Note**: In JavaScript, a nullish value is the value which is either `null` or `undefined`. Nullish values are always [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy).
 

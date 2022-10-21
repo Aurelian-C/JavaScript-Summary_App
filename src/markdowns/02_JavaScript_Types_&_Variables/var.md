@@ -51,7 +51,7 @@ console.log(x); // 1
 console.log('still going...'); // still going...
 ```
 
-Because `var` declarations are processed before any code is executed, ==declaring a variable with== `var` ==anywhere in the code is equivalent to declaring it at the top==. This also means that a `var` ==variable can appear to be used before it's declared. This behavior is called _hoisting_, as it appears that **the variable declaration is moved to the top of the _function_ or _global code_**==.
+Because `var` declarations are processed before any code is executed, ==declaring a variable with `var` anywhere in the code is equivalent to declaring it at the top==. This also means that a ==`var` variable can appear to be used before it's declared. This behavior is called _hoisting_, as it appears that **the variable declaration is moved to the top of the _function_ or _global code_**==.
 
 ```js
 bla = 2;
@@ -64,7 +64,7 @@ bla = 2;
 
 For that reason, it is ==**recommended to always declare variables at the top of their scope** (_the top of global code and the top of function code_)== so it's clear which variables are function scoped (local) and which are resolved on the scope chain.
 
-It's important to point out that ==**only a variable's declaration is hoisted, not its initialization**. _The initialization happens only when the assignment statement is reached. Until then the variable remains_== `undefined` (but declared):
+It's important to point out that ==**only a variable's declaration is hoisted, not its initialization**. _The initialization happens only when the assignment statement is reached. Until then the variable remains_ `undefined` (but declared)==:
 
 ```js
 function doSomething() {

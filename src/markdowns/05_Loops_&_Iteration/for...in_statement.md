@@ -1,6 +1,6 @@
 # `for...in` loop
 
-The JavaScript `for...in` statement ==loops through the **properties** of an **object**==. `for...in` ==iterates over all **enumerable properties** of an object that are keyed by strings== (ignoring ones keyed by Symbols), ==**including inherited enumerable properties**==.
+The JavaScript `for...in` statement ==loops through the **properties** of an **object**. `for...in` iterates over all **enumerable properties** of an object that are keyed by strings== (ignoring ones keyed by Symbols), ==**including inherited enumerable properties**==.
 
 A `for...in` loop ==_only_ iterates over **enumerable, non-Symbol properties**==. A `for...in` loop iterates over the properties of an object in an ==arbitrary order==.
 
@@ -30,7 +30,7 @@ A statement to be executed on every iteration. May reference `variable`.
 
 ## Description
 
-==The== `for...in` ==loop will iterate over **all enumerable properties of the object itself** _and_ **those the object inherits from its prototype chain**== (properties of nearer prototypes take precedence over those of prototypes further away from the object in its prototype chain).
+==The `for...in` loop will iterate over **all enumerable properties of the object itself** _and_ **those the object inherits from its prototype chain**== (properties of nearer prototypes take precedence over those of prototypes further away from the object in its prototype chain).
 
 > If you only want to consider _properties attached to the **object itself** (iterating over own properties only) and not its prototypes_, you can use one of the following techniques:
 >
@@ -56,7 +56,7 @@ for (let x in numbers) {
 // 2
 ```
 
-==There is no guarantee that== `for...in` ==will return the indexes in any particular order==. Therefore, it is better to use a `for` loop with a numeric index (or `Array.prototype.forEach()` or the `for...of` loop) when iterating over arrays where the order of access is important.
+==There is no guarantee that `for...in` will return the indexes in any particular order==. Therefore, it is better to use a `for` loop with a numeric index (or `Array.prototype.forEach()` or the `for...of` loop) when iterating over arrays where the order of access is important.
 
 > **Note**: Do not use `for...in` over an Array if the index **order** is important.
 

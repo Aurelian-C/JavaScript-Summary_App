@@ -49,7 +49,7 @@ Also, there are ==**reference** types==:
 
 All types, except objects types, define _immutable values_ (that is, values which can't be changed). For example, Strings are immutable. We refer to values of these types as "*primitive values*".
 
-### The typeof Operator
+### The `typeof` operator
 
 JavaScript has a `typeof` operator that you can use to find the type of a JavaScript variable. The `typeof` operator returns the type of a variable or an expression.
 

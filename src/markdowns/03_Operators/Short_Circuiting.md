@@ -10,7 +10,7 @@ Although short-circuit operators are basically used to combine expressions, ==yo
 
 ==false **&&** statement== _(if the first condition is `false`, the ==statement is **NOT** executed==)_
 
-> **Note:** if we are ==using the **&&** operator _to execute a statement_==, we want the Boolean Expression to **pass** before the statement would be executed. Therefore, the `&&` operator executes or is equivalent to the `if` block of a conditional statement.
+> **Note:** if we are ==using the `&&` operator _to execute a statement_==, we want the Boolean Expression to **pass** before the statement would be executed. Therefore, the `&&` operator executes or is equivalent to the `if` block of a conditional statement.
 >
 > ```js
 > // true && statement
@@ -26,7 +26,7 @@ Although short-circuit operators are basically used to combine expressions, ==yo
 
 ==false **||** statement== (if the first condition is `false`, the ==statement is executed==)
 
-> **Note:** if we are ==using the **||** operator _to execute a statement_==, we want the Boolean Expression to **fail** before the statement would be executed. Therefore the `||` operator executes or is equivalent to the `else` block of a conditional statement.
+> **Note:** if we are ==using the `||` operator _to execute a statement_==, we want the Boolean Expression to **fail** before the statement would be executed. Therefore the `||` operator executes or is equivalent to the `else` block of a conditional statement.
 >
 > ```js
 > // true || statement

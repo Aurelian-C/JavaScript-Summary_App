@@ -34,7 +34,7 @@ true || false && false		// returns true, because && has a higher precedence than
 
 ## Short-circuit evaluation
 
-==The logical OR expression is a **short-circuit operator**. As **each operand is converted to a boolean**, if the result of one conversion is found to be== `true`, ==the OR operator stops and _returns the original value of that truthy operand_; it does **not** evaluate any of the remaining operands==.
+==The logical OR expression is a **short-circuit operator**. As **each operand is converted to a boolean**, if the result of one conversion is found to be `true`, the OR operator stops and _returns the original value of that truthy operand_; it does **not** evaluate any of the remaining operands==.
 
 ```js
 (some truthy expression) && expression/statement

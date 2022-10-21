@@ -96,7 +96,7 @@ Both `for...of` and [`for...in`](https://developer.mozilla.org/en-US/docs/Web/Ja
 - The `for...of` statement iterates over values that the ==**iterable object**== defines to be iterated over.
 - The `for...in` statement iterates over the ==**enumerable properties**== of an object.
 
-The following example shows the difference between a `for...of` loop and a `for...in` loop. While  `for...of` ==iterates over property **values**==, `for...in` ==iterates over property **names**==:
+The following example shows the difference between a `for...of` loop and a `for...in` loop. ==While  `for...of` iterates over property **values**, `for...in` iterates over property **names**==:
 
 ```js
 const arr = [3, 5, 7];
