@@ -2032,20 +2032,24 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Pure functions',
+      sectionTitle: 'Functional Programming concepts',
       sectionSource:
-        '/src/markdowns/09A_Functional_Programming_(FP)/Pure_functions.html',
+        '/src/markdowns/09A_Functional_Programming_(FP)/Functional_programming_concepts.html',
       sectionArticles: [
+        {
+          articleTitle: 'Pure Functions & Shared State',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Pure Functions & Immutability vs Mutating State',
+          articleSource: '',
+        },
         {
           articleTitle: 'Pure Functions & Side-Effects',
           articleSource: '',
         },
         {
-          articleTitle: 'Impure vs Pure Functions',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Referential transparency',
+          articleTitle: 'Pure Functions & Referential transparency',
           articleSource: '',
         },
         {
@@ -2057,7 +2061,7 @@ const functionalProgramming = {
           articleSource: '',
         },
         {
-          articleTitle: 'Immutability',
+          articleTitle: 'Reusability through Higher Order Functions',
           articleSource: '',
         },
         {
@@ -2069,11 +2073,31 @@ const functionalProgramming = {
           articleSource: '',
         },
         {
-          articleTitle: 'Compose & Pipe',
+          articleTitle: 'Function composition: compose & pipe',
           articleSource: '',
         },
         {
           articleTitle: 'Arity',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'More on Pure Functions',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'More on Functions Composition',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
           articleSource: '',
         },
       ],

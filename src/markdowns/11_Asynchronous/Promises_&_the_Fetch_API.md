@@ -23,3 +23,7 @@ Now these two different states are very important to understand because when we 
 Now, these different states that I showed you here are relevant and useful when we **use a promise to get a result**, which is called, to **consume a promise**. So **we consume a promise when we already have a promise**, for example, the promise that was returned from the `fetch()` function.
 
 But **in order for a promise to exist in the first place, it must first be built, so it must be created**. **In the case of the `fetch` API, it's the `fetch()` function that builds the promise and returns it for us to consume, so in this case, we don't have to build the promise ourselves in order to consume it**. Now, most of the time we will actually just consume promises, which is also the easier and more useful part, but sometimes we also need to build a promise and to not just consume it.
+
+## References
+
+1. [What is a Promise? - medium.com](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261#.aa7ubggsy)

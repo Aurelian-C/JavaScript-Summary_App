@@ -184,3 +184,4 @@ Consequently, you can use a closure anywhere that you might normally use an obje
 
 1. [JavaScript: The Advanced Concepts - Andrei Neagoie](https://www.udemy.com/course/advanced-javascript-concepts/)
 2. [Closures - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+3. [What is a Closure? - medium.com](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36#.ecfskj935)
