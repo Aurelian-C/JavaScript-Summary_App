@@ -84,7 +84,7 @@ class Student
 
 ==It would be helpful if we could represent the fact that students and professors share some properties, or more accurately, the fact that on some level, they are the *same kind of thing*. **Inheritance** lets us do this==.
 
-We start by observing that students and professors are both people, and people have names and want to introduce themselves. We can model this by defining a new class `Person`, where we define all the common properties of people. ==Then,== `Professor` ==and== `Student` ==can both **derive** from== `Person`, ==adding their extra properties==:
+We start by observing that students and professors are both people, and people have names and want to introduce themselves. We can model this by defining a new class `Person`, where we define all the common properties of people. ==Then, `Professor` and `Student` can both **derive** from `Person`, adding their extra properties==:
 
 ```
 class Person
@@ -113,7 +113,7 @@ class Student : extends Person
         introduceSelf()
 ```
 
-==In this case, we would say that== `Person` ==is the **superclass** or **parent class** of both== `Professor` ==and==`Student`. ==Conversely,== `Professor` ==and== `Student` ==are **subclasses** or **child classes** of== `Person`.
+==In this case, we would say that `Person` is the **superclass** or **parent class** of both `Professor` and `Student`. Conversely, `Professor` and `Student` are **subclasses** or **child classes** of `Person`==.
 
 You might notice that `introduceSelf()` is defined in all three classes. The reason for this is that while all people want to introduce themselves, the way they do so is different:
 
@@ -169,7 +169,7 @@ if (student.canStudyArchery()) {
 
 That way, if we want to change the rules about studying archery, we only have to update the `Student` class, and all the code using it will still work.
 
-==In many OOP languages, we can prevent other code from accessing an object's internal state by marking some properties as== `private`. ==This will generate an error if code outside the object tries to access them==:
+==In many OOP languages, we can prevent other code from accessing an object's internal state by marking some properties as `private`. This will generate an error if code outside the object tries to access them==:
 
 ```
 class Student : extends Person

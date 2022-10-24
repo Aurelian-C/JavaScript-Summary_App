@@ -2377,47 +2377,33 @@ const asynchronous = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Synchronous vs Asynchronous functions',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Web APIs',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Web APIs',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Microtask Queue (Job Queue)',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Asynchronous Programming & Event Handlers',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Task Queue (Callback Queue)',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle:
+            'Early asynchronous APIs (XMLHttpRequest) used events for asynchronous programming',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Event Loop',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Asynchronous Programming & Callbacks (Callback Hell)',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Event Loop',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Task Queue (Callback Queue) vs Microtask Queue (Job Queue)',
           articleSource: '',
         },
       ],

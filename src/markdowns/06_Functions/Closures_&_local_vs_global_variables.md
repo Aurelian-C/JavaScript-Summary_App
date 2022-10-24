@@ -139,7 +139,7 @@ getEfficient(6500);
 // "efficient" created the "bigArray" only once
 ```
 
-Every time we run `inefficient` function, we create the `bigArray` in memory and then we return it. Because nothing is referencing it, it gets destroyed, and then we create it again and then get it destroyed. ==By creating this array over and over again, each time we call the== `inefficient` ==function, is not good for memory management !!!== With closures there is a way for us to _create the `bigArray` array **only once**_ and just have it in memory as a reference, so we can just constantly access it instead of doing all that work of creation-destruction.
+Every time we run `inefficient` function, we create the `bigArray` in memory and then we return it. Because nothing is referencing it, it gets destroyed, and then we create it again and then get it destroyed. ==By creating this array over and over again, each time we call the `inefficient` function, is not good for memory management !!!== With closures there is a way for us to _create the `bigArray` array **only once**_ and just have it in memory as a reference, so we can just constantly access it instead of doing all that work of creation-destruction.
 
 ==Closures help us to NOT POLLUTE THE GLOBAL SCOPE !!!==
 

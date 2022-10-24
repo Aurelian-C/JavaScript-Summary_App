@@ -52,7 +52,7 @@ The ==value== that results from running the "reducer" callback function to compl
 
 ## Some considerations about the `reduce()` method
 
-==The==`reduce()`==method takes two arguments: a **callback function** and an optional **initial value**. If an initial value is provided,==`reduce()`==calls the "reducer" callback function on each element in the array, _in order_. If no initial value is provided,==`reduce()`==calls the callback function on each element in the array after the first element==.
+==The `reduce()` method takes two arguments: a **callback function** and an optional **initial value**. If an initial value is provided, `reduce()` calls the "reducer" callback function on each element in the array, _in order_. If no initial value is provided, `reduce()` calls the callback function on each element in the array after the first element==.
 
 _`reduce()` returns the value that is returned from the callback function on the final iteration of the array_.
 

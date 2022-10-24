@@ -110,7 +110,7 @@ So variables are scoped to the current module and so we can only use them inside
 
 With Named Export/Import you can export/import a single item or you can export/import multiple items with ```{}``` . When you export/import items and use ```{}```, you can change the name of the export/import using ```as```.
 
-In Named Export/Import you have to give to imports values the ==same name as name you defined in export module== and you have to ==put them inside curly braces== ```{}```.
+In Named Export/Import you have to give to imports values the ==same name as name you defined in export module== and you have to ==put them inside curly braces ```{}```==.
 
 ```js
 // <<<<<< shoppingCart.js module >>>>>>
@@ -167,7 +167,7 @@ export default function (product, quantity) { // Default export
 import add from './shoppingCart.js'; // Default import
 ```
 
-When you import a default export you can imported ==without== `{}` and you can give ==any name== that you want. We can give to Default Import any name that we want because ==Default Export don't have a name==.
+When you import a default export you can imported ==without `{}`== and you can give ==any name== that you want. We can give to Default Import any name that we want because ==Default Export don't have a name==.
 
 Default Export is designed to make it easy to have a default function provided by a module, and also helps JavaScript modules to _interoperate with existing ==CommonJS== and ==AMD module== systems_.
 

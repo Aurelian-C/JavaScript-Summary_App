@@ -37,7 +37,7 @@ In JavaScript, the `this` keyword ==refers to an **object**==. Which object depe
 
 > **Note**: `this` is not a variable, `this` is a keyword. You cannot change the value of `this`.
 
-==The value of== ```this``` ==is always set **when the function is invoked**, not when the function is declared==.
+==The value of ```this``` is always set **when the function is invoked**, not when the function is declared==.
 
 ## All functions are methods
 
@@ -76,7 +76,7 @@ myObject.fullName(); // Will return "John Doe"
 
 The ```fullName``` method is a function (method). The function (method) belongs to the ```myObject ```object. ```myObject``` is the owner of the function (method). The thing called ```this``` is the object that "owns" the JavaScript code. In this case the value of ```this``` is ```myObject```.
 
-> Note: Invoking a function as an object method, causes the value of ```this``` to be the object itself. ```this ```==keyword was created to _gives methods access to their object_. It gives== ```fullName``` ==access to the== ```myObject```, ==so that== ```fullName``` ==can use properties and methods that are within== ```myObject``` ==object==.
+> Note: Invoking a function as an object method, causes the value of ```this``` to be the object itself. ```this ```==keyword was created to _gives methods access to their object_. It gives ```fullName``` access to the ```myObject```, so that ```fullName``` can use properties and methods that are within ```myObject``` object==.
 
 With ```this``` keyword you can ==execute the same code for multiple objects==. You write a function once and multiple objects can use that function, every object with his own ```this```:
 
@@ -107,7 +107,7 @@ importantPerson() //My name is Sunny
 window.importantPerson() //My name is Sunny
 ```
 
-==The== ```this``` ==keyword acts as a **placeholder** for an object, and it we'll refer to whichever object called that function/method==.
+==The ```this``` keyword acts as a **placeholder** for an object, and it we'll refer to whichever object called that function/method==.
 
 ```js
 const a = function() {
@@ -150,7 +150,7 @@ myObj.firstName;
 
 A constructor invocation creates a new object. The new object inherits the properties and methods from its constructor.
 
-> Note: ==the== ```this``` ==keyword in the constructor does not have a value. The value of== ```this``` ==will be the new object created when the function is invoked==.
+> Note: ==The ```this``` keyword in the constructor does not have a value. The value of ```this``` will be the new object created when the function is invoked==.
 
 ## ```this``` & Dynamic Scope vs Lexical Scope
 
@@ -173,11 +173,11 @@ obj.sing();
 // b Window {…} //functions inside of method is, well, a function inside of a function. That means 'this' keyword is not assigned to the object itself, but actually to the 'window' object. "this" is not lexically scoped, it doesn't matter where "this" is write in our code, it matters how the function was called.
 ```
 
-==The== ```this``` ==keyword is **not lexically scoped**, it doesn't matter where== ```this``` ==is write in our code, it matters **how the function was called**==. Everything in JavaScript is actually lexically scoped, where you write your code determines what we have available, except for the ```this``` keyword. ==The== ```this``` ==keyword is actually **dynamically scoped**, it doesn't matter where== ```this``` ==is written, it matters how the function was called==.
+==The ```this``` keyword is **not lexically scoped**, it doesn't matter where ```this``` is write in our code, it matters **how the function was called**==. Everything in JavaScript is actually lexically scoped, where you write your code determines what we have available, except for the ```this``` keyword. ==The ```this``` keyword is actually **dynamically scoped**, it doesn't matter where ```this``` is written, it matters how the function was called==.
 
 ## ```this``` & arrow functions
 
-==Arrow functions are lexically bound==, arrow functions has a lexical ```this``` behavior unlike normal functions. ==Arrow functions don't have their own== ```this```, ==it will lexically bound== ```this``` ==to the surrounding object !!!==
+==Arrow functions are lexically bound==, arrow functions has a lexical ```this``` behavior unlike normal functions. ==Arrow functions don't have their own ```this```, it will lexically bound ```this``` to the surrounding object !!!==
 
 ```js
 const obj = {

@@ -28,9 +28,9 @@ let arr = Array(element0, element1, ..., elementN)
 const arr = Array.from('array') // ['a', 'r', 'r', 'a', 'y']
 ```
 
-`element0, element1, ..., elementN` ==is a **list of values** for the array's elements==. When these values are specified, the array is initialized with them as the array's elements.
+==`element0, element1, ..., elementN` is a **list of values** for the array's elements==. When these values are specified, the array is initialized with them as the array's elements.
 
-Arrays can be created with the shorthand syntax of ==square brackets== `[]` and items that are ==separated by commas== `,`. The bracket syntax is called an ==**array literal**== or **array initializer**. It's shorter than other forms of array creation, and so is ==generally preferred==.
+Arrays can be created with the shorthand syntax of ==square brackets `[]`== and items that are ==separated by commas `,`==. The bracket syntax is called an ==**array literal**== or **array initializer**. It's shorter than other forms of array creation, and so is ==generally preferred==.
 
 ```js
 const shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];
@@ -82,7 +82,7 @@ arr.length = 42;
 
 ## Understanding `length`
 
-You can find out the length of an array (how many items are in it) in exactly the same way as you find out the length (in characters) of a string — by using the `length` property. ==The==`length`==property is special, it always returns the **index of the last element plus one**==.
+You can find out the length of an array (how many items are in it) in exactly the same way as you find out the length (in characters) of a string — by using the `length` property. ==The `length` property is special, it always returns the **index of the last element plus one**==.
 
 ```js
 onst shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];

@@ -62,7 +62,7 @@ for (let prop in lizard) {
 // The beauty is that JavaScript looks for you through the prototype chain automatically. We don't have to do any weird .__proto__.__proto__ to find "hasOwnProperty" method, JavaScript does it automatically for you.
 ```
 
-> **Note**: ==You should never use==`__proto__`==to set a object prototype== like we did above with `lizard.__proto__ = dragon;`. It's bad for performance and there's different ways that we want to inherit when it comes to prototypes or inheritance. ==We never want to manually assign the prototype chain and create that chain ourselves==.
+> **Note**: ==You should never use `__proto__` to set a object prototype== like we did above with `lizard.__proto__ = dragon;`. It's bad for performance and there's different ways that we want to inherit when it comes to prototypes or inheritance. ==We never want to manually assign the prototype chain and create that chain ourselves==.
 
 So why is Prototypal Inheritance so useful? ==The fact that objects can share prototypes means that you can have objects with properties that are pointing to the same place in memory, thus being more efficient==. Imagine if we had a ton of lizards and we just copied all the functionality of the `dragon` onto the `lizard` into a different place in memory. That can get overwhelming fairly soon. With Prototypal Inheritance, instead of just copying all the `dragon` functionality into different places in memory, we have it in just one place.
 
@@ -113,9 +113,9 @@ toValueOf
 
 If you access a one of them `myObject.toString(); // "[object Object]"` it works. What are these extra properties, and where do they come from?
 
-==Every object in JavaScript has a **built-in property**== `__proto__` ==which is called its **prototype**==. 
+==Every object in JavaScript has a **built-in property** `__proto__` which is called its **prototype**==.
 
-==The== `prototype` ==property is itself an **object**, so the prototype will have its own prototype, making what's called a **prototype chain**==. The chain ends when we reach a prototype that has `null` for its own prototype.
+==The `prototype` property is itself an **object**, so the prototype will have its own prototype, making what's called a **prototype chain**==. The chain ends when we reach a prototype that has `null` for its own prototype.
 
 > **Note**: The property of an object that points to its prototype is not called `prototype`. Its name is not standard, but in practice all browsers use `__proto__`. The standard way to access an object's prototype is the `Object.getPrototypeOf()` method:
 >
@@ -127,7 +127,7 @@ If you access a one of them `myObject.toString(); // "[object Object]"` it works
 > Object.getPrototypeOf(myObject); // {constructor: f}
 > ```
 
-==When you try to access a property of an object, if the property can't be found in the object itself, the prototype is searched for the property. If the property still can't be found, then the prototype's prototype is searched, and so on until either the property is found, or the end of the chain is reached, in which case== `undefined` ==is returned==.
+==When you try to access a property of an object, if the property can't be found in the object itself, the prototype is searched for the property. If the property still can't be found, then the prototype's prototype is searched, and so on until either the property is found, or the end of the chain is reached, in which case `undefined` is returned==.
 
 So when we call `myObject.toString()`, the browser:
 
@@ -139,7 +139,7 @@ The prototype of `myObject` is an object called base object (`Object.prototype`)
 
 ![prototype-chain](..\..\img\oop_prototype-chain.jpg)
 
-==The prototype of an object is not always== `Object.prototype`:
+==The prototype of an object is not always `Object.prototype`==:
 
 ```js
 const myDate = new Date();
@@ -201,7 +201,7 @@ typeof Object // 'function' because Object is a Constructor Function
 
 ![prototypal_inheritance1](../../img/prototypal_inheritance1.jpg)
 
-> Note: ==Every function in JavaScript automatically has a property called **prototype** and that includes Constructor Functions. Every object that's created by a Constructor Function will get access to all the methods and properties that we define on the Constructor Function== `prototype` ==property==.
+> Note: ==Every function in JavaScript automatically has a property called **prototype** and that includes Constructor Functions. Every object that's created by a Constructor Function will get access to all the methods and properties that we define on the Constructor Function `prototype` property==.
 >
 > Every function that we create gets the `prototype` property, but ==only Constructor Functions actually have used for this **prototype object**==.
 

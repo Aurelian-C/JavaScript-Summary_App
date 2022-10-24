@@ -73,7 +73,7 @@ class Person {};
 > 
 >This occurs because while the class is hoisted its values are not initialized.
 
-==**Differences between Constructor Function and classes are the syntax**. In classes we don't have to manually mess with the== `prototype` ==property to create methods==. All you have to do is to write the methods inside the class but outside of the `constructor` method, and then they will automatically be added to the `prototype` property of the class.
+==**Differences between Constructor Function and classes are the syntax**. In classes we don't have to manually mess with the `prototype` property to create methods==. All you have to do is to write the methods inside the class but outside of the `constructor` method, and then they will automatically be added to the `prototype` property of the class.
 
 Just like functions, classes are also first class citizens and so what that means, is that we can pass them into functions and also return them from functions.
 
@@ -83,7 +83,7 @@ The body of a class is the part that is in curly brackets `{}`. This is where yo
 
 ## Constructor
 
-The `constructor` method is a ==special method for **creating and initializing an object** created with a== `class`. ==There can only be **one** special method with the name "constructor" in a class==. A `SyntaxError` will be thrown if the class contains more than one occurrence of a `constructor` method.
+The `constructor` method is a ==special method for **creating and initializing an object** created with a `class`. There can only be **one** special method with the name "constructor" in a class==. A `SyntaxError` will be thrown if the class contains more than one occurrence of a `constructor` method.
 
 The constructor method is a special method:
 
@@ -104,7 +104,7 @@ class Person {
 
 ## Prototype methods
 
-==Class methods are created with the same syntax as object methods==. What's important to understand is that all of the methods that we write in a class, so outside of the `constructor`, will be on the prototype of the objects, and not on the objects themselves. So ==methods write in a class, outside of the== `constructor`, ==will be added to== `prototype` ==property==.
+==Class methods are created with the same syntax as object methods==. What's important to understand is that all of the methods that we write in a class, so outside of the `constructor`, will be on the prototype of the objects, and not on the objects themselves. So ==methods write in a class, outside of the `constructor`, will be added to `prototype` property==.
 
 ```js
 class Rectangle {
@@ -198,7 +198,7 @@ document.getElementById('demo').innerHTML = myCar.carname;
 
 ==Static class methods are defined on the class itself. You cannot call a static method on an object instance, only on an object class==.
 
-==The== `static` ==keyword defines a static method or property for a class. Static members (properties and methods) are called without instantiating their class and cannot be called through a class instance==. Static methods are often used to create utility functions for an application, whereas static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
+==The `static` keyword defines a static method or property for a class. Static members (properties and methods) are called without instantiating their class and cannot be called through a class instance==. Static methods are often used to create utility functions for an application, whereas static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
 
 ```js
 class Point {
@@ -372,7 +372,7 @@ account
 
 Inheritance is useful for code reusability: reuse properties and methods of an existing class when you create a new class.
 
-==To implement inheritance between ES6 classes, we only need two ingredients. We need the== `extends` ==and the== `super` ==keywords==.
+==To implement inheritance between ES6 classes, we only need two ingredients. We need the `extends` and the `super` keywords==.
 
 - The `extends` keyword is used to create a child class of another class (parent). The child class inherits all the methods from another class.
 

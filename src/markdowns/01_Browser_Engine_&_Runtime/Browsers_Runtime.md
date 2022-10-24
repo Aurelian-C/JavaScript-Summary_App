@@ -6,6 +6,8 @@ JavaScript is a ==**single threaded programming language**==. This means it has 
 
 ![javascript-runtime](../../img/asynchronous_runtime.jpg)
 
+==JavaScript has no idea what the World-Wide-Web or Internet is, JavaScript is only a programming language. On the other hand, the web browsers through Web APIs allows JavaScript to use asynchronous code, so JavaScript can interact with things outside of its world==.
+
 ## Web APIs
 
 Browsers (Chrome, Firefox, Safari, etc.) comes in with a JavaScript Engine and a JavaScript Runtime. All of them have their own JavaScript Engine implementation, and all of them have a JavaScript Runtime that provide a Web APIs. These Web APIs can do a variety of things like send HTTP requests, listen to DOM events, delay execution of code using something like ```setTimeout``` or ```setInterval```, database storage on the browser, etc. 
@@ -18,83 +20,52 @@ The browsers, via Web APIs, are helping us create rich web applications, so that
 
 These ==Web APIs are what we call **asynchronous**==. That means you can _instruct these APIs to do something in the background and return data once it's done_, meanwhile, we can just continue working on our JavaScript Call Stack and execute functions.
 
-## Callback Queue & Event Loop 
+## Callback Queue vs Microtask Queue & Event Loop 
 
 ==A typical JavaScript Runtime also includes a so called **Callback Queue**. This is a **data structure that contains all the Web APIs callback functions that are finish to run in the background, and now are ready to be executed by the JavaScript Engine**==.
 
-When you run some JavaScript code in a browser, the **JavaScript Engine starts to parse (read) the code** and **executed each functions line by line popped on and off functions to the Call Stack**. But, what  happen when JavaScript Engine meets a Web APIs function in our code? Web APIs are not part of JavaScript language itself, JavaScript Engine don't recognizes them, so Web APIs are pass off to the JavaScript Runtime to handle it. When the JavaScript Runtime has finished running it's Web APIs, it puts what is needed to be ran by JavaScript Engine into the Callback Queue. The Callback Queue cannot be ran until the Call Stack is completely empty. So, the job of the Event Loop is to constantly checking the Call Stack to see if it is empty, so that it can add anything that's in the Callback Queue into the Call Stack. Once a Web APIs function is in the Call Stack, it is ran and then popped off the stack.
+When you run some JavaScript code in a browser, the **JavaScript Engine starts to parse (read) the code** and **executed each functions line by line popped on and off functions to the Call Stack**. But, what  happen when JavaScript Engine meets a Web APIs function in our code? ==Web APIs are not part of JavaScript language itself, JavaScript Engine don't recognizes them, so Web APIs are pass off to the JavaScript Runtime to handle it==. When the JavaScript Runtime has finished running it's Web APIs, it puts what is needed to be ran by JavaScript Engine into the Callback Queue. ==The Callback Queue cannot be ran until the Call Stack is completely empty==. So, the job of the Event Loop is to constantly checking the Call Stack to see if it is empty, so that it can add anything that's in the Callback Queue into the Call Stack. Once a Web APIs function is in the Call Stack, it is ran and then popped off the stack.
+
+Each time the Event Loop takes a callback from the Callback Queue we say that there was an Event Loop tick. So, as we can see the Event Loop has the extremely important task of doing coordination between the Call Stack and the callbacks in the Callback Queue. So, the Event Loop is basically who decides exactly when each callback is executed.
+
+Another thing that becomes clear from this whole explanation is that the JavaScript language itself has actually no sense of time, that's because everything that is asynchronous does not happen in the JavaScript Engine. It's the JavaScript Runtime who manages all the asynchronous behavior and it's the Event Loop who decides which code will be executed next, but the JavaScript Engine itself simply executes whatever code it has given.
+
+With ES6 and Promises, a new queue was created, called Job/Microtask Queue. Job/Microtask Queue has priority over Callback Queue.
 
 ![asynchronous_runtime-working](../../img/asynchronous_runtime-working.jpg)
 
-```js
-console.log('1'); // goes on call stack and runs 1
+The `img` started loading asynchronously in the Web APIs environment and not in the Call Stack. We then used `addEventListener` to attach a callback function to the image `load` event and this callback is basically an asynchronous code, it's code that we deferred into the future because we only want to execute it once the image has loaded and in the meantime, the rest of the code kept running. Now `addEventListener` did not put the callback directly in the Callback Queue, it simply registered the callback, which then kept waiting in the Web APIs environment until the `load` event was fired off. Only then the environment put the call back into Callback Queue. Then while in the Callback Queue the callback kept waiting for the Event Loop to pick it up and put it on the Call Stack, and this happened as soon as the callback was first in line and the Call Stack was empty. And, that's it actually, so all this happened so that the image did not have to load in the Call Stack, but in the background in a non-blocking way.
 
-setTimeout(() => {
-  console.log('2'), 1000;
-});
-// gets sent to Web APIs
-// Web APIs waits 1 sec, runs and sends to callback queue
-// the Javascript Engine keeps going
+Now with Promises things work in a slightly different way, which is why I included this Promise example as well. So, let's say that the data has now finally arrived and so the fetch is done. Now, callbacks related to Promises do actually not go into the Callback Queue. Instead, ==callbacks related to Promises have a special queue for themselves, which is the so called Microtasks Queue==. Now, what is special about the ==**Microtasks Queue is that it basically has priority over the Callback Queue**==. So, at the end of an Event Loop tick, so after a callback has been taken from the Callback Queue, ==the Event Loop will check if there are any callbacks in the Microtasks Queue and if there are, it will run all of them before it will run any more callbacks from the regular Callback Queue==.
 
-console.log('3');
-// goes on Call Stack and runs 3
-// Event Loop keeps checking and see Call Stack is empty
-// Event Loop sends calback queue into Call Stack
-// 2 is now ran
+So, in a nutshell, ==the Web APIs environment, the Callback/Microtask Queues and the Event Loop, all together make it possible that asynchronous code can be executed in a non blocking way even with only one thread of execution in the JavaScript Engine==.
 
-// 1
-// 3
-// 2
-
-// Example with 0 second timeout
-console.log('1');
-
-setTimeout(() => {
-  console.log('2'), 0;
-});
-
-console.log('3');
-
-// 1
-// 3
-// 2
-
-// Still has the same output
-```
-
-In the example above, we get the same output. How does this work if it waits 0 seconds? The JavaScript Engine will still send off the ```setTimeout()``` to the Web API to be ran, and it will then go into the Callback Queue and wait until the Call Stack is empty to be ran. So, we end up with the exact same end point.
-
-JavaScript is a single threaded language that can be non-blocking. It has one Call Stack and it does one thing at a time. In order to not block the single thread, it can be **_asynchronous with callback functions_** and these callback functions gets run in the background through the Callback Queue, and then the Event Loop bring that callback functions back into the Call Stack.
-
-> Nifty Snippet: Until 2009, JavaScript was only run inside of the browser. That is when Ryan Dahl decided it would be great if we could use JavaScript to build things outside the browser. He used C and C++ to build an executable (exe) program called Node JS. Node JS is a JavaScript Runtime environment built on Chrome's V8 engine that uses C++ to provide the Event Loop and Callback Queue needed to run asynchronous operations.
-
-![Image](../../img/event_loop_nodejs.jpg)
-
-## Job Queue or Microtask Queue
-
-The ==**Job Queue** _or_ **Microtask Queue**== came about with Promises in ES6. With Promises we needed ==**another Callback Queue that would give higher priority to Promise calls**==. The JavaScript Engine is going to ==**check the Job Queue before the Callback Queue**==.
+But anyway, as you can hopefully see the idea of running asynchronous code with regular callbacks and with microtasks coming from Promises is very similar. ==**The only difference is that they go into different queues and that the Event Loop gives microtasks priority over regular callbacks**==.
 
 ```js
-// 1 Callback Queue ~ Task Queue
+// Callback Queue ~ Task Queue
 setTimeout(() => {
   console.log('1', 'is the loneliest number');
 }, 0);
+
 setTimeout(() => {
   console.log('2', 'can be as bad as one');
 }, 10);
 
-// 2 Job Queue ~ Microtask Queue
+// Job Queue ~ Microtask Queue
 Promise.resolve('hi').then(data => console.log('2', data));
 
-// 3
 console.log('3', 'is a crowd');
 
 // 3 is a crowd
 // 2 hi
-// undefined Promise resolved
 // 1 is the loneliest number
 // 2 can be as bad as one
 ```
+
+> Nifty Snippet: Until 2009, JavaScript was only run inside of the browser. That is when Ryan Dahl decided it would be great if we could use JavaScript to build things outside the browser. He used C and C++ to build an executable (exe) program called Node JS. Node JS is a JavaScript Runtime environment built on Chrome's V8 engine that uses C++ to provide the Event Loop and Callback Queue needed to run asynchronous operations.
+
+![Image](../../img/event_loop_nodejs.jpg)
 
 ## More things about Web APIs
 

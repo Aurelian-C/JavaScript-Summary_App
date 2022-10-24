@@ -2,11 +2,11 @@
 
 The `rest` parameter syntax ==allows a function to accept an **indefinite number of arguments as an array**==.
 
-The `rest` operator looks like the `spread` operator. With `spread` operator you add three dots (`...`) but ==the place where you use the== `rest` ==operator is different from the== `spread` ==operator==.
+The `rest` operator looks like the `spread` operator. With `spread` operator you add three dots (`...`) but ==the place where you use the `rest` operator is different from the `spread` operator==.
 
 You might remember that `spread` operator was used when you created an object or when you created an array, and then you could use the three dots (`...`) in there to take an existing object or an existing array, and pull out all the key-value pairs or all the elements of the array, and add them to the new object or new array.
 
-==Now with the== `spread` ==operator we use the three dots== (`...`) ==in a different place, we use it in a parameter list and there, in such a function parameter list, it does something different. Instead of pulling elements out of an array,== `spread` ==operator takes all arguments of a function, and that might be as many as you want, and it merges them into an array, so it builds an array inside of the function==.
+==Now with the `spread` operator we use the three dots `...` in a different place, we use it in a parameter list and there, in such a function parameter list, it does something different. Instead of pulling elements out of an array, `spread` operator takes all arguments of a function, and that might be as many as you want, and it merges them into an array, so it builds an array inside of the function==.
 
 ## Syntax
 
@@ -16,9 +16,9 @@ function a(param1, param2, ...restParams) {
 }
 ```
 
-==A function definition's last parameter can be **prefixed with**== `...` , ==which will cause **all remaining parameters to be placed within an array**==.
+==A function definition's last parameter can be **prefixed with** `...`, which will cause **all remaining parameters to be placed within an array**==.
 
-> **Note**: ==**Only the last parameter** in a function definition can be a== `rest` ==parameter==.
+> **Note**: ==**Only the last parameter** in a function definition can be a `rest` parameter==.
 
 ```js
 function myFun(a, b, ...manyMoreArgs) {
@@ -81,7 +81,7 @@ function f(...args) {
 }
 ```
 
-> **Note**: `rest` ==parameters are real arrays; the== `arguments` ==object is not==, so Array methods can be used on `rest` parameters, but not on the `arguments` object. To use Array methods on the `arguments` object, it must be converted to a real array first.
+> **Note**: ==`rest` parameters are real arrays; the `arguments` object is not==, so Array methods can be used on `rest` parameters, but not on the `arguments` object. To use Array methods on the `arguments` object, it must be converted to a real array first.
 
 # References
 

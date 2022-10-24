@@ -47,9 +47,9 @@ This works fine but is a bit long-winded: we have to create an empty object, ini
 
 ### Constructor Function
 
-==Constructor Function in JavaScript provide us with something like a class definition, enabling us to define the "shape" of an object, including any methods it contains, in a single place. Prototypes can be used in Constructor Function, too. For example, if a method is defined on a constructor's== `prototype` ==property, then all objects created using that constructor get that method via their prototype, and we don't need to define it in the constructor. Constructor Function and prototypes can be used to implement traditional class-based OOP patterns in JavaScript==.
+==Constructor Function in JavaScript provide us with something like a class definition, enabling us to define the "shape" of an object, including any methods it contains, in a single place. Prototypes can be used in Constructor Function, too. For example, if a method is defined on a constructor's `prototype` property, then all objects created using that constructor get that method via their prototype, and we don't need to define it in the constructor. Constructor Function and prototypes can be used to implement traditional class-based OOP patterns in JavaScript==.
 
-==A **constructor** is just a function called using the== [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) ==keyword==. When you call a constructor, it will:
+==A **constructor** is just a function called using the [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) keyword==. When you call a constructor, it will:
 
 - create a new object
 - bind `this` to the new object, so you can refer to `this` in your constructor code
