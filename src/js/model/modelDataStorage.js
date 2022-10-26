@@ -2373,8 +2373,46 @@ const asynchronous = {
   title: 'Asynchronous',
   sections: [
     {
-      sectionTitle: 'Introduction to Asynchronous Javascript',
-      sectionSource: '',
+      sectionTitle: 'How the Web works: HTTP request & responses',
+      sectionSource:
+        '/src/markdowns/11_Asynchronous/How_the_web_works___HTTP_request_&_responses.html',
+      sectionArticles: [
+        {
+          articleTitle: 'Client-Server (Request-Response) Model',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'HTTP Protocol',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'DNS',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'TCP/IP socket connection',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'HTTP Request: HTTP method, request target, request headers, body',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'HTTP Response: HTTP status code, status message, headers, body',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'APIs based on HTTP: XMLHttpRequest & Fetch API',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Introduction to Asynchronous JavaScript',
+      sectionSource:
+        '/src/markdowns/11_Asynchronous/Introducing_to_Asynchronous_JavaScript.html',
       sectionArticles: [
         {
           articleTitle: 'Synchronous vs Asynchronous functions',
@@ -2394,144 +2432,40 @@ const asynchronous = {
           articleSource: '',
         },
         {
-          articleTitle: 'Asynchronous Programming & Callbacks (Callback Hell)',
+          articleTitle:
+            'Asynchronous programming & Chaining Callbacks: Callback Hell',
           articleSource: '',
         },
         {
-          articleTitle: 'Event Loop',
+          articleTitle: 'What is AJAX?',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Introduction to AJAX',
+      sectionSource: '/src/markdowns/11_Asynchronous/Introduction_to_AJAX.html',
+      sectionArticles: [
+        {
+          articleTitle: 'AJAX is not a programming language',
           articleSource: '',
         },
         {
           articleTitle:
-            'Task Queue (Callback Queue) vs Microtask Queue (Job Queue)',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Timers',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'setTimeout()',
+            'AJAX use a combination of existing technologies together to communicate with servers',
           articleSource: '',
         },
         {
-          articleTitle: 'clearTimeout()',
+          articleTitle: 'The XMLHttpRequest API is the core of AJAX',
           articleSource: '',
         },
         {
-          articleTitle: 'setInterval()',
+          articleTitle: 'XML vs JSON',
           articleSource: '',
         },
         {
-          articleTitle: 'clearInterval()',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Working with Http Requests',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'How The Web Works',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Sending a GET Request',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'JSON Data & Parsing Data',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Promisifying Http Requests (with XMLHttpRequest)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Sending Data with a POST Request',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Sending a DELETE Request',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Handling Errors',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Using the fetch() API',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'POSTing Data with the fetch() API',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Adding Request Headers',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'fetch() & Error Handling',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'XMLHttpRequest vs fetch()',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Intro to AJAX',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'JSON & XML',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'XMLHttpRequests: The Basics',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'const request = new XMLHttpRequest()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'request.open(‘GET’, ‘url’)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'request.send()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'request.addEventListener(‘load’, function)',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'XMLHttpRequests: Chaining Requests',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Welcome to Callback Hell',
+          articleTitle:
+            'XMLHttpRequests Chaining Requests: Welcome to Callback Hell',
           articleSource: '',
         },
       ],
@@ -2727,6 +2661,28 @@ const asynchronous = {
         {
           articleTitle: '',
           articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Timers',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'setTimeout()',
+          articleSource: '/src/markdowns/11_Asynchronous/setTimeout.html',
+        },
+        {
+          articleTitle: 'clearTimeout()',
+          articleSource: '/src/markdowns/11_Asynchronous/clearTimeout.html',
+        },
+        {
+          articleTitle: 'setInterval()',
+          articleSource: '/src/markdowns/11_Asynchronous/setInterval.html',
+        },
+        {
+          articleTitle: 'clearInterval()',
+          articleSource: '/src/markdowns/11_Asynchronous/clearInterval.html',
         },
       ],
     },

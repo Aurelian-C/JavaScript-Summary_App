@@ -58,9 +58,9 @@ What we should note here is that the browser effectively steps through the progr
 
 ## Asynchronous & Web APIs
 
-Browsers provides to JavaScript language Web APIs, so JavaScript can use asynchronous functions.
+Browsers provide to JavaScript language Web APIs, so JavaScript can use asynchronous functions.
 
-When you run some JavaScript code in a browser, the JavaScript Engine starts to parse the code. Each line is executed and popped on and off the Call Stack. But, what about Web API's? **Web API's are not something JavaScript recognizes, so the JavaScript Engine knows to pass it off to the browser for it to handle**. When the browser has finished running its methods, it puts what is needed to be ran by JavaScript into the Callback Queue. The Callback Queue can't be ran until the Call Stack is completely empty. So, the Event Loop is constantly checking the Call Stack to see if it is empty so that it can add anything in the Callback Queue back into the Call Stack. And finally, once it is back in the Call Stack, it is ran and then popped off the stack.
+When you run some JavaScript code in a browser, the JavaScript Engine starts to parse the code. Each line is executed and popped on and off the Call Stack. But, what happen when the JavaScript Engine meet a Web APIs function? ==Web APIs are not something JavaScript Engine recognizes, so the JavaScript Engine knows to pass Web APIs functions to the browser for handle them==. When the browser has finished running its methods, it puts what is needed to be ran by JavaScript into the Callback Queue. The Callback Queue can't be ran until the Call Stack is completely empty. So, the Event Loop is constantly checking the Call Stack to see if it is empty so that it can add anything in the Callback Queue back into the Call Stack. And finally, once it is back in the Call Stack, it is ran and then popped off the stack.
 
 ```js
 let number;
@@ -83,9 +83,9 @@ console.log('3. Finish');
 
 ## Asynchronous & Event handlers
 
-Event handlers are a form of asynchronous programming: you provide a function (the event handler) that will be called, not right away, but whenever the event happens. If "the event" is "the asynchronous operation has completed", then that event could be used to notify the caller about the result of an asynchronous function call.
+Event handlers are a form of asynchronous programming: you provide a function (the event handler) that will be called, not right away, but whenever the event happens. If "the event" is "the asynchronous operation has completed", then that event could be used to notify the caller about the result of an asynchronous function call. Some early asynchronous APIs used events in just this way.
 
-Some early asynchronous APIs used events in just this way. The [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) API enables you to make HTTP requests to a remote server using JavaScript. Since this can take a long time, it's an asynchronous API, and you get notified about the progress and eventual completion of a request by attaching event listeners to the `XMLHttpRequest` object.
+The [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) API enables you to make HTTP requests to a remote server using JavaScript. Since this can take a long time, it's an asynchronous API, and you get notified about the progress and eventual completion of a request by attaching event listeners to the `XMLHttpRequest` object.
 
 ```js
 const request = new XMLHttpRequest();
@@ -96,7 +96,7 @@ request.addEventListener('load', function () {
 });
 ```
 
-## Asynchronous & Callbacks
+## Asynchronous & Chaining Callbacks: Callback Hell
 
 An event handler is a particular type of callback. A callback is just a function that's passed into another function, with the expectation that the callback will be called at the appropriate time. As we just saw, callbacks used to be the main way asynchronous functions were implemented in JavaScript.
 
@@ -144,12 +144,24 @@ In **synchronous** programming, tasks are executed one after another. Each task 
 
 In **asynchronous** programming, when one task is executed, you can switch to a different task without waiting for the previous one to be completed.
 
+## What is AJAX?
+
+==A==synchronous ==J==avaScript ==A==nd ==X==ML, while not a technology in itself (is not a programming language), is a term coined in 2005 by Jesse James Garrett, that describes a "new" approach to using a combination of existing technologies together, including [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) or [XHTML](https://developer.mozilla.org/en-US/docs/Glossary/XHTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), [XML](https://developer.mozilla.org/en-US/docs/Web/XML), [XSLT](https://developer.mozilla.org/en-US/docs/Web/XSLT), and most importantly the [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object. When these technologies are combined in the AJAX model, web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page. This makes the application faster and more responsive to user actions.
+
+AJAX's most appealing characteristic is its "asynchronous" nature, which means it can communicate with the server, exchange data, and update the page without having to refresh the page.
+
+The two major features of AJAX allow you to do the following:
+
+- Make requests to the server without reloading the page
+- Receive and work with data from the server
+
+Modern Browsers can use Fetch API instead of the `XMLHttpRequest` Object. The Fetch API interface allows web browser to make HTTP requests to web servers. If you use the `XMLHttpRequest` Object, Fetch can do the same in a simpler way.
+
 ## References
 
 1. [Introducing asynchronous JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
-
 2. [Asynchronous and Single-threaded JavaScript? Meet the Event Loop - thecodest.co](https://thecodest.co/blog/asynchronous-and-single-threaded-javascript-meet-the-event-loop/)
-
 3. [JavaScript Cheat Sheet: The Advanced Concepts - ZTM](https://zerotomastery.io/cheatsheets/javascript-cheatsheet-the-advanced-concepts/)
-
 4. [The Complete JavaScript Course. From Zero to Expert! - Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNCuaAhZ8UB5kIldtb76eeAyfM0SUKeceBq3FKF24pNxDVe-_g0-DPxoCnWwQAvD_BwE)
+5. [AJAX Introduction - w3schools](https://www.w3schools.com/js/js_ajax_intro.asp)
+6. [AJAX - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
