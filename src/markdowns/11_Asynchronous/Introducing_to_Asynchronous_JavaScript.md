@@ -157,6 +157,8 @@ The two major features of AJAX allow you to do the following:
 
 Modern Browsers can use Fetch API instead of the `XMLHttpRequest` Object. The Fetch API interface allows web browser to make HTTP requests to web servers. If you use the `XMLHttpRequest` Object, Fetch can do the same in a simpler way.
 
+Fetch API is a modern, promise-based replacement for `XMLHttpRequest`.
+
 ## References
 
 1. [Introducing asynchronous JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)

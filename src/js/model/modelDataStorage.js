@@ -2471,34 +2471,98 @@ const asynchronous = {
       ],
     },
     {
-      sectionTitle: 'Promises and the Fetch API',
+      sectionTitle: 'Promises',
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'fetch(‘url’)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'response.json()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'response.text()',
+          articleTitle:
+            'Traditionally (before promises), asynchronous tasks were designed as callbacks. A Promise allows to transform the callback-based API to a promise-based one',
           articleSource: '',
         },
         {
           articleTitle:
-            'fetch() will always return a promise that need to by handled by consuming it',
+            'A Promise is an object that is used as a placeholder for the future result of an asynchronous operation',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The Promise lifecycle: pending -> settled (fulfilled / rejected)',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'Consuming Promises',
+      sectionTitle: 'Building a Promise',
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: '.then(callback function with ‘response’ parameter)',
+          articleTitle:
+            'The Promise() constructor is primarily used to wrap functions that do not already support promises',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'If your task is already promise-based, you likely do not need the Promise() constructor',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'the Promise() constructor returns a promise object to which you can attach handlers for consuming the promise',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Consuming a Promise',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle:
+            'There is no race condition between an asynchronous operation completing and its handlers being attached',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Handling Fulfilled Promise: then() method (callback function with "response" parameter)',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Chaining Multiple Promises: then(), catch() and finally() methods are used to associate further action with a promise that becomes settled. These methods return promises, so they can be chained',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Handling Rejected Promise: catch() method (callback function with "error" parameter)',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'finally() method (callback function)',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'The Fetch API',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'fetch() method',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Response Headers',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'How to consume a promise returned by the fetch() method',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle:
+            'fetch() will always return a promise that need to by handled by consuming it',
           articleSource: '',
         },
         {
@@ -2509,57 +2573,9 @@ const asynchronous = {
           articleTitle: 'returning a Promise with response.text()',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Chaining Multiple Promises',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'returning a Promise and handle it outside the chain',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Handling Rejected Promises',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '.catch(callback function with ‘error’ parameter)',
-          articleSource: '',
-        },
-        {
-          articleTitle: '.finally(callback function)',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Throwing Custom Errors Manually',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'The "Error" Object',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'throw new Error()',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Building a Simple Promise',
-      sectionSource: '',
-      sectionArticles: [
         {
           articleTitle:
-            'new Promise(function(resolve, reject) {      resolve(fulfilled value);  reject(rejected value)  })',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Wrap old callback based functions into Promises',
+            'Throwing Custom Errors Manually: the "Error" Object & throw new Error()',
           articleSource: '',
         },
       ],
@@ -2569,44 +2585,28 @@ const asynchronous = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: '‘async’ funtions',
+          articleTitle: 'async functions',
           articleSource: '',
         },
         {
-          articleTitle: '‘await’ keyword',
+          articleTitle: 'await operator',
           articleSource: '',
         },
         {
-          articleTitle: 'An ‘async function’ will always return a promise',
+          articleTitle: 'An async function will always return a promise',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Store await promises results in variables like const',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Multiple awaits',
           articleSource: '',
         },
         {
           articleTitle:
-            'Store ‘await’ Promises results in variables like const',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'async/ await vs "Raw Promises"',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Multiple Awaits',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Error Handling in Async Functions',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'try {} catch(error) {}',
+            'Error Handling in Async Functions: try {} catch(error) {}',
           articleSource: '',
         },
         {
@@ -2614,42 +2614,13 @@ const asynchronous = {
             'Rethrowing an error when you have multiple async funtions',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Returning Values from Async Functions',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: 'An async function always returns a Promise',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Parallel Vs. Sequential Requests',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Promise.all([ ])',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Other Promise Combinators',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Promise.race([ ])',
+          articleTitle:
+            'Returning Values from Async Functions: An async function always returns a Promise',
           articleSource: '',
         },
         {
-          articleTitle: 'Promise.allSettled([ ])',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Promise.any([ ])',
+          articleTitle: 'async/ await vs "Raw Promises"',
           articleSource: '',
         },
       ],
@@ -2665,24 +2636,76 @@ const asynchronous = {
       ],
     },
     {
+      sectionTitle: 'Promise.prototype Methods',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'then()',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'catch()',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'finally()',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Promise Static Methods',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'Promise.resolve()',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Promise.reject()',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Promise.all()',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Promise.allSettled()',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Promise.any()',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Promise.race()',
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Timers',
       sectionSource: '',
       sectionArticles: [
         {
           articleTitle: 'setTimeout()',
-          articleSource: '/src/markdowns/11_Asynchronous/setTimeout.html',
+          articleSource:
+            '/src/markdowns/11_Asynchronous/Timers__setTimeout.html',
         },
         {
           articleTitle: 'clearTimeout()',
-          articleSource: '/src/markdowns/11_Asynchronous/clearTimeout.html',
+          articleSource:
+            '/src/markdowns/11_Asynchronous/Timers__clearTimeout.html',
         },
         {
           articleTitle: 'setInterval()',
-          articleSource: '/src/markdowns/11_Asynchronous/setInterval.html',
+          articleSource:
+            '/src/markdowns/11_Asynchronous/Timers__setInterval.html',
         },
         {
           articleTitle: 'clearInterval()',
-          articleSource: '/src/markdowns/11_Asynchronous/clearInterval.html',
+          articleSource:
+            '/src/markdowns/11_Asynchronous/Timers__clearInterval.html',
         },
       ],
     },

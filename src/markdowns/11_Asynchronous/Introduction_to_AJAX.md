@@ -33,7 +33,7 @@ JavaScript also has a built in function for converting an object into a JSON str
 
 When storing data, the data has to be a certain format, and regardless of where you choose to store it, *text* is always one of the legal formats. JSON makes it possible to store JavaScript objects as text.
 
-## The code of AJAX: XMLHttpRequest API
+## The core of AJAX: XMLHttpRequest API
 
 `XMLHttpRequest` (XHR) objects are used to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing. `XMLHttpRequest` is used heavily in AJAX programming.
 
