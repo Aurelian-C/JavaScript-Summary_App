@@ -2437,15 +2437,9 @@ const asynchronous = {
           articleSource: '',
         },
         {
-          articleTitle: 'What is AJAX?',
+          articleTitle: 'Introduction to AJAX',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Introduction to AJAX',
-      sectionSource: '/src/markdowns/11_Asynchronous/Introduction_to_AJAX.html',
-      sectionArticles: [
         {
           articleTitle: 'AJAX is not a programming language',
           articleSource: '',
