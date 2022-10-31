@@ -2378,19 +2378,29 @@ const asynchronous = {
         '/src/markdowns/11_Asynchronous/How_the_web_works___HTTP_request_&_responses.html',
       sectionArticles: [
         {
-          articleTitle: 'Client-Server (Request-Response) Model',
+          articleTitle: 'HTTP is a protocol for fetching resources',
           articleSource: '',
         },
         {
-          articleTitle: 'HTTP Protocol',
+          articleTitle:
+            'HTTP is the foundation of any data exchange on the web',
           articleSource: '',
         },
         {
-          articleTitle: 'DNS',
+          articleTitle:
+            'HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Domain Name Server (DNS)',
           articleSource: '',
         },
         {
           articleTitle: 'TCP/IP socket connection',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'HTTP Messages: Request & Response',
           articleSource: '',
         },
         {
@@ -2415,29 +2425,35 @@ const asynchronous = {
         '/src/markdowns/11_Asynchronous/Introducing_to_Asynchronous_JavaScript.html',
       sectionArticles: [
         {
+          articleTitle:
+            'JavaScript has only one threat of execution (Call Stack) and so it can only do one thing at a time. There is absolutely no multitasking happening in JavaScript itself.',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Single-Thread Language problem: long-running synchronous functions that work in the Call Stack',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Asynchronous functions & Web APIs',
+          articleSource: '',
+        },
+        {
           articleTitle: 'Synchronous vs Asynchronous functions',
           articleSource: '',
         },
         {
-          articleTitle: 'Web APIs',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Asynchronous Programming & Event Handlers',
+          articleTitle:
+            'Early Asynchronous Programming & Event Handlers: early asynchronous APIs (XMLHttpRequest) used events for asynchronous programming',
           articleSource: '',
         },
         {
           articleTitle:
-            'Early asynchronous APIs (XMLHttpRequest) used events for asynchronous programming',
+            'Early Asynchronous Programming & Chaining Callbacks: Callback Hell',
           articleSource: '',
         },
         {
-          articleTitle:
-            'Asynchronous programming & Chaining Callbacks: Callback Hell',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Introduction to AJAX',
+          articleTitle: 'Early Asynchronous Programming: AJAX',
           articleSource: '',
         },
         {
@@ -2459,6 +2475,11 @@ const asynchronous = {
         },
         {
           articleTitle:
+            'Useful JavaScript methods for JSON format: JSON.parse() & JSON.stringify()',
+          articleSource: '',
+        },
+        {
+          articleTitle:
             'XMLHttpRequests Chaining Requests: Welcome to Callback Hell',
           articleSource: '',
         },
@@ -2470,7 +2491,7 @@ const asynchronous = {
       sectionArticles: [
         {
           articleTitle:
-            'Traditionally (before promises), asynchronous tasks were designed as callbacks. A Promise allows to transform the callback-based API to a promise-based one',
+            'Traditionally (before promises), asynchronous tasks were designed as callbacks. This lead at the problem known as Callback Hell. A Promise allows to transform the callback-based API to a promise-based one',
           articleSource: '',
         },
         {
