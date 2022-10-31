@@ -2466,7 +2466,7 @@ const asynchronous = {
     },
     {
       sectionTitle: 'Promises',
-      sectionSource: '',
+      sectionSource: '/src/markdowns/11_Asynchronous/Promises.html',
       sectionArticles: [
         {
           articleTitle:
@@ -2487,7 +2487,7 @@ const asynchronous = {
     },
     {
       sectionTitle: 'Building a Promise',
-      sectionSource: '',
+      sectionSource: '/src/markdowns/11_Asynchronous/Building_a_Promise.html',
       sectionArticles: [
         {
           articleTitle:
@@ -2508,7 +2508,7 @@ const asynchronous = {
     },
     {
       sectionTitle: 'Consuming a Promise',
-      sectionSource: '',
+      sectionSource: '/src/markdowns/11_Asynchronous/Consuming_a_Promise.html',
       sectionArticles: [
         {
           articleTitle:
@@ -2538,7 +2538,7 @@ const asynchronous = {
     },
     {
       sectionTitle: 'The Fetch API',
-      sectionSource: '',
+      sectionSource: '/src/markdowns/11_Asynchronous/Fetch_API.html',
       sectionArticles: [
         {
           articleTitle: 'fetch() method',
@@ -2552,7 +2552,8 @@ const asynchronous = {
     },
     {
       sectionTitle: 'How to consume a promise returned by the fetch() method',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/11_Asynchronous/How_to_consume_a_promise_returned_by_fetch_method.html',
       sectionArticles: [
         {
           articleTitle:
@@ -2575,8 +2576,8 @@ const asynchronous = {
       ],
     },
     {
-      sectionTitle: 'Consuming Promises with Async/Await',
-      sectionSource: '',
+      sectionTitle: 'Consuming Promises with async/await',
+      sectionSource: '/src/markdowns/11_Asynchronous/async_&_await.html',
       sectionArticles: [
         {
           articleTitle: 'async functions',
@@ -2617,14 +2618,8 @@ const asynchronous = {
           articleTitle: 'async/ await vs "Raw Promises"',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: `Top-Level ' await ' (ES2022)`,
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Top-Level "await" (ES2022)',
           articleSource: '',
         },
       ],
@@ -2635,15 +2630,18 @@ const asynchronous = {
       sectionArticles: [
         {
           articleTitle: 'then()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/11_Asynchronous/Promise.prototype.then.html',
         },
         {
           articleTitle: 'catch()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/11_Asynchronous/Promise.prototype.catch.html',
         },
         {
           articleTitle: 'finally()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/11_Asynchronous/Promise.prototype.finally.html',
         },
       ],
     },
@@ -2653,27 +2651,28 @@ const asynchronous = {
       sectionArticles: [
         {
           articleTitle: 'Promise.resolve()',
-          articleSource: '',
+          articleSource: '/src/markdowns/11_Asynchronous/Promise.resolve.html',
         },
         {
           articleTitle: 'Promise.reject()',
-          articleSource: '',
+          articleSource: '/src/markdowns/11_Asynchronous/Promise.reject.html',
         },
         {
           articleTitle: 'Promise.all()',
-          articleSource: '',
+          articleSource: '/src/markdowns/11_Asynchronous/Promise.all.html',
         },
         {
           articleTitle: 'Promise.allSettled()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/11_Asynchronous/Promise.allSettled.html',
         },
         {
           articleTitle: 'Promise.any()',
-          articleSource: '',
+          articleSource: '/src/markdowns/11_Asynchronous/Promise.any.html',
         },
         {
           articleTitle: 'Promise.race()',
-          articleSource: '',
+          articleSource: '/src/markdowns/11_Asynchronous/Promise.race.html',
         },
       ],
     },
