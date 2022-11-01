@@ -12,7 +12,7 @@ In an ideal world, all asynchronous functions would already return promises. Unf
 setTimeout(() => saySomething("10 seconds passed"), 10 * 1000);
 ```
 
-Mixing old-style callbacks and promises is problematic. If `saySomething()` fails or contains a programming error, nothing catches it. `setTimeout` is to blame for this. Luckily we can wrap `setTimeout` in a promise. Best practice is to wrap problematic functions at the lowest possible level, and then never call them directly again:
+Mixing old-style callbacks and promises is problematic. ==If `saySomething()` fails or contains a programming error, nothing catches it. `setTimeout` is to blame for this. Luckily we can wrap `setTimeout` in a promise==. Best practice is to wrap problematic functions at the lowest possible level, and then never call them directly again:
 
 ```js
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -22,9 +22,9 @@ wait(10 * 1000)
   .catch(failureCallback);
 ```
 
-Basically, the promise constructor takes an executor function that lets us resolve or reject a promise manually. Since `setTimeout()` doesn't really fail, we left out reject in this case.
+Basically, the `Promise` constructor takes an executor function that lets us resolve or reject a promise manually. Since `setTimeout()` doesn't really fail, we left out reject in this case.
 
-[`Promise.resolve()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve) and [`Promise.reject()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject) are shortcuts to manually create an already resolved or rejected promise respectively. This can be useful at times.
+> [`Promise.resolve()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve) and [`Promise.reject()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject) are shortcuts to manually create an already resolved or rejected promise.
 
 ## Syntax
 
@@ -37,7 +37,7 @@ const executor = function(resolve, reject) {
     }
 };
 
-const myPromise = new Promise(executor) // Promise() can only be constructed with new. Attempting to call it without new throws a TypeError.
+const myPromise = new Promise(executor); // Promise() can only be constructed with new. Attempting to call it without new throws a TypeError.
 ```
 
 ## Parameters
@@ -57,20 +57,40 @@ The `resolve` `value` parameter can be another promise object, in which case the
 
 ## Description
 
-When called via `new`, ==the `Promise` constructor returns a promise object==. The promise object will become *resolved* when either of the functions `resolve` or `reject` are invoked.
+==When called via `new`, the `Promise` constructor _returns a promise object_==. The promise object will become *resolved* when either of the functions `resolve` or `reject` are invoked.
 
 About the `executor`, it's important to understand the following:
 
-- The `executor` return value is ignored. `return` statements within the `executor` merely impacts control flow and alters whether a part of the function is executed, but does not have any impact on the promise's fulfillment value.
+- The `executor` return value is ignored. `return` statements within the `executor` merely impacts control flow and alters whether a part of the function is executed, but does not have any impact on the promise's fulfillment value
 - If an error is thrown in the `executor`, the promise is rejected
 
 ## Summary typical flow
 
-1. `executor` typically wraps some asynchronous operation which provides a callback-based API.
-2. The callback (the one passed to the original callback-based API) is defined within the `executor` code, so it has access to the `resolve` and `reject`.
-3. Once `resolve` or `reject` is called, the promise's state moves from "pending" to either "fulfilled" or "rejected".
-4. The `Promise` object (asynchronously) invokes any further handlers associated by `.then(handleFulfilled)` or `.catch(handleRejected)`.
-5. The argument passed to `resolutionFunc` or `rejectionFunc`, i.e., the fulfillment value or rejection reason, is passed to the invocation of `handleFulfilled` and `handleRejected` as an input parameter.
+1. ==`executor` typically wraps some asynchronous operation which provides a callback-based API==
+2. ==The callback (the one passed to the original callback-based API) is defined within the `executor` code, so it has access to the `resolve` and `reject`==
+3. Once `resolve` or `reject` is called, the promise's state moves from "pending" to either "fulfilled" or "rejected"
+4. The `Promise` object (asynchronously) invokes any further handlers associated by `.then(handleFulfilled)` or `.catch(handleRejected)`
+5. ==The argument passed to `resolve` or `reject` (the fulfillment value or rejection reason), is passed to the invocation of `handleFulfilled` or `handleRejected` as an input parameter==
+
+```js
+const executor = function(resolve, reject) {
+    if (true) {
+        resolve(value);
+    } else {
+        reject(reason);
+    }
+};
+
+const myPromise = new Promise(executor);
+
+myPromise
+	.then((value) => {
+    	// statement
+	})
+ 	.catch((reason) => {
+    	// statement
+	})
+```
 
 ## References
 

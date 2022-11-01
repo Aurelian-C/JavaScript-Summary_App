@@ -2,17 +2,19 @@
 
 Promises are the foundation of asynchronous programming in modern JavaScript. ==A promise is an **object returned by an asynchronous function**, which represents the current state of the operation. At the time the promise is returned to the caller, the operation often isn't finished, but **the promise object provides methods to handle the eventual success or failure of the operation**==.
 
-Traditionally (before promises), asynchronous tasks were designed as callbacks; we use of callbacks to implement asynchronous functions. With that design, you call the asynchronous function, passing in your callback function; the function returns immediately and calls your callback when the operation is finished.
+Traditionally (before promises), asynchronous tasks were designed as callbacks; we use of callbacks to implement asynchronous functions. With that design, you call the asynchronous function, passing in your callback function; the function returns immediately and calls your callback when the operation is finished. This design lead to a problem known as "Callback Hell".
 
-On the other hand, A promise allows to transform the callback-based API to a promise-based one. With a promise-based API, the asynchronous function starts the operation and returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) object. You can then attach handlers to this promise object, and these handlers will be executed when the operation has succeeded or failed.
+On the other hand, ==a promise allows to transform the callback-based API to a promise-based one==. With a promise-based API, the asynchronous function starts the operation and returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) object. You can then attach handlers to the `Promise` object, and these handlers will be executed when the operation has succeeded or failed.
 
 ## What is a Promise?
 
-==A Promise is an **object** that is used as a **placeholder for the future result** of an **asynchronous operation**. In other words, a Promise is a **container** for an **asynchronously** delivered **value** or a **container** for a future **value**==.
+==A `Promise` is an **object** that is used as a **placeholder for the future result** of an **asynchronous operation**. In other words, a promise is a **container** for an **asynchronously** delivered **value** or a **container** for a future **value**==.
 
-> **Note**: The perfect example of a future value is the response coming from an AJAX call. When we start the AJAX call, there is no value yet, but we know that there will be some value in the future, so we can use a Promise to handle this future value.
+> **Note**: The perfect example of a future value is the response coming from an AJAX call. When we start the AJAX call, there is no value yet, but we know that there will be some value in the future, so we can use a promise to handle this future value.
 
-Essentially, a Promise is a returned object to which you attach callbacks, instead of passing callbacks into a function. With Promises we no longer need to rely on _events_ and _callbacks_ passed into asynchronous functions to handle asynchronous results. ==Instead of _nesting callbacks_, we can **chain promises** for a sequence of asynchronous operations: escaping callback hell==:
+Essentially, ==a `Promise` is a returned object to which you attach callbacks, instead of passing callbacks into a function==. 
+
+With promises we no longer need to rely on _events_ and _callbacks_ passed into asynchronous functions to handle asynchronous results. Instead of _nesting callbacks_, we can **chain promises** for a sequence of asynchronous operations, escaping callback hell:
 
 ```js
 // In the old days, doing several asynchronous operations in a row would lead to the classic callback pyramid of doom (Callback Hell):
@@ -55,21 +57,23 @@ wait(1)
 
 ```
 
-A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: ==instead of immediately returning the final value, the asynchronous method returns a *promise* to supply the value at some point in the future==.
+A promise is a proxy for a value not necessarily known when the promise is created. It _allows you to associate handlers with an asynchronous action's eventual success value or failure reason_. This lets asynchronous methods return values like synchronous methods: ==instead of immediately returning the final value, the asynchronous method returns a *promise* to supply the value at some point in the future==.
 
 ## The Promise lifecycle
 
-Since Promises work with asynchronous operations, promises are ==time sensitive==, so they ==change over time==, and so promises can be in ==different states== and this is what they call the cycle of a promise.
+Since promises work with asynchronous operations, promises are ==time sensitive==, so they ==change over time==, and so promises can be in ==different states== and this is what they call the cycle of a promise.
 
 ![asynchronous-promises1](../../img/asynchronous_promises1.jpg)
 
-In the very beginning, we say that a Promise is ==**pending**== and this is _before any value resulting from the asynchronous task is available_. Now, _during the pending time, the asynchronous task is still doing its work in the background_. When the asynchronous task finishes, we say that the promise is ==**settled**== and there are _two different types of settled_: ==fulfilled== and ==rejected==. Once settled, a promise can not be resettled. The immutability of a settled promise is an important feature. A promise is only settled once and so from there, the state will remain unchanged forever, so the promise was either fulfilled or rejected, but it's impossible to change that state.
+In the very beginning, we say that a Promise is ==**pending**== and this is _before any value resulting from the asynchronous task is available_. Now, _during the pending time, the asynchronous task is still doing its work in the background_. When the asynchronous task finishes, we say that the promise is ==**settled**== and there are _two different types of settled_: ==fulfilled== and ==rejected==. _Once settled, a promise can not be resettled. The immutability of a settled promise is an important feature. A promise is only settled once and so from there, the state will remain unchanged forever, so the promise was either fulfilled or rejected, but it's impossible to change that state_.
 
 A fulfilled promise is a promise that has **successfully resulted in a value**. On the other hand, a rejected promise means that there has been an **error during the asynchronous task**.
 
 Now these two different states are very important to understand because when we use promises in our code, we will be able to _handle these different states_ in order to do something as a result of either a successful promise or a rejected one.
 
-These different states that I showed you are relevant and useful when we use a promise to get a result, which is called to **consume a promise**. So we consume a promise when we already have a promise, for example, the promise that was returned from the [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) function. But in order for a promise to exist in the first place, it must first be built, so it must be created. In the case of the `fetch` API, it's the `fetch()` function that builds the promise and returns it for us to consume, so in this case, we don't have to build the promise ourselves in order to consume it. Now, most of the time we will actually just consume promises, which is also the easier and more useful part, but sometimes we also need to build a promise and to not just consume it.
+## Build & consume promises
+
+These different states that I showed you are relevant and useful when we use a promise to get a result, which is called to **consume a promise**. So we consume a promise when we already have a promise, for example, the promise that was returned from the [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) function. But in order for a promise to exist in the first place, it must first be built, so it must be created. _In the case of the Fetch API, it's the `fetch()` function that builds the promise and returns it for us to consume, so in this case, we don't have to build the promise ourselves in order to consume it_. Now, most of the time we will actually just consume promises, which is also the easier and more useful part, but sometimes we also need to build a promise and to not just consume it.
 
 ## References
 

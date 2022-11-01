@@ -1,21 +1,21 @@
 # Fetch API
 
-The Fetch API provides an interface for fetching resources (including across the network). It will seem familiar to anyone who has used [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), but the new API provides a more powerful and flexible feature set.
+==The Fetch API provides an interface for fetching resources (including across the network)==. It will seem familiar to anyone who has used [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), but the new API provides a more powerful and flexible feature set.
 
-For making a request and fetching a resource, use the [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) method. The `fetch()` method takes one mandatory argument, the path to the resource you want to fetch. It returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves to the [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) to that request — as soon as the server responds with headers — **even if the server response is an HTTP error status**. Once a [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) is retrieved, there are a number of methods available to define what the body content is and how it should be handled.
+==For making a request and fetching a resource, use the [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) method. The `fetch()` method takes one mandatory argument, the path to the resource you want to fetch. It returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves to the [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) to that request — as soon as the server responds with headers — **even if the server response is an HTTP error status**. Once a [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) is retrieved, there are a number of methods available to define what the body content is and how it should be handled==.
 
-The `fetch` specification differs from `jQuery.ajax()` in three main ways:
+The `fetch` specification:
 
-- The Promise returned from `fetch()` **won't reject on HTTP error status** even if the response is an HTTP `404` or `500`. Instead, it will resolve normally (with `ok` status set to `false`), and it will only reject on network failure or if anything prevented the request from completing.
+- ==The Promise returned from `fetch()` **won't reject on HTTP error status** even if the response is an HTTP `404` or `500`==. Instead, it will resolve normally (with `ok` status set to `false`), and it will only reject on network failure or if anything prevented the request from completing.
 - `fetch()` won't send cross-origin cookies unless you set the credentials [init option](https://developer.mozilla.org/en-US/docs/Web/API/fetch#parameters) (to `include`).
   - In April 2018, the spec changed the default credentials policy to `'same-origin'`. The following browsers shipped an outdated native fetch, and were updated in these versions: Firefox 61.0b13, Safari 12, Chrome 68.
   - If you are targeting older versions of these browsers, be sure to include `credentials: 'same-origin'` [init option](https://developer.mozilla.org/en-US/docs/Web/API/fetch#parameters) on all API requests that may be affected by cookies/user login state.
 
 ## `fetch()` method
 
-The global **`fetch()`** method starts the process of fetching a resource from the network, returning a promise which is fulfilled once the response is available. The promise resolves to the [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object representing the response to your request.
+==The global **`fetch()`** method starts the process of fetching a resource from the network, **returning a promise** which is fulfilled once the response is available==. The promise resolves to the [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object representing the response to your request.
 
-A `fetch()` promise only rejects when a network error is encountered (which is usually when there's a permissions issue or similar). A `fetch()` promise *does not* reject on HTTP errors (`404`, etc.). Instead, a `then()` handler must check the [`Response.ok`](https://developer.mozilla.org/en-US/docs/Web/API/Response/ok) and/or [`Response.status`](https://developer.mozilla.org/en-US/docs/Web/API/Response/status) properties.
+==A `fetch()` promise only rejects when a network error is encountered== (which is usually when there's a permissions issue or similar). A `fetch()` promise *does not* reject on HTTP errors (`404`, etc.). Instead, a `then()` handler must check the [`Response.ok`](https://developer.mozilla.org/en-US/docs/Web/API/Response/ok) and/or [`Response.status`](https://developer.mozilla.org/en-US/docs/Web/API/Response/status) properties.
 
 ## Syntax
 
@@ -30,16 +30,16 @@ fetch(resource, options)
 
 This defines the resource that you wish to fetch. This can either be:
 
-- A string or any other object with a [stringifier](https://developer.mozilla.org/en-US/docs/Glossary/Stringifier) — including a [`URL`](https://developer.mozilla.org/en-US/docs/Web/API/URL) object — that provides the URL of the resource you want to fetch.
+- A string or any other object with a [stringifier](https://developer.mozilla.org/en-US/docs/Glossary/Stringifier) — including a [`URL`](https://developer.mozilla.org/en-US/docs/Web/API/URL) object — that provides the ==URL of the resource you want to fetch==.
 - A [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request) object.
 
-### `options` _(optional)_
+### [`options`](https://developer.mozilla.org/en-US/docs/Web/API/fetch#parameters) _(optional)_
 
-An object containing any custom settings that you want to apply to the request. The possible options are:
+==An object containing any custom settings that you want to apply to the request==. The possible options are:
 
 #### `method`
 
-The request method, e.g., `GET`, `POST`.
+The [request method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods), e.g., [`GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET), [`POST`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST).
 
 #### `headers`
 
@@ -122,6 +122,7 @@ A promise that resolves to a [`Response`](https://developer.mozilla.org/en-US/do
 1. [Fetch API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 1. [How to use promises - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
 1. [`fetch()` - MDN](https://developer.mozilla.org/en-US/docs/Web/API/fetch)
+1. [HTTP request methods - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 1. [Response - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Response)
 1. [`Response.json()` - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Response/json)
 1. [`Response.text()` - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Response/text)

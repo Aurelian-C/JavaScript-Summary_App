@@ -2491,17 +2491,26 @@ const asynchronous = {
       sectionArticles: [
         {
           articleTitle:
-            'Traditionally (before promises), asynchronous tasks were designed as callbacks. This lead at the problem known as Callback Hell. A Promise allows to transform the callback-based API to a promise-based one',
+            'Traditionally (before promises), asynchronous tasks were designed as callbacks. This lead at the problem known as Callback Hell. A promise allows to transform the callback-based API to a promise-based one',
           articleSource: '',
         },
         {
           articleTitle:
-            'A Promise is an object that is used as a placeholder for the future result of an asynchronous operation',
+            'A promise is an object returned by an asynchronous function that is used as a placeholder for the future result of that asynchronous operation',
           articleSource: '',
         },
         {
           articleTitle:
-            'The Promise lifecycle: pending -> settled (fulfilled / rejected)',
+            'The promise object provides methods to handle the eventual success or failure of the operation',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The promise lifecycle: pending -> settled (fulfilled / rejected)',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Build & consume promises',
           articleSource: '',
         },
       ],
@@ -2543,12 +2552,17 @@ const asynchronous = {
         },
         {
           articleTitle:
+            'Handling Rejected Promise: catch() method (callback function with "error" parameter)',
+          articleSource: '',
+        },
+        {
+          articleTitle:
             'Chaining Multiple Promises: then(), catch() and finally() methods are used to associate further action with a promise that becomes settled. These methods return promises, so they can be chained',
           articleSource: '',
         },
         {
           articleTitle:
-            'Handling Rejected Promise: catch() method (callback function with "error" parameter)',
+            "Always return the result of a promise, otherwise .then() method won't catch the result of the previous promise",
           articleSource: '',
         },
         {
@@ -2562,11 +2576,21 @@ const asynchronous = {
       sectionSource: '/src/markdowns/11_Asynchronous/Fetch_API.html',
       sectionArticles: [
         {
-          articleTitle: 'fetch() method',
+          articleTitle:
+            'The Fetch API provides an interface for fetching resources (including across the network)',
           articleSource: '',
         },
         {
-          articleTitle: 'Response Headers',
+          articleTitle:
+            'For making a request and fetching a resource use the fetch() method',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'The fetch() method always return a promise',
+          articleSource: '',
+        },
+        {
+          articleTitle: `The promise returned from fetch() won't reject on HTTP error status even if the response is an HTTP 404 or 500`,
           articleSource: '',
         },
       ],
@@ -2582,11 +2606,11 @@ const asynchronous = {
           articleSource: '',
         },
         {
-          articleTitle: 'returning a Promise with response.json()',
+          articleTitle: 'returning a promise with response.json()',
           articleSource: '',
         },
         {
-          articleTitle: 'returning a Promise with response.text()',
+          articleTitle: 'returning a promise with response.text()',
           articleSource: '',
         },
         {

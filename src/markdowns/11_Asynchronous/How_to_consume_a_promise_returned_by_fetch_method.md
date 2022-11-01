@@ -180,7 +180,9 @@ These are just two of the extra `Promise` functions for combining multiple promi
 ## References
 
 1. [How to use promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
-2. [`Response.json()` - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Response/json)
-3. [`Response.text()` - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Response/text)
-4. [`throw` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
-5. [Error - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
+2. [`fetch()` - MDN](https://developer.mozilla.org/en-US/docs/Web/API/fetch)
+3. [Response - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Response)
+4. [`Response.json()` - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Response/json)
+5. [`Response.text()` - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Response/text)
+6. [`throw` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
+7. [Error - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
