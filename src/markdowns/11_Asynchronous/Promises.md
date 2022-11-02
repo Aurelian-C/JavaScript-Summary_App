@@ -75,6 +75,18 @@ Now these two different states are very important to understand because when we 
 
 These different states that I showed you are relevant and useful when we use a promise to get a result, which is called to **consume a promise**. So we consume a promise when we already have a promise, for example, the promise that was returned from the [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) function. But in order for a promise to exist in the first place, it must first be built, so it must be created. _In the case of the Fetch API, it's the `fetch()` function that builds the promise and returns it for us to consume, so in this case, we don't have to build the promise ourselves in order to consume it_. Now, most of the time we will actually just consume promises, which is also the easier and more useful part, but sometimes we also need to build a promise and to not just consume it.
 
+## Promise terminology
+
+Promises come with some quite specific terminology that it's worth getting clear about. First, a promise can be in one of three states:
+
+- **pending**: the promise has been created, and the asynchronous function it's associated with has not succeeded or failed yet. This is the state your promise is in when it's returned from a call to `fetch()`, and the request is still being made.
+- **fulfilled**: the asynchronous function has succeeded. When a promise is fulfilled, its [`then()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) handler is called.
+- **rejected**: the asynchronous function has failed. When a promise is rejected, its [`catch()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch) handler is called.
+
+Note that what "succeeded" or "failed" means here is up to the API in question: for example, `fetch()` considers a request successful if the server returned an error like [404 Not Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404), but not if a network error prevented the request being sent.
+
+Sometimes, we use the term **settled** to cover both **fulfilled** and **rejected**. A promise is **resolved** if it is settled, or if it has been "locked in" to follow the state of another promise.
+
 ## References
 
 1. [Promise - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)

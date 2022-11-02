@@ -2602,15 +2602,17 @@ const asynchronous = {
       sectionArticles: [
         {
           articleTitle:
-            'fetch() will always return a promise that need to by handled by consuming it',
+            'fetch() will always return a promise that need to be handled by consuming it',
           articleSource: '',
         },
         {
-          articleTitle: 'returning a promise with response.json()',
+          articleTitle:
+            'Read the response returned by fetch() with: Response.json(), Response.text(), Response.formData()',
           articleSource: '',
         },
         {
-          articleTitle: 'returning a promise with response.text()',
+          articleTitle:
+            'Response.json(), Response.text(), Response.formData() always return a promise',
           articleSource: '',
         },
         {
@@ -2618,10 +2620,19 @@ const asynchronous = {
             'Throwing Custom Errors Manually: the "Error" Object & throw new Error()',
           articleSource: '',
         },
+        {
+          articleTitle: 'Rethrowing an error',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Combining multiple promises with "Promise.all" or "Promise.any" and consume them',
+          articleSource: '',
+        },
       ],
     },
     {
-      sectionTitle: 'Consuming Promises with async/await',
+      sectionTitle: 'Consuming promises with async/await',
       sectionSource: '/src/markdowns/11_Asynchronous/async_&_await.html',
       sectionArticles: [
         {
@@ -2633,15 +2644,40 @@ const asynchronous = {
           articleSource: '',
         },
         {
-          articleTitle: 'An async function will always return a promise',
+          articleTitle:
+            'The purpose of async/await is to simplify the syntax necessary to consume promise-based APIs',
           articleSource: '',
         },
         {
-          articleTitle: 'Store await promises results in variables like const',
+          articleTitle:
+            'async/await enables you to write code that uses asynchronous functions but looks like synchronous code',
           articleSource: '',
         },
         {
-          articleTitle: 'Multiple awaits',
+          articleTitle:
+            'async/await help you to avoid the need to explicitly configure promise chains, like you used to do with then() and catch()',
+          articleSource: '',
+        },
+        {
+          articleTitle: `Just like a promise chain, "await" forces asynchronous operations to be completed in series. This is necessary if the result of the next operation depends on the result of the last one, but if that's not the case then something like "Promise.all" will be more performant`,
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Async functions always return a promise. If the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'You can only use "await" inside an "async" function, unless your code is in a JavaScript module',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'You can use multiple awaits in an async function',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Store await promises results in variables',
           articleSource: '',
         },
         {
@@ -2651,16 +2687,16 @@ const asynchronous = {
         },
         {
           articleTitle:
-            'Rethrowing an error when you have multiple async funtions',
+            'Rethrowing an error when you have multiple async functions',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Returning values from async functions',
           articleSource: '',
         },
         {
           articleTitle:
-            'Returning Values from Async Functions: An async function always returns a Promise',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'async/ await vs "Raw Promises"',
+            'async/await is only syntactic sugar over "Raw Promises"',
           articleSource: '',
         },
         {
