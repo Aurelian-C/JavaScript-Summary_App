@@ -2110,31 +2110,78 @@ const standardBuildInObjects = {
   sections: [
     {
       sectionTitle: 'Introduction to Standard Build-in Objects',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/10_Standard_Build-In_Objects/Introduction_to_Standard_Build-in_Objects.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Global objects vs Global Object (window)',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Introducing Regular Expressions ("RegEx")',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Standard build-in objects by category',
           articleSource: '',
         },
       ],
     },
     {
       sectionTitle: 'String',
-      sectionSource: '',
+      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/String.html',
       sectionArticles: [
+        {
+          articleTitle:
+            'Creating strings as primitives: string literals & String() function',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Creating strings as objects: String() constructor',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'String() function and String() constructor produce different results',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Character access: You can treat the string as an array-like object, where individual characters correspond to a numerical index',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Comparing strings: strings case-sensitively!',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'String primitives vs String objects: in contexts where a method is to be invoked on a primitive string or a property lookup occurs, JavaScript will automatically wrap the string primitive and call the method or perform the property lookup on the wrapper object instead',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'String coercion: template literals, String() function, + operator',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Long literal strings',
+          articleSource: '',
+        },
         {
           articleTitle: 'Template literals (Template strings)',
           articleSource: '',
+        },
+        {
+          articleTitle: 'Template literals and Tagged Templates',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'String.prototype properties & methods',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'length',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.length.html',
         },
         {
           articleTitle: 'indexOf()',
@@ -2199,7 +2246,27 @@ const standardBuildInObjects = {
       ],
     },
     {
+      sectionTitle: 'Regular Expressions ("RegEx")',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Number',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Number.prototype Methods',
       sectionSource: '',
       sectionArticles: [
         {
@@ -2233,7 +2300,7 @@ const standardBuildInObjects = {
       ],
     },
     {
-      sectionTitle: 'Math',
+      sectionTitle: 'Math.prototype Methods',
       sectionSource: '',
       sectionArticles: [
         {
@@ -2292,6 +2359,12 @@ const standardBuildInObjects = {
           articleTitle: 'Date.now()',
           articleSource: '',
         },
+      ],
+    },
+    {
+      sectionTitle: 'Date.prototype Methods',
+      sectionSource: '',
+      sectionArticles: [
         {
           articleTitle: 'getFullYear()',
           articleSource: '',

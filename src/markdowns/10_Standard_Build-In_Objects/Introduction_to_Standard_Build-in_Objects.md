@@ -2,24 +2,22 @@
 
 ## Global objects vs Global Object (`window`)
 
-The term =="global objects"== (or standard built-in objects) here is not to be confused with the ==global object== `window`. Here, =="global objects" refer to **objects in the global scope**==.
+==The term "global objects" (or standard built-in objects) here is not to be confused with the global object `window`. Here, "global objects" refer to **objects in the global scope**==.
 
-The global object itself can be accessed using the this operator in the global scope. In fact, the global scope consists of the properties of the global object, including inherited properties, if any.
-
-Other objects in the global scope are either created by the user script or provided by the host application.
+The global object itself ([`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window)) can be accessed using the [`this`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) operator in the global scope. In fact, the global scope consists of the properties of the global object, including inherited properties, if any. Other objects in the global scope are either [created by the user script](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#creating_new_objects) or provided by the host application. The host objects available in browser contexts are documented in the [API reference](https://developer.mozilla.org/en-US/docs/Web/API).
 
 ## Some standard build-in objects by category
 
 ### Value properties
 
-These global properties return a simple value. They have no properties or methods.
+These global properties return a simple value. They have no properties or methods:
 
 - [NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
 - [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
 ### Function properties
 
-These global functions—functions which are called globally, rather than on an object—directly return their results to the caller.
+These global functions — functions which are called globally, rather than on an object — directly return their results to the caller:
 
 - [isFinite()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isFinite)
 - [isNaN()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
@@ -28,7 +26,7 @@ These global functions—functions which are called globally, rather than on an 
 
 ### Fundamental objects
 
-These are the fundamental, basic objects upon which all other objects are based. This includes general objects, booleans, functions, and symbols.
+These are the fundamental, basic objects upon which all other objects are based. This includes general objects, booleans, functions, and symbols:
 
 - [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 - [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
@@ -37,7 +35,7 @@ These are the fundamental, basic objects upon which all other objects are based.
 
 ### Error objects
 
-Error objects are a special type of fundamental object. They include the basic Error type, as well as several specialized error types.
+Error objects are a special type of fundamental object. They include the basic `Error` type, as well as several specialized error types:
 
 - [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
 - [ReferenceError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError)
@@ -46,7 +44,7 @@ Error objects are a special type of fundamental object. They include the basic E
 
 ### Numbers and dates
 
-These are the base objects representing numbers, dates, and mathematical calculations.
+These are the base objects representing numbers, dates, and mathematical calculations:
 
 - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 - [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
@@ -55,19 +53,20 @@ These are the base objects representing numbers, dates, and mathematical calcula
 
 ### Text processing
 
-These objects represent strings and support manipulating them.
+These objects represent strings and support manipulating them:
 
 - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+- [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
 ### Indexed collections
 
-These objects represent collections of data which are ordered by an index value. This includes (typed) arrays and array-like constructs.
+These objects represent collections of data which are ordered by an index value. This includes (typed) arrays and array-like constructs:
 
 - [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ### Keyed collections
 
-These objects represent collections which use keys. The iterable collections (`Map` and `Set`) contain elements which are easily iterated in the order of insertion.
+These objects represent collections which use keys. The iterable collections (`Map` and `Set`) contain elements which are easily iterated in the order of insertion:
 
 - [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 - [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
@@ -76,13 +75,13 @@ These objects represent collections which use keys. The iterable collections (`M
 
 ### Structured data
 
-These objects represent and interact with structured data buffers and data coded using JavaScript Object Notation (JSON).
+These objects represent and interact with structured data buffers and data coded using JavaScript Object Notation (JSON):
 
 - [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)
 
 ### Control abstraction objects
 
-Control abstractions can help to structure code, especially async code (without using deeply nested callbacks, for example).
+Control abstractions can help to structure code, especially async code (without using deeply nested callbacks, for example):
 
 - [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [AsyncFunction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction)
@@ -94,7 +93,8 @@ Additions to the ECMAScript core for language-sensitive functionalities.
 - [Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
 - [Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat)
 - [Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
+- [Intl.Locale](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale)
 
-## Reference
+## References
 
 1. [Standard built-in objects - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
