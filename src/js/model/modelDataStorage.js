@@ -2185,27 +2185,28 @@ const standardBuildInObjects = {
         },
         {
           articleTitle: 'indexOf()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.indexOf.html',
         },
         {
           articleTitle: 'lastIndexOf()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.lastIndexOf.html',
         },
         {
           articleTitle: 'slice()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.slice.html',
         },
         {
-          articleTitle: 'toLowerCase()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'toUpperCase()',
-          articleSource: '',
+          articleTitle: 'toLowerCase() & toUpperCase()',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.toLowerCase_&_toUpperCase.html',
         },
         {
           articleTitle: 'trim()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.trim.html',
         },
         {
           articleTitle: 'replace()',
@@ -2220,11 +2221,7 @@ const standardBuildInObjects = {
           articleSource: '',
         },
         {
-          articleTitle: 'startsWith()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'endsWith()',
+          articleTitle: 'startsWith() & endsWith()',
           articleSource: '',
         },
         {

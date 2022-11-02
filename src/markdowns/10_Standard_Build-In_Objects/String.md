@@ -40,6 +40,8 @@ String primitives and string objects share many behaviors, but have other import
 'cat'[1] // gives value "a"
 ```
 
+> **Note**: Strings are zero-indexed: The index of a string's first character is `0`, and the index of a string's last character is the length of the string minus 1.
+
 ## Comparing strings
 
 All comparison operators, including [`===`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality) and [`==`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality), compare ==strings case-sensitively==. A common way to compare strings case-insensitively is to convert both to the same case (upper or lower) before comparing them:
