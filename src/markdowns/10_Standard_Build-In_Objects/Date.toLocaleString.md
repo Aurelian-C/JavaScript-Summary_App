@@ -1,6 +1,6 @@
 # Date.prototype.toLocaleString()
 
-The `toLocaleString()` method ==returns a string== with a language-sensitive representation of this date. In implementations with `Intl.DateTimeFormat` API support, this method simply calls `Intl.DateTimeFormat`.
+The `toLocaleString()` method ==returns a string== with a language-sensitive representation of this date. In implementations with [`Intl.DateTimeFormat` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) support, this method simply calls `Intl.DateTimeFormat`.
 
 ## Syntax
 

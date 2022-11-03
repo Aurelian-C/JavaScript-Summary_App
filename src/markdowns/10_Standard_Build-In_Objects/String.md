@@ -1,6 +1,6 @@
 # Strings
 
-==The **`String`** object is used to represent and manipulate a **sequence of characters**==.
+==The `String` object is used to represent and manipulate a **sequence of characters**==.
 
 ==Strings are useful for holding data that can be represented in **text form**==. Some of the most-used operations on strings are to check their [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), to build and concatenate them using the [+ and += string operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators), checking for the existence or location of substrings with the [`indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf) method, or extracting substrings with the [`substring()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring) method.
 
@@ -28,7 +28,7 @@ console.log(typeof string4); // "object"
 >const strPrim2 = String(true);	// Coerced into the string primitive "true"
 >```
 >
->The function produces a string (the [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) type) as promised. However, the constructor produces an instance of the type String (an object wrapper) and that's why you rarely want to use the String constructor at all.
+>The function produces a string (the [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) type) as promised. However, the constructor (with `new`) produces an instance of the type String (an object wrapper) and that's why you rarely want to use the String constructor at all.
 
 String primitives and string objects share many behaviors, but have other important differences and caveats.
 

@@ -2218,27 +2218,28 @@ const standardBuildInObjects = {
         },
         {
           articleTitle: 'includes()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.includes.html',
         },
         {
           articleTitle: 'startsWith() & endsWith()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.startsWith_&_endsWith.html',
         },
         {
           articleTitle: 'split()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.split.html',
         },
         {
-          articleTitle: 'padStart()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'padEnd()',
-          articleSource: '',
+          articleTitle: 'padStart() & padEnd()',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.padStart_&_padEnd.html',
         },
         {
           articleTitle: 'repeat()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.repeat.html',
         },
       ],
     },
@@ -2254,22 +2255,43 @@ const standardBuildInObjects = {
     },
     {
       sectionTitle: 'Number',
-      sectionSource: '',
+      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Number.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle:
+            'Creating numbers as primitives: literal form & Number() function',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Creating numbers as objects: Number() constructor',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Number() function and Number() constructor produce different results',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Number primitives vs Number objects: in contexts where a method is to be invoked on a primitive number or a property lookup occurs, JavaScript will automatically wrap the number primitive and call the method or perform the property lookup on the wrapper object instead',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            "Number encoding: there are some limits to the stored number's magnitude and precision. Integers can only be represented without loss of precision in the range -253 + 1 to 253 - 1",
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Number coercion: Addition operator (+) & Number() function',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'Number.prototype Methods',
+      sectionTitle: 'Number Static Methods',
       sectionSource: '',
       sectionArticles: [
-        {
-          articleTitle: 'Number() & Addition operator (+)',
-          articleSource: '',
-        },
         {
           articleTitle: 'Number.parseInt()',
           articleSource: '',
@@ -2290,46 +2312,71 @@ const standardBuildInObjects = {
           articleTitle: 'Number.isInteger()',
           articleSource: '',
         },
+      ],
+    },
+    {
+      sectionTitle: 'Number.prototype Methods',
+      sectionSource: '',
+      sectionArticles: [
         {
-          articleTitle: 'Number.prototype.toFixed()',
+          articleTitle: 'toFixed()',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'Math.prototype Methods',
+      sectionTitle: 'Math',
+      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Math.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'Unlike many other global objects, "Math" is not a constructor',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'All properties and methods of "Math" are static',
+          articleSource: '',
+        },
+        {
+          articleTitle: `"Math" works with the Number type. It doesn't work with BigInt`,
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Math Static Methods',
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'max()',
+          articleTitle: 'Math.max()',
           articleSource: '',
         },
         {
-          articleTitle: 'min()',
+          articleTitle: 'Math.min()',
           articleSource: '',
         },
         {
-          articleTitle: 'round()',
+          articleTitle: 'Math.round()',
           articleSource: '',
         },
         {
-          articleTitle: 'ceil()',
+          articleTitle: 'Math.ceil()',
           articleSource: '',
         },
         {
-          articleTitle: 'floor()',
+          articleTitle: 'Math.floor()',
           articleSource: '',
         },
         {
-          articleTitle: 'trunc()',
+          articleTitle: 'Math.trunc()',
           articleSource: '',
         },
         {
-          articleTitle: 'random()',
+          articleTitle: 'Math.random()',
           articleSource: '',
         },
         {
-          articleTitle: 'abs()',
+          articleTitle: 'Math.abs()',
           articleSource: '',
         },
       ],

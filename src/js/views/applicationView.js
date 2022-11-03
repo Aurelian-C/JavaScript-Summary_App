@@ -33,7 +33,7 @@ class ApplicationView {
           <li class="card__descriptor">
           ${
             descriptor.articleSource
-              ? `<a class="card__descriptor-anchor" href="${descriptor.articleSource}">${descriptor.articleTitle}</a>`
+              ? `<a class="card__descriptor-anchor" href="${descriptor.articleSource}" target="_blank">${descriptor.articleTitle}</a>`
               : `<p class="card__descriptor-title">${descriptor.articleTitle}</p>`
           }
           </li>`;
@@ -45,7 +45,7 @@ class ApplicationView {
         <div class="card__article-wrapper">
           ${
             article.sectionSource
-              ? `<a class="card__article-anchor" href="${article.sectionSource}">${article.sectionTitle}</a>`
+              ? `<a class="card__article-anchor" href="${article.sectionSource}" target="_blank">${article.sectionTitle}</a>`
               : `<p class="card__article-title">${article.sectionTitle}</p>`
           }
         </div>
