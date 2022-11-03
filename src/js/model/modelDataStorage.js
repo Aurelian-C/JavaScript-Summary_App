@@ -2294,23 +2294,28 @@ const standardBuildInObjects = {
       sectionArticles: [
         {
           articleTitle: 'Number.parseInt()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Number.parseInt.html',
         },
         {
           articleTitle: 'Number.parseFloat()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Number.parseFloat.html',
         },
         {
           articleTitle: 'Number.isNaN()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Number.isNaN.html',
         },
         {
           articleTitle: 'Number.isFinite()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Number.isFinite.html',
         },
         {
           articleTitle: 'Number.isInteger()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Number.isInteger.html',
         },
       ],
     },
@@ -2320,7 +2325,8 @@ const standardBuildInObjects = {
       sectionArticles: [
         {
           articleTitle: 'toFixed()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Number.prototype.toFixed.html',
         },
       ],
     },
@@ -2338,7 +2344,7 @@ const standardBuildInObjects = {
           articleSource: '',
         },
         {
-          articleTitle: `"Math" works with the Number type. It doesn't work with BigInt`,
+          articleTitle: `"Math" works with the Number type, it doesn't work with BigInt`,
           articleSource: '',
         },
       ],
@@ -2349,35 +2355,43 @@ const standardBuildInObjects = {
       sectionArticles: [
         {
           articleTitle: 'Math.max()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Math.max.html',
         },
         {
           articleTitle: 'Math.min()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Math.min.html',
         },
         {
           articleTitle: 'Math.round()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Math.ceil()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Math.round.html',
         },
         {
           articleTitle: 'Math.floor()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Math.floor.html',
+        },
+        {
+          articleTitle: 'Math.ceil()',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Math.ceil.html',
         },
         {
           articleTitle: 'Math.trunc()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Math.trunc.html',
         },
         {
           articleTitle: 'Math.random()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Math.random.html',
         },
         {
           articleTitle: 'Math.abs()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Math.abs.html',
         },
       ],
     },
@@ -2393,14 +2407,40 @@ const standardBuildInObjects = {
     },
     {
       sectionTitle: 'Date',
-      sectionSource: '',
+      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Date.html',
       sectionArticles: [
         {
-          articleTitle: 'new Date()',
+          articleTitle:
+            'The ECMAScript epoch and timestamps: a JavaScript date is fundamentally specified as the number of milliseconds that have elapsed since the ECMAScript epoch, which is defined as January 1, 1970, UTC (equivalent to the UNIX epoch)',
           articleSource: '',
         },
         {
-          articleTitle: 'Date.now()',
+          articleTitle:
+            'Date format and time zone conversions: there are several methods available to obtain a date in various formats, as well as to perform time zone conversions',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The Date() constructor can create a "Date" instance <i>or</i> return a string representing the current time',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'When Date() is called as a constructor (with the "new" keyword), returns a new "Date" object',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'When Date() is called as a function, returns a string representation of the current date and time',
+          articleSource: '',
+        },
+        {
+          articleTitle: '"Date" constructor static method: Date.now()',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Date.now() returns the numeric value corresponding to the current time — the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored',
           articleSource: '',
         },
       ],
