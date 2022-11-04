@@ -2507,29 +2507,62 @@ const standardBuildInObjects = {
       ],
     },
     {
-      sectionTitle: 'Intl',
-      sectionSource: '',
+      sectionTitle: 'Internationalization API (Intl)',
+      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Intl.html',
       sectionArticles: [
         {
-          articleTitle: 'DateTimeFormat()',
+          articleTitle:
+            'The "Intl" object provides access to several constructors that do language sensitive string comparison, number formatting, and date and time formatting',
           articleSource: '',
         },
         {
-          articleTitle: 'NumberFormat()',
+          articleTitle:
+            'All "Intl" constructors accept "locales" and "options" arguments, for use pattern to identifying locales and determining the one they will actually use',
           articleSource: '',
         },
         {
-          articleTitle: 'navigator.language',
+          articleTitle:
+            'You can use "navigator.language" read-only property for setting your "locales" parameter',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Intl.DateTimeFormat()',
+      sectionSource:
+        '/src/markdowns/10_Standard_Build-In_Objects/Intl.DateTimeFormat.html',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'Intl.NumberFormat()',
+      sectionSource:
+        '/src/markdowns/10_Standard_Build-In_Objects/Intl.NumberFormat.html',
+      sectionArticles: [
+        {
+          articleTitle: '',
           articleSource: '',
         },
       ],
     },
     {
       sectionTitle: 'Error',
-      sectionSource: '',
+      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Error.html',
       sectionArticles: [
         {
-          articleTitle: 'new Error()',
+          articleTitle: 'Error types',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Error Constructor',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Error instance properties: message, name, cause',
           articleSource: '',
         },
       ],

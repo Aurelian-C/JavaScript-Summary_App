@@ -18,7 +18,7 @@ The `locales` and `options` arguments ==**customize** the behavior of the functi
 
 #### `locales` _(optional)_
 
- A ==string with a BCP 47 language tag==, or an array of such strings. This parameter tags corresponds to the `locales` parameter of the `Intl.DateTimeFormat()` constructor.
+ A ==string with a [BCP 47 language tag](http://www.lingoes.net/en/translator/langcode.htm)==, or an array of such strings. This parameter tags corresponds to the `locales` parameter of the `Intl.DateTimeFormat()` constructor.
 
 | Tag     | Description        |
 | ------- | ------------------ |
@@ -43,6 +43,7 @@ An ==object== *adjusting the output format*.
 | `minute`       | `"2-digit"` `"numeric"`                               |
 | `second`       | `"2-digit"` `"numeric"`                               |
 | `timeZoneName` | `"long"` `"short"`                                    |
+| ...            | ...                                                   |
 
 > **Note**: This parameter keys/values pair correspond exactly to the `Intl.DateTimeFormat()` constructor `options` parameter.
 
@@ -97,3 +98,4 @@ date.toLocaleString('de-DE', options) // → "Donnerstag, 20. Dezember 2012"
 
 1. [Date.prototype.toLocaleString() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString)
 1. [Date toLocaleString() - w3schools](https://www.w3schools.com/jsref/jsref_tolocalestring.asp)
+1. [ISO Language Code Table](http://www.lingoes.net/en/translator/langcode.htm)
