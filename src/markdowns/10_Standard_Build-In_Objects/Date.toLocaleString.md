@@ -1,34 +1,60 @@
 # Date.prototype.toLocaleString()
 
-The `toLocaleString()` method ==returns a string== with a language-sensitive representation of this date. In implementations with [`Intl.DateTimeFormat` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) support, this method simply calls `Intl.DateTimeFormat`.
+The `toLocaleString()` method ==**returns a** `Date` **object as a string**, _using locale settings_==. The default language depends on the locale setup on your computer. 
+
+In implementations with [`Intl.DateTimeFormat` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) support, this method simply calls `Intl.DateTimeFormat`.
 
 ## Syntax
 
 ```js
-toLocaleString()
-toLocaleString(locales)
-toLocaleString(locales, options)
+new Date().toLocaleString()
+new Date().toLocaleString(locales)
+new Date().toLocaleString(locales, options)
 ```
 
 ## Parameters
 
 The `locales` and `options` arguments ==**customize** the behavior of the function== and let applications specify the language whose formatting conventions should be used.
 
-`locales` (optional):
+#### `locales` _(optional)_
 
- A ==string== with a BCP 47 language tag, or an array of such strings.
+ A ==string with a BCP 47 language tag==, or an array of such strings. This parameter tags corresponds to the `locales` parameter of the `Intl.DateTimeFormat()` constructor.
 
-`options` (optional): 
+| Tag     | Description        |
+| ------- | ------------------ |
+| `en-GB` | British English    |
+| `en-US` | US English         |
+| `ro-RO` | Romanian (Romania) |
+| ...     | ...                |
 
-An ==object== *adjusting the output format*. Corresponds to the `options` parameter of the `Intl.DateTimeFormat()` constructor. If `weekday`, `year`, `month`, `day`, `dayPeriod`, `hour`, `minute`, `second`, and `fractionalSecondDigits` are all undefined, then `year`, `month`, `day`, `hour`, `minute`, `second` will be set to `"numeric"`.
+#### `options` _(optional)_
 
-> **Note**: These parameters correspond exactly to the `Intl.DateTimeFormat()` constructor's parameters.
+An ==object== *adjusting the output format*. 
+
+| Key            | Value                                                 |
+| -------------- | ----------------------------------------------------- |
+| `dateStyle`    | Legal values: `"full"` `"long"` `"medium"` `"short"`  |
+| `timeStyle`    | `"full"` `"long"` `"medium"` `"short"`                |
+| `weekday`      | `"long"` `"short"` `"narrow`"                         |
+| `year`         | `"2-digit"` `"numeric"`                               |
+| `month`        | `"2-digit"` `"long"` `"narrow"` `"numeric"` `"short"` |
+| `day`          | `"2-digit"` `"numeric"`                               |
+| `hour`         | `"2-digit"` `"numeric"`                               |
+| `minute`       | `"2-digit"` `"numeric"`                               |
+| `second`       | `"2-digit"` `"numeric"`                               |
+| `timeZoneName` | `"long"` `"short"`                                    |
+
+> **Note**: This parameter keys/values pair correspond exactly to the `Intl.DateTimeFormat()` constructor `options` parameter.
 
 ## Return value
 
-A ==string== representing the given date according to language-specific conventions.
+A ==string== representing the given date according to language-specific conventions. 
 
-In implementations with `Intl.DateTimeFormat`, this is equivalent to `new Intl.DateTimeFormat(locales, options).format(date)`.
+> **Note**: In implementations with `Intl.DateTimeFormat`, this is equivalent to:
+>
+> ```js
+> new Intl.DateTimeFormat(locales, options).format(date);
+> ```
 
 ## Examples
 
@@ -70,3 +96,4 @@ date.toLocaleString('de-DE', options) // → "Donnerstag, 20. Dezember 2012"
 ## Reference
 
 1. [Date.prototype.toLocaleString() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString)
+1. [Date toLocaleString() - w3schools](https://www.w3schools.com/jsref/jsref_tolocalestring.asp)

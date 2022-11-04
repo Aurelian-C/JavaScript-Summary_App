@@ -2451,47 +2451,58 @@ const standardBuildInObjects = {
       sectionArticles: [
         {
           articleTitle: 'getFullYear()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Date.getFullYear.html',
         },
         {
           articleTitle: 'getMonth()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Date.getMonth.html',
         },
         {
           articleTitle: 'getDate()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Date.getDate.html',
         },
         {
           articleTitle: 'getDay()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Date.getDay.html',
         },
         {
           articleTitle: 'getHours()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Date.getHours.html',
         },
         {
           articleTitle: 'getMinutes()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Date.getMinutes.html',
         },
         {
           articleTitle: 'getSeconds()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Date.getSeconds.html',
         },
         {
-          articleTitle: 'getTime() vs Convert a date to a number',
-          articleSource: '',
+          articleTitle: 'getTime()',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Date.getTime.html',
         },
         {
           articleTitle: 'toISOString()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Date.toISOString.html',
         },
         {
           articleTitle: 'toLocaleString()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Date.toLocaleString.html',
         },
         {
           articleTitle: 'setFullYear()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/Date.setFullYear.html',
         },
       ],
     },

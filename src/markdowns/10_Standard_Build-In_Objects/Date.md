@@ -127,8 +127,45 @@ const elapsed = end.getTime() - start.getTime(); // elapsed time in milliseconds
 const seconds = Math.floor(Date.now() / 1000);
 ```
 
+## Date Methods and Properties
+
+| Name                                                         | Description                                                  |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [constructor](https://www.w3schools.com/jsref/jsref_constructor_date.asp) | Returns the function that created the Date object's prototype |
+| [getDate()](https://www.w3schools.com/jsref/jsref_getdate.asp) | Returns the day of the month (from 1-31)                     |
+| [getDay()](https://www.w3schools.com/jsref/jsref_getday.asp) | Returns the day of the week (from 0-6)                       |
+| [getFullYear()](https://www.w3schools.com/jsref/jsref_getfullyear.asp) | Returns the year                                             |
+| [getHours()](https://www.w3schools.com/jsref/jsref_gethours.asp) | Returns the hour (from 0-23)                                 |
+| [getMilliseconds()](https://www.w3schools.com/jsref/jsref_getmilliseconds.asp) | Returns the milliseconds (from 0-999)                        |
+| [getMinutes()](https://www.w3schools.com/jsref/jsref_getminutes.asp) | Returns the minutes (from 0-59)                              |
+| [getMonth()](https://www.w3schools.com/jsref/jsref_getmonth.asp) | Returns the month (from 0-11)                                |
+| [getSeconds()](https://www.w3schools.com/jsref/jsref_getseconds.asp) | Returns the seconds (from 0-59)                              |
+| [getTime()](https://www.w3schools.com/jsref/jsref_gettime.asp) | Returns the number of milliseconds since midnight Jan 1 1970, and a specified date |
+| getYear()                                                    | Deprecated. Use the [getFullYear()](https://www.w3schools.com/jsref/jsref_getfullyear.asp) method instead |
+| [now()](https://www.w3schools.com/jsref/jsref_now.asp)       | Returns the number of milliseconds since midnight Jan 1, 1970 |
+| [parse()](https://www.w3schools.com/jsref/jsref_parse.asp)   | Parses a date string and returns the number of milliseconds since January 1, 1970 |
+| [prototype](https://www.w3schools.com/jsref/jsref_prototype_date.asp) | Allows you to add properties and methods to an object        |
+| [setDate()](https://www.w3schools.com/jsref/jsref_setdate.asp) | Sets the day of the month of a date object                   |
+| [setFullYear()](https://www.w3schools.com/jsref/jsref_setfullyear.asp) | Sets the year of a date object                               |
+| [setHours()](https://www.w3schools.com/jsref/jsref_sethours.asp) | Sets the hour of a date object                               |
+| [setMilliseconds()](https://www.w3schools.com/jsref/jsref_setmilliseconds.asp) | Sets the milliseconds of a date object                       |
+| [setMinutes()](https://www.w3schools.com/jsref/jsref_setminutes.asp) | Set the minutes of a date object                             |
+| [setMonth()](https://www.w3schools.com/jsref/jsref_setmonth.asp) | Sets the month of a date object                              |
+| [setSeconds()](https://www.w3schools.com/jsref/jsref_setseconds.asp) | Sets the seconds of a date object                            |
+| [setTime()](https://www.w3schools.com/jsref/jsref_settime.asp) | Sets a date to a specified number of milliseconds after/before January 1, 1970 |
+| setYear()                                                    | Deprecated. Use the [setFullYear()](https://www.w3schools.com/jsref/jsref_setfullyear.asp) method instead |
+| [toDateString()](https://www.w3schools.com/jsref/jsref_todatestring.asp) | Converts the date portion of a Date object into a readable string |
+| [toISOString()](https://www.w3schools.com/jsref/jsref_toisostring.asp) | Returns the date as a string, using the ISO standard         |
+| [toJSON()](https://www.w3schools.com/jsref/jsref_tojson.asp) | Returns the date as a string, formatted as a JSON date       |
+| [toLocaleDateString()](https://www.w3schools.com/jsref/jsref_tolocaledatestring.asp) | Returns the date portion of a Date object as a string, using locale conventions |
+| [toLocaleTimeString()](https://www.w3schools.com/jsref/jsref_tolocaletimestring.asp) | Returns the time portion of a Date object as a string, using locale conventions |
+| [toLocaleString()](https://www.w3schools.com/jsref/jsref_tolocalestring.asp) | Converts a Date object to a string, using locale conventions |
+| [toString()](https://www.w3schools.com/jsref/jsref_tostring_date.asp) | Converts a Date object to a string                           |
+| [toTimeString()](https://www.w3schools.com/jsref/jsref_totimestring.asp) | Converts the time portion of a Date object to a string       |
+
 ## References
 
 1. [Date - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
-2. [Date() constructor - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date)
-3. [Date.now() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now)
+2. [Date - w3schools](https://www.w3schools.com/jsref/jsref_obj_date.asp)
+3. [Date() constructor - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date)
+4. [Date.now() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now)
