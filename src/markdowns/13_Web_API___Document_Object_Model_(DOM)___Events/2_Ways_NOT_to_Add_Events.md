@@ -1,4 +1,4 @@
-# 2 Ways NOT to Add Events
+# 2 ways NOT to add events
 
 We **recommend that you use `addEventListener()` to register event handlers**. It's the most powerful method and scales best with more complex programs. However, there are two other ways of registering event handlers that you might see: **event handler properties** and inline **event handlers**.
 

@@ -3857,7 +3857,7 @@ const modulesAndTooling = {
     {
       sectionTitle: 'Bundling With Parcel and NPM Scripts',
       sectionSource:
-        '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Bundling_With_Parcel_and_NPM_Scripts.html',
+        '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Bundling_with_Parcel_and_NPM_Scripts.html',
       sectionArticles: [
         {
           articleTitle: '',

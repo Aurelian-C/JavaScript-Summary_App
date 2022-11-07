@@ -307,7 +307,7 @@ span.cm-strikethrough { text-decoration: line-through; }
   /* for focus mode */
   --text-color5: rgba(170, 178, 180, 0.5);
   /* link color */
-  --link-color: #6FC1FF;
+  --link-color: #0091ff;
   /* table color */
   --table-border-color: #555;
   --table-thead-color: #2b2d2e;
@@ -342,7 +342,7 @@ span.cm-strikethrough { text-decoration: line-through; }
   --focus-ring-color: var(--focus-color);
   /* codeblock color */
   --code-red-color: #FF75B5;
-  --code-yellow-color: #FFB86C;
+  --code-yellow-color: #e8ff94;
   --code-cyan-color: #19f9d8;
   --code-blue-color: #6FC1FF;
   --code-purple-color: #FF75B5;
@@ -1295,6 +1295,11 @@ code {
   	padding-bottom: 0.15em;
   border: 2px solid #666;
   border-radius: 0.25rem;
+  color: var(--text-color1);	
+}
+
+a code {
+  color: var(--link-color) !important;
 }
 
 /* codeblock */
