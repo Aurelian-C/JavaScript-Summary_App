@@ -1,24 +1,34 @@
-# Document.querySelector()
+# querySelector()
 
-The `Document` method `querySelector()` takes as parameter any **CSS selectors** (e.g. `#some-id`, `.some-class` or `div p.some-class`) and returns the **first matching** `Element` in the DOM. Returns `null` if no matching element could be found.
+The [`Document`](https://developer.mozilla.org/en-US/docs/Web/API/Document) method `querySelector()` ==returns the _first_ [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) within the document that matches the specified selector, or group of selectors. If no matches are found, `null` is returned==.
 
-> **Note**: You may also call `querySelector()` on any element; it will return only element which is descendant of the specified root element with the given CSS selectors.
+> **Note**: You may also call `querySelector()` on any element; it will return only element which is descendant of the specified root element with the given selector/s.
+>
+> You can only query for `Element` nodes.
 
-> Note: You can only query for `Element` nodes.
+If the specified selector matches an ID that is incorrectly used more than once in the document, the first element with that ID is returned.
+
+If you need a list of all elements matching the specified selectors, you should use [`querySelectorAll()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) instead.
 
 ## Syntax
 
 ```js
-element = document.querySelector('CSS selectors');
+element = document.querySelector('selector/s');
 ```
 
 ## Parameters
 
-`'CSS selectors'` (required): A DOMString containing one or more CSS selectors. CSS selectors select HTML elements based on id, classes, types, attributes, values of attributes etc. This string must be a valid **CSS selector string**; if it isn't, a `SyntaxError` exception is thrown.
+#### `selector/s`
+
+ A string containing one or more selectors to match. This string must be a valid CSS selector string; if it isn't, a `SyntaxError` exception is thrown. Selectors select HTML elements based on id, classes, types, attributes, values of attributes etc.
 
 ## Return value
 
-An `Element` object representing the first element in the document that matches the specified set of CSS selectors, or `null` is returned if there are no matches.
+- an `Element` object representing the first element in the document that matches the specified set of [CSS selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), _or_
+
+- `null` is returned if there are no matches
+
+> **Note**: [CSS pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) will never return any elements.
 
 ## Examples
 
@@ -39,7 +49,7 @@ const el = document.querySelector(
 // This code above will select an input with a parent div with the user-panel class but not the main class.
 ```
 
-## Reference
+## References
 
 1. [Document.querySelector() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 

@@ -3092,87 +3092,108 @@ const domManipulation = {
         },
         {
           articleTitle: 'document.documentElement',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/document.documentElement.html',
         },
         {
           articleTitle: 'document.head',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/document.head.html',
         },
         {
           articleTitle: 'document.body',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/document.body.html',
         },
         {
-          articleTitle: 'getElementById()',
-          articleSource: '',
+          articleTitle: 'document.getElementById()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/document.getElementById.html',
         },
         {
-          articleTitle: 'getElementsByTagName()',
-          articleSource: '',
+          articleTitle: 'getElementsByTagName() -> (document/element)',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/getElementsByTagName.html',
         },
         {
-          articleTitle: 'getElementsByClassName()',
-          articleSource: '',
+          articleTitle: 'getElementsByClassName() -> (document/element)',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/getElementsByClassName.html',
         },
         {
-          articleTitle: 'querySelector() (document/element)',
-          articleSource: '',
+          articleTitle: 'querySelector() -> (document/element)',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/querySelector.html',
         },
         {
-          articleTitle: 'querySelectorAll() (document/element)',
-          articleSource: '',
+          articleTitle: 'querySelectorAll() -> (document/element)',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/querySelectorAll.html',
         },
         {
-          articleTitle: 'children',
-          articleSource: '',
+          articleTitle: 'Element.children',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.children.html',
         },
         {
-          articleTitle: 'childNodes',
-          articleSource: '',
+          articleTitle: 'Node.childNodes',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.childNodes.html',
         },
         {
-          articleTitle: 'firstElementChild',
-          articleSource: '',
+          articleTitle: 'Element.firstElementChild',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.firstElementChild.html',
         },
         {
-          articleTitle: 'lastElementChild',
-          articleSource: '',
+          articleTitle: 'Element.lastElementChild',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.lastElementChild.html',
         },
         {
-          articleTitle: 'firstChild',
-          articleSource: '',
+          articleTitle: 'Node.firstChild',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.firstChild.html',
         },
         {
-          articleTitle: 'lastChild',
-          articleSource: '',
+          articleTitle: 'Node.lastChild',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.lastChild.html',
         },
         {
-          articleTitle: 'closest()',
-          articleSource: '',
+          articleTitle: 'Element.closest()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.closest.html',
         },
         {
-          articleTitle: 'parentElement',
-          articleSource: '',
+          articleTitle: 'Node.parentElement',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.parentElement.html',
         },
         {
-          articleTitle: 'parentNode',
-          articleSource: '',
+          articleTitle: 'Node.parentNode',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.parentNode.html',
         },
         {
-          articleTitle: 'previousElementSibling',
-          articleSource: '',
+          articleTitle: 'Element.previousElementSibling',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.previousElementSibling.html',
         },
         {
-          articleTitle: 'nextElementSibling',
-          articleSource: '',
+          articleTitle: 'Element.nextElementSibling',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.nextElementSibling.html',
         },
         {
-          articleTitle: 'previousSibling',
-          articleSource: '',
+          articleTitle: 'Node.previousSibling',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.previousSibling.html',
         },
         {
-          articleTitle: 'nextSibling',
-          articleSource: '',
+          articleTitle: 'Node.nextSibling',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.nextSibling.html',
         },
       ],
     },

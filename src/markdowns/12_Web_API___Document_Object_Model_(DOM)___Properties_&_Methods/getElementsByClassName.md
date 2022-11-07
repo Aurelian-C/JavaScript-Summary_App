@@ -1,30 +1,38 @@
 # Document.getElementsByClassName()
 
-The `getElementsByClassName` method of `Document` interface takes as parameter a CSS class g (e.g. 'some-class') and returns a **live** `HTMLCollection` of matched elements in your DOM. Returns an empty `HTMLCollection` if not matching elements were found.
-The `HTMLCollection` is an **array-like** object of all child elements which have all of the given class name(s).
+The `getElementsByClassName` method of [`Document`](https://developer.mozilla.org/en-US/docs/Web/API/Document) interface ==returns a **live** [HTMLCollection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection) of elements with the specified class name(s). If not matching elements were found, an empty HTMLCollection is returned==.
 
-When called on the `document` object, the complete document is searched, including the root node. You may also call `getElementsByClassName()` on any element; it will return only elements which are descendants of the specified root element with the given class name(s).
+When called on the [`document`](https://developer.mozilla.org/en-US/docs/Web/API/Document) object, the complete document is searched, including the root node. You may also call `getElementsByClassName()` on any element; it will return only elements which are descendants of the specified root element with the given class name(s).
 
-> **Note**: This is a **live** `HTMLCollection`. Changes in the DOM will reflect in the array-like object as the changes occur. If an element selected by this array-like objet no longer qualifies for the selector, it will automatically be removed. Be aware of this for iteration purposes.
+> **Note**: The HTMLCollection is an **array-like** object of all child elements which have all of the given class name(s).
+
+The returned HTMLCollection is **live**, meaning that it updates itself automatically to stay in sync with the DOM tree without having to call `document.getElementsByClassName()` again.
+
+> **Note**: `getElementsByClassName` returns a live HTMLCollection. Changes in the DOM will reflect in the array-like object as the changes occur. If an element selected by this array-like objcet no longer qualifies for the selector, it will automatically be removed. Be aware of this for iteration purposes.
+
+The `getElementsByClassName` method:
+
+- returns a **live** HTMLCollection of elements with a specified class name(s)
+- is read-only
+- can be called on any element, not only on the `document`. The element on which it is called will be used as the root of the search
 
 ## Syntax
 
 ```js
-const elements = document.getElementsByClassName(classname);
-
+const elements = document.getElementsByClassName(classname/s);
 // or
-const elements = rootElement.getElementsByClassName(classname);
+const elements = rootElement.getElementsByClassName(classname/s);
 ```
 
-- _elements_ is a **live** `HTMLCollection` of found elements
-- _names_ is a string representing the class name(s) to match; multiple class names are separated by whitespace
-- `getElementsByClassName` can be called on any element, not only on the `document`. The element on which it is called will be used as the root of the search.
+## Parameters
 
-## HTMLCollection
+#### `classname/s`
 
-- An HTMLCollection is an **array-like** collection (list) of HTML elements.
-- The elements in a collection can be accessed by **index** (starts at 0).
-- The **length** property returns the number of elements in the collection.
+A ==string== representing the class name(s) to match; multiple class names are separated by whitespace.
+
+## Return value
+
+A ==live HTMLCollection== of found elements.
 
 ## Example
 
@@ -39,7 +47,7 @@ document.getElementsByClassName('red test');
 document.getElementById('main').getElementsByClassName('test');
 ```
 
-## Reference
+## References
 
 1. [Document.getElementsByClassName() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
 
