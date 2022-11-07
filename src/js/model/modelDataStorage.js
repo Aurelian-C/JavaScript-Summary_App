@@ -2567,6 +2567,16 @@ const standardBuildInObjects = {
         },
       ],
     },
+    {
+      sectionTitle: 'FormData',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'new FormData()',
+          articleSource: '',
+        },
+      ],
+    },
   ],
 };
 
@@ -2991,42 +3001,79 @@ const domManipulation = {
   title: 'Document Object Model (DOM) <br>- Properties & Methods -',
   sections: [
     {
-      sectionTitle: 'Introduction to The Document Object',
-      sectionSource: '',
+      sectionTitle: 'Introduction to the Document Object Model (DOM)',
+      sectionSource:
+        '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Introduction_to_the_DOM.html',
       sectionArticles: [
         {
-          articleTitle: 'Document and Window Object',
+          articleTitle: 'The DOM defines a standard for accessing documents',
           articleSource: '',
         },
         {
-          articleTitle: "Understanding the DOM and how it's created",
+          articleTitle: 'HTML DOM - standard model for HTML documents',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The HTML DOM is a programming interface for web documents. It represents the HTML page so that programs can change the document structure, style and content',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The HTML DOM represents the HTML document as nodes and objects. It is constructed as a tree of objects',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The HTML DOM connects web pages to scripts or programming languages by representing the structure of a HTML document in memory',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            "The DOM is not a programming language, but without it, the JavaScript language wouldn't have any model or notion of web pages, HTML documents, SVG documents, and their component parts",
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Accessing the DOM: "document" & "window" object',
           articleSource: '',
         },
       ],
     },
     {
       sectionTitle: 'DOM Node Types (Node vs Element)',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/DOM_Node_Types_(Node_vs_Element).html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle:
+            'Nodes are the objects that make up the DOM, everything in the DOM is a node',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Live Node Lists vs Static Node Lists',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle:
+            'A DOM document consists of a <i>hierarchy of nodes</i>. Each node can have a parent and/or children',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Not just HTML tags are treated as nodes objects, but also text, comments etc. Event whitespace that you have for readability reasons in an HTML document is treated as a node',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'DOM Nodes are just JavaScript objects in the end - i.e. reference values. Methods like "querySelector()" or "querySelectorAll()" return the object references (addresses)',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Live Node Lists vs Static Node Lists',
           articleSource: '',
         },
       ],
     },
     {
       sectionTitle: 'HTML Attributes vs DOM Properties',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTML_attributes_vs_DOM_properties.html',
       sectionArticles: [
         {
           articleTitle: '',
@@ -3040,7 +3087,8 @@ const domManipulation = {
       sectionArticles: [
         {
           articleTitle: 'Introduction to DOM Traversing',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Introduction_to_DOM_Traversing.html',
         },
         {
           articleTitle: 'document.documentElement',
@@ -3129,13 +3177,28 @@ const domManipulation = {
       ],
     },
     {
+      sectionTitle: 'Introduction to create, insert and remove elements',
+      sectionSource:
+        '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Introduction_to_create_insert_and_remove_elements.html',
+      sectionArticles: [
+        {
+          articleTitle: `If you have an created or selected element, either because you selected it in the DOM with "querySelector()" or you created it with "createElement()" and that element is already part of the DOM, so it is already rendered, if you then insert it somewhere else in the DOM, that element is NOT COPIED or anything like that, instead the existing element is DETACHED from the place where it was and moved to the new place. This actually makes a lot of sense since objects are reference values as you learned and the DOM objects you're working are normal objects in the end, and therefore if we do something with them and we add them somewhere else, we always work with the same object`,
+          articleSource: '',
+        },
+        {
+          articleTitle: `If you want a brand new element, you have to create a brand new one with "document.createElement()". Just keep in mind that inserting the same element multiple times will move it, because we're working with objects and not with some automatically copied things`,
+          articleSource: '',
+        },
+        {
+          articleTitle: `Important (no matter how you insert elements): Whenever you insert elements, you MOVE the element to that new place if you already inserted it before. It's NOT COPIED (you can copy an element via "someElement.cloneNode(true)" though)`,
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'Create, insert & remove DOM elements',
       sectionSource: '',
       sectionArticles: [
-        {
-          articleTitle: 'Introduction to create, insert and remove elements',
-          articleSource: '',
-        },
         {
           articleTitle: 'innerHTML',
           articleSource: '',
@@ -3672,16 +3735,6 @@ const otherWebAPIs = {
         },
         {
           articleTitle: 'window.innerHeight',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'FormData',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'new FormData()',
           articleSource: '',
         },
       ],
