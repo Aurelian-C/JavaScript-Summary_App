@@ -1,32 +1,51 @@
 # HTMLElement.innerText
 
-The `innerText` property ==sets== or ==returns== the ==text content== of an ==element==.
+The `innerText` property of the [`HTMLElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) interface ==represents the rendered text content of a node and its descendants==. With the `innerText` property you can ==**set** _or_ **return** the text content of an element==.
 
-> **Note**: When you set the `innerText` property, all child nodes are removed and replaced by only one new text node.
+> **Note**: When you set the `innerText` property, _all_ child nodes are removed and replaced by a single text node with the given string value. `innerText` will replace the element's children with the given value, converting any line breaks into [`<br>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br) elements.
 
-> **Note**: `innerText` is easily confused with `Node.textContent`, but there are important differences between the two. Basically, `innerText` is ==aware of the rendered appearance of text==, while `textContent` is not.
+`innerText` is easily confused with [`Node.textContent`](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent), but there are important differences between the two. Basically, ==`innerText` is aware of the rendered appearance of text==, while `Node.textContent` is not. `innerText` is aware of things like `<br>` elements, and ignores hidden elements.
 
 ## Syntax
 
 ```js
-// Return the text content of an element or node
+// Return the text content of an element
 element.innerText;
-node.innerText;
 
-// Set the text content of an element or node
+// Set the text content of an element
 element.innerText = text;
-node.innerText = text;
 ```
+
+## Value
+
+A string representing the rendered text content of an element. If the element itself is not [being rendered](https://html.spec.whatwg.org/multipage/rendering.html#being-rendered) (for example, is detached from the document or is hidden from view), the returned value is the same as the [`Node.textContent`](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) property.
 
 ## Return Value
 
-**String** -The text content of the element and all descendants, except for `<script>` and `<style>` elements.
+A string that is the text content of the element and all descendants, except for `<script>` and `<style>` elements.
 
 ## The Differences Between `innerHTML`, `innerText` and `textContent`
 
-|                                         innerHTML                                          |                                                                         innerText                                                                         |                                                     textContent                                                     |
-| :----------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
-| returns the text content of the element, including ==all spacing== and ==inner HTML tags== | returns ==just the text content== of the element and all its children, without CSS hidden text spacing and tags, except `<script>` and `<style>` elements | returns the text content of the element and all descendaces, ==with spacing and CSS hidden text, but without tags== |
+|                          innerText                           |                          innerHTML                           |                         textContent                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| Returns just the text content of the element and all its children, without CSS hidden text spacing and tags, except `<script>` and `<style>` elements | Returns the text content of the element, including all spacing and inner HTML tags | Returns the text content of the element and all descendances, with spacing and CSS hidden text, but without tags |
+
+### Example
+
+```html
+<p id="myP">   This element has extra spacing     and contains <span>a span element</span>.</p>
+```
+
+```js
+let text = document.getElementById("myP").innerText;
+// This element has extra spacing and contains a span element.
+
+let text = document.getElementById("myP").innerHTML;
+// This element has extra spacing    and contains <span>a span element</span>.
+
+let text = document.getElementById("demo").textContent;
+// This element has extra spacing    and contains a span element.
+```
 
 ## References
 

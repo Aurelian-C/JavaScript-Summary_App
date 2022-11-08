@@ -3309,39 +3309,48 @@ const domManipulation = {
       sectionArticles: [
         {
           articleTitle: 'HTMLElement.innerText',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.innerText.html',
         },
         {
           articleTitle: 'Node.textContent',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.textContent.html',
         },
         {
           articleTitle: 'Element.insertAdjacentText()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.insertAdjacentText.html',
         },
         {
           articleTitle: 'HTMLElement.style',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.style.html',
         },
         {
           articleTitle: 'Element.className',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.className.html',
         },
         {
           articleTitle: 'Element.classList (add, remove, toggle, contains)',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.classList.html',
         },
         {
           articleTitle: 'Element.getAttribute()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.getAttribute.html',
         },
         {
           articleTitle: 'Element.setAttribute()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.setAttribute.html',
         },
         {
           articleTitle: 'Element.attributes',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.attributes.html',
         },
         {
           articleTitle: 'value',

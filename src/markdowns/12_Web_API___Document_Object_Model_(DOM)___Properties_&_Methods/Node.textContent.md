@@ -1,42 +1,64 @@
 # Node.textContent
 
-The `textContent` property ==sets== or ==returns== the ==text content== of the specified node, and ==all its descendants==.
+The **`textContent`** property of the [`Node`](https://developer.mozilla.org/en-US/docs/Web/API/Node) interface ==represents the text content of the node and its descendants==. With `textContent` you can ==**set** _or_ **return** the text content of the specified node, _and all its descendants_==.
 
 > **Note**: When you set the `textContent` property, all child nodes are removed and replaced by only one new text node.
-
-> **Note**: `innerText` is easily confused with `Node.textContent`, but there are important differences between the two. Basically, `innerText` is ==aware of the rendered appearance of text==, while `textContent` is not.
 
 ## Syntax
 
 ```js
 // Return the text content of a node
-element.textContent;
 node.textContent;
 
 // Set the text content of a node
-element.textContent = text;
 node.textContent = text;
 ```
 
+## Value
+
+A string that represent the text inside the node.
+
 ## Return Value
 
-- **String** - the text content of the element and all its descendants.
-- `null` if the element is a document, a document type, or a notation.
+- A string that is the text content of the element and all its descendants, _or_
+- `null` if the node is a [`document`](https://developer.mozilla.org/en-US/docs/Web/API/Document), a [doctype](https://developer.mozilla.org/en-US/docs/Glossary/Doctype), or a notation.
 
-## Differences from `innerText`
+## Differences from [`innerText`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)
 
-Don't get confused by the differences between `Node.textContent` and `HTMLElement.innerText`. Although the names seem similar, there are important differences:
+|                         textContent                          |                          innerText                           |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| Gets the content of *all* elements, including [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) and [`<style>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style) elements |             Only gets "human-readable" elements              |
+|              Returns every element in the node               | Is aware of styling and won't return the text of "hidden" elements |
+|               Remove child nodes when altered                | Remove child nodes when altered, but altering `innerText` in Internet Explorer (version 11 and below) also *permanently destroys* all descendant text nodes. It is impossible to insert the nodes again into any other element or into the same element after doing so. |
 
-- `textContent` gets the content of all elements, including `<script>` and `<style>` elements. In contrast, `innerText` only shows "human-readable" elements.
-- `textContent` returns every element in the node. In contrast, `innerText` is aware of styling and won't return the text of "hidden" elements.
-  Moreover, since `innerText` takes CSS styles into account, reading the value of `innerText` triggers a reflow to ensure up-to-date computed styles. (Reflows can be computationally expensive, and thus should be avoided when possible.)
-- Both `textContent` and `innerText` remove child nodes when altered, but altering `innerText` in Internet Explorer (version 11 and below) also _permanently destroys_ all descendant text nodes. It is impossible to insert the nodes again into any other element or into the same element after doing so.
+## Differences from [`innerHTML`](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
 
-## Differences from `innerHTML`
+[`Element.innerHTML`](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML) returns HTML, as its name indicates. Sometimes people use `innerHTML` to retrieve or write text inside an element, but `textContent` has better performance because its value is not parsed as HTML. 
 
-`Element.innerHTML` returns HTML, as its name indicates. Sometimes people use `innerHTML` to retrieve or write text inside an element, but `textContent` has better performance because its value is not parsed as HTML. Moreover, using `textContent` can prevent XSS attacks.
+Moreover, using `textContent` can prevent XSS attacks.
 
-## Reference
+## Examples
+
+|                          innerText                           |                          innerHTML                           |                         textContent                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| Returns just the text content of the element and all its children, without CSS hidden text spacing and tags, except `<script>` and `<style>` elements | Returns the text content of the element, including all spacing and inner HTML tags | Returns the text content of the element and all descendances, with spacing and CSS hidden text, but without tags |
+
+```html
+<p id="myP">   This element has extra spacing     and contains <span>a span element</span>.</p>
+```
+
+```js
+let text = document.getElementById("myP").innerText;
+// This element has extra spacing and contains a span element.
+
+let text = document.getElementById("myP").innerHTML;
+// This element has extra spacing    and contains <span>a span element</span>.
+
+let text = document.getElementById("demo").textContent;
+// This element has extra spacing    and contains a span element.
+```
+
+## References
 
 1. [Node.textContent - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
 2. [textContent - w3schools](https://www.w3schools.com/jsreF/prop_node_textcontent.asp)
