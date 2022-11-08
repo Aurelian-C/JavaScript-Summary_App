@@ -25,7 +25,7 @@ Element.setAttribute(name, value);
 - **name** (required) - the name of the attribute
 - **value** (required) - the new attribute value
 
-## Reference
+## References
 
 1. [Element.setAttribute() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
 2. [setAttribute() method - w3schools](https://www.w3schools.com/jsref/met_element_setattribute.asp)

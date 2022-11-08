@@ -1,4 +1,4 @@
-# src
+# HTMLMediaElement.src
 
 The `src` property **sets** or **returns the value** of the `src` attribute of an image. The required `src` attribute specifies the URL of an image.
 

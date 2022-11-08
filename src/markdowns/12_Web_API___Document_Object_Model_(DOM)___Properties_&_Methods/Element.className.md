@@ -34,7 +34,7 @@ element.className += ' class1 class2';
 let value = document.getElementById('myDIV').className;
 ```
 
-## Reference
+## References
 
 1. [Element.className - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/className)
 2. [className property - w3schools](https://www.w3schools.com/jsref/prop_html_classname.asp)

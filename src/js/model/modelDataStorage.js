@@ -3308,47 +3308,39 @@ const domManipulation = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'innerText',
+          articleTitle: 'HTMLElement.innerText',
           articleSource: '',
         },
         {
-          articleTitle: 'textContent',
+          articleTitle: 'Node.textContent',
           articleSource: '',
         },
         {
-          articleTitle: 'insertAdjacentText()',
+          articleTitle: 'Element.insertAdjacentText()',
           articleSource: '',
         },
         {
-          articleTitle: 'style',
+          articleTitle: 'HTMLElement.style',
           articleSource: '',
         },
         {
-          articleTitle: 'getComputedStyle()',
+          articleTitle: 'Element.className',
           articleSource: '',
         },
         {
-          articleTitle: 'className',
+          articleTitle: 'Element.classList (add, remove, toggle, contains)',
           articleSource: '',
         },
         {
-          articleTitle: 'classList (add, remove, toggle, contains)',
+          articleTitle: 'Element.getAttribute()',
           articleSource: '',
         },
         {
-          articleTitle: 'getAttribute()',
+          articleTitle: 'Element.setAttribute()',
           articleSource: '',
         },
         {
-          articleTitle: 'setAttribute()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'setProperty()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'attributes',
+          articleTitle: 'Element.attributes',
           articleSource: '',
         },
         {
@@ -3356,7 +3348,7 @@ const domManipulation = {
           articleSource: '',
         },
         {
-          articleTitle: 'src',
+          articleTitle: 'HTMLMediaElement.src',
           articleSource: '',
         },
         {
@@ -3368,7 +3360,7 @@ const domManipulation = {
           articleSource: '',
         },
         {
-          articleTitle: 'hidden',
+          articleTitle: 'HTMLElement.hidden',
           articleSource: '',
         },
         {
@@ -3376,7 +3368,7 @@ const domManipulation = {
           articleSource: '',
         },
         {
-          articleTitle: 'tagName',
+          articleTitle: 'Element.tagName',
           articleSource: '',
         },
         {
@@ -3773,6 +3765,10 @@ const otherWebAPIs = {
         },
         {
           articleTitle: 'window.innerHeight',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'window.getComputedStyle()',
           articleSource: '',
         },
       ],

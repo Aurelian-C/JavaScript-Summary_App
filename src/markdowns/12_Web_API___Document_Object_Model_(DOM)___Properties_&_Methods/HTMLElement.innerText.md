@@ -28,7 +28,7 @@ node.innerText = text;
 | :----------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
 | returns the text content of the element, including ==all spacing== and ==inner HTML tags== | returns ==just the text content== of the element and all its children, without CSS hidden text spacing and tags, except `<script>` and `<style>` elements | returns the text content of the element and all descendaces, ==with spacing and CSS hidden text, but without tags== |
 
-## Reference
+## References
 
 1. [HTMLElement.innerText - MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)
 2. [innerText - w3schools](https://www.w3schools.com/jsref/prop_node_innertext.asp)
