@@ -6,9 +6,13 @@ What is the **D**ocument **O**bject **M**odel (DOM)? Before we ask to that quest
 
 From the beginning we get JavaScript and we get the browser, these two pieces which interact all the time. Now don't forget that JavaScript is a **hosted language**, that means the browser provides the environment for JavaScript to run, it provides the JavaScript Engine, which in the end parses and understands all the JavaScript code and executes it. So the browser provides the Engine, but it also provides a bunch of Web APIs, a bunch of functionalities into which JavaScript can tap, so that JavaScript can interact with the browser, and implicit with our HTML document.
 
+==When it comes to HTML document, JavaScript and browser interact through an interface called [DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)==. DOM is a Web API provided by the browser to JavaScript, so that JavaScript can interact with the HTML document. With the help of the DOM Web API, JavaScript can create, modify and delete HTML elements, set styles, classes and attributes to them or listen and response to events.
+
+![DOM_interface](../../img/DOM_interface.jpg)
+
 ## Understanding the DOM and how it's created
 
-When we work with HTML document, the browser parse and render that HTML document and exposes functionalities to let JavaScript interact with that rendered HTML. To be more precise, ==the browser exposes functionalities through a Web API that allow JavaScript to work with that parsed HTML document==, and in the end that parsed HTML document is called the **D**ocument **O**bject **M**odel (DOM).
+When we work with HTML document, the browser parse and render that HTML document and exposes functionalities to let JavaScript interact with that rendered HTML. To be more precise, ==the browser exposes functionalities through a DOM Web API that allow JavaScript to work with that parsed HTML document==, and in the end that parsed HTML document is the **D**ocument **O**bject **M**odel (DOM).
 
 ![DOM_parsing](../../img/DOM_parsing.jpg)
 
@@ -21,6 +25,8 @@ The DOM is a W3C (World Wide Web Consortium) standard. ==The DOM defines a **sta
 - ==HTML DOM - standard model for HTML documents==
 
 The HTML DOM is that loaded and rendered HTML document that we talk about. ==The HTML DOM is a **programming interface for web documents**. It represents the page so that programs can change the document structure, style, and content. The HTML DOM **represents the document as nodes and objects**; that way, programming languages can interact with the page==.
+
+![what_is_the_DOM](../../img/what_is_the_DOM.jpg)
 
 > **Note**: The HTML DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content.
 >
@@ -54,6 +60,8 @@ With the object model, JavaScript gets all the power it needs to create dynamic 
 ==The DOM is not a programming language, but without it, the JavaScript language wouldn't have any model or notion of web pages, HTML documents, SVG documents, and their component parts==. The document as a whole, the head, tables within the document, table headers, text within the table cells, and all other elements in a document are parts of the DOM for that document. They can all be accessed and manipulated using the DOM and a scripting language like JavaScript.
 
 > **Note**: The DOM is not part of the JavaScript language, but is instead a Web API used to build websites.
+>
+> ![DOM_vs_JavaScript](../../img/DOM_vs_JavaScript.jpg)
 
 ==The DOM was designed to be independent of any particular programming language==, making the structural representation of the document available from a single, consistent API. Even if most web developers will only use the DOM through JavaScript, implementations of the DOM can be built for any language.
 
@@ -93,9 +101,12 @@ Now the difference is that `document` in the end is the root DOM node which the 
 
 > In simple terms, the `window` object represents something like the browser, and the `document` object is the root of the HTML document itself.
 
+![DOM_API](../../img/DOM_API.jpg)
+
 ## References
 
 1. [JavaScript - The Complete Guide (Beginner + Advanced) - Maximilian Schwarzmüller](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=Cj0KCQjw0umSBhDrARIsAH7FCoeU9W1FhcfHq4JH6InuqwKQdlnXPY4wnIG6-ZrfGPJ6hyB9zTE0NW8aAvGkEALw_wcB)
+1. [The Complete JavaScript Course. From Zero to Expert! - Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNCuaAhZ8UB5kIldtb76eeAyfM0SUKeceBq3FKF24pNxDVe-_g0-DPxoCnWwQAvD_BwE)
 1. [Introduction to the DOM - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 1. [JavaScript HTML DOM - w3schools](https://www.w3schools.com/js/js_htmldom.asp)
 1. [Document - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document)

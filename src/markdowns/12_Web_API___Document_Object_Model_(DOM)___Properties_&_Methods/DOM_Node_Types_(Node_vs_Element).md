@@ -2,7 +2,9 @@
 
 Let's dive into nodes and elements. I kind of use these terms interchangeably but actually should be careful and you should at least understand what the difference is. So you have nodes and elements and ==nodes are the objects that make up the DOM, everything in the DOM is a node==.
 
-The Document Object Model (DOM) is an interface that treats HTML or XML document as a tree structure, where each node is an object of the document. DOM also provides a set of methods to query the tree, alter the structure, style. DOM also uses the term `Element` _which is quite similar to a_ `Node`. So, what's the difference between a DOM `Node` and an `Element`?
+![DOM_API](../../img/DOM_API.jpg)
+
+==The Document Object Model (DOM) is an interface that treats HTML or XML document as a tree structure, where **each node is an object** of the document==. DOM also provides a set of methods to query the tree, alter the structure, style. DOM also uses the term `Element` _which is quite similar to a_ `Node`. So, what's the difference between a DOM `Node` and an `Element`?
 
 > Every object located within a `document` is a node of some kind. In an HTML document, an object can be an element node but also a text node or attribute node.
 
@@ -176,7 +178,8 @@ That can or cannot be an advantage, often it will not matter to be honest. It co
 ## References
 
 1. [JavaScript - The Complete Guide (Beginner + Advanced) - Maximilian Schwarzmüller](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=Cj0KCQjw0umSBhDrARIsAH7FCoeU9W1FhcfHq4JH6InuqwKQdlnXPY4wnIG6-ZrfGPJ6hyB9zTE0NW8aAvGkEALw_wcB)
-2. [Node - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Node)
-3. [Node.nodeType - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType)
-4. [Element - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element)
-5. [What's the Difference between DOM Node and Element? - Dmitri Pavlutin](https://dmitripavlutin.com/dom-node-element/)
+2. [The Complete JavaScript Course. From Zero to Expert! - Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNCuaAhZ8UB5kIldtb76eeAyfM0SUKeceBq3FKF24pNxDVe-_g0-DPxoCnWwQAvD_BwE)
+3. [Node - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Node)
+4. [Node.nodeType - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType)
+5. [Element - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+6. [What's the Difference between DOM Node and Element? - Dmitri Pavlutin](https://dmitripavlutin.com/dom-node-element/)
