@@ -1,22 +1,28 @@
 # Element.before()
 
-The `Element.before()` method ==inserts== a set of ==Node== or ==DOMString== objects in the ==children list== of the `Element`'s parent, just ==before== the `Element`.
-
-DOMString objects are inserted as equivalent Text nodes.
+The `Element.before()` method ==inserts a set of [`Node`](https://developer.mozilla.org/en-US/docs/Web/API/Node) or string objects in the children list of this `Element`'s parent, just **before** this `Element`==. String objects are inserted as equivalent [`Text`](https://developer.mozilla.org/en-US/docs/Web/API/Text) nodes.
 
 ## Syntax
 
 ```js
-element.before(nodesOrDOMString);
+element.before(param1)
+element.before(param1, param2)
+element.before(param1, param2, /* … ,*/ paramN)
 ```
 
 ## Parameters
 
-**nodesOrDOMString** - a set of Node or DOMString objects to insert.
+#### `param1`, …, `paramN`
+
+A set of `Node` or string objects to insert.
+
+## Return value
+
+None (`undefined`).
 
 ## Examples
 
-Inserting an element:
+### Inserting an element
 
 ```js
 let container = document.createElement('div');
@@ -30,7 +36,7 @@ console.log(container.outerHTML);
 // "<div><span></span><p></p></div>"
 ```
 
-Inserting text:
+### Inserting text
 
 ```js
 let container = document.createElement('div');
@@ -43,7 +49,7 @@ console.log(container.outerHTML);
 // "<div>Text<p></p></div>"
 ```
 
-Inserting an element and text:
+### Inserting an element and text
 
 ```js
 let container = document.createElement('div');
@@ -57,6 +63,6 @@ console.log(container.outerHTML);
 // "<div><span></span>Text<p></p></div>"
 ```
 
-## Reference
+## References
 
 1. [Element.before() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/before)

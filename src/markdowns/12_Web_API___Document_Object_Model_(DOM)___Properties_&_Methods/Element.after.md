@@ -1,22 +1,28 @@
 # Element.after()
 
-The `Element.after()` method ==inserts== a set of ==Node== or ==DOMString== objects ==in the children list of Element's parent==, just ==after== the Element.
-
-DOMString objects are inserted as equivalent Text nodes.
+The `Element.after()` method ==inserts a set of [`Node`](https://developer.mozilla.org/en-US/docs/Web/API/Node) or string objects in the children list of the `Element`'s parent, just **after** the `Element`==. String objects are inserted as equivalent [`Text`](https://developer.mozilla.org/en-US/docs/Web/API/Text) nodes.
 
 ## Syntax
 
 ```js
-element.after(nodesOrDOMString);
+element.after(node1)
+element.after(node1, node2)
+element.after(node1, node2, /* … ,*/ nodeN)
 ```
 
 ## Parameters
 
-**nodesOrDOMString** - a set of Node or DOMString objects to insert.
+#### `node1`, …, `nodeN`
+
+A set of `Node` or string objects to insert.
+
+## Return value
+
+None (`undefined`).
 
 ## Examples
 
-Inserting an element:
+### Inserting an element
 
 ```js
 let container = document.createElement('div');
@@ -30,7 +36,7 @@ console.log(container.outerHTML);
 // "<div><p></p><span></span></div>"
 ```
 
-Inserting text:
+### Inserting text
 
 ```js
 let container = document.createElement('div');
@@ -43,7 +49,7 @@ console.log(container.outerHTML);
 // "<div><p></p>Text</div>"
 ```
 
-Inserting an element and text:
+### Inserting an element and text
 
 ```js
 let container = document.createElement('div');
@@ -57,6 +63,6 @@ console.log(container.outerHTML);
 // "<div><p></p><span></span>Text</div>"
 ```
 
-## Reference
+## References
 
 1. [Element.after() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/after)

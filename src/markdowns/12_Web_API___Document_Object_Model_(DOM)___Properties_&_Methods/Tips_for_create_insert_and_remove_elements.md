@@ -1,4 +1,4 @@
-# Introduction to create, insert and remove elements
+# Tips for create, insert and remove elements
 
 Let's have a look at how you can create and insert brand new elements. Now for that, we have basically ==two different ways== of doing that:
 

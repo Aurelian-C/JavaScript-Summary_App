@@ -3198,9 +3198,9 @@ const domManipulation = {
       ],
     },
     {
-      sectionTitle: 'Introduction to create, insert and remove elements',
+      sectionTitle: 'Tips & tricks for create, insert and remove elements',
       sectionSource:
-        '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Introduction_to_create_insert_and_remove_elements.html',
+        '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Tips_for_create_insert_and_remove_elements.html',
       sectionArticles: [
         {
           articleTitle: `If you have an created or selected element, either because you selected it in the DOM with "querySelector()" or you created it with "createElement()" and that element is already part of the DOM, so it is already rendered, if you then insert it somewhere else in the DOM, that element is NOT COPIED or anything like that, instead the existing element is DETACHED from the place where it was and moved to the new place. This actually makes a lot of sense since objects are reference values as you learned and the DOM objects you're working are normal objects in the end, and therefore if we do something with them and we add them somewhere else, we always work with the same object`,
@@ -3211,7 +3211,7 @@ const domManipulation = {
           articleSource: '',
         },
         {
-          articleTitle: `Important (no matter how you insert elements): Whenever you insert elements, you MOVE the element to that new place if you already inserted it before. It's NOT COPIED (you can copy an element via "someElement.cloneNode(true)" though)`,
+          articleTitle: `Important (no matter how you insert elements): whenever you insert elements, you MOVE the element to that new place if you already inserted it before. It's NOT COPIED (you can copy an element via "someElement.cloneNode(true)" though)`,
           articleSource: '',
         },
       ],
@@ -3221,68 +3221,79 @@ const domManipulation = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'innerHTML',
-          articleSource: '',
+          articleTitle: 'Element.innerHTML',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.innerHTML.html',
         },
         {
-          articleTitle: 'insertAdjacentHTML()',
-          articleSource: '',
+          articleTitle: 'Element.insertAdjacentHTML()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.insertAdjacentHTML.html',
         },
         {
           articleTitle: 'document.createElement()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/document.createElement.html',
         },
         {
-          articleTitle: 'append()',
-          articleSource: '',
+          articleTitle: 'Element.append()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.append.html',
         },
         {
-          articleTitle: 'appendChild()',
-          articleSource: '',
+          articleTitle: 'Node.appendChild()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.appendChild.html',
         },
         {
-          articleTitle: 'prepend()',
-          articleSource: '',
+          articleTitle: 'Element.prepend()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.prepend.html',
         },
         {
-          articleTitle: 'insertBefore()',
-          articleSource: '',
+          articleTitle: 'Node.insertBefore()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.insertBefore.html',
         },
         {
-          articleTitle: 'before()',
-          articleSource: '',
+          articleTitle: 'Element.before()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.before.html',
         },
         {
-          articleTitle: 'after()',
-          articleSource: '',
+          articleTitle: 'Element.after()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.after.html',
         },
         {
-          articleTitle: 'insertAdjacentElement()',
-          articleSource: '',
+          articleTitle: 'Element.insertAdjacentElement()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.insertAdjacentElement.html',
         },
         {
-          articleTitle: 'replaceWith()',
-          articleSource: '',
+          articleTitle: 'Element.replaceWith()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.replaceWith.html',
         },
         {
-          articleTitle: 'replaceChild()',
-          articleSource: '',
+          articleTitle: 'Node.replaceChild()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.replaceChild.html',
         },
         {
-          articleTitle: 'remove()',
-          articleSource: '',
+          articleTitle: 'Element.remove()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.remove.html',
         },
         {
-          articleTitle: 'removeChild()',
-          articleSource: '',
+          articleTitle: 'Node.removeChild()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.removeChild.html',
         },
         {
-          articleTitle: 'cloneNode()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Summary: Insert, Replace, Remove',
-          articleSource: '',
+          articleTitle: 'Node.cloneNode()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.cloneNode.html',
         },
       ],
     },
