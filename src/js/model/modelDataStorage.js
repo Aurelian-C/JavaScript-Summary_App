@@ -3381,8 +3381,9 @@ const domManipulation = {
           articleSource: '',
         },
         {
-          articleTitle: 'dataset',
-          articleSource: '',
+          articleTitle: 'HTMLElement.dataset',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.dataset.html',
         },
         {
           articleTitle: 'disabled',
@@ -3395,16 +3396,19 @@ const domManipulation = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'getBoundingClientRect()',
-          articleSource: '',
+          articleTitle: 'Element.getBoundingClientRect()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.getBoundingClientRect.html',
         },
         {
-          articleTitle: 'clientHeight',
-          articleSource: '',
+          articleTitle: 'Element.clientHeight',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.clientHeight.html',
         },
         {
-          articleTitle: 'clientWidth',
-          articleSource: '',
+          articleTitle: 'Element.clientWidth',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.clientWidth.html',
         },
         {
           articleTitle: 'offsetHeight',
@@ -3419,8 +3423,9 @@ const domManipulation = {
           articleSource: '',
         },
         {
-          articleTitle: 'scrollIntoView()',
-          articleSource: '',
+          articleTitle: 'Element.scrollIntoView()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.scrollIntoView.html',
         },
         {
           articleTitle: 'blur()',
@@ -3431,11 +3436,11 @@ const domManipulation = {
           articleSource: '',
         },
         {
-          articleTitle: 'isEqualNode()',
+          articleTitle: 'Node.isEqualNode()',
           articleSource: '',
         },
         {
-          articleTitle: 'nodeValue',
+          articleTitle: 'Node.nodeValue',
           articleSource: '',
         },
         {
@@ -3447,16 +3452,17 @@ const domManipulation = {
           articleSource: '',
         },
         {
-          articleTitle: 'select()',
+          articleTitle: 'HTMLInputElement.select()',
           articleSource: '',
         },
         {
-          articleTitle: 'content',
+          articleTitle: 'HTMLTemplateElement.content',
           articleSource: '',
         },
         {
-          articleTitle: 'importNode()',
-          articleSource: '',
+          articleTitle: 'document.importNode()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/document.importNode.html',
         },
       ],
     },
