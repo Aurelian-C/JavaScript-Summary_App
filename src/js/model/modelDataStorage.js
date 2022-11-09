@@ -3046,6 +3046,16 @@ const domManipulation = {
       ],
     },
     {
+      sectionTitle: 'DOM and HMTL DOM API',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'DOM Node Types (Node vs Element)',
       sectionSource:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/DOM_Node_Types_(Node_vs_Element).html',
@@ -3353,8 +3363,9 @@ const domManipulation = {
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.attributes.html',
         },
         {
-          articleTitle: 'value',
-          articleSource: '',
+          articleTitle: 'HTMLDataElement.value',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLDataElement.value.html',
         },
         {
           articleTitle: 'HTMLMediaElement.src',
@@ -3367,17 +3378,14 @@ const domManipulation = {
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLImageElement.alt.html',
         },
         {
-          articleTitle: 'href',
-          articleSource: '',
+          articleTitle: 'HTMLAnchorElement.href',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLAnchorElement.href.html',
         },
         {
           articleTitle: 'HTMLElement.hidden',
           articleSource:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.hidden.html',
-        },
-        {
-          articleTitle: 'id',
-          articleSource: '',
         },
         {
           articleTitle: 'Element.tagName',
@@ -3421,12 +3429,14 @@ const domManipulation = {
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.offsetHeight.html',
         },
         {
-          articleTitle: 'scrollTo()',
-          articleSource: '',
+          articleTitle: 'Element.scrollTo()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.scrollTo.html',
         },
         {
-          articleTitle: 'scrollBy()',
-          articleSource: '',
+          articleTitle: 'Element.scrollBy()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.scrollBy.html',
         },
         {
           articleTitle: 'Element.scrollIntoView()',

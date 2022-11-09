@@ -101,13 +101,12 @@ Now the difference is that `document` in the end is the root DOM node which the 
 
 > In simple terms, the `window` object represents something like the browser, and the `document` object is the root of the HTML document itself.
 
-![DOM_API](../../img/DOM_API.jpg)
-
 ## References
 
 1. [JavaScript - The Complete Guide (Beginner + Advanced) - Maximilian Schwarzmüller](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=Cj0KCQjw0umSBhDrARIsAH7FCoeU9W1FhcfHq4JH6InuqwKQdlnXPY4wnIG6-ZrfGPJ6hyB9zTE0NW8aAvGkEALw_wcB)
 1. [The Complete JavaScript Course. From Zero to Expert! - Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=JavaScript_v.PROF_la.EN_cc.ROWMTA-B_ti.6368&utm_content=deal4584&utm_term=_._ag_130756014153_._ad_558386196906_._kw__._de_c_._dm__._pl__._ti_dsa-774930039569_._li_1011789_._pd__._&matchtype=&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNCuaAhZ8UB5kIldtb76eeAyfM0SUKeceBq3FKF24pNxDVe-_g0-DPxoCnWwQAvD_BwE)
 1. [Introduction to the DOM - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+1. [The HTML DOM API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API)
 1. [JavaScript HTML DOM - w3schools](https://www.w3schools.com/js/js_htmldom.asp)
 1. [Document - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document)
 1. [Node - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Node)
