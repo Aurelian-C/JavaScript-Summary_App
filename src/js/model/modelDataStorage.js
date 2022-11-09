@@ -3358,7 +3358,8 @@ const domManipulation = {
         },
         {
           articleTitle: 'HTMLMediaElement.src',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLMediaElement.src.html',
         },
         {
           articleTitle: 'alt',
@@ -3370,7 +3371,8 @@ const domManipulation = {
         },
         {
           articleTitle: 'HTMLElement.hidden',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.hidden.html',
         },
         {
           articleTitle: 'id',
@@ -3437,11 +3439,13 @@ const domManipulation = {
         },
         {
           articleTitle: 'Node.isEqualNode()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.isEqualNode.html',
         },
         {
           articleTitle: 'Node.nodeValue',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.nodeValue.html',
         },
         {
           articleTitle: 'Node.contains()',
@@ -3453,11 +3457,13 @@ const domManipulation = {
         },
         {
           articleTitle: 'HTMLInputElement.select()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLInputElement.select.html',
         },
         {
           articleTitle: 'HTMLTemplateElement.content',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLTemplateElement.content.html',
         },
         {
           articleTitle: 'document.importNode()',

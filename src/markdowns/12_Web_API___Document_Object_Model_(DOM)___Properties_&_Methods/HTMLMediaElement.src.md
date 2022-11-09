@@ -1,26 +1,28 @@
 # HTMLMediaElement.src
 
-The `src` property **sets** or **returns the value** of the `src` attribute of an image. The required `src` attribute specifies the URL of an image.
-
-> **Note**: The `src` property can be changed at any time. However, the new image inherits the `height` and `width` attributes of the original image, if not new `height` and `width` properties are specified.
+The `HTMLMediaElement.src` property ==reflects the value of the HTML media element's `src` attribute, which indicates the URL of a media resource to use in the element==. The `HTMLMediaElement.src` property **sets** or **return** the value of the `src` attribute of an `mediaObject`.
 
 ## Syntax
 
 ```js
-// Return the src property:
-imageObject.src;
+// Return the src property
+mediaObject.src;
 
-// Set the src property:
-imageObject.src = URL;
+// Set the src property
+mediaObject.src = value;
 ```
 
-> Note: URL possible values:
->
-> - An absolute URL - points to another web site (like src="http://www.example.com/default.htm")
-> - A relative URL - points to a file within a web site (like src="default.htm")
+## Value
 
-## Reference
+A ==string== object containing the URL of a media resource to use in the element; this property reflects the value of the HTML element's `src` attribute.
 
-1. [Image src Property - w3schools](https://www.w3schools.com/jsref/prop_img_src.asp)
+## Examples
 
-2. [HTMLMediaElement.src - MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/src)
+```js
+const obj = document.createElement('video');
+console.log(obj.src); // ""
+```
+
+## References
+
+1. [HTMLMediaElement.src - MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/src)

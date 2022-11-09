@@ -1,33 +1,22 @@
 # HTMLElement.hidden
 
-The HTMLElement property `hidden` is a boolean value which is `true` if the element is hidden; otherwise the value is `false`. This is quite different from using the CSS property `display` to control the visibility of an element.
+The `HTMLElement.hidden` property  ==reflects the value of the element's [`hidden`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden) attribute==.
 
-The `hidden` property applies to all presentation modes and should not be used to hide content that is meant to be directly accessible to the user.
-
-Appropriate use cases for `hidden` include:
-
-- Content that isn't yet relevant but may be needed later
-- Content that was previously needed but is not any longer
-- Content that is reused by other parts of the page in a template-like fashion
-- Creating an offscreen canvas as a drawing buffer
-
-Inappropriate use cases include:
-
-- Hiding panels in a tabbed dialog box
-- Hiding content in one presentation while intending it to be visible in others
-
-> **Note**: Elements that are not `hidden` must not link to elements which are.
+The `HTMLElement.hidden` property is a boolean value which is `true` if the element is hidden; otherwise the value is `false`. 
 
 ## Syntax
 
 ```js
-element.hidden = booleanValue;
+element.hidden = value;
 ```
 
 ## Property Value
 
-**booleanValue** - a Boolean which is `true` if the element is hidden from view; otherwise, the value is `false`.
+#### `value`
 
-## Reference
+- a boolean which is `true` if the element is hidden from view; otherwise, the value is `false`, _or_
+- `"until-found"` value - the element is *hidden until found*, meaning that it is hidden but will be revealed if found through in page search or reached through fragment navigation.
+
+## References
 
 1. [HTMLElement.hidden - MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden)
