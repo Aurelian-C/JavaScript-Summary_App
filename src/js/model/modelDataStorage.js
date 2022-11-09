@@ -3362,8 +3362,9 @@ const domManipulation = {
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLMediaElement.src.html',
         },
         {
-          articleTitle: 'alt',
-          articleSource: '',
+          articleTitle: 'HTMLImageElement.alt',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLImageElement.alt.html',
         },
         {
           articleTitle: 'href',
@@ -3380,7 +3381,8 @@ const domManipulation = {
         },
         {
           articleTitle: 'Element.tagName',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.tagName.html',
         },
         {
           articleTitle: 'HTMLElement.dataset',
@@ -3388,8 +3390,9 @@ const domManipulation = {
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.dataset.html',
         },
         {
-          articleTitle: 'disabled',
-          articleSource: '',
+          articleTitle: 'HTMLSelectElement.disabled',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLSelectElement.disabled.html',
         },
       ],
     },
@@ -3413,8 +3416,9 @@ const domManipulation = {
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.clientWidth.html',
         },
         {
-          articleTitle: 'offsetHeight',
-          articleSource: '',
+          articleTitle: 'HTMLElement.offsetHeight',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.offsetHeight.html',
         },
         {
           articleTitle: 'scrollTo()',
@@ -3430,12 +3434,14 @@ const domManipulation = {
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.scrollIntoView.html',
         },
         {
-          articleTitle: 'blur()',
-          articleSource: '',
+          articleTitle: 'HTMLElement.blur()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.blur.html',
         },
         {
-          articleTitle: 'focus()',
-          articleSource: '',
+          articleTitle: 'HTMLElement.focus()',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.focus.html',
         },
         {
           articleTitle: 'Node.isEqualNode()',
@@ -3449,7 +3455,8 @@ const domManipulation = {
         },
         {
           articleTitle: 'Node.contains()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.contains.html',
         },
         {
           articleTitle: 'document.createRange().createContextualFragment()',
