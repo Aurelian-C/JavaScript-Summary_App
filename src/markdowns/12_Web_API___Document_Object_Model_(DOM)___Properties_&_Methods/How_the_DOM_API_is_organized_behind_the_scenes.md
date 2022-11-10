@@ -46,11 +46,11 @@ In order to expand upon the functionality of the core `HTMLElement` interface to
 
 The overall inheritance for HTML element classes looks like this:
 
-![HTMLElement](D:\Websites\Projects\Cioloca Aurelian__Javascript Resume\src\img\HTMLElement.jpg)
+![HTMLElement](../../img/HTMLElement.jpg)
 
 As such, an element inherits the properties and methods of all of its ancestors. For example, consider a [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) element, which is represented in the DOM by an object of type [`HTMLAnchorElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement). The element, then, includes the anchor-specific properties and methods described in that class's documentation, but also those defined by [`HTMLElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) and [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element), as well as from [`Node`](https://developer.mozilla.org/en-US/docs/Web/API/Node) and, finally, [`EventTarget`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget).
 
-![DOM_API](D:\Websites\Projects\Cioloca Aurelian__Javascript Resume\src\img\DOM_API.jpg)
+![DOM_API](../../img/DOM_API.jpg)
 
 Each level defines a key aspect of the utility of the element. From `Node`, the element inherits concepts surrounding the ability for the element to be contained by another element, and to contain other elements itself. Of special importance is what is gained by inheriting from `EventTarget`: the ability to receive and handle events such as mouse clicks, play and pause events, and so forth.
 

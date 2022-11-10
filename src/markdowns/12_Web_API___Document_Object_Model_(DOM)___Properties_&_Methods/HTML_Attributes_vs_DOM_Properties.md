@@ -8,7 +8,7 @@ When speaking about manipulating elements, it's also important to understand ==t
 
 It's important to understand that ==not every attribute has a one-to-one mapping in properties== though. It's just important to know that ==not always the **attribute name** is equal to the **property name**==.
 
-![attributes_vs_properties](D:/Websites/Projects/Cioloca Aurelian__Javascript Resume/src/img/attributes_vs_properties.jpg)
+![attributes_vs_properties](../../img/attributes_vs_properties.jpg)
 
 ## References
 

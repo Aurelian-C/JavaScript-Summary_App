@@ -112,6 +112,8 @@ When you get a reference to a `table` object, as in the following example, you r
 
 ==The `document` and `window` objects are the objects whose interfaces you generally use most often in DOM programming==. In simple terms, the `window` object represents something like the browser, and the `document` object is the root of the document itself. `Element` inherits from the generic `Node` interface, and together these two interfaces provide many of the methods and properties you use on individual elements. These elements may also have specific interfaces for dealing with the kind of data those elements hold, like `HTMLTableElement` interface.
 
+![DOM_API_1](../../img/DOM_API_1.jpg)
+
 ## References
 
 1. [Web APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API)

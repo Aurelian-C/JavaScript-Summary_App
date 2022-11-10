@@ -27,7 +27,7 @@ The key to understanding the difference between a `Node` and an `Element` is to 
 ```
 
 The document contains the following hierarchy of nodes:
-![node-vs-element2](../../../src/img/node-vs-element2.jpg)
+![node-vs-element2](../../img/node-vs-element2.jpg)
 
 `<html>` is a node in the document tree; it has 2 children: `<head>` and `<body>` nodes.
 
