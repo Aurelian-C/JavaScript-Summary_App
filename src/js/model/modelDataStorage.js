@@ -2998,8 +2998,31 @@ const asynchronous = {
 };
 
 const domManipulation = {
-  title: 'Document Object Model (DOM) <br>- Properties & Methods -',
+  title:
+    'Web APIs <br>Document Object Model (DOM) <br>- Properties & Methods -',
   sections: [
+    {
+      sectionTitle: 'Introduction to Web APIs',
+      sectionSource:
+        '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Introduction_to_Web_APIs.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'An API (Application Programming Interface) is a software intermediary (interface) that allows two applications to talk to each other',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'In Web development, we have Web APIs that are build into the browser, and we have external Web APIs called Third Party APIs',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'In both cases, a Web API is an interface that allows two applications to talk to each other: JavaScript - Browser <i>or</i> JavaScript - Server',
+          articleSource: '',
+        },
+      ],
+    },
     {
       sectionTitle: 'Introduction to the Document Object Model (DOM)',
       sectionSource:
@@ -3007,31 +3030,32 @@ const domManipulation = {
       sectionArticles: [
         {
           articleTitle:
-            'When it comes to HTML document, JavaScript and browser interact through a Web API called DOM',
-          articleSource: '',
-        },
-        {
-          articleTitle:
             'The DOM defines a standard for accessing different types of documents (XML, HTML, etc.)',
           articleSource: '',
         },
         {
-          articleTitle: 'HTML DOM - standard model for HTML documents',
+          articleTitle:
+            'The DOM is built using multiple APIs that work together',
           articleSource: '',
         },
         {
           articleTitle:
-            'The HTML DOM is a programming interface for web documents. It represents the HTML page so that programs can change the document structure, style and content',
+            'When it comes to HTML document, HTML DOM API adds support for representing HTML documents to the core DOM',
           articleSource: '',
         },
         {
           articleTitle:
-            'The HTML DOM represents the HTML document as nodes and objects. It is constructed as a tree of objects; this means that DOM objects are simply objects (objects are reference values)',
+            'The DOM is a programming interface for web documents (HTML documents). It represents the HTML document so that programs can change the document structure, style and content',
           articleSource: '',
         },
         {
           articleTitle:
-            'The HTML DOM connects web pages to scripts or programming languages by representing the structure of a HTML document in memory',
+            'The DOM connects web pages to scripts or programming languages by representing the structure of a HTML document in memory, as an object-oriented representation',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The DOM model is constructed as a tree of objects. Each branch of the tree ends in a node, and each node contains objects. This means that DOM objects are simply objects (objects are reference values)',
           articleSource: '',
         },
         {
@@ -3043,10 +3067,14 @@ const domManipulation = {
           articleTitle: 'Accessing the DOM: "document" & "window" object',
           articleSource: '',
         },
+        {
+          articleTitle: 'DOM Interfaces: interfaces & objects',
+          articleSource: '',
+        },
       ],
     },
     {
-      sectionTitle: 'DOM and HMTL DOM API',
+      sectionTitle: 'How DOM API is organized behind the scenes',
       sectionSource: '',
       sectionArticles: [
         {
@@ -3072,7 +3100,7 @@ const domManipulation = {
         },
         {
           articleTitle:
-            'Not just HTML tags are treated as nodes objects, but also text, comments etc. Event whitespace that you have for readability reasons in an HTML document is treated as a node',
+            'Not just HTML tags are treated as nodes objects, but also text, comments etc. Even whitespace that you have for readability reasons in an HTML document is treated as a node',
           articleSource: '',
         },
         {
@@ -3503,7 +3531,7 @@ const domManipulation = {
 };
 
 const domEvents = {
-  title: 'Document Object Model (DOM) <br>- Events -',
+  title: 'Web APIs <br>Document Object Model (DOM) <br>- Events -',
   sections: [
     {
       sectionTitle: 'Introduction to Events',
