@@ -3075,10 +3075,17 @@ const domManipulation = {
     },
     {
       sectionTitle: 'How DOM API is organized behind the scenes',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/How_the_DOM_API_is_organized_behind_the_scenes.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle:
+            'The DOM API is made up of the <i>interfaces that define the functionality of each of the elements in HTML</i>',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The majority of the interfaces that comprise the HTML DOM API map almost one-to-one to individual HTML elements, or to a small group of elements with similar functionality',
           articleSource: '',
         },
       ],
@@ -3090,7 +3097,7 @@ const domManipulation = {
       sectionArticles: [
         {
           articleTitle:
-            'Nodes are the objects that make up the DOM, everything in the DOM is a node',
+            'Nodes are the <i>objects</i> that make up the DOM, everything in the DOM is a node',
           articleSource: '',
         },
         {

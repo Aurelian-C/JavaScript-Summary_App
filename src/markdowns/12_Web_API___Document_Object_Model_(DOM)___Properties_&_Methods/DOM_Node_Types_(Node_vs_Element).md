@@ -1,16 +1,16 @@
 # DOM Nodes & Elements
 
-Let's dive into nodes and elements. I kind of use these terms interchangeably but actually should be careful and you should at least understand what the difference is. So you have nodes and elements and ==nodes are the objects that make up the DOM, everything in the DOM is a node==.
+Let's dive into nodes and elements. I kind of use these terms interchangeably but actually should be careful and you should at least understand what the difference is. So you have nodes and elements and ==**nodes are the objects that make up the Document Object Model (DOM)**, everything in the DOM is a node==.
 
 ![DOM_API](../../img/DOM_API.jpg)
 
-==The Document Object Model (DOM) is an interface that treats HTML or XML document as a tree structure, where **each node is an object** of the document==. DOM also provides a set of methods to query the tree, alter the structure, style. DOM also uses the term `Element` _which is quite similar to a_ `Node`. So, what's the difference between a DOM `Node` and an `Element`?
+==The **DOM is an _interface_** _that treats HTML or XML document as a tree structure_, where **each node is an object** of the document==. DOM also provides a set of methods to query the tree, alter the structure, style. DOM also uses the term `Element`, _which is quite similar to a_ `Node`. So, what's the difference between a DOM `Node` and an `Element`?
 
-> Every object located within a `document` is a node of some kind. In an HTML document, an object can be an element node but also a text node or attribute node.
+> **Note**: Every object located within a [`document`](https://developer.mozilla.org/en-US/docs/Web/API/Document) is a node of some kind. In an HTML document, an object can be an _element node_, but also a _text node_ or _comment node_.
 
 ## What's a DOM node?
 
-The key to understanding the difference between a `Node` and an `Element` is to understand what a `Node` is. From a higher viewpoint, ==a DOM document consists of a **hierarchy of nodes**. Each `Node` can have a parent and/or children==. Let's look at the following HTML document:
+The key to understanding the difference between a [`Node`](https://developer.mozilla.org/en-US/docs/Web/API/Node) and an [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) is to understand what a `Node` is. From a higher viewpoint, ==a DOM `document` consists of a **hierarchy of nodes**. Each `Node` can have a parent and/or children==. Let's look at the following HTML document:
 
 ```html
 <!DOCTYPE html>
@@ -29,15 +29,13 @@ The key to understanding the difference between a `Node` and an `Element` is to 
 The document contains the following hierarchy of nodes:
 ![node-vs-element2](../../img/node-vs-element2.jpg)
 
-`<html>` is a node in the document tree; it has 2 children: `<head>` and `<body>` nodes.
+`<html>` tag is a node in the document tree and has 2 children: `<head>` and `<body>` nodes. `<body>` is also a node having 3 children: a comment `<!-- Page Body -->`, heading `<h2>`, and paragraph `<p>`; the parent of the `<body>` node is `<html>` node. The paragraph node `<p>` has 1 child: the text node "Thank you for visiting my web page!".
 
-`<body>` is also a node having 3 children: a comment `<!-- Page Body -->`, heading `<h2>`, and paragraph `<p>`; the parent of the `<body>` node is `<html>` node.
-
-==The tags in the HTML document represent a node, what's interesting is that regular text is also a node==. The paragraph node `<p>` has 1 child: the text node "Thank you for visiting my web page!".
+==The tags in the HTML document represent a node, what's interesting is that regular text is also a node==. 
 
 ### Node Types
 
-How can you distinguish these different ==types of nodes==? The answer lays in the DOM Node interface, particularly in the [`Node.nodeType`](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType) property. `Node.nodeType` can have one of the following values that represents the type of the node:
+How can you distinguish these different ==types of nodes==? The answer lays in the [DOM `Node` interface](https://developer.mozilla.org/en-US/docs/Web/API/Node), particularly in the [`Node.nodeType`](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType) property. `Node.nodeType` can have one of the following values that represents the type of the node:
 
 - `Node.ELEMENT_NODE`
 - `Node.ATTRIBUTE_NODE`
@@ -73,7 +71,7 @@ There's a node type that represents the entire document tree of nodes — `Node.
 document.nodeType === Node.DOCUMENT_NODE; // => true
 ```
 
-What is important to understand is that ==not just HTML tags are created as node objects but also all text that you have, and these are created as so-called Text Nodes. What I'm pointing at here in the below image might be strange, but the empty whitespace in the front of the `head` tag is actually translated to a `Node` in the browser, so even that whitespace is part of the loaded node tree==.
+What is important to understand is that ==not just HTML tags are created as node objects but also all text that you have, and these are created as so-called Text Nodes. What I'm pointing at here in the below image might be strange, but the empty whitespace in the front of the `<head>` tag is actually translated to a `Node` in the browser, so _even that whitespace is part of the loaded node tree, as a node of type text_==.
 
 ![textNode](../../img/textNode.jpg)
 
