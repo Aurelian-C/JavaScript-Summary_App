@@ -2998,8 +2998,7 @@ const asynchronous = {
 };
 
 const domManipulation = {
-  title:
-    'Web APIs <br>Document Object Model (DOM) <br>- Properties & Methods -',
+  title: 'Web APIs <br>Document Object Model (DOM)<br>- Properties & Methods -',
   sections: [
     {
       sectionTitle: 'Introduction to Web APIs',
@@ -3538,18 +3537,36 @@ const domManipulation = {
 };
 
 const domEvents = {
-  title: 'Web APIs <br>Document Object Model (DOM) <br>- Events -',
+  title: 'Web APIs <br>Document Object Model (DOM)<br>- Events -',
   sections: [
     {
       sectionTitle: 'Introduction to Events',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Introduction_to_events.html',
       sectionArticles: [
         {
-          articleTitle: 'Different Ways of Listening to Events',
+          articleTitle:
+            'Events are actions or occurrences that happen in the system you are programming, which the system tells you about so your code can react to them',
           articleSource: '',
         },
         {
-          articleTitle: '2 Ways NOT to Add Events',
+          articleTitle:
+            'In the case of the Web, events are fired inside the browser window, and tend to be attached to a specific item that resides in it',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Web events are NOT part of the core JavaScript language — they are defined as part of the APIs built into the browser',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'To react to an event, you attach an event handler to it. Event handler is a block of code that runs when the event fires',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Event listeners vs Event handlers: the listener listens out for the event happening, and the handler is the code that is run in response to it happening',
           articleSource: '',
         },
         {
@@ -3559,21 +3576,40 @@ const domEvents = {
       ],
     },
     {
-      sectionTitle: 'addEventListener() & removeEventListener()',
+      sectionTitle: 'Event handling',
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: 'Different Ways of Listening to Events',
           articleSource: '',
         },
-      ],
-    },
-    {
-      sectionTitle: 'Event Handler Functions & "this" keyword',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle:
+            '2 Ways NOT to Add Events: event handler properties & inline event handlers',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'addEventListener()',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'removeEventListener()',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Event handler functions & "this" keyword',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Passing Arguments to Event Handlers',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Events on Multiple Elements',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Lifecycle DOM Events',
           articleSource: '',
         },
       ],
@@ -3635,7 +3671,7 @@ const domEvents = {
           articleSource: '',
         },
         {
-          articleTitle: 'keypress',
+          articleTitle: 'Keyboard Events: keypress, keyup, keydown',
           articleSource: '',
         },
         {
@@ -3674,72 +3710,8 @@ const domEvents = {
           articleTitle: 'blur',
           articleSource: `/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___blur.html`,
         },
-      ],
-    },
-    {
-      sectionTitle: 'Keyboard Events',
-      sectionSource: '',
-      sectionArticles: [
         {
-          articleTitle: 'keypress',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'keyup',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'keydown',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Form Events & PreventDefault',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Input & Change Events',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Passing Arguments to Event Handlers',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Events on Multiple Elements',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'Lifecycle DOM Events',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
+          articleTitle: 'Form events & preventDefault',
           articleSource: '',
         },
       ],
