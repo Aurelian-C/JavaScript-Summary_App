@@ -2083,7 +2083,7 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'More on Pure Functions',
+      sectionTitle: 'More about Pure Functions',
       sectionSource: '',
       sectionArticles: [
         {
@@ -2093,7 +2093,7 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'More on Functions Composition',
+      sectionTitle: 'More about Functions Composition',
       sectionSource: '',
       sectionArticles: [
         {
@@ -3577,23 +3577,20 @@ const domEvents = {
     },
     {
       sectionTitle: 'Event handling',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Event_handling.html',
       sectionArticles: [
         {
-          articleTitle: 'Different Ways of Listening to Events',
-          articleSource: '',
-        },
-        {
           articleTitle:
-            '2 Ways NOT to Add Events: event handler properties & inline event handlers',
+            '2 ways NOT to add events: event handler properties & inline event handlers',
           articleSource: '',
         },
         {
-          articleTitle: 'addEventListener()',
+          articleTitle: 'addEventListener() & removeEventListener()',
           articleSource: '',
         },
         {
-          articleTitle: 'removeEventListener()',
+          articleTitle: 'Events on multiple elements',
           articleSource: '',
         },
         {
@@ -3601,15 +3598,31 @@ const domEvents = {
           articleSource: '',
         },
         {
-          articleTitle: 'Passing Arguments to Event Handlers',
+          articleTitle: 'Passing arguments to event handlers',
           articleSource: '',
         },
         {
-          articleTitle: 'Events on Multiple Elements',
+          articleTitle: 'Lifecycle DOM events',
           articleSource: '',
         },
+      ],
+    },
+    {
+      sectionTitle: 'More about addEventListener()',
+      sectionSource: '',
+      sectionArticles: [
         {
-          articleTitle: 'Lifecycle DOM Events',
+          articleTitle: '',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'More about removeEventListener()',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: '',
           articleSource: '',
         },
       ],
@@ -3619,27 +3632,7 @@ const domEvents = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'e.preventDefault()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'e.target',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'e.currentTarget',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'e.composedPath()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'e.stopPropagation()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'e.key',
+          articleTitle: '',
           articleSource: '',
         },
       ],
@@ -3671,11 +3664,15 @@ const domEvents = {
           articleSource: '',
         },
         {
-          articleTitle: 'Keyboard Events: keypress, keyup, keydown',
+          articleTitle: 'scroll',
           articleSource: '',
         },
         {
-          articleTitle: 'scroll',
+          articleTitle: 'wheel',
+          articleSource: `/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___wheel.html`,
+        },
+        {
+          articleTitle: 'mouseout',
           articleSource: '',
         },
         {
@@ -3683,12 +3680,8 @@ const domEvents = {
           articleSource: '',
         },
         {
-          articleTitle: 'mouseout',
+          articleTitle: 'keypress, keyup, keydown',
           articleSource: '',
-        },
-        {
-          articleTitle: 'wheel',
-          articleSource: `/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___wheel.html`,
         },
         {
           articleTitle: 'input',
