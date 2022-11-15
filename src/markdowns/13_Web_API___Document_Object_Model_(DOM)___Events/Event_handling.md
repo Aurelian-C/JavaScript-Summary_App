@@ -1,6 +1,8 @@
 # Event handling
 
-==Events are signals fired inside the browser window, that notify of changes in the browser or operating system environment. Programmers can create **event handler code that will run when an event fires**, allowing web pages to respond appropriately to change==.
+==Events are signals fired inside the browser window, that notify of changes in the browser or operating system environment. Programmers can create **event handler code that will run when an event fires**, allowing web pages to respond appropriately to change==. 
+
+Events are normally used in combination with functions, and the function will not be executed before the event occurs (such as when a user clicks a button).
 
 There are 3 ways of registering event handlers:
 

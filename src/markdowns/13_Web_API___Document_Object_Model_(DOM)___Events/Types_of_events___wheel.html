@@ -199,6 +199,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
 .typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
 .md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
 
 
 .CodeMirror { height: auto; }
@@ -306,7 +307,7 @@ span.cm-strikethrough { text-decoration: line-through; }
   /* for focus mode */
   --text-color5: rgba(170, 178, 180, 0.5);
   /* link color */
-  --link-color: #6FC1FF;
+  --link-color: #0091ff;
   /* table color */
   --table-border-color: #555;
   --table-thead-color: #2b2d2e;
@@ -341,7 +342,7 @@ span.cm-strikethrough { text-decoration: line-through; }
   --focus-ring-color: var(--focus-color);
   /* codeblock color */
   --code-red-color: #FF75B5;
-  --code-yellow-color: #FFB86C;
+  --code-yellow-color: #e8ff94;
   --code-cyan-color: #19f9d8;
   --code-blue-color: #6FC1FF;
   --code-purple-color: #FF75B5;
@@ -1294,6 +1295,11 @@ code {
   	padding-bottom: 0.15em;
   border: 2px solid #666;
   border-radius: 0.25rem;
+  color: var(--text-color1);	
+}
+
+a code {
+  color: var(--link-color) !important;
 }
 
 /* codeblock */
@@ -2331,6 +2337,6 @@ li {
 </style><title>Types_of_events___wheel</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='element-wheel-event'><span>Element: wheel event</span></h1><p><span>The </span><strong><code>wheel</code></strong><span> event fires when the </span><mark><span>user rotates a wheel button</span></mark><span> on a pointing device (typically a mouse). This event replaces the non-standard deprecated </span><code>mousewheel</code><span> event.</span></p><blockquote><p><strong><span>Note:</span></strong><span> Don&#39;t confuse the </span><code>wheel</code><span> event with the </span><code>scroll</code><span> event. The default action of a </span><code>wheel</code><span> event is implementation-specific, and doesn&#39;t necessarily dispatch a </span><code>scroll</code><span> event. Even when it does, the </span><code>delta*</code><span> values in the </span><code>wheel</code><span> event don&#39;t necessarily reflect the content&#39;s scrolling direction. Therefore, do not rely on the </span><code>wheel</code><span> event&#39;s </span><code>delta*</code><span> properties to get the scrolling direction. Instead, detect value changes of </span><code>scrollLeft</code><span> and </span><code>scrollTop</code><span> of the target in the </span><code>scroll</code><span> event.</span></p></blockquote><h2 id='syntax'><span>Syntax</span></h2><p><span>Use the event name in methods like </span><code>addEventListener()</code><span>, or set an event handler property.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="js"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.51875px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">addEventListener</span>(<span class="cm-string">'wheel'</span>, (<span class="cm-def">event</span>) <span class="cm-operator">=&gt;</span> {});</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><h2 id='references'><span>References</span></h2><ol><li><a href='https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event'><span>Element: wheel event - MDN</span></a></li></ol><p>&nbsp;</p></div></div>
+<div id='write'  class=''><h1 id='element-wheel-event'><span>Element: wheel event</span></h1><p><span>The </span><code>wheel</code><span> event fires when the </span><mark><span>user rotates a wheel button</span></mark><span> on a pointing device (typically a mouse). This event replaces the non-standard deprecated </span><code>mousewheel</code><span> event.</span></p><blockquote><p><strong><span>Note:</span></strong><span> </span><mark><span>Don&#39;t confuse the </span><code>wheel</code><span> event with the </span><code>scroll</code><span> event</span></mark><span>. The default action of a </span><code>wheel</code><span> event is implementation-specific, and doesn&#39;t necessarily dispatch a </span><code>scroll</code><span> event. Even when it does, the </span><code>delta*</code><span> values in the </span><code>wheel</code><span> event don&#39;t necessarily reflect the content&#39;s scrolling direction. Therefore, do not rely on the </span><code>wheel</code><span> event&#39;s </span><code>delta*</code><span> properties to get the scrolling direction. Instead, detect value changes of </span><code>scrollLeft</code><span> and </span><code>scrollTop</code><span> of the target in the </span><code>scroll</code><span> event.</span></p></blockquote><h2 id='syntax'><span>Syntax</span></h2><p><span>Use the event name in methods like </span><a href='https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener'><code>addEventListener()</code></a><span>, or set an </span><em><span>event handler property</span></em><span>.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded md-focus" spellcheck="false" lang="js"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap CodeMirror-focused" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 32.5563px; left: 146.85px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">addEventListener</span>(<span class="cm-string">'wheel'</span>, (<span class="cm-def">event</span>) <span class="cm-operator">=&gt;</span> {</span></pre><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment">// statement</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">});</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 69px;"></div><div class="CodeMirror-gutters" style="display: none; height: 69px;"></div></div></div></pre><h2 id='references'><span>References</span></h2><ol start='' ><li><a href='https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event'><span>Element: wheel event - MDN</span></a></li></ol></div></div>
 </body>
 </html>

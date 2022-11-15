@@ -3718,19 +3718,23 @@ const domEvents = {
     },
     {
       sectionTitle: 'Types of Events',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events.html',
       sectionArticles: [
         {
-          articleTitle: 'click',
-          articleSource: '',
+          articleTitle: 'Element: click',
+          articleSource:
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___click.html',
         },
         {
-          articleTitle: 'scroll',
-          articleSource: '',
+          articleTitle: 'Document & Element: scroll',
+          articleSource:
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___scroll.html',
         },
         {
-          articleTitle: 'wheel',
-          articleSource: `/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___wheel.html`,
+          articleTitle: 'Element: wheel',
+          articleSource:
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___wheel.html',
         },
         {
           articleTitle: 'mouseout',
@@ -3761,8 +3765,9 @@ const domEvents = {
           articleSource: '',
         },
         {
-          articleTitle: 'blur',
-          articleSource: `/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___blur.html`,
+          articleTitle: 'Element: blur',
+          articleSource:
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___blur.html',
         },
         {
           articleTitle: 'Form events & preventDefault',
