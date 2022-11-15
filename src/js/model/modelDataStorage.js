@@ -70,7 +70,7 @@ const browserEngineAndRuntime = {
           articleSource: '',
         },
         {
-          articleTitle: 'Web APIs & global window object',
+          articleTitle: 'Web APIs & global <code>window</code> object',
           articleSource: '',
         },
         {
@@ -86,12 +86,12 @@ const browserEngineAndRuntime = {
       sectionArticles: [
         {
           articleTitle:
-            'Global execution context (global "window" object & "this" keyword)',
+            'Global execution context (global <code>window</code> object & <code>this</code> keyword)',
           articleSource: '',
         },
         {
           articleTitle:
-            'Function execution context ("arguments" & "this" keyword)',
+            'Function execution context (<code>arguments</code> & <code>this</code> keyword)',
           articleSource: '',
         },
       ],
@@ -123,7 +123,7 @@ const browserEngineAndRuntime = {
         },
         {
           articleTitle:
-            'Function Scope (var, let & const) & Block Scope (let & const)',
+            'Function Scope (<code>var</code>, <code>let</code> & <code>const</code>) & Block Scope (<code>let</code> & <code>const</code>)',
           articleSource: '',
         },
         {
@@ -186,7 +186,8 @@ const browserEngineAndRuntime = {
       ],
     },
     {
-      sectionTitle: 'Efficient Script Loading: defer & async',
+      sectionTitle:
+        'Efficient Script Loading: <code>defer</code> & <code>async</code>',
       sectionSource: '',
       sectionArticles: [
         {
@@ -285,7 +286,7 @@ const variablesAndValues = {
         },
         {
           articleTitle:
-            "One operator that doesn't trigger implicit type coercion is Strict Equality Operator ===",
+            "One operator that doesn't trigger implicit type coercion is Strict Equality Operator <code>===</code>",
           articleSource: '',
         },
       ],
@@ -314,15 +315,17 @@ const variablesAndValues = {
       sectionSource: '/src/markdowns/02_JavaScript_Types_&_Variables/var.html',
       sectionArticles: [
         {
-          articleTitle: '"var" & hoisting',
+          articleTitle: '<code>var</code> & hoisting',
           articleSource: '',
         },
         {
-          articleTitle: '"var" is only function scoped, NOT block scoped',
+          articleTitle:
+            '<code>var</code> is only function scoped, NOT block scoped',
           articleSource: '',
         },
         {
-          articleTitle: '"var" can be redeclared without trigger an error',
+          articleTitle:
+            '<code>var</code> can be redeclared without trigger an error',
           articleSource: '',
         },
       ],
@@ -332,19 +335,19 @@ const variablesAndValues = {
       sectionSource: '/src/markdowns/02_JavaScript_Types_&_Variables/let.html',
       sectionArticles: [
         {
-          articleTitle: '"let" & hoisting',
+          articleTitle: '<code>let</code> & hoisting',
           articleSource: '',
         },
         {
-          articleTitle: `"let" can't be used before it's declared`,
+          articleTitle: `<code>let</code> can't be used before it's declared`,
           articleSource: '',
         },
         {
-          articleTitle: '"let" is function scoped & block scoped',
+          articleTitle: '<code>let</code> is function scoped & block scoped',
           articleSource: '',
         },
         {
-          articleTitle: `"let" can't be redeclared like "var"`,
+          articleTitle: `<code>let</code> can't be redeclared like <code>var</code>`,
           articleSource: '',
         },
       ],
@@ -355,27 +358,27 @@ const variablesAndValues = {
         '/src/markdowns/02_JavaScript_Types_&_Variables/const.html',
       sectionArticles: [
         {
-          articleTitle: '"const" & hoisting',
+          articleTitle: '<code>const</code> & hoisting',
           articleSource: '',
         },
         {
-          articleTitle: `"const" can't be used before it's declared`,
+          articleTitle: `<code>const</code> can't be used before it's declared`,
           articleSource: '',
         },
         {
-          articleTitle: '"const" is function scoped & block scoped',
+          articleTitle: '<code>const</code> is function scoped & block scoped',
           articleSource: '',
         },
         {
-          articleTitle: `"const" must be initialized when it's declared`,
+          articleTitle: `<code>const</code> must be initialized when it's declared`,
           articleSource: '',
         },
         {
-          articleTitle: `"const" can't be changed through reassignment`,
+          articleTitle: `<code>const</code> can't be changed through reassignment`,
           articleSource: '',
         },
         {
-          articleTitle: `"const" can't be redeclared like "var"`,
+          articleTitle: `<code>const</code> can't be redeclared like <code>var</code>`,
           articleSource: '',
         },
       ],
@@ -477,16 +480,16 @@ const operators = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Assignment (=)',
+          articleTitle: 'Assignment <code>=</code>',
           articleSource: '/src/markdowns/03_Operators/Assignment_operator.html',
         },
         {
-          articleTitle: 'Addition assignment (+=)',
+          articleTitle: 'Addition assignment <code>+=</code>',
           articleSource:
             '/src/markdowns/03_Operators/Addition_assignment_operator.html',
         },
         {
-          articleTitle: 'Subtraction assignment (-=)',
+          articleTitle: 'Subtraction assignment <code>-=</code>',
           articleSource:
             '/src/markdowns/03_Operators/Subtraction_assignment_operator.html',
         },
@@ -497,11 +500,11 @@ const operators = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Increment (A++ <i>or</i> ++A)',
+          articleTitle: 'Increment <code>A++</code> or <code>++A</code>',
           articleSource: '/src/markdowns/03_Operators/Increment_operator.html',
         },
         {
-          articleTitle: 'Decrement (A-- <i>or</i> --A)',
+          articleTitle: 'Decrement <code>A--</code> or <code>--A</code>',
           articleSource: '/src/markdowns/03_Operators/Decrement_operator.html',
         },
       ],
@@ -515,16 +518,16 @@ const operators = {
           articleSource: '/src/markdowns/03_Operators/typeof_operator.html',
         },
         {
-          articleTitle: 'Unary plus (+)',
+          articleTitle: 'Unary plus <code>+</code>',
           articleSource: '/src/markdowns/03_Operators/Unary_plus_operator.html',
         },
         {
-          articleTitle: 'Unary negation (-)',
+          articleTitle: 'Unary negation <code>-</code>',
           articleSource:
             '/src/markdowns/03_Operators/Unary_negation_operator.html',
         },
         {
-          articleTitle: 'Logical NOT (!)',
+          articleTitle: 'Logical NOT <code>!</code>',
           articleSource:
             '/src/markdowns/03_Operators/Logical_NOT_operator.html',
         },
@@ -535,24 +538,24 @@ const operators = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Addition (+)',
+          articleTitle: 'Addition <code>+</code>',
           articleSource: '/src/markdowns/03_Operators/Addition_operator.html',
         },
         {
-          articleTitle: 'Subtraction (-)',
+          articleTitle: 'Subtraction <code>-</code>',
           articleSource:
             '/src/markdowns/03_Operators/Subtraction_operator.html',
         },
         {
-          articleTitle: 'Division (/)',
+          articleTitle: 'Division <code>/</code>',
           articleSource: '',
         },
         {
-          articleTitle: 'Multiplication (*)',
+          articleTitle: 'Multiplication <code>*</code>',
           articleSource: '',
         },
         {
-          articleTitle: 'Remainder (%)',
+          articleTitle: 'Remainder <code>%</code>',
           articleSource: '/src/markdowns/03_Operators/Remainder_operator.html',
         },
       ],
@@ -562,19 +565,19 @@ const operators = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Equality (==)',
+          articleTitle: 'Equality <code>==</code>',
           articleSource: '/src/markdowns/03_Operators/Equality_operator.html',
         },
         {
-          articleTitle: 'Inequality (!=)',
+          articleTitle: 'Inequality <code>!=</code>',
           articleSource: '/src/markdowns/03_Operators/Inequality_operator.html',
         },
         {
-          articleTitle: 'Identity (===)',
+          articleTitle: 'Identity <code>===</code>',
           articleSource: '/src/markdowns/03_Operators/Identity_operator.html',
         },
         {
-          articleTitle: 'Nonidentity (!==)',
+          articleTitle: 'Nonidentity <code>!==</code>',
           articleSource:
             '/src/markdowns/03_Operators/Nonidentity_operator.html',
         },
@@ -585,19 +588,19 @@ const operators = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Less than (<)',
+          articleTitle: 'Less than <code><</code>',
           articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
         },
         {
-          articleTitle: 'Greater than (>)',
+          articleTitle: 'Greater than <code>></code>',
           articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
         },
         {
-          articleTitle: 'Less than or equal (<=)',
+          articleTitle: 'Less than or equal <code><=</code>',
           articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
         },
         {
-          articleTitle: 'Greater than or equal (>=)',
+          articleTitle: 'Greater than or equal <code>>=</code>',
           articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
         },
         {
@@ -615,21 +618,22 @@ const operators = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Logical AND (&&)',
+          articleTitle: 'Logical AND <code>&&</code>',
           articleSource:
             '/src/markdowns/03_Operators/Logical_AND_operator.html',
         },
         {
-          articleTitle: 'Logical OR (||)',
+          articleTitle: 'Logical OR <code>||</code>',
           articleSource: '/src/markdowns/03_Operators/Logical_OR_operator.html',
         },
         {
-          articleTitle: 'Nullish coalescing (??)',
+          articleTitle: 'Nullish coalescing <code>??</code>',
           articleSource:
             '/src/markdowns/03_Operators/Nullish_coalescing_operator.html',
         },
         {
-          articleTitle: 'Short Circuiting with && and ||',
+          articleTitle:
+            'Short Circuiting with <code>&&</code> and <code>||</code>',
           articleSource: '/src/markdowns/03_Operators/Short_Circuiting.html',
         },
       ],
@@ -650,7 +654,7 @@ const operators = {
       ],
     },
     {
-      sectionTitle: 'Optional Chaining operator (?.)',
+      sectionTitle: 'Optional Chaining operator <code>?.</code>',
       sectionSource:
         '/src/markdowns/03_Operators/Optional_Chaining_operator.html',
       sectionArticles: [
@@ -719,11 +723,11 @@ const conditionalStatements = {
           articleSource: '',
         },
         {
-          articleTitle: 'Truthy values & logical AND operator (&&)',
+          articleTitle: 'Truthy values & logical AND operator <code>&&</code>',
           articleSource: '',
         },
         {
-          articleTitle: 'Falsy values & logical OR operator (||)',
+          articleTitle: 'Falsy values & logical OR operator <code>||</code>',
           articleSource: '',
         },
       ],
@@ -745,11 +749,11 @@ const conditionalStatements = {
         '/src/markdowns/04_Conditional_statements/The_Switch_Statement.html',
       sectionArticles: [
         {
-          articleTitle: 'The Switch Statement & "break" statement',
+          articleTitle: 'The Switch Statement & <code>break</code> statement',
           articleSource: '',
         },
         {
-          articleTitle: 'The Switch Statement & "default" statement',
+          articleTitle: 'The Switch Statement & <code>default</code> statement',
           articleSource: '',
         },
         {
@@ -808,7 +812,7 @@ const loops = {
           articleSource: '',
         },
         {
-          articleTitle: 'Destructuring in "for...of" statement',
+          articleTitle: 'Destructuring in <code>for...of</code> statement',
           articleSource: '',
         },
       ],
@@ -828,11 +832,11 @@ const loops = {
           articleSource: '',
         },
         {
-          articleTitle: '"for...in" vs Object.keys()',
+          articleTitle: '<code>for...in</code> vs <code>Object.keys()</code>',
           articleSource: '',
         },
         {
-          articleTitle: 'Destructuring in "for...in" statement',
+          articleTitle: 'Destructuring in <code>for...in</code> statement',
           articleSource: '',
         },
       ],
@@ -881,7 +885,7 @@ const functions = {
           articleSource: '',
         },
         {
-          articleTitle: 'Function Expressions: Storing Functions in Variables',
+          articleTitle: 'Function expressions: storing functions in variables',
           articleSource: '',
         },
         {
@@ -899,7 +903,7 @@ const functions = {
           articleSource: '',
         },
         {
-          articleTitle: 'Functions are First-class citizen in JavaScript',
+          articleTitle: 'Functions are first-class citizen in JavaScript',
           articleSource: '',
         },
         {
@@ -932,7 +936,7 @@ const functions = {
           articleSource: '',
         },
         {
-          articleTitle: 'Closures & Lexical Environment',
+          articleTitle: 'Closures & lexical environment',
           articleSource: '',
         },
         {
@@ -941,11 +945,11 @@ const functions = {
           articleSource: '',
         },
         {
-          articleTitle: 'Closures & Memory Efficiency',
+          articleTitle: 'Closures & memory efficiency',
           articleSource: '',
         },
         {
-          articleTitle: 'Closures & Encapsulation',
+          articleTitle: 'Closures & encapsulation',
           articleSource: '',
         },
       ],
@@ -955,15 +959,15 @@ const functions = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Function Expressions vs Function Declarations',
+          articleTitle: 'Function expressions vs Function declarations',
           articleSource: '',
         },
         {
-          articleTitle: 'Arrow Functions',
+          articleTitle: 'Arrow functions',
           articleSource: '',
         },
         {
-          articleTitle: 'Anonymous Functions',
+          articleTitle: 'Anonymous functions',
           articleSource: '',
         },
         {
@@ -973,7 +977,7 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Function return statement',
+      sectionTitle: 'Function <code>return</code> statement',
       sectionSource: '',
       sectionArticles: [
         {
@@ -987,26 +991,26 @@ const functions = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Parameter Rules',
+          articleTitle: 'Parameter rules',
           articleSource: '',
         },
         {
-          articleTitle: 'Default Parameters',
+          articleTitle: 'Default parameters',
           articleSource: '',
         },
         {
-          articleTitle: 'The Arguments Object',
+          articleTitle: 'The <code>arguments</code> object',
           articleSource: '',
         },
         {
           articleTitle:
-            'Arguments are <i>Passed by Value</i> vs Objects are <i>Passed by Reference</i>',
+            'Arguments are <i>passed by value</i> vs Objects are <i>passed by reference</i>',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'Rest Parameters',
+      sectionTitle: 'Rest parameters',
       sectionSource:
         '/src/markdowns/06_Functions/Rest_parameter_and_functions.html',
       sectionArticles: [
@@ -1017,7 +1021,7 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Destructuring Parameters',
+      sectionTitle: 'Destructuring parameters',
       sectionSource: '',
       sectionArticles: [
         {
@@ -1060,16 +1064,16 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Function invocation & "this" keyword',
+      sectionTitle: 'Function invocation & <code>this</code> keyword',
       sectionSource:
         '/src/markdowns/06_Functions/Function_invocation_&_this_keyword.html',
       sectionArticles: [
         {
-          articleTitle: `"this" is the object that the function is a property of`,
+          articleTitle: `<code>this</code> is the object that the function is a property of`,
           articleSource: '',
         },
         {
-          articleTitle: `The value of "this" is always set when the function is invoked, not when the function is declared`,
+          articleTitle: `The value of <code>this</code> is always set when the function is invoked, not when the function is declared`,
           articleSource: '',
         },
         {
@@ -1092,54 +1096,55 @@ const functions = {
         },
         {
           articleTitle:
-            'The 2 main benefits of "this": gives methods access to their object & execute the same function code for multiple objects',
+            'The 2 main benefits of <code>this</code>: gives methods access to their object & execute the same function code for multiple objects',
           articleSource: '',
         },
         {
-          articleTitle: `"this" acts as a placeholder for an object, and "this" we'll refer to whichever object called that function/method`,
+          articleTitle: `<code>this</code> acts as a placeholder for an object, and <code>this</code> we'll refer to whichever object called that function/method`,
           articleSource: '',
         },
         {
-          articleTitle: `"this" & Dynamic Scope vs Lexical Scope`,
+          articleTitle: `<code>this</code> & Dynamic Scope vs Lexical Scope`,
           articleSource: '',
         },
         {
-          articleTitle: `"this" is not lexically scoped, it doesn't matter where "this" is write in our code, it matters how the function was called`,
+          articleTitle: `<code>this</code> is not lexically scoped, it doesn't matter where <code>this</code> is write in our code, it matters how the function was called`,
           articleSource: '',
         },
         {
-          articleTitle: `"this" & arrow functions `,
+          articleTitle: `<code>this</code> & arrow functions `,
           articleSource: '',
         },
         {
-          articleTitle: `Arrow functions don't have their own "this". It will lexically bound "this" to the surrounding object`,
+          articleTitle: `Arrow functions don't have their own <code>this</code>. It will lexically bound <code>this</code> to the surrounding object`,
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'The "this" keyword & call(), apply() and bind()',
+      sectionTitle:
+        'The <code>this</code> keyword & <code>call()</code>, <code>apply()</code> and <code>bind()</code>',
       sectionSource:
         '/src/markdowns/06_Functions/The_this_keyword_&_call__apply__and__bind.html',
       sectionArticles: [
         {
           articleTitle:
-            'With call(), apply() and bind() you can assign a different "this" object when calling an existing function. Usually "this" refers to the current object (the calling object).',
+            'With <code>call()</code>, <code>apply()</code> and <code>bind()</code> you can assign a different <code>this</code> object when calling an existing function. Usually <code>this</code> refers to the current object (the calling object).',
           articleSource: '',
         },
         {
           articleTitle:
-            'call() method calls the function with a given "this" value and arguments provided individually',
+            '<code>call()</code> method calls the function with a given <code>this</code> value and arguments provided individually',
           articleSource: '',
         },
         {
           articleTitle:
-            'apply() method is similar to call(), the difference is with apply() you use an array instead of providing arguments individually',
+            '<code>apply()</code> method is similar to <code>call()</code>, the difference is with apply() you use an array instead of providing arguments individually',
           articleSource: '',
         },
         {
           articleTitle:
-            'bind() method creates a new function that, when called, has its "this" set to the provided value, with a given sequence of arguments preceding any provided when the new function is called',
+            '<code>bind()</code> method creates a new function that, when called, has its <code>this</code> set to the provided value, with a given sequence of arguments preceding any provided when the new function is called',
           articleSource: '',
         },
       ],
@@ -1156,19 +1161,19 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Arrow Functions',
+      sectionTitle: 'Arrow functions',
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'Arrow Functions: Implicit Returns',
+          articleTitle: 'Arrow functions: implicit returns',
           articleSource: '',
         },
         {
-          articleTitle: 'Arrow Functions and the "this" keyword',
+          articleTitle: 'Arrow functions and the <code>this</code> keyword',
           articleSource: '',
         },
         {
-          articleTitle: 'Regular Functions vs Arrow Functions',
+          articleTitle: 'Regular functions vs arrow functions',
           articleSource: '',
         },
       ],
@@ -1210,7 +1215,7 @@ const arraysAndSets = {
           articleSource: '',
         },
         {
-          articleTitle: 'Arrays length property',
+          articleTitle: 'Arrays <code>length</code> property',
           articleSource: '',
         },
         {
@@ -1222,7 +1227,7 @@ const arraysAndSets = {
           articleSource: '',
         },
         {
-          articleTitle: 'Accessing every item / Iterating over arrays',
+          articleTitle: 'Accessing every item / iterating over arrays',
           articleSource: '',
         },
         {
@@ -1304,7 +1309,7 @@ const arraysAndSets = {
       ],
     },
     {
-      sectionTitle: 'Array.prototype Methods',
+      sectionTitle: '<code>Array.prototype</code> Methods',
       sectionSource: '',
       sectionArticles: [
         {
@@ -1504,16 +1509,17 @@ const objectsAndMaps = {
           articleSource: '',
         },
         {
-          articleTitle: "Accesing object's properties (. vs [] notation)",
+          articleTitle:
+            "Accesing object's properties <code>.</code> vs <code>[]</code> notation",
           articleSource: '',
         },
         {
-          articleTitle: 'Special Key Names & Square Bracket Property Access',
+          articleTitle: 'Special key names & square bracket property access',
           articleSource: '',
         },
         {
           articleTitle:
-            'Dynamic Property Access & Setting Properties Dynamically',
+            'Dynamic property access & setting properties dynamically',
           articleSource: '',
         },
         {
@@ -1521,13 +1527,13 @@ const objectsAndMaps = {
           articleSource: '',
         },
         {
-          articleTitle: 'Shorthand Property Syntax',
+          articleTitle: 'Shorthand property syntax',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: `Object methods and the 'this' keyword`,
+      sectionTitle: `Object methods and the <code>this</code> keyword`,
       sectionSource: '',
       sectionArticles: [
         {
@@ -1605,7 +1611,7 @@ const objectsAndMaps = {
       ],
     },
     {
-      sectionTitle: 'Object.prototype Methods',
+      sectionTitle: '<code>Object.prototype</code> Methods',
       sectionSource: '',
       sectionArticles: [
         {
@@ -1769,15 +1775,16 @@ const oop = {
         },
         {
           articleTitle:
-            'Every object in JavaScript has a built-in property (__proto__) which is called its prototype',
+            'Every object in JavaScript has a built-in property <code>__proto__</code> which is called its prototype',
           articleSource: '',
         },
         {
-          articleTitle: `The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has "null" for its own prototype`,
+          articleTitle: `The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has <code>null</code> for its own prototype`,
           articleSource: '',
         },
         {
-          articleTitle: 'Only functions have the prototype property',
+          articleTitle:
+            'Only functions have the <code>prototype</code> property',
           articleSource: '',
         },
         {
@@ -1787,7 +1794,7 @@ const oop = {
         },
         {
           articleTitle:
-            'Setting a prototype: Object.create(), Constructors and ES6 Classes',
+            'Setting a prototype: <code>Object.create()</code>, Constructors and ES6 Classes',
           articleSource: '',
         },
         {
@@ -1795,13 +1802,14 @@ const oop = {
           articleSource: '',
         },
         {
-          articleTitle: 'Prototypes & Memory Efficiency',
+          articleTitle: 'Prototypes & memory efficiency',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'What is the difference between __proto__ and prototype?',
+      sectionTitle:
+        'What is the difference between <code>__proto__</code> and <code>prototype</code>?',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Difference_between_proto_and_prototype.html',
       sectionArticles: [
@@ -1832,7 +1840,7 @@ const oop = {
         },
         {
           articleTitle:
-            'A Constructor Function is just a function called using the "new" operator',
+            'A Constructor Function is just a function called using the <code>new</code> operator',
           articleSource: '',
         },
         {
@@ -1841,11 +1849,11 @@ const oop = {
           articleSource: '',
         },
         {
-          articleTitle: `You can't create a Constructor Function with the arrow function because arrow function doesn't have its own "this" keyword`,
+          articleTitle: `You can't create a Constructor Function with the arrow function because arrow function doesn't have its own <code>this</code> keyword`,
           articleSource: '',
         },
         {
-          articleTitle: `In a Constructor Function "this" does not have a value. It is a substitute for the new object. The value of "this" will become the new object when a new object is created`,
+          articleTitle: `In a Constructor Function <code>this</code> does not have a value. It is a substitute for the new object. The value of <code>this</code> will become the new object when a new object is created`,
           articleSource: '',
         },
         {
@@ -1860,12 +1868,13 @@ const oop = {
       ],
     },
     {
-      sectionTitle: 'Prototypal Inheritance: Object.create() & Prototypes',
+      sectionTitle:
+        'Prototypal Inheritance: <code>Object.create()</code> & Prototypes',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Object.create().html',
       sectionArticles: [
         {
-          articleTitle: 'Setting a prototype with Object.create()',
+          articleTitle: 'Setting a prototype with <code>Object.create()</code>',
           articleSource: '',
         },
         {
@@ -1932,11 +1941,11 @@ const oop = {
           articleSource: '',
         },
         {
-          articleTitle: '"super" keyword',
+          articleTitle: '<code>super</code> keyword',
           articleSource: '',
         },
         {
-          articleTitle: '"new" keyword',
+          articleTitle: '<code>new</code> keyword',
           articleSource: '',
         },
         {
@@ -2114,7 +2123,7 @@ const standardBuildInObjects = {
         '/src/markdowns/10_Standard_Build-In_Objects/Introduction_to_Standard_Build-in_Objects.html',
       sectionArticles: [
         {
-          articleTitle: 'Global objects vs Global Object (window)',
+          articleTitle: 'Global objects vs Global Object <code>window</code>',
           articleSource: '',
         },
         {
@@ -2129,16 +2138,17 @@ const standardBuildInObjects = {
       sectionArticles: [
         {
           articleTitle:
-            'Creating strings as primitives: string literals & String() function',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Creating strings as objects: String() constructor',
+            'Creating strings as primitives: string literals & <code>String()</code> function',
           articleSource: '',
         },
         {
           articleTitle:
-            'String() function and String() constructor produce different results',
+            'Creating strings as objects: <code>String()</code> constructor',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            '<code>String()</code> function and <code>String()</code> constructor produce different results',
           articleSource: '',
         },
         {
@@ -2157,7 +2167,7 @@ const standardBuildInObjects = {
         },
         {
           articleTitle:
-            'String coercion: template literals, String() function, + operator',
+            'String coercion: template literals, <code>String()</code> function, <code>+</code> operator',
           articleSource: '',
         },
         {
@@ -2175,7 +2185,7 @@ const standardBuildInObjects = {
       ],
     },
     {
-      sectionTitle: 'String.prototype properties & methods',
+      sectionTitle: '<code>String.prototype</code> properties & methods',
       sectionSource: '',
       sectionArticles: [
         {
@@ -2259,16 +2269,17 @@ const standardBuildInObjects = {
       sectionArticles: [
         {
           articleTitle:
-            'Creating numbers as primitives: literal form & Number() function',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Creating numbers as objects: Number() constructor',
+            'Creating numbers as primitives: literal form & <code>Number()</code> function',
           articleSource: '',
         },
         {
           articleTitle:
-            'Number() function and Number() constructor produce different results',
+            'Creating numbers as objects: <code>Number()</code> constructor',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            '<code>Number()</code> function and <code>Number()</code> constructor produce different results',
           articleSource: '',
         },
         {
@@ -2278,12 +2289,12 @@ const standardBuildInObjects = {
         },
         {
           articleTitle:
-            "Number encoding: there are some limits to the stored number's magnitude and precision. Integers can only be represented without loss of precision in the range -253 + 1 to 253 - 1",
+            "Number encoding: there are some limits to the stored number's magnitude and precision. Integers can only be represented without loss of precision in the range <code>-253 + 1</code> to <code>253 - 1</code>",
           articleSource: '',
         },
         {
           articleTitle:
-            'Number coercion: Addition operator (+) & Number() function',
+            'Number coercion: Addition operator <code>+</code> & <code>Number()</code> function',
           articleSource: '',
         },
       ],
@@ -2320,7 +2331,7 @@ const standardBuildInObjects = {
       ],
     },
     {
-      sectionTitle: 'Number.prototype Methods',
+      sectionTitle: '<code>Number.prototype</code> Methods',
       sectionSource: '',
       sectionArticles: [
         {
@@ -2336,15 +2347,16 @@ const standardBuildInObjects = {
       sectionArticles: [
         {
           articleTitle:
-            'Unlike many other global objects, "Math" is not a constructor',
+            'Unlike many other global objects, <code>Math</code> is not a constructor',
           articleSource: '',
         },
         {
-          articleTitle: 'All properties and methods of "Math" are static',
+          articleTitle:
+            'All properties and methods of <code>Math</code> are static',
           articleSource: '',
         },
         {
-          articleTitle: `"Math" works with the Number type, it doesn't work with BigInt`,
+          articleTitle: `<code>Math</code> works with the Number type, it doesn't work with <code>BigInt</code>`,
           articleSource: '',
         },
       ],
@@ -2421,32 +2433,33 @@ const standardBuildInObjects = {
         },
         {
           articleTitle:
-            'The Date() constructor can create a "Date" instance <i>or</i> return a string representing the current time',
+            'The <code>Date()</code> constructor can create a <code>Date</code> instance <i>or</i> return a string representing the current time',
           articleSource: '',
         },
         {
           articleTitle:
-            'When Date() is called as a constructor (with the "new" keyword), returns a new "Date" object',
+            'When <code>Date()</code> is called as a constructor (with the <code>new</code> keyword), returns a new <code>Date</code> object',
           articleSource: '',
         },
         {
           articleTitle:
-            'When Date() is called as a function, returns a string representation of the current date and time',
-          articleSource: '',
-        },
-        {
-          articleTitle: '"Date" constructor static method: Date.now()',
+            'When <code>Date()</code> is called as a function, returns a string representation of the current date and time',
           articleSource: '',
         },
         {
           articleTitle:
-            'Date.now() returns the numeric value corresponding to the current time — the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored',
+            '<code>Date</code> constructor static method: <code>Date.now()</code>',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            '<code>Date.now()</code> returns the numeric value corresponding to the current time — the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'Date.prototype Methods',
+      sectionTitle: '<code>Date.prototype</code> Methods',
       sectionSource: '',
       sectionArticles: [
         {
@@ -2512,17 +2525,17 @@ const standardBuildInObjects = {
       sectionArticles: [
         {
           articleTitle:
-            'The "Intl" object provides access to several constructors that do language sensitive string comparison, number formatting, and date and time formatting',
+            'The <code>Intl</code> object provides access to several constructors that do language sensitive string comparison, number formatting, and date and time formatting',
           articleSource: '',
         },
         {
           articleTitle:
-            'All "Intl" constructors accept "locales" and "options" arguments, for use pattern to identifying locales and determining the one they will actually use',
+            'All <code>Intl</code> constructors accept <code>locales</code> and <code>options</code> arguments, for use pattern to identifying locales and determining the one they will actually use',
           articleSource: '',
         },
         {
           articleTitle:
-            'You can use "navigator.language" read-only property for setting your "locales" parameter',
+            'You can use <code>navigator.language</code> read-only property for setting your <code>locales</code> parameter',
           articleSource: '',
         },
       ],
@@ -2558,11 +2571,12 @@ const standardBuildInObjects = {
           articleSource: '',
         },
         {
-          articleTitle: 'Error Constructor',
+          articleTitle: '<code>Error</code> Constructor',
           articleSource: '',
         },
         {
-          articleTitle: 'Error instance properties: message, name, cause',
+          articleTitle:
+            'Error instance properties: <code>message</code>, <code>name</code>, <code>cause</code>',
           articleSource: '',
         },
       ],
@@ -2572,7 +2586,7 @@ const standardBuildInObjects = {
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'new FormData()',
+          articleTitle: '<code>new FormData()</code>',
           articleSource: '',
         },
       ],
@@ -2625,7 +2639,8 @@ const asynchronous = {
           articleSource: '',
         },
         {
-          articleTitle: 'APIs based on HTTP: XMLHttpRequest & Fetch API',
+          articleTitle:
+            'APIs based on HTTP: <code>XMLHttpRequest</code> & <code>Fetch API</code>',
           articleSource: '',
         },
       ],
@@ -2655,7 +2670,7 @@ const asynchronous = {
         },
         {
           articleTitle:
-            'Early Asynchronous Programming & Event Handlers: early asynchronous APIs (XMLHttpRequest) used events for asynchronous programming',
+            'Early Asynchronous Programming & Event Handlers: early asynchronous APIs <code>XMLHttpRequest</code> used events for asynchronous programming',
           articleSource: '',
         },
         {
@@ -2677,7 +2692,8 @@ const asynchronous = {
           articleSource: '',
         },
         {
-          articleTitle: 'The XMLHttpRequest API is the core of AJAX',
+          articleTitle:
+            'The <code>XMLHttpRequest API</code> is the core of AJAX',
           articleSource: '',
         },
         {
@@ -2686,7 +2702,7 @@ const asynchronous = {
         },
         {
           articleTitle:
-            'Useful JavaScript methods for JSON format: JSON.parse() & JSON.stringify()',
+            'Useful JavaScript methods for JSON format: <code>JSON.parse()</code> & <code>JSON.stringify()</code>',
           articleSource: '',
         },
         {
@@ -2732,17 +2748,17 @@ const asynchronous = {
       sectionArticles: [
         {
           articleTitle:
-            'The Promise() constructor is primarily used to wrap functions that do not already support promises',
+            'The <code>Promise()</code> constructor is primarily used to wrap functions that do not already support promises',
           articleSource: '',
         },
         {
           articleTitle:
-            'If your task is already promise-based, you likely do not need the Promise() constructor',
+            'If your task is already promise-based, you likely do not need the <code>Promise()</code> constructor',
           articleSource: '',
         },
         {
           articleTitle:
-            'the Promise() constructor returns a promise object to which you can attach handlers for consuming the promise',
+            'The <code>Promise()</code> constructor returns a promise object to which you can attach handlers for consuming the promise',
           articleSource: '',
         },
       ],
@@ -2758,26 +2774,26 @@ const asynchronous = {
         },
         {
           articleTitle:
-            'Handling Fulfilled Promise: then() method (callback function with "response" parameter)',
+            'Handling Fulfilled Promise: <code>.then()</code> method (callback function with <code>response</code> parameter)',
           articleSource: '',
         },
         {
           articleTitle:
-            'Handling Rejected Promise: catch() method (callback function with "error" parameter)',
+            'Handling Rejected Promise: <code>.catch()</code> method (callback function with <code>error</code> parameter)',
           articleSource: '',
         },
         {
           articleTitle:
-            'Chaining Multiple Promises: then(), catch() and finally() methods are used to associate further action with a promise that becomes settled. These methods return promises, so they can be chained',
+            'Chaining Multiple Promises: <code>.then()</code>, <code>.catch()</code> and <code>.finally()</code> methods are used to associate further action with a promise that becomes settled. These methods return promises, so they can be chained',
           articleSource: '',
         },
         {
           articleTitle:
-            "Always return the result of a promise, otherwise .then() method won't catch the result of the previous promise",
+            "Always return the result of a promise, otherwise <code>.then()</code> method won't catch the result of the previous promise",
           articleSource: '',
         },
         {
-          articleTitle: 'finally() method (callback function)',
+          articleTitle: '<code>.finally()</code> method (callback function)',
           articleSource: '',
         },
       ],
@@ -2793,15 +2809,16 @@ const asynchronous = {
         },
         {
           articleTitle:
-            'For making a request and fetching a resource use the fetch() method',
+            'For making a request and fetching a resource use the <code>fetch()</code> method',
           articleSource: '',
         },
         {
-          articleTitle: 'The fetch() method always return a promise',
+          articleTitle:
+            'The <code>fetch()</code> method always return a promise',
           articleSource: '',
         },
         {
-          articleTitle: `The promise returned from fetch() won't reject on HTTP error status even if the response is an HTTP 404 or 500`,
+          articleTitle: `The promise returned from <code>fetch()</code> won't reject on HTTP error status even if the response is an HTTP 404 or 500`,
           articleSource: '',
         },
       ],
@@ -2813,22 +2830,22 @@ const asynchronous = {
       sectionArticles: [
         {
           articleTitle:
-            'fetch() will always return a promise that need to be handled by consuming it',
+            '<code>fetch()</code> will always return a promise that need to be handled by consuming it',
           articleSource: '',
         },
         {
           articleTitle:
-            'Read the response returned by fetch() with: Response.json(), Response.text(), Response.formData()',
+            'Read the response returned by <code>fetch()</code> with: <code>Response.json()</code>, <code>Response.text()</code>, <code>Response.formData()</code>',
           articleSource: '',
         },
         {
           articleTitle:
-            'Response.json(), Response.text(), Response.formData() always return a promise',
+            '<code>Response.json()</code>, <code>Response.text()</code>, <code>Response.formData()</code> always return a promise',
           articleSource: '',
         },
         {
           articleTitle:
-            'Throwing Custom Errors Manually: the "Error" Object & throw new Error()',
+            'Throwing Custom Errors Manually: the <code>Error</code> Object & <code>throw new Error()</code>',
           articleSource: '',
         },
         {
@@ -2837,7 +2854,7 @@ const asynchronous = {
         },
         {
           articleTitle:
-            'Combining multiple promises with "Promise.all" or "Promise.any" and consume them',
+            'Combining multiple promises with <code>Promise.all</code> or <code>Promise.any</code> and consume them',
           articleSource: '',
         },
       ],
@@ -2847,44 +2864,45 @@ const asynchronous = {
       sectionSource: '/src/markdowns/11_Asynchronous/async_&_await.html',
       sectionArticles: [
         {
-          articleTitle: 'async functions',
+          articleTitle: '<code>async</code> functions',
           articleSource: '',
         },
         {
-          articleTitle: 'await operator',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The purpose of async/await is to simplify the syntax necessary to consume promise-based APIs',
+          articleTitle: '<code>await</code> operator',
           articleSource: '',
         },
         {
           articleTitle:
-            'async/await enables you to write code that uses asynchronous functions but looks like synchronous code',
+            'The purpose of <code>async/await</code> is to simplify the syntax necessary to consume promise-based APIs',
           articleSource: '',
         },
         {
           articleTitle:
-            'async/await help you to avoid the need to explicitly configure promise chains, like you used to do with then() and catch()',
-          articleSource: '',
-        },
-        {
-          articleTitle: `Just like a promise chain, "await" forces asynchronous operations to be completed in series. This is necessary if the result of the next operation depends on the result of the last one, but if that's not the case then something like "Promise.all" will be more performant`,
+            '<code>async/await</code> enables you to write code that uses asynchronous functions but looks like synchronous code',
           articleSource: '',
         },
         {
           articleTitle:
-            'Async functions always return a promise. If the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise',
+            '<code>async/await</code> help you to avoid the need to explicitly configure promise chains, like you used to do with <code>.then()</code> and <code>.catch()</code>',
+          articleSource: '',
+        },
+        {
+          articleTitle: `Just like a promise chain, <code>await</code> forces asynchronous operations to be completed in series. This is necessary if the result of the next operation depends on the result of the last one, but if that's not the case then something like <code>Promise.all</code> will be more performant`,
           articleSource: '',
         },
         {
           articleTitle:
-            'You can only use "await" inside an "async" function, unless your code is in a JavaScript module',
+            '<code>async</code> functions always return a promise. If the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise',
           articleSource: '',
         },
         {
-          articleTitle: 'You can use multiple awaits in an async function',
+          articleTitle:
+            'You can only use <code>await</code> inside an <code>async</code> function, unless your code is in a JavaScript module',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'You can use multiple <code>await</code> in an <code>async</code> function',
           articleSource: '',
         },
         {
@@ -2893,31 +2911,31 @@ const asynchronous = {
         },
         {
           articleTitle:
-            'Error Handling in Async Functions: try {} catch(error) {}',
+            'Error Handling in Async Functions: <code>try {} catch(error) {}</code>',
           articleSource: '',
         },
         {
           articleTitle:
-            'Rethrowing an error when you have multiple async functions',
+            'Rethrowing an error when you have multiple <code>async</code> functions',
           articleSource: '',
         },
         {
-          articleTitle: 'Returning values from async functions',
+          articleTitle: 'Returning values from <code>async</code> functions',
           articleSource: '',
         },
         {
           articleTitle:
-            'async/await is only syntactic sugar over "Raw Promises"',
+            '<code>async/await</code> is only syntactic sugar over "Raw Promises"',
           articleSource: '',
         },
         {
-          articleTitle: 'Top-Level "await" (ES2022)',
+          articleTitle: 'Top-Level <code>await</code> (ES2022)',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'Promise.prototype Methods',
+      sectionTitle: '<code>Promise.prototype</code> Methods',
       sectionSource: '',
       sectionArticles: [
         {
@@ -3063,7 +3081,8 @@ const domManipulation = {
           articleSource: '',
         },
         {
-          articleTitle: 'Accessing the DOM: "document" & "window" object',
+          articleTitle:
+            'Accessing the DOM: <code>document</code> & <code>window</code> object',
           articleSource: '',
         },
         {
@@ -3111,7 +3130,7 @@ const domManipulation = {
         },
         {
           articleTitle:
-            'DOM Nodes are just JavaScript objects in the end - i.e. reference values. Methods like "querySelector()" or "querySelectorAll()" return the object references (addresses)',
+            'DOM Nodes are just JavaScript objects in the end - i.e. reference values. Methods like <code>querySelector()</code> or <code>querySelectorAll()</code> return the object references (addresses)',
           articleSource: '',
         },
         {
@@ -3253,15 +3272,15 @@ const domManipulation = {
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Tips_for_create_insert_and_remove_elements.html',
       sectionArticles: [
         {
-          articleTitle: `If you have a created or selected element, either because you selected it in the DOM with "querySelector()" or you created it with "createElement()" and that element is already part of the DOM, so it is already rendered, if you then insert it somewhere else in the DOM, that element is NOT COPIED or anything like that, instead the existing element is DETACHED from the place where it was and moved to the new place. This actually makes a lot of sense since objects are reference values as you learned, and the DOM objects you're working are normal objects in the end, and therefore if we do something with them and we add them somewhere else, we always work with the same object`,
+          articleTitle: `If you have a created or selected element, either because you selected it in the DOM with <code>querySelector()</code> or you created it with <code>createElement()</code> and that element is already part of the DOM, so it is already rendered, if you then insert it somewhere else in the DOM, that element is NOT COPIED or anything like that, instead the existing element is DETACHED from the place where it was and moved to the new place. This actually makes a lot of sense since objects are reference values as you learned, and the DOM objects you're working are normal objects in the end, and therefore if we do something with them and we add them somewhere else, we always work with the same object`,
           articleSource: '',
         },
         {
-          articleTitle: `If you want a brand new element, you have to create a brand new one with "document.createElement()". Just keep in mind that inserting the same element multiple times will move it, because we're working with objects and not with some automatically copied things`,
+          articleTitle: `If you want a brand new element, you have to create a brand new one with <code>document.createElement()</code>. Just keep in mind that inserting the same element multiple times will move it, because we're working with objects and not with some automatically copied things`,
           articleSource: '',
         },
         {
-          articleTitle: `Important (no matter how you insert elements): whenever you insert elements, you MOVE the element to that new place, if you already inserted it before. It's NOT COPIED (you can copy an element via "Node.cloneNode(true)" though)`,
+          articleTitle: `Important (no matter how you insert elements): whenever you insert elements, you MOVE the element to that new place, if you already inserted it before. It's NOT COPIED (you can copy an element via <code>Node.cloneNode(true)</code> though)`,
           articleSource: '',
         },
       ],
@@ -3586,71 +3605,113 @@ const domEvents = {
           articleSource: '',
         },
         {
-          articleTitle: 'addEventListener() & removeEventListener()',
+          articleTitle:
+            'The recommended mechanism for register event listeners: <code>addEventListener()</code>',
           articleSource: '',
         },
         {
-          articleTitle: 'Events on multiple elements',
+          articleTitle:
+            '<code>addEventListener()</code> method allows you to add many events to the same element, without overwriting existing events',
           articleSource: '',
         },
         {
-          articleTitle: 'Event handler functions & "this" keyword',
+          articleTitle:
+            '<code>addEventListener()</code> method allows you to add event listeners on any HTML DOM object, such as HTML elements, the HTML document, the <code>window</code> object, or other objects that support events, like the <code>xmlHttpRequest</code> object',
           articleSource: '',
         },
         {
-          articleTitle: 'Passing arguments to event handlers',
+          articleTitle:
+            'The value of <code>this</code> within the handler function',
           articleSource: '',
         },
         {
-          articleTitle: 'Lifecycle DOM events',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'More about addEventListener()',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
-    },
-    {
-      sectionTitle: 'More about removeEventListener()',
-      sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
+          articleTitle: 'Getting data into and out of an event listener',
           articleSource: '',
         },
       ],
     },
     {
       sectionTitle: 'The Event Object',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/The_Event_object.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle: `Sometimes, inside an event handler function, you'll see a parameter specified with a name such as <code>event</code>, <code>evt</code> or <code>e</code>. This is called the <code>Event</code> object, and it is automatically passed to event handlers to provide extra features and information`,
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The parameter <code>e/evt/event</code> is an <code>Event</code> object, and it represents the event being fired which caused your function to be executed',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The parameter <code>e/evt/event</code> only exists when an event happens',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Most event objects have a standard set of properties and methods available on the <code>Event</code> object, but some event objects add extra properties that are relevant to that particular type of event',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'When an event occurs in HTML, the event belongs to a certain event object. All event objects are based on the <code>Event</code> object',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Submit event & <code>e.preventDefault()</code>',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            '<code>Event.target</code> vs <code>Event.currentTarget</code>',
           articleSource: '',
         },
       ],
     },
     {
       sectionTitle: 'Event Propagation & Delegation',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Event_propagation_&_delegation.html',
       sectionArticles: [
         {
-          articleTitle: 'Bubbling',
+          articleTitle:
+            'Event propagation is a way of defining the element order when an event occurs',
           articleSource: '',
         },
         {
-          articleTitle: 'Capturing',
+          articleTitle:
+            'Event propagation: capturing phase, target phase & bubbling phase',
           articleSource: '',
         },
         {
-          articleTitle: 'Stop propagation with e.stopPropagation()',
+          articleTitle:
+            'Event bubbling and capture are terms that describe phases in how the browser handles events targeted at nested elements',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            "In capturing phase the outer most element's event is handled first and then the inner",
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            "In bubbling phase the inner most element's event is handled first and then the outer",
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'With the <code>addEventListener()</code> method you can specify the propagation type by using the <code>useCapture</code> parameter: <code>false</code> - bubbling phase vs <code>true</code> - capturing phase',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'Stop propagation with <code>e.stopPropagation()</code>',
+          articleSource: '',
+        },
+        {
+          articleTitle: 'Not all events bubble',
           articleSource: '',
         },
       ],
