@@ -3727,9 +3727,9 @@ const domEvents = {
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___click.html',
         },
         {
-          articleTitle: 'Document & Element: scroll',
+          articleTitle: 'Element: blur',
           articleSource:
-            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___scroll.html',
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___blur.html',
         },
         {
           articleTitle: 'Element: wheel',
@@ -3737,41 +3737,46 @@ const domEvents = {
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___wheel.html',
         },
         {
-          articleTitle: 'mouseout',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'mouseover vs mouseenter vs mousemove',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'keypress, keyup, keydown',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'input',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'change',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'hashchange',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'load',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Element: blur',
+          articleTitle: 'Document & Element: scroll',
           articleSource:
-            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___blur.html',
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___scroll.html',
         },
         {
-          articleTitle: 'Form events & preventDefault',
-          articleSource: '',
+          articleTitle:
+            'Mouse Events: mouseout, mouseover, mouseenter & mousemove',
+          articleSource:
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___mouse.html',
+        },
+        {
+          articleTitle:
+            'Keyboard Events: keyup, keydown, <i>keypress(deprecated)</i>',
+          articleSource:
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___keyboard.html',
+        },
+        {
+          articleTitle: 'HTMLElement: input',
+          articleSource:
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___input.html',
+        },
+        {
+          articleTitle: 'HTMLElement: change',
+          articleSource:
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___change.html',
+        },
+        {
+          articleTitle: 'HTMLFormElement: submit',
+          articleSource:
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___submit.html',
+        },
+        {
+          articleTitle: 'Window: hashchange',
+          articleSource:
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___hashchange.html',
+        },
+        {
+          articleTitle: 'Window: load',
+          articleSource:
+            '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___load.html',
         },
       ],
     },
