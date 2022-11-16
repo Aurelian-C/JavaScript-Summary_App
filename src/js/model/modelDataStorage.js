@@ -3788,50 +3788,90 @@ const otherWebAPIs = {
   sections: [
     {
       sectionTitle: 'The Intersection Observer API',
-      sectionSource: `/src/markdowns/14_Others_Web_APIs/Intersection_Observer_API.html`,
+      sectionSource:
+        '/src/markdowns/14_Others_Web_APIs/Intersection_Observer_API.html',
       sectionArticles: [
         {
-          articleTitle: '',
+          articleTitle:
+            "The Intersection Observer API provides a way to <i>asynchronously observe changes in the intersection</i> of a target element with an ancestor element, or with a top-level document's viewport",
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'The Intersection Observer API lets code register a <i>callback function</i> that is executed whenever an element they wish to monitor enters or exits another element (or the viewport)',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'navigator',
-      sectionSource: '',
+      sectionTitle: 'Navigator',
+      sectionSource: '/src/markdowns/14_Others_Web_APIs/Navigator.html',
       sectionArticles: [
         {
-          articleTitle: 'navigator.language',
+          articleTitle:
+            'The <code>Navigator</code> interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities',
           articleSource: '',
         },
         {
-          articleTitle: 'navigator.geolocation.getCurrentPosition()',
+          articleTitle: '<code>navigator.language</code>',
+          articleSource: '',
+        },
+        {
+          articleTitle: '<code>navigator.languages</code>',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            '<code>navigator.geolocation.getCurrentPosition()</code>',
+          articleSource: '',
+        },
+        {
+          articleTitle: '<code>navigator.geolocation.watchPosition()</code>',
+          articleSource: '',
+        },
+        {
+          articleTitle: '<code>navigator.geolocation.clearWatch()</code>',
           articleSource: '',
         },
       ],
     },
     {
-      sectionTitle: 'localStorage',
-      sectionSource: '',
+      sectionTitle: 'Storage',
+      sectionSource: '/src/markdowns/14_Others_Web_APIs/Storage.html',
       sectionArticles: [
         {
-          articleTitle: 'localStorage.setItem()',
+          articleTitle:
+            "The <code>Storage</code> interface provides access to a particular domain's <i>session</i> or <i>local</i> storage",
           articleSource: '',
         },
         {
-          articleTitle: 'localStorage.getItem()',
+          articleTitle:
+            'The <code>localStorage</code> read-only property of the <code>window</code> interface allows you to access a <code>Storage</code> object',
           articleSource: '',
         },
         {
-          articleTitle: 'localStorage.removeItem()',
+          articleTitle: '<code>localStorage.setItem()</code>',
           articleSource: '',
         },
         {
           articleTitle: 'JSON.stringify()',
+          articleSource:
+            '/src/markdowns/14_Others_Web_APIs/JSON.stringify.html',
+        },
+        {
+          articleTitle: '<code>localStorage.getItem()</code>',
           articleSource: '',
         },
         {
           articleTitle: 'JSON.parse()',
+          articleSource: '/src/markdowns/14_Others_Web_APIs/JSON.parse.html',
+        },
+        {
+          articleTitle: '<code>localStorage.removeItem()</code>',
+          articleSource: '',
+        },
+        {
+          articleTitle: '<code>localStorage.clear()</code>',
           articleSource: '',
         },
       ],

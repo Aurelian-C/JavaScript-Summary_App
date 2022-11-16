@@ -15,17 +15,17 @@ Historically, ==detecting visibility of an element==, or the ==relative visibili
 
 Consider a web page that uses infinite scrolling. It uses a vendor-provided library to manage the advertisements placed periodically throughout the page, has animated graphics here and there, and uses a custom library that draws notification boxes and the like. Each of these has its own intersection detection routines, all running on the main thread. The author of the web site may not even realize this is happening, since they may know very little about the inner workings of the two libraries they are using. As the user scrolls the page, these intersection detection routines are firing constantly during the scroll handling code, resulting in an experience that leaves the user frustrated with the browser, the web site, and their computer.
 
-## IntersectionObserver API
+## Intersection Observer API
 
-The IntersectionObserver API lets code register a ==**callback function**== that is ==executed whenever an element they wish to monitor enters or exits another element (or the viewport)==, or ==when the amount by which the two intersect changes by a requested amount==. This way, *sites no longer need to do anything on the main thread to watch for this kind of element intersection, and the browser is free to optimize the management of intersections as it sees fit*.
+The Intersection Observer API lets code register a ==**callback function**== that is ==executed whenever an element they wish to monitor enters or exits another element (or the viewport)==, or ==when the amount by which the two intersect changes by a requested amount==. This way, *sites no longer need to do anything on the main thread to watch for this kind of element intersection, and the browser is free to optimize the management of intersections as it sees fit*.
 
-One thing the IntersectionObserver API can't tell you: the exact number of pixels that overlap or specifically which ones they are; however, it covers the much more common use case of "If they intersect by somewhere around N%, I need to do something".
+One thing the Intersection Observer API can't tell you: the exact number of pixels that overlap or specifically which ones they are; however, it covers the much more common use case of "If they intersect by somewhere around N%, I need to do something".
 
 ## IntersectionObserver concepts and usage
 
-The IntersectionObserver API allows you to ==**configure a callback**== that is *called when either of these circumstances occur*:
+The Intersection Observer API allows you to ==**configure a callback**== that is *called when either of these circumstances occur*:
 
-- ==A **target element** _intersects_ either the device's **viewport** or a **specified element**==. That specified element is called the ==**root element**== or root for the purposes of the IntersectionObserver API.
+- ==A **target element** _intersects_ either the device's **viewport** or a **specified element**==. That specified element is called the ==**root element**== or root for the purposes of the Intersection Observer API.
 - The first time the observer is initially asked to watch a target element.
 
 Typically, you'll want to watch for intersection changes with regard to the target element's closest scrollable ancestor, or, if the target element isn't a descendant of a scrollable element, the device's viewport.
@@ -56,9 +56,9 @@ new IntersectionObserver(callback, options);
 
 _A new `IntersectionObserver` which can be used to watch for the visibility of a target element within the specified `root`_ crossing through any of the specified visibility `thresholds`. Call its `observe()` method to begin watching for the visibility changes on a given target.
 
-## Creating an IntersectionObserver
+## Creating an `IntersectionObserver`
 
-You create the IntersectionObserver by ==calling its **constructor**== and ==passing it a **callback function**== that will get called each time that the ==**observed element** (target element)== is intersecting the ==**root element**== at the ==threshold== that you defined, no matter if we are scrolling up, down, left or right. This callback function will get called with two arguments, and that's the ```entries``` and the ```observer``` object itself.
+You create the `IntersectionObserver` by ==calling its **constructor**== and ==passing it a **callback function**== that will get called each time that the ==**observed element** (target element)== is intersecting the ==**root element**== at the ==threshold== that you defined, no matter if we are scrolling up, down, left or right. This callback function will get called with two arguments, and that's the ```entries``` and the ```observer``` object itself.
 
 ```js
 const targetElement = document.querySelector('anyCCSselector')
@@ -78,7 +78,7 @@ const observer = new IntersectionObserver(callback, options);
 observer.observe(targetElement);
 ```
 
-## IntersectionObserver callback
+## `IntersectionObserver` callback
 
 The `callback` function will get called with two arguments and that's the ```entries``` array and the ```observer object``` itself ( `new IntersectionObserver()`):
 
@@ -116,7 +116,7 @@ The list of entries received by the callback includes one entry for each target 
 
 The `callback` function will get called each time that the **observed element** _(target element) is intersecting the_ **root element** _at the threshold that we defined, no matter if we are scrolling up or down_.
 
-## IntersectionObserver options
+## `IntersectionObserver` options
 
 The `options` object passed into the `IntersectionObserver()` constructor let you ==control the circumstances under which the observer's callback is invoked==. It has the following fields:
 
@@ -139,9 +139,9 @@ observer.observe(targetElement);
 
 Whenever the target meets a threshold specified for the `IntersectionObserver`, the callback is invoked. Also, note that if you specified the `root` option, ==**the target must be a descendant of the root element**==.
 
-## IntersectionObserver methods
+## `IntersectionObserver` methods
 
-The primary interface for the IntersectionObserver API. Provides **methods** for **creating and managing an observer** which can watch any number of target elements for the same intersection configuration. Each observer can asynchronously observe changes in the intersection between one or more target elements and a shared ancestor element or with their top-level Document's viewport. The ancestor or viewport is referred to as the root.
+The primary interface for the Intersection Observer API. Provides **methods** for **creating and managing an observer** which can watch any number of target elements for the same intersection configuration. Each observer can asynchronously observe changes in the intersection between one or more target elements and a shared ancestor element or with their top-level Document's viewport. The ancestor or viewport is referred to as the root.
 
 ###### `IntersectionObserver` methods
 
