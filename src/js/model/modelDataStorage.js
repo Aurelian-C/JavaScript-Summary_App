@@ -3722,59 +3722,59 @@ const domEvents = {
         '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events.html',
       sectionArticles: [
         {
-          articleTitle: 'Element: click',
+          articleTitle: 'Element: <code>click</code>',
           articleSource:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___click.html',
         },
         {
-          articleTitle: 'Element: blur',
+          articleTitle: 'Element: <code>blur</code>',
           articleSource:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___blur.html',
         },
         {
-          articleTitle: 'Element: wheel',
+          articleTitle: 'Element: <code>wheel</code>',
           articleSource:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___wheel.html',
         },
         {
-          articleTitle: 'Document & Element: scroll',
+          articleTitle: 'Document & Element: <code>scroll</code>',
           articleSource:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___scroll.html',
         },
         {
           articleTitle:
-            'Mouse Events: mouseout, mouseover, mouseenter & mousemove',
+            'Mouse Events: <code>mouseout</code>, <code>mouseover</code>, <code>mouseenter</code> & <code>mousemove</code>',
           articleSource:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___mouse.html',
         },
         {
           articleTitle:
-            'Keyboard Events: keyup, keydown, <i>keypress(deprecated)</i>',
+            'Keyboard Events: <code>keyup</code>, <code>keydown</code>, <i>keypress(deprecated)</i>',
           articleSource:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___keyboard.html',
         },
         {
-          articleTitle: 'HTMLElement: input',
+          articleTitle: 'HTMLElement: <code>input</code>',
           articleSource:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___input.html',
         },
         {
-          articleTitle: 'HTMLElement: change',
+          articleTitle: 'HTMLElement: <code>change</code>',
           articleSource:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___change.html',
         },
         {
-          articleTitle: 'HTMLFormElement: submit',
+          articleTitle: 'HTMLFormElement: <code>submit</code>',
           articleSource:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___submit.html',
         },
         {
-          articleTitle: 'Window: hashchange',
+          articleTitle: 'Window: <code>hashchange</code>',
           articleSource:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___hashchange.html',
         },
         {
-          articleTitle: 'Window: load',
+          articleTitle: 'Window: <code>load</code>',
           articleSource:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___load.html',
         },
