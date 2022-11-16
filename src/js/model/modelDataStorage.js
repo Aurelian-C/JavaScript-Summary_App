@@ -2591,6 +2591,38 @@ const standardBuildInObjects = {
         },
       ],
     },
+    {
+      sectionTitle: 'JSON',
+      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/JSON.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'Unlike most global objects, <code>JSON</code> is not a constructor',
+          articleSource: '',
+        },
+        {
+          articleTitle:
+            'JSON is a syntax for serializing objects, arrays, numbers, strings, booleans, and null. It is based upon JavaScript syntax, but is distinct from JavaScript: most of JavaScript is not JSON',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'JSON Static Methods',
+      sectionSource: '',
+      sectionArticles: [
+        {
+          articleTitle: 'JSON.stringify()',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/JSON.stringify.html',
+        },
+        {
+          articleTitle: 'JSON.parse()',
+          articleSource:
+            '/src/markdowns/10_Standard_Build-In_Objects/JSON.parse.html',
+        },
+      ],
+    },
   ],
 };
 
@@ -3854,17 +3886,16 @@ const otherWebAPIs = {
           articleSource: '',
         },
         {
-          articleTitle: 'JSON.stringify()',
-          articleSource:
-            '/src/markdowns/14_Others_Web_APIs/JSON.stringify.html',
+          articleTitle: '<code>JSON.stringify()</code>',
+          articleSource: '',
         },
         {
           articleTitle: '<code>localStorage.getItem()</code>',
           articleSource: '',
         },
         {
-          articleTitle: 'JSON.parse()',
-          articleSource: '/src/markdowns/14_Others_Web_APIs/JSON.parse.html',
+          articleTitle: '<code>JSON.parse()</code>',
+          articleSource: '',
         },
         {
           articleTitle: '<code>localStorage.removeItem()</code>',
