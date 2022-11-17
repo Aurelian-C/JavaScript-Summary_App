@@ -3816,7 +3816,7 @@ const domEvents = {
 };
 
 const otherWebAPIs = {
-  title: 'Others Web APIs',
+  title: 'Other Web APIs',
   sections: [
     {
       sectionTitle: 'The Intersection Observer API',
@@ -3908,48 +3908,81 @@ const otherWebAPIs = {
       ],
     },
     {
+      sectionTitle: 'Location',
+      sectionSource: '/src/markdowns/14_Others_Web_APIs/Location.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'The <code>window.location</code> & <code>document.location</code> read-only properties returns a <code>Location</code> object, which contains information about the URL of the document and provides methods for changing that URL and loading another URL',
+          articleSource: '',
+        },
+        {
+          articleTitle: '<code>window.location.href</code>',
+          articleSource: '',
+        },
+        {
+          articleTitle: '<code>window.location.pathname</code>',
+          articleSource: '',
+        },
+        {
+          articleTitle: '<code>window.location.hash</code>',
+          articleSource: '',
+        },
+        {
+          articleTitle: '<code>window.location.reload()</code>',
+          articleSource: '',
+        },
+      ],
+    },
+    {
+      sectionTitle: 'History',
+      sectionSource: '/src/markdowns/14_Others_Web_APIs/History.html',
+      sectionArticles: [
+        {
+          articleTitle:
+            'The <code>History</code> object allows manipulation of the browser <i>session</i> history',
+          articleSource: '',
+        },
+        {
+          articleTitle: '<code>window.history.pushState()</code>',
+          articleSource: '',
+        },
+      ],
+    },
+    {
       sectionTitle: 'window',
       sectionSource: '',
       sectionArticles: [
         {
-          articleTitle: 'window.location.reload()',
-          articleSource: '',
+          articleTitle: '<code>window.open()</code>',
+          articleSource: '/src/markdowns/14_Others_Web_APIs/window.open.html',
         },
         {
-          articleTitle: 'window.location.hash',
-          articleSource: '',
+          articleTitle:
+            '<code>window.pageXOffset</code> vs <code>window.scrollX</code>',
+          articleSource:
+            '/src/markdowns/14_Others_Web_APIs/window.scrollX.html',
         },
         {
-          articleTitle: 'window.location.href',
-          articleSource: '',
+          articleTitle:
+            '<code>window.pageYOffset</code> vs <code>window.scrollY</code>',
+          articleSource:
+            '/src/markdowns/14_Others_Web_APIs/window.scrollY.html',
         },
         {
-          articleTitle: 'window.history.pushState()',
-          articleSource: '',
+          articleTitle: '<code>window.scrollTo()</code>',
+          articleSource:
+            '/src/markdowns/14_Others_Web_APIs/window.scrollTo.html',
         },
         {
-          articleTitle: 'window.open(‘url’, ‘_blank’)',
-          articleSource: '',
+          articleTitle: '<code>window.innerHeight</code>',
+          articleSource:
+            '/src/markdowns/14_Others_Web_APIs/window.innerHeight.html',
         },
         {
-          articleTitle: 'window.pageXOffset vs scrollX',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'window.pageYOffset vs scrollY',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'window.scrollTo()',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'window.innerHeight',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'window.getComputedStyle()',
-          articleSource: '',
+          articleTitle: '<code>window.getComputedStyle()</code>',
+          articleSource:
+            '/src/markdowns/14_Others_Web_APIs/window.getComputedStyle.html',
         },
       ],
     },
