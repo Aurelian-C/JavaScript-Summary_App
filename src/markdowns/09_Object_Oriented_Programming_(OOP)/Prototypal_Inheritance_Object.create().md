@@ -39,9 +39,9 @@ If specified and not `undefined`, an object whose [enumerable own properties](ht
 
 ## Exceptions
 
-A [`TypeError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError) is thrown if `proto` is neither `null` nor an `Object` so the `proto` parameter has to be either:
+A [`TypeError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError) is thrown if `proto` is neither:
 
-- `null` or
+- `null` _or_
 - an `Object` excluding _primitive wrapper objects_.
 
 ```js

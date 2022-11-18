@@ -1616,15 +1616,18 @@ const objectsAndMaps = {
       sectionArticles: [
         {
           articleTitle: 'toString()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.prototype.toString.html',
         },
         {
           articleTitle: 'hasOwnProperty()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.prototype.hasOwnProperty.html',
         },
         {
           articleTitle: 'isPrototypeOf()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.prototype.isPrototypeOf.html',
         },
       ],
     },
@@ -1634,31 +1637,38 @@ const objectsAndMaps = {
       sectionArticles: [
         {
           articleTitle: 'Object.keys()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.keys.html',
         },
         {
           articleTitle: 'Object.values()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.values.html',
         },
         {
           articleTitle: 'Object.entries()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.entries.html',
         },
         {
           articleTitle: 'Object.fromEntries() vs Object.entries()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.fromEntries.html',
         },
         {
           articleTitle: 'Object.assign()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.assign.html',
         },
         {
           articleTitle: 'Object.freeze()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.freeze.html',
         },
         {
           articleTitle: 'Object.create()',
-          articleSource: '',
+          articleSource:
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.create.html',
         },
       ],
     },
