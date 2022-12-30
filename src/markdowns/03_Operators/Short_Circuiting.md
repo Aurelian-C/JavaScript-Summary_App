@@ -116,7 +116,7 @@ if (60 > 50) {
 
 The short-circuit operators are very tricky because they can be used in more than one ways. Therefore, when you see it in an existing code, be sure to detect the intended usage of the programmer. But if you are going to use one, ==be extra careful when using it to execute a statement especially if you are combining two Boolean expressions plus a statement **e.g (Boolean && Boolean && Statement)**==.
 
-## Reference
+## References
 
 1. [A Simpler Understanding of the Short-circuit Operators in JavaScript - medium.com](https://medium.com/@ezekielphlat/a-simpler-understanding-of-the-short-circuit-operators-in-javascript-d275a313cef1)
 1. [JavaScript: What is short-circuit evaluation? - codeburst.io](https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)

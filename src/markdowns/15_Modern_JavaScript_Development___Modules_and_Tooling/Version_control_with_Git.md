@@ -28,14 +28,18 @@ Git runs in the terminal (MacOS) or the Command Prompt (Windows) only, so it doe
 
 ## The Main Commands
 
-### Configure git and create a repository + .gitignore for specify folders/files that you don't want into your repository
+### Configure git and create a repository + `.gitignore` for specify folders/files that you don't want into your repository
 
 - `git init`
 - You need to have an account on Github or any other service that is similar to GitHub in order to store our local repository in the cloud.
 - `git config` --global user.name GithubUsername
 - `git config` --global user.email e-mailAdress
 
-Before steps below we need to have in our directory created the .gitignore file. If VScode didn't create it automatically for you, then you need to create this file manually.
+==Before steps below we need to have in our directory created the `.gitignore` file==. If VScode didn't create it automatically for you, then you need to create this file manually. The slash `/` is used as the directory separator. Separators may occur at the beginning, middle or end of the `.gitignore` search pattern.
+
+```
+/node_modules
+```
 
 ### Commit files to repository
 
