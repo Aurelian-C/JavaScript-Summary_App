@@ -38,7 +38,9 @@ Git runs in the terminal (MacOS) or the Command Prompt (Windows) only, so it doe
 ==Before steps below we need to have in our directory created the `.gitignore` file==. If VScode didn't create it automatically for you, then you need to create this file manually. The slash `/` is used as the directory separator. Separators may occur at the beginning, middle or end of the `.gitignore` search pattern.
 
 ```
-/node_modules
+\.parcel-cache
+\dist
+\node_modules
 ```
 
 ### Commit files to repository
