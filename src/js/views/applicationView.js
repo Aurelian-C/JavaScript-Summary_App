@@ -1,9 +1,9 @@
 class ApplicationView {
-  startApplication(data) {
+  _container = document.querySelector('.container');
+
+  render(data) {
     const markup = this._generateMarkup(data);
-    document
-      .querySelector('.container')
-      .insertAdjacentHTML('afterbegin', markup);
+    this._container.insertAdjacentHTML('afterbegin', markup);
   }
 
   _generateMarkup(card) {
@@ -15,7 +15,7 @@ class ApplicationView {
             <i class="fa-solid fa-window-minimize card__icon btn--min-max btn--min hidden"></i>
             <h2 class="card__title">${card.title}</h2>
             <div class="card__articles hidden">
-            ${card.sections.map(this._generateMarkupArticle).join('')}
+            ${card.sections.map(this._generateMarkupArticles).join('')}
             </div>
           </div>
     `;
@@ -24,7 +24,7 @@ class ApplicationView {
     return markupString;
   }
 
-  _generateMarkupArticle(article) {
+  _generateMarkupArticles(article) {
     let descriptor = '';
     if (article.sectionArticles) {
       descriptor = article.sectionArticles
