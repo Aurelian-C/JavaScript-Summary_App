@@ -261,7 +261,7 @@ b {
 /* Tooltip container */
 .tooltip {
   visibility: hidden;
-  min-width: 60rem;
+  min-width: 50rem;
   background-color: #555;
   color: #fff;
   border-radius: 6px;

@@ -122,9 +122,10 @@ const variablesAndValues = {
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/JavaScript_Types.html',
       sectionSummary: [
-        'Static vs Dynamically Typed languages',
-        'Strongly vs Weakly Typed languages',
-        'Primitives vs References Types',
+        'All programming languages have types. That is the building blocks that allow us to write in that language. We can have numbers, strings, booleans and many more.',
+        "<b>Static vs Dynamically Typed languages</b>: JavaScript is a dynamic language with dynamic types. Variables in JavaScript are not directly associated with any particular value type, and <i>any variable can be assigned (and re-assigned) values of all types</i>. With a statically typed language we have to declare the variables explicitly before using them. Dynamically typed languages are not bound to this constraint, they're not bound to a particular type. TypeScript allows us to make JavaScript to behave like a statically typed language.",
+        '<b>Strongly vs Weakly Typed languages</b>: JavaScript is also a weakly typed language, which means it allows implicit <i>type conversion</i> when an operation involves mismatched types, instead of throwing type errors.',
+        "<b>Primitive vs Reference Types</b>: all types, except objects types (objects, arrays, functions), define immutable values (that is, values which can't be changed). Primitive types store the value itself, but reference types store a pointer, so the address of that place in memory, not the value itself.",
       ],
     },
     {
@@ -132,13 +133,15 @@ const variablesAndValues = {
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Primitives_vs_Objects_(Primitive_vs_Reference_Types).html',
       sectionSummary: [
-        'Primitive Types (Numbers, Strings, Booleans, null, undefined, Symbol, BigInt)',
-        'Reference Types (Arrays, Objects, Functions)',
-        'A variable that stores a reference object only stores a pointer, so the address of that place in memory, and not the value itself',
-        'Pass by Value vs Pass by Reference',
-        'Comparing two objects for equality',
-        'Each object has its own reference location in memory, even is a nested object',
-        'Shallow vs Deep Objects Copy',
+        '<b>Primitive Types (Numbers, Strings, Booleans, null, undefined, Symbol, BigInt)</b>: primitive types store the value itself.',
+        '<b>Reference Types (Arrays, Objects, Functions)</b>: a variable that stores a reference object only stores a pointer, so the address of that place in memory, and not the value itself.',
+        '<b>Pass by Value vs Pass by Reference</b>: the key difference between primitive and reference values is that when you copy a variable that holds a primitive value, which means you assign it to a new one, then the value is actually copied. When you copy a variable that holds a reference value, you copy the pointer address of that place in memory, not the value itself.',
+        'Each object has its own reference location in memory, even is a nested object.',
+        '<b>Comparing two objects for equality</b>: two objects, even though they hold the same data, are two different distinct objects stored in different places, so at different addresses in memory. Because that when you compare two objects, you compare the addresses where they stored.',
+        'Primitive values are the core building blocks that hold your data, objects (and arrays) are helpful for organizing and working with that data.',
+        `<b>Shallow vs Deep Objects Copy</b>
+        <br>Shallow copy is a bit-wise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.
+        <br>A deep copy copies all fields, and makes copies of dynamically allocated memory pointed to by the fields. A deep copy occurs when an object is copied along with the objects to which it refers.`,
       ],
     },
     {
