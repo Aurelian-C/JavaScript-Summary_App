@@ -6,10 +6,11 @@ const browserEngineAndRuntime = {
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Engine1.html',
       sectionSummary: [
-        'JavaScript language vs Computer language',
-        'Interpreter and Compiler',
-        'JIT Compilers (Just In Time Compilers) & Optimized code',
-        'Is JavaScript an interpreted language?',
+        '<b>JavaScript language vs Computer language</b>: the communication bridge between JavaScript language and  computer language is JavaScript Engine (V8 for Chrome, SpiderMonkey for Firefox, etc.). The computer understand only 1 and 0, but JavaScript Engine understand the code inside JavaScript file and <i>translate that code</i> to a computer language.',
+        "<b>Interpreter & Compiler</b>: in programming, there are generally two ways of translating to computer language. An Interpreter translate and read the JavaScript file line by line, on the fly. Initially, that's how JavaScript worked. It was interpreting, using an Interpreter. A Compiler works ahead of time to create a translation of the JavaScript file, and it compiles down to usually a language that can be understood by our computer.",
+        "<b>JIT Compilers (Just In Time Compilers) & Optimized code</b>: browsers started mixing Interpreters and Compilers to make the JavaScript Engine faster. So Interpreter allows us to run the code right away, and the Compiler and Profiler optimize some code as the Interpreter is still running. That's where the JIT Compiler name comes from, because compiles code when Interpreter still running.",
+        "By learning this, we will learn how to write optimized code, so that we help out the Profiler and the Compiler to make sure that we're able to run the fastest code possible. We want to write code in a way that helps the Compiler make optimizations, we don't want to work against it and make things slow.",
+        "<b>Is JavaScript an interpreted language?</b> Things have evolved over time. We don't have just Interpreters, we also use Compilers to optimize code.",
       ],
     },
     {
@@ -17,11 +18,11 @@ const browserEngineAndRuntime = {
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Engine2.html',
       sectionSummary: [
-        'Memory Heap & Call Stack',
-        'Call Stack & Stack Overflow',
-        'Memory Heap & JavaScript is a Garbage Collection Language & Memory Leaks',
-        'JavaScript is a Single Threaded Programming Language (Synchronous Language) and the JavaScript Engine have only a single Call Stack & Memory Heap',
-        'JavaScript Engine is synchronous, it executes code in order, and must finish executing a line of code before moving onto the next one',
+        "<b>Memory Heap & Call Stack</b>: with Interpreters and Compilers, we learned that the JavaScript Engine does a lot of work for us, but the biggest thing is actually reading our code and executing it. What do you think the two most important things in these steps are? <br>1. We need a place to store and write information, to store our variables, our objects, our data of our apps. So in other words, a place to allocate memory (Memory Heap). <br>2. We need a place to keep track, line by line, of what's executing (Call Stack). <br>JavaScript Engine use a Call Stack and a Memory Heap when is reading and executing the JavaScript file. We need the Memory Heap as a place to <i>store and write information</i>, and the Call Stack as a place to keep track of where your code is in it's execution, so that we can <i>execute the code in order</i>.",
+        "<b>Call Stack & Stack Overflow</b>: if you have only functions that don't have inside any nested functions, on every single time that functions will be called, the Call Stack is going to get pushed on and then popped off. But what happens if we have functions with nested functions inside on them and keep calling functions nested inside of each other, over and over and over, so that we keep growing the Call Stack until it gets larger and larger and larger, until we can't do it anymore? Well, that's called Stack Overflow.",
+        "<b>Memory Heap & JavaScript is a Garbage Collection Language & Memory Leaks</b>: is there a way to do something like stack overflow with the Memory Heap? JavaScript is a garbage collected language and this means that JavaScript will automatically clean the Memory Heap of data that is unused, so only the data that is still useful to us remains in the Memory Heap. There are 3 common memory leaks, so you need to avoid them in your application:<br>- global variables;<br>- event listeners that you never remove when you don't need them;<br>- <code>setInterval()</code> functions that have in their body referencing to external objects and we don't stop that intervals",
+        "<b>JavaScript is a Single Threaded Programming Language (Synchronous Language) and the JavaScript Engine have only a single Call Stack & Memory Heap</b>: A single threaded programming language execute only one line a code at a time (not do multiple things). The biggest way to check that a language is single threaded is that it has only one Call Stack. This single Call Stack allows us to run code one at a time, we're never running functions in parallel.",
+        '<b>JavaScript Engine is synchronous</b>, it executes code in order, and must finish executing a line of code before moving onto the next one. For asynchronous operations, we need to use the JavaScript Runtime.',
       ],
     },
     {
@@ -29,10 +30,11 @@ const browserEngineAndRuntime = {
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Runtime.html',
       sectionSummary: [
-        'JavaScript Runtime & Asynchronous code',
-        'JavaScript Runtime provides asynchronous Web APIs, a way of communicating with the JavaScript Engine',
-        'Web APIs & global <code>window</code> object',
-        'Callback Queue vs Job/Microtask Queue & Event Loop',
+        '<b>JavaScript Runtime & asynchronous code</b>: the heart of any JavaScript Runtime is always a JavaScript Engine. Without the JavaScript Engine, there is no JavaScript Runtime, and there is no JavaScript at all. However, JavaScript Engine alone is not enough, because being single threaded (synchronous), if you have code that takes a long, long time to execute, your application will be very, very slow. In order to your application work properly, we also need a JavaScript Runtime that gave access to the Web APIs (ex. DOM, Timers, Fetch API etc.) and implicit to asynchronous code.',
+        '<b>Browsers comes in with a JavaScript Engine and a JavaScript Runtime</b>. JavaScript has no idea what the World-Wide-Web or Internet is, JavaScript is only a programming language. On the other hand, the web browsers through Web APIs allows JavaScript to use asynchronous code, so JavaScript can interact with things outside of its world. JavaScript Runtime provides asynchronous Web APIs, a way of communicating with the JavaScript Engine.',
+        '<b>Web APIs & global <code>window</code> object</b>: the Web APIs are provided to the JavaScript Engine via global <code>window</code> object. These Web APIs (setIntervals, setTimeout, fetch, localStorage, document object, etc.) are not native to JavaScript language itself, these Web APIs are provided by JavaScript Runtime via <code>window</code> object, so they are native to the browser.',
+        "<b>These Web APIs are what we call asynchronous</b>. That means you can instruct these APIs to do something in the background and return data once it's done, meanwhile, we can just continue working on our JavaScript Call Stack and execute functions.",
+        "<b>Callback Queue vs Job/Microtask Queue & Event Loop</b>: a typical JavaScript Runtime also includes a so called Callback Queue. This is a data structure that contains all the Web APIs callback functions that are finish to run in the background, and now are ready to be executed by the JavaScript Engine. The Callback Queue cannot be ran until the Call Stack is completely empty. The Event Loop is to constantly checking the Call Stack to see if it is empty, so that it can add anything that's in the Callback Queue into the Call Stack. The Event Loop has the extremely important task of doing coordination between the Call Stack and the callbacks in the Callback Queue, so it is basically who decides exactly when each callback is executed.<br>With ES6 and Promises, a new queue was created, called Job/Microtask Queue, so callbacks related to Promises have a special queue for themselves. Job/Microtask Queue has priority over Callback Queue, so Event Loop gives priority to promises over regular callbacks.",
       ],
     },
     {
@@ -40,8 +42,16 @@ const browserEngineAndRuntime = {
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Execution_Context_and_The_Call_Stack.html',
       sectionSummary: [
-        'Global execution context (global <code>window</code> object & <code>this</code> keyword)',
-        'Function execution context (<code>arguments</code> & <code>this</code> keyword)',
+        "<b>Execution Context</b>: while reading through HTML, if the browser encounters JavaScript code to run via a <<code>script</code>> tag or an attribute that contains JavaScript code like <code>onClick</code>, it sends it to its JavaScript Engine. The browser's JavaScript Engine then creates a special environment to handle the transformation and execution of this JavaScript code. This environment is known as the Execution Context.",
+        `<b>Global & function execution context</b>: when you give your JavaScript file to a browser, the JavaScript Engine start to read and execute the code inside your file, line by line, in order. As the JavaScript Engine starts to read your code, it creates something called the Global Execution Context (GEC). Whenever JavaScript Engine sees a function call in you code, it's going to create something called an Function Execution Context (FEC).
+        <br>Code in JavaScript is always ran inside a type of execution context. Execution context is simply the environment within which your code is ran. So any time we run code in JavaScript, it's always going to be part of an execution context, it's part of global or inside of some function that we call.`,
+        `<b>Global execution context (global <code>window</code> object & <code>this</code> keyword)</b>: whenever the JavaScript Engine receives a script file, it first creates a default Execution Context known as the Global Execution Context (GEC). The GEC is the base/default Execution Context where all JavaScript code that is <i>not inside of a function</i> gets executed. For every JavaScript file, there can only be one GEC.
+        <br>GEC is the very first item on the Call Stack, the first thing the JavaScript Engine does is to create the GEC, and it gives you two things: first thing is a global object <code>window</code> and the other thing is that <code>this</code> keyword in JavaScript.
+        <br>To the global object (in our case <code>window</code> object), we can assign variables, we can add functions and we can add different things to this global object.`,
+        `<b>Function execution context (<code>arguments</code> & <code>this</code> keyword)</b>: whenever a function is called, the JavaScript Engine creates a different type of Execution Context known as a Function Execution Context (FEC) <i>within</i> the Global Execution Context (GEC) to evaluate and execute the code within that function. Since every function call gets its own FEC, there can be more than one FEC in the run-time of a script.
+        <br>A function context is created by the JavaScript Engine when it sees a function call. Each function call gets its own execution context.
+        <br>FEC give us two things: the <code>arguments</code> objects and the <code>this</code> keyword.
+        `,
       ],
     },
     {

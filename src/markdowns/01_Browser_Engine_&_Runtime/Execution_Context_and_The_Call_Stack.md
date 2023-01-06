@@ -8,7 +8,7 @@ While reading through HTML, if the browser encounters JavaScript code to run via
 
 Programs are simply ==assigning memory==, for example assigning a value to a variable, and then ==running a function== for the program to do something with those variables. That's all we really do in a programming language.
 
-How do we run code in JavaScript? Well, we ==assign variables== and then we ==run functions==, right?  When you give your JavaScript file to a browser, the JavaScript Engine start to read and execute the code inside your file, line by line, in order. As the JavaScript Engine starts to read your code, it creates something called the ==**Global Execution Context (GEC)**==. Whenever JavaScript Engine sees a function call in you code, it's going to create something called an ==**Function Execution Context (FEC)**==. Each function call gets its own execution context.
+How do we run code in JavaScript? Well, we ==assign variables== and then we ==run functions==, right? When you give your JavaScript file to a browser, the JavaScript Engine start to read and execute the code inside your file, line by line, in order. As the JavaScript Engine starts to read your code, it creates something called the ==**Global Execution Context (GEC)**==. Whenever JavaScript Engine sees a function call in you code, it's going to create something called an ==**Function Execution Context (FEC)**==. Each function call gets its own execution context.
 
 Code in JavaScript is always ran inside a type of execution context. Execution context is simply the ==**environment within which your code is ran**==. So any time we run code in JavaScript, it's always going to be part of an execution context, it's part of global or inside of some function that we call.
 
@@ -66,7 +66,7 @@ Don't forget that ==**each execution context has its own _variable environment_*
 
 ## Function execution context (FEC)
 
-Whenever a function is called, the JavaScript Engine creates a different type of Execution Context known as a Function Execution Context (FEC) _within_ the Global Execution Context (GEC to evaluate and execute the code within that function. Since every function call gets its own FEC, there can be ==**more than one FEC** in the run-time of a script==.
+Whenever a function is called, the JavaScript Engine creates a different type of Execution Context known as a Function Execution Context (FEC) _within_ the Global Execution Context (GEC) to evaluate and execute the code within that function. Since every function call gets its own FEC, there can be ==**more than one FEC** in the run-time of a script==.
 
 A function context is created by the JavaScript Engine ==when it sees a **function call**==. ==Each function gets its own execution context==.
 

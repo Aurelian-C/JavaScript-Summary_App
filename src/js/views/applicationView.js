@@ -51,11 +51,9 @@ class ApplicationView {
         .join('');
 
       tooltip = `
-      <span class="tooltip">
-        <div class="tooltip__text">
-          ${tooltips}
-        </div>
-      </span>
+      <div class="tooltip">
+        ${tooltips}
+      </div>
       `;
     }
 

@@ -10,11 +10,11 @@ JavaScript is a ==**single threaded programming language**==. This means it has 
 
 ## Web APIs
 
-Browsers (Chrome, Firefox, Safari, etc.) comes in with a JavaScript Engine and a JavaScript Runtime. All of them have their own JavaScript Engine implementation, and all of them have a JavaScript Runtime that provide a Web APIs. These Web APIs can do a variety of things like send HTTP requests, listen to DOM events, delay execution of code using something like ```setTimeout``` or ```setInterval```, database storage on the browser, etc. 
+==Browsers (Chrome, Firefox, Safari, etc.) comes in with a JavaScript **Engine** and a JavaScript **Runtime**==. All of them have their own JavaScript Engine implementation, and all of them have a JavaScript Runtime that provide a Web APIs. These Web APIs can do a variety of things like send HTTP requests, listen to DOM events, delay execution of code using something like ```setTimeout``` or ```setInterval```, database storage on the browser, etc. 
 
 In the JavaScript Runtime case the ==web browser is working in the background, while the JavaScript Engine is running==, and ==JavaScript Runtime is using these **Web APIs to communicate with the JavaScript Engine**== and let it know "Hey, I'm back with some data, some work that you told me to do in the background".
 
-The Web APIs are provided to the JavaScript Engine via global ```window``` object. In ```window``` object we can see different things that the JavaScript Runtime provides for us, that our JavaScript Engine can use. ==These Web APIs (setIntervals, setTimeout, fetch, localStorage, document object, etc.) are **not native to JavaScript language itself**==, these Web APIs are provided by JavaScript Runtime via ```window``` object , so they are native to the browser. JavaScript simply gets access to these APIs through the global ```window object```. 
+The Web APIs are provided to the JavaScript Engine via global ```window``` object. In ```window``` object we can see different things that the JavaScript Runtime provides for us, that our JavaScript Engine can use. ==These Web APIs (setIntervals, setTimeout, fetch, localStorage, document object, etc.) are **not native to JavaScript language itself**==, these Web APIs are provided by JavaScript Runtime via ```window``` object, so they are native to the browser. JavaScript simply gets access to these APIs through the global ```window``` object. 
 
 The browsers, via Web APIs, are helping us create rich web applications, so that users aren't just sitting around waiting for our synchronous JavaScript Engine to execute code that takes a very long, long time. Anything  code that can be offloaded to the Web APIs, Web APIs will take care of that code for us in the background.
 
@@ -28,7 +28,7 @@ When you run some JavaScript code in a browser, the **JavaScript Engine starts t
 
 Each time the Event Loop takes a callback from the Callback Queue we say that there was an Event Loop tick. So, as we can see the Event Loop has the extremely important task of doing coordination between the Call Stack and the callbacks in the Callback Queue. So, the Event Loop is basically who decides exactly when each callback is executed.
 
-Another thing that becomes clear from this whole explanation is that the JavaScript language itself has actually no sense of time, that's because everything that is asynchronous does not happen in the JavaScript Engine. It's the JavaScript Runtime who manages all the asynchronous behavior and it's the Event Loop who decides which code will be executed next, but the JavaScript Engine itself simply executes whatever code it has given.
+==Another thing that becomes clear from this whole explanation is that the **JavaScript language itself has actually no sense of time**, that's because everything that is asynchronous does not happen in the JavaScript Engine. It's the JavaScript Runtime who manages all the asynchronous behavior and it's the Event Loop who decides which code will be executed next, but the JavaScript Engine itself simply executes whatever code it has given==.
 
 With ES6 and Promises, a new queue was created, called Job/Microtask Queue. Job/Microtask Queue has priority over Callback Queue.
 
@@ -121,4 +121,4 @@ Features like event listeners, timing functions and AJAX requests all sit in the
 
 6. [Web APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API)
 
-7. [What is JavaScript?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+7. [What is JavaScript? - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)

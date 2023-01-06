@@ -49,7 +49,7 @@ So JavaScript Engine is ==a "program" that read and execute JavaScript code. Any
 
 The ==**Memory Heap**== is a place to ==**store and write information**==, so that we can use our memory appropriately. It is ==a place to **allocate**, **use**, and **remove** memory as needed==.
 
-The ==**Call Stack**== is ==**a place to keep track of where your code is in it's execution, so that we can _execute the code in order_**==. It runs in a ==**"first in - last out" mode**==, that means the first one in is the last one getting popped out of the Call Stack. Each Call Stack can point to a location inside the Memory Heap, so we use the Memory Heap to actually point to different variables and objects and data that we store.t
+The ==**Call Stack**== is ==**a place to keep track of where your code is in it's execution, so that we can _execute the code in order_**==. It runs in a ==**"first in - last out" mode**==, that means the first one in is the last one getting popped out of the Call Stack. Each Call Stack can point to a location inside the Memory Heap, so we use the Memory Heap to actually point to different variables and objects and data that we store.
 
 ![call_stack_memory_heap](../../img/call_stack_memory_heap.jpg)
 
@@ -63,11 +63,11 @@ If you have only functions that don't have inside any nested functions, on every
 
 ![stack_overflow](../../img/stack_overflow.jpg)
 
-But what about the Memory Heap> Is there a way to do something like stack overflow with the Memory Heap? We can growing the Memory Heap until it gets larger and larger and larger, until we can't do it anymore?
+But what about the Memory Heap? Is there a way to do something like stack overflow with the Memory Heap? We can growing the Memory Heap until it gets larger and larger and larger, until we can't do it anymore?
 
 ## Garbage collection & Memory Leaks
 
-JavaScript is a ==**garbage collected language**==. That means when JavaScript allocates memory, let's say within a function,we create an object and that object gets stored somewhere in our Memory Heap automatically with JavaScript. When we finish calling the function and we don't need that object anymore, JavaScript is going to clean the object in the Memory Heap for us. So ==only the data that is still useful to us remains in the Memory Heap==, so that this way we make sure we don't use up all the memory we have available, because as we know, memory is limited.
+JavaScript is a ==**garbage collected language**==. That means when JavaScript allocates memory, let's say within a function, we create an object and that object gets stored somewhere in our Memory Heap automatically with JavaScript. When we finish calling the function and we don't need that object anymore, JavaScript is going to clean the object in the Memory Heap for us. So ==only the data that is still useful to us remains in the Memory Heap==, so that this way we make sure we don't use up all the memory we have available, because as we know, memory is limited.
 
 In garbage collected languages like JavaScript, the ==**garbage collector** frees memory on the Memory Heap and prevents what we call **memory leaks**==.
 

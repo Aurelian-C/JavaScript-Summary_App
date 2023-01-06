@@ -251,19 +251,17 @@ code {
   color: #e6e6e6;
 }
 
+b {
+  font-size: 1.4rem;
+  color: rgb(234 255 126);
+}
+
 /* --------------------- Tooltip functionality --------------------- */
 
 /* Tooltip container */
 .tooltip {
-  /* position: relative; */
-  /* display: inline-block; */
-  width: 100%;
-}
-
-/* Tooltip text */
-.tooltip__text {
   visibility: hidden;
-  width: 100%;
+  min-width: 60rem;
   background-color: #555;
   color: #fff;
   border-radius: 6px;
@@ -299,18 +297,22 @@ code {
   border-color: #555 transparent transparent transparent;
 } */
 
+.tooltip_paragraph {
+  font-size: 1.3rem;
+}
+
 .tooltip_paragraph:not(:last-child) {
   margin-bottom: 10px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltip__text {
+.tooltip:hover {
   visibility: visible;
   opacity: 1;
 }
 
-.card__article-title:hover + .tooltip .tooltip__text,
-.card__article-anchor:hover + .tooltip .tooltip__text {
+.card__article-title:hover + .tooltip,
+.card__article-anchor:hover + .tooltip {
   opacity: 1;
   visibility: visible;
 }

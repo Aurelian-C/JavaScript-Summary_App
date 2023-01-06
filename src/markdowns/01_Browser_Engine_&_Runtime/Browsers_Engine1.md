@@ -8,7 +8,7 @@ If I gave to a computer a JavaScript file and I tell it "Read this JavaScript fi
 
 ![javascript_engine](../../img/javascript_engine.jpg)
 
-But do you think there's one JavaScript Engine or many JavaScript Engines? Well, ==there are a ton of engines and they're called **ECMAScript Engines**==. So any time we use an engine, we're able to give it a JavaScript file and this JavaScript file gets understood by the engine, and it allows this engine to communicate and tell the machine, the computer, to do what we ask it to do with JavaScript.
+But do you think there's one JavaScript Engine or many JavaScript Engines? Well, ==there are a ton of engines and they're called **ECMAScript Engines**==. So any time we use an engine, we're able to give it a JavaScript file and this JavaScript file gets understood by the engine, and it allows this engine to communicate and tell the computer to do what we ask it to do with JavaScript.
 
 Now, these engines are written by programmers, for example, ==V8 engine is written in C++==, but why do people write these engines? 2008 marked a really pivotal moment in history when it comes to JavaScript, because V8 was released by Google. Before then, most browsers used engines that were very basic, which meant that JavaScript was a little bit slow. You see, Google had this problem, they had something called Google Maps, and Google Maps, as you know, requires a lot of power, and all the previous engines before V8 would make Google Maps very, very slow on the browser. So with Google Maps and their own Chrome browser, they said, we're going to write our own JavaScript Engine, the V8 engine, so that JavaScript runs way faster on the browser than it's done previously, and in 2008 they released V8.
 
@@ -20,7 +20,7 @@ What's actually happening inside JavaScript Engine when we given to it a JavaScr
 
 ## Interpreters and Compilers
 
-In programming, there are generally ==two ways of **translating to machine language**== or something that our computers can understand. What we're going to talk about actually applies to most programming languages, not just JavaScript. Python, Java, C++, any language you can think of is going to use some of these concepts.
+In programming, there are generally ==two ways of **translating to computer language**== or something that our computers can understand. What we're going to talk about actually applies to most programming languages, not just JavaScript. Python, Java, C++, any language you can think of is going to use some of these concepts.
 
 ![javascript_engine](../../img/interpreter_compiler.jpg)
 
@@ -30,11 +30,15 @@ But what about a Compiler? What's the deal with a Compiler? A ==**Compiler**==, 
 
 There are two ways to run JavaScript: using an Interpreter or a Compiler. If I ask you, why would we want to do one over the other? What are the pros and cons on each? Why would you pick one over the other? Let's have a look at the pros and cons of each.
 
-First off, ==Interpreters are quick to get up and running==, because ==with an Interpreter we don't have to convert our JavaScript file into another language like Compiler does. With Interpreters there's no compilation step before you can start running your code==. You just give your JavaScript file to an Interpreter and the Interpreter starts translating the code line by line. Because of this behavior, an Interpreter is a natural fit for something like JavaScript. A JavaScript file gets sent from the server to the browser and we want that JavaScript file to execute right away, because our users are going to be waiting on the web page trying to interact with our application. And JavaScript originally was created for the browser, so being able to interpret JavaScript and run it as fast as possible, well that was ideal. And this is exactly why JavaScript used Interpreters at the beginning.
+### The Interpreter
+
+First off, ==Interpreters are quick to get up and running==, because ==_with an Interpreter we don't have to convert our JavaScript file into another language like Compiler does_. With Interpreters there's no compilation step before you can start running your code==. You just give your JavaScript file to an Interpreter and the Interpreter starts translating the code line by line. Because of this behavior, an Interpreter is a natural fit for something like JavaScript. A JavaScript file gets sent from the server to the browser and we want that JavaScript file to execute right away, because our users are going to be waiting on the web page trying to interact with our application. And JavaScript originally was created for the browser, so being able to interpret JavaScript and run it as fast as possible, well that was ideal. And this is exactly why JavaScript used Interpreters at the beginning.
 
 But there's a cons with using an Interpreter, and this is the same problem that Google had back in the day when they had Google Maps running a lot of JavaScript. ==The problem with Interpreters is that when you have a lot a JavaScript code or running the same code more than once, for example, if you're in a loop where you are running a piece of code over and over and over, even though that code gives you the same result, it can get really, really slow==. The Compiler actually helps us here.
 
-The Compiler takes a little bit more time to start up because it has to go through the ==compilation step at the beginning== (go through our code, understand it, and spit it out into a another language), but the Compiler will be smart enough that when it sees, for example, a loop that has the same inputs, returning the same outputs, well, it can actually just simplify that loop code. ==These simplifies that Compiler does on some code are called **optimizations**==.
+### The Compiler
+
+The Compiler takes a little bit more time to start up because it has to go through the ==compilation step at the beginning== (go through our code, understand it, and split it out into a another language), but the Compiler will be smart enough that when it sees, for example, a loop that has the same inputs, returning the same outputs, well, it can actually just simplify that loop code. ==These simplifies that Compiler does on some code are called **optimizations**==.
 
 ```js
 function someCalculation(x,y) { 
