@@ -1,2 +1,2 @@
-# Efficient script loading: defer & async
+# Efficient script loading: `defer` & `async`
 

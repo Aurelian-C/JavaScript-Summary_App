@@ -4,7 +4,7 @@ We learned that in the Call Stack can be many execution contexts (global & funct
 
 ![variable_environment](../../img/variable_environment.jpg)
 
-Remember what I said in the Lexical Environment article? You can think of each execution context like its own little planet, its own little universe. These worlds don't really communicate with each other, or know of each other.
+Remember what I said in the [Lexical Environment article](https://javascript-resume.netlify.app/src/markdowns/01_browser_engine_&_runtime/lexical_environment)? You can think of each execution context like its own little planet, its own little universe. These worlds don't really communicate with each other, or know of each other.
 
 ![lexical_environment](../../img/lexical_environment.jpg)
 
@@ -70,7 +70,7 @@ _Scope just **defines the accessibility of variables in the code**, it tells us 
 
 ## Function Scope vs Block Scope
 
-Remember, scope means what variables we have access to, and JavaScript has function scope, right? Every time we create a function, we create a new execution context which has its own variable environment. But you see, most other programming languages have something called block scope. So what's the difference?
+Remember, scope means what variables we have access to, and JavaScript has **function scope**, right? Every time we create a function, we create a new execution context which has its own variable environment. But you see, most other programming languages have something called **block scope**. So what's the difference?
 
 ```js
 // Function scope

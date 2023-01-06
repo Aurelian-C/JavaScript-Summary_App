@@ -59,7 +59,7 @@ const browserEngineAndRuntime = {
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Lexical_Environment.html',
       sectionSummary: [
-        'Where we write code determines the available variables',
+        '<b>Where we write code is important</b>. Lexical environment is simply <i>where you write code</i>. Where we write code determines the available variables. A new lexical environment is created when curly brackets <code>{}</code> are used, even nested brackets <code>{{...}}</code> create a new lexical environment',
       ],
     },
     {
@@ -67,21 +67,21 @@ const browserEngineAndRuntime = {
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Variable_Environment.html',
       sectionSummary: [
-        'Variable Environment & Scope Chain',
-        'Global Scope & Local Scope',
-        'Function Scope (<code>var</code>, <code>let</code> & <code>const</code>) & Block Scope (<code>let</code> & <code>const</code>)',
-        'Variable Environment & Leakage of Global Variables',
-        'Global variables & polluting the global namespace (having too much data on our global execution environment)',
-        'Global variables & variable collisions',
-        'Variable collisions & Immediately Invoked Function Expressions (IIFE) & JavaScript Modules',
+        '<b>Variable Environment & Scope Chain</b>: each execution context (global/function) has its own variable environment. Each function execution context has a link to its outside world or a link to its parent. Each execution context that is created has a link outside of its lexical environment, called the scope chain. The scope chain gives us access to variables in the parent environment.',
+        '<b>Global Scope & Local Scope</b>: the global scope is the outermost scope, so variables declared outside a function are in what we call global scope, and they can be access in any other scope that is inside of the functions, we can always access global scope. Now, local scope is any scope that is local to a function, now variables declared in the local scope are accessible within this scope, as well as any scopes surrounding it. Scope just defines the <i>accessibility of variables in the code</i>, it tells us what we can access, what we can not.',
+        '<b>Function Scope (<code>var</code>, <code>let</code> & <code>const</code>) & Block Scope (<code>let</code> & <code>const</code>)</b>: Most programming languages are block scoped, meaning every time you see a new <code>{}</code> (curly braces) is a new lexical environment. However, JavaScript is function scoped, meaning it only creates a new local environment if it sees the keyword <code>function</code> on the global scope. To give us access to block scope, in ES6 <code>let</code> and <code>const</code> were added to the language.',
+        '<b>Variable Environment & Leakage of Global Variables</b>',
+        '<b>Global variables & polluting the global namespace</b> means that we have too much data on our global execution environment.',
+        "<b>Global variables & variable collisions</b> is when we have the same variable/s in multiple scripts, everything gets bunched up together, everything is on the global execution context, and if there's any duplicates variables (variables with the same name) overwrite each other.",
+        "<b>Variable collisions & IIFE & JavaScript Modules</b>: with modern JavaScript, we have things like JavaScript Modules and module bundlers. But before we had those things, JavaScript developers used what we know now about the language itself to avoid variable collisions and it's called Immediately Invoked Function Expressions (IIFE). The idea behind IIFE is we can place all library code inside of a local scope (function scope), to avoid any variable collisions.",
       ],
     },
     {
       sectionTitle: 'Hoisting',
       sectionSource: '/src/markdowns/01_Browser_Engine_&_Runtime/Hoisting.html',
       sectionSummary: [
-        'Compiler appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code',
-        'Hoisting is happen on every execution context: global & function',
+        'Compiler appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.',
+        'Hoisting is happen on every execution context: global & function.',
       ],
     },
     {
@@ -94,7 +94,16 @@ const browserEngineAndRuntime = {
       sectionTitle: 'Activating Strict Mode',
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Activating_Strict_Mode.html',
-      sectionSummary: [],
+      sectionSummary: [
+        "JavaScript's Strict Mode, introduced in ECMAScript 5, is a way to opt into a <i>restricted variant of JavaScript</i>, thereby implicitly opting-out of Sloppy Mode.",
+        'Strict Mode code and non-Strict Mode code can coexist.',
+        `Strict Mode makes several changes to normal JavaScript semantics:
+        <br>- Eliminates some JavaScript silent errors by changing them to throw errors;
+        <br>- Fixes mistakes that make it difficult for JavaScript Engine to perform optimizations;
+        <br>- Prohibits some syntax likely to be defined in future versions of ECMAScript.
+        `,
+        "Strict Mode applies to entire scripts or to individual functions. It doesn't apply to block statements enclosed in <code>{}</code> braces; attempting to apply it to such contexts does nothing.",
+      ],
     },
     {
       sectionTitle:
