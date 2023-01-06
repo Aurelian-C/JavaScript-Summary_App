@@ -15,7 +15,7 @@ class ApplicationView {
             <i class="fa-solid fa-window-minimize card__icon btn--min-max btn--min hidden"></i>
             <h2 class="card__title">${card.title}</h2>
             <div class="card__articles hidden">
-              ${card.sections.map(this._generateMarkupArticle).join('')}
+            ${card.sections.map(this._generateMarkupArticle).join('')}
             </div>
           </div>
     `;
@@ -25,11 +25,12 @@ class ApplicationView {
   }
 
   _generateMarkupArticle(article) {
-    const descriptor = article.sectionArticles
-      .map(descriptor => {
-        if (!descriptor.articleTitle) return;
-
-        return `
+    let descriptor = '';
+    if (article.sectionArticles) {
+      descriptor = article.sectionArticles
+        .map(descriptor => {
+          if (!descriptor.articleTitle) return;
+          return `
           <li class="card__descriptor">
           ${
             descriptor.articleSource
@@ -37,8 +38,26 @@ class ApplicationView {
               : `<p class="card__descriptor-title">${descriptor.articleTitle}</p>`
           }
           </li>`;
-      })
-      .join('');
+        })
+        .join('');
+    }
+
+    let tooltip = '';
+    if (article.sectionSummary.length > 0) {
+      const tooltips = article.sectionSummary
+        .map(summary => {
+          return `<p class="tooltip_paragraph">${summary}</p>`;
+        })
+        .join('');
+
+      tooltip = `
+      <span class="tooltip">
+        <div class="tooltip__text">
+          ${tooltips}
+        </div>
+      </span>
+      `;
+    }
 
     return `
       <div class="card__article">
@@ -48,6 +67,7 @@ class ApplicationView {
               ? `<a class="card__article-anchor" href="${article.sectionSource}" target="_blank">${article.sectionTitle}</a>`
               : `<p class="card__article-title">${article.sectionTitle}</p>`
           }
+          ${tooltip}
         </div>
         <ul class="card__descriptors">
           ${descriptor}

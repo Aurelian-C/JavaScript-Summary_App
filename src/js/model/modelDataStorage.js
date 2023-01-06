@@ -5,196 +5,92 @@ const browserEngineAndRuntime = {
       sectionTitle: 'Javascript Engine (part 1)',
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Engine1.html',
-      sectionArticles: [
-        {
-          articleTitle: 'JavaScript language vs Computer language',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Interpreter and Compiler',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'JIT Compilers (Just In Time Compilers) & Optimized code',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Is JavaScript an interpreted language?',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'JavaScript language vs Computer language',
+        'Interpreter and Compiler',
+        'JIT Compilers (Just In Time Compilers) & Optimized code',
+        'Is JavaScript an interpreted language?',
       ],
     },
     {
       sectionTitle: 'Javascript Engine (part 2)',
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Engine2.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Memory Heap & Call Stack',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Call Stack & Stack Overflow',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Memory Heap & JavaScript is a Garbage Collection Language & Memory Leaks',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'JavaScript is a Single Threaded Programming Language (Synchronous Language) and the JavaScript Engine have only a single Call Stack & Memory Heap',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'JavaScript Engine is synchronous, it executes code in order, and must finish executing a line of code before moving onto the next one',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Memory Heap & Call Stack',
+        'Call Stack & Stack Overflow',
+        'Memory Heap & JavaScript is a Garbage Collection Language & Memory Leaks',
+        'JavaScript is a Single Threaded Programming Language (Synchronous Language) and the JavaScript Engine have only a single Call Stack & Memory Heap',
+        'JavaScript Engine is synchronous, it executes code in order, and must finish executing a line of code before moving onto the next one',
       ],
     },
     {
       sectionTitle: 'Javascript Runtime',
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Runtime.html',
-      sectionArticles: [
-        {
-          articleTitle: 'JavaScript Runtime & Asynchronous code',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'JavaScript Runtime provides asynchronous Web APIs, a way of communicating with the JavaScript Engine',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Web APIs & global <code>window</code> object',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Callback Queue vs Job/Microtask Queue & Event Loop',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'JavaScript Runtime & Asynchronous code',
+        'JavaScript Runtime provides asynchronous Web APIs, a way of communicating with the JavaScript Engine',
+        'Web APIs & global <code>window</code> object',
+        'Callback Queue vs Job/Microtask Queue & Event Loop',
       ],
     },
     {
       sectionTitle: 'Execution Context and the Call Stack',
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Execution_Context_and_The_Call_Stack.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Global execution context (global <code>window</code> object & <code>this</code> keyword)',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Function execution context (<code>arguments</code> & <code>this</code> keyword)',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Global execution context (global <code>window</code> object & <code>this</code> keyword)',
+        'Function execution context (<code>arguments</code> & <code>this</code> keyword)',
       ],
     },
     {
       sectionTitle: 'Lexical Environment',
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Lexical_Environment.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Where we write code determines the available variables',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Where we write code determines the available variables',
       ],
     },
     {
       sectionTitle: 'Variable Environment',
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Variable_Environment.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Variable Environment & Scope Chain',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Global Scope & Local Scope',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Function Scope (<code>var</code>, <code>let</code> & <code>const</code>) & Block Scope (<code>let</code> & <code>const</code>)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Variable Environment & Leakage of Global Variables',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Global variables & polluting the global namespace (having too much data on our global execution environment)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Global variables & variable collisions',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Variable collisions & Immediately Invoked Function Expressions (IIFE) & JavaScript Modules',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Variable Environment & Scope Chain',
+        'Global Scope & Local Scope',
+        'Function Scope (<code>var</code>, <code>let</code> & <code>const</code>) & Block Scope (<code>let</code> & <code>const</code>)',
+        'Variable Environment & Leakage of Global Variables',
+        'Global variables & polluting the global namespace (having too much data on our global execution environment)',
+        'Global variables & variable collisions',
+        'Variable collisions & Immediately Invoked Function Expressions (IIFE) & JavaScript Modules',
       ],
     },
     {
       sectionTitle: 'Hoisting',
       sectionSource: '/src/markdowns/01_Browser_Engine_&_Runtime/Hoisting.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Compiler appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Hoisting is happen on every execution context: global & function',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Compiler appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code',
+        'Hoisting is happen on every execution context: global & function',
       ],
     },
     {
       sectionTitle: 'What is JavaScript?',
-
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/What_is_JavaScript.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Activating Strict Mode',
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Activating_Strict_Mode.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle:
         'Efficient Script Loading: <code>defer</code> & <code>async</code>',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
   ],
 };
@@ -206,201 +102,89 @@ const variablesAndValues = {
       sectionTitle: 'JavaScript Types',
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/JavaScript_Types.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Static vs Dynamically Typed languages',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Strongly vs Weakly Typed languages',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Primitives vs References Types',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Static vs Dynamically Typed languages',
+        'Strongly vs Weakly Typed languages',
+        'Primitives vs References Types',
       ],
     },
     {
       sectionTitle: 'Primitives vs References Types',
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Primitives_vs_Objects_(Primitive_vs_Reference_Types).html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Primitive Types (Numbers, Strings, Booleans, null, undefined, Symbol, BigInt)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Reference Types (Arrays, Objects, Functions)',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'A variable that stores a reference object only stores a pointer, so the address of that place in memory, and not the value itself',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Pass by Value vs Pass by Reference',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Comparing two objects for equality',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Each object has its own reference location in memory, even is a nested object',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Shallow vs Deep Objects Copy',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Primitive Types (Numbers, Strings, Booleans, null, undefined, Symbol, BigInt)',
+        'Reference Types (Arrays, Objects, Functions)',
+        'A variable that stores a reference object only stores a pointer, so the address of that place in memory, and not the value itself',
+        'Pass by Value vs Pass by Reference',
+        'Comparing two objects for equality',
+        'Each object has its own reference location in memory, even is a nested object',
+        'Shallow vs Deep Objects Copy',
       ],
     },
     {
       sectionTitle: 'Type Coercion',
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Type_coercion.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Type Coercion vs Type Conversion',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Implicit and Explicit Conversion',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Type Coercion for Primitive values',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Type Coercion for Objects',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Truthy & Falsy Values',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            "One operator that doesn't trigger implicit type coercion is Strict Equality Operator <code>===</code>",
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Type Coercion vs Type Conversion',
+        'Implicit and Explicit Conversion',
+        'Type Coercion for Primitive values',
+        'Type Coercion for Objects',
+        'Truthy & Falsy Values',
+        "One operator that doesn't trigger implicit type coercion is Strict Equality Operator <code>===</code>",
       ],
     },
     {
       sectionTitle: 'Introduction to Variables',
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Introduction_to_Variables.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Declaring a variable',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Initializing a variable',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Variable naming rules',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Declaring a variable',
+        'Initializing a variable',
+        'Variable naming rules',
       ],
     },
     {
       sectionTitle: 'var',
       sectionSource: '/src/markdowns/02_JavaScript_Types_&_Variables/var.html',
-      sectionArticles: [
-        {
-          articleTitle: '<code>var</code> & hoisting',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>var</code> is only function scoped, NOT block scoped',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>var</code> can be redeclared without trigger an error',
-          articleSource: '',
-        },
+      sectionSummary: [
+        '<code>var</code> & hoisting',
+        '<code>var</code> is only function scoped, NOT block scoped',
+        '<code>var</code> can be redeclared without trigger an error',
       ],
     },
     {
       sectionTitle: 'let',
       sectionSource: '/src/markdowns/02_JavaScript_Types_&_Variables/let.html',
-      sectionArticles: [
-        {
-          articleTitle: '<code>let</code> & hoisting',
-          articleSource: '',
-        },
-        {
-          articleTitle: `<code>let</code> can't be used before it's declared`,
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>let</code> is function scoped & block scoped',
-          articleSource: '',
-        },
-        {
-          articleTitle: `<code>let</code> can't be redeclared like <code>var</code>`,
-          articleSource: '',
-        },
+      sectionSummary: [
+        '<code>let</code> & hoisting',
+        `<code>let</code> can't be used before it's declared`,
+        '<code>let</code> is function scoped & block scoped',
+        `<code>let</code> can't be redeclared like <code>var</code>`,
       ],
     },
     {
       sectionTitle: 'const',
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/const.html',
-      sectionArticles: [
-        {
-          articleTitle: '<code>const</code> & hoisting',
-          articleSource: '',
-        },
-        {
-          articleTitle: `<code>const</code> can't be used before it's declared`,
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>const</code> is function scoped & block scoped',
-          articleSource: '',
-        },
-        {
-          articleTitle: `<code>const</code> must be initialized when it's declared`,
-          articleSource: '',
-        },
-        {
-          articleTitle: `<code>const</code> can't be changed through reassignment`,
-          articleSource: '',
-        },
-        {
-          articleTitle: `<code>const</code> can't be redeclared like <code>var</code>`,
-          articleSource: '',
-        },
+      sectionSummary: [
+        '<code>const</code> & hoisting',
+        `<code>const</code> can't be used before it's declared`,
+        '<code>const</code> is function scoped & block scoped',
+        `<code>const</code> must be initialized when it's declared`,
+        `<code>const</code> can't be changed through reassignment`,
+        `<code>const</code> can't be redeclared like <code>var</code>`,
       ],
     },
     {
       sectionTitle: 'Differences between var, let & const',
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Differences_between_var_let_&_const.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Declaration, Initialization & Hoisting differences',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Scope differences',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Duplicate variable declarations (redeclarations) differences',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Declaration, Initialization & Hoisting differences',
+        'Scope differences',
+        'Duplicate variable declarations (redeclarations) differences',
       ],
     },
   ],
@@ -413,71 +197,33 @@ const operators = {
       sectionTitle: 'Introduction to JavaScript Operators',
       sectionSource:
         '/src/markdowns/03_Operators/Introduction_to_Javascript_Operators.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Operator precedence',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Precedence & Associativity',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Note on grouping vs short-circuiting',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Operators & Type Coercion',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Operator precedence',
+        'Precedence & Associativity',
+        'Note on grouping vs short-circuiting',
+        'Operators & Type Coercion',
       ],
     },
     {
       sectionTitle: 'Expressions and operators',
       sectionSource:
         '/src/markdowns/03_Operators/Expressions_and_operators.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Primary expressions',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Left-hand-side expressions',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Increment and decrement',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Unary operators',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Arithmetic operators',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Relational operators',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Equality operators',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Binary logical operators',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Assignment operators',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Primary expressions',
+        'Left-hand-side expressions',
+        'Increment and decrement',
+        'Unary operators',
+        'Arithmetic operators',
+        'Relational operators',
+        'Equality operators',
+        'Binary logical operators',
+        'Assignment operators',
       ],
     },
     {
       sectionTitle: 'Assignment operators',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Assignment <code>=</code>',
@@ -498,6 +244,7 @@ const operators = {
     {
       sectionTitle: 'Increment and decrement',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Increment <code>A++</code> or <code>++A</code>',
@@ -512,6 +259,7 @@ const operators = {
     {
       sectionTitle: 'Unary operators',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'typeof',
@@ -536,6 +284,7 @@ const operators = {
     {
       sectionTitle: 'Arithmetic operators',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Addition <code>+</code>',
@@ -563,6 +312,7 @@ const operators = {
     {
       sectionTitle: 'Equality operators',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Equality <code>==</code>',
@@ -586,6 +336,7 @@ const operators = {
     {
       sectionTitle: 'Relational operators',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Less than <code><</code>',
@@ -616,6 +367,7 @@ const operators = {
     {
       sectionTitle: 'Binary logical operators',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Logical AND <code>&&</code>',
@@ -642,44 +394,21 @@ const operators = {
       sectionTitle: 'Conditional (ternary) operator',
       sectionSource:
         '/src/markdowns/03_Operators/Conditional_(ternary)_operator.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Ternary operator vs if...else statement',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Conditional chains',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Ternary operator vs if...else statement',
+        'Conditional chains',
       ],
     },
     {
       sectionTitle: 'Optional Chaining operator <code>?.</code>',
       sectionSource:
         '/src/markdowns/03_Operators/Optional_Chaining_operator.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Optional chaining with objects',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Optional chaining with function calls',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Optional chaining with expressions',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'With nested structures, it is possible to use optional chaining multiple times',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The Nullish Coalescing Operator may be used <i>after</i> optional chaining in order to build a default value when none was found',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Optional chaining with objects',
+        'Optional chaining with function calls',
+        'Optional chaining with expressions',
+        'With nested structures, it is possible to use optional chaining multiple times',
+        'The Nullish Coalescing Operator may be used after optional chaining in order to build a default value when none was found',
       ],
     },
   ],
@@ -692,75 +421,38 @@ const conditionalStatements = {
       sectionTitle: 'Statements vs Expressions',
       sectionSource:
         '/src/markdowns/04_Conditional_statements/Statements_vs_Expressions.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'A statement is an instruction to perform a specific action: creating variables, functions, loops etc.',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Any unit of code that can be evaluated to a value is an expression',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Expressions produce values',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'A statement is an instruction to perform a specific action: creating variables, functions, loops etc.',
+        'Any unit of code that can be evaluated to a value is an expression',
+        'Expressions produce values',
       ],
     },
     {
       sectionTitle: 'Truthy & Falsy Values',
       sectionSource:
         '/src/markdowns/04_Conditional_statements/Truthy_&_Falsy_Values.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Type coercion',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Boolean context',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Truthy values & logical AND operator <code>&&</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Falsy values & logical OR operator <code>||</code>',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Type coercion',
+        'Boolean context',
+        'Truthy values & logical <code>AND</code> operator <code>&&</code>',
+        'Falsy values & logical <code>OR</code> operator <code>||</code>',
       ],
     },
     {
-      sectionTitle: '"if...else", "else if" statements',
+      sectionTitle:
+        '<code>if{...} else{...}</code>, <code>else if</code> statements',
       sectionSource:
         '/src/markdowns/04_Conditional_statements/if__else__if_else_statements.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Nesting Conditionals',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: ['Nesting Conditionals'],
     },
     {
-      sectionTitle: 'The Switch statement',
+      sectionTitle: 'The <code>switch</code> statement',
       sectionSource:
         '/src/markdowns/04_Conditional_statements/The_Switch_Statement.html',
-      sectionArticles: [
-        {
-          articleTitle: 'The Switch Statement & <code>break</code> statement',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'The Switch Statement & <code>default</code> statement',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The Switch Statement is an alternative to "if...else" chains',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'The <code>switch</code> Statement & <code>break</code> statement',
+        'The <code>switch</code> Statement & <code>default</code> statement',
+        'The <code>switch</code> Statement is an alternative to <code>if{...} else{...}</code> chains',
       ],
     },
   ],
@@ -773,98 +465,53 @@ const loops = {
       sectionTitle: 'Introduction to Loops & Iteration',
       sectionSource:
         '/src/markdowns/05_Loops_&_Iteration/Introduction_to_Loops_and_Iteration.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Loops offer a way to do something <i>repeatedly</i>',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'JavaScript supports <i>different kinds of loops</i>',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Loops offer a way to do something repeatedly',
+        'JavaScript supports different kinds of loops',
       ],
     },
     {
-      sectionTitle: '"for" statement',
+      sectionTitle: '<code>for</code> statement',
       sectionSource: '/src/markdowns/05_Loops_&_Iteration/for_statement.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Avoid infinite loops!',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Nested loops',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Do NOT initialize a function inside of a loop',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Avoid infinite loops!',
+        'Nested loops',
+        'Do NOT initialize a function inside of a loop',
       ],
     },
     {
-      sectionTitle: '"for...of" statement',
+      sectionTitle: '<code>for...of</code> statement',
       sectionSource:
         '/src/markdowns/05_Loops_&_Iteration/for...of_statement.html',
-      sectionArticles: [
-        {
-          articleTitle: '<i>Iterable</i> object',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Destructuring in <code>for...of</code> statement',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Iterable object',
+        'Destructuring in <code>for...of</code> statement',
       ],
     },
     {
-      sectionTitle: '"for...in" statement',
+      sectionTitle: '<code>for...in</code> statement',
       sectionSource:
         '/src/markdowns/05_Loops_&_Iteration/for...in_statement.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Iterates over all <i>enumerable properties</i> of an object',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Iterates over the entire prototype chain',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>for...in</code> vs <code>Object.keys()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Destructuring in <code>for...in</code> statement',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Iterates over all enumerable properties of an object',
+        'Iterates over the entire prototype chain',
+        '<code>for...in</code> vs <code>Object.keys()</code>',
+        'Destructuring in <code>for...in</code> statement',
       ],
     },
     {
-      sectionTitle: '"while" statement',
+      sectionTitle: '<code>while</code> statement',
       sectionSource: '/src/markdowns/05_Loops_&_Iteration/while_statement.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Avoid infinite loops!',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Do NOT initialize a function inside of a loop',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Avoid infinite loops!',
+        'Do NOT initialize a function inside of a loop',
       ],
     },
     {
-      sectionTitle: '"break" and "continue" statements',
+      sectionTitle: '<code>break</code> and <code>continue</code> statements',
       sectionSource:
         '/src/markdowns/05_Loops_&_Iteration/Break_&_Continue_Statements.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
   ],
 };
@@ -875,250 +522,106 @@ const functions = {
     {
       sectionTitle: 'Functions introduction',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Function hoisting',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Functions vs Methods',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Function expressions: storing functions in variables',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Functions used as variable values',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Function hoisting',
+        'Functions vs Methods',
+        'Function expressions: storing functions in variables',
+        'Functions used as variable values',
       ],
     },
     {
       sectionTitle: 'Higher Order Functions',
       sectionSource: '/src/markdowns/06_Functions/Higher_Order_Functions.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Functions are objects',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Functions are first-class citizen in JavaScript',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Functions can be assigned to variables and properties of objects',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'A function can be passed as an argument/parameter to other function (callback functions)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'A function can be returned by another function',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Functions are objects',
+        'Functions are first-class citizen in JavaScript',
+        'Functions can be assigned to variables and properties of objects',
+        'A function can be passed as an argument/parameter to other function (callback functions)',
+        'A function can be returned by another function',
       ],
     },
     {
       sectionTitle: 'Closures & local vs global variables',
       sectionSource:
         '/src/markdowns/06_Functions/Closures_&_local_vs_global_variables.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Variable lifetime',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Nested functions',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Closures & lexical environment',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'A closure <i>always return a function/object</i> that <i>references to its surrounding</i>',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Closures & memory efficiency',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Closures & encapsulation',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Variable lifetime',
+        'Nested functions',
+        'Closures & lexical environment',
+        'A closure always return a function/object that references to its surrounding',
+        'Closures & memory efficiency',
+        'Closures & encapsulation',
       ],
     },
     {
       sectionTitle: 'Function syntax',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Function expressions vs Function declarations',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Arrow functions',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Anonymous functions',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Constructor Functions',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Function expressions vs Function declarations',
+        'Arrow functions',
+        'Anonymous functions',
+        'Constructor Functions',
       ],
     },
     {
       sectionTitle: 'Function <code>return</code> statement',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Function parameters & arguments',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Parameter rules',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Default parameters',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'The <code>arguments</code> object',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Arguments are <i>passed by value</i> vs Objects are <i>passed by reference</i>',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Parameter rules',
+        'Default parameters',
+        'The <code>arguments</code> object',
+        'Arguments are passed by value vs Objects are passed by reference',
       ],
     },
     {
       sectionTitle: 'Rest parameters',
       sectionSource:
         '/src/markdowns/06_Functions/Rest_parameter_and_functions.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Destructuring parameters',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Function invocation',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '"Direct" vs "Indirect" Function Execution',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Invoking a JavaScript Function',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Invoking a Function as a Function',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Tagged templates',
-          articleSource: '',
-        },
+      sectionSummary: [
+        '"Direct" vs "Indirect" Function Execution',
+        'Invoking a JavaScript Function',
+        'Invoking a Function as a Function',
+        'Tagged templates',
       ],
     },
     {
       sectionTitle: 'Spread syntax for function calls',
       sectionSource:
         '/src/markdowns/06_Functions/Spread_syntax_and_function_calls.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Function invocation & <code>this</code> keyword',
       sectionSource:
         '/src/markdowns/06_Functions/Function_invocation_&_this_keyword.html',
-      sectionArticles: [
-        {
-          articleTitle: `<code>this</code> is the object that the function is a property of`,
-          articleSource: '',
-        },
-        {
-          articleTitle: `The value of <code>this</code> is always set when the function is invoked, not when the function is declared`,
-          articleSource: '',
-        },
-        {
-          articleTitle: 'All functions are methods',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Invoking a function as a global object (function without an owner object)',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Invoking a function as a method (function with an owner object)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Invoking a function with a Function Constructor',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The 2 main benefits of <code>this</code>: gives methods access to their object & execute the same function code for multiple objects',
-          articleSource: '',
-        },
-        {
-          articleTitle: `<code>this</code> acts as a placeholder for an object, and <code>this</code> we'll refer to whichever object called that function/method`,
-          articleSource: '',
-        },
-        {
-          articleTitle: `<code>this</code> & Dynamic Scope vs Lexical Scope`,
-          articleSource: '',
-        },
-        {
-          articleTitle: `<code>this</code> is not lexically scoped, it doesn't matter where <code>this</code> is write in our code, it matters how the function was called`,
-          articleSource: '',
-        },
-        {
-          articleTitle: `<code>this</code> & arrow functions `,
-          articleSource: '',
-        },
-        {
-          articleTitle: `Arrow functions don't have their own <code>this</code>. It will lexically bound <code>this</code> to the surrounding object`,
-          articleSource: '',
-        },
+      sectionSummary: [
+        `<code>this</code> is the object that the function is a property of`,
+        `The value of <code>this</code> is always set when the function is invoked, not when the function is declared`,
+        'All functions are methods',
+        'Invoking a function as a global object (function without an owner object)',
+        'Invoking a function as a method (function with an owner object)',
+        'Invoking a function with a Function Constructor',
+        'The 2 main benefits of <code>this</code>: gives methods access to their object & execute the same function code for multiple objects',
+        `<code>this</code> acts as a placeholder for an object, and <code>this</code> we'll refer to whichever object called that function/method`,
+        `<code>this</code> & Dynamic Scope vs Lexical Scope`,
+        `<code>this</code> is not lexically scoped, it doesn't matter where <code>this</code> is write in our code, it matters how the function was called`,
+        `<code>this</code> & arrow functions `,
+        `Arrow functions don't have their own <code>this</code>. It will lexically bound <code>this</code> to the surrounding object`,
       ],
     },
     {
@@ -1126,56 +629,26 @@ const functions = {
         'The <code>this</code> keyword & <code>call()</code>, <code>apply()</code> and <code>bind()</code>',
       sectionSource:
         '/src/markdowns/06_Functions/The_this_keyword_&_call__apply__and__bind.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'With <code>call()</code>, <code>apply()</code> and <code>bind()</code> you can assign a different <code>this</code> object when calling an existing function. Usually <code>this</code> refers to the current object (the calling object).',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>call()</code> method calls the function with a given <code>this</code> value and arguments provided individually',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>apply()</code> method is similar to <code>call()</code>, the difference is with apply() you use an array instead of providing arguments individually',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>bind()</code> method creates a new function that, when called, has its <code>this</code> set to the provided value, with a given sequence of arguments preceding any provided when the new function is called',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'With <code>call()</code>, <code>apply()</code> and <code>bind()</code> you can assign a different <code>this</code> object when calling an existing function. Usually <code>this</code> refers to the current object (the calling object).',
+        '<code>call()</code> method calls the function with a given <code>this</code> value and arguments provided individually',
+        '<code>apply()</code> method is similar to <code>call()</code>, the difference is with <code>apply()</code> you use an array instead of providing arguments individually',
+        '<code>bind()</code> method creates a new function that, when called, has its <code>this</code> set to the provided value, with a given sequence of arguments preceding any provided when the new function is called',
       ],
     },
     {
       sectionTitle:
         'Self-Invoking functions / Immediately Invoked Function Expressions (IIFE)',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Arrow functions',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'Arrow functions: implicit returns',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Arrow functions and the <code>this</code> keyword',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Regular functions vs arrow functions',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Arrow functions: implicit returns',
+        'Arrow functions and the <code>this</code> keyword',
+        'Regular functions vs arrow functions',
       ],
     },
   ],
@@ -1188,129 +661,53 @@ const arraysAndSets = {
       sectionTitle: 'Introduction to Arrays',
       sectionSource:
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Introduction_to_Arrays.html',
-      sectionArticles: [
-        {
-          articleTitle: 'What are "Iterables" and "Array-like Objects"?',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Arrays vs Primitive Values',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'An array is a single object that contain multiple values stored in a list',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Creating arrays',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Array constructor',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Array literal notation',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Arrays <code>length</code> property',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Arrays indices',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Accessing and modifying array items',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Accessing every item / iterating over arrays',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Arrays are reference types',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Nested / multidimensional arrays',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Which data can you store in arrays?',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'What are "Iterables" and "Array-like Objects"?',
+        'Arrays vs Primitive Values',
+        'An array is a single object that contain multiple values stored in a list',
+        'Creating arrays',
+        'Array constructor',
+        'Array literal notation',
+        'Arrays <code>length</code> property',
+        'Arrays indices',
+        'Accessing and modifying array items',
+        'Accessing every item / iterating over arrays',
+        'Arrays are reference types',
+        'Nested / multidimensional arrays',
+        'Which data can you store in arrays?',
       ],
     },
     {
       sectionTitle: 'Destructuring Arrays',
       sectionSource:
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Destructuring_arrays.html',
-      sectionArticles: [
-        {
-          articleTitle: 'What is destructuring?',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Binding and assignment',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Default values',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Skipping items',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Swapping variables',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Nested array destructuring',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Rest parameter & array destructuring',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Mixed destructuring',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Destructuring patterns with other syntaxes',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'What is destructuring?',
+        'Binding and assignment',
+        'Default values',
+        'Skipping items',
+        'Swapping variables',
+        'Nested array destructuring',
+        'Rest parameter & array destructuring',
+        'Mixed destructuring',
+        'Destructuring patterns with other syntaxes',
       ],
     },
     {
       sectionTitle: 'Spread syntax & array literals',
       sectionSource:
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Spread_syntax_and_arrays.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Rest Pattern in Arrays',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: '<code>Array.prototype</code> Methods',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'push()',
@@ -1446,6 +843,7 @@ const arraysAndSets = {
     {
       sectionTitle: 'Array Static Methods',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Array.isArray()',
@@ -1461,26 +859,14 @@ const arraysAndSets = {
     },
     {
       sectionTitle: 'Which array method to use?',
-
       sectionSource:
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Which_array_method_to_use.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Data structures - Sets',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
   ],
 };
@@ -1491,128 +877,55 @@ const objectsAndMaps = {
     {
       sectionTitle: 'Introducing JavaScript objects',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: "What's an object?",
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Objects vs Primitive Values',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Creating an object - Object literals',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Creating an object - Constructors',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            "Accesing object's properties <code>.</code> vs <code>[]</code> notation",
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Special key names & square bracket property access',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Dynamic property access & setting properties dynamically',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Adding, modifying & deleting properties',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Shorthand property syntax',
-          articleSource: '',
-        },
+      sectionSummary: [
+        "What's an object?",
+        'Objects vs Primitive Values',
+        'Creating an object - Object literals',
+        'Creating an object - Constructors',
+        "Accesing object's properties <code>.</code> vs <code>[]</code> notation",
+        'Special key names & square bracket property access',
+        'Dynamic property access & setting properties dynamically',
+        'Adding, modifying & deleting properties',
+        'Shorthand property syntax',
       ],
     },
     {
       sectionTitle: `Object methods and the <code>this</code> keyword`,
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Spread syntax & object literals',
       sectionSource:
         '/src/markdowns/08_Data_structures___Objects_&_Maps/Spread_syntax_and_object_literals.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Rest Pattern in Objects',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Destructuring Objects',
       sectionSource:
         '/src/markdowns/08_Data_structures___Objects_&_Maps/Destructuring_objects.html',
-      sectionArticles: [
-        {
-          articleTitle: 'What is destructuring?',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Why to use object destructuring?',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Binding and assignment',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Default values',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Using different variable names',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Nested object destructuring',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Extracting a dynamic name property',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Rest parameter & object destructuring',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Mixed destructuring',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Destructuring patterns with other syntaxes',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'What is destructuring?',
+        'Why to use object destructuring?',
+        'Binding and assignment',
+        'Default values',
+        'Using different variable names',
+        'Nested object destructuring',
+        'Extracting a dynamic name property',
+        'Rest parameter & object destructuring',
+        'Mixed destructuring',
+        'Destructuring patterns with other syntaxes',
       ],
     },
     {
       sectionTitle: '<code>Object.prototype</code> Methods',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'toString()',
@@ -1634,6 +947,7 @@ const objectsAndMaps = {
     {
       sectionTitle: 'Object Static Methods',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Object.keys()',
@@ -1675,6 +989,7 @@ const objectsAndMaps = {
     {
       sectionTitle: 'Object descriptors',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Object.getOwnPropertyDescriptor()',
@@ -1689,12 +1004,7 @@ const objectsAndMaps = {
     {
       sectionTitle: 'Data structures - Maps',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
   ],
 };
@@ -1706,175 +1016,64 @@ const oop = {
       sectionTitle: 'Inspiration of JavaScript: Scheme & Java',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Scheme_&_Java.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Scheme was a programming language that have <i>closures</i> and the idea of <i>functions as first class citizens</i>',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'In Java community, <i>classes and classical inheritance</i> was really, really important',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'JavaScript was inspired by Scheme and Java, and because of this inspiration we have this multi-paradigm language: functional and object-oriented',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'OOP and Functional Programming are paradigms that allow us to organize code',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Scheme was a programming language that have closures and the idea of functions as first class citizens',
+        'In Java community, classes and classical inheritance was really, really important',
+        'JavaScript was inspired by Scheme and Java, and because of this inspiration we have this multi-paradigm language: functional and object-oriented',
+        'OOP and Functional Programming are paradigms that allow us to organize code',
       ],
     },
     {
       sectionTitle: 'Introduction to "traditional" OOP',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Introduction_to_traditional_OOP.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'OOP is a programming paradigm that allow us to organize code',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Traditional OOP: Classes & Instances',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Traditional OOP: Inheritance',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Traditional OOP: Encapsulation',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '4 fundamental principles of OOP: abstraction, encapsulation, inheritance and polymorphism',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Traditional OOP: Classes & Instances vs JavaScript: Constructors & Prototypes',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'OOP is a programming paradigm that allow us to organize code',
+        'Traditional OOP: Classes & Instances',
+        'Traditional OOP: Inheritance',
+        'Traditional OOP: Encapsulation',
+        '4 fundamental principles of OOP: abstraction, encapsulation, inheritance and polymorphism',
+        'Traditional OOP: Classes & Instances vs JavaScript: Constructors & Prototypes',
       ],
     },
     {
       sectionTitle: 'OOP in JavaScript: Objects prototypes',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/OOP_in_JavaScript_Object_prototypes.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Prototypes are the mechanism by which JavaScript objects inherit features from one another',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'With the help of prototypes objects inherit features from another object, not copy them',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            "With Prototypal Inheritance we're being efficient with our memory: the fact that objects can share prototypes means that you can have objects with properties that are pointing to the same place in memory",
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Every object in JavaScript has a built-in property <code>__proto__</code> which is called its prototype',
-          articleSource: '',
-        },
-        {
-          articleTitle: `The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has <code>null</code> for its own prototype`,
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Only functions have the <code>prototype</code> property',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            "Shadowing properties happens when you define a property in an object, when a property with the same name is defined in the object's prototype",
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Setting a prototype: <code>Object.create()</code>, Constructors and ES6 Classes',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Prototypes and inheritance',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Prototypes & memory efficiency',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Prototypes are the mechanism by which JavaScript objects inherit features from one another',
+        'With the help of prototypes objects inherit features from another object, not copy them',
+        "With Prototypal Inheritance we're being efficient with our memory: the fact that objects can share prototypes means that you can have objects with properties that are pointing to the same place in memory",
+        'Every object in JavaScript has a built-in property <code>__proto__</code> which is called its prototype',
+        `The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype`,
+        'Only functions have the prototype property',
+        "Shadowing properties happens when you define a property in an object, when a property with the same name is defined in the object's prototype",
+        'Setting a prototype: <code>Object.create()</code>, Constructors and ES6 Classes',
+        'Prototypes and inheritance',
+        'Prototypes & memory efficiency',
       ],
     },
     {
       sectionTitle:
-        'What is the difference between <code>__proto__</code> and <code>prototype</code>?',
+        'What is the difference between <code>__proto__</code> and prototype?',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Difference_between_proto_and_prototype.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Prototypal Inheritance: Constructor Function & Prototypes',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Constructor_Function.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Factory Functions vs Constructor Function',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Constructor Function create a "blueprint" for creating many objects of the same "type"',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'We use Constructor Function to build an object using a function',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'A Constructor Function is just a function called using the <code>new</code> operator',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Constructors, by convention, start with a capital letter and are named for the type of object they create',
-          articleSource: '',
-        },
-        {
-          articleTitle: `You can't create a Constructor Function with the arrow function because arrow function doesn't have its own <code>this</code> keyword`,
-          articleSource: '',
-        },
-        {
-          articleTitle: `In a Constructor Function <code>this</code> does not have a value. It is a substitute for the new object. The value of <code>this</code> will become the new object when a new object is created`,
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Setting a prototype with Constructor Function',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'More real inheritance than Prototypal Inheritance (Child and Parent)',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Factory Functions vs Constructor Function',
+        'Constructor Function create a "blueprint" for creating many objects of the same "type"',
+        'We use Constructor Function to build an object using a function',
+        'A Constructor Function is just a function called using the <code>new</code> operator',
+        'Constructors, by convention, start with a capital letter and are named for the type of object they create',
+        `You can't create a Constructor Function with the arrow function because arrow function doesn't have its own <code>this</code> keyword`,
+        `In a Constructor Function <code>this</code> does not have a value. It is a substitute for the new object. The value of <code>this</code> will become the new object when a new object is created`,
+        'Setting a prototype with Constructor Function',
+        'More real inheritance than Prototypal Inheritance (Child and Parent)',
       ],
     },
     {
@@ -1882,128 +1081,48 @@ const oop = {
         'Prototypal Inheritance: <code>Object.create()</code> & Prototypes',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Object.create().html',
-      sectionArticles: [
-        {
-          articleTitle: 'Setting a prototype with <code>Object.create()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'More real inheritance than Prototypal Inheritance (Child and Parent)',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Setting a prototype with <code>Object.create()</code>',
+        'More real inheritance than Prototypal Inheritance (Child and Parent)',
       ],
     },
     {
       sectionTitle: 'Prototypal Inheritance: ES6 Classes & Prototypes',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_ES6_Classes.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'A class is not an object, it is a template for creating an object',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'A class encapsulate data with code (methods) to work on that data',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'JavaScript classes are only "syntactic sugar" over Constructor Function',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Class body',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Constructor method',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Classes & Prototypes',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Prototype methods',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Static methods and properties',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Setters and Getters',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Protected Properties and Methods',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Private Class Fields and Methods',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Chaining Methods',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>super</code> keyword',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>new</code> keyword',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'More real inheritance than Prototypal Inheritance (Child and Parent)',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'A class is not an object, it is a template for creating an object',
+        'A class encapsulate data with code (methods) to work on that data',
+        'JavaScript classes are only "syntactic sugar" over Constructor Function',
+        'Class body',
+        'Constructor method',
+        'Classes & Prototypes',
+        'Prototype methods',
+        'Static methods and properties',
+        'Setters and Getters',
+        'Protected Properties and Methods',
+        'Private Class Fields and Methods',
+        'Chaining Methods',
+        '<code>super</code> keyword',
+        '<code>new</code> keyword',
+        'More real inheritance than Prototypal Inheritance (Child and Parent)',
       ],
     },
     {
       sectionTitle: 'Prototypal Inheritance on Built-In Objects',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Object-Oriented vs Functional Programming',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Object-oriented_vs_functional_programming.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Inheritance vs Composition',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Inheritance problems: tight coupling, fragile base class & hierarchy',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            "One of the drawbacks to OOP paradigm and inheritance is that it is based on the fact that things (classes) won't change in the future. We are structuring a class based on what it is",
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'With FP we focus and structure our code around "What it has?" or "What it does to data?"',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'FP is more declarative (what to do, not how), and OOP is more imperative (what and how to do something)',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Inheritance vs Composition',
+        'Inheritance problems: tight coupling, fragile base class & hierarchy',
+        "One of the drawbacks to OOP paradigm and inheritance is that it is based on the fact that things (classes) won't change in the future. We are structuring a class based on what it is",
+        'With FP we focus and structure our code around "What it has?" or "What it does to data?"',
+        'FP is more declarative (what to do, not how), and OOP is more imperative (what and how to do something)',
       ],
     },
   ],
@@ -2016,110 +1135,46 @@ const functionalProgramming = {
       sectionTitle: 'Inspiration of JavaScript: Scheme & Java',
       sectionSource:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Scheme_&_Java.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Scheme was a programming language that have <i>closures</i> and the idea of <i>functions as first class citizens</i>',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'In Java community, <i>classes and classical inheritance</i> was really, really important',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'JavaScript was inspired by Scheme and Java, and because of this inspiration we have this multi-paradigm language: functional and object oriented',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'OOP and Functional Programming are paradigms that allow us to organize code',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Scheme was a programming language that have closures and the idea of functions as first class citizens',
+        'In Java community, classes and classical inheritance was really, really important',
+        'JavaScript was inspired by Scheme and Java, and because of this inspiration we have this multi-paradigm language: functional and object oriented',
+        'OOP and Functional Programming are paradigms that allow us to organize code',
       ],
     },
     {
       sectionTitle: 'Introduction to Functional Programming',
       sectionSource:
         '/src/markdowns/09A_Functional_Programming_(FP)/Introduction_to_FP.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Pure functions concept',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: ['Pure functions concept'],
     },
     {
       sectionTitle: 'Functional Programming concepts',
       sectionSource:
         '/src/markdowns/09A_Functional_Programming_(FP)/Functional_programming_concepts.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Pure Functions & Shared State',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Pure Functions & Immutability vs Mutating State',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Pure Functions & Side-Effects',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Pure Functions & Referential transparency',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Idempotence',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Imperative vs Declarative',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Reusability through Higher Order Functions',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Curry',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Partial Application',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Function composition: compose & pipe',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Arity',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Pure Functions & Shared State',
+        'Pure Functions & Immutability vs Mutating State',
+        'Pure Functions & Side-Effects',
+        'Pure Functions & Referential transparency',
+        'Idempotence',
+        'Imperative vs Declarative',
+        'Reusability through Higher Order Functions',
+        'Curry',
+        'Partial Application',
+        'Function composition: compose & pipe',
+        'Arity',
       ],
     },
     {
       sectionTitle: 'More about Pure Functions',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'More about Functions Composition',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
   ],
 };
@@ -2131,72 +1186,31 @@ const standardBuildInObjects = {
       sectionTitle: 'Introduction to Standard Build-in Objects',
       sectionSource:
         '/src/markdowns/10_Standard_Build-In_Objects/Introduction_to_Standard_Build-in_Objects.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Global objects vs Global Object <code>window</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Standard build-in objects by category',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Global objects vs Global Object <code>window</code>',
+        'Standard build-in objects by category',
       ],
     },
     {
       sectionTitle: 'String',
       sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/String.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Creating strings as primitives: string literals & <code>String()</code> function',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Creating strings as objects: <code>String()</code> constructor',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>String()</code> function and <code>String()</code> constructor produce different results',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Character access: You can treat the string as an array-like object, where individual characters correspond to a numerical index',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Comparing strings: strings case-sensitively!',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'String primitives vs String objects: in contexts where a method is to be invoked on a primitive string or a property lookup occurs, JavaScript will automatically wrap the string primitive and call the method or perform the property lookup on the wrapper object instead',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'String coercion: template literals, <code>String()</code> function, <code>+</code> operator',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Long literal strings',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Template literals (Template strings)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Template literals and Tagged Templates',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Creating strings as primitives: string literals & <code>String()</code> function',
+        'Creating strings as objects: <code>String()</code> constructor',
+        '<code>String()</code> function and <code>String()</code> constructor produce different results',
+        'Character access: You can treat the string as an array-like object, where individual characters correspond to a numerical index',
+        'Comparing strings: strings case-sensitively!',
+        'String primitives vs String objects: in contexts where a method is to be invoked on a primitive string or a property lookup occurs, JavaScript will automatically wrap the string primitive and call the method or perform the property lookup on the wrapper object instead',
+        'String coercion: template literals, <code>String()</code> function, <code>+</code> operator',
+        'Long literal strings',
+        'Template literals (Template strings)',
+        'Template literals and Tagged Templates',
       ],
     },
     {
       sectionTitle: '<code>String.prototype</code> properties & methods',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'length',
@@ -2266,52 +1280,24 @@ const standardBuildInObjects = {
     {
       sectionTitle: 'Regular Expressions ("RegEx")',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Number',
       sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Number.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Creating numbers as primitives: literal form & <code>Number()</code> function',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Creating numbers as objects: <code>Number()</code> constructor',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>Number()</code> function and <code>Number()</code> constructor produce different results',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Number primitives vs Number objects: in contexts where a method is to be invoked on a primitive number or a property lookup occurs, JavaScript will automatically wrap the number primitive and call the method or perform the property lookup on the wrapper object instead',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            "Number encoding: there are some limits to the stored number's magnitude and precision. Integers can only be represented without loss of precision in the range <code>-253 + 1</code> to <code>253 - 1</code>",
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Number coercion: Addition operator <code>+</code> & <code>Number()</code> function',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Creating numbers as primitives: literal form & <code>Number()</code> function',
+        'Creating numbers as objects: <code>Number()</code> constructor',
+        '<code>Number()</code> function and <code>Number()</code> constructor produce different results',
+        'Number primitives vs Number objects: in contexts where a method is to be invoked on a primitive number or a property lookup occurs, JavaScript will automatically wrap the number primitive and call the method or perform the property lookup on the wrapper object instead',
+        "Number encoding: there are some limits to the stored number's magnitude and precision. Integers can only be represented without loss of precision in the range -253 + 1 to 253 - 1",
+        'Number coercion: Addition operator <code>+</code> & <code>Number()</code> function',
       ],
     },
     {
       sectionTitle: 'Number Static Methods',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Number.parseInt()',
@@ -2343,6 +1329,7 @@ const standardBuildInObjects = {
     {
       sectionTitle: '<code>Number.prototype</code> Methods',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'toFixed()',
@@ -2354,26 +1341,16 @@ const standardBuildInObjects = {
     {
       sectionTitle: 'Math',
       sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Math.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Unlike many other global objects, <code>Math</code> is not a constructor',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'All properties and methods of <code>Math</code> are static',
-          articleSource: '',
-        },
-        {
-          articleTitle: `<code>Math</code> works with the Number type, it doesn't work with <code>BigInt</code>`,
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Unlike many other global objects, Math is not a constructor',
+        'All properties and methods of Math are static',
+        `Math works with the Number type, it doesn't work with BigInt`,
       ],
     },
     {
       sectionTitle: 'Math Static Methods',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Math.max()',
@@ -2420,57 +1397,25 @@ const standardBuildInObjects = {
     {
       sectionTitle: 'BigInt',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Date',
       sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Date.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'The ECMAScript epoch and timestamps: a JavaScript date is fundamentally specified as the number of milliseconds that have elapsed since the ECMAScript epoch, which is defined as January 1, 1970, UTC (equivalent to the UNIX epoch)',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Date format and time zone conversions: there are several methods available to obtain a date in various formats, as well as to perform time zone conversions',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The <code>Date()</code> constructor can create a <code>Date</code> instance <i>or</i> return a string representing the current time',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'When <code>Date()</code> is called as a constructor (with the <code>new</code> keyword), returns a new <code>Date</code> object',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'When <code>Date()</code> is called as a function, returns a string representation of the current date and time',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>Date</code> constructor static method: <code>Date.now()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>Date.now()</code> returns the numeric value corresponding to the current time — the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'The ECMAScript epoch and timestamps: a JavaScript date is fundamentally specified as the number of milliseconds that have elapsed since the ECMAScript epoch, which is defined as January 1, 1970, UTC (equivalent to the UNIX epoch)',
+        'Date format and time zone conversions: there are several methods available to obtain a date in various formats, as well as to perform time zone conversions',
+        'The <code>Date()</code> constructor can create a Date instance or return a string representing the current time',
+        'When <code>Date()</code> is called as a constructor (with the <code>new</code> keyword), returns a new Date object',
+        'When <code>Date()</code> is called as a function, returns a string representation of the current date and time',
+        'Date constructor static method: <code>Date.now()</code>',
+        '<code>Date.now()</code> returns the numeric value corresponding to the current time — the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored',
       ],
     },
     {
       sectionTitle: '<code>Date.prototype</code> Methods',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'getFullYear()',
@@ -2532,71 +1477,40 @@ const standardBuildInObjects = {
     {
       sectionTitle: 'Internationalization API (Intl)',
       sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Intl.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'The <code>Intl</code> object provides access to several constructors that do language sensitive string comparison, number formatting, and date and time formatting',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'All <code>Intl</code> constructors accept <code>locales</code> and <code>options</code> arguments, for use pattern to identifying locales and determining the one they will actually use',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'You can use <code>navigator.language</code> read-only property for setting your <code>locales</code> parameter',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'The Intl object provides access to several constructors that do language sensitive string comparison, number formatting, and date and time formatting',
+        'All Intl constructors accept locales and options arguments, for use pattern to identifying locales and determining the one they will actually use',
+        'You can use <code>navigator.language</code> read-only property for setting your locales parameter',
       ],
     },
     {
       sectionTitle: 'Intl.DateTimeFormat()',
       sectionSource:
         '/src/markdowns/10_Standard_Build-In_Objects/Intl.DateTimeFormat.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Intl.NumberFormat()',
       sectionSource:
         '/src/markdowns/10_Standard_Build-In_Objects/Intl.NumberFormat.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Error',
       sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Error.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Error types',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>Error</code> Constructor',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Error instance properties: <code>message</code>, <code>name</code>, <code>cause</code>',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Error types',
+        'Error Constructor',
+        'Error instance properties: message, name, cause',
       ],
     },
     {
       sectionTitle: 'FormData',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
-          articleTitle: '<code>new FormData()</code>',
+          articleTitle: 'new FormData()',
           articleSource: '',
         },
       ],
@@ -2604,22 +1518,15 @@ const standardBuildInObjects = {
     {
       sectionTitle: 'JSON',
       sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/JSON.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Unlike most global objects, <code>JSON</code> is not a constructor',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'JSON is a syntax for serializing objects, arrays, numbers, strings, booleans, and null. It is based upon JavaScript syntax, but is distinct from JavaScript: most of JavaScript is not JSON',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Unlike most global objects, JSON is not a constructor',
+        'JSON is a syntax for serializing objects, arrays, numbers, strings, booleans, and null. It is based upon JavaScript syntax, but is distinct from JavaScript: most of JavaScript is not JSON',
       ],
     },
     {
       sectionTitle: 'JSON Static Methods',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'JSON.stringify()',
@@ -2643,342 +1550,120 @@ const asynchronous = {
       sectionTitle: 'How the Web works: HTTP request & responses',
       sectionSource:
         '/src/markdowns/11_Asynchronous/How_the_web_works___HTTP_request_&_responses.html',
-      sectionArticles: [
-        {
-          articleTitle: 'HTTP is a protocol for fetching resources',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'HTTP is the foundation of any data exchange on the web',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Domain Name Server (DNS)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'TCP/IP socket connection',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'HTTP Messages: Request & Response',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'HTTP Request: HTTP method, request target, request headers, body',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'HTTP Response: HTTP status code, status message, headers, body',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'APIs based on HTTP: <code>XMLHttpRequest</code> & <code>Fetch API</code>',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'HTTP is a protocol for fetching resources',
+        'HTTP is the foundation of any data exchange on the web',
+        'HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response',
+        'Domain Name Server (DNS)',
+        'TCP/IP socket connection',
+        'HTTP Messages: Request & Response',
+        'HTTP Request: HTTP method, request target, request headers, body',
+        'HTTP Response: HTTP status code, status message, headers, body',
+        'APIs based on HTTP: XMLHttpRequest & Fetch API',
       ],
     },
     {
       sectionTitle: 'Introduction to Asynchronous JavaScript',
       sectionSource:
         '/src/markdowns/11_Asynchronous/Introducing_to_Asynchronous_JavaScript.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'JavaScript has only one threat of execution (Call Stack) and so it can only do one thing at a time. There is absolutely no multitasking happening in JavaScript itself.',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Single-Thread Language problem: long-running synchronous functions that work in the Call Stack',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Asynchronous functions & Web APIs',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Synchronous vs Asynchronous functions',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Early Asynchronous Programming & Event Handlers: early asynchronous APIs <code>XMLHttpRequest</code> used events for asynchronous programming',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Early Asynchronous Programming & Chaining Callbacks: Callback Hell',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Early Asynchronous Programming: AJAX',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'AJAX is not a programming language',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'AJAX use a combination of existing technologies together to communicate with servers',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The <code>XMLHttpRequest API</code> is the core of AJAX',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'XML vs JSON',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Useful JavaScript methods for JSON format: <code>JSON.parse()</code> & <code>JSON.stringify()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'XMLHttpRequests Chaining Requests: Welcome to Callback Hell',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'JavaScript has only one threat of execution (Call Stack) and so it can only do one thing at a time. There is absolutely no multitasking happening in JavaScript itself.',
+        'Single-Thread Language problem: long-running synchronous functions that work in the Call Stack',
+        'Asynchronous functions & Web APIs',
+        'Synchronous vs Asynchronous functions',
+        'Early Asynchronous Programming & Event Handlers: early asynchronous APIs XMLHttpRequest used events for asynchronous programming',
+        'Early Asynchronous Programming & Chaining Callbacks: Callback Hell',
+        'Early Asynchronous Programming: AJAX',
+        'AJAX is not a programming language',
+        'AJAX use a combination of existing technologies together to communicate with servers',
+        'The XMLHttpRequest API is the core of AJAX',
+        'XML vs JSON',
+        'Useful JavaScript methods for JSON format: <code>JSON.parse()</code> & <code>JSON.stringify()</code>',
+        'XMLHttpRequests Chaining Requests: Welcome to Callback Hell',
       ],
     },
     {
       sectionTitle: 'Promises',
       sectionSource: '/src/markdowns/11_Asynchronous/Promises.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Traditionally (before promises), asynchronous tasks were designed as callbacks. This lead at the problem known as Callback Hell. A promise allows to transform the callback-based API to a promise-based one',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'A promise is an object returned by an asynchronous function that is used as a placeholder for the future result of that asynchronous operation',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The promise object provides methods to handle the eventual success or failure of the operation',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The promise lifecycle: pending -> settled (fulfilled / rejected)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Build & consume promises',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Traditionally (before promises), asynchronous tasks were designed as callbacks. This lead at the problem known as Callback Hell. A promise allows to transform the callback-based API to a promise-based one',
+        'A promise is an object returned by an asynchronous function that is used as a placeholder for the future result of that asynchronous operation',
+        'The promise object provides methods to handle the eventual success or failure of the operation',
+        'The promise lifecycle: pending -> settled (fulfilled / rejected)',
+        'Build & consume promises',
       ],
     },
     {
       sectionTitle: 'Building a Promise',
       sectionSource: '/src/markdowns/11_Asynchronous/Building_a_Promise.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'The <code>Promise()</code> constructor is primarily used to wrap functions that do not already support promises',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'If your task is already promise-based, you likely do not need the <code>Promise()</code> constructor',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The <code>Promise()</code> constructor returns a promise object to which you can attach handlers for consuming the promise',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'The <code>Promise()</code> constructor is primarily used to wrap functions that do not already support promises',
+        'If your task is already promise-based, you likely do not need the <code>Promise()</code> constructor',
+        'The <code>Promise()</code> constructor returns a promise object to which you can attach handlers for consuming the promise',
       ],
     },
     {
       sectionTitle: 'Consuming a Promise',
       sectionSource: '/src/markdowns/11_Asynchronous/Consuming_a_Promise.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'There is no race condition between an asynchronous operation completing and its handlers being attached',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Handling Fulfilled Promise: <code>.then()</code> method (callback function with <code>response</code> parameter)',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Handling Rejected Promise: <code>.catch()</code> method (callback function with <code>error</code> parameter)',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Chaining Multiple Promises: <code>.then()</code>, <code>.catch()</code> and <code>.finally()</code> methods are used to associate further action with a promise that becomes settled. These methods return promises, so they can be chained',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            "Always return the result of a promise, otherwise <code>.then()</code> method won't catch the result of the previous promise",
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>.finally()</code> method (callback function)',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'There is no race condition between an asynchronous operation completing and its handlers being attached',
+        'Handling Fulfilled Promise: <code>.then()</code> method (callback function with response parameter)',
+        'Handling Rejected Promise: <code>.catch()</code> method (callback function with error parameter)',
+        'Chaining Multiple Promises: <code>.then()</code>, <code>.catch()</code> and <code>.finally()</code> methods are used to associate further action with a promise that becomes settled. These methods return promises, so they can be chained',
+        "Always return the result of a promise, otherwise <code>.then()</code> method won't catch the result of the previous promise",
+        '<code>.finally()</code> method (callback function)',
       ],
     },
     {
       sectionTitle: 'The Fetch API',
       sectionSource: '/src/markdowns/11_Asynchronous/Fetch_API.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'The Fetch API provides an interface for fetching resources (including across the network)',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'For making a request and fetching a resource use the <code>fetch()</code> method',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The <code>fetch()</code> method always return a promise',
-          articleSource: '',
-        },
-        {
-          articleTitle: `The promise returned from <code>fetch()</code> won't reject on HTTP error status even if the response is an HTTP 404 or 500`,
-          articleSource: '',
-        },
+      sectionSummary: [
+        'The Fetch API provides an interface for fetching resources (including across the network)',
+        'For making a request and fetching a resource use the <code>fetch()</code> method',
+        'The <code>fetch()</code> method always return a promise',
+        `The promise returned from <code>fetch()</code> won't reject on HTTP error status even if the response is an HTTP 404 or 500`,
       ],
     },
     {
-      sectionTitle: 'How to consume a promise returned by the fetch() method',
+      sectionTitle:
+        'How to consume a promise returned by the <code>fetch()</code> method',
       sectionSource:
         '/src/markdowns/11_Asynchronous/How_to_consume_a_promise_returned_by_fetch_method.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            '<code>fetch()</code> will always return a promise that need to be handled by consuming it',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Read the response returned by <code>fetch()</code> with: <code>Response.json()</code>, <code>Response.text()</code>, <code>Response.formData()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>Response.json()</code>, <code>Response.text()</code>, <code>Response.formData()</code> always return a promise',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Throwing Custom Errors Manually: the <code>Error</code> Object & <code>throw new Error()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Rethrowing an error',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Combining multiple promises with <code>Promise.all</code> or <code>Promise.any</code> and consume them',
-          articleSource: '',
-        },
+      sectionSummary: [
+        '<code>fetch()</code> will always return a promise that need to be handled by consuming it',
+        'Read the response returned by <code>fetch()</code> with: <code>Response.json()</code>, <code>Response.text()</code>, <code>Response.formData()</code>',
+        '<code>Response.json()</code>, <code>Response.text()</code>, <code>Response.formData()</code> always return a promise',
+        'Throwing Custom Errors Manually: the Error Object & <code>throw new Error()</code>',
+        'Rethrowing an error',
+        'Combining multiple promises with <code>Promise.all</code> or <code>Promise.any</code> and consume them',
       ],
     },
     {
-      sectionTitle: 'Consuming promises with async/await',
+      sectionTitle:
+        'Consuming promises with <code>async</code>/<code>await</code>',
       sectionSource: '/src/markdowns/11_Asynchronous/async_&_await.html',
-      sectionArticles: [
-        {
-          articleTitle: '<code>async</code> functions',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>await</code> operator',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The purpose of <code>async/await</code> is to simplify the syntax necessary to consume promise-based APIs',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>async/await</code> enables you to write code that uses asynchronous functions but looks like synchronous code',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>async/await</code> help you to avoid the need to explicitly configure promise chains, like you used to do with <code>.then()</code> and <code>.catch()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: `Just like a promise chain, <code>await</code> forces asynchronous operations to be completed in series. This is necessary if the result of the next operation depends on the result of the last one, but if that's not the case then something like <code>Promise.all</code> will be more performant`,
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>async</code> functions always return a promise. If the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'You can only use <code>await</code> inside an <code>async</code> function, unless your code is in a JavaScript module',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'You can use multiple <code>await</code> in an <code>async</code> function',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Store await promises results in variables',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Error Handling in Async Functions: <code>try {} catch(error) {}</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Rethrowing an error when you have multiple <code>async</code> functions',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Returning values from <code>async</code> functions',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>async/await</code> is only syntactic sugar over "Raw Promises"',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Top-Level <code>await</code> (ES2022)',
-          articleSource: '',
-        },
+      sectionSummary: [
+        '<code>async</code> functions',
+        '<code>await</code> operator',
+        'The purpose of <code>async</code>/<code>await</code> is to simplify the syntax necessary to consume promise-based APIs',
+        '<code>async</code>/<code>await</code> enables you to write code that uses asynchronous functions but looks like synchronous code',
+        '<code>async</code>/<code>await</code> help you to avoid the need to explicitly configure promise chains, like you used to do with <code>.then()</code> and <code>.catch()</code>',
+        `Just like a promise chain, <code>await</code> forces asynchronous operations to be completed in series. This is necessary if the result of the next operation depends on the result of the last one, but if that's not the case then something like <code>Promise.all</code> will be more performant`,
+        '<code>async</code> functions always return a promise. If the return value of an <code>async</code> function is not explicitly a promise, it will be implicitly wrapped in a promise',
+        'You can only use <code>await</code> inside an <code>async</code> function, unless your code is in a JavaScript module',
+        'You can use multiple <code>await</code> in an <code>async</code> function',
+        'Store <code>await</code> promises results in variables',
+        'Error Handling in <code>async</code> Functions: <code>try{...} catch(error){...}</code>',
+        'Rethrowing an error when you have multiple <code>async</code> functions',
+        'Returning values from <code>async</code> functions',
+        '<code>async</code>/<code>await</code> is only syntactic sugar over "Raw Promises"',
+        'Top-Level <code>await</code> (ES2022)',
       ],
     },
     {
       sectionTitle: '<code>Promise.prototype</code> Methods',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'then()',
@@ -3000,6 +1685,7 @@ const asynchronous = {
     {
       sectionTitle: 'Promise Static Methods',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Promise.resolve()',
@@ -3031,6 +1717,7 @@ const asynchronous = {
     {
       sectionTitle: 'Timers',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'setTimeout()',
@@ -3058,143 +1745,66 @@ const asynchronous = {
 };
 
 const domManipulation = {
-  title: 'Web APIs <br>Document Object Model (DOM)<br>- Properties & Methods -',
+  title:
+    'Web APIs <br> Document Object Model (DOM) <br> - Properties & Methods -',
   sections: [
     {
       sectionTitle: 'Introduction to Web APIs',
       sectionSource:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Introduction_to_Web_APIs.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'An API (Application Programming Interface) is a software intermediary (interface) that allows two applications to talk to each other',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'In Web development, we have Web APIs that are build into the browser, and we have external Web APIs called Third Party APIs',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'In both cases, a Web API is an interface that allows two applications to talk to each other: JavaScript - Browser <i>or</i> JavaScript - Server',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'An API (Application Programming Interface) is a software intermediary (interface) that allows two applications to talk to each other',
+        'In Web development, we have Web APIs that are build into the browser, and we have external Web APIs called Third Party APIs',
+        'In both cases, a Web API is an interface that allows two applications to talk to each other: JavaScript - Browser or JavaScript - Server',
       ],
     },
     {
       sectionTitle: 'Introduction to the Document Object Model (DOM)',
       sectionSource:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Introduction_to_the_DOM.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'The DOM defines a standard for accessing different types of documents (XML, HTML, etc.)',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The DOM is built using multiple APIs that work together',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'When it comes to HTML document, HTML DOM API adds support for representing HTML documents to the core DOM',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The DOM is a programming interface for web documents (HTML documents). It represents the HTML document so that programs can change the document structure, style and content',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The DOM connects web pages to scripts or programming languages by representing the structure of a HTML document in memory, as an object-oriented representation',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The DOM model is constructed as a tree of objects. Each branch of the tree ends in a node, and each node contains objects. This means that DOM objects are simply objects (objects are reference values)',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            "The DOM is not a programming language, but without it, the JavaScript language wouldn't have any model or notion of web pages, HTML documents, SVG documents, and their component parts",
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Accessing the DOM: <code>document</code> & <code>window</code> object',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'DOM Interfaces: interfaces & objects',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'The DOM defines a standard for accessing different types of documents (XML, HTML, etc.)',
+        'The DOM is built using multiple APIs that work together',
+        'When it comes to HTML document, HTML DOM API adds support for representing HTML documents to the core DOM',
+        'The DOM is a programming interface for web documents (HTML documents). It represents the HTML document so that programs can change the document structure, style and content',
+        'The DOM connects web pages to scripts or programming languages by representing the structure of a HTML document in memory, as an object-oriented representation',
+        'The DOM model is constructed as a tree of objects. Each branch of the tree ends in a node, and each node contains objects. This means that DOM objects are simply objects (objects are reference values)',
+        "The DOM is not a programming language, but without it, the JavaScript language wouldn't have any model or notion of web pages, HTML documents, SVG documents, and their component parts",
+        'Accessing the DOM: <code>document</code> & <code>window</code> object',
+        'DOM Interfaces: interfaces & objects',
       ],
     },
     {
       sectionTitle: 'How DOM API is organized behind the scenes',
       sectionSource:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/How_the_DOM_API_is_organized_behind_the_scenes.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'The DOM API is made up of the <i>interfaces that define the functionality of each of the elements in HTML</i>',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The majority of the interfaces that comprise the HTML DOM API map almost one-to-one to individual HTML elements, or to a small group of elements with similar functionality',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'The DOM API is made up of the interfaces that define the functionality of each of the elements in HTML',
+        'The majority of the interfaces that comprise the HTML DOM API map almost one-to-one to individual HTML elements, or to a small group of elements with similar functionality',
       ],
     },
     {
       sectionTitle: 'DOM Node Types (Node vs Element)',
       sectionSource:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/DOM_Node_Types_(Node_vs_Element).html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Nodes are the <i>objects</i> that make up the DOM, everything in the DOM is a node',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'A DOM document consists of a <i>hierarchy of nodes</i>. Each node can have a parent and/or children',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Not just HTML tags are treated as nodes objects, but also text, comments etc. Even whitespace that you have for readability reasons in an HTML document is treated as a node',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'DOM Nodes are just JavaScript objects in the end - i.e. reference values. Methods like <code>querySelector()</code> or <code>querySelectorAll()</code> return the object references (addresses)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Live Node Lists vs Static Node Lists',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Nodes are the objects that make up the DOM, everything in the DOM is a node',
+        'A DOM document consists of a hierarchy of nodes. Each node can have a parent and/or children',
+        'Not just HTML tags are treated as nodes objects, but also text, comments etc. Even whitespace that you have for readability reasons in an HTML document is treated as a node',
+        'DOM Nodes are just JavaScript objects in the end - i.e. reference values. Methods like <code>querySelector()</code> or <code>querySelectorAll()</code> return the object references (addresses)',
+        'Live Node Lists vs Static Node Lists',
       ],
     },
     {
       sectionTitle: 'HTML Attributes vs DOM Properties',
       sectionSource:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTML_attributes_vs_DOM_properties.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'DOM Traversing & select DOM elements',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Introduction to DOM Traversing',
@@ -3312,24 +1922,16 @@ const domManipulation = {
       sectionTitle: 'Tips & tricks for create, insert and remove elements',
       sectionSource:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Tips_for_create_insert_and_remove_elements.html',
-      sectionArticles: [
-        {
-          articleTitle: `If you have a created or selected element, either because you selected it in the DOM with <code>querySelector()</code> or you created it with <code>createElement()</code> and that element is already part of the DOM, so it is already rendered, if you then insert it somewhere else in the DOM, that element is NOT COPIED or anything like that, instead the existing element is DETACHED from the place where it was and moved to the new place. This actually makes a lot of sense since objects are reference values as you learned, and the DOM objects you're working are normal objects in the end, and therefore if we do something with them and we add them somewhere else, we always work with the same object`,
-          articleSource: '',
-        },
-        {
-          articleTitle: `If you want a brand new element, you have to create a brand new one with <code>document.createElement()</code>. Just keep in mind that inserting the same element multiple times will move it, because we're working with objects and not with some automatically copied things`,
-          articleSource: '',
-        },
-        {
-          articleTitle: `Important (no matter how you insert elements): whenever you insert elements, you MOVE the element to that new place, if you already inserted it before. It's NOT COPIED (you can copy an element via <code>Node.cloneNode(true)</code> though)`,
-          articleSource: '',
-        },
+      sectionSummary: [
+        `If you have a created or selected element, either because you selected it in the DOM with <code>querySelector()</code> or you created it with <code>createElement()</code> and that element is already part of the DOM, so it is already rendered, if you then insert it somewhere else in the DOM, that element is NOT COPIED or anything like that, instead the existing element is DETACHED from the place where it was and moved to the new place. This actually makes a lot of sense since objects are reference values as you learned, and the DOM objects you're working are normal objects in the end, and therefore if we do something with them and we add them somewhere else, we always work with the same object`,
+        `If you want a brand new element, you have to create a brand new one with <code>document.createElement()</code>. Just keep in mind that inserting the same element multiple times will move it, because we're working with objects and not with some automatically copied things`,
+        `Important (no matter how you insert elements): whenever you insert elements, you MOVE the element to that new place, if you already inserted it before. It's NOT COPIED (you can copy an element via <code>Node.cloneNode(true)</code> though)`,
       ],
     },
     {
       sectionTitle: 'Create, insert & remove DOM elements',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Element.innerHTML',
@@ -3411,6 +2013,7 @@ const domManipulation = {
     {
       sectionTitle: 'Text, Styles, Classes & Attributes',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'HTMLElement.innerText',
@@ -3502,6 +2105,7 @@ const domManipulation = {
     {
       sectionTitle: 'Other methods & properties',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Element.getBoundingClientRect()',
@@ -3587,181 +2191,74 @@ const domManipulation = {
     {
       sectionTitle: 'Changing Multiple Elements',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
   ],
 };
 
 const domEvents = {
-  title: 'Web APIs <br>Document Object Model (DOM)<br>- Events -',
+  title: 'Web APIs <br> Document Object Model (DOM) <br> - Events -',
   sections: [
     {
       sectionTitle: 'Introduction to Events',
       sectionSource:
         '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Introduction_to_events.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Events are actions or occurrences that happen in the system you are programming, which the system tells you about so your code can react to them',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'In the case of the Web, events are fired inside the browser window, and tend to be attached to a specific item that resides in it',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Web events are NOT part of the core JavaScript language — they are defined as part of the APIs built into the browser',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'To react to an event, you attach an event handler to it. Event handler is a block of code that runs when the event fires',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Event listeners vs Event handlers: the listener listens out for the event happening, and the handler is the code that is run in response to it happening',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Supported Event Types',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Events are actions or occurrences that happen in the system you are programming, which the system tells you about so your code can react to them',
+        'In the case of the Web, events are fired inside the browser window, and tend to be attached to a specific item that resides in it',
+        'Web events are NOT part of the core JavaScript language — they are defined as part of the APIs built into the browser',
+        'To react to an event, you attach an event handler to it. Event handler is a block of code that runs when the event fires',
+        'Event listeners vs Event handlers: the listener listens out for the event happening, and the handler is the code that is run in response to it happening',
+        'Supported Event Types',
       ],
     },
     {
       sectionTitle: 'Event handling',
       sectionSource:
         '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Event_handling.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            '2 ways NOT to add events: event handler properties & inline event handlers',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The recommended mechanism for register event listeners: <code>addEventListener()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>addEventListener()</code> method allows you to add many events to the same element, without overwriting existing events',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>addEventListener()</code> method allows you to add event listeners on any HTML DOM object, such as HTML elements, the HTML document, the <code>window</code> object, or other objects that support events, like the <code>xmlHttpRequest</code> object',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The value of <code>this</code> within the handler function',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Getting data into and out of an event listener',
-          articleSource: '',
-        },
+      sectionSummary: [
+        '2 ways NOT to add events: event handler properties & inline event handlers',
+        'The recommended mechanism for register event listeners: <code>addEventListener()</code>',
+        '<code>addEventListener()</code> method allows you to add many events to the same element, without overwriting existing events',
+        '<code>addEventListener()</code> method allows you to add event listeners on any HTML DOM object, such as HTML elements, the HTML document, the window object, or other objects that support events, like the <code>xmlHttpRequest</code> object',
+        'The value of <code>this</code> within the handler function',
+        'Getting data into and out of an event listener',
       ],
     },
     {
       sectionTitle: 'The Event Object',
       sectionSource:
         '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/The_Event_object.html',
-      sectionArticles: [
-        {
-          articleTitle: `Sometimes, inside an event handler function, you'll see a parameter specified with a name such as <code>event</code>, <code>evt</code> or <code>e</code>. This is called the <code>Event</code> object, and it is automatically passed to event handlers to provide extra features and information`,
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The parameter <code>e/evt/event</code> is an <code>Event</code> object, and it represents the event being fired which caused your function to be executed',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The parameter <code>e/evt/event</code> only exists when an event happens',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Most event objects have a standard set of properties and methods available on the <code>Event</code> object, but some event objects add extra properties that are relevant to that particular type of event',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'When an event occurs in HTML, the event belongs to a certain event object. All event objects are based on the <code>Event</code> object',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Submit event & <code>e.preventDefault()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>Event.target</code> vs <code>Event.currentTarget</code>',
-          articleSource: '',
-        },
+      sectionSummary: [
+        `Sometimes, inside an event handler function, you'll see a parameter specified with a name such as <code>event</code>, <code>evt</code> or <code>e</code>. This is called the Event object, and it is automatically passed to event handlers to provide extra features and information`,
+        'The parameter <code>e</code>/<code>evt</code>/<code>event</code> is an Event object, and it represents the event being fired which caused your function to be executed',
+        'The parameter <code>e</code>/<code>evt</code>/<code>event</code> only exists when an event happens',
+        'Most event objects have a standard set of properties and methods available on the Event object, but some event objects add extra properties that are relevant to that particular type of event',
+        'When an event occurs in HTML, the event belongs to a certain <code>event</code> object. All <code>event</code> objects are based on the Event object',
+        'Submit event & <code>e.preventDefault()</code>',
+        '<code>Event.target</code> vs <code>Event.currentTarget</code>',
       ],
     },
     {
       sectionTitle: 'Event Propagation & Delegation',
       sectionSource:
         '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Event_propagation_&_delegation.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Event propagation is a way of defining the element order when an event occurs',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Event propagation: capturing phase, target phase & bubbling phase',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Event bubbling and capture are terms that describe phases in how the browser handles events targeted at nested elements',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            "In capturing phase the outer most element's event is handled first and then the inner",
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            "In bubbling phase the inner most element's event is handled first and then the outer",
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'With the <code>addEventListener()</code> method you can specify the propagation type by using the <code>useCapture</code> parameter: <code>false</code> - bubbling phase vs <code>true</code> - capturing phase',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'Stop propagation with <code>e.stopPropagation()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Not all events bubble',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Event propagation is a way of defining the element order when an event occurs',
+        'Event propagation: capturing phase, target phase & bubbling phase',
+        'Event bubbling and capture are terms that describe phases in how the browser handles events targeted at nested elements',
+        "In capturing phase the outer most element's event is handled first and then the inner",
+        "In bubbling phase the inner most element's event is handled first and then the outer",
+        'With the <code>addEventListener()</code> method you can specify the propagation type by using the <code>useCapture</code> parameter: <code>false</code> - bubbling phase vs <code>true</code> - capturing phase',
+        'Stop propagation with <code>e.stopPropagation()</code>',
+        'Not all events bubble',
       ],
     },
     {
       sectionTitle: 'Types of Events',
       sectionSource:
         '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events.html',
+      sectionSummary: [],
       sectionArticles: [
         {
           articleTitle: 'Element: <code>click</code>',
@@ -3791,7 +2288,7 @@ const domEvents = {
         },
         {
           articleTitle:
-            'Keyboard Events: <code>keyup</code>, <code>keydown</code>, <i>keypress(deprecated)</i>',
+            'Keyboard Events: <code>keyup</code>, <code>keydown</code>, <code>keypress</code>(deprecated)',
           articleSource:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___keyboard.html',
         },
@@ -3832,165 +2329,87 @@ const otherWebAPIs = {
       sectionTitle: 'The Intersection Observer API',
       sectionSource:
         '/src/markdowns/14_Others_Web_APIs/Intersection_Observer_API.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            "The Intersection Observer API provides a way to <i>asynchronously observe changes in the intersection</i> of a target element with an ancestor element, or with a top-level document's viewport",
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The Intersection Observer API lets code register a <i>callback function</i> that is executed whenever an element they wish to monitor enters or exits another element (or the viewport)',
-          articleSource: '',
-        },
+      sectionSummary: [
+        "The Intersection Observer API provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element, or with a top-level document's viewport",
+        'The Intersection Observer API lets code register a callback function that is executed whenever an element they wish to monitor enters or exits another element (or the viewport)',
       ],
     },
     {
       sectionTitle: 'Navigator',
       sectionSource: '/src/markdowns/14_Others_Web_APIs/Navigator.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'The <code>Navigator</code> interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>navigator.language</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>navigator.languages</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            '<code>navigator.geolocation.getCurrentPosition()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>navigator.geolocation.watchPosition()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>navigator.geolocation.clearWatch()</code>',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'The Navigator interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities',
+        '<code>navigator.language</code>',
+        '<code>navigator.languages</code>',
+        '<code>navigator.geolocation.getCurrentPosition()</code>',
+        '<code>navigator.geolocation.watchPosition()</code>',
+        '<code>navigator.geolocation.clearWatch()</code>',
       ],
     },
     {
       sectionTitle: 'Storage',
       sectionSource: '/src/markdowns/14_Others_Web_APIs/Storage.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            "The <code>Storage</code> interface provides access to a particular domain's <i>session</i> or <i>local</i> storage",
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The <code>localStorage</code> read-only property of the <code>window</code> interface allows you to access a <code>Storage</code> object',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>localStorage.setItem()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>JSON.stringify()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>localStorage.getItem()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>JSON.parse()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>localStorage.removeItem()</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>localStorage.clear()</code>',
-          articleSource: '',
-        },
+      sectionSummary: [
+        "The Storage interface provides access to a particular domain's session or local storage",
+        'The <code>localStorage</code> read-only property of the window interface allows you to access a Storage object',
+        '<code>localStorage.setItem()</code>',
+        '<code>JSON.stringify()</code>',
+        '<code>localStorage.getItem()</code>',
+        '<code>JSON.parse()</code>',
+        '<code>localStorage.removeItem()</code>',
+        '<code>localStorage.clear()</code>',
       ],
     },
     {
       sectionTitle: 'Location',
       sectionSource: '/src/markdowns/14_Others_Web_APIs/Location.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'The <code>window.location</code> & <code>document.location</code> read-only properties returns a <code>Location</code> object, which contains information about the URL of the document and provides methods for changing that URL and loading another URL',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>window.location.href</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>window.location.pathname</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>window.location.hash</code>',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>window.location.reload()</code>',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'The <code>window.location</code> & <code>document.location</code> read-only properties returns a Location object, which contains information about the URL of the document and provides methods for changing that URL and loading another URL',
+        '<code>window.location.href</code>',
+        '<code>window.location.pathname</code>',
+        '<code>window.location.hash</code>',
+        '<code>window.location.reload()</code>',
       ],
     },
     {
       sectionTitle: 'History',
       sectionSource: '/src/markdowns/14_Others_Web_APIs/History.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'The <code>History</code> object allows manipulation of the browser <i>session</i> history',
-          articleSource: '',
-        },
-        {
-          articleTitle: '<code>window.history.pushState()</code>',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'The History object allows manipulation of the browser session history',
+        '<code>window.history.pushState()</code>',
       ],
     },
     {
       sectionTitle: 'window',
       sectionSource: '',
+      sectionSummary: [],
       sectionArticles: [
         {
-          articleTitle: '<code>window.open()</code>',
+          articleTitle: 'window.open()',
           articleSource: '/src/markdowns/14_Others_Web_APIs/window.open.html',
         },
         {
-          articleTitle:
-            '<code>window.pageXOffset</code> vs <code>window.scrollX</code>',
+          articleTitle: 'window.pageXOffset vs window.scrollX',
           articleSource:
             '/src/markdowns/14_Others_Web_APIs/window.scrollX.html',
         },
         {
-          articleTitle:
-            '<code>window.pageYOffset</code> vs <code>window.scrollY</code>',
+          articleTitle: 'window.pageYOffset vs window.scrollY',
           articleSource:
             '/src/markdowns/14_Others_Web_APIs/window.scrollY.html',
         },
         {
-          articleTitle: '<code>window.scrollTo()</code>',
+          articleTitle: 'window.scrollTo()',
           articleSource:
             '/src/markdowns/14_Others_Web_APIs/window.scrollTo.html',
         },
         {
-          articleTitle: '<code>window.innerHeight</code>',
+          articleTitle: 'window.innerHeight',
           articleSource:
             '/src/markdowns/14_Others_Web_APIs/window.innerHeight.html',
         },
         {
-          articleTitle: '<code>window.getComputedStyle()</code>',
+          articleTitle: 'window.getComputedStyle()',
           articleSource:
             '/src/markdowns/14_Others_Web_APIs/window.getComputedStyle.html',
         },
@@ -4006,219 +2425,103 @@ const modulesAndTooling = {
       sectionTitle: 'Introducing to JavaScript Modules',
       sectionSource:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Introducing_to_JavaScript_modules.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Splitting Code in a Sub-optimal Way',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'The Module Pattern with IIFE',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'CommonJS & AMD Modules',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Exporting and importing in native ES6 Modules',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Named exports/imports in ES6 Modules',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Default exports/imports in ES6 Modules',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Mixed imports in ES6 Modules',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Imports are a Live Connection to Exports',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'When Does Module Code Execute?',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Module Scope & "globalThis" object',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Splitting Code in a Sub-optimal Way',
+        'The Module Pattern with IIFE',
+        'CommonJS & AMD Modules',
+        'Exporting and importing in native ES6 Modules',
+        'Named exports/imports in ES6 Modules',
+        'Default exports/imports in ES6 Modules',
+        'Mixed imports in ES6 Modules',
+        'Imports are a Live Connection to Exports',
+        'When Does Module Code Execute?',
+        'Module Scope & "globalThis" object',
       ],
     },
     {
       sectionTitle: 'Introduction to NPM',
       sectionSource:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Introduction_to_NPM.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Project Limitations & Why We Need Tools',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Setting Up a npm Project',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Working with npm Packages',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Using Third Party Packages with npm',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Project Limitations & Why We Need Tools',
+        'Setting Up a npm Project',
+        'Working with npm Packages',
+        'Using Third Party Packages with npm',
       ],
     },
     {
       sectionTitle: 'Working with JavaScript Libraries',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: 'What & Why',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Adding Libraries',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Example: Axios Library & Http Requests',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'What & Why',
+        'Adding Libraries',
+        'Example: Axios Library & Http Requests',
       ],
     },
     {
       sectionTitle: 'Bundling With Parcel and NPM Scripts',
       sectionSource:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Bundling_with_Parcel_and_NPM_Scripts.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Configuring Babel and Polyfilling',
       sectionSource:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Configuring_Babel_and_Polyfilling.html',
-      sectionArticles: [
-        {
-          articleTitle:
-            'Compile your modern JavaScript code back to ES5 code with Babel',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'What Is "Browser Support" About?',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Determining Browser Support For A JavaScript Feature',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Solution: Feature Detection + Fallback Code',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Solution: Using Polyfills',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Solution: Transpiling Code',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Improvement: Automatically Detect + Add Polyfills',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Compile your modern JavaScript code back to ES5 code with Babel',
+        'What Is "Browser Support" About?',
+        'Determining Browser Support For A JavaScript Feature',
+        'Solution: Feature Detection + Fallback Code',
+        'Solution: Using Polyfills',
+        'Solution: Transpiling Code',
+        'Improvement: Automatically Detect + Add Polyfills',
       ],
     },
     {
       sectionTitle: 'Version control with Git',
       sectionSource:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Version_control_with_Git.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Model-View-Controller (MVC) Arhitecture',
       sectionSource:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Model_View_Controller_(MVC)_Arhitecture.html',
-      sectionArticles: [
-        {
-          articleTitle: 'Why we worry about software arhitecture?',
-          articleSource: '',
-        },
-        {
-          articleTitle:
-            'The perfect architecture (Structure, Maintainability, Expandability)',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'Components of any arhitecture',
-          articleSource: '',
-        },
-        {
-          articleTitle: 'How the MVC architecture works in JavaScript',
-          articleSource: '',
-        },
+      sectionSummary: [
+        'Why we worry about software arhitecture?',
+        'The perfect architecture (Structure, Maintainability, Expandability)',
+        'Components of any arhitecture',
+        'How the MVC architecture works in JavaScript',
       ],
     },
     {
       sectionTitle: 'Refactoring Our Code: The DRY Principle',
       sectionSource: '',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Prettier',
       sectionSource:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Prettier.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Terminal commands',
       sectionSource:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Terminal_commands.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
     {
       sectionTitle: 'Markdowns',
       sectionSource:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Markdowns.html',
-      sectionArticles: [
-        {
-          articleTitle: '',
-          articleSource: '',
-        },
-      ],
+      sectionSummary: [],
     },
   ],
 };
 
-export const data = [
+export const dataStorage = [
   browserEngineAndRuntime,
   variablesAndValues,
   operators,
