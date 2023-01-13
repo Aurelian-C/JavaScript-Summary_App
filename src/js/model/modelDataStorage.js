@@ -695,7 +695,7 @@ const arraysAndSets = {
         'Accessing and modifying array items',
         'Accessing every item / iterating over arrays',
         'Arrays are reference types',
-        'Nested / multidimensional arrays',
+        'Nested / multidimensional arrays: Objects are not really located "inside" arrays. They might appear to be "inside" in code, but each object in an array is a separate value.',
         'Which data can you store in arrays?',
       ],
     },
@@ -909,6 +909,7 @@ const objectsAndMaps = {
         'Dynamic property access & setting properties dynamically',
         'Adding, modifying & deleting properties',
         'Shorthand property syntax',
+        'Nesting objects: Objects are not really nested. An object can appears "nested" in another object but "nesting" is an inaccurate way to think about how objects behave. When the code executes, there is no such thing as a "nested" object. You are really looking at two different objects because every single object is different, even it is nested inside another object.',
       ],
     },
     {
