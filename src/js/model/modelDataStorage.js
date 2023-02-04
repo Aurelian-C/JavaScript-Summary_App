@@ -149,12 +149,26 @@ const variablesAndValues = {
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Type_coercion.html',
       sectionSummary: [
-        'Type Coercion vs Type Conversion',
-        'Implicit and Explicit Conversion',
-        'Type Coercion for Primitive values',
-        'Type Coercion for Objects',
+        '<b>Type Coercion vs Type Conversion</b>: Type coercion is the <i>automatic or implicit conversion of values from one data type to another (such as strings to numbers)</i>. Type conversion is similar to type coercion because they both convert values from one data type to another with one key difference — type coercion is implicit whereas type conversion can be either implicit or explicit.',
+        `<b>Implicit and Explicit Type Coercion</b>
+        <br>Implicit Type Coercion comes with a behavior called string concatenation. String concatenation is because <code>+</code> operator also supports strings, not only numbers. Keep in mind that only arithmetic operator <code>+</code> supports strings though, <code>-</code>, <code>*</code> and <code>/</code> does NOT support strings.
+        <br>Since JavaScript is a weakly-typed language, values can also be converted between different types automatically, and it is called implicit type coercion. It usually happens when you apply operators to values of different types:: <code>"5" + 9; //59</code>. Implicit type coercion can also be triggered by the surrounding context, like with <code>if (value) {…}</code>, where <code>value</code> is coerced to boolean.
+        <br>When a developer expresses the intention to convert between types by writing the appropriate code, like <code>Number(value)</code>, it's called explicit type coercion (or type casting): <code>Number("5") + 9; //9</code>
+        <br> One operator that doesn't trigger implicit type coercion is Strict Equality Operator <code>===</code>
+        `,
+        `<b>Type Coercion for Primitive values</b>
+        <br>The first rule to know is there are only 3 types of conversion in JavaScript:
+        <br>- to string;
+        <br>- to number;
+        <br>- to boolean;
+        <br>Secondly, conversion logic for primitives and objects works differently, but both primitives and objects can only be converted in those 3 ways.
+        <br>String conversion: to <i>explicitly</i> convert values to a string apply the <code>String()</code> function. <i>Implicit</i> coercion is triggered by the binary <code>+</code> operator, when any operand is a string.
+        <br>Number conversion: for an <i>explicit</i> conversion just apply the <code>Number()</code> function. <i>Implicit</i> conversion is tricky, because it's triggered in more cases (for more details read the entire article).
+        <br>Boolean conversion: to <i>explicitly</i> convert a value to a boolean apply the <code>Boolean()</code> function. <i>Implicit</i> conversion happens in logical context, or is triggered by logical operators ( <code>||</code> <code>&&</code> <code>!</code>).
+        `,
+        '<b>Type Coercion for Objects</b>: when it comes to objects and engine encounters expression like <code>[1] + [2,3]</code>, first it needs to convert an object to a primitive value, which is then converted to the final type. And remember "Type Coercion for Primitive Values" that there are still only three types of conversion: string, numeric and boolean.',
         'Truthy & Falsy Values',
-        "One operator that doesn't trigger implicit type coercion is Strict Equality Operator <code>===</code>",
+        'Whatever you get from a user, from a HTML input in your JavaScript, code will always be a string (text).',
       ],
     },
     {

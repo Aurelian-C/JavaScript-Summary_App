@@ -32,9 +32,9 @@ const sum = Number(val1) + val2; //9
 
 ## Converting Data Types
 
-Whatever you get from a user, from a HTML input in your JavaScript, code will always be a string (text).
+==Whatever you get from a user, from a HTML input in your JavaScript, code will always be a string (text)==.
 
-[Number.parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt) will try to parse some text, so a string, as number without decimal places, and [Number.parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat) will do the same thing but with decimal places. `Number.parseInt()` and `Number.parseFloat()` are functions built in JavaScript that will take a string as an input you pass in and will then convert to a number.
+[`Number.parseInt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt) will try to parse some text, so a string, as number without decimal places, and [`Number.parseFloat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat) will do the same thing but with decimal places. `Number.parseInt()` and `Number.parseFloat()` are functions built in JavaScript that will take a string as an input you pass in and will then convert to a number.
 
 ## Some considerations about Implicit Type Coercion
 
