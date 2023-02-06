@@ -259,7 +259,7 @@ const operators = {
         '<b>Operator precedence</b> determines <i>how operators are parsed concerning each other</i>. Operators with <i>higher precedence</i> become the operands of operators with <i>lower precedence</i>.',
         '<b>Precedence & Associativity</b>: operators are first grouped by <i>precedence</i>, and then, for adjacent operators that have the same precedence, by <i>associativity</i>. When operators have <i>different precedence levels</i>, the operator with the highest precedence goes first and associativity does not matter. Associativity comes into play when there are multiple operators of the same precedence.',
         'Note on <b>grouping vs short-circuiting</b>: grouping <code>( … )</code> is listed as having the highest precedence. However, that does not always mean the expression within the grouping symbols <code>( … )</code> is evaluated first, especially when it comes to short-circuiting. Short-circuiting is jargon for <i>conditional evaluation</i>. For example, in the expression <code>a && (b + c)</code>, if <code>a</code> is falsy, then the sub-expression <code>(b + c)</code> will not even get evaluated, even if it is grouped and therefore has higher precedence than <code>&&</code>.',
-        '<b>Operators & Type Coercion</b>: some operators like <code>+</code> force type coercion, because <code>+</code> operator also supports strings, not only numbers.',
+        '<b>Operators & Type Coercion</b>: some operators like <code>+</code> trigger type coercion, because <code>+</code> operator also supports strings, not only numbers.',
       ],
     },
     {
@@ -305,6 +305,10 @@ const operators = {
           articleTitle: 'Subtraction assignment <code>-=</code>',
           articleSource:
             '/src/markdowns/03_Operators/Subtraction_assignment_operator.html',
+          articleSummary: [
+            'The subtraction assignment operator <b>subtracts the value of the right operand</b> from a variable and <b>assigns the result</b> to the variable.',
+            'Concatenation is not possible with <code>-=</code> operator, only <code>+</code> and <code>+=</code> operators trigger type coercion.',
+          ],
         },
       ],
     },
