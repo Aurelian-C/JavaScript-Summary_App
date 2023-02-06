@@ -320,10 +320,20 @@ const operators = {
         {
           articleTitle: 'Increment <code>A++</code> or <code>++A</code>',
           articleSource: '/src/markdowns/03_Operators/Increment_operator.html',
+          articleSummary: [
+            'The increment operator <i>increments (adds one to)</i> its operand and <i>returns the value</i> before or after the increment, depending on where the operator is placed.',
+            'If used <b>postfix</b>, with operator after operand (for example, <code>x++</code>), the increment operator increments and <b>returns the value <i>before</i> incrementing</b>.',
+            'If used <b>prefix</b>, with operator before operand (for example, <code>++x</code>), the increment operator increments and <b>returns the value <i>after</i> incrementing</b>.',
+          ],
         },
         {
           articleTitle: 'Decrement <code>A--</code> or <code>--A</code>',
           articleSource: '/src/markdowns/03_Operators/Decrement_operator.html',
+          articleSummary: [
+            'The decrement operator <i>decrements (subtracts one from)</i> its operand and i>returns the value</i> before or after the decrement, depending on where the operator is placed.',
+            'If used <b>postfix</b>, with operator after operand (for example, <code>x--</code>), the decrement operator decrements and <b>returns the value <i>before</i> decrementing</b>.',
+            'If used <b>prefix</b>, with operator before operand (for example, <code>--x</code>), the decrement operator decrements and <b>returns the value <i>after</i> decrementing</b>.',
+          ],
         },
       ],
     },
