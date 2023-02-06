@@ -255,10 +255,11 @@ const operators = {
       sectionSource:
         '/src/markdowns/03_Operators/Introduction_to_Javascript_Operators.html',
       sectionSummary: [
-        'Operator precedence',
-        'Precedence & Associativity',
-        'Note on grouping vs short-circuiting',
-        'Operators & Type Coercion',
+        'An operator allows us to <i>transform values</i> or <i>combine multiple values</i> and do all kinds of work with values. ',
+        '<b>Operator precedence</b> determines <i>how operators are parsed concerning each other</i>. Operators with <i>higher precedence</i> become the operands of operators with <i>lower precedence</i>.',
+        '<b>Precedence & Associativity</b>: operators are first grouped by <i>precedence</i>, and then, for adjacent operators that have the same precedence, by <i>associativity</i>. When operators have <i>different precedence levels</i>, the operator with the highest precedence goes first and associativity does not matter. Associativity comes into play when there are multiple operators of the same precedence.',
+        'Note on <b>grouping vs short-circuiting</b>: grouping <code>( … )</code> is listed as having the highest precedence. However, that does not always mean the expression within the grouping symbols <code>( … )</code> is evaluated first, especially when it comes to short-circuiting. Short-circuiting is jargon for <i>conditional evaluation</i>. For example, in the expression <code>a && (b + c)</code>, if <code>a</code> is falsy, then the sub-expression <code>(b + c)</code> will not even get evaluated, even if it is grouped and therefore has higher precedence than <code>&&</code>.',
+        '<b>Operators & Type Coercion</b>: some operators like <code>+</code> force type coercion, because <code>+</code> operator also supports strings, not only numbers.',
       ],
     },
     {
@@ -266,15 +267,17 @@ const operators = {
       sectionSource:
         '/src/markdowns/03_Operators/Expressions_and_operators.html',
       sectionSummary: [
-        'Primary expressions',
-        'Left-hand-side expressions',
-        'Increment and decrement',
-        'Unary operators',
-        'Arithmetic operators',
-        'Relational operators',
-        'Equality operators',
-        'Binary logical operators',
-        'Assignment operators',
+        `Some of JavaScript expressions & operators:
+        <br>- Primary expressions
+        <br>- Left-hand-side expressions
+        <br>- Increment and decrement
+        <br>- Unary operators
+        <br>- Arithmetic operators
+        <br>- Relational operators
+        <br>- Equality operators
+        <br>- Binary logical operators
+        <br>- Assignment operators
+      `,
       ],
     },
     {
@@ -285,11 +288,18 @@ const operators = {
         {
           articleTitle: 'Assignment <code>=</code>',
           articleSource: '/src/markdowns/03_Operators/Assignment_operator.html',
+          articleSummary: [
+            'Assignment operator is used to <b>assign a value to a variable</b>.',
+            'Chaining the assignment operator is possible in order to <b>assign a single value to multiple variables</b>.',
+          ],
         },
         {
           articleTitle: 'Addition assignment <code>+=</code>',
           articleSource:
             '/src/markdowns/03_Operators/Addition_assignment_operator.html',
+          articleSummary: [
+            'The addition assignment operator <b>adds the value of the right operand</b> to a variable and <b>assigns the result</b> to the variable. The types of the two operands determine the behavior of the addition assignment operator. Addition or concatenation is possible.',
+          ],
         },
         {
           articleTitle: 'Subtraction assignment <code>-=</code>',

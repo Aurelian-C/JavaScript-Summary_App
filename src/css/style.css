@@ -204,6 +204,7 @@ body {
 
 .card__descriptor {
   margin-top: 3px;
+  position: relative;
 }
 
 .card__descriptor-anchor:link,
@@ -312,7 +313,9 @@ b {
 }
 
 .card__article-title:hover + .tooltip,
-.card__article-anchor:hover + .tooltip {
+.card__article-anchor:hover + .tooltip,
+.card__descriptor-title:hover + .tooltip,
+.card__descriptor-anchor:hover + .tooltip {
   opacity: 1;
   visibility: visible;
 }

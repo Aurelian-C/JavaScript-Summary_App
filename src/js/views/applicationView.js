@@ -30,14 +30,29 @@ class ApplicationView {
       descriptor = article.sectionArticles
         .map(descriptor => {
           if (!descriptor.articleTitle) return;
-          return `
-          <li class="card__descriptor">
-          ${
-            descriptor.articleSource
-              ? `<a class="card__descriptor-anchor" href="${descriptor.articleSource}" target="_blank">${descriptor.articleTitle}</a>`
-              : `<p class="card__descriptor-title">${descriptor.articleTitle}</p>`
+          let tooltip = '';
+          if (descriptor.articleSummary) {
+            const tooltips = descriptor.articleSummary
+              .map(summary => {
+                return `<p class="tooltip_paragraph">${summary}</p>`;
+              })
+              .join('');
+
+            tooltip = `
+              <div class="tooltip">
+                ${tooltips}
+              </div>
+              `;
           }
-          </li>`;
+          return `
+            <li class="card__descriptor">
+            ${
+              descriptor.articleSource
+                ? `<a class="card__descriptor-anchor" href="${descriptor.articleSource}" target="_blank">${descriptor.articleTitle}</a>`
+                : `<p class="card__descriptor-title">${descriptor.articleTitle}</p>`
+            }
+            ${tooltip}
+            </li>`;
         })
         .join('');
     }
