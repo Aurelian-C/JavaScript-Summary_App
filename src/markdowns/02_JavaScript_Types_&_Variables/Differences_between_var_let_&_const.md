@@ -2,7 +2,7 @@
 
 Back when JavaScript was first created, `var` was the only way to declare variables. The design of `var` is confusing and error-prone. So `let` and `const` was created in modern versions of JavaScript, new keywords for creating variables that works somewhat differently to `var`, fixing its issues in the process.
 
-## Declaration, Initialization & Hoisting
+## Declaration, initialization & hoisting
 
 If you write a multiline JavaScript program that declares and initializes a variable, you can actually declare a variable with `var` after you initialize it and it will still work. This behavior happens because of _hoisting_.
 

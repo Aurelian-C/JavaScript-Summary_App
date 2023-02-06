@@ -176,28 +176,39 @@ const variablesAndValues = {
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Introduction_to_Variables.html',
       sectionSummary: [
-        'Declaring a variable',
-        'Initializing a variable',
-        'Variable naming rules',
+        'A variable is a <b>container for a value</b>.',
+        'One special thing about variables is that they can contain just about anything — not just strings and numbers. Variables can also contain complex data and even entire functions.',
+        "<b>Variables aren't the values themselves; they are containers for values</b>.",
+        "<b>Declaring a variable</b>: to use a variable, you've first got to create it — more accurately, we call this declaring the variable. To do this, we type the keyword <code>let</code>, <code>const</code> or <code>var</code> followed by the name you want to call your variable.",
+        "<b>Initializing a variable</b>: once you've declared a variable, you can initialize it with a value.",
+        '<b>Updating a variable</b>: once a variable has been initialized with a value, you can change (or update) that value by giving it a different value.',
+        '<b>Variable naming rules</b>: you can call a variable pretty much anything you like, but there are limitations. Generally, you should stick to just using <i>Latin characters</i> (0-9, a-z, A-Z) and the <i>underscore character</i>. A safe convention to stick to is so-called <i>"lower camel case"</i>.',
+        '<b>Variables are case sensitive</b> — so <code>myage</code> is a different variable from <code>myAge</code>.',
       ],
     },
     {
       sectionTitle: 'var',
       sectionSource: '/src/markdowns/02_JavaScript_Types_&_Variables/var.html',
       sectionSummary: [
-        '<code>var</code> & hoisting',
-        '<code>var</code> is only function scoped, NOT block scoped',
-        '<code>var</code> can be redeclared without trigger an error',
+        'The <code>var</code> statement declares a <i>function-scoped</i> or <i>globally-scoped</i> variable, optionally initializing it to a value.',
+        `<b><code>var</code> & hoisting</b>: <code>var</code> declarations, wherever they occur, are processed before any code is executed because <code>var</code> declarations are hoisted. Variables declared using <code>var</code> are created before any code is executed in a process known as hoisting. Their initial value is <code>undefined</code>. <b>This behavior called hoisting means that the variable declaration is moved to the top of the <i>function</i> or <i>global code</i></b>.
+        <br>Because <code>var</code> declarations are processed before any code is executed, declaring a variable with <code>var</code> anywhere in the code is equivalent to declaring it at the top. This also means that <i>a <code>var</code> variable can appear to be used before it's declared</i>.
+        `,
+        "<b>Only a variable's declaration is hoisted, not its initialization</b>. The initialization happens only when the assignment statement is reached. Until then the variable remains <code>undefined</code> (but declared).",
+        'In the global context, a variable declared using <code>var</code> is added as a non-configurable <b>property of the global <code>window</code> object</b>.',
+        '<code>var</code> is only function scoped, NOT block scoped.',
+        '<code>var</code> can be redeclared without trigger an error.',
       ],
     },
     {
       sectionTitle: 'let',
       sectionSource: '/src/markdowns/02_JavaScript_Types_&_Variables/let.html',
       sectionSummary: [
-        '<code>let</code> & hoisting',
-        `<code>let</code> can't be used before it's declared`,
-        '<code>let</code> is function scoped & block scoped',
-        `<code>let</code> can't be redeclared like <code>var</code>`,
+        'The <code>let</code> statement declares a <b>block-scoped local variable</b>, optionally initializing it to a value.',
+        "<code>let</code> can't be used before it's declared.",
+        '<code>let</code> is function scoped & block scoped.',
+        'Just like <code>const</code>, the <code>let</code> does not create properties of the <code>window</code> object when declared globally.',
+        "<code>let</code> can't be redeclared like <code>var</code>.",
       ],
     },
     {
@@ -205,12 +216,11 @@ const variablesAndValues = {
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/const.html',
       sectionSummary: [
-        '<code>const</code> & hoisting',
-        `<code>const</code> can't be used before it's declared`,
-        '<code>const</code> is function scoped & block scoped',
-        `<code>const</code> must be initialized when it's declared`,
-        `<code>const</code> can't be changed through reassignment`,
-        `<code>const</code> can't be redeclared like <code>var</code>`,
+        'The <code>const</code> statement declares a <b>block-scoped local variable</b>.',
+        '<code>const</code> is function scoped & block scoped.',
+        "<code>const</code> <i>must be initialized when it's declared</i>.",
+        "<code>const</code> can't be used before it's declared.",
+        "The value of a <code>const</code> <i>can't be changed through reassignment</i> and <i>can't be redeclared</i> like <code>var</code> or <code>let</code>. However, if a constant is an object or array its properties or items can be updated or removed.",
       ],
     },
     {
@@ -218,9 +228,20 @@ const variablesAndValues = {
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Differences_between_var_let_&_const.html',
       sectionSummary: [
-        'Declaration, Initialization & Hoisting differences',
-        'Scope differences',
-        'Duplicate variable declarations (redeclarations) differences',
+        `<b>Declaration, initialization & hoisting differences</b>
+        <br>If <code>var</code> and <code>let</code> are not initialized at declaration, initial value is <code>undefined</code>. An initializer for a <code>const</code> variable is required; you must specify its value in the same statement in which it's declared.
+        <br>Variables declared with <code>let</code> and <code>const</code> are hoisted but, unlike <code>var</code>, are not initialized with a default value.
+        `,
+        `<b>Scope differences</b>
+        <br><code>let</code> and <code>const</code> allows you to declare variables that are limited to the scope of a block statement or expression on which it is used, unlike the <code>var</code> keyword, which declares a variable globally or locally to an entire function, regardless of block scope.
+        `,
+        `<b>Duplicate variable declarations (redeclarations) differences</b>
+        <br>Duplicate variable declarations using <code>var</code> will not trigger an error, even in "strict mode", and the variable will not lose its value, unless another assignment is performed.
+        `,
+        `<b>Non-configurable property of the global <code>window</code> object</b>
+        <br>In the global context, a variable declared using <code>var</code> is added as a non-configurable property of the global object but <code>let</code> and <code>const</code> does not create properties of the <code>window</code> object when declared globally.
+        `,
+        "You can following the principle about when to use <code>let</code> and when to use <code>const</code>: use <code>const</code> <i>when you can</i>, and use <code>let</code> <i>when you have to</i>. This means that <b>if you can initialize a variable when you declare it and don't need to reassign it later, make it a constant</b>.",
       ],
     },
   ],
