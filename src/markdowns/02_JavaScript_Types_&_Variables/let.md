@@ -1,4 +1,4 @@
-# let statement
+# `let` statement
 
 The `let` statement declares a ==**block-scoped local variable**==, ==_optionally_ initializing it to a value==.
 

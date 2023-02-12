@@ -345,20 +345,33 @@ const operators = {
         {
           articleTitle: 'typeof',
           articleSource: '/src/markdowns/03_Operators/typeof_operator.html',
+          articleSummary: [
+            "The <code>typeof</code> operator <i>returns a string indicating the type</i> of the operand's value",
+          ],
         },
         {
           articleTitle: 'Unary plus <code>+</code>',
           articleSource: '/src/markdowns/03_Operators/Unary_plus_operator.html',
+          articleSummary: [
+            "The unary plus operator <code>+</code> <i>precedes its operand and evaluates to its operand but <u>attempts to convert it into a number</u>, if it isn't already</i>. If it cannot parse a particular value, it will evaluate to <code>NaN</code>.",
+            'Although unary negation <code>-</code> also can convert non-numbers, unary plus is the fastest and preferred way of converting something into a number, because it does not perform any other operations on the number.',
+          ],
         },
         {
           articleTitle: 'Unary negation <code>-</code>',
           articleSource:
             '/src/markdowns/03_Operators/Unary_negation_operator.html',
+          articleSummary: [
+            'The unary negation operator <code>-</code> <i>precedes its operand and negates it</i>. It <i>can convert a non-number into a number</i>.',
+          ],
         },
         {
           articleTitle: 'Logical NOT <code>!</code>',
           articleSource:
             '/src/markdowns/03_Operators/Logical_NOT_operator.html',
+          articleSummary: [
+            'The logical NOT <code>!</code> operator <i>takes truth to falsity and vice versa</i>.',
+          ],
         },
       ],
     },

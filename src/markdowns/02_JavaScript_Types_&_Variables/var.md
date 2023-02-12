@@ -1,4 +1,4 @@
-# var statement
+# `var` statement
 
 The `var` statement declares a ==**function-scoped**== or ==**globally-scoped**== variable, ==_optionally_ initializing it to a value==.
 
