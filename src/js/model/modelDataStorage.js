@@ -1601,8 +1601,14 @@ const standardBuildInObjects = {
     },
     {
       sectionTitle: 'FormData',
-      sectionSource: '',
-      sectionSummary: [],
+      sectionSource:
+        '/src/markdowns/10_Standard_Build-In_Objects/FormData.html',
+      sectionSummary: [
+        'The <code>FormData</code> interface provides a way to easily <i>construct a set of <u>key/value pairs</u> representing form <u>fields</u> and their <u>values</u>, which can then be easily sent using the <code>fetch()</code> or <code>XMLHttpRequest.send()</code> method</i>.',
+        "The <code>FormData()</code> Constructor takes as an <b>optional parameter an HTML <<span>form</span>> element</b>. When optional parameter is specified, the <code>FormData</code> object will be <i>populated with the form's current keys/values using the <u>name property</u> of each element for the keys and their submitted value for the values</i>. It will also encode file input content.",
+        '<code>FormData()</code> object has a series of instance methods that helps you append, delete, set or return keys/values from your <code>FormData()</code> object.',
+        'You can easily extract all the data that is inside a `FormData` into an JavaScript object with the help of spread operator & <code>Object.fromEntries</code>.',
+      ],
       sectionArticles: [
         {
           articleTitle: 'new FormData()',
