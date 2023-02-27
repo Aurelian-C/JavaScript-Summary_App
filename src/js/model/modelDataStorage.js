@@ -383,11 +383,18 @@ const operators = {
         {
           articleTitle: 'Addition <code>+</code>',
           articleSource: '/src/markdowns/03_Operators/Addition_operator.html',
+          articleSummary: [
+            'The addition operator <code>+</code> produces the <i>sum of numeric operands</i> or <i>string concatenation</i>.',
+          ],
         },
         {
           articleTitle: 'Subtraction <code>-</code>',
           articleSource:
             '/src/markdowns/03_Operators/Subtraction_operator.html',
+          articleSummary: [
+            'The subtraction operator <code>-</code> subtracts the two operands, producing their difference.',
+            '<i>Concatenation is not possible with <code>-</code> operator</i>, only <code>+</code> and <code>+=</code> operators trigger type coercion.',
+          ],
         },
         {
           articleTitle: 'Division <code>/</code>',
@@ -400,6 +407,9 @@ const operators = {
         {
           articleTitle: 'Remainder <code>%</code>',
           articleSource: '/src/markdowns/03_Operators/Remainder_operator.html',
+          articleSummary: [
+            'The remainder operator <code>%</code> <i>returns the remainder left over when one operand is divided by a second operand</i>.',
+          ],
         },
       ],
     },
@@ -411,19 +421,36 @@ const operators = {
         {
           articleTitle: 'Equality <code>==</code>',
           articleSource: '/src/markdowns/03_Operators/Equality_operator.html',
+          articleSummary: [
+            'The equality operator <code>==</code> <i>checks whether its two operands are equal, returning a Boolean result</i>.',
+            'Unlike the strict equality <code>===</code> operator, it attempts to <i><u>convert</u> and <u>compare</u> operands that are of different types</i>.',
+            'Strict equality <code>===</code> operator does not attempt type conversion. Instead, the <i>strict equality operator always considers operands of different types to be different</i>.',
+          ],
         },
         {
           articleTitle: 'Inequality <code>!=</code>',
           articleSource: '/src/markdowns/03_Operators/Inequality_operator.html',
+          articleSummary: [
+            'The inequality operator <code>!=</code> <i>checks whether its two operands are not equal, returning a Boolean result</i>.',
+            'Unlike the strict inequality <code>!==</code> operator, it attempts to <i><u>convert</u> and <u>compare</u> operands that are of different types</i>.',
+          ],
         },
         {
           articleTitle: 'Identity <code>===</code>',
           articleSource: '/src/markdowns/03_Operators/Identity_operator.html',
+          articleSummary: [
+            'The strict equality operator <code>===</code> <i>checks whether its two operands are equal, returning a Boolean result</i>.',
+            'Strict equality <code>===</code> operator does not attempt type conversion. Instead, the <i>strict equality operator always considers operands of different types to be different</i>.',
+          ],
         },
         {
           articleTitle: 'Nonidentity <code>!==</code>',
           articleSource:
             '/src/markdowns/03_Operators/Nonidentity_operator.html',
+          articleSummary: [
+            'The strict inequality operator <code>!==</code> <i>checks whether its two operands are not equal, returning a Boolean result</i>.',
+            'The strict inequality operator <i>always considers operands of different types to be different</i>.',
+          ],
         },
       ],
     },
@@ -435,26 +462,48 @@ const operators = {
         {
           articleTitle: 'Less than <code><</code>',
           articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
+          articleSummary: [
+            'The less than <code><</code> operator returns <code>true</code> if the left operand is less than the right operand, and <code>false</code> otherwise.',
+            '<i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.',
+          ],
         },
         {
           articleTitle: 'Greater than <code>></code>',
           articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
+          articleSummary: [
+            'The greater than <code>></code> operator returns <code>true</code> if the left operand is greater than the right operand, and <code>false</code> otherwise.',
+            '<i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.',
+          ],
         },
         {
           articleTitle: 'Less than or equal <code><=</code>',
           articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
+          articleSummary: [
+            'The less than or equal <code><=</code> operator returns <code>true</code> if the left operand is less than or equal to the right operand, and <code>false</code> otherwise.',
+            '<i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.',
+          ],
         },
         {
           articleTitle: 'Greater than or equal <code>>=</code>',
           articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
+          articleSummary: [
+            'The greater than or equal <code>>=</code> operator returns <code>true</code> if the left operand is greater than or equal to the right operand, and <code>false</code> otherwise.',
+            '<i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.',
+          ],
         },
         {
           articleTitle: 'instanceof',
           articleSource: '/src/markdowns/03_Operators/instanceof_operator.html',
+          articleSummary: [
+            'The <code>instanceof</code> operator <i>tests to see if the <code>prototype</code> property of a constructor appears anywhere in the prototype chain of an object</i>. The return value is a boolean value.',
+          ],
         },
         {
           articleTitle: 'in',
           articleSource: '/src/markdowns/03_Operators/in_operator.html',
+          articleSummary: [
+            'The <code>in</code> operator returns <code>true</code> if the <u>specified property</u> is in the <i>specified object</i> or <i>its prototype chain</i>.',
+          ],
         },
       ],
     },
@@ -467,20 +516,50 @@ const operators = {
           articleTitle: 'Logical AND <code>&&</code>',
           articleSource:
             '/src/markdowns/03_Operators/Logical_AND_operator.html',
+          articleSummary: [
+            'The logical AND <code>&&</code> operator for a set of boolean operands will be <code>true</code> <i>only if <u>all</u> the operands are</i> <code>true</code>. Otherwise it will be <code>false</code>.',
+            'More generally, the operator returns the value of the first falsy operand encountered when evaluating from left to right, or the value of the last operand if they are all truthy.',
+            'Logical AND <code>&&</code> evaluates operands from left to right.',
+            `<b>Operator precedence</b>
+            <br>The AND operator has a <i>higher precedence than the OR operator</i>, meaning the <code>&&</code> operator is <i>executed before the <code>||</code> operator</i>.`,
+            `<b>Short-circuit evaluation</b>
+            <br>The logical <code>&&</code> expression is a <u>short-circuit operator</u>. As <i>each operand is converted to a boolean</i>, if the result of one conversion is found to be <code>false</code>, the <code>&&</code> operator stops and <i>returns the original value of that falsy operand</i>; it does not evaluate any of the remaining operands.`,
+          ],
         },
         {
           articleTitle: 'Logical OR <code>||</code>',
           articleSource: '/src/markdowns/03_Operators/Logical_OR_operator.html',
+          articleSummary: [
+            'The logical OR <code>||</code> operator (logical disjunction) for a set of operands is <code>true</code> <i>only if <u>one or more</u> of its operands is</i> <code>true</code>.',
+            `<b>Operator precedence</b>
+            <br>The AND operator has a <i>higher precedence than the OR operator</i>, meaning the <code>&&</code> operator is <i>executed before the <code>||</code> operator</i>.`,
+            `<b>Short-circuit evaluation</b>
+            <br>The logical <code>||</code> expression is a <u>short-circuit operator</u>. As <i>each operand is converted to a boolean</i>, if the result of one conversion is found to be <code>true</code>, the <code>||</code> operator stops and <i>returns the original value of that truthy operand</i>; it does not evaluate any of the remaining operands.`,
+          ],
         },
         {
           articleTitle: 'Nullish coalescing <code>??</code>',
           articleSource:
             '/src/markdowns/03_Operators/Nullish_coalescing_operator.html',
+          articleSummary: [
+            'The nullish coalescing <code>??</code> operator is a logical operator that <i>returns its right-hand side operand when its left-hand side operand is <code>null</code> or <code>undefined</code>, and otherwise returns its left-hand side operand</i>.',
+          ],
         },
         {
           articleTitle:
             'Short Circuiting with <code>&&</code> and <code>||</code>',
           articleSource: '/src/markdowns/03_Operators/Short_Circuiting.html',
+          articleSummary: [
+            'The two Short-Circuit operators are represented with the symbol <code>&&</code> and <code>||</code>. <i>They are basically used to <u>combine expressions</u></i>.',
+            'Although short-circuit operators are basically used to combine expressions, <i>you can use them to <u>execute statements conditionally</u></i>.',
+            `<b>Using the <code>&&</code> operator</b>
+            <br><code>true && statement</code> (if the first condition is <code>true</code>, the <i>statement is executed</i>)
+            <br><code>false && statement</code> (if the first condition is <code>false</code>, the <i>statement is NOT executed</i>)`,
+            `<b>Using the <code>||</code> operator</b>
+            <br><code>true || statement</code> (if the first condition is <code>true</code>, the <i>statement is NOT executed</i>)
+            <br><code>false || statement</code> (if the first condition is <code>false</code>, the <i>statement is executed</i>)`,
+            'Short-circuit operators can also be used as a Ternary or Conditional operator.',
+          ],
         },
       ],
     },
@@ -489,8 +568,10 @@ const operators = {
       sectionSource:
         '/src/markdowns/03_Operators/Conditional_(ternary)_operator.html',
       sectionSummary: [
-        'Ternary operator vs if...else statement',
-        'Conditional chains',
+        'The conditional (ternary) operator is the <i>only JavaScript operator that takes three operands</i>: a condition followed by a question mark <code>?</code>, then an expression to execute if the condition is truthy followed by a colon <code>:</code>, and finally the expression to execute if the condition is falsy.',
+        'This operator is frequently used as an alternative to an <code>if...else</code> statement.',
+        'The Conditional (Ternary) operator is mostly used to <i>assigns a value to a variable based on some condition</i>.',
+        'The ternary operator is right-associative, which means it can be "chained".',
       ],
     },
     {
@@ -498,11 +579,13 @@ const operators = {
       sectionSource:
         '/src/markdowns/03_Operators/Optional_Chaining_operator.html',
       sectionSummary: [
-        'Optional chaining with objects',
-        'Optional chaining with function calls',
-        'Optional chaining with expressions',
-        'With nested structures, it is possible to use optional chaining multiple times',
-        'The Nullish Coalescing Operator may be used after optional chaining in order to build a default value when none was found',
+        "The optional chaining <code>?.</code> operator <i>accesses an object's property or calls a function</i>. If the object is <code>undefined</code> or <code>null</code>, <i>it returns <code>undefined</code> instead of throwing an error</i>.",
+        `<b>Optional chaining with objects & function calls</b>
+        <br>The <code>?.</code> operator is like the <code>.</code> chaining operator, except that <i>instead of causing an error if a reference is nullish (<code>null</code> or <code>undefined</code>), the expression short-circuits with a return value of <code>undefined</code>. When used with function calls, it returns <code>undefined</code> if the given function does not exist</i>.`,
+        `<b>Optional chaining with expressions</b>
+        <br>You can also use the optional chaining operator with bracket notation, which allows passing an expression as the property name: <code>const name = obj?.['property-name']</code>.`,
+        'With nested structures, it is possible to use <code>?.</code> operator multiple times.',
+        'The <code>?.</code> operator may be used after optional chaining in order to build a default value when none was found.',
       ],
     },
   ],

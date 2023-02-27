@@ -4,7 +4,7 @@ The two Short-Circuit operators are represented with the symbol `&&` and `||`, w
 
 Although short-circuit operators are basically used to combine expressions, ==you can use them to **execute statements conditionally**==.
 
-## Using the `&&`operator
+## Using the `&&` operator
 
 ==true **&&** statement== _(if the first condition is `true`, the ==statement is executed==)_
 
@@ -79,7 +79,7 @@ false || statement // Execute statement
 #### Some examples
 
 ```js
-// Since the Boolean expression by the left is "true", it would //execute the statement by the right
+// Since the Boolean expression by the left is "true", it would execute the statement by the right
 5 < 50 && console.log("Peter failed the exam"); // Output: Peter failed the exam
 
 // Since the Boolean expression by the left is false it would NOT execute the statement by the right
