@@ -599,9 +599,24 @@ const conditionalStatements = {
       sectionSource:
         '/src/markdowns/04_Conditional_statements/Statements_vs_Expressions.html',
       sectionSummary: [
-        'A statement is an instruction to perform a specific action: creating variables, functions, loops etc.',
-        'Any unit of code that can be evaluated to a value is an expression',
-        'Expressions produce values',
+        '<i>Any unit of code that can be evaluated to a value is an expression</i>. Since <i>expressions produce values</i>, they can appear anywhere in a program where JavaScript expects a value, such as the arguments of a function invocation.',
+        `JavaScript has the following <b>expression categories</b>:
+        <br>- <i>arithmetic</i> expressions (expressions that evaluate to a numeric value)
+        <br>- <i>string</i> expressions (expressions that evaluate to a string)
+        <br>- <i>logical</i> expressions (expressions that evaluate to the Boolean value <code>true</code> or <code>false</code>)
+        <br>- <i>primary</i> expressions (refer to stand alone expressions such as literal values, certain keywords and variable values)
+        <br>- <i>assignment</i> expressions (when expressions use the <code>=</code> operator to assign a value to a variable, it is called an assignment expression)
+        <br>- <i>left-hand-side</i> expressions (expressions that can appear on the left side of an assignment expression)
+        <br>- <i>expressions with side effects</i> (as we just saw with assignment expressions, expressions with side effects are those that result in a change or a side effect such as setting or modifying the value of a variable through the assignment operator <code>=</code>, function call, incrementing or decrementing the value of a variable)
+        `,
+        '<i>A statement is an instruction to perform a specific action</i>: creating variables, functions, loops etc.',
+        `Statements in JavaScript can be classified into the following <b>categories</b>:
+        <br>- <i>declaration</i> statements (such type of statements create variables and functions by using the <code>var</code>, <code>let</code> or <code>const</code> and function statements respectively)
+        <br>- <i>expression</i> statements (wherever JavaScript expects a statement, you can also write an expression. Such statements are referred to as expression statements. But the reverse does not hold. You cannot use a statement in the place of an expression)
+        <br>- <i>conditional</i> statements (conditional statements execute statements based on the value of an expression. Examples of conditional statements includes the <code>if..else</code> and <code>switch</code> statements)
+        <br>- <i>loops</i> and <i>jumps</i> (Looping statements includes the following statements: <code>while</code>, <code>do/while</code>, <code>for</code> and <code>for...in</code>. Jump statements are used to make the JavaScript interpreter jump to a specific location within the program. Examples of jump statements includes <code>break</code>, <code>continue</code>, <code>return</code> and <code>throw</code>)
+        <br>- <i>function declarations</i>
+        `,
       ],
     },
     {

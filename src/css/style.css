@@ -302,6 +302,10 @@ b {
   font-size: 1.3rem;
 }
 
+.tooltip_paragraph i {
+  color: rgb(234 255 126);
+}
+
 .tooltip_paragraph:not(:last-child) {
   margin-bottom: 10px;
 }
