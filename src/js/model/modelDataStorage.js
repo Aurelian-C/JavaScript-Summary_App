@@ -624,10 +624,17 @@ const conditionalStatements = {
       sectionSource:
         '/src/markdowns/04_Conditional_statements/Truthy_&_Falsy_Values.html',
       sectionSummary: [
-        'Type coercion',
-        'Boolean context',
-        'Truthy values & logical <code>AND</code> operator <code>&&</code>',
-        'Falsy values & logical <code>OR</code> operator <code>||</code>',
+        `<b>Boolean context & Type coercion</b>
+        <br>In JavaScript, a truthy value is a value that is considered <code>true</code> when encountered in a <i>Boolean context</i>. JavaScript uses type conversion to coerce any value to a Boolean in contexts that require it, such as conditionals and loops.`,
+        '<i>JavaScript uses type coercion in Boolean contexts</i>.',
+        `All values are truthy unless they are defined as falsy. That is, <i>all values are truthy except</i>:
+        <br>- <code>false</code>
+        <br>- <code>0</code>, <code>-0</code>, <code>0n</code>
+        <br>- empty string <code>""</code>
+        <br>- <code>null</code>
+        <br>- <code>undefined</code>
+        <br>- <code>NaN</code>
+        `,
       ],
     },
     {

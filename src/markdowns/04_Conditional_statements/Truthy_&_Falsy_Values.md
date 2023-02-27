@@ -2,7 +2,7 @@
 
 ## Truthy values
 
-In JavaScript, a truthy value is a value that is considered `true` when encountered in a _**[Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean) context**_.  JavaScript uses [type conversion](https://developer.mozilla.org/en-US/docs/Glossary/Type_Conversion) to coerce any value to a Boolean in contexts that require it, such as [conditionals](https://developer.mozilla.org/en-US/docs/Glossary/Conditional) and [loops](https://developer.mozilla.org/en-US/docs/Glossary/loop).
+In JavaScript, a truthy value is a value that is considered `true` when encountered in a _**[Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean) context**_. JavaScript uses [type conversion](https://developer.mozilla.org/en-US/docs/Glossary/Type_Conversion) to coerce any value to a Boolean in contexts that require it, such as [conditionals](https://developer.mozilla.org/en-US/docs/Glossary/Conditional) and [loops](https://developer.mozilla.org/en-US/docs/Glossary/loop).
 
 All values are truthy unless they are defined as [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy). That is, ==**all values are truthy _except_**==:
 
@@ -10,7 +10,7 @@ All values are truthy unless they are defined as [falsy](https://developer.mozil
 -  `0`, `-0`, `0n`
 -  `""`
 -  `null`
--  `undefined``
+-  `undefined`
 - ``NaN`.
 
 JavaScript uses [type coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion) in Boolean contexts. Examples of truthy values in JavaScript (which will be coerced to `true` in boolean contexts, and thus execute the `if` block):
