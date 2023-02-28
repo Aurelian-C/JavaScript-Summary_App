@@ -642,16 +642,40 @@ const conditionalStatements = {
         '<code>if{...} else{...}</code>, <code>else if</code> statements',
       sectionSource:
         '/src/markdowns/04_Conditional_statements/if__else__if_else_statements.html',
-      sectionSummary: ['Nesting Conditionals'],
+      sectionSummary: [
+        "When you're writing code, <i>you don't always want to execute exactly the same code top to bottom</i>. Sometimes you have some condition that should be met for some code to be executed, and execute some other code if the condition is not met.",
+        '<i>Conditional statements</i> are used to perform <i>different actions</i> based on <i>different conditions</i>.',
+        `In JavaScript we have the following conditional statements:
+        <br>- <code>if</code>
+        <br>- <code>else</code>
+        <br>- <code>else if</code>
+        <br>- <code>switch</code>
+        `,
+        'The <code>if</code> statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement in the optional <code>else</code> clause will be executed.',
+        'Multiple <code>if...else</code> statements can be nested to create an <code>else if</code> clause.',
+      ],
     },
     {
       sectionTitle: 'The <code>switch</code> statement',
       sectionSource:
         '/src/markdowns/04_Conditional_statements/The_Switch_Statement.html',
       sectionSummary: [
-        'The <code>switch</code> Statement & <code>break</code> statement',
-        'The <code>switch</code> Statement & <code>default</code> statement',
-        'The <code>switch</code> Statement is an alternative to <code>if{...} else{...}</code> chains',
+        'The <code>switch</code> statement is used to perform <i>different actions</i> based on <i>different conditions</i>. Use the <code>switch</code> statement to <i>select one of many code blocks to be executed.</i>',
+        `This is how it works:
+        <br>- The <code>switch</code> expression is <i>evaluated once</i>
+        <br>- The value of the expression is <i>compared</i> with the values of each case
+        <br>- <i>If there is a match</i>, the associated block of code is executed
+        <br>- <i>If there is no match</i>, the default code block is executed`,
+        `<b>The <code>switch</code> statement & <code>break</code> statement</b>
+        <br><i>When JavaScript reaches a <code>break</code> keyword, it breaks out of the <code>switch</code> block</i>. This will stop the execution inside the <code>switch</code> block.`,
+        `<b>The <code>switch</code> statement & <code>default</code> statement</b>
+        <br>The <code>default</code> keyword <i>specifies the code to run if there is <u>no case match</u></i>.`,
+        `<b>Switching details</b>
+        <br>-If <i>multiple cases matches a expression value</i>, the first case is selected
+        <br>-If <i>no matching cases are found</i>, the program continues to the <code>default</code> label
+        <br>-If <i>no <code>default</code> label is found</i>, the program continues to the statement(s) <u>after</u> the <code>switch</code>.`,
+        '<code>switch</code> cases use strict comparison <code>===</code>.',
+        'The <code>switch</code> statement is an alternative to <code>if{...} else{...}</code> chains.',
       ],
     },
   ],

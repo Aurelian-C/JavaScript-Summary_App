@@ -4,7 +4,7 @@ The `switch` statement is used to ==perform **different actions** based on **dif
 
 This is how it works:
 
-- The switch expression is ==**evaluated once**==.
+- The `switch` expression is ==**evaluated once**==.
 - ==The value of the expression is compared with the values of each case==.
 - ==**If there is a _match_**, the associated block of code is executed==.
 - ==**If there is _no match_**, the default code block is executed==.
@@ -46,7 +46,7 @@ switch(expression) {
 
 A `switch` statement first evaluates its expression. It then looks for the first `case` clause whose expression evaluates to the same value as the result of the input expression (using the [strict comparison](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators), `===`) and transfers control to that clause, executing all statements following that clause.
 
-The clause values are only evaluated when necessary — if a match is already found, subsequent `case` clause values will not be evaluated:
+==The clause values are only evaluated when necessary — if a match is already found, subsequent `case` clause values will not be evaluated==:
 
 ```js
 switch (undefined) {
@@ -56,7 +56,7 @@ switch (undefined) {
 // Only logs 1
 ```
 
-If no matching `case` clause is found, the program looks for the _optional_ `default` clause, and if found, transfers control to that clause, executing statements following that clause. _If no `default` clause is found, the program continues execution at the statement following the end of `switch`_. By convention, the `default` clause is the last clause, but it does not need to be so. A `switch` statement may only have one `default` clause; multiple `default` clauses will result in a [`SyntaxError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError).
+==If no matching `case` clause is found, the program looks for the _optional_ `default` clause, and if found, transfers control to that clause, executing statements following that clause==. _If no `default` clause is found, the program continues execution at the statement following the end of `switch`_. By convention, the `default` clause is the last clause, but it does not need to be so. ==A `switch` statement may only have one `default` clause; multiple `default` clauses will result in a [`SyntaxError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError)==.
 
 ## `break` and `default` statement
 
@@ -100,9 +100,9 @@ The `default` keyword ==specifies the code to run if there is **no case match**=
 
 ## Strict Comparison
 
-- `switch` cases use strict comparison `===`.
+- ==`switch` cases use strict comparison `===`==.
 - The values must be of the same type to match.
-- A strict comparison can only be `true if the operands are of the same type.
+- A strict comparison can only be `true` if the operands are of the same type.
 
 ## Examples
 

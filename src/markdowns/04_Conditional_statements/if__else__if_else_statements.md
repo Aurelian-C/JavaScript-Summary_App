@@ -35,19 +35,19 @@ if (condition1) {
 
 #### condition
 
-An ==expression== that is considered to be either [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) or [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy).
+==An _expression_ that is considered to be either truthy or falsy==.
 
 #### statement1
 
-Statement that is executed if `condition` is [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy). Can be any statement, including further nested `if` statements. To execute multiple statements, use a [block](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block) statement (`{ /* ... */ }`) to group those statements. To execute no statements, use an [empty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Empty) statement.
+==Statement that is executed if `condition` is truthy==. Can be any statement, including further nested `if` statements. To execute multiple statements, use a [block](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block) statement (`{ /* ... */ }`) to group those statements. To execute no statements, use an [empty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Empty) statement.
 
 #### statement2
 
-Statement that is executed if `condition` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) and the `else` clause exists. Can be any statement, including block statements and further nested `if` statements.
+==Statement that is executed if `condition` is falsy and the `else` clause exists==. Can be any statement, including block statements and further nested `if` statements.
 
 ## Description
 
-Multiple `if...else` statements can be nested to create an `else if` clause. Note that there is no `elseif` (in one word) keyword in JavaScript.
+==Multiple `if...else` statements can be nested to create an `else if` clause==. Note that there is no `elseif` (in one word) keyword in JavaScript.
 
 ```js
 if (condition1) {
