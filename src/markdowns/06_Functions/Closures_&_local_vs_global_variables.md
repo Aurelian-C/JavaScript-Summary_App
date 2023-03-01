@@ -1,4 +1,12 @@
-# Closures & local vs global variables
+## Function scope and conflicts
+
+Let's talk a bit about [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope) — a very important concept when dealing with functions. When you create a function, the variables and other things defined inside the function are inside their own separate **scope**, meaning that they are locked away in their own separate compartments, unreachable from code outside the functions.
+
+The top level outside all your functions is called the **global scope**. Values defined in the global scope are accessible from everywhere in the code.
+
+JavaScript is set up like this for various reasons — but mainly because of security and organization. Sometimes you don't want variables to be accessible from everywhere in the code — external scripts that you call in from elsewhere could start to mess with your code and cause problems because they happen to be using the same variable names as other parts of the code, causing conflicts. This might be done maliciously, or just by accident.
+
+## Closures & local vs global variables
 
 Variables declared within a JavaScript function, become local to the function. Local variables can only be accessed from within the function. Since local variables are only recognized inside their functions, variables with the same name can be used in different functions. ==Local variables are created when a function starts, and deleted when the function is completed==.
 

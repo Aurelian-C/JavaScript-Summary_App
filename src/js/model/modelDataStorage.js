@@ -801,19 +801,6 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Closures & local vs global variables',
-      sectionSource:
-        '/src/markdowns/06_Functions/Closures_&_local_vs_global_variables.html',
-      sectionSummary: [
-        'Variable lifetime',
-        'Nested functions',
-        'Closures & lexical environment',
-        'A closure always return a function/object that references to its surrounding',
-        'Closures & memory efficiency',
-        'Closures & encapsulation',
-      ],
-    },
-    {
       sectionTitle: 'Function syntax',
       sectionSource: '',
       sectionSummary: [
@@ -822,11 +809,6 @@ const functions = {
         'Anonymous functions',
         'Constructor Functions',
       ],
-    },
-    {
-      sectionTitle: 'Function <code>return</code> statement',
-      sectionSource: '',
-      sectionSummary: [],
     },
     {
       sectionTitle: 'Function parameters & arguments',
@@ -839,13 +821,7 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Rest parameters',
-      sectionSource:
-        '/src/markdowns/06_Functions/Rest_parameter_and_functions.html',
-      sectionSummary: [],
-    },
-    {
-      sectionTitle: 'Destructuring parameters',
+      sectionTitle: 'Function <code>return</code> statement',
       sectionSource: '',
       sectionSummary: [],
     },
@@ -858,12 +834,6 @@ const functions = {
         'Invoking a Function as a Function',
         'Tagged templates',
       ],
-    },
-    {
-      sectionTitle: 'Spread syntax for function calls',
-      sectionSource:
-        '/src/markdowns/06_Functions/Spread_syntax_and_function_calls.html',
-      sectionSummary: [],
     },
     {
       sectionTitle: 'Function invocation & <code>this</code> keyword',
@@ -897,12 +867,6 @@ const functions = {
       ],
     },
     {
-      sectionTitle:
-        'Self-Invoking functions / Immediately Invoked Function Expressions (IIFE)',
-      sectionSource: '',
-      sectionSummary: [],
-    },
-    {
       sectionTitle: 'Arrow functions',
       sectionSource: '',
       sectionSummary: [
@@ -910,6 +874,42 @@ const functions = {
         'Arrow functions and the <code>this</code> keyword',
         'Regular functions vs arrow functions',
       ],
+    },
+    {
+      sectionTitle:
+        'Self-Invoking functions / Immediately Invoked Function Expressions (IIFE)',
+      sectionSource: '',
+      sectionSummary: [],
+    },
+    {
+      sectionTitle: 'Closures & local vs global variables',
+      sectionSource:
+        '/src/markdowns/06_Functions/Closures_&_local_vs_global_variables.html',
+      sectionSummary: [
+        'Variable lifetime',
+        'Nested functions',
+        'Closures & lexical environment',
+        'A closure always return a function/object that references to its surrounding',
+        'Closures & memory efficiency',
+        'Closures & encapsulation',
+      ],
+    },
+    {
+      sectionTitle: 'Rest parameters',
+      sectionSource:
+        '/src/markdowns/06_Functions/Rest_parameter_and_functions.html',
+      sectionSummary: [],
+    },
+    {
+      sectionTitle: 'Destructuring parameters',
+      sectionSource: '',
+      sectionSummary: [],
+    },
+    {
+      sectionTitle: 'Spread syntax for function calls',
+      sectionSource:
+        '/src/markdowns/06_Functions/Spread_syntax_and_function_calls.html',
+      sectionSummary: [],
     },
   ],
 };

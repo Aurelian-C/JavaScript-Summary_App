@@ -33,7 +33,35 @@ A JavaScript function does not perform any checking on parameter values (argumen
 - JavaScript functions do not check the number of arguments received.
 - When you need to specify multiple parameters, they are separated by commas.
 
+## Optional parameters
+
+Sometimes parameters are optional — you don't have to specify them. If you don't, the function will generally adopt some kind of default behavior. As an example, the array [join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) function's parameter is optional:
+
+```js
+const myArray = ['I', 'love', 'chocolate', 'frogs'];
+const madeAString = myArray.join(' ');
+console.log(madeAString);
+// returns 'I love chocolate frogs'
+
+const madeAnotherString = myArray.join();
+console.log(madeAnotherString);
+// returns 'I,love,chocolate,frogs'
+```
+
+If no parameter is included to specify a joining/delimiting character, a comma is used by default.
+
 ## Default Parameters
+
+If you're writing a function and want to support optional parameters, you can specify default values by adding `=` after the name of the parameter, followed by the default value:
+
+```js
+function hello(name = 'Chris') {
+  console.log(`Hello ${name}!`);
+}
+
+hello('Ari'); // Hello Ari!
+hello();      // Hello Chris!
+```
 
 Default function parameters allow named parameters to be initialized with default values if no value or `undefined` is passed. If a function is called with missing arguments (less than declared), the missing values are set to `undefined`. Sometimes this is acceptable, but sometimes it is better to assign a default value to the parameter.
 
