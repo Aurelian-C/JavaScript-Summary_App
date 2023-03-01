@@ -257,6 +257,11 @@ b {
   color: rgb(234 255 126);
 }
 
+b code {
+  font-size: 1.4rem;
+  color: rgb(234 255 126);
+}
+
 /* --------------------- Tooltip functionality --------------------- */
 
 /* Tooltip container */

@@ -53,7 +53,7 @@ switch (food) {
 
 # The `continue` statement
 
-The `continue` statement **breaks one iteration** (in the loop) if a specified condition occurs, and continues with the next iteration in the loop.
+==The `continue` statement **breaks one iteration** (in the loop) if a specified condition occurs, and continues with the next iteration in the loop==.
 
 In contrast to the `break` statement, `continue` does not terminate the execution of the loop entirely, but instead:
 

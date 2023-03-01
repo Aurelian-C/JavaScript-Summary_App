@@ -689,17 +689,30 @@ const loops = {
       sectionSource:
         '/src/markdowns/05_Loops_&_Iteration/Introduction_to_Loops_and_Iteration.html',
       sectionSummary: [
-        'Loops offer a way to do something repeatedly',
-        'JavaScript supports different kinds of loops',
+        ' Loops can <i>execute a block of code a number of times</i>. Loops are handy, if you want to <i>run the same code over and over again, each time with a different value</i>.',
+        'There are <i>many different kinds of loops</i>, but they all essentially do the same thing: they <i>repeat</i> an action some number of times.',
+        'The various loop mechanisms offer <i>different ways to determine the start and end points of the loop</i>.',
+        `JavaScript supports <b>different kinds of loops</b>:
+        <br>- <b><code>for</code></b> loops through a block of code a number of times (repeats until a specified condition evaluates to <code>false</code>)
+        <br>- <b><code>for...of</code></b> loops through the values of an <u>iterable</u> object (creates a loop iterating over iterable objects:  <code>Array</code>, <code>Map</code>, <code>Set</code>, <code>arguments</code> object and so on)
+        <br>- <b><code>for...in</code></b> loops through the <u>properties</u> of an object (iterates a specified variable over all the enumerable properties of an object)
+        <br>- <b><code>while</code></b> loops through a block of code <u>while a specified condition</u> is <code>true</code> (executes its statements as long as a specified condition evaluates to <code>true</code>)
+        <br>- <b><code>break</code></b> breaks out of a loop
+        <br>- <b><code>continue</code></b> skips a value in a loop (restart a <code>while</code>, <code>do-while</code>, <code>for</code> or <code>label</code> statement)
+        `,
       ],
     },
     {
       sectionTitle: '<code>for</code> statement',
       sectionSource: '/src/markdowns/05_Loops_&_Iteration/for_statement.html',
       sectionSummary: [
+        'A <code>for</code> statement <i><u>repeats until</u> a specified condition evaluates to <code>false</code></i>.',
+        'The <code>for</code> statement creates a loop that consists of <i>three <u>optional</u> expressions</i>, enclosed in parentheses and separated by semicolons <code>;</code>, followed by a statement (usually a block statement) to be executed in the loop.',
+        `<b>Nested loops</b>
+        <br>A nested loop has <i>one loop inside of another</i>. When a loop is nested inside another loop, the inner loop runs many times inside the outer loop. <i>The inner loop must finish all of its iterations before the outer loop can continue to its next iteration</i>.
+        `,
         'Avoid infinite loops!',
-        'Nested loops',
-        'Do NOT initialize a function inside of a loop',
+        'Do NOT initialize a function inside of a loop.',
       ],
     },
     {
@@ -707,8 +720,16 @@ const loops = {
       sectionSource:
         '/src/markdowns/05_Loops_&_Iteration/for...of_statement.html',
       sectionSummary: [
-        'Iterable object',
-        'Destructuring in <code>for...of</code> statement',
+        'The <code>for...of</code> statement <i>loops through the <u>values</u> of an <u>iterable object</u></i>, including: built-in <code>String</code>, <code>Array</code>, array-like objects (e.g., <code>arguments</code> or <code>NodeList</code>), <code>TypedArray</code>, <code>Map</code>, <code>Set</code>, and user-defined iterables.',
+        'A <code>for...of</code> loop operates on the values sourced from an iterable one by one in <i>sequential order. Each iteration creates a new variable</i>. Reassigning the variable inside the loop body does not affect the original value in the iterable.',
+        'You can use destructuring in <code>for...of</code> statement.',
+        `<b>Closing or skip iterators</b>
+        <br><code>break</code> exits the loop and goes to the first statement after the loop body, while <code>continue</code> skips the rest of the statements of the current iteration and proceeds to the next iteration.
+        <br>In <code>for...of</code> loops, abrupt iteration termination can be caused by <code>break</code>, <code>throw</code> or <code>return</code>. In these cases, the iterator is closed.`,
+        `<b>Difference between <code>for...of</code> and <code>for...in</code></b>
+        <br>Both <code>for...of</code> and <code>for...in</code> statements iterate over something. The main difference between them is in what they iterate over:
+        <br>- The <code>for...of</code> statement iterates over values that the <i>iterable object</i> defines to be iterated over
+        <br>- The <code>for...in</code> statement iterates over the <i>enumerable properties</i> of an object`,
       ],
     },
     {
@@ -716,25 +737,41 @@ const loops = {
       sectionSource:
         '/src/markdowns/05_Loops_&_Iteration/for...in_statement.html',
       sectionSummary: [
-        'Iterates over all enumerable properties of an object',
-        'Iterates over the entire prototype chain',
-        '<code>for...in</code> vs <code>Object.keys()</code>',
-        'Destructuring in <code>for...in</code> statement',
+        '<code>for...in</code> <i>iterates over all <u>enumerable properties</u> of an object that are keyed by strings</i> (ignoring ones keyed by Symbols), including <i>inherited enumerable properties (iterates over the entire prototype chain)</i>.',
+        'A <code>for...in</code> loop <i><u>only</u> iterates over <u>enumerable, non-symbol properties</u></i>.',
+        'A <code>for...in</code> loop iterates over the properties of an object in an <i>arbitrary order</i>. Do not use <code>for...in</code> to iterate an array if the index order is important. Use a <code>for</code> loop instead.',
+        `<b><code>for...in</code> iterates over the entire prototype chain</b>
+        <br><code>for...in</code> loop will iterate over all enumerable properties of the object itself and those the object inherits from its prototype chain.`,
+        `<b><code>for...in</code> vs <code>Object.keys()</code></b>
+        <br>If you only want to consider <i>properties attached to the <u>object itself</u> (iterating over own properties only) and not its prototypes</i>, you can use <code>Object.keys(myObject)</code>. <code>Object.keys(myObject)</code> returns an array of a given object's own enumerable string-keyed property names.`,
+        `<b><code>for...in</code> over arrays</b>
+        <br>Array indexes are just <i>enumerable properties with integer names</i> and are otherwise identical to general object properties. There is no guarantee that <code>for...in</code> will return the indexes in any particular order. Therefore, it is better to use a <code>for</code> loop with a numeric index (or <code>Array.prototype.forEach()</code> or the <code>for...of</code> loop) when iterating over arrays where the order of access is important.`,
+        'You can use destructuring in <code>for...in</code> statement.',
+        `<b>Why NOT use <code>for...in</code>?</b>
+        <br>Many JavaScript style guides and linters recommend against the use of <code>for...in</code>, because it <i>iterates over the entire prototype chain</i> which is rarely what one wants, and may be a confusion with the more widely-used <code>for...of</code> loop.`,
       ],
     },
     {
       sectionTitle: '<code>while</code> statement',
       sectionSource: '/src/markdowns/05_Loops_&_Iteration/while_statement.html',
       sectionSummary: [
-        'Avoid infinite loops!',
-        'Do NOT initialize a function inside of a loop',
+        'The <code>while</code> loop loops through a block of code <i>as long as a specified condition is <code>true</code></i>. The condition is evaluated before executing the statement.',
+        `<b>Avoid infinite loops!</b>
+        <br>Make sure the condition in a loop eventually becomes <code>false</code> — otherwise, the loop will never terminate!`,
+        'Do NOT initialize a function inside of a loop!',
       ],
     },
     {
       sectionTitle: '<code>break</code> and <code>continue</code> statements',
       sectionSource:
         '/src/markdowns/05_Loops_&_Iteration/Break_&_Continue_Statements.html',
-      sectionSummary: [],
+      sectionSummary: [
+        'The <code>break</code> statement <i>"jumps <u>out</u>"</i> of a loop.',
+        'The <code>continue</code> statement <i>"jumps <u>over</u>"</i> one iteration in the loop. The <code>continue</code> statement <i>breaks one iteration</i> (in the loop) if a specified condition occurs, and continues with the next iteration in the loop.',
+        `In contrast to the <code>break</code> statement, <code>continue</code> does not terminate the execution of the loop entirely, but instead:
+        <br>- in a <code>while</code> loop, it jumps back to the condition
+        <br>- in a <code>for</code> loop, it jumps to the update expression`,
+      ],
     },
   ],
 };
