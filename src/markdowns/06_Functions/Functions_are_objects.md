@@ -19,3 +19,9 @@ let text = myFunction.toString();
 ```
 
 A function defined as the property of an object, is called a method to the object. A function designed to create new objects, is called an object constructor.
+
+
+
+
+
+It turns out that *functions are themselves objects* — and in turn, these objects have methods. (See the [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) object.) The [`call()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) and [`apply()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) methods can be used to achieve this goal.

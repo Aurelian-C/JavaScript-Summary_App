@@ -11,3 +11,7 @@ function myFunction(y) {
 ```
 
 Functions defined using an expression are not hoisted.
+
+
+
+Function hoisting only works with function *declarations* — not with function *expressions*.

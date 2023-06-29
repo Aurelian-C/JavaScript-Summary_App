@@ -4,6 +4,8 @@ Let's talk a bit about [scope](https://developer.mozilla.org/en-US/docs/Glossary
 
 The top level outside all your functions is called the **global scope**. Values defined in the global scope are accessible from everywhere in the code.
 
+Variables defined inside a function cannot be accessed from anywhere outside the function, because the variable is defined only in the scope of the function. However, a function can access all variables and functions defined inside the scope in which it is defined. In other words, a function defined in the global scope can access all variables defined in the global scope. A function defined inside another function can also access all variables defined in its parent function, and any other variables to which the parent function has access.
+
 JavaScript is set up like this for various reasons — but mainly because of security and organization. Sometimes you don't want variables to be accessible from everywhere in the code — external scripts that you call in from elsewhere could start to mess with your code and cause problems because they happen to be using the same variable names as other parts of the code, causing conflicts. This might be done maliciously, or just by accident.
 
 ## Closures & local vs global variables
@@ -111,6 +113,24 @@ callMeMaybe()
 
 ==Two of the major reasons closures are so beneficial are **memory efficiency** and **encapsulation**==.
 
+## Name conflicts
+
+When two arguments or variables in the scopes of a closure have the same name, there is a *name conflict*. More nested scopes take precedence. So, the innermost scope takes the highest precedence, while the outermost scope takes the lowest. This is the scope chain.
+
+```js
+function outside() {
+  const x = 5;
+  function inside(x) {
+    return x * 2;
+  }
+  return inside;
+}
+
+console.log(outside()(10)); // 20 (instead of 10)
+```
+
+The name conflict happens at the statement `return x * 2` and is between `inside`'s parameter `x` and `outside`'s variable `x`. The scope chain here is {`inside`, `outside`, global object}. Therefore, `inside`'s `x` takes precedences over `outside`'s `x`, and `20` (`inside`'s `x`) is returned instead of `10` (`outside`'s `x`).
+
 ### Closures & memory efficiency
 
 ==Using closures makes your code more memory efficient==. Take the example below:
@@ -193,3 +213,4 @@ Consequently, you can use a closure anywhere that you might normally use an obje
 1. [JavaScript: The Advanced Concepts - Andrei Neagoie](https://www.udemy.com/course/advanced-javascript-concepts/)
 2. [Closures - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 3. [What is a Closure? - medium.com](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36#.ecfskj935)
+4. [Functions guide - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)

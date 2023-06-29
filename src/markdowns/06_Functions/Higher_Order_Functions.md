@@ -1,6 +1,6 @@
 # Higher Order Functions
 
-A programming language is said to have ==**First-class functions** when functions in that language are treated like any other variable==. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable.
+A programming language is said to have ==**First-class functions** when functions in that language are treated like any other variable==. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable or as properties to an object.
 
 Functions are objects but why do we care? Why is that really important? ==Because functions are just objects in JavaScript, that means that **we can pass them around, like objects, like things that contain data**. So besides just doing things for us and performing actions in our code, we can also store them as data, move them around and have some really interesting applications==.
 
@@ -48,7 +48,9 @@ d()	//'Hi there!'
 
 ## Functions are objects
 
-There 3 things demonstrates that functions are data/objects. Function not only perform actions for us, but they're also pieces of data that can be passed around like first class citizens, as if there were JavaScript types. So anything you can do with other types, you can do with a function. As a matter of fact, this idea of a first class citizen property in JavaScript introduces JavaScript to a whole world called functional programming
+There 3 things demonstrates that functions are data/objects. Function not only perform actions for us, but they're also pieces of data that can be passed around like first class citizens, as if there were JavaScript types. So anything you can do with other types, you can do with a function. As a matter of fact, this idea of a first class citizen property in JavaScript introduces JavaScript to a whole world called functional programming.
+
+Functions can also have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called.
 
 ## References
 

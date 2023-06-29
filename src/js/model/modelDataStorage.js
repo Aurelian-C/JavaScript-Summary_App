@@ -2647,6 +2647,19 @@ const otherWebAPIs = {
       ],
     },
     {
+      sectionTitle: 'AbortController',
+      sectionSource: '/src/markdowns/14_Others_Web_APIs/AbortController.html',
+      sectionSummary: [
+        'The <code>AbortController</code> interface represents a controller object that allows you to <i>abort one or more Web requests as and when desired</i>.',
+        'You can create a new <code>AbortController</code> object using the <code>AbortController()</code> constructor.',
+        `Instance properties & methods:
+        <br>- the <code>signal</code> property: read-only property which can be used to communicate with/abort a DOM request as desired
+        <br>- the <code>abort()</code> method: aborts a DOM request before it has completed. This is able to abort fetch requests, the consumption of any response bodies, or streams
+        `,
+        'When <code>abort()</code> is called, the <code>fetch()</code> promise rejects with an <code>Error</code> of type <code>DOMException</code>, with name <i><code>AbortError</code></i>.',
+      ],
+    },
+    {
       sectionTitle: 'window',
       sectionSource: '',
       sectionSummary: [],

@@ -43,7 +43,9 @@ const myNumber = Math.random();
 
 ## Functions versus methods
 
-Functions that are **part of objects** are called **methods**.
+
+
+Functions that are **part of objects** are called **methods**, so a **method** is a function that is a property of an object.
 
 Probably you've seen a lot of **custom functions** in your JavaScript learning journey — **functions defined in your code, not inside the browser**. _Anytime you saw a custom name with parentheses straight after it, you were using a custom function_.
 

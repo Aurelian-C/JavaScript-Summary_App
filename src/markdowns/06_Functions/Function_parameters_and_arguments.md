@@ -1,4 +1,76 @@
-# Function parameters
+## Passing arguments to a function
+
+Parameters and arguments have slightly different meanings.
+
+```js
+function formatNumber(num) {
+  return num.toFixed(2);
+}
+
+formatNumber(2);
+```
+
+In this example, the `num` variable is called the function's *parameter*: it's declared in the bracket-enclosed list of the function's definition. The function expects the `num` parameter to be a number — although this is not enforceable in JavaScript without writing runtime validation code. In the `formatNumber(2)` call, the number `2` is the function's *argument*: it's the value that is actually passed to the function in the function call. The argument value can be accessed inside the function body through the corresponding parameter name or the [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object.
+
+Arguments are always [*passed by value*](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_reference) and never *passed by reference*. This means that if a function reassigns a parameter, the value won't change outside the function. More precisely, object arguments are [*passed by sharing*](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_sharing), which means if the object's properties are mutated, the change will impact the outside of the function. For example:
+
+```javascript
+function updateBrand(obj) {
+  // Mutating the object is visible outside the function
+  obj.brand = "Toyota";
+  // Try to reassign the parameter, but this won't affect
+  // the variable's value outside the function
+  obj = null;
+}
+
+const car = {
+  brand: "Honda",
+  model: "Accord",
+  year: 1998,
+};
+
+console.log(car.brand); // Honda
+
+// Pass object reference to the function
+updateBrand(car);
+
+// updateBrand mutates car
+console.log(car.brand); // Toyota
+```
+
+## Function parameters
+
+Each function parameter is a simple identifier that you can access in the local scope.
+
+```js
+function myFunc(a, b, c) {
+  // You can access the values of a, b, and c here
+}
+```
+
+There are three special parameter syntaxes:
+
+- [*Default parameters*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters) allow formal parameters to be initialized with default values if no value or `undefined` is passed.
+- The [*rest parameter*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters) allows representing an indefinite number of arguments as an array.
+- [*Destructuring*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) allows unpacking elements from arrays, or properties from objects, into distinct variables.
+
+```js
+function myFunc({ a, b }, c = 1, ...rest) {
+  // You can access the values of a, b, c, and rest here
+}
+```
+
+Parameters are essentially passed to functions **by value** — so if the code within the body of a function assigns a completely new value to a parameter that was passed to the function, **the change is not reflected globally or in the code which called that function**.
+
+When you pass an object as a parameter, if the function changes the object's properties, that change is visible outside the function.
+
+
+
+
+
+
+
+
 
 Some functions require **parameters to be specified when you are invoking them** — these are values that need to be included inside the function parentheses, which it needs to do its job properly. Parameters are sometimes called arguments, properties, or even attributes.
 
@@ -51,6 +123,10 @@ console.log(madeAnotherString);
 If no parameter is included to specify a joining/delimiting character, a comma is used by default.
 
 ## Default Parameters
+
+In JavaScript, parameters of functions default to `undefined`. However, in some situations it might be useful to set a different default value. This is exactly what default parameters do.
+
+In the past, the general strategy for setting defaults was to test parameter values in the body of the function and assign a value if they are `undefined`. With *default parameters*, a manual check in the function body is no longer necessary.
 
 If you're writing a function and want to support optional parameters, you can specify default values by adding `=` after the name of the parameter, followed by the default value:
 
@@ -166,6 +242,12 @@ preFilledObject({ z: 2 }); // 2
 
 ## The Arguments Object
 
+You can refer to a function's arguments within the function by using the [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object. `arguments` is an array-like object containing the arguments passed to the currently executing function.
+
+Using the `arguments` object, you can call a function with more arguments than it is formally declared to accept. This is often useful if you don't know in advance how many arguments will be passed to the function. You can use `arguments.length` to determine the number of arguments actually passed to the function, and then access each argument using the `arguments` object.
+
+> **Note:** The `arguments` variable is "array-like", but not an array. It is array-like in that it has a numbered index and a `length` property. However, it does *not* possess all of the array-manipulation methods.
+
 JavaScript functions have a built-in object called the arguments object. The argument object contains an array of the arguments used when the function was called (invoked). This way you can simply use a function to find (for instance) the highest value in a list of numbers:
 
 ```js
@@ -227,8 +309,10 @@ The parameters, in a function call, are the function's arguments. JavaScript arg
 
 In JavaScript, object references are values. Because of this, objects will behave like they are passed by reference: If a function changes an object property, it changes the original value. Changes to object properties are visible (reflected) outside the function.
 
-References
+## References
 
 1. [Functions — reusable blocks of code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
 
 2. [Default parameters - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+
+3. [The arguments object - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
