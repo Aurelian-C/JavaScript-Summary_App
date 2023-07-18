@@ -9,13 +9,16 @@ If you want to use NPM you need to install Node.js first, because ==NPM comes to
 3. `npm init` creates automatically ==package.json== and ==node_modules== folder
 4. Install a package **`npm install packageName`** or **`npm i packageName`**
 
-> Note: You can actually _install multiple packages at the same time_ by writing in the terminal `npm i packageName anotherPackageName`.
+> **Note**: You can actually _install multiple packages at the same time_ by writing in the terminal `npm i packageName anotherPackageName`.
+>
+> You can uninstall a package with the `npm uninstall packageName` command.
 
 ## NPM shortcuts:
 
 1. `npm -v`
 2. `npm init`
 3. `npm i packageName` or `npm i packageName --save-dev`
+4. `npm uninstall packageName`
 
 ## What is NPM?
 

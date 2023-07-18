@@ -26,11 +26,12 @@ class ApplicationView {
 
   _generateMarkupArticles(article) {
     let descriptor = '';
+    let tooltip = '';
     if (article.sectionArticles) {
       descriptor = article.sectionArticles
         .map(descriptor => {
           if (!descriptor.articleTitle) return;
-          let tooltip = '';
+          // let tooltip = '';
           if (descriptor.articleSummary) {
             const tooltips = descriptor.articleSummary
               .map(summary => {
@@ -57,7 +58,7 @@ class ApplicationView {
         .join('');
     }
 
-    let tooltip = '';
+    // let tooltip = '';
     if (article.sectionSummary.length > 0) {
       const tooltips = article.sectionSummary
         .map(summary => {
