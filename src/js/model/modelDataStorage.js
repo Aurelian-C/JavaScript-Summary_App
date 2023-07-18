@@ -47,11 +47,17 @@ const browserEngineAndRuntime = {
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Runtime.html',
       sectionSummary: [
-        `<b>JavaScript Runtime & asynchronous code</b>: the heart of any JavaScript Runtime is always a JavaScript Engine. Without the JavaScript Engine, there is no JavaScript Runtime, and there is no JavaScript at all. However, JavaScript Engine alone is not enough, because being single threaded (synchronous), if you have code that takes a long, long time to execute, your application will be very, very slow. In order to your application work properly, we also need a JavaScript Runtime that gave access to the Web APIs (ex. DOM, Timers, Fetch API etc.) and implicit to asynchronous code.`,
-        `<b>Browsers comes in with a JavaScript Engine and a JavaScript Runtime</b>. JavaScript has no idea what the World-Wide-Web or Internet is, JavaScript is only a programming language. On the other hand, the web browsers through Web APIs allows JavaScript to use asynchronous code, so JavaScript can interact with things outside of its world. JavaScript Runtime provides asynchronous Web APIs, a way of communicating with the JavaScript Engine.`,
-        `<b>Web APIs & global <code>window</code> object</b>: the Web APIs are provided to the JavaScript Engine via global <code>window</code> object. These Web APIs (setIntervals, setTimeout, fetch, localStorage, document object, etc.) are not native to JavaScript language itself, these Web APIs are provided by JavaScript Runtime via <code>window</code> object, so they are native to the browser.`,
-        `<b>These Web APIs are what we call asynchronous</b>. That means you can instruct these APIs to do something in the background and return data once it's done, meanwhile, we can just continue working on our JavaScript Call Stack and execute functions.`,
-        `<b>Callback Queue vs Job/Microtask Queue & Event Loop</b>: a typical JavaScript Runtime also includes a so called Callback Queue. This is a data structure that contains all the Web APIs callback functions that are finish to run in the background, and now are ready to be executed by the JavaScript Engine. The Callback Queue cannot be ran until the Call Stack is completely empty. The Event Loop is to constantly checking the Call Stack to see if it is empty, so that it can add anything that's in the Callback Queue into the Call Stack. The Event Loop has the extremely important task of doing coordination between the Call Stack and the callbacks in the Callback Queue, so it is basically who decides exactly when each callback is executed.<br>With ES6 and Promises, a new queue was created, called Job/Microtask Queue, so callbacks related to Promises have a special queue for themselves. Job/Microtask Queue has priority over Callback Queue, so Event Loop gives priority to promises over regular callbacks.`,
+        `<h3>JavaScript Runtime & asynchronous code</h3>
+        <p>The heart of any JavaScript Runtime is always a JavaScript Engine. Without the JavaScript Engine, there is no JavaScript Runtime, and there is no JavaScript at all. However, JavaScript Engine alone is not enough, because being single threaded (synchronous), if you have code that takes a long, long time to execute, your application will be very, very slow. In order to your application work properly, we also need a JavaScript Runtime that gave access to the Web APIs (ex. DOM, Timers, Fetch API etc.) and implicit to asynchronous code.</p>`,
+        `<h3>Browsers comes in with a JavaScript Engine and a JavaScript Runtime</h3>
+        <p>JavaScript has no idea what the World-Wide-Web or Internet is, JavaScript is only a programming language. On the other hand, the web browsers through Web APIs allows JavaScript to use asynchronous code, so JavaScript can interact with things outside of its world. JavaScript Runtime provides asynchronous Web APIs, a way of communicating with the JavaScript Engine.</p>`,
+        `<h3>Web APIs & global <code>window</code> object</h3>
+        <p>the Web APIs are provided to the JavaScript Engine via global <code>window</code> object. These Web APIs (setIntervals, setTimeout, fetch, localStorage, document object, etc.) are not native to JavaScript language itself, these Web APIs are provided by JavaScript Runtime via <code>window</code> object, so they are native to the browser.</p>`,
+        `<h3>These Web APIs are what we call asynchronous</h3>
+        <p>That means you can instruct these APIs to do something in the background and return data once it's done, meanwhile, we can just continue working on our JavaScript Call Stack and execute functions.</p>`,
+        `<h3>Callback Queue vs Job/Microtask Queue & Event Loop</h3>
+        <p>A typical JavaScript Runtime also includes a so called Callback Queue. This is a data structure that contains all the Web APIs callback functions that are finish to run in the background, and now are ready to be executed by the JavaScript Engine. The Callback Queue cannot be ran until the Call Stack is completely empty. The Event Loop is to constantly checking the Call Stack to see if it is empty, so that it can add anything that's in the Callback Queue into the Call Stack. The Event Loop has the extremely important task of doing coordination between the Call Stack and the callbacks in the Callback Queue, so it is basically who decides exactly when each callback is executed.</p>
+        <p>With ES6 and Promises, a new queue was created, called Job/Microtask Queue, so callbacks related to Promises have a special queue for themselves. Job/Microtask Queue has priority over Callback Queue, so Event Loop gives priority to promises over regular callbacks.</p>`,
       ],
     },
     {
@@ -59,15 +65,19 @@ const browserEngineAndRuntime = {
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Execution_Context_and_The_Call_Stack.html',
       sectionSummary: [
-        `<b>Execution Context</b>: while reading through HTML, if the browser encounters JavaScript code to run via a <<code>script</code>> tag or an attribute that contains JavaScript code like <code>onClick</code>, it sends it to its JavaScript Engine. The browser's JavaScript Engine then creates a special environment to handle the transformation and execution of this JavaScript code. This environment is known as the Execution Context.`,
-        `<b>Global & function execution context</b>: when you give your JavaScript file to a browser, the JavaScript Engine start to read and execute the code inside your file, line by line, in order. As the JavaScript Engine starts to read your code, it creates something called the Global Execution Context (GEC). Whenever JavaScript Engine sees a function call in you code, it's going to create something called an Function Execution Context (FEC).
-        <br>Code in JavaScript is always ran inside a type of execution context. Execution context is simply the environment within which your code is ran. So any time we run code in JavaScript, it's always going to be part of an execution context, it's part of global or inside of some function that we call.`,
-        `<b>Global execution context (global <code>window</code> object & <code>this</code> keyword)</b>: whenever the JavaScript Engine receives a script file, it first creates a default Execution Context known as the Global Execution Context (GEC). The GEC is the base/default Execution Context where all JavaScript code that is <i>not inside of a function</i> gets executed. For every JavaScript file, there can only be one GEC.
-        <br>GEC is the very first item on the Call Stack, the first thing the JavaScript Engine does is to create the GEC, and it gives you two things: first thing is a global object <code>window</code> and the other thing is that <code>this</code> keyword in JavaScript.
-        <br>To the global object (in our case <code>window</code> object), we can assign variables, we can add functions and we can add different things to this global object.`,
-        `<b>Function execution context (<code>arguments</code> & <code>this</code> keyword)</b>: whenever a function is called, the JavaScript Engine creates a different type of Execution Context known as a Function Execution Context (FEC) <i>within</i> the Global Execution Context (GEC) to evaluate and execute the code within that function. Since every function call gets its own FEC, there can be more than one FEC in the run-time of a script.
-        <br>A function context is created by the JavaScript Engine when it sees a function call. Each function call gets its own execution context.
-        <br>FEC give us two things: the <code>arguments</code> objects and the <code>this</code> keyword.
+        `<h3>Execution Context</h3>
+        <p>While reading through HTML, if the browser encounters JavaScript code to run via a <<code>script</code>> tag or an attribute that contains JavaScript code like <code>onClick</code>, it sends it to its JavaScript Engine. The browser's JavaScript Engine then creates a special environment to handle the transformation and execution of this JavaScript code. This environment is known as the Execution Context.</p>`,
+        `<h3>Global & function execution context</h3>
+        <p>When you give your JavaScript file to a browser, the JavaScript Engine start to read and execute the code inside your file, line by line, in order. As the JavaScript Engine starts to read your code, it creates something called the Global Execution Context (GEC). Whenever JavaScript Engine sees a function call in you code, it's going to create something called an Function Execution Context (FEC).</p>
+        <p>Code in JavaScript is always ran inside a type of execution context. Execution context is simply the environment within which your code is ran. So any time we run code in JavaScript, it's always going to be part of an execution context, it's part of global or inside of some function that we call.</p>`,
+        `<h3>Global execution context (global <code>window</code> object & <code>this</code> keyword)</h3>
+        <p>Whenever the JavaScript Engine receives a script file, it first creates a default Execution Context known as the Global Execution Context (GEC). The GEC is the base/default Execution Context where all JavaScript code that is <i>not inside of a function</i> gets executed. For every JavaScript file, there can only be one GEC.</p>
+        <p>GEC is the very first item on the Call Stack, the first thing the JavaScript Engine does is to create the GEC, and it gives you two things: first thing is a global object <code>window</code> and the other thing is that <code>this</code> keyword in JavaScript.</p>
+        <p>To the global object (in our case <code>window</code> object), we can assign variables, we can add functions and we can add different things to this global object.</p>`,
+        `<h3>Function execution context (<code>arguments</code> & <code>this</code> keyword)</h3>
+        <p>Whenever a function is called, the JavaScript Engine creates a different type of Execution Context known as a Function Execution Context (FEC) <i>within</i> the Global Execution Context (GEC) to evaluate and execute the code within that function. Since every function call gets its own FEC, there can be more than one FEC in the run-time of a script.</p>
+        <p>A function context is created by the JavaScript Engine when it sees a function call. Each function call gets its own execution context.</p>
+        <p>FEC give us two things: the <code>arguments</code> objects and the <code>this</code> keyword.</p>
         `,
       ],
     },
@@ -76,7 +86,8 @@ const browserEngineAndRuntime = {
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Lexical_Environment.html',
       sectionSummary: [
-        `<b>Where we write code is important</b>. Lexical environment is simply <i>where you write code</i>. Where we write code determines the available variables. A new lexical environment is created when curly brackets <code>{}</code> are used, even nested brackets <code>{{...}}</code> create a new lexical environment`,
+        `<h3>Where we write code is important</h3>
+        <p>Lexical environment is simply <i>where you write code</i>. Where we write code determines the available variables. A new lexical environment is created when curly brackets <code>{}</code> are used, even nested brackets <code>{{...}}</code> create a new lexical environment.</p>`,
       ],
     },
     {
@@ -84,21 +95,27 @@ const browserEngineAndRuntime = {
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Variable_Environment.html',
       sectionSummary: [
-        `<b>Variable Environment & Scope Chain</b>: each execution context (global/function) has its own variable environment. Each function execution context has a link to its outside world or a link to its parent. Each execution context that is created has a link outside of its lexical environment, called the scope chain. The scope chain gives us access to variables in the parent environment.`,
-        `<b>Global Scope & Local Scope</b>: the global scope is the outermost scope, so variables declared outside a function are in what we call global scope, and they can be access in any other scope that is inside of the functions, we can always access global scope. Now, local scope is any scope that is local to a function, now variables declared in the local scope are accessible within this scope, as well as any scopes surrounding it. Scope just defines the <i>accessibility of variables in the code</i>, it tells us what we can access, what we can not.`,
-        `<b>Function Scope (<code>var</code>, <code>let</code> & <code>const</code>) & Block Scope (<code>let</code> & <code>const</code>)</b>: Most programming languages are block scoped, meaning every time you see a new <code>{}</code> (curly braces) is a new lexical environment. However, JavaScript is function scoped, meaning it only creates a new local environment if it sees the keyword <code>function</code> on the global scope. To give us access to block scope, in ES6 <code>let</code> and <code>const</code> were added to the language.`,
-        `<b>Variable Environment & Leakage of Global Variables</b>`,
-        `<b>Global variables & polluting the global namespace</b> means that we have too much data on our global execution environment.`,
-        `<b>Global variables & variable collisions</b> is when we have the same variable/s in multiple scripts, everything gets bunched up together, everything is on the global execution context, and if there's any duplicates variables (variables with the same name) overwrite each other.`,
-        `<b>Variable collisions & IIFE & JavaScript Modules</b>: with modern JavaScript, we have things like JavaScript Modules and module bundlers. But before we had those things, JavaScript developers used what we know now about the language itself to avoid variable collisions and it's called Immediately Invoked Function Expressions (IIFE). The idea behind IIFE is we can place all library code inside of a local scope (function scope), to avoid any variable collisions.`,
+        `<h3>Variable Environment & Scope Chain</h3>
+        <p>Each execution context (global/function) has its own variable environment. Each function execution context has a link to its outside world or a link to its parent. Each execution context that is created has a link outside of its lexical environment, called the scope chain. The scope chain gives us access to variables in the parent environment.</p>`,
+        `<h3>Global Scope & Local Scope</h3>
+        <p>The global scope is the outermost scope, so variables declared outside a function are in what we call global scope, and they can be access in any other scope that is inside of the functions, we can always access global scope. Now, local scope is any scope that is local to a function, now variables declared in the local scope are accessible within this scope, as well as any scopes surrounding it. Scope just defines the <i>accessibility of variables in the code</i>, it tells us what we can access, what we can not.</p>`,
+        `<h3>Function Scope (<code>var</code>, <code>let</code> & <code>const</code>) & Block Scope (<code>let</code> & <code>const</code>)</h3>
+        <p>Most programming languages are block scoped, meaning every time you see a new <code>{}</code> (curly braces) is a new lexical environment. However, JavaScript is function scoped, meaning it only creates a new local environment if it sees the keyword <code>function</code> on the global scope. To give us access to block scope, in ES6 <code>let</code> and <code>const</code> were added to the language.</p>`,
+        `<h3>Variable Environment & Leakage of Global Variables</h3>`,
+        `<h3>Global variables & polluting the global namespace</h3>
+        <p>This means that we have too much data on our global execution environment.</p>`,
+        `<h3>Global variables & variable collisions</h3>
+        <p>This is when we have the same variable/s in multiple scripts, everything gets bunched up together, everything is on the global execution context, and if there's any duplicates variables (variables with the same name) overwrite each other.</p>`,
+        `<h3>Variable collisions & IIFE & JavaScript Modules</h3>
+        <p>With modern JavaScript, we have things like JavaScript Modules and module bundlers. But before we had those things, JavaScript developers used what we know now about the language itself to avoid variable collisions and it's called Immediately Invoked Function Expressions (IIFE). The idea behind IIFE is we can place all library code inside of a local scope (function scope), to avoid any variable collisions.</p>`,
       ],
     },
     {
       sectionTitle: 'Hoisting',
       sectionSource: '/src/markdowns/01_Browser_Engine_&_Runtime/Hoisting.html',
       sectionSummary: [
-        `Compiler appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.`,
-        `Hoisting is happen on every execution context: global & function.`,
+        `<p>Compiler appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.</p>`,
+        `<p>Hoisting is happen on every execution context: global & function.</p>`,
       ],
     },
     {
@@ -112,14 +129,15 @@ const browserEngineAndRuntime = {
       sectionSource:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Activating_Strict_Mode.html',
       sectionSummary: [
-        `JavaScript's Strict Mode, introduced in ECMAScript 5, is a way to opt into a <i>restricted variant of JavaScript</i>, thereby implicitly opting-out of Sloppy Mode.`,
-        `Strict Mode code and non-Strict Mode code can coexist.`,
-        `Strict Mode makes several changes to normal JavaScript semantics:
-        <br>- Eliminates some JavaScript silent errors by changing them to throw errors;
-        <br>- Fixes mistakes that make it difficult for JavaScript Engine to perform optimizations;
-        <br>- Prohibits some syntax likely to be defined in future versions of ECMAScript.
+        `<p>JavaScript's Strict Mode, introduced in ECMAScript 5, is a way to opt into a <i>restricted variant of JavaScript</i>, thereby implicitly opting-out of Sloppy Mode.</p>`,
+        `<p>Strict Mode code and non-Strict Mode code can coexist.</p>`,
+        `<ul>Strict Mode makes several changes to normal JavaScript semantics:
+        <li>- Eliminates some JavaScript silent errors by changing them to throw errors;</li>
+        <li>- Fixes mistakes that make it difficult for JavaScript Engine to perform optimizations;</li>
+        <li>- Prohibits some syntax likely to be defined in future versions of ECMAScript.</li>
+        <ul>
         `,
-        `Strict Mode applies to entire scripts or to individual functions. It doesn't apply to block statements enclosed in <code>{}</code> braces; attempting to apply it to such contexts does nothing.`,
+        `<p>Strict Mode applies to entire scripts or to individual functions. It doesn't apply to block statements enclosed in <code>{}</code> braces; attempting to apply it to such contexts does nothing.</p>`,
       ],
     },
     {

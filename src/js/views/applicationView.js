@@ -62,7 +62,7 @@ class ApplicationView {
     if (article.sectionSummary.length > 0) {
       const tooltips = article.sectionSummary
         .map(summary => {
-          return `<p class="tooltip_paragraph">${summary}</p>`;
+          return `<div class="tooltip_paragraph">${summary}</div>`;
         })
         .join('');
 
