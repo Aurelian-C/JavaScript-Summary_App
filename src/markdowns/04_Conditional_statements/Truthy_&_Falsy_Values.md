@@ -11,7 +11,7 @@ All values are truthy unless they are defined as [falsy](https://developer.mozil
 -  `""`
 -  `null`
 -  `undefined`
-- ``NaN`.
+- `NaN`.
 
 JavaScript uses [type coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion) in Boolean contexts. Examples of truthy values in JavaScript (which will be coerced to `true` in boolean contexts, and thus execute the `if` block):
 

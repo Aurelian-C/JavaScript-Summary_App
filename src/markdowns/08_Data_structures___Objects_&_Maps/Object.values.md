@@ -55,4 +55,4 @@ console.log(Object.values('foo')); // ['f', 'o', 'o']
 
 ## References
 
-1. [`Object.values()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values#syntax)
+1. [`Object.values()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values)

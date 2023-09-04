@@ -301,13 +301,14 @@ const operators = {
       sectionSource:
         '/src/markdowns/03_Operators/Expressions_and_operators.html',
       sectionSummary: [
+        `At a high level, <i>an expression is a valid unit of code that resolves to a value</i>. There are <i>two types of expressions</i>: those <u>that have side effects (such as assigning values)</u> and those <u>that purely evaluate</u>.`,
         `Some of JavaScript expressions & operators:
-        <br>- Primary expressions
-        <br>- Left-hand-side expressions
+        <br>- Primary expressions: <code>this</code>, <code>[]</code>, <code>{}</code>, <code>function</code>, <code>class</code>, <code>async function</code> etc.
+        <br>- Left-hand-side expressions: <code>?.</code>, <code>new</code>, <code>super</code> etc.
         <br>- Increment and decrement
-        <br>- Unary operators
+        <br>- Unary operators: <code>tyepof</code>, <code>await</code> etc.
         <br>- Arithmetic operators
-        <br>- Relational operators
+        <br>- Relational operators: <code>instanceof</code>, <code>in</code> etc.
         <br>- Equality operators
         <br>- Binary logical operators
         <br>- Assignment operators
@@ -651,6 +652,16 @@ const conditionalStatements = {
         <br>- <i>loops</i> and <i>jumps</i> (Looping statements includes the following statements: <code>while</code>, <code>do/while</code>, <code>for</code> and <code>for...in</code>. Jump statements are used to make the JavaScript interpreter jump to a specific location within the program. Examples of jump statements includes <code>break</code>, <code>continue</code>, <code>return</code> and <code>throw</code>)
         <br>- <i>function declarations</i>
         `,
+      ],
+    },
+    {
+      sectionTitle: 'Control flow and error handling',
+      sectionSource:
+        '/src/markdowns/04_Conditional_statements/Control_flow_and_error_handling.html',
+      sectionSummary: [
+        `JavaScript supports a compact set of statements, specifically <i>control flow statements</i>, that you can use to incorporate a great deal of interactivity in your application.
+        `,
+        `The semicolon (<code>;</code>) character is used to separate statements in JavaScript code.`,
       ],
     },
     {
@@ -2365,6 +2376,10 @@ const domManipulation = {
           articleTitle: 'Element.attributes',
           articleSource:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.attributes.html',
+        },
+        {
+          articleTitle: 'CSSStyleDeclaration.setProperty()',
+          articleSource: '',
         },
         {
           articleTitle: 'HTMLDataElement.value',

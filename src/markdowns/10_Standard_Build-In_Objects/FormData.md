@@ -58,7 +58,9 @@ const object = Object.fromEntries(formDataEntries);
 
 1. [FormData Interface - MDN](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
 
-2. [FormData() Constructor - MDN](https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData)
+2. [`FormData()` Constructor - MDN](https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData)
+
+3. [FormData: `append()` method - MDN](https://developer.mozilla.org/en-US/docs/Web/API/FormData/append)
 
    
 

@@ -254,5 +254,6 @@ You should now have a good idea of how to work with objects in JavaScript — in
 ## References
 
 1. [Introducing JavaScript objects - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
-2. [JavaScript object basics - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
-3. [Working with objects - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+2. [JavaScript Objects - w3schools](https://www.w3schools.com/js/js_object_definition.asp)
+3. [JavaScript object basics - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+4. [Working with objects - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
