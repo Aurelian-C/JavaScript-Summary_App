@@ -927,16 +927,38 @@ const functions = {
       sectionSummary: [],
     },
     {
-      sectionTitle: 'Closures & local vs global variables',
-      sectionSource:
-        '/src/markdowns/06_Functions/Closures_&_local_vs_global_variables.html',
+      sectionTitle: 'Closures',
+      sectionSource: '/src/markdowns/06_Functions/Closures.html',
       sectionSummary: [
-        `Variable lifetime`,
-        `Nested functions`,
-        `Closures & lexical environment`,
-        `A closure always return a function/object that references to its surrounding`,
-        `Closures & memory efficiency`,
-        `Closures & encapsulation`,
+        `<h3>Local vs global variables</h3>
+        <p>JavaScript variables can belong to the local or global scope. In a web page, <i>global variables belong to the <code>window</code> object</i>.</p>
+        <p><i>Variables declared within a JavaScript function, become local to the function.</i> Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.</p>
+        <p>Local variables are created when a function starts, and deleted when the function is completed.</p>
+        <p>A function can access all variables defined inside it (local variables) and outside it (global variables).</p>
+        <p><i>Global variables can be used (and changed) by all scripts in the page (and in the window). A local variable can only be used inside the function where it is defined, it is hidden from other functions and other scripting code. Global and local variables with the same name are different variables, modifying one does not modify the other.</i></p>
+        <p>Variables created without a declaration keyword <code>var</code>, <code>let</code> or <code>const</code> are always global, even if they are created inside a function.</p>
+        `,
+        `<h3>Variable lifetime</h3>
+        <p><i>Global variables live until the page is discarded. Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished.</i></p>
+        `,
+        `<h3>Nested functions</h3>
+        <p>All functions have access to the global scope. In fact, in JavaScript, <i>all functions have access to the scope "above" them</i>. JavaScript supports nested functions. Nested functions have access to the scope "above" them.</p>
+        `,
+        `<h3>Closures & lexical environment</h3>
+        <p>A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, <i>a closure gives you access to an outer function's scope from an inner function</i>.</p>
+        <p>In JavaScript, closures are created every time a function is created, at function creation time.</p>
+        <p><i>A closure always return a function that references to its surrounding!!! A closure is a function having access to the parent scope, even after the parent function has closed. Closures allow a function to access variables from an enclosing scope or environment even after it leaves the scope in which it was declared.</i></p>
+        `,
+        `<h3>Closures & name conflicts</h3>
+        <p>When two arguments or variables in the scopes of a closure have the same name, there is a name conflict. <i>More nested scopes take precedence</i>. So, <i>the innermost scope takes the highest precedence</i>, while <i>the outermost scope takes the lowest</i>. This is the scope chain.</p>`,
+        `<h3>Closures & memory efficiency</h3>
+        <p>Two of the major reasons closures are so beneficial are memory efficiency and encapsulation.</p>
+        <p>Using closures makes your code more memory efficient. <i>Closures are useful because they let you associate data (the lexical environment) with a function that operates on that data.</i> This has obvious parallels to object-oriented programming, where objects allow you to associate data (the object's properties) with one or more methods.</p>
+        `,
+        `<h3>Closures & encapsulation</h3>
+        <p>Encapsulation means the restriction of direct access to some of an object's components. It hides as much as possible of an object's internal parts and only exposes the necessary parts to run.</p>
+        <p><i>Closures help us to NOT POLLUTE THE GLOBAL SCOPE!!!</i></p>
+        `,
       ],
     },
     {
