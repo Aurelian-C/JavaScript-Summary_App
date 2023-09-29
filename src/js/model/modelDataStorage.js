@@ -158,9 +158,14 @@ const variablesAndValues = {
         '/src/markdowns/02_JavaScript_Types_&_Variables/JavaScript_Types.html',
       sectionSummary: [
         `All programming languages have types. That is the building blocks that allow us to write in that language. We can have numbers, strings, booleans and many more.`,
-        `<b>Static vs Dynamically Typed languages</b>: JavaScript is a dynamic language with dynamic types. Variables in JavaScript are not directly associated with any particular value type, and <i>any variable can be assigned (and re-assigned) values of all types</i>. With a statically typed language we have to declare the variables explicitly before using them. Dynamically typed languages are not bound to this constraint, they're not bound to a particular type. TypeScript allows us to make JavaScript to behave like a statically typed language.`,
-        `<b>Strongly vs Weakly Typed languages</b>: JavaScript is also a weakly typed language, which means it allows implicit <i>type conversion</i> when an operation involves mismatched types, instead of throwing type errors.`,
-        `<b>Primitive vs Reference Types</b>: all types, except objects types (objects, arrays, functions), define immutable values (that is, values which can't be changed). Primitive types store the value itself, but reference types store a pointer, so the address of that place in memory, not the value itself.`,
+        `<h3>Static vs Dynamically Typed languages</h3>
+        <p>JavaScript is a dynamic language with dynamic types. Variables in JavaScript are not directly associated with any particular value type, and <i>any variable can be assigned (and re-assigned) values of all types</i>. With a statically typed language we have to declare the variables explicitly before using them. Dynamically typed languages are not bound to this constraint, they're not bound to a particular type. TypeScript allows us to make JavaScript to behave like a statically typed language.</p>
+        `,
+        `<h3>Strongly vs Weakly Typed languages</h3>
+        <p>JavaScript is also a weakly typed language, which means it allows implicit <i>type conversion</i> when an operation involves mismatched types, instead of throwing type errors.</p>
+        `,
+        `<h3>Primitive vs Reference Types</h3>
+        <p>All types, except objects types (objects, arrays, functions), define immutable values (that is, values which can't be changed). Primitive types store the value itself, but reference types store a pointer, so the address of that place in memory, not the value itself.</p>`,
       ],
     },
     {
@@ -168,15 +173,19 @@ const variablesAndValues = {
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Primitives_vs_Objects_(Primitive_vs_Reference_Types).html',
       sectionSummary: [
-        `<b>Primitive Types (Numbers, Strings, Booleans, null, undefined, Symbol, BigInt)</b>: primitive types store the value itself.`,
-        `<b>Reference Types (Arrays, Objects, Functions)</b>: a variable that stores a reference object only stores a pointer, so the address of that place in memory, and not the value itself.`,
-        `<b>Pass by Value vs Pass by Reference</b>: the key difference between primitive and reference values is that when you copy a variable that holds a primitive value, which means you assign it to a new one, then the value is actually copied. When you copy a variable that holds a reference value, you copy the pointer address of that place in memory, not the value itself.`,
-        `Each object has its own reference location in memory, even is a nested object.`,
-        `<b>Comparing two objects for equality</b>: two objects, even though they hold the same data, are two different distinct objects stored in different places, so at different addresses in memory. Because that when you compare two objects, you compare the addresses where they stored.`,
-        `Primitive values are the core building blocks that hold your data, objects (and arrays) are helpful for organizing and working with that data.`,
-        `<b>Shallow vs Deep Objects Copy</b>
-        <br>Shallow copy is a bit-wise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.
-        <br>A deep copy copies all fields, and makes copies of dynamically allocated memory pointed to by the fields. A deep copy occurs when an object is copied along with the objects to which it refers.`,
+        `<h3>Primitive Types (Numbers, Strings, Booleans, null, undefined, Symbol, BigInt)</h3>
+        <p>Primitive types store the value itself.</p>`,
+        `<h3>Reference Types (Arrays, Objects, Functions)</h3>
+        <p>A variable that stores a reference object only stores a pointer, so the address of that place in memory, and not the value itself.</p>`,
+        `<h3>Pass by Value vs Pass by Reference</h3>
+        <p>The key difference between primitive and reference values is that when you copy a variable that holds a primitive value, which means you assign it to a new one, then the value is actually copied. When you copy a variable that holds a reference value, you copy the pointer address of that place in memory, not the value itself.`,
+        `Each object has its own reference location in memory, even is a nested object.</p>`,
+        `<h3>Comparing two objects for equality</h3>
+        <p>Two objects, even though they hold the same data, are two different distinct objects stored in different places, so at different addresses in memory. Because that when you compare two objects, you compare the addresses where they stored.</p>
+        <p>Primitive values are the core building blocks that hold your data, objects (and arrays) are helpful for organizing and working with that data.</p>`,
+        `<h3>Shallow vs Deep Objects Copy</h3>
+        <p>Shallow copy is a bit-wise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.</p>
+        <p>A deep copy copies all fields, and makes copies of dynamically allocated memory pointed to by the fields. A deep copy occurs when an object is copied along with the objects to which it refers.</p>`,
       ],
     },
     {
@@ -184,65 +193,75 @@ const variablesAndValues = {
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Type_coercion.html',
       sectionSummary: [
-        `<b>Type Coercion vs Type Conversion</b>: Type coercion is the <i>automatic or implicit conversion of values from one data type to another (such as strings to numbers)</i>. Type conversion is similar to type coercion because they both convert values from one data type to another with one key difference — type coercion is implicit whereas type conversion can be either implicit or explicit.`,
-        `<b>Implicit and Explicit Type Coercion</b>
-        <br>Implicit Type Coercion comes with a behavior called string concatenation. String concatenation is because <code>+</code> operator also supports strings, not only numbers. Keep in mind that only arithmetic operator <code>+</code> supports strings though, <code>-</code>, <code>*</code> and <code>/</code> does NOT support strings.
-        <br>Since JavaScript is a weakly-typed language, values can also be converted between different types automatically, and it is called implicit type coercion. It usually happens when you apply operators to values of different types:: <code>"5" + 9; //59</code>. Implicit type coercion can also be triggered by the surrounding context, like with <code>if (value) {…}</code>, where <code>value</code> is coerced to boolean.
-        <br>When a developer expresses the intention to convert between types by writing the appropriate code, like <code>Number(value)</code>, it's called explicit type coercion (or type casting): <code>Number("5") + 9; //9</code>
-        <br> One operator that doesn't trigger implicit type coercion is Strict Equality Operator <code>===</code>
+        `<h3>Type Coercion vs Type Conversion</h3>
+        <p>Type coercion is the <i>automatic or implicit conversion of values from one data type to another (such as strings to numbers)</i>. Type conversion is similar to type coercion because they both convert values from one data type to another with one key difference — type coercion is implicit whereas type conversion can be either implicit or explicit.</p>`,
+        `<h3>Implicit and Explicit Type Coercion</h3>
+        <p>Implicit Type Coercion comes with a behavior called string concatenation. String concatenation is because <code>+</code> operator also supports strings, not only numbers. Keep in mind that only arithmetic operator <code>+</code> supports strings though, <code>-</code>, <code>*</code> and <code>/</code> does NOT support strings.</p>
+        <p>Since JavaScript is a weakly-typed language, values can also be converted between different types automatically, and it is called implicit type coercion. It usually happens when you apply operators to values of different types:: <code>"5" + 9; //59</code>. Implicit type coercion can also be triggered by the surrounding context, like with <code>if (value) {…}</code>, where <code>value</code> is coerced to boolean.</p>
+        <p>When a developer expresses the intention to convert between types by writing the appropriate code, like <code>Number(value)</code>, it's called explicit type coercion (or type casting): <code>Number("5") + 9; //9</code></p>
+        <p>One operator that doesn't trigger implicit type coercion is Strict Equality Operator <code>===</code></p>
         `,
-        `<b>Type Coercion for Primitive values</b>
-        <br>The first rule to know is there are only 3 types of conversion in JavaScript:
-        <br>- to string;
-        <br>- to number;
-        <br>- to boolean;
-        <br>Secondly, conversion logic for primitives and objects works differently, but both primitives and objects can only be converted in those 3 ways.
-        <br>String conversion: to <i>explicitly</i> convert values to a string apply the <code>String()</code> function. <i>Implicit</i> coercion is triggered by the binary <code>+</code> operator, when any operand is a string.
-        <br>Number conversion: for an <i>explicit</i> conversion just apply the <code>Number()</code> function. <i>Implicit</i> conversion is tricky, because it's triggered in more cases (for more details read the entire article).
-        <br>Boolean conversion: to <i>explicitly</i> convert a value to a boolean apply the <code>Boolean()</code> function. <i>Implicit</i> conversion happens in logical context, or is triggered by logical operators ( <code>||</code> <code>&&</code> <code>!</code>).
+        `<h3>Type Coercion for Primitive values</h3>
+        <ul>The first rule to know is there are only 3 types of conversion in JavaScript:
+        <li>- to string;</li>
+        <li>- to number;</li>
+        <li>- to boolean;</li>
+        </ul>
+        <p>Secondly, conversion logic for primitives and objects works differently, but both primitives and objects can only be converted in those 3 ways.</p>
+        <p>String conversion: to <i>explicitly</i> convert values to a string apply the <code>String()</code> function. <i>Implicit</i> coercion is triggered by the binary <code>+</code> operator, when any operand is a string.</p>
+        <p>Number conversion: for an <i>explicit</i> conversion just apply the <code>Number()</code> function. <i>Implicit</i> conversion is tricky, because it's triggered in more cases (for more details read the entire article).</p>
+        <p>Boolean conversion: to <i>explicitly</i> convert a value to a boolean apply the <code>Boolean()</code> function. <i>Implicit</i> conversion happens in logical context, or is triggered by logical operators ( <code>||</code> <code>&&</code> <code>!</code>).</p>
         `,
-        `<b>Type Coercion for Objects</b>: when it comes to objects and engine encounters expression like <code>[1] + [2,3]</code>, first it needs to convert an object to a primitive value, which is then converted to the final type. And remember "Type Coercion for Primitive Values" that there are still only three types of conversion: string, numeric and boolean.`,
-        `Truthy & Falsy Values`,
-        `Whatever you get from a user, from a HTML input in your JavaScript, code will always be a string (text).`,
+        `<h3>Type Coercion for Objects</h3>
+        <p>When it comes to objects and engine encounters expression like <code>[1] + [2,3]</code>, first it needs to convert an object to a primitive value, which is then converted to the final type. And remember "Type Coercion for Primitive Values" that there are still only three types of conversion: string, numeric and boolean.</p>`,
+        `<h3>Truthy & Falsy Values</h3>`,
+        `<b>Whatever you get from a user, from a HTML input in your JavaScript, code will always be a string (text).</b>`,
       ],
     },
     {
       sectionTitle: 'Introduction to Variables',
       sectionSource: `/src/markdowns/02_JavaScript_Types_&_Variables/Introduction_to_Variables.html`,
       sectionSummary: [
-        `A variable is a <b>container for a value</b>.`,
-        `One special thing about variables is that they can contain just about anything — not just strings and numbers. Variables can also contain complex data and even entire functions.`,
-        `<b>Variables aren't the values themselves; they are containers for values</b>.`,
-        `<b>Declaring a variable</b>: to use a variable, you've first got to create it — more accurately, we call this declaring the variable. To do this, we type the keyword <code>let</code>, <code>const</code> or <code>var</code> followed by the name you want to call your variable.`,
-        `<b>Initializing a variable</b>: once you've declared a variable, you can initialize it with a value.`,
-        `<b>Updating a variable</b>: once a variable has been initialized with a value, you can change (or update) that value by giving it a different value.`,
-        `<b>Variable naming rules</b>: you can call a variable pretty much anything you like, but there are limitations. Generally, you should stick to just using <i>Latin characters</i> (0-9, a-z, A-Z) and the <i>underscore character</i>. A safe convention to stick to is so-called <i>"lower camel case"</i>.`,
-        `<b>Variables are case sensitive</b> — so <code>myage</code> is a different variable from <code>myAge</code>.`,
+        `<p>A variable is a <b>container for a value</b>.</p>`,
+        `<p>One special thing about variables is that they can contain just about anything — not just strings and numbers. Variables can also contain complex data and even entire functions.</p>`,
+        `<p>Variables aren't the values themselves; they are containers for values.</p>`,
+        `<h3>Declaring a variable</h3>
+        <p>To use a variable, you've first got to create it — more accurately, we call this declaring the variable. To do this, we type the keyword <code>let</code>, <code>const</code> or <code>var</code> followed by the name you want to call your variable.</p>`,
+        `<h3>Initializing a variable</h3>
+        <p>Once you've declared a variable, you can initialize it with a value.</p>`,
+        `<h3>Updating a variable</h3>
+        <p>Once a variable has been initialized with a value, you can change (or update) that value by giving it a different value.</p>`,
+        `<h3>Variable naming rules</h3>
+        <p>You can call a variable pretty much anything you like, but there are limitations. Generally, you should stick to just using <i>Latin characters</i> (0-9, a-z, A-Z) and the <i>underscore character</i>. A safe convention to stick to is so-called <i>"lower camel case"</i>.</p>`,
+        `<h3>Variables are case sensitive</h3>
+        <p>So <code>myage</code> is a different variable from <code>myAge</code>.</p>`,
       ],
     },
     {
       sectionTitle: 'var',
       sectionSource: '/src/markdowns/02_JavaScript_Types_&_Variables/var.html',
       sectionSummary: [
-        `The <code>var</code> statement declares a <i>function-scoped</i> or <i>globally-scoped</i> variable, optionally initializing it to a value.`,
-        `<b><code>var</code> & hoisting</b>: <code>var</code> declarations, wherever they occur, are processed before any code is executed because <code>var</code> declarations are hoisted. Variables declared using <code>var</code> are created before any code is executed in a process known as hoisting. Their initial value is <code>undefined</code>. <b>This behavior called hoisting means that the variable declaration is moved to the top of the <i>function</i> or <i>global code</i></b>.
-        <br>Because <code>var</code> declarations are processed before any code is executed, declaring a variable with <code>var</code> anywhere in the code is equivalent to declaring it at the top. This also means that <i>a <code>var</code> variable can appear to be used before it's declared</i>.
+        `<p>The <code>var</code> statement declares a <i>function-scoped</i> or <i>globally-scoped</i> variable, optionally initializing it to a value.</p>`,
+        `<h3><code>var</code> & hoisting</h3>
+        <p><code>var</code> declarations, wherever they occur, are processed before any code is executed because <code>var</code> declarations are hoisted. Variables declared using <code>var</code> are created before any code is executed in a process known as hoisting. Their initial value is <code>undefined</code>. <b>This behavior called hoisting means that the variable declaration is moved to the top of the <i>function</i> or <i>global code</i></b>.</p>
+        <p>Because <code>var</code> declarations are processed before any code is executed, declaring a variable with <code>var</code> anywhere in the code is equivalent to declaring it at the top. This also means that <i>a <code>var</code> variable can appear to be used before it's declared</i>.</p>
         `,
-        `<b>Only a variable's declaration is hoisted, not its initialization</b>. The initialization happens only when the assignment statement is reached. Until then the variable remains <code>undefined</code> (but declared).`,
-        `In the global context, a variable declared using <code>var</code> is added as a non-configurable <b>property of the global <code>window</code> object</b>.`,
-        `<code>var</code> is only function scoped, NOT block scoped.`,
-        `<code>var</code> can be redeclared without trigger an error.`,
+        `<h3>Only a variable's declaration is hoisted, not its initialization</h3>
+        <p>The initialization happens only when the assignment statement is reached. Until then the variable remains <code>undefined</code> (but declared).</p>`,
+        `<p>In the global context, a variable declared using <code>var</code> is added as a non-configurable <b>property of the global <code>window</code> object</b>.</p>`,
+        `<p><code>var</code> is only function scoped, NOT block scoped.</p>`,
+        `<p><code>var</code> can be redeclared without trigger an error.</p>`,
       ],
     },
     {
       sectionTitle: 'let',
       sectionSource: '/src/markdowns/02_JavaScript_Types_&_Variables/let.html',
       sectionSummary: [
-        `The <code>let</code> statement declares a <b>block-scoped local variable</b>, optionally initializing it to a value.`,
-        `<code>let</code> can't be used before it's declared.`,
-        `<code>let</code> is function scoped & block scoped.`,
-        `Just like <code>const</code>, the <code>let</code> does not create properties of the <code>window</code> object when declared globally.`,
-        `<code>let</code> can't be redeclared like <code>var</code>.`,
+        `<p>The <code>let</code> statement declares a <b>block-scoped local variable</b>, optionally initializing it to a value.</p>`,
+        `<p><code>let</code> can't be used before it's declared.</p>`,
+        `<p><code>let</code> is function scoped & block scoped.</p>`,
+        `<p>Just like <code>const</code>, the <code>let</code> does not create properties of the <code>window</code> object when declared globally.</p>`,
+        `<p><code>let</code> can't be redeclared like <code>var</code>.</p>`,
       ],
     },
     {
@@ -250,11 +269,11 @@ const variablesAndValues = {
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/const.html',
       sectionSummary: [
-        `The <code>const</code> statement declares a <b>block-scoped local variable</b>.`,
-        `<code>const</code> is function scoped & block scoped.`,
-        `<code>const</code> <i>must be initialized when it's declared</i>.`,
-        `<code>const</code> can't be used before it's declared.`,
-        `The value of a <code>const</code> <i>can't be changed through reassignment</i> and <i>can't be redeclared</i> like <code>var</code> or <code>let</code>. However, if a constant is an object or array its properties or items can be updated or removed.`,
+        `<p>The <code>const</code> statement declares a <b>block-scoped local variable</b>.</p>`,
+        `<p><code>const</code> is function scoped & block scoped.</p>`,
+        `<p><code>const</code> <i>must be initialized when it's declared</i>.</p>`,
+        `<p><code>const</code> can't be used before it's declared.</p>`,
+        `<p>The value of a <code>const</code> <i>can't be changed through reassignment</i> and <i>can't be redeclared</i> like <code>var</code> or <code>let</code>. However, if a constant is an object or array its properties or items can be updated or removed.</p>`,
       ],
     },
     {
@@ -262,20 +281,20 @@ const variablesAndValues = {
       sectionSource:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Differences_between_var_let_&_const.html',
       sectionSummary: [
-        `<b>Declaration, initialization & hoisting differences</b>
-        <br>If <code>var</code> and <code>let</code> are not initialized at declaration, initial value is <code>undefined</code>. An initializer for a <code>const</code> variable is required; you must specify its value in the same statement in which it's declared.
-        <br>Variables declared with <code>let</code> and <code>const</code> are hoisted but, unlike <code>var</code>, are not initialized with a default value.
+        `<h3>Declaration, initialization & hoisting differences</h3>
+        <p>If <code>var</code> and <code>let</code> are not initialized at declaration, initial value is <code>undefined</code>. An initializer for a <code>const</code> variable is required; you must specify its value in the same statement in which it's declared.</p>
+        <p>Variables declared with <code>let</code> and <code>const</code> are hoisted but, unlike <code>var</code>, are not initialized with a default value.</p>
         `,
-        `<b>Scope differences</b>
-        <br><code>let</code> and <code>const</code> allows you to declare variables that are limited to the scope of a block statement or expression on which it is used, unlike the <code>var</code> keyword, which declares a variable globally or locally to an entire function, regardless of block scope.
+        `<h3>Scope differences</h3>
+        <p><code>let</code> and <code>const</code> allows you to declare variables that are limited to the scope of a block statement or expression on which it is used, unlike the <code>var</code> keyword, which declares a variable globally or locally to an entire function, regardless of block scope.</p>
         `,
-        `<b>Duplicate variable declarations (redeclarations) differences</b>
-        <br>Duplicate variable declarations using <code>var</code> will not trigger an error, even in "strict mode", and the variable will not lose its value, unless another assignment is performed.
+        `<h3>Duplicate variable declarations (redeclarations) differences</h3>
+        <p>Duplicate variable declarations using <code>var</code> will not trigger an error, even in "strict mode", and the variable will not lose its value, unless another assignment is performed.</p>
         `,
-        `<b>Non-configurable property of the global <code>window</code> object</b>
-        <br>In the global context, a variable declared using <code>var</code> is added as a non-configurable property of the global object but <code>let</code> and <code>const</code> does not create properties of the <code>window</code> object when declared globally.
+        `<h3>Non-configurable property of the global <code>window</code> object</h3>
+        <p>In the global context, a variable declared using <code>var</code> is added as a non-configurable property of the global object but <code>let</code> and <code>const</code> does not create properties of the <code>window</code> object when declared globally.</p>
         `,
-        `You can following the principle about when to use <code>let</code> and when to use <code>const</code>: use <code>const</code> <i>when you can</i>, and use <code>let</code> <i>when you have to</i>. This means that <b>if you can initialize a variable when you declare it and don't need to reassign it later, make it a constant</b>.`,
+        `<p>You can following the principle about when to use <code>let</code> and when to use <code>const</code>: use <code>const</code> <i>when you can</i>, and use <code>let</code> <i>when you have to</i>. This means that <b>if you can initialize a variable when you declare it and don't need to reassign it later, make it a constant</b>.</p>`,
       ],
     },
   ],
@@ -289,11 +308,15 @@ const operators = {
       sectionSource:
         '/src/markdowns/03_Operators/Introduction_to_Javascript_Operators.html',
       sectionSummary: [
-        `An operator allows us to <i>transform values</i> or <i>combine multiple values</i> and do all kinds of work with values.`,
-        `<b>Operator precedence</b> determines <i>how operators are parsed concerning each other</i>. Operators with <i>higher precedence</i> become the operands of operators with <i>lower precedence</i>.`,
-        `<b>Precedence & Associativity</b>: operators are first grouped by <i>precedence</i>, and then, for adjacent operators that have the same precedence, by <i>associativity</i>. When operators have <i>different precedence levels</i>, the operator with the highest precedence goes first and associativity does not matter. Associativity comes into play when there are multiple operators of the same precedence.`,
-        `Note on <b>grouping vs short-circuiting</b>: grouping <code>( … )</code> is listed as having the highest precedence. However, that does not always mean the expression within the grouping symbols <code>( … )</code> is evaluated first, especially when it comes to short-circuiting. Short-circuiting is jargon for <i>conditional evaluation</i>. For example, in the expression <code>a && (b + c)</code>, if <code>a</code> is falsy, then the sub-expression <code>(b + c)</code> will not even get evaluated, even if it is grouped and therefore has higher precedence than <code>&&</code>.`,
-        `<b>Operators & Type Coercion</b>: some operators like <code>+</code> trigger type coercion, because <code>+</code> operator also supports strings, not only numbers.`,
+        `<p>An operator allows us to <i>transform values</i> or <i>combine multiple values</i> and do all kinds of work with values.</p>`,
+        `<h3>Operator precedence</h3>
+        <p>Operator precedence determines <i>how operators are parsed concerning each other</i>. Operators with <i>higher precedence</i> become the operands of operators with <i>lower precedence</i>.</p>`,
+        `<h3>Precedence & Associativity</h3>
+        <p>Operators are first grouped by <i>precedence</i>, and then, for adjacent operators that have the same precedence, by <i>associativity</i>. When operators have <i>different precedence levels</i>, the operator with the highest precedence goes first and associativity does not matter. Associativity comes into play when there are multiple operators of the same precedence.</p>`,
+        `<h3>Note ongrouping vs short-circuiting</h3>
+        <p>Grouping <code>( … )</code> is listed as having the highest precedence. However, that does not always mean the expression within the grouping symbols <code>( … )</code> is evaluated first, especially when it comes to short-circuiting. Short-circuiting is jargon for <i>conditional evaluation</i>. For example, in the expression <code>a && (b + c)</code>, if <code>a</code> is falsy, then the sub-expression <code>(b + c)</code> will not even get evaluated, even if it is grouped and therefore has higher precedence than <code>&&</code>.</p>`,
+        `<h3>Operators & Type Coercion</h3>
+        <p>Some operators like <code>+</code> trigger type coercion, because <code>+</code> operator also supports strings, not only numbers.</p>`,
       ],
     },
     {
@@ -301,17 +324,18 @@ const operators = {
       sectionSource:
         '/src/markdowns/03_Operators/Expressions_and_operators.html',
       sectionSummary: [
-        `At a high level, <i>an expression is a valid unit of code that resolves to a value</i>. There are <i>two types of expressions</i>: those <u>that have side effects (such as assigning values)</u> and those <u>that purely evaluate</u>.`,
-        `Some of JavaScript expressions & operators:
-        <br>- Primary expressions: <code>this</code>, <code>[]</code>, <code>{}</code>, <code>function</code>, <code>class</code>, <code>async function</code> etc.
-        <br>- Left-hand-side expressions: <code>?.</code>, <code>new</code>, <code>super</code> etc.
-        <br>- Increment and decrement
-        <br>- Unary operators: <code>tyepof</code>, <code>await</code> etc.
-        <br>- Arithmetic operators
-        <br>- Relational operators: <code>instanceof</code>, <code>in</code> etc.
-        <br>- Equality operators
-        <br>- Binary logical operators
-        <br>- Assignment operators
+        `<p>At a high level, <i>an expression is a valid unit of code that resolves to a value</i>. There are <i>two types of expressions</i>: those <u>that have side effects (such as assigning values)</u> and those <u>that purely evaluate</u>.</p>`,
+        `<ul>Some of JavaScript expressions & operators:
+        <li>- Primary expressions: <code>this</code>, <code>[]</code>, <code>{}</code>, <code>function</code>, <code>class</code>, <code>async function</code> etc.</li>
+        <li>- Left-hand-side expressions: <code>?.</code>, <code>new</code>, <code>super</code> etc.</li>
+        <li>- Increment and decrement</li>
+        <li>- Unary operators: <code>tyepof</code>, <code>await</code> etc.</li>
+        <li>- Arithmetic operators</li>
+        <li>- Relational operators: <code>instanceof</code>, <code>in</code> etc.</li>
+        <li>- Equality operators</li>
+        <li>- Binary logical operators</li>
+        <li>- Assignment operators</li>
+        </ul>
       `,
       ],
     },
@@ -324,8 +348,8 @@ const operators = {
           articleTitle: 'Assignment <code>=</code>',
           articleSource: '/src/markdowns/03_Operators/Assignment_operator.html',
           articleSummary: [
-            `Assignment operator is used to <b>assign a value to a variable</b>.`,
-            `Chaining the assignment operator is possible in order to <b>assign a single value to multiple variables</b>.`,
+            `<p>Assignment operator is used to <b>assign a value to a variable</b>.</p>`,
+            `<p>Chaining the assignment operator is possible in order to <b>assign a single value to multiple variables</b>.</p>`,
           ],
         },
         {
@@ -333,7 +357,7 @@ const operators = {
           articleSource:
             '/src/markdowns/03_Operators/Addition_assignment_operator.html',
           articleSummary: [
-            `The addition assignment operator <b>adds the value of the right operand</b> to a variable and <b>assigns the result</b> to the variable. The types of the two operands determine the behavior of the addition assignment operator. Addition or concatenation is possible.`,
+            `<p>The addition assignment operator <b>adds the value of the right operand</b> to a variable and <b>assigns the result</b> to the variable. The types of the two operands determine the behavior of the addition assignment operator. Addition or concatenation is possible.</p>`,
           ],
         },
         {
@@ -341,8 +365,8 @@ const operators = {
           articleSource:
             '/src/markdowns/03_Operators/Subtraction_assignment_operator.html',
           articleSummary: [
-            `The subtraction assignment operator <b>subtracts the value of the right operand</b> from a variable and <b>assigns the result</b> to the variable.`,
-            `Concatenation is not possible with <code>-=</code> operator, only <code>+</code> and <code>+=</code> operators trigger type coercion.`,
+            `<p>The subtraction assignment operator <b>subtracts the value of the right operand</b> from a variable and <b>assigns the result</b> to the variable.</p>`,
+            `<p>Concatenation is not possible with <code>-=</code> operator, only <code>+</code> and <code>+=</code> operators trigger type coercion.</p>`,
           ],
         },
       ],
@@ -356,18 +380,18 @@ const operators = {
           articleTitle: 'Increment <code>A++</code> or <code>++A</code>',
           articleSource: '/src/markdowns/03_Operators/Increment_operator.html',
           articleSummary: [
-            `The increment operator <i>increments (adds one to)</i> its operand and <i>returns the value</i> before or after the increment, depending on where the operator is placed.`,
-            `If used <b>postfix</b>, with operator after operand (for example, <code>x++</code>), the increment operator increments and <b>returns the value <i>before</i> incrementing</b>.`,
-            `If used <b>prefix</b>, with operator before operand (for example, <code>++x</code>), the increment operator increments and <b>returns the value <i>after</i> incrementing</b>.`,
+            `<p>The increment operator <i>increments (adds one to)</i> its operand and <i>returns the value</i> before or after the increment, depending on where the operator is placed.</p>`,
+            `<p>If used <b>postfix</b>, with operator after operand (for example, <code>x++</code>), the increment operator increments and <b>returns the value <i>before</i> incrementing</b>.</p>`,
+            `<p>If used <b>prefix</b>, with operator before operand (for example, <code>++x</code>), the increment operator increments and <b>returns the value <i>after</i> incrementing</b>.</p>`,
           ],
         },
         {
           articleTitle: 'Decrement <code>A--</code> or <code>--A</code>',
           articleSource: '/src/markdowns/03_Operators/Decrement_operator.html',
           articleSummary: [
-            `The decrement operator <i>decrements (subtracts one from)</i> its operand and i>returns the value</i> before or after the decrement, depending on where the operator is placed.`,
-            `If used <b>postfix</b>, with operator after operand (for example, <code>x--</code>), the decrement operator decrements and <b>returns the value <i>before</i> decrementing</b>.`,
-            `If used <b>prefix</b>, with operator before operand (for example, <code>--x</code>), the decrement operator decrements and <b>returns the value <i>after</i> decrementing</b>.`,
+            `<p>The decrement operator <i>decrements (subtracts one from)</i> its operand and i>returns the value</i> before or after the decrement, depending on where the operator is placed.</p>`,
+            `<p>If used <b>postfix</b>, with operator after operand (for example, <code>x--</code>), the decrement operator decrements and <b>returns the value <i>before</i> decrementing</b>.</p>`,
+            `<p>If used <b>prefix</b>, with operator before operand (for example, <code>--x</code>), the decrement operator decrements and <b>returns the value <i>after</i> decrementing</b>.</p>`,
           ],
         },
       ],
@@ -381,15 +405,15 @@ const operators = {
           articleTitle: 'typeof',
           articleSource: '/src/markdowns/03_Operators/typeof_operator.html',
           articleSummary: [
-            `The <code>typeof</code> operator <i>returns a string indicating the type</i> of the operand's value`,
+            `<p>The <code>typeof</code> operator <i>returns a string indicating the type</i> of the operand's value</p>`,
           ],
         },
         {
           articleTitle: 'Unary plus <code>+</code>',
           articleSource: '/src/markdowns/03_Operators/Unary_plus_operator.html',
           articleSummary: [
-            `The unary plus operator <code>+</code> <i>precedes its operand and evaluates to its operand but <u>attempts to convert it into a number</u>, if it isn't already</i>. If it cannot parse a particular value, it will evaluate to <code>NaN</code>.`,
-            `Although unary negation <code>-</code> also can convert non-numbers, unary plus is the fastest and preferred way of converting something into a number, because it does not perform any other operations on the number.`,
+            `<p>The unary plus operator <code>+</code> <i>precedes its operand and evaluates to its operand but <u>attempts to convert it into a number</u>, if it isn't already</i>. If it cannot parse a particular value, it will evaluate to <code>NaN</code>.</p>`,
+            `<p>Although unary negation <code>-</code> also can convert non-numbers, unary plus is the fastest and preferred way of converting something into a number, because it does not perform any other operations on the number.</p>`,
           ],
         },
         {
@@ -397,7 +421,7 @@ const operators = {
           articleSource:
             '/src/markdowns/03_Operators/Unary_negation_operator.html',
           articleSummary: [
-            `The unary negation operator <code>-</code> <i>precedes its operand and negates it</i>. It <i>can convert a non-number into a number</i>.`,
+            `<p>The unary negation operator <code>-</code> <i>precedes its operand and negates it</i>. It <i>can convert a non-number into a number</i>.</p>`,
           ],
         },
         {
@@ -405,7 +429,7 @@ const operators = {
           articleSource:
             '/src/markdowns/03_Operators/Logical_NOT_operator.html',
           articleSummary: [
-            `The logical NOT <code>!</code> operator <i>takes truth to falsity and vice versa</i>.`,
+            `<p>The logical NOT <code>!</code> operator <i>takes truth to falsity and vice versa</i>.</p>`,
           ],
         },
       ],
@@ -419,7 +443,7 @@ const operators = {
           articleTitle: 'Addition <code>+</code>',
           articleSource: '/src/markdowns/03_Operators/Addition_operator.html',
           articleSummary: [
-            `The addition operator <code>+</code> produces the <i>sum of numeric operands</i> or <i>string concatenation</i>.`,
+            `<p>The addition operator <code>+</code> produces the <i>sum of numeric operands</i> or <i>string concatenation</i>.</p>`,
           ],
         },
         {
@@ -427,8 +451,8 @@ const operators = {
           articleSource:
             '/src/markdowns/03_Operators/Subtraction_operator.html',
           articleSummary: [
-            `The subtraction operator <code>-</code> subtracts the two operands, producing their difference.`,
-            `<i>Concatenation is not possible with <code>-</code> operator</i>, only <code>+</code> and <code>+=</code> operators trigger type coercion.`,
+            `<p>The subtraction operator <code>-</code> subtracts the two operands, producing their difference.</p>`,
+            `<p><i>Concatenation is not possible with <code>-</code> operator</i>, only <code>+</code> and <code>+=</code> operators trigger type coercion.</p>`,
           ],
         },
         {
@@ -443,7 +467,7 @@ const operators = {
           articleTitle: 'Remainder <code>%</code>',
           articleSource: '/src/markdowns/03_Operators/Remainder_operator.html',
           articleSummary: [
-            `The remainder operator <code>%</code> <i>returns the remainder left over when one operand is divided by a second operand</i>.`,
+            `<p>The remainder operator <code>%</code> <i>returns the remainder left over when one operand is divided by a second operand</i>.</p>`,
           ],
         },
       ],
@@ -457,25 +481,25 @@ const operators = {
           articleTitle: 'Equality <code>==</code>',
           articleSource: '/src/markdowns/03_Operators/Equality_operator.html',
           articleSummary: [
-            `The equality operator <code>==</code> <i>checks whether its two operands are equal, returning a Boolean result</i>.`,
-            `Unlike the strict equality <code>===</code> operator, it attempts to <i><u>convert</u> and <u>compare</u> operands that are of different types</i>.`,
-            `Strict equality <code>===</code> operator does not attempt type conversion. Instead, the <i>strict equality operator always considers operands of different types to be different</i>.`,
+            `<p>The equality operator <code>==</code> <i>checks whether its two operands are equal, returning a Boolean result</i>.</p>`,
+            `<p>Unlike the strict equality <code>===</code> operator, it attempts to <i><u>convert</u> and <u>compare</u> operands that are of different types</i>.</p>`,
+            `<p>Strict equality <code>===</code> operator does not attempt type conversion. Instead, the <i>strict equality operator always considers operands of different types to be different</i>.</p>`,
           ],
         },
         {
           articleTitle: 'Inequality <code>!=</code>',
           articleSource: '/src/markdowns/03_Operators/Inequality_operator.html',
           articleSummary: [
-            `The inequality operator <code>!=</code> <i>checks whether its two operands are not equal, returning a Boolean result</i>.`,
-            `Unlike the strict inequality <code>!==</code> operator, it attempts to <i><u>convert</u> and <u>compare</u> operands that are of different types</i>.`,
+            `<p>The inequality operator <code>!=</code> <i>checks whether its two operands are not equal, returning a Boolean result</i>.</p>`,
+            `<p>Unlike the strict inequality <code>!==</code> operator, it attempts to <i><u>convert</u> and <u>compare</u> operands that are of different types</i>.</p>`,
           ],
         },
         {
           articleTitle: 'Identity <code>===</code>',
           articleSource: '/src/markdowns/03_Operators/Identity_operator.html',
           articleSummary: [
-            `The strict equality operator <code>===</code> <i>checks whether its two operands are equal, returning a Boolean result</i>.`,
-            `Strict equality <code>===</code> operator does not attempt type conversion. Instead, the <i>strict equality operator always considers operands of different types to be different</i>.`,
+            `<p>The strict equality operator <code>===</code> <i>checks whether its two operands are equal, returning a Boolean result</i>.</p>`,
+            `<p>Strict equality <code>===</code> operator does not attempt type conversion. Instead, the <i>strict equality operator always considers operands of different types to be different</i>.</p>`,
           ],
         },
         {
@@ -483,8 +507,8 @@ const operators = {
           articleSource:
             '/src/markdowns/03_Operators/Nonidentity_operator.html',
           articleSummary: [
-            `The strict inequality operator <code>!==</code> <i>checks whether its two operands are not equal, returning a Boolean result</i>.`,
-            `The strict inequality operator <i>always considers operands of different types to be different</i>.`,
+            `<p>The strict inequality operator <code>!==</code> <i>checks whether its two operands are not equal, returning a Boolean result</i>.</p>`,
+            `<p>The strict inequality operator <i>always considers operands of different types to be different</i>.</p>`,
           ],
         },
       ],
@@ -498,46 +522,46 @@ const operators = {
           articleTitle: 'Less than <code><</code>',
           articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
           articleSummary: [
-            `The less than <code><</code> operator returns <code>true</code> if the left operand is less than the right operand, and <code>false</code> otherwise.`,
-            `<i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.`,
+            `<p>The less than <code><</code> operator returns <code>true</code> if the left operand is less than the right operand, and <code>false</code> otherwise.</p>`,
+            `<p><i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.</p>`,
           ],
         },
         {
           articleTitle: 'Greater than <code>></code>',
           articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
           articleSummary: [
-            `The greater than <code>></code> operator returns <code>true</code> if the left operand is greater than the right operand, and <code>false</code> otherwise.`,
-            `<i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.`,
+            `<p>The greater than <code>></code> operator returns <code>true</code> if the left operand is greater than the right operand, and <code>false</code> otherwise.</p>`,
+            `<p><i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.</p>`,
           ],
         },
         {
           articleTitle: 'Less than or equal <code><=</code>',
           articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
           articleSummary: [
-            `The less than or equal <code><=</code> operator returns <code>true</code> if the left operand is less than or equal to the right operand, and <code>false</code> otherwise.`,
-            `<i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.`,
+            `<p>The less than or equal <code><=</code> operator returns <code>true</code> if the left operand is less than or equal to the right operand, and <code>false</code> otherwise.</p>`,
+            `<p><i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.</p>`,
           ],
         },
         {
           articleTitle: 'Greater than or equal <code>>=</code>',
           articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
           articleSummary: [
-            `The greater than or equal <code>>=</code> operator returns <code>true</code> if the left operand is greater than or equal to the right operand, and <code>false</code> otherwise.`,
-            `<i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.`,
+            `<p>The greater than or equal <code>>=</code> operator returns <code>true</code> if the left operand is greater than or equal to the right operand, and <code>false</code> otherwise.</p>`,
+            `<p><i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.</p>`,
           ],
         },
         {
           articleTitle: 'instanceof',
           articleSource: '/src/markdowns/03_Operators/instanceof_operator.html',
           articleSummary: [
-            `The <code>instanceof</code> operator <i>tests to see if the <code>prototype</code> property of a constructor appears anywhere in the prototype chain of an object</i>. The return value is a boolean value.`,
+            `<p>The <code>instanceof</code> operator <i>tests to see if the <code>prototype</code> property of a constructor appears anywhere in the prototype chain of an object</i>. The return value is a boolean value.</p>`,
           ],
         },
         {
           articleTitle: 'in',
           articleSource: '/src/markdowns/03_Operators/in_operator.html',
           articleSummary: [
-            `The <code>in</code> operator returns <code>true</code> if the <u>specified property</u> is in the <i>specified object</i> or <i>its prototype chain</i>.`,
+            `<p>The <code>in</code> operator returns <code>true</code> if the <u>specified property</u> is in the <i>specified object</i> or <i>its prototype chain</i>.</p>`,
           ],
         },
       ],
@@ -552,24 +576,24 @@ const operators = {
           articleSource:
             '/src/markdowns/03_Operators/Logical_AND_operator.html',
           articleSummary: [
-            `The logical AND <code>&&</code> operator for a set of boolean operands will be <code>true</code> <i>only if <u>all</u> the operands are</i> <code>true</code>. Otherwise it will be <code>false</code>.`,
-            `More generally, the operator returns the value of the first falsy operand encountered when evaluating from left to right, or the value of the last operand if they are all truthy.`,
-            `Logical AND <code>&&</code> evaluates operands from left to right.`,
-            `<b>Operator precedence</b>
-            <br>The AND operator has a <i>higher precedence than the OR operator</i>, meaning the <code>&&</code> operator is <i>executed before the <code>||</code> operator</i>.`,
-            `<b>Short-circuit evaluation</b>
-            <br>The logical <code>&&</code> expression is a <u>short-circuit operator</u>. As <i>each operand is converted to a boolean</i>, if the result of one conversion is found to be <code>false</code>, the <code>&&</code> operator stops and <i>returns the original value of that falsy operand</i>; it does not evaluate any of the remaining operands.`,
+            `<p>The logical AND <code>&&</code> operator for a set of boolean operands will be <code>true</code> <i>only if <u>all</u> the operands are</i> <code>true</code>. Otherwise it will be <code>false</code>.</p>`,
+            `<p>More generally, the operator returns the value of the first falsy operand encountered when evaluating from left to right, or the value of the last operand if they are all truthy.</p>`,
+            `<p>Logical AND <code>&&</code> evaluates operands from left to right.</p>`,
+            `<h3>Operator precedence</h3>
+            <p>The AND operator has a <i>higher precedence than the OR operator</i>, meaning the <code>&&</code> operator is <i>executed before the <code>||</code> operator</i>.</p>`,
+            `<h3>Short-circuit evaluation</h3>
+            <p>The logical <code>&&</code> expression is a <u>short-circuit operator</u>. As <i>each operand is converted to a boolean</i>, if the result of one conversion is found to be <code>false</code>, the <code>&&</code> operator stops and <i>returns the original value of that falsy operand</i>; it does not evaluate any of the remaining operands.</p>`,
           ],
         },
         {
           articleTitle: 'Logical OR <code>||</code>',
           articleSource: '/src/markdowns/03_Operators/Logical_OR_operator.html',
           articleSummary: [
-            `The logical OR <code>||</code> operator (logical disjunction) for a set of operands is <code>true</code> <i>only if <u>one or more</u> of its operands is</i> <code>true</code>.`,
-            `<b>Operator precedence</b>
-            <br>The AND operator has a <i>higher precedence than the OR operator</i>, meaning the <code>&&</code> operator is <i>executed before the <code>||</code> operator</i>.`,
-            `<b>Short-circuit evaluation</b>
-            <br>The logical <code>||</code> expression is a <u>short-circuit operator</u>. As <i>each operand is converted to a boolean</i>, if the result of one conversion is found to be <code>true</code>, the <code>||</code> operator stops and <i>returns the original value of that truthy operand</i>; it does not evaluate any of the remaining operands.`,
+            `<p>The logical OR <code>||</code> operator (logical disjunction) for a set of operands is <code>true</code> <i>only if <u>one or more</u> of its operands is</i> <code>true</code>.</p>`,
+            `<h3>Operator precedence</h3>
+            <p>The AND operator has a <i>higher precedence than the OR operator</i>, meaning the <code>&&</code> operator is <i>executed before the <code>||</code> operator</i>.</p>`,
+            `<h3>Short-circuit evaluation</h3>
+            <p>The logical <code>||</code> expression is a <u>short-circuit operator</u>. As <i>each operand is converted to a boolean</i>, if the result of one conversion is found to be <code>true</code>, the <code>||</code> operator stops and <i>returns the original value of that truthy operand</i>; it does not evaluate any of the remaining operands.</p>`,
           ],
         },
         {
@@ -577,7 +601,7 @@ const operators = {
           articleSource:
             '/src/markdowns/03_Operators/Nullish_coalescing_operator.html',
           articleSummary: [
-            `The nullish coalescing <code>??</code> operator is a logical operator that <i>returns its right-hand side operand when its left-hand side operand is <code>null</code> or <code>undefined</code>, and otherwise returns its left-hand side operand</i>.`,
+            `<p>The nullish coalescing <code>??</code> operator is a logical operator that <i>returns its right-hand side operand when its left-hand side operand is <code>null</code> or <code>undefined</code>, and otherwise returns its left-hand side operand</i>.</p>`,
           ],
         },
         {
@@ -585,15 +609,15 @@ const operators = {
             'Short Circuiting with <code>&&</code> and <code>||</code>',
           articleSource: '/src/markdowns/03_Operators/Short_Circuiting.html',
           articleSummary: [
-            `The two Short-Circuit operators are represented with the symbol <code>&&</code> and <code>||</code>. <i>They are basically used to <u>combine expressions</u></i>.`,
-            `Although short-circuit operators are basically used to combine expressions, <i>you can use them to <u>execute statements conditionally</u></i>.`,
-            `<b>Using the <code>&&</code> operator</b>
-            <br><code>true && statement</code> (if the first condition is <code>true</code>, the <i>statement is executed</i>)
-            <br><code>false && statement</code> (if the first condition is <code>false</code>, the <i>statement is NOT executed</i>)`,
-            `<b>Using the <code>||</code> operator</b>
-            <br><code>true || statement</code> (if the first condition is <code>true</code>, the <i>statement is NOT executed</i>)
-            <br><code>false || statement</code> (if the first condition is <code>false</code>, the <i>statement is executed</i>)`,
-            `Short-circuit operators can also be used as a Ternary or Conditional operator.`,
+            `<p>The two Short-Circuit operators are represented with the symbol <code>&&</code> and <code>||</code>. <i>They are basically used to <u>combine expressions</u></i>.</p>`,
+            `<p>Although short-circuit operators are basically used to combine expressions, <i>you can use them to <u>execute statements conditionally</u></i>.</p>`,
+            `<h3>Using the <code>&&</code> operator</h3>
+            <p><code>true && statement</code> (if the first condition is <code>true</code>, the <i>statement is executed</i>)</p>
+            <p><code>false && statement</code> (if the first condition is <code>false</code>, the <i>statement is NOT executed</i>)</p>`,
+            `<h3>Using the <code>||</code> operator</h3>
+            <p><code>true || statement</code> (if the first condition is <code>true</code>, the <i>statement is NOT executed</i>)</p>
+            <p><code>false || statement</code> (if the first condition is <code>false</code>, the <i>statement is executed</i>)</p>`,
+            `<p>Short-circuit operators can also be used as a Ternary or Conditional operator.</p>`,
           ],
         },
       ],
@@ -603,10 +627,10 @@ const operators = {
       sectionSource:
         '/src/markdowns/03_Operators/Conditional_(ternary)_operator.html',
       sectionSummary: [
-        `The conditional (ternary) operator is the <i>only JavaScript operator that takes three operands</i>: a condition followed by a question mark <code>?</code>, then an expression to execute if the condition is truthy followed by a colon <code>:</code>, and finally the expression to execute if the condition is falsy.`,
-        `This operator is frequently used as an alternative to an <code>if...else</code> statement.`,
-        `The Conditional (Ternary) operator is mostly used to <i>assigns a value to a variable based on some condition</i>.`,
-        `The ternary operator is right-associative, which means it can be "chained".`,
+        `<p>The conditional (ternary) operator is the <i>only JavaScript operator that takes three operands</i>: a condition followed by a question mark <code>?</code>, then an expression to execute if the condition is truthy followed by a colon <code>:</code>, and finally the expression to execute if the condition is falsy.</p>`,
+        `<p>This operator is frequently used as an alternative to an <code>if...else</code> statement.</p>`,
+        `<p>The Conditional (Ternary) operator is mostly used to <i>assigns a value to a variable based on some condition</i>.</p>`,
+        `<p>The ternary operator is right-associative, which means it can be "chained".</p>`,
       ],
     },
     {
@@ -614,13 +638,13 @@ const operators = {
       sectionSource:
         '/src/markdowns/03_Operators/Optional_Chaining_operator.html',
       sectionSummary: [
-        `The optional chaining <code>?.</code> operator <i>accesses an object's property or calls a function</i>. If the object is <code>undefined</code> or <code>null</code>, <i>it returns <code>undefined</code> instead of throwing an error</i>.`,
-        `<b>Optional chaining with objects & function calls</b>
-        <br>The <code>?.</code> operator is like the <code>.</code> chaining operator, except that <i>instead of causing an error if a reference is nullish (<code>null</code> or <code>undefined</code>), the expression short-circuits with a return value of <code>undefined</code>. When used with function calls, it returns <code>undefined</code> if the given function does not exist</i>.`,
-        `<b>Optional chaining with expressions</b>
-        <br>You can also use the optional chaining operator with bracket notation, which allows passing an expression as the property name: <code>const name = obj?.['property-name']</code>.`,
-        `With nested structures, it is possible to use <code>?.</code> operator multiple times.`,
-        `The <code>?.</code> operator may be used after optional chaining in order to build a default value when none was found.`,
+        `<p>The optional chaining <code>?.</code> operator <i>accesses an object's property or calls a function</i>. If the object is <code>undefined</code> or <code>null</code>, <i>it returns <code>undefined</code> instead of throwing an error</i>.</p>`,
+        `<h3>Optional chaining with objects & function calls</h3>
+        <p>The <code>?.</code> operator is like the <code>.</code> chaining operator, except that <i>instead of causing an error if a reference is nullish (<code>null</code> or <code>undefined</code>), the expression short-circuits with a return value of <code>undefined</code>. When used with function calls, it returns <code>undefined</code> if the given function does not exist</i>.</p>`,
+        `<h3>Optional chaining with expressions</h3>
+        <p>You can also use the optional chaining operator with bracket notation, which allows passing an expression as the property name: <code>const name = obj?.['property-name']</code>.</p>`,
+        `<p>With nested structures, it is possible to use <code>?.</code> operator multiple times.</p>`,
+        `<p>The <code>?.</code> operator may be used after optional chaining in order to build a default value when none was found.</p>`,
       ],
     },
   ],
@@ -634,23 +658,25 @@ const conditionalStatements = {
       sectionSource:
         '/src/markdowns/04_Conditional_statements/Statements_vs_Expressions.html',
       sectionSummary: [
-        `<i>Any unit of code that can be evaluated to a value is an expression</i>. Since <i>expressions produce values</i>, they can appear anywhere in a program where JavaScript expects a value, such as the arguments of a function invocation.`,
-        `JavaScript has the following <b>expression categories</b>:
-        <br>- <i>arithmetic</i> expressions (expressions that evaluate to a numeric value)
-        <br>- <i>string</i> expressions (expressions that evaluate to a string)
-        <br>- <i>logical</i> expressions (expressions that evaluate to the Boolean value <code>true</code> or <code>false</code>)
-        <br>- <i>primary</i> expressions (refer to stand alone expressions such as literal values, certain keywords and variable values)
-        <br>- <i>assignment</i> expressions (when expressions use the <code>=</code> operator to assign a value to a variable, it is called an assignment expression)
-        <br>- <i>left-hand-side</i> expressions (expressions that can appear on the left side of an assignment expression)
-        <br>- <i>expressions with side effects</i> (as we just saw with assignment expressions, expressions with side effects are those that result in a change or a side effect such as setting or modifying the value of a variable through the assignment operator <code>=</code>, function call, incrementing or decrementing the value of a variable)
+        `<p><i>Any unit of code that can be evaluated to a value is an expression</i>. Since <i>expressions produce values</i>, they can appear anywhere in a program where JavaScript expects a value, such as the arguments of a function invocation.</p>`,
+        `<ul>JavaScript has the following <b>expression categories</b>:
+        <li>- <i>arithmetic</i> expressions (expressions that evaluate to a numeric value)</li>
+        <li>- <i>string</i> expressions (expressions that evaluate to a string)</li>
+        <li>- <i>logical</i> expressions (expressions that evaluate to the Boolean value <code>true</code> or <code>false</code>)</li>
+        <li>- <i>primary</i> expressions (refer to stand alone expressions such as literal values, certain keywords and variable values)</li>
+        <li>- <i>assignment</i> expressions (when expressions use the <code>=</code> operator to assign a value to a variable, it is called an assignment expression)</li>
+        <li>- <i>left-hand-side</i> expressions (expressions that can appear on the left side of an assignment expression)</li>
+        <li>- <i>expressions with side effects</i> (as we just saw with assignment expressions, expressions with side effects are those that result in a change or a side effect such as setting or modifying the value of a variable through the assignment operator <code>=</code>, function call, incrementing or decrementing the value of a variable)</li>
+        </ul>
         `,
-        `<i>A statement is an instruction to perform a specific action</i>: creating variables, functions, loops etc.`,
-        `Statements in JavaScript can be classified into the following <b>categories</b>:
-        <br>- <i>declaration</i> statements (such type of statements create variables and functions by using the <code>var</code>, <code>let</code> or <code>const</code> and function statements respectively)
-        <br>- <i>expression</i> statements (wherever JavaScript expects a statement, you can also write an expression. Such statements are referred to as expression statements. But the reverse does not hold. You cannot use a statement in the place of an expression)
-        <br>- <i>conditional</i> statements (conditional statements execute statements based on the value of an expression. Examples of conditional statements includes the <code>if..else</code> and <code>switch</code> statements)
-        <br>- <i>loops</i> and <i>jumps</i> (Looping statements includes the following statements: <code>while</code>, <code>do/while</code>, <code>for</code> and <code>for...in</code>. Jump statements are used to make the JavaScript interpreter jump to a specific location within the program. Examples of jump statements includes <code>break</code>, <code>continue</code>, <code>return</code> and <code>throw</code>)
-        <br>- <i>function declarations</i>
+        `<p><i>A statement is an instruction to perform a specific action</i>: creating variables, functions, loops etc.</p>`,
+        `<ul>Statements in JavaScript can be classified into the following <b>categories</b>:
+        <li>- <i>declaration</i> statements (such type of statements create variables and functions by using the <code>var</code>, <code>let</code> or <code>const</code> and function statements respectively)</li>
+        <li>- <i>expression</i> statements (wherever JavaScript expects a statement, you can also write an expression. Such statements are referred to as expression statements. But the reverse does not hold. You cannot use a statement in the place of an expression)</li>
+        <li>- <i>conditional</i> statements (conditional statements execute statements based on the value of an expression. Examples of conditional statements includes the <code>if..else</code> and <code>switch</code> statements)</li>
+        <li>- <i>loops</i> and <i>jumps</i> (Looping statements includes the following statements: <code>while</code>, <code>do/while</code>, <code>for</code> and <code>for...in</code>. Jump statements are used to make the JavaScript interpreter jump to a specific location within the program. Examples of jump statements includes <code>break</code>, <code>continue</code>, <code>return</code> and <code>throw</code>)</li>
+        <li>- <i>function declarations</i></li>
+        </ul>
         `,
       ],
     },
@@ -659,9 +685,9 @@ const conditionalStatements = {
       sectionSource:
         '/src/markdowns/04_Conditional_statements/Control_flow_and_error_handling.html',
       sectionSummary: [
-        `JavaScript supports a compact set of statements, specifically <i>control flow statements</i>, that you can use to incorporate a great deal of interactivity in your application.
+        `<p>JavaScript supports a compact set of statements, specifically <i>control flow statements</i>, that you can use to incorporate a great deal of interactivity in your application.</p>
         `,
-        `The semicolon (<code>;</code>) character is used to separate statements in JavaScript code.`,
+        `<p>The semicolon (<code>;</code>) character is used to separate statements in JavaScript code.</p>`,
       ],
     },
     {
@@ -669,16 +695,17 @@ const conditionalStatements = {
       sectionSource:
         '/src/markdowns/04_Conditional_statements/Truthy_&_Falsy_Values.html',
       sectionSummary: [
-        `<b>Boolean context & Type coercion</b>
-        <br>In JavaScript, a truthy value is a value that is considered <code>true</code> when encountered in a <i>Boolean context</i>. JavaScript uses type conversion to coerce any value to a Boolean in contexts that require it, such as conditionals and loops.`,
-        `<i>JavaScript uses type coercion in Boolean contexts</i>.`,
-        `All values are truthy unless they are defined as falsy. That is, <i>all values are truthy except</i>:
-        <br>- <code>false</code>
-        <br>- <code>0</code>, <code>-0</code>, <code>0n</code>
-        <br>- empty string <code>""</code>
-        <br>- <code>null</code>
-        <br>- <code>undefined</code>
-        <br>- <code>NaN</code>
+        `<h3>Boolean context & Type coercion</h3>
+        <p>In JavaScript, a truthy value is a value that is considered <code>true</code> when encountered in a <i>Boolean context</i>. JavaScript uses type conversion to coerce any value to a Boolean in contexts that require it, such as conditionals and loops.</p>`,
+        `<p><i>JavaScript uses type coercion in Boolean contexts</i>.</p>`,
+        `<ul>All values are truthy unless they are defined as falsy. That is, <i>all values are truthy except</i>:
+        <li>- <code>false</code></li>
+        <li>- <code>0</code>, <code>-0</code>, <code>0n</code></li>
+        <li>- empty string <code>""</code></li>
+        <li>- <code>null</code></li>
+        <li>- <code>undefined</code></li>
+        <li>- <code>NaN</code></li>
+        </ul>
         `,
       ],
     },
@@ -688,16 +715,17 @@ const conditionalStatements = {
       sectionSource:
         '/src/markdowns/04_Conditional_statements/if__else__if_else_statements.html',
       sectionSummary: [
-        `When you're writing code, <i>you don't always want to execute exactly the same code top to bottom</i>. Sometimes you have some condition that should be met for some code to be executed, and execute some other code if the condition is not met.`,
-        `<i>Conditional statements</i> are used to perform <i>different actions</i> based on <i>different conditions</i>.`,
-        `In JavaScript we have the following conditional statements:
-        <br>- <code>if</code>
-        <br>- <code>else</code>
-        <br>- <code>else if</code>
-        <br>- <code>switch</code>
+        `<p>When you're writing code, <i>you don't always want to execute exactly the same code top to bottom</i>. Sometimes you have some condition that should be met for some code to be executed, and execute some other code if the condition is not met.</p>`,
+        `<p><i>Conditional statements</i> are used to perform <i>different actions</i> based on <i>different conditions</i>.</p>`,
+        `<ul>In JavaScript we have the following conditional statements:
+        <li>- <code>if</code></li>
+        <li>- <code>else</code></li>
+        <li>- <code>else if</code></li>
+        <li>- <code>switch</code></li>
+        </ul>
         `,
-        `The <code>if</code> statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement in the optional <code>else</code> clause will be executed.`,
-        `Multiple <code>if...else</code> statements can be nested to create an <code>else if</code> clause.`,
+        `<p>The <code>if</code> statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement in the optional <code>else</code> clause will be executed.</p>`,
+        `<p>Multiple <code>if...else</code> statements can be nested to create an <code>else if</code> clause.</p>`,
       ],
     },
     {
@@ -705,22 +733,24 @@ const conditionalStatements = {
       sectionSource:
         '/src/markdowns/04_Conditional_statements/The_Switch_Statement.html',
       sectionSummary: [
-        `The <code>switch</code> statement is used to perform <i>different actions</i> based on <i>different conditions</i>. Use the <code>switch</code> statement to <i>select one of many code blocks to be executed.</i>`,
-        `This is how it works:
-        <br>- The <code>switch</code> expression is <i>evaluated once</i>
-        <br>- The value of the expression is <i>compared</i> with the values of each case
-        <br>- <i>If there is a match</i>, the associated block of code is executed
-        <br>- <i>If there is no match</i>, the default code block is executed`,
-        `<b>The <code>switch</code> statement & <code>break</code> statement</b>
-        <br><i>When JavaScript reaches a <code>break</code> keyword, it breaks out of the <code>switch</code> block</i>. This will stop the execution inside the <code>switch</code> block.`,
-        `<b>The <code>switch</code> statement & <code>default</code> statement</b>
-        <br>The <code>default</code> keyword <i>specifies the code to run if there is <u>no case match</u></i>.`,
-        `<b>Switching details</b>
-        <br>-If <i>multiple cases matches a expression value</i>, the first case is selected
-        <br>-If <i>no matching cases are found</i>, the program continues to the <code>default</code> label
-        <br>-If <i>no <code>default</code> label is found</i>, the program continues to the statement(s) <u>after</u> the <code>switch</code>.`,
-        `<code>switch</code> cases use strict comparison <code>===</code>.`,
-        `The <code>switch</code> statement is an alternative to <code>if{...} else{...}</code> chains.`,
+        `<p>The <code>switch</code> statement is used to perform <i>different actions</i> based on <i>different conditions</i>. Use the <code>switch</code> statement to <i>select one of many code blocks to be executed.</i></p>`,
+        `<ul>This is how it works:
+        <li>- The <code>switch</code> expression is <i>evaluated once</i></li>
+        <li>- The value of the expression is <i>compared</i> with the values of each case</li>
+        <li>- <i>If there is a match</i>, the associated block of code is executed</li>
+        <li>- <i>If there is no match</i>, the default code block is executed</li>
+        </ul>
+        `,
+        `<h3>The <code>switch</code> statement & <code>break</code> statement</h3>
+        <p><i>When JavaScript reaches a <code>break</code> keyword, it breaks out of the <code>switch</code> block</i>. This will stop the execution inside the <code>switch</code> block.</p>`,
+        `<h3>The <code>switch</code> statement & <code>default</code> statement</h3>
+        <p>The <code>default</code> keyword <i>specifies the code to run if there is <u>no case match</u></i>.</p>`,
+        `<h3>Switching details</h3>
+        <p>-If <i>multiple cases matches a expression value</i>, the first case is selected</p>
+        <p>-If <i>no matching cases are found</i>, the program continues to the <code>default</code> label</p>
+        <p>-If <i>no <code>default</code> label is found</i>, the program continues to the statement(s) <u>after</u> the <code>switch</code>.</p>`,
+        `<p><code>switch</code> cases use strict comparison <code>===</code>.</p>`,
+        `<p>The <code>switch</code> statement is an alternative to <code>if{...} else{...}</code> chains.</p>`,
       ],
     },
   ],
@@ -734,16 +764,17 @@ const loops = {
       sectionSource:
         '/src/markdowns/05_Loops_&_Iteration/Introduction_to_Loops_and_Iteration.html',
       sectionSummary: [
-        `Loops can <i>execute a block of code a number of times</i>. Loops are handy, if you want to <i>run the same code over and over again, each time with a different value</i>.`,
-        `There are <i>many different kinds of loops</i>, but they all essentially do the same thing: they <i>repeat</i> an action some number of times.`,
-        `The various loop mechanisms offer <i>different ways to determine the start and end points of the loop</i>.`,
-        `JavaScript supports <b>different kinds of loops</b>:
-        <br>- <b><code>for</code></b> loops through a block of code a number of times (repeats until a specified condition evaluates to <code>false</code>)
-        <br>- <b><code>for...of</code></b> loops through the values of an <u>iterable</u> object (creates a loop iterating over iterable objects:  <code>Array</code>, <code>Map</code>, <code>Set</code>, <code>arguments</code> object and so on)
-        <br>- <b><code>for...in</code></b> loops through the <u>properties</u> of an object (iterates a specified variable over all the enumerable properties of an object)
-        <br>- <b><code>while</code></b> loops through a block of code <u>while a specified condition</u> is <code>true</code> (executes its statements as long as a specified condition evaluates to <code>true</code>)
-        <br>- <b><code>break</code></b> breaks out of a loop
-        <br>- <b><code>continue</code></b> skips a value in a loop (restart a <code>while</code>, <code>do-while</code>, <code>for</code> or <code>label</code> statement)
+        `<p>Loops can <i>execute a block of code a number of times</i>. Loops are handy, if you want to <i>run the same code over and over again, each time with a different value</i>.</p>`,
+        `<p>There are <i>many different kinds of loops</i>, but they all essentially do the same thing: they <i>repeat</i> an action some number of times.</p>`,
+        `<p>The various loop mechanisms offer <i>different ways to determine the start and end points of the loop</i>.</p>`,
+        `<ul>JavaScript supports <b>different kinds of loops</b>:
+        <li>- <b><code>for</code></b> loops through a block of code a number of times (repeats until a specified condition evaluates to <code>false</code>)</li>
+        <li>- <b><code>for...of</code></b> loops through the values of an <u>iterable</u> object (creates a loop iterating over iterable objects:  <code>Array</code>, <code>Map</code>, <code>Set</code>, <code>arguments</code> object and so on)</li>
+        <li>- <b><code>for...in</code></b> loops through the <u>properties</u> of an object (iterates a specified variable over all the enumerable properties of an object)</li>
+        <li>- <b><code>while</code></b> loops through a block of code <u>while a specified condition</u> is <code>true</code> (executes its statements as long as a specified condition evaluates to <code>true</code>)</li>
+        <li>- <b><code>break</code></b> breaks out of a loop</li>
+        <li>- <b><code>continue</code></b> skips a value in a loop (restart a <code>while</code>, <code>do-while</code>, <code>for</code> or <code>label</code> statement)</li>
+        </ul>
         `,
       ],
     },
@@ -751,13 +782,13 @@ const loops = {
       sectionTitle: '<code>for</code> statement',
       sectionSource: '/src/markdowns/05_Loops_&_Iteration/for_statement.html',
       sectionSummary: [
-        `A <code>for</code> statement <i><u>repeats until</u> a specified condition evaluates to <code>false</code></i>.`,
-        `The <code>for</code> statement creates a loop that consists of <i>three <u>optional</u> expressions</i>, enclosed in parentheses and separated by semicolons <code>;</code>, followed by a statement (usually a block statement) to be executed in the loop.`,
-        `<b>Nested loops</b>
-        <br>A nested loop has <i>one loop inside of another</i>. When a loop is nested inside another loop, the inner loop runs many times inside the outer loop. <i>The inner loop must finish all of its iterations before the outer loop can continue to its next iteration</i>.
+        `<p>A <code>for</code> statement <i><u>repeats until</u> a specified condition evaluates to <code>false</code></i>.</p>`,
+        `<p>The <code>for</code> statement creates a loop that consists of <i>three <u>optional</u> expressions</i>, enclosed in parentheses and separated by semicolons <code>;</code>, followed by a statement (usually a block statement) to be executed in the loop.</p>`,
+        `<h3>Nested loops</h3>
+        <p>A nested loop has <i>one loop inside of another</i>. When a loop is nested inside another loop, the inner loop runs many times inside the outer loop. <i>The inner loop must finish all of its iterations before the outer loop can continue to its next iteration</i>.</p>
         `,
-        `Avoid infinite loops!`,
-        `Do NOT initialize a function inside of a loop.`,
+        `<p>Avoid infinite loops!</p>`,
+        `<p>Do NOT initialize a function inside of a loop.</p>`,
       ],
     },
     {
@@ -765,16 +796,18 @@ const loops = {
       sectionSource:
         '/src/markdowns/05_Loops_&_Iteration/for...of_statement.html',
       sectionSummary: [
-        `The <code>for...of</code> statement <i>loops through the <u>values</u> of an <u>iterable object</u></i>, including: built-in <code>String</code>, <code>Array</code>, array-like objects (e.g., <code>arguments</code> or <code>NodeList</code>), <code>TypedArray</code>, <code>Map</code>, <code>Set</code>, and user-defined iterables.`,
-        `A <code>for...of</code> loop operates on the values sourced from an iterable one by one in <i>sequential order. Each iteration creates a new variable</i>. Reassigning the variable inside the loop body does not affect the original value in the iterable.`,
-        `You can use destructuring in <code>for...of</code> statement.`,
-        `<b>Closing or skip iterators</b>
-        <br><code>break</code> exits the loop and goes to the first statement after the loop body, while <code>continue</code> skips the rest of the statements of the current iteration and proceeds to the next iteration.
-        <br>In <code>for...of</code> loops, abrupt iteration termination can be caused by <code>break</code>, <code>throw</code> or <code>return</code>. In these cases, the iterator is closed.`,
-        `<b>Difference between <code>for...of</code> and <code>for...in</code></b>
-        <br>Both <code>for...of</code> and <code>for...in</code> statements iterate over something. The main difference between them is in what they iterate over:
-        <br>- The <code>for...of</code> statement iterates over values that the <i>iterable object</i> defines to be iterated over
-        <br>- The <code>for...in</code> statement iterates over the <i>enumerable properties</i> of an object`,
+        `<p>The <code>for...of</code> statement <i>loops through the <u>values</u> of an <u>iterable object</u></i>, including: built-in <code>String</code>, <code>Array</code>, array-like objects (e.g., <code>arguments</code> or <code>NodeList</code>), <code>TypedArray</code>, <code>Map</code>, <code>Set</code>, and user-defined iterables.</p>`,
+        `<p>A <code>for...of</code> loop operates on the values sourced from an iterable one by one in <i>sequential order. Each iteration creates a new variable</i>. Reassigning the variable inside the loop body does not affect the original value in the iterable.</p>`,
+        `<p>You can use destructuring in <code>for...of</code> statement.</p>`,
+        `<h3>Closing or skip iterators</h3>
+        <p><code>break</code> exits the loop and goes to the first statement after the loop body, while <code>continue</code> skips the rest of the statements of the current iteration and proceeds to the next iteration.</p>
+        <p>In <code>for...of</code> loops, abrupt iteration termination can be caused by <code>break</code>, <code>throw</code> or <code>return</code>. In these cases, the iterator is closed.</p>`,
+        `<h3>Difference between <code>for...of</code> and <code>for...in</code></h3>
+        <ul>Both <code>for...of</code> and <code>for...in</code> statements iterate over something. The main difference between them is in what they iterate over:
+        <li>- The <code>for...of</code> statement iterates over values that the <i>iterable object</i> defines to be iterated over</li>
+        <li>- The <code>for...in</code> statement iterates over the <i>enumerable properties</i> of an object</li>
+        </ul>
+        `,
       ],
     },
     {
@@ -782,28 +815,28 @@ const loops = {
       sectionSource:
         '/src/markdowns/05_Loops_&_Iteration/for...in_statement.html',
       sectionSummary: [
-        `<code>for...in</code> <i>iterates over all <u>enumerable properties</u> of an object that are keyed by strings</i> (ignoring ones keyed by Symbols), including <i>inherited enumerable properties (iterates over the entire prototype chain)</i>.`,
-        `A <code>for...in</code> loop <i><u>only</u> iterates over <u>enumerable, non-symbol properties</u></i>.`,
-        `A <code>for...in</code> loop iterates over the properties of an object in an <i>arbitrary order</i>. Do not use <code>for...in</code> to iterate an array if the index order is important. Use a <code>for</code> loop instead.`,
-        `<b><code>for...in</code> iterates over the entire prototype chain</b>
-        <br><code>for...in</code> loop will iterate over all enumerable properties of the object itself and those the object inherits from its prototype chain.`,
-        `<b><code>for...in</code> vs <code>Object.keys()</code></b>
-        <br>If you only want to consider <i>properties attached to the <u>object itself</u> (iterating over own properties only) and not its prototypes</i>, you can use <code>Object.keys(myObject)</code>. <code>Object.keys(myObject)</code> returns an array of a given object's own enumerable string-keyed property names.`,
-        `<b><code>for...in</code> over arrays</b>
-        <br>Array indexes are just <i>enumerable properties with integer names</i> and are otherwise identical to general object properties. There is no guarantee that <code>for...in</code> will return the indexes in any particular order. Therefore, it is better to use a <code>for</code> loop with a numeric index (or <code>Array.prototype.forEach()</code> or the <code>for...of</code> loop) when iterating over arrays where the order of access is important.`,
-        `You can use destructuring in <code>for...in</code> statement.`,
-        `<b>Why NOT use <code>for...in</code>?</b>
-        <br>Many JavaScript style guides and linters recommend against the use of <code>for...in</code>, because it <i>iterates over the entire prototype chain</i> which is rarely what one wants, and may be a confusion with the more widely-used <code>for...of</code> loop.`,
+        `<p><code>for...in</code> <i>iterates over all <u>enumerable properties</u> of an object that are keyed by strings</i> (ignoring ones keyed by Symbols), including <i>inherited enumerable properties (iterates over the entire prototype chain)</i>.</p>`,
+        `<p>A <code>for...in</code> loop <i><u>only</u> iterates over <u>enumerable, non-symbol properties</u></i>.</p>`,
+        `<p>A <code>for...in</code> loop iterates over the properties of an object in an <i>arbitrary order</i>. Do not use <code>for...in</code> to iterate an array if the index order is important. Use a <code>for</code> loop instead.</p>`,
+        `<h3><code>for...in</code> iterates over the entire prototype chain</h3>
+        <p><code>for...in</code> loop will iterate over all enumerable properties of the object itself and those the object inherits from its prototype chain.</p>`,
+        `<h3><code>for...in</code> vs <code>Object.keys()</code></h3>
+        <p>If you only want to consider <i>properties attached to the <u>object itself</u> (iterating over own properties only) and not its prototypes</i>, you can use <code>Object.keys(myObject)</code>. <code>Object.keys(myObject)</code> returns an array of a given object's own enumerable string-keyed property names.</p>`,
+        `<h3><code>for...in</code> over arrays</h3>
+        <p>Array indexes are just <i>enumerable properties with integer names</i> and are otherwise identical to general object properties. There is no guarantee that <code>for...in</code> will return the indexes in any particular order. Therefore, it is better to use a <code>for</code> loop with a numeric index (or <code>Array.prototype.forEach()</code> or the <code>for...of</code> loop) when iterating over arrays where the order of access is important.</p>`,
+        `<p>You can use destructuring in <code>for...in</code> statement.</p>`,
+        `<h3>Why NOT use <code>for...in</code>?</h3>
+        <p>Many JavaScript style guides and linters recommend against the use of <code>for...in</code>, because it <i>iterates over the entire prototype chain</i> which is rarely what one wants, and may be a confusion with the more widely-used <code>for...of</code> loop.</p>`,
       ],
     },
     {
       sectionTitle: '<code>while</code> statement',
       sectionSource: '/src/markdowns/05_Loops_&_Iteration/while_statement.html',
       sectionSummary: [
-        `The <code>while</code> loop loops through a block of code <i>as long as a specified condition is <code>true</code></i>. The condition is evaluated before executing the statement.`,
-        `<b>Avoid infinite loops!</b>
-        <br>Make sure the condition in a loop eventually becomes <code>false</code> — otherwise, the loop will never terminate!`,
-        `Do NOT initialize a function inside of a loop!`,
+        `<p>The <code>while</code> loop loops through a block of code <i>as long as a specified condition is <code>true</code></i>. The condition is evaluated before executing the statement.</p>`,
+        `<h3>Avoid infinite loops!</h3>
+        <p>Make sure the condition in a loop eventually becomes <code>false</code> — otherwise, the loop will never terminate!</p>`,
+        `<p>Do NOT initialize a function inside of a loop!</p>`,
       ],
     },
     {
@@ -811,11 +844,13 @@ const loops = {
       sectionSource:
         '/src/markdowns/05_Loops_&_Iteration/Break_&_Continue_Statements.html',
       sectionSummary: [
-        `The <code>break</code> statement <i>"jumps <u>out</u>"</i> of a loop.`,
-        `The <code>continue</code> statement <i>"jumps <u>over</u>"</i> one iteration in the loop. The <code>continue</code> statement <i>breaks one iteration</i> (in the loop) if a specified condition occurs, and continues with the next iteration in the loop.`,
-        `In contrast to the <code>break</code> statement, <code>continue</code> does not terminate the execution of the loop entirely, but instead:
-        <br>- in a <code>while</code> loop, it jumps back to the condition
-        <br>- in a <code>for</code> loop, it jumps to the update expression`,
+        `<p>The <code>break</code> statement <i>"jumps <u>out</u>"</i> of a loop.</p>`,
+        `<p>The <code>continue</code> statement <i>"jumps <u>over</u>"</i> one iteration in the loop. The <code>continue</code> statement <i>breaks one iteration</i> (in the loop) if a specified condition occurs, and continues with the next iteration in the loop.</p>`,
+        `<ul>In contrast to the <code>break</code> statement, <code>continue</code> does not terminate the execution of the loop entirely, but instead:
+        <li>- in a <code>while</code> loop, it jumps back to the condition</li>
+        <li>- in a <code>for</code> loop, it jumps to the update expression</li>
+        </ul>
+        `,
       ],
     },
   ],
