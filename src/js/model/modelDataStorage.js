@@ -924,20 +924,62 @@ const functions = {
         <p>In addition, there are special syntaxes for defining <i>arrow functions</i> and <i>methods</i>, which provide more precise semantics for their usage. <i>Classes</i> are conceptually not functions (because they throw an error when called without <code>new</code>), but they also inherit from <code>Function.prototype</code>, and have <code>typeof MyClass === "function"</code>.</p>
         <p>All syntaxes do approximately the same thing, but there are some subtle behavior differences (read the entire article to see all differences).</p>
         `,
-        `<h3>Function expressions vs Function declarations</h3>`,
-        `<h3>Arrow functions</h3>`,
-        `<h3>Anonymous functions</h3>`,
+        `<h3>Function declaration vs function expression</h3>
+        <p>A JavaScript function declaration is defined with the <i><code>function</code> keyword</i>, followed by a <i>name</i>, followed by parentheses <i>()</i>. Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon).</p>
+        <p>A JavaScript function can also be defined using an expression. <i>A function expression can be stored in a variable.</i> After a function expression has been stored in a variable, the variable can be used as a function.</p>
+        <p>Function expressions are convenient when passing a function as an argument to another function.</p>
+        `,
+        `<h3>Anonymous functions</h3>
+        <p>With function expression you can define anonymous functions. An anonymous function is a <i>function without a name</i>. Functions stored in variables do not need function names. They are always invoked (called) using the variable name.</p>
+        <p><i>However, a name can be provided with a function expression.</i> Providing a name allows the function to refer to itself, and also makes it easier to identify the function in a debugger's stack traces.</p>
+        `,
+        `<h3>Arrow functions</h3>
+        <p>With function expression you can define arrow functions. Arrow functions allows a <i>short syntax</i> for writing function expressions. With arrow functions you don't need the <code>function</code> keyword, and in some cases the <code>return</code> keyword (called implicit returns) and the curly brackets <code>{}</code>.</p>
+        <p>Two factors influenced the introduction of arrow functions: shorter syntax and non-binding of <code>this</code> keyword. Arrow functions do not have their own <code>this</code> keyword (the <code>this</code> value of the enclosing execution context is used). <i>They are not well suited for defining object methods.</i></p>
+        <p>Arrow functions are <i>not hoisted</i>. They must be defined before they are used.</p>
+        `,
         `<h3>Constructor Functions</h3>`,
       ],
     },
     {
       sectionTitle: 'Function parameters & arguments',
-      sectionSource: '',
+      sectionSource:
+        '/src/markdowns/06_Functions/Function_parameters_and_arguments.html',
       sectionSummary: [
-        `<h3>Parameter rules</h3>`,
-        `<h3>Default parameters</h3>`,
-        `<h3>The <code>arguments</code> object</h3>`,
-        `<h3>Arguments are passed by value vs Objects are passed by reference</h3>`,
+        `<h3>Parameters vs arguments</h3>
+        <ul>Parameters and arguments have slightly different meanings:
+        <li>- a function <i>parameter</i> it's <i>declared in the bracket-enclosed list of the <u>function's definition</u></i></li>
+        <li>- a function <i>argument</i> it's <i>the value that is actually passed to the function in the <u>function call</u></i></li>
+        </ul>`,
+        `<h3>Arguments are passed by value vs objects are passed by reference</h3>
+        <p><i>Arguments are always passed by value and never passed by reference.</i> This means that if a function reassigns a parameter, the value won't change outside the function. <i>More precisely, object arguments are passed by reference</i>, which means if the object's properties are mutated, the change will impact the outside of the function.</p>
+        <p><i>Each function parameter is a simple identifier that you can access in the local scope.</i> Function parameters behaves like local variables.</p>
+        `,
+        `<h3>Three special parameter syntaxes</h3>
+        <ul>There are 3 special parameter syntaxes:
+        <li>- <i>Default parameters</i> allow formal parameters to be initialized with default values if no value or <code>undefined</code> is passed.</li>
+        <li>- The <i>rest parameter</i> allows representing an indefinite number of arguments as an array.</li>
+        <li>- <i>Destructuring</i> allows unpacking elements from arrays, or properties from objects, into distinct variables.</li>
+        </ul>
+        `,
+        `<h3>Parameter rules</h3>
+        <ul>
+        <li>- JavaScript function definitions do not specify data types for parameters;</li>
+        <li>- JavaScript functions do not perform type checking on the passed arguments;</li>
+        <li>- JavaScript functions do not check the number of arguments received;</li>
+        <li>- When you need to specify multiple parameters, they are separated by commas.</li>
+        </ul>
+        `,
+        `<h3>Default parameters</h3>
+        <p>In JavaScript, <i>parameters of functions default to <code>undefined</code>. However, in some situations it might be useful to set a different default value.</i> This is exactly what default parameters do. Default function parameters allow named parameters to be initialized with default values if no value or <code>undefined</code> is passed.</p>
+        <p>If you're writing a function and want to support optional parameters, you can specify default values by adding <code>=</code> after the name of the parameter, followed by the default value.</p>
+        <p>You can use default value assignment with the destructuring assignment notation to set a default value when you use destructuring.</p>
+        `,
+        `<h3>The <code>arguments</code> object</h3>
+        <p>You can refer to a function's arguments within the function by using the <code>arguments</code> object. <code>arguments</code> is an array-like object containing the arguments passed to the currently executing function.</p>
+        <p>The <code>arguments</code> variable is "array-like", but not an array. It is array-like in that it has a numbered index and a <code>length</code> property. However, it does not possess all of the array-manipulation methods.</p>
+        <p>With modern JavaScript, you most likely want to avoid <code>arguments</code> and use instead of it the spread syntax.</p>
+        `,
       ],
     },
     {
@@ -987,15 +1029,6 @@ const functions = {
         `<code>call()</code> method calls the function with a given <code>this</code> value and arguments provided individually`,
         `<code>apply()</code> method is similar to <code>call()</code>, the difference is with <code>apply()</code> you use an array instead of providing arguments individually`,
         `<code>bind()</code> method creates a new function that, when called, has its <code>this</code> set to the provided value, with a given sequence of arguments preceding any provided when the new function is called`,
-      ],
-    },
-    {
-      sectionTitle: 'Arrow functions',
-      sectionSource: '',
-      sectionSummary: [
-        `Arrow functions: implicit returns`,
-        `Arrow functions and the <code>this</code> keyword`,
-        `Regular functions vs arrow functions`,
       ],
     },
     {

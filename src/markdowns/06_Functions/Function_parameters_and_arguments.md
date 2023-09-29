@@ -1,4 +1,4 @@
-## Passing arguments to a function
+# Function parameters & arguments
 
 Parameters and arguments have slightly different meanings.
 
@@ -10,16 +10,18 @@ function formatNumber(num) {
 formatNumber(2);
 ```
 
-In this example, the `num` variable is called the function's *parameter*: it's declared in the bracket-enclosed list of the function's definition. The function expects the `num` parameter to be a number — although this is not enforceable in JavaScript without writing runtime validation code. In the `formatNumber(2)` call, the number `2` is the function's *argument*: it's the value that is actually passed to the function in the function call. The argument value can be accessed inside the function body through the corresponding parameter name or the [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object.
+In this example, the `num` variable is called the ==function's **parameter**: it's _declared in the bracket-enclosed list of the **function's definition**_==. The function expects the `num` parameter to be a number — although this is not enforceable in JavaScript without writing runtime validation code. In the `formatNumber(2)` call, the number `2` is the ==function's **argument**: it's _the value that is actually passed to the function in the **function call**_==. The argument value can be accessed inside the function body through the corresponding parameter name or the [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object.
 
-Arguments are always [*passed by value*](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_reference) and never *passed by reference*. This means that if a function reassigns a parameter, the value won't change outside the function. More precisely, object arguments are [*passed by sharing*](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_sharing), which means if the object's properties are mutated, the change will impact the outside of the function. For example:
+## Arguments are _passed by value_ vs objects are _passed by reference_
+
+Arguments are always [*passed by value*](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_reference) and never *passed by reference*. This means that if a function reassigns a parameter, the value won't change outside the function. More precisely, object arguments are [*passed by reference*](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_sharing), which means if the object's properties are mutated, the change will impact the outside of the function. For example:
 
 ```javascript
 function updateBrand(obj) {
   // Mutating the object is visible outside the function
   obj.brand = "Toyota";
-  // Try to reassign the parameter, but this won't affect
-  // the variable's value outside the function
+  
+  // Try to reassign the parameter, but this won't affect the variable's value outside the function
   obj = null;
 }
 
@@ -38,6 +40,10 @@ updateBrand(car);
 console.log(car.brand); // Toyota
 ```
 
+So JavaScript arguments are passed by value: the function only gets to know the values, not the argument's locations. If a function changes an argument's value, it does not change the parameter's original value. Changes to arguments are not visible (reflected) outside the function.
+
+In JavaScript, object references are values. Because of this, objects will behave like they are passed by reference: if a function changes an object property, it changes the original value. Changes to object properties are visible (reflected) outside the function.
+
 ## Function parameters
 
 Each function parameter is a simple identifier that you can access in the local scope.
@@ -50,9 +56,9 @@ function myFunc(a, b, c) {
 
 There are three special parameter syntaxes:
 
-- [*Default parameters*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters) allow formal parameters to be initialized with default values if no value or `undefined` is passed.
-- The [*rest parameter*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters) allows representing an indefinite number of arguments as an array.
-- [*Destructuring*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) allows unpacking elements from arrays, or properties from objects, into distinct variables.
+- **[Default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)** allow formal parameters to be initialized with default values if no value or `undefined` is passed.
+- The **[rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)** allows representing an indefinite number of arguments as an array.
+- **[Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)** allows unpacking elements from arrays, or properties from objects, into distinct variables.
 
 ```js
 function myFunc({ a, b }, c = 1, ...rest) {
@@ -64,30 +70,20 @@ Parameters are essentially passed to functions **by value** — so if the code w
 
 When you pass an object as a parameter, if the function changes the object's properties, that change is visible outside the function.
 
-
-
-
-
-
-
-
-
-Some functions require **parameters to be specified when you are invoking them** — these are values that need to be included inside the function parentheses, which it needs to do its job properly. Parameters are sometimes called arguments, properties, or even attributes.
-
-As an example, the browser's built-in `Math.random()` function doesn't require any parameters. When called, it always returns a random number between 0 and 1:
+==Some functions require **parameters to be specified when you are invoking them** — these are values that need to be included inside the function parentheses, which it needs to do its job properly.== As an example, the browser's built-in `Math.random()` function doesn't require any parameters. When called, it always returns a random number between 0 and 1:
 
 ```js
 const myNumber = Math.random();
 ```
 
-The browser's built-in string replace() function however needs two parameters — the substring to find in the main string, and the substring to replace that string with:
+The browser's built-in string `replace()` function however needs two parameters — the substring to find in the main string, and the substring to replace that string with:
 
 ```js
 const myText = 'I am a string';
 const newString = myText.replace('string', 'sausage');
 ```
 
-Sometimes parameters are optional — you don't have to specify them. If you don't, the function will generally adopt some kind of default behavior. As an example, the array `join()` function's parameter is optional:
+==Sometimes parameters are **optional** — you don't have to specify them. If you don't, the function will generally adopt some kind of default behavior.== As an example, the array `join()` function's parameter is optional:
 
 ```js
 const myArray = ['I', 'love', 'chocolate', 'frogs'];
@@ -96,18 +92,16 @@ const madeAString = myArray.join(' '); // returns 'I love chocolate frogs'
 const madeAnotherString = myArray.join(); // returns 'I,love,chocolate,frogs'
 ```
 
-A JavaScript function does not perform any checking on parameter values (arguments). Earlier in this chapter, you learned that functions can have parameters. Function **parameters** are the names listed in the function definition. Function **arguments** are the real values passed to (and received by) the function.
-
 ## Parameter Rules
 
-- JavaScript function definitions do not specify data types for parameters.
-- JavaScript functions do not perform type checking on the passed arguments.
-- JavaScript functions do not check the number of arguments received.
+- JavaScript function definitions do not specify data types for parameters;
+- JavaScript functions do not perform type checking on the passed arguments;
+- JavaScript functions do not check the number of arguments received;
 - When you need to specify multiple parameters, they are separated by commas.
 
 ## Optional parameters
 
-Sometimes parameters are optional — you don't have to specify them. If you don't, the function will generally adopt some kind of default behavior. As an example, the array [join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) function's parameter is optional:
+Sometimes parameters are optional — you don't have to specify them. If you don't, the function will generally adopt some kind of default behavior. As an example, the array [`join()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) function's parameter is optional:
 
 ```js
 const myArray = ['I', 'love', 'chocolate', 'frogs'];
@@ -124,11 +118,19 @@ If no parameter is included to specify a joining/delimiting character, a comma i
 
 ## Default Parameters
 
-In JavaScript, parameters of functions default to `undefined`. However, in some situations it might be useful to set a different default value. This is exactly what default parameters do.
+==In JavaScript, parameters of functions default to `undefined`. However, in some situations it might be useful to set a different default value. This is exactly what default parameters do.==
 
-In the past, the general strategy for setting defaults was to test parameter values in the body of the function and assign a value if they are `undefined`. With *default parameters*, a manual check in the function body is no longer necessary.
+In the past, the general strategy for setting defaults was to test parameter values in the body of the function and assign a value if they are `undefined`:
 
-If you're writing a function and want to support optional parameters, you can specify default values by adding `=` after the name of the parameter, followed by the default value:
+```js
+function myFunction(x, y) {
+  if (y === undefined) {
+    y = 2;
+  }
+}
+```
+
+With *default parameters*, a manual check in the function body is no longer necessary. ==If you're writing a function and want to support optional parameters, you can specify default values by adding `=` after the name of the parameter, followed by the default value==:
 
 ```js
 function hello(name = 'Chris') {
@@ -139,25 +141,7 @@ hello('Ari'); // Hello Ari!
 hello();      // Hello Chris!
 ```
 
-Default function parameters allow named parameters to be initialized with default values if no value or `undefined` is passed. If a function is called with missing arguments (less than declared), the missing values are set to `undefined`. Sometimes this is acceptable, but sometimes it is better to assign a default value to the parameter.
-
-In the past, the general strategy for setting defaults was to test parameter values in the `function` body and assign a value if they are `undefined`.
-
-```js
-function myFunction(x, y) {
-  if (y === undefined) {
-    y = 2;
-  }
-}
-```
-
-With default parameters in ES2015, checks in the `function` body are no longer necessary.
-
-```js
-function myFunction(x, y = 2) {
-  // function code
-}
-```
+==Default function parameters allow named parameters to be initialized with default values if no value or `undefined` is passed.== If a function is called with missing arguments (less than declared), the missing values are set to `undefined`. Sometimes this is acceptable, but sometimes it is better to assign a default value to the parameter.
 
 ### Passing `undefined` vs. other falsy values
 
@@ -218,7 +202,7 @@ f(2); // [2, undefined]
 
 ### Destructured parameter with default value assignment
 
-You can use default value assignment with the destructuring assignment notation. A common way of doing that is to assign an empty object/array to the destructured object/array; for example: `[x = 1, y = 2] = []` . By doing it that way, you make it possible to pass an empty array/object to the function and still have those values prefilled:
+==You can use default value assignment with the destructuring assignment notation.== A common way of doing that is to assign an empty object/array to the destructured object/array; for example: `[x = 1, y = 2] = []` . By doing it that way, you make it possible to pass an empty array/object to the function and still have those values prefilled:
 
 ```js
 function preFilledArray([x = 1, y = 2] = []) {
@@ -242,35 +226,17 @@ preFilledObject({ z: 2 }); // 2
 
 ## The Arguments Object
 
-You can refer to a function's arguments within the function by using the [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object. `arguments` is an array-like object containing the arguments passed to the currently executing function.
+==You can refer to a function's arguments within the function by using the [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object. `arguments` is an array-like object containing the arguments passed to the currently executing function.==
 
 Using the `arguments` object, you can call a function with more arguments than it is formally declared to accept. This is often useful if you don't know in advance how many arguments will be passed to the function. You can use `arguments.length` to determine the number of arguments actually passed to the function, and then access each argument using the `arguments` object.
 
-> **Note:** The `arguments` variable is "array-like", but not an array. It is array-like in that it has a numbered index and a `length` property. However, it does *not* possess all of the array-manipulation methods.
+> **NOTE:** The `arguments` variable is "array-like", but not an array. It is array-like in that it has a numbered index and a `length` property. However, it does *not* possess all of the array-manipulation methods.
 
-JavaScript functions have a built-in object called the arguments object. The argument object contains an array of the arguments used when the function was called (invoked). This way you can simply use a function to find (for instance) the highest value in a list of numbers:
-
-```js
-x = findMax(1, 123, 500, 115, 44, 88);
-
-function findMax() {
-  let max = -Infinity;
-  for (let i = 0; i < arguments.length; i++) {
-    if (arguments[i] > max) {
-      max = arguments[i];
-    }
-  }
-  return max;
-}
-```
-
-If a function is called with too many arguments (more than declared), these arguments can be reached using the arguments object.
+### Some consideration about `arguments` object
 
 The keyword `arguments` can be dangerous to use in your code as is. In ES6, a few methods were introduced that can help better use `arguments`.
 
-We don't really get `arguments` in the global object, do we? If I run `arguments` in the console, I'll get an error "Argument is not defined" because, well, **`arguments` is only available to us when we create a function execution context**.
-
-All right, so we got the `arguments` object, but you might remember something from our previous videos? **Remember when we talked about how to help the JavaScript Engine optimize our code, and I told you not to use `arguments`?**
+We don't get `arguments` in the global object. If I run `arguments` in the console, I'll get an error "Argument is not defined" because **`arguments` is only available to us when we create a function execution context**. So we got the `arguments` object, but you might remember something? **Remember when we talked about how to help the JavaScript Engine optimize our code, and I told you not to use `arguments`?**
 
 _Now, I said that `arguments` is a little bit dangerous to use. Why is that? Well, because **`arguments` looks like an array, but it's not really an array**, so there are many things that you can do with the `arguments` keyword that might make the Compiler or the JavaScript Engine less able to optimize your code because **you can't really use array methods on `arguments`**. And with the new JavaScript, they introduced a few little tools that we can use so that we avoid using `arguments` because there are some cases where we might want to iterate or loop through `arguments` instead of just accessing them regularly_.
 
@@ -302,12 +268,6 @@ showArgs2('hello', 'world');
 // [ 'hello', 'world' ]
 // hello world
 ```
-
-## Arguments are _Passed by Value_ vs Objects are _Passed by Reference_
-
-The parameters, in a function call, are the function's arguments. JavaScript arguments are passed by value: The function only gets to know the values, not the argument's locations. If a function changes an argument's value, it does not change the parameter's original value. Changes to arguments are not visible (reflected) outside the function.
-
-In JavaScript, object references are values. Because of this, objects will behave like they are passed by reference: If a function changes an object property, it changes the original value. Changes to object properties are visible (reflected) outside the function.
 
 ## References
 
