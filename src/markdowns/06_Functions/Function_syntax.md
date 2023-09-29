@@ -1,29 +1,27 @@
 # Function syntax
 
-### [Defining functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions#defining_functions)
+Broadly speaking, ==JavaScript has **four kinds of functions**==:
 
-Broadly speaking, JavaScript has four kinds of functions:
+- ==**Regular function**: can return anything; always runs to completion after invocation==
+- **Generator function**: returns a [`Generator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator) object; can be paused and resumed with the [`yield`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield) operator
+- ==**Async function**: returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise); can be paused and resumed with the [`await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await) operator==
+- **Async generator function**: returns an [`AsyncGenerator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator) object; both the `await` and `yield` operators can be used
 
-- Regular function: can return anything; always runs to completion after invocation
-- Generator function: returns a [`Generator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator) object; can be paused and resumed with the [`yield`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield) operator
-- Async function: returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise); can be paused and resumed with the [`await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await) operator
-- Async generator function: returns an [`AsyncGenerator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator) object; both the `await` and `yield` operators can be used
+==For every kind of function, there are **three ways to define it**:==
 
-For every kind of function, there are three ways to define it:
-
-- Declaration
+- ==**Declaration**==
 
   [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function), [`function*`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [`async function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function), [`async function*`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function*)
 
-- Expression
+- ==**Expression**==
 
   [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function), [`function*`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function*), [`async function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/async_function), [`async function*`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/async_function*)
 
-- Constructor
+- ==**Constructor**==
 
   [`Function()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function), [`GeneratorFunction()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction/GeneratorFunction), [`AsyncFunction()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction/AsyncFunction), [`AsyncGeneratorFunction()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGeneratorFunction/AsyncGeneratorFunction)
 
-In addition, there are special syntaxes for defining [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions), which provide more precise semantics for their usage. [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) are conceptually not functions (because they throw an error when called without `new`), but they also inherit from `Function.prototype` and have `typeof MyClass === "function"`.
+==In addition, there are special syntaxes for defining **[arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)** and **[methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)**, which provide more precise semantics for their usage. **[Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)** are conceptually not functions (because they throw an error when called without `new`), but they also inherit from `Function.prototype`, and have `typeof MyClass === "function"`.==
 
 ```javascript
 // Constructor
@@ -54,16 +52,16 @@ const obj = {
 };
 ```
 
-All syntaxes do approximately the same thing, but there are some subtle behavior differences.
+==All syntaxes do approximately the same thing, but there are some subtle **behavior differences**.==
 
-- The `Function()` constructor, `function` expression, and `function` declaration syntaxes create full-fledged function objects, which can be constructed with [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new). However, arrow functions and methods cannot be constructed. Async functions, generator functions, and async generator functions are not constructible regardless of syntax.
-- The `function` declaration creates functions that are [*hoisted*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#function_hoisting). Other syntaxes do not hoist the function and the function value is only visible after the definition.
-- The arrow function and `Function()` constructor always create *anonymous* functions, which means they can't easily call themselves recursively. One way to call an arrow function recursively is by assigning it to a variable.
-- The arrow function syntax does not have access to `arguments` or `this`.
-- The `Function()` constructor cannot access any local variables — it only has access to the global scope.
+- The `Function()` constructor, `function` expression, and `function` declaration syntaxes **create full-fledged function objects, which can be constructed with [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new)**. However, arrow functions and methods **cannot be constructed**. Async functions, generator functions, and async generator functions are **not constructible regardless of syntax**.
+- The `function` declaration creates **functions that are [*hoisted*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#function_hoisting)**. **Other syntaxes do not hoist the function** and the function value is only visible after the definition.
+- **The arrow function and `Function()` constructor always create *anonymous* functions**, which means they can't easily call themselves recursively. One way to call an arrow function recursively is by assigning it to a variable.
+- **The arrow function syntax does not have access to `arguments` or `this`**.
+- **The `Function()` constructor cannot access any local variables** — it only has access to the global scope.
 - The `Function()` constructor causes runtime compilation and is often slower than other syntaxes.
 
-For `function` expressions, there is a distinction between the function name and the variable the function is assigned to. The function name cannot be changed, while the variable the function is assigned to can be reassigned. The function name can be different from the variable the function is assigned to — they have no relation to each other. The function name can be used only within the function's body. Attempting to use it outside the function's body results in an error (or gets another value, if the same name is declared elsewhere). For example:
+==For `function` expressions, there is a distinction between the function name and the variable the function is assigned to. The function name cannot be changed, while the variable the function is assigned to can be reassigned. The function name can be different from the variable the function is assigned to — they have no relation to each other. The function name can be used only within the function's body.== Attempting to use it outside the function's body results in an error (or gets another value, if the same name is declared elsewhere). For example:
 
 ```js
 const y = function x() {};
@@ -78,33 +76,13 @@ A function defined by a function expression or by a function declaration inherit
 
 Functions defined by function expressions and function declarations are parsed only once, while a function defined by the `Function` constructor parses the string passed to it each and every time the constructor is called. Although a function expression creates a closure every time, the function body is not reparsed, so function expressions are still faster than `new Function(...)`. Therefore the `Function` constructor should generally be avoided whenever possible.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Defining functions
 
 JavaScript functions are defined with the `function` keyword. You can use a ==function **declaration**== or a ==function **expression**==.
 
-## Function Declarations
+## Function declarations
 
-A JavaScript function declaration is defined with the `function` keyword, followed by a **name**, followed by parentheses **()**. Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). The parentheses may include parameter names separated by commas: (**parameter1**, **parameter2**, ...). The code to be executed, by the function, is placed inside curly brackets: {}
+==A JavaScript function declaration is defined with the `function` keyword, followed by a **name**, followed by parentheses **()**.== Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). The parentheses may include parameter names separated by commas: (**parameter1**, **parameter2**, ...). The code to be executed, by the function, is placed inside curly brackets: {}
 
 Function **parameters** are listed inside the parentheses () in the function definition. Function **arguments** are the **values** received by the function when it is invoked. _Inside the function, the **arguments (the parameters) behave as local variables**_. Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon).
 
@@ -116,7 +94,7 @@ function name(parameter1, parameter2, parameter3) {
 }
 ```
 
-## Function Expressions
+## Function expressions
 
 A JavaScript function can also be defined using an **expression**. A function expression can be stored in a variable:
 

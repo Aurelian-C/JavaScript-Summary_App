@@ -860,30 +860,67 @@ const functions = {
   title: 'Functions',
   sections: [
     {
-      sectionTitle: 'Functions introduction',
-      sectionSource: '',
+      sectionTitle: 'Function introduction',
+      sectionSource: '/src/markdowns/06_Functions/Function_introduction.html',
       sectionSummary: [
-        `Function hoisting`,
-        `Functions vs Methods`,
-        `Function expressions: storing functions in variables`,
-        `Functions used as variable values`,
+        `<p>Programs are simply <i>assigning memory, for example assigning a value to a variable</i>, and then <i>running a function for the program to do something with those variables</i>. That's all programs are, and without functions, our programs wouldn't do anything.</p>
+        <p>Functions are an important concept in all programming languages.</p>
+        `,
+        `<h3>What is a function?</h3>
+        <p>A JavaScript function is a <i>block of code</i> designed to <i>perform a particular task</i>.</p>
+        <p>Functions allow you to <i>store a piece of code that does a single task inside a defined block</i>, and then call that code whenever you need it using a single short command — rather than having to type out the same code multiple times.</p>
+        `,
+        `<h3>Why functions?</h3>
+        <ul>
+        <li>- You can <i>reuse code</i>: define the code once, and use it many times.</li>
+        <li>- You can <i>use the same code many times with <u>different arguments</u>, to produce <u>different results</u></i>.</li>
+        </ul>
+        `,
+        `<h3>Built-in functions</h3>
+        <p>The JavaScript language has many built-in functions to <i>allow you to do useful things without having to write all that code yourself</i>.</p>
+        <p>In fact, some of the code you are calling when you invoke (a fancy word for run, or execute) a built-in browser function couldn't be written in JavaScript — many of these functions are calling parts of the background browser code, which is written largely in low-level system languages like C++, not web languages like JavaScript. Bear in mind that <i>some built-in browser functions are not part of the core JavaScript language — some are defined as part of browser APIs, which build on top of the default language to provide even more functionality</i>.</p>
+        `,
+        `<h3>Functions vs Methods</h3>
+        <p>Functions that are <i>part of objects</i> are called <i>methods</i>, so <i>a method is a function that is a property of an object</i>.</p>
+        `,
+        `<h3>Function hoisting</h3>`,
       ],
     },
     {
       sectionTitle: 'Higher Order Functions',
       sectionSource: '/src/markdowns/06_Functions/Higher_Order_Functions.html',
       sectionSummary: [
-        `Functions are objects`,
-        `Functions are first-class citizen in JavaScript`,
-        `Functions can be assigned to variables and properties of objects`,
-        `A function can be passed as an argument/parameter to other function (callback functions)`,
-        `A function can be returned by another function`,
+        `<p>A programming language is said to have <i><u>first-class functions</u> when functions in that language are <u>treated like any other variable</u></i>.</p>`,
+        `<h3>Functions are objects</h3>
+        <p>In JavaScript functions are objects. This means we can pass them around, like objects, like things that contain data. So besides just doing things for us and performing actions in our code, we can also store them as data, move them around and have some really interesting applications</p>
+        `,
+        `<h3>Functions are first-class citizen in JavaScript</h3>
+        <ul>Because function are objects, you'll often hear people say that functions are a first-class citizen in JavaScript. What does that mean? Well, it means 3 things:
+        <li>- Functions can be <i>assigned to variables and properties of objects</i>. In some languages, I can't do that. I can just run functions to perform actions, but that's it. In JavaScript, I can assign functions to a variable or even an object property, which then becomes a method.</li>
+        <li>- A function can be <i>passed as an argument/parameter to other function</i> (<u>callback functions</u>).</li>
+        <li>- A function can be <i>returned by another function</i>.</li>
+        </ul>
+        `,
       ],
     },
     {
       sectionTitle: 'Function syntax',
-      sectionSource: '',
+      sectionSource: '/src/markdowns/06_Functions/Function_syntax.html',
       sectionSummary: [
+        `<ul>Broadly speaking, JavaScript has <i>four kinds of functions</i>:
+        <li>- <i>Regular function</i>: can return anything; always runs to completion after invocation;</li>
+        <li>- <i>Async function</i>: returns a <code>Promise</code>; can be paused and resumed with the <code>await</code> operator;</li>
+        <li>- Generator function;</li>
+        <li>- Async generator function.</li>
+        </ul>
+        <ul>For every kind of function, there are <i>three ways to define it</i>:
+        <li>- Declaration;</li>
+        <li>- Expression;</li>
+        <li>- Constructor.</li>
+        </ul>
+        <p>In addition, there are special syntaxes for defining <i>arrow functions</i> and <i>methods</i>, which provide more precise semantics for their usage. <i>Classes</i> are conceptually not functions (because they throw an error when called without <code>new</code>), but they also inherit from <code>Function.prototype</code>, and have <code>typeof MyClass === "function"</code>.</p>
+        <p>All syntaxes do approximately the same thing, but there are some subtle behavior differences (read the entire article to see all differences).</p>
+        `,
         `Function expressions vs Function declarations`,
         `Arrow functions`,
         `Anonymous functions`,

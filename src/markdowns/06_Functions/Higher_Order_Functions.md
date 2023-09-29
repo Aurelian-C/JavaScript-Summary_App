@@ -1,12 +1,20 @@
 # Higher Order Functions
 
-A programming language is said to have ==**First-class functions** when functions in that language are treated like any other variable==. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable or as properties to an object.
+A programming language is said to have ==**first-class functions** when functions in that language are treated like any other variable==. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable or as properties to an object.
 
-Functions are objects but why do we care? Why is that really important? ==Because functions are just objects in JavaScript, that means that **we can pass them around, like objects, like things that contain data**. So besides just doing things for us and performing actions in our code, we can also store them as data, move them around and have some really interesting applications==.
+## Functions are objects
 
-## Functions are First-class citizen
+In JavaScript, functions are objects. This means **we can pass them around, like objects, like things that contain data**. So besides just doing things for us and performing actions in our code, we can also store them as data, move them around and have some really interesting applications.
 
-We talked about how functions can be passed around like data and this idea of a function being passed around, besides just being something that performs actions. Because of this, you'll often hear people say that ==**functions are a First-class citizen in JavaScript**==. What does that mean? Well, it means three things.
+There are some things that demonstrates functions are objects:
+
+1. Function not only perform actions for us, but they're also pieces of data that can be passed around like first class citizens, as if there were JavaScript types. So anything you can do with other types, you can do with a function. As a matter of fact, this idea of a first class citizen property in JavaScript introduces JavaScript to a whole world called functional programming.
+
+2. Functions can also have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called.
+
+## Functions are first-class citizen
+
+We talked about how functions can be passed around like data and this idea of a function being passed around, besides just being something that performs actions. Because of this, you'll often hear people say that ==**functions are a first-class citizen in JavaScript**==. What does that mean? Well, it means 3 things.
 
 #### 1. Functions can be ==assigned to variables _and_ properties of objects==
 
@@ -45,12 +53,6 @@ a()()	//'Hi there!'
 const d = a()
 d()	//'Hi there!'
 ```
-
-## Functions are objects
-
-There 3 things demonstrates that functions are data/objects. Function not only perform actions for us, but they're also pieces of data that can be passed around like first class citizens, as if there were JavaScript types. So anything you can do with other types, you can do with a function. As a matter of fact, this idea of a first class citizen property in JavaScript introduces JavaScript to a whole world called functional programming.
-
-Functions can also have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called.
 
 ## References
 
