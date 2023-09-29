@@ -907,34 +907,37 @@ const functions = {
       sectionTitle: 'Function syntax',
       sectionSource: '/src/markdowns/06_Functions/Function_syntax.html',
       sectionSummary: [
-        `<ul>Broadly speaking, JavaScript has <i>four kinds of functions</i>:
+        `<h3>4 kinds of functions</h3>
+        <ul>Broadly speaking, JavaScript has <i>four kinds of functions</i>:
         <li>- <i>Regular function</i>: can return anything; always runs to completion after invocation;</li>
         <li>- <i>Async function</i>: returns a <code>Promise</code>; can be paused and resumed with the <code>await</code> operator;</li>
         <li>- Generator function;</li>
         <li>- Async generator function.</li>
-        </ul>
+        </ul>`,
+        `<h3>3 ways to define a function</h3>
         <ul>For every kind of function, there are <i>three ways to define it</i>:
         <li>- Declaration;</li>
         <li>- Expression;</li>
         <li>- Constructor.</li>
-        </ul>
+        </ul>`,
+        `<h3>Special function syntaxes</h3>
         <p>In addition, there are special syntaxes for defining <i>arrow functions</i> and <i>methods</i>, which provide more precise semantics for their usage. <i>Classes</i> are conceptually not functions (because they throw an error when called without <code>new</code>), but they also inherit from <code>Function.prototype</code>, and have <code>typeof MyClass === "function"</code>.</p>
         <p>All syntaxes do approximately the same thing, but there are some subtle behavior differences (read the entire article to see all differences).</p>
         `,
-        `Function expressions vs Function declarations`,
-        `Arrow functions`,
-        `Anonymous functions`,
-        `Constructor Functions`,
+        `<h3>Function expressions vs Function declarations</h3>`,
+        `<h3>Arrow functions</h3>`,
+        `<h3>Anonymous functions</h3>`,
+        `<h3>Constructor Functions</h3>`,
       ],
     },
     {
       sectionTitle: 'Function parameters & arguments',
       sectionSource: '',
       sectionSummary: [
-        `Parameter rules`,
-        `Default parameters`,
-        `The <code>arguments</code> object`,
-        `Arguments are passed by value vs Objects are passed by reference`,
+        `<h3>Parameter rules</h3>`,
+        `<h3>Default parameters</h3>`,
+        `<h3>The <code>arguments</code> object</h3>`,
+        `<h3>Arguments are passed by value vs Objects are passed by reference</h3>`,
       ],
     },
     {
@@ -946,10 +949,10 @@ const functions = {
       sectionTitle: 'Function invocation',
       sectionSource: '',
       sectionSummary: [
-        `"Direct" vs "Indirect" Function Execution`,
-        `Invoking a JavaScript Function`,
-        `Invoking a Function as a Function`,
-        `Tagged templates`,
+        `<h3>"Direct" vs "Indirect" Function Execution</h3>`,
+        `<h3>Invoking a JavaScript Function</h3>`,
+        `<h3>Invoking a Function as a Function</h3>`,
+        `<h3>Tagged templates</h3>`,
       ],
     },
     {
@@ -957,9 +960,12 @@ const functions = {
       sectionSource:
         '/src/markdowns/06_Functions/Function_invocation_&_this_keyword.html',
       sectionSummary: [
-        `<code>this</code> is the object that the function is a property of`,
-        `The value of <code>this</code> is always set when the function is invoked, not when the function is declared`,
-        `All functions are methods`,
+        `<h3>What is <code>this</code> keyword?</h3>
+        <p><code>this</code> is the object that the function is a property of.</p>
+        `,
+        `<h3>What is the value of <code>this</code>?</h3>
+        <p>The value of <code>this</code> is always set when the function is invoked, not when the function is declared.</p>`,
+        `<h3>All functions are methods</h3>`,
         `Invoking a function as a global object (function without an owner object)`,
         `Invoking a function as a method (function with an owner object)`,
         `Invoking a function with a Function Constructor`,
