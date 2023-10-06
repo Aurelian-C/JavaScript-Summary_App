@@ -11,8 +11,6 @@ class ApplicationView {
       .map(card => {
         return `
           <div class="card">
-            <i class="fa-solid fa-window-maximize card__icon btn--min-max btn--max"></i>
-            <i class="fa-solid fa-window-minimize card__icon btn--min-max btn--min hidden"></i>
             <h2 class="card__title">${card.title}</h2>
             <div class="card__articles hidden">
             ${card.sections.map(this._generateMarkupArticles).join('')}

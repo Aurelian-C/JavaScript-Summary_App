@@ -11,17 +11,11 @@ class MinimizeMaximizeView {
   }
 
   _toggleMenu = e => {
-    if (!e.target.classList.contains('btn--min-max')) return;
+    if (!e.target.classList.contains('card__title')) return;
 
     this._section = e.target.closest('.card');
     this._container = this._section.querySelector('.card__articles');
-    this._btnMax = this._section.querySelector('.btn--max');
-    this._btnMin = this._section.querySelector('.btn--min');
     this._container.classList.toggle('hidden');
-
-    [this._btnMin, this._btnMax].forEach(btn => {
-      btn.classList.toggle('hidden');
-    });
   };
 
   _toggleSections = e => {

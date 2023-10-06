@@ -75,7 +75,7 @@ body {
   border: 2px solid #50505040;
   border-radius: 15px;
   margin: 1.5rem 1rem;
-  padding: 1.5rem 1rem;
+  padding: 0 1rem;
   transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out,
     border 0.3s ease-in-out;
   display: flex;
@@ -103,7 +103,9 @@ body {
 .card__title {
   font-size: var(--card-title--font-size);
   text-align: center;
-  margin: 1rem 3rem;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  width: 100%;
 }
 
 .card__articles {
