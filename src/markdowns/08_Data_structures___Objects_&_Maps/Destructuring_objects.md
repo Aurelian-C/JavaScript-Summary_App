@@ -97,7 +97,7 @@ const obj = {
     b: { c: 2 } 
 };
 
-({ a, b }) = obj
+({ a, b } = obj);
 ```
 
 > **Note:** The parentheses `( ... )` around the assignment statement are required when using object literal destructuring assignment without a declaration.
