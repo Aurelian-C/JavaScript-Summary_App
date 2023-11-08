@@ -1002,11 +1002,22 @@ const functions = {
     },
     {
       sectionTitle: 'Function invocation',
-      sectionSource: '',
+      sectionSource: '/src/markdowns/06_Functions/Function_invocation.html',
       sectionSummary: [
-        `<h3>"Direct" vs "Indirect" Function Execution</h3>`,
-        `<h3>Invoking a JavaScript Function</h3>`,
-        `<h3>Invoking a Function as a Function</h3>`,
+        `<p><i><u>Defining</u> a function does not <u>execute</u> it.</i> Defining it names the function and specifies what to do when the function is called. <i>Calling the function actually performs the specified actions with the indicated parameters.</i></p>
+        <p><i>The <code>()</code> operator invokes the function</i>: accessing a function without <code>()</code> will return the function object instead of the function result.</p>
+        `,
+        `<h3>"Direct" vs "Indirect" Function Execution</h3>
+        <p>The code inside a function is not executed when the function is defined. The code inside a function is executed when the function is invoked</p>
+        <ul>The code inside the function will execute when "something" invokes (calls) the function:
+        <li>- When an event occurs (when a user clicks a button);</li>
+        <li>- When it is invoked (called) from JavaScript code;</li>
+        <li>- Automatically (self invoked).</li>
+        </ul>
+        `,
+        `<h3>Function can call itself (recursion)</h3>
+        <p><i>A function can refer to and call itself.</i> A function that calls itself is called a <i>recursive function</i>. In some ways, <i>recursion is analogous to a loop</i>.</p>
+        `,
         `<h3>Tagged templates</h3>`,
       ],
     },
@@ -1076,8 +1087,19 @@ const functions = {
     {
       sectionTitle:
         'Self-Invoking functions / Immediately Invoked Function Expressions (IIFE)',
-      sectionSource: '',
-      sectionSummary: [],
+      sectionSource: '/src/markdowns/06_Functions/Self-Invoked_Functions.html',
+      sectionSummary: [
+        `<p>Function expressions can be made "self-invoking". <i>A self-invoking expression is invoked (started) automatically, without being called (runs as soon as it is defined).</i></p>
+        <p>Function expressions will execute automatically if the expression is followed by <code>()</code>. You have to add parentheses around the function to indicate that it is a function expression.</p>
+        <p>You cannot self-invoke a function declaration.</p>
+        `,
+        `<ul>Use cases:
+        <li>- Avoid polluting the global namespace;</li>
+        <li>- Execute an async function;</li>
+        <li>- The module pattern;</li>
+        <li>- <code>for</code> loop with <code>var</code> before ES6.</li>
+        </ul>`,
+      ],
     },
     {
       sectionTitle: 'Closures',
