@@ -22,7 +22,7 @@ const someObject = {
 someObject.a() //{a: ƒ}
 ```
 
-In JavaScript, the `this` keyword ==refers to an **object**==. Which object depends on how the function that has the `this` inside of it is being invoked (used or called). The `this` keyword ==**refers to different objects**== depending on how the function that have ```this```  inside of it is used/called/invoked:
+==In JavaScript, the `this` keyword refers to an **object**: which object depends on how the function that has the `this` inside of it is being invoked (used or called). The `this` keyword ==**refers to different objects** depending on how the function that have ```this``` inside of it is used/called/invoked==:
 
 - In an _object method_, `this` refers to the object;
 - _Alone_, `this` refers to the global ```window``` object;
@@ -35,15 +35,13 @@ In JavaScript, the `this` keyword ==refers to an **object**==. Which object depe
 
 ![the_value_of_this_keyword](../../img/the_value_of_this_keyword.jpg)
 
-> **Note**: `this` is not a variable, `this` is a keyword. You cannot change the value of `this`.
-
-==The value of ```this``` is always set **when the function is invoked**, not when the function is declared==.
+> **IMPORTANT**: ==`this` is not a variable, `this` is a keyword. You cannot change the value of `this`. The value of ```this``` is always set **when the function is invoked**, not when the function is declared==.
 
 ## All functions are methods
 
-==In JavaScript all functions are object methods==. If a function is not a method of a JavaScript object, it is a function of the global object (see "Invoking a function as a global function" below).
+==In JavaScript **all functions are object methods**. If a function is not a method of a JavaScript object, it is a function of the global `window` object== (see "Invoking a function as a global function" below).
 
-## Invoking a function as a global function
+### Invoking a function as a global function
 
 When a function is called without an owner object, the value of ```this``` becomes the global ```window``` object. This example returns the ```window``` object as the value of ```this```:
 
@@ -57,7 +55,7 @@ let x = myFunction(); // x will be the window object
 
 Invoking a function as a global function, causes the value of ```this``` to be the global ```window``` object. Using the ```window``` object as a variable can easily crash your program.
 
-## Invoking a function as a method
+### Invoking a function as a method
 
 In JavaScript you can define functions as object methods. An object method is a property containing a function definition, so ==methods are functions stored as object properties==.
 
@@ -76,7 +74,7 @@ myObject.fullName(); // Will return "John Doe"
 
 The ```fullName``` method is a function (method). The function (method) belongs to the ```myObject ```object. ```myObject``` is the owner of the function (method). The thing called ```this``` is the object that "owns" the JavaScript code. In this case the value of ```this``` is ```myObject```.
 
-> Note: Invoking a function as an object method, causes the value of ```this``` to be the object itself. ```this ```==keyword was created to _gives methods access to their object_. It gives ```fullName``` access to the ```myObject```, so that ```fullName``` can use properties and methods that are within ```myObject``` object==.
+> **NOTE**: ==**Invoking a function as an object method, causes the value of ```this``` to be the object itself.** ```this ``` keyword was created to **gives methods access to their object**. It gives ```fullName``` access to the ```myObject```, so that ```fullName``` can use properties and methods that are within ```myObject``` object==.
 
 With ```this``` keyword you can ==execute the same code for multiple objects==. You write a function once and multiple objects can use that function, every object with his own ```this```:
 
@@ -130,9 +128,9 @@ a(); // called by window
 // c {hi: ƒ}
 ```
 
-## Invoking a function with a Function Constructor
+### Invoking a function with a Function Constructor
 
-If a function invocation is preceded with the ```new``` keyword, it is a constructor invocation. It looks like you create a new function, but since JavaScript functions are objects you actually create a new object:
+==If a function invocation is preceded with the ```new``` keyword, it is a constructor invocation.== It looks like you create a new function, but since JavaScript functions are objects you actually create a new object:
 
 ```js
 // This is a function constructor:
@@ -150,7 +148,7 @@ myObj.firstName;
 
 A constructor invocation creates a new object. The new object inherits the properties and methods from its constructor.
 
-> Note: ==The ```this``` keyword in the constructor does not have a value. The value of ```this``` will be the new object created when the function is invoked==.
+> **NOTE**: ==The ```this``` keyword in the constructor does not have a value. The value of ```this``` will be the new object created when the function is invoked==.
 
 ## ```this``` & Dynamic Scope vs Lexical Scope
 
@@ -196,7 +194,7 @@ obj.sing();
 // b {name: "Billy", sing: ƒ}
 ```
 
-## Reference
+## References
 
 1. [The JavaScript this Keyword - w3schools](https://www.w3schools.com/js/js_this.asp)
 2. [this - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)

@@ -984,8 +984,21 @@ const functions = {
     },
     {
       sectionTitle: 'Function <code>return</code> statement',
-      sectionSource: '',
-      sectionSummary: [],
+      sectionSource:
+        '/src/markdowns/06_Functions/Function_return_statement.html',
+      sectionSummary: [
+        `<p>The <code>return</code> statement <i>ends function execution</i> and <i>specifies a value to be returned to the function caller</i>. The <code>return</code> statement allows you to <i>return an arbitrary value from the function</i>.</p>
+        <p>By default, if a function's execution doesn't end at a <code>return</code> statement, or if the <code>return</code> keyword doesn't have an expression after it, then the return value is <code>undefined</code>.</p>
+        <p><i>One function call can only return one value</i>, but you can <i>simulate the effect of returning multiple values by returning an object or array</i> and destructuring the result.</p>
+        <p>The <code>return</code> statement can only be used within function bodies.</p>
+        `,
+        `<ul>The <code>return</code> statement has different effects when placed in different functions:
+        <li>- In a <i>plain function</i>, the call to that function <u>evaluates to the return value</u>;</li>
+        <li>- In an <i>async function</i>, the produced promise is <u>resolved with the returned value</u>.</li>
+        </ul>`,
+        `<p>If a <code>return</code> statement is executed within a <code>try</code> block, its <code>finally</code> block, if present, is first executed, before the value is actually returned.</p>`,
+        `<p>Constructors called with <code>new</code> have a different set of logic to determine their return values.</p>`,
+      ],
     },
     {
       sectionTitle: 'Function invocation',
@@ -1003,20 +1016,45 @@ const functions = {
         '/src/markdowns/06_Functions/Function_invocation_&_this_keyword.html',
       sectionSummary: [
         `<h3>What is <code>this</code> keyword?</h3>
-        <p><code>this</code> is the object that the function is a property of.</p>
+        <p><i><code>this</code> is the object that the function is a property of.</i></p>
+        <p><i>In JavaScript, the <code>this</code> keyword refers to an object: which object depends on how the function that has the <code>this</code> inside of it is being invoked (used or called).</i></p>
+        <p>The <code>this</code> keyword refers to different objects depending on how the function that have <code>this</code> inside of it is used/called/invoked.</p>
         `,
         `<h3>What is the value of <code>this</code>?</h3>
-        <p>The value of <code>this</code> is always set when the function is invoked, not when the function is declared.</p>`,
-        `<h3>All functions are methods</h3>`,
-        `Invoking a function as a global object (function without an owner object)`,
-        `Invoking a function as a method (function with an owner object)`,
-        `Invoking a function with a Function Constructor`,
-        `The 2 main benefits of <code>this</code>: gives methods access to their object & execute the same function code for multiple objects`,
-        `<code>this</code> acts as a placeholder for an object, and <code>this</code> we'll refer to whichever object called that function/method`,
-        `<code>this</code> & Dynamic Scope vs Lexical Scope`,
-        `<code>this</code> is not lexically scoped, it doesn't matter where <code>this</code> is write in our code, it matters how the function was called`,
-        `<code>this</code> & arrow functions `,
-        `Arrow functions don't have their own <code>this</code>. It will lexically bound <code>this</code> to the surrounding object`,
+        <p><i>The value of <code>this</code> is always set when the function is invoked</i>, not when the function is declared.</p>
+        <ul>The <code>this</code> keyword refers to different objects depending on how the function that have <code>this</code> inside of it is used/called/invoked.
+        <li>- In an <i>object method</i>, <code>this</code> refers to the object;</li>
+        <li>- <i>Alone</i>, <code>this</code> refers to the global <code>window</code> object;</li>
+        <li>- <i>Alone, in Strict Mode</i>, <code>this</code> is <code>undefined</code>;</li>
+        <li>- In a <i>function</i>, <code>this</code> refers to the global <code>window</code> object;</li>
+        <li>- In a <i>function, in Strict Mode</i>, <code>this</code> is <code>undefined</code>;</li>
+        <li>- In an <i>event</i>, <code>this</code> refers to the element that received the event;</li>
+        <li>- <i>Arrow function</i> don't have their own <code>this</code>;</li>
+        <li>- <i>Methods like <code>call()</code>, <code>apply()</code>, and <code>bind()</code> can refer <code>this</code> to any object.</i></li>
+        </ul>
+        `,
+        `<h3>All functions are methods</h3>
+        <p><i>In JavaScript all functions are object methods</i>. If a function is not a method of a JavaScript object, it is a function of the global <code>window</code> object.</p>
+        <ul>You can invoke a function:
+        <li>- as a global object (function without an owner object);</li>
+        <li>- as a method (function with an owner object);</li>
+        <li>- with a Function Constructor.</li>
+        </ul>
+        `,
+        `<h3>What is the benefits of <code>this</code>?</h3>
+        <ul>The 2 main benefits of <code>this</code>:
+        <li>- gives methods access to their object;</li>
+        <li>- execute the same function code for multiple objects.</li>
+        </ul>
+        <p><i><code>this</code> keyword was created to gives methods access to their object.</i> <code>this</code> acts as a placeholder for an object, and <code>this</code> we'll refer to whichever object called that function/method.</p>
+        `,
+        `<h3><code>this</code> & Dynamic Scope vs Lexical Scope</h3>
+        <p>A big gotcha for a lot of people working with <code>this</code> is when a <u>function is ran inside of another function</u>. It gets a little confusing, but we can remember <i>who called the function</i>.</p>
+        <p><i><code>this</code> is <u>not lexically scoped</u>, it doesn't matter where <code>this</code> is write in our code, it matters <u>how the function was called</u></i>.</p>
+        `,
+        `<h3><code>this</code> & arrow functions</h3>
+        <p><i>Arrow functions don't have their own <code>this</code></i>. It will lexically bound <code>this</code> to the surrounding object.</p>
+        `,
       ],
     },
     {
@@ -1025,10 +1063,14 @@ const functions = {
       sectionSource:
         '/src/markdowns/06_Functions/The_this_keyword_&_call__apply__and__bind.html',
       sectionSummary: [
-        `With <code>call()</code>, <code>apply()</code> and <code>bind()</code> you can assign a different <code>this</code> object when calling an existing function. Usually <code>this</code> refers to the current object (the calling object).`,
-        `<code>call()</code> method calls the function with a given <code>this</code> value and arguments provided individually`,
-        `<code>apply()</code> method is similar to <code>call()</code>, the difference is with <code>apply()</code> you use an array instead of providing arguments individually`,
-        `<code>bind()</code> method creates a new function that, when called, has its <code>this</code> set to the provided value, with a given sequence of arguments preceding any provided when the new function is called`,
+        `<h3>Manipulate the <code>this</code> keyword</h3>
+        <p>Usually <code>this</code> refers to the current object (the calling object). With <code>call()</code>, <code>apply()</code> and <code>bind()</code> <i>you can assign a different <code>this</code> object when calling an existing function</i>.</p>
+        <p> With <code>call()</code>, <code>apply()</code> and <code>bind()</code>, <i>you can write a method once, and then inherit it in another object, without having to rewrite the method for the new object</i>.</p>
+        `,
+        `<h3>Methods behavior</h3>
+        <p>- <code>call()</code> method calls the function with a given <code>this</code> value and <i>arguments provided individually</i>;</p>
+        <p>- <code>apply()</code> method is similar to <code>call()</code>, the difference is with <code>apply()</code> you<i> use an array instead of providing arguments individually</i>;</p>
+        <p>- <code>bind()</code> method <i>creates a new function that, when called, has its <code>this</code> set to the provided value, with a given sequence of arguments preceding any provided when the new function is called</i>.</p>`,
       ],
     },
     {
@@ -1073,10 +1115,43 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Rest parameters',
+      sectionTitle: 'Rest parameters for function definition',
       sectionSource:
         '/src/markdowns/06_Functions/Rest_parameter_and_functions.html',
-      sectionSummary: [],
+      sectionSummary: [
+        `<p>The <code>rest</code> parameter syntax <i>allows a function to accept an <u>indefinite number of arguments as an array</u></i>..</p>`,
+        `<h3>Don't confuse <code>rest</code> with <code>spread</code></h3>
+        <p>The <code>rest</code> operator looks like the <code>spread</code> operator. With <code>spread</code> operator you add three dots (<code>...</code>), but <i>the place where you use the <code>rest</code> operator is different from the <code>spread</code> operator</i>.</p>
+        `,
+        `<h3>How <code>rest</code> work?</h3>
+        <p><i>A <u>function definition</u>'s <u>last parameter</u> can be <u>prefixed with</u> <code>...</code></i>, which will cause all remaining parameters to be placed within an array.</p>
+        <p>Only the last parameter in a function definition can be a <code>rest</code> parameter.</p>
+        <p>If you only have <code>rest</code> parameter as single function parameter and you call the function with just one argument, the only argument still gets put into an array. If you call the function with no arguments, the <code>rest</code> parameter will give you an empty array.</p>
+        `,
+        `<h3>The difference between <code>rest</code> parameters and the <code>arguments</code> object</h3>
+        <ul>There are 3 main differences between <code>rest</code> parameters and the <code>arguments</code> object:
+        <li>- <i>The <code>arguments</code> object is <u>not a real array</u></i>, while <i><code>rest</code> parameters are <u>Array instances</u></i>, meaning Array methods like <code>sort()</code>, <code>map()</code>, <code>forEach()</code> or <code>pop()</code> can be applied on it directly;</li>
+        <li>- The <code>arguments</code> object has additional functionality specific to itself (like the <code>callee</code> property);</li>
+        <li>- <i>The <code>...restParam</code> bundles all the extra parameters into a single array, therefore it does not contain any named argument defined before the <code>...restParam</code>.</i> Whereas the <code>arguments</code> object contains all of the parameters — including the parameters in the <code>...restParam</code> array — bundled into one array-like object.</li>
+        </ul>
+        <p><code>rest</code> parameters were introduced to reduce the boilerplate code that was commonly used for converting a set of <code>arguments</code> to an array.</p>
+        `,
+      ],
+    },
+    {
+      sectionTitle: 'Spread syntax for function calls',
+      sectionSource:
+        '/src/markdowns/06_Functions/Spread_syntax_and_function_calls.html',
+      sectionSummary: [
+        `<p>Spread syntax <code>...</code> allows an <i>iterable</i>, such as an <u>array</u> or <u>string</u>, to be <i>expanded</i> in places where zero or more arguments (for <i>function calls</i>) or elements (for <i>array literals</i>) are expected. In an <i>object literal</i> spread syntax allows an <u>object expression to be expanded</u> in places where zero or more key-value pairs are expected.</p>
+        <p>spread operator <code>...</code> is an operator that in the end <i>pulls out all elements of an array and gives them to you as a standalone list of elements</i>. Spread syntax can be used when all elements from an object or array need to be included in a new array or object, or should be applied one-by-one in a function call's arguments list.</p>
+        <p>Only <u>iterable objects</u>, like arrays, can be spread in array and function parameters.</p>
+        <p>When using spread syntax for function calls, be aware of the possibility of exceeding the JavaScript engine's argument length limit.</p>
+        `,
+        `<h3>Don't confuse <code>spread</code> with <code>rest</code></h3>
+        <p>Spread syntax looks exactly like rest syntax. In a way, <i>spread syntax is the opposite of rest syntax</i>. Spread syntax <u>"expands"</u> an array into its elements, while rest syntax collects multiple elements and <u>"condenses"</u> them into a single element.</p>
+        `,
+      ],
     },
     {
       sectionTitle: 'Destructuring parameters',
@@ -1087,12 +1162,6 @@ const functions = {
         `<p>The <i>destructured parameter cannot be omitted (it is required)</i>, otherwise it throws an error.</p>`,
         `<p><i>You can destructure an object directly on function parameters</i> or you can destructure an object inside the function body.</p>`,
       ],
-    },
-    {
-      sectionTitle: 'Spread syntax for function calls',
-      sectionSource:
-        '/src/markdowns/06_Functions/Spread_syntax_and_function_calls.html',
-      sectionSummary: [],
     },
   ],
 };

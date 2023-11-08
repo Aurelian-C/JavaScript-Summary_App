@@ -1,8 +1,8 @@
-# Spread syntax (...) and function calls
+# Spread syntax (`...`) and function calls
 
 Spread syntax `...` allows an ==**iterable**==, such as an ==array== or ==string==, to be ==**expanded**== in places where zero or more arguments (for ==**function** calls==) or elements (for ==**array** literals==) are expected. In an ==**object ** literal== spread syntax allows an _object expression to be expanded_ in places where zero or more key-value pairs are expected.
 
-> **Note**: spread operator `...` is an operator that in the end pulls out all elements of an array and gives them to you as a standalone list of elements.
+> **NOTE**: spread operator `...` is an operator that in the end pulls out all elements of an array and gives them to you as a standalone list of elements.
 
 Spread syntax looks exactly like rest syntax. In a way, _spread syntax is the opposite of [rest syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)_. ==Spread syntax **"expands"** an array into its elements, while rest syntax collects multiple elements and **"condenses"** them into a single element==.
 

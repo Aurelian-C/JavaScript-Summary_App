@@ -2,14 +2,13 @@
 
 With With ```call()```, ```apply()``` and ```bind()``` you can manipulate the ```this``` keyword.
 
-With ```call()```, ```apply()``` and ```bind()``` you can ==**assign a different** `this` **object** when calling an existing function==. `this` refers to the current object (the calling object).
+Usually, `this` refers to the current object (the calling object). With ```call()```, ```apply()``` and ```bind()``` you can ==**assign a different** `this` **object** when calling an existing function==. 
 
-With ```call()```, ```apply()``` and ```bind()```, you can write a method once, and then inherit it in another object, without having to rewrite the method for the new object.
+With ```call()```, ```apply()``` and ```bind()```, ==you can write a method once, and then inherit it in another object==, without having to rewrite the method for the new object.
 
 ## ```call()``` method
 
-The **`call()`** method calls the function with a _given `this`_ value and _arguments provided individually_.
-With the ```call()``` method, you can write a method that can be used on different objects.
+==The **`call()`** method calls the function with a _given `this`_ value and _arguments provided individually_.== With the ```call()``` method, you can write a method that can be used on different objects.
 
 ```js
 const person = {
@@ -36,7 +35,7 @@ person.fullName.call(person2); // This will return 'Mary Doe'
 
 ### Syntax
 
-```js
+```javascript
 call()
 call(thisArg)
 call(thisArg, arg1, /* …, */ argN)
@@ -53,16 +52,16 @@ The result of calling the function with the specified `this` value and arguments
 
 ## ```apply()``` method
 
-The **`apply()`** method calls the specified function with a given `this` value, and arguments provided as an array. The ```apply()``` method is similar to the ```call()``` method. The difference between ```call()``` and ```apply()``` are:
+==The **`apply()`** method calls the specified function with a given `this` value, and _arguments provided as an array_.== The ```apply()``` method is similar to the ```call()``` method. The difference between ```call()``` and ```apply()``` are:
 
 - The ```call()``` method takes ==arguments **separately**==.
 - The ```apply()``` method takes ==arguments as an **array**==.
 
-> Note: The apply() method is very handy if you _want to use an array instead of an argument list_. JavaScript Strict Mode: in JavaScript strict mode, if the first argument of the ```apply()``` method is not an object, it becomes the owner (object) of the invoked function. In "non-strict" mode, it becomes the global object.
+> **NOTE**: The `apply()` method is very handy if you _want to use an array instead of an argument list_. JavaScript Strict Mode: in JavaScript strict mode, if the first argument of the ```apply()``` method is not an object, it becomes the owner (object) of the invoked function. In "non-strict" mode, it becomes the global `window` object.
 
 ## ```bind()``` method
 
-The **`bind()`** method ==**creates a new function**== that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+==The **`bind()`** method **creates a new function** that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.==
 
 ### Syntax
 
@@ -96,6 +95,6 @@ boundLog2(5, 6); // "this value", 1, 2, 3, 4, 5, 6
 
 ## References
 
-1. [Function.prototype.call() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
-2. [Function.prototype.apply() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
-3. [Function.prototype.bind() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+1. [`Function.prototype.call()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
+2. [`Function.prototype.apply()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+3. [`Function.prototype.bind()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
