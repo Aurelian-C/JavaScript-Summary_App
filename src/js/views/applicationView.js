@@ -11,7 +11,7 @@ class ApplicationView {
       .map(card => {
         return `
           <div class="card">
-            <h2 class="card__title">${card.title}</h2>
+            <h2 class="card__title">${card.name}</h2>
             <div class="card__articles hidden">
             ${card.sections.map(this._generateMarkupArticles).join('')}
             </div>
@@ -29,11 +29,11 @@ class ApplicationView {
     if (article.sectionArticles) {
       descriptor = article.sectionArticles
         .map(descriptor => {
-          if (!descriptor.articleTitle) return;
+          if (!descriptor.title) return;
 
           return `
             <li class="card__descriptor">
-              <div class="card__descriptor-title" data-title="${descriptor.articleTitle}">${descriptor.articleTitle}</div>
+              <div class="card__descriptor-title" data-id="${descriptor.title}">${descriptor.title}</div>
             </li>`;
         })
         .join('');
@@ -42,7 +42,7 @@ class ApplicationView {
     return `
       <div class="card__article">
         <div class="card__article-wrapper">
-          <div class="card__article-title" data-title="${article.sectionTitle}">${article.sectionTitle}</div>
+          <div class="card__article-title" data-id="${article.title}">${article.title}</div>
         </div>
         <ul class="card__descriptors">
           ${descriptor}

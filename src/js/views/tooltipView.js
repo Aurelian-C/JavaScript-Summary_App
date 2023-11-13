@@ -17,27 +17,27 @@ class TooltipView {
 
       let obj = null;
       if (elementArticle) {
-        const { title } = elementArticle.dataset;
-        obj = data.find(el => el.sectionTitle === title);
+        const { id } = elementArticle.dataset;
+        obj = data.find(el => el.title === id);
       }
 
       if (elementDescriptor) {
-        const { title } = elementDescriptor.dataset;
+        const { id } = elementDescriptor.dataset;
         console.log(title);
-        obj = data.find(el => el.sectionTitle === title);
+        obj = data.find(el => el.title === id);
       }
 
-      if (!obj.sectionSummary) return;
+      if (!obj.summary) return;
 
-      const markup = obj.sectionSummary
+      const markup = obj.summary
         .map(paragraph => `<div class="tooltip_paragraph">${paragraph}</div>`)
         .join('');
 
       this._containerTooltip.innerHTML =
         '<i class="fa-solid fa-xmark"></i>' +
-        `<h2>${obj.sectionTitle}</h2>` +
+        `<h2>${obj.title}</h2>` +
         markup +
-        `<a href=${obj.sectionSource} class="paragraph__article-anchor" target="_blank">Read more about this article!</a>`;
+        `<a href=${obj.source} class="paragraph__article-anchor" target="_blank">Read more about this article!</a>`;
 
       this._containerTooltip.classList.add('show');
     });

@@ -1,11 +1,11 @@
 const browserEngineAndRuntime = {
-  title: 'JavaScript in the Browser: Engine & Runtime',
+  name: 'JavaScript in the Browser: Engine & Runtime',
   sections: [
     {
-      sectionTitle: 'Javascript Engine (part 1)',
-      sectionSource:
+      title: 'Javascript Engine (part 1)',
+      source:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Engine1.html',
-      sectionSummary: [
+      summary: [
         `<h3>JavaScript language vs Computer language</h3>
         <p>The communication bridge between JavaScript language and  computer language is JavaScript Engine (V8 for Chrome, SpiderMonkey for Firefox, etc.). The computer understand only 1 and 0, but JavaScript Engine understand the code inside JavaScript file and <i>translate that code</i> to a computer language.</p>`,
         `<h3>Interpreter & Compiler</h3>
@@ -18,10 +18,10 @@ const browserEngineAndRuntime = {
       ],
     },
     {
-      sectionTitle: 'Javascript Engine (part 2)',
-      sectionSource:
+      title: 'Javascript Engine (part 2)',
+      source:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Engine2.html',
-      sectionSummary: [
+      summary: [
         `<h3>Memory Heap & Call Stack</h3>
         <ul>With Interpreters and Compilers, we learned that the JavaScript Engine does a lot of work for us, but the biggest thing is actually reading our code and executing it. What do you think the two most important things in these steps are?
         <li>1. We need a place to store and write information, to store our variables, our objects, our data of our apps. So in other words, a place to allocate memory (Memory Heap).</li>
@@ -43,10 +43,10 @@ const browserEngineAndRuntime = {
       ],
     },
     {
-      sectionTitle: 'Javascript Runtime',
-      sectionSource:
+      title: 'Javascript Runtime',
+      source:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Runtime.html',
-      sectionSummary: [
+      summary: [
         `<h3>JavaScript Runtime & asynchronous code</h3>
         <p>The heart of any JavaScript Runtime is always a JavaScript Engine. Without the JavaScript Engine, there is no JavaScript Runtime, and there is no JavaScript at all. However, JavaScript Engine alone is not enough, because being single threaded (synchronous), if you have code that takes a long, long time to execute, your application will be very, very slow. In order to your application work properly, we also need a JavaScript Runtime that gave access to the Web APIs (ex. DOM, Timers, Fetch API etc.) and implicit to asynchronous code.</p>`,
         `<h3>Browsers comes in with a JavaScript Engine and a JavaScript Runtime</h3>
@@ -61,10 +61,10 @@ const browserEngineAndRuntime = {
       ],
     },
     {
-      sectionTitle: 'Execution Context and the Call Stack',
-      sectionSource:
+      title: 'Execution Context and the Call Stack',
+      source:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Execution_Context_and_The_Call_Stack.html',
-      sectionSummary: [
+      summary: [
         `<h3>Execution Context</h3>
         <p>While reading through HTML, if the browser encounters JavaScript code to run via a <<code>script</code>> tag or an attribute that contains JavaScript code like <code>onClick</code>, it sends it to its JavaScript Engine. The browser's JavaScript Engine then creates a special environment to handle the transformation and execution of this JavaScript code. This environment is known as the Execution Context.</p>`,
         `<h3>Global & function execution context</h3>
@@ -82,19 +82,19 @@ const browserEngineAndRuntime = {
       ],
     },
     {
-      sectionTitle: 'Lexical Environment',
-      sectionSource:
+      title: 'Lexical Environment',
+      source:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Lexical_Environment.html',
-      sectionSummary: [
+      summary: [
         `<h3>Where we write code is important</h3>
         <p>Lexical environment is simply <i>where you write code</i>. Where we write code determines the available variables. A new lexical environment is created when curly brackets <code>{}</code> are used, even nested brackets <code>{{...}}</code> create a new lexical environment.</p>`,
       ],
     },
     {
-      sectionTitle: 'Variable Environment',
-      sectionSource:
+      title: 'Variable Environment',
+      source:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Variable_Environment.html',
-      sectionSummary: [
+      summary: [
         `<h3>Variable Environment & Scope Chain</h3>
         <p>Each execution context (global/function) has its own variable environment. Each function execution context has a link to its outside world or a link to its parent. Each execution context that is created has a link outside of its lexical environment, called the scope chain. The scope chain gives us access to variables in the parent environment.</p>`,
         `<h3>Global Scope & Local Scope</h3>
@@ -111,24 +111,24 @@ const browserEngineAndRuntime = {
       ],
     },
     {
-      sectionTitle: 'Hoisting',
-      sectionSource: '/src/markdowns/01_Browser_Engine_&_Runtime/Hoisting.html',
-      sectionSummary: [
+      title: 'Hoisting',
+      source: '/src/markdowns/01_Browser_Engine_&_Runtime/Hoisting.html',
+      summary: [
         `<p>Compiler appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.</p>`,
         `<p>Hoisting is happen on every execution context: global & function.</p>`,
       ],
     },
     {
-      sectionTitle: 'What is JavaScript?',
-      sectionSource:
+      title: 'What is JavaScript?',
+      source:
         '/src/markdowns/01_Browser_Engine_&_Runtime/What_is_JavaScript.html',
-      sectionSummary: [],
+      summary: [],
     },
     {
-      sectionTitle: 'Activating Strict Mode',
-      sectionSource:
+      title: 'Activating Strict Mode',
+      source:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Activating_Strict_Mode.html',
-      sectionSummary: [
+      summary: [
         `<p>JavaScript's Strict Mode, introduced in ECMAScript 5, is a way to opt into a <i>restricted variant of JavaScript</i>, thereby implicitly opting-out of Sloppy Mode.</p>`,
         `<p>Strict Mode code and non-Strict Mode code can coexist.</p>`,
         `<ul>Strict Mode makes several changes to normal JavaScript semantics:
@@ -141,22 +141,22 @@ const browserEngineAndRuntime = {
       ],
     },
     {
-      sectionTitle:
+      title:
         'Efficient Script Loading: <code>defer</code> & <code>async</code>',
-      sectionSource: '',
-      sectionSummary: [],
+      source: '',
+      summary: [],
     },
   ],
 };
 
 const variablesAndValues = {
-  title: 'JavaScript Types and Variables',
+  name: 'JavaScript Types and Variables',
   sections: [
     {
-      sectionTitle: 'JavaScript Types',
-      sectionSource:
+      title: 'JavaScript Types',
+      source:
         '/src/markdowns/02_JavaScript_Types_&_Variables/JavaScript_Types.html',
-      sectionSummary: [
+      summary: [
         `All programming languages have types. That is the building blocks that allow us to write in that language. We can have numbers, strings, booleans and many more.`,
         `<h3>Static vs Dynamically Typed languages</h3>
         <p>JavaScript is a dynamic language with dynamic types. Variables in JavaScript are not directly associated with any particular value type, and <i>any variable can be assigned (and re-assigned) values of all types</i>. With a statically typed language we have to declare the variables explicitly before using them. Dynamically typed languages are not bound to this constraint, they're not bound to a particular type. TypeScript allows us to make JavaScript to behave like a statically typed language.</p>
@@ -169,10 +169,10 @@ const variablesAndValues = {
       ],
     },
     {
-      sectionTitle: 'Primitives vs References Types',
-      sectionSource:
+      title: 'Primitives vs References Types',
+      source:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Primitives_vs_Objects_(Primitive_vs_Reference_Types).html',
-      sectionSummary: [
+      summary: [
         `<h3>Primitive Types (Numbers, Strings, Booleans, null, undefined, Symbol, BigInt)</h3>
         <p>Primitive types store the value itself.</p>`,
         `<h3>Reference Types (Arrays, Objects, Functions)</h3>
@@ -189,10 +189,10 @@ const variablesAndValues = {
       ],
     },
     {
-      sectionTitle: 'Type Coercion',
-      sectionSource:
+      title: 'Type Coercion',
+      source:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Type_coercion.html',
-      sectionSummary: [
+      summary: [
         `<h3>Type Coercion vs Type Conversion</h3>
         <p>Type coercion is the <i>automatic or implicit conversion of values from one data type to another (such as strings to numbers)</i>. Type conversion is similar to type coercion because they both convert values from one data type to another with one key difference — type coercion is implicit whereas type conversion can be either implicit or explicit.</p>`,
         `<h3>Implicit and Explicit Type Coercion</h3>
@@ -219,9 +219,9 @@ const variablesAndValues = {
       ],
     },
     {
-      sectionTitle: 'Introduction to Variables',
-      sectionSource: `/src/markdowns/02_JavaScript_Types_&_Variables/Introduction_to_Variables.html`,
-      sectionSummary: [
+      title: 'Introduction to Variables',
+      source: `/src/markdowns/02_JavaScript_Types_&_Variables/Introduction_to_Variables.html`,
+      summary: [
         `<p>A variable is a <b>container for a value</b>.</p>`,
         `<p>One special thing about variables is that they can contain just about anything — not just strings and numbers. Variables can also contain complex data and even entire functions.</p>`,
         `<p>Variables aren't the values themselves; they are containers for values.</p>`,
@@ -238,9 +238,9 @@ const variablesAndValues = {
       ],
     },
     {
-      sectionTitle: 'var',
-      sectionSource: '/src/markdowns/02_JavaScript_Types_&_Variables/var.html',
-      sectionSummary: [
+      title: 'var',
+      source: '/src/markdowns/02_JavaScript_Types_&_Variables/var.html',
+      summary: [
         `<p>The <code>var</code> statement declares a <i>function-scoped</i> or <i>globally-scoped</i> variable, optionally initializing it to a value.</p>`,
         `<h3><code>var</code> & hoisting</h3>
         <p><code>var</code> declarations, wherever they occur, are processed before any code is executed because <code>var</code> declarations are hoisted. Variables declared using <code>var</code> are created before any code is executed in a process known as hoisting. Their initial value is <code>undefined</code>. <b>This behavior called hoisting means that the variable declaration is moved to the top of the <i>function</i> or <i>global code</i></b>.</p>
@@ -254,9 +254,9 @@ const variablesAndValues = {
       ],
     },
     {
-      sectionTitle: 'let',
-      sectionSource: '/src/markdowns/02_JavaScript_Types_&_Variables/let.html',
-      sectionSummary: [
+      title: 'let',
+      source: '/src/markdowns/02_JavaScript_Types_&_Variables/let.html',
+      summary: [
         `<p>The <code>let</code> statement declares a <b>block-scoped local variable</b>, optionally initializing it to a value.</p>`,
         `<p><code>let</code> can't be used before it's declared.</p>`,
         `<p><code>let</code> is function scoped & block scoped.</p>`,
@@ -265,10 +265,9 @@ const variablesAndValues = {
       ],
     },
     {
-      sectionTitle: 'const',
-      sectionSource:
-        '/src/markdowns/02_JavaScript_Types_&_Variables/const.html',
-      sectionSummary: [
+      title: 'const',
+      source: '/src/markdowns/02_JavaScript_Types_&_Variables/const.html',
+      summary: [
         `<p>The <code>const</code> statement declares a <b>block-scoped local variable</b>.</p>`,
         `<p><code>const</code> is function scoped & block scoped.</p>`,
         `<p><code>const</code> <i>must be initialized when it's declared</i>.</p>`,
@@ -277,10 +276,10 @@ const variablesAndValues = {
       ],
     },
     {
-      sectionTitle: 'Differences between var, let & const',
-      sectionSource:
+      title: 'Differences between var, let & const',
+      source:
         '/src/markdowns/02_JavaScript_Types_&_Variables/Differences_between_var_let_&_const.html',
-      sectionSummary: [
+      summary: [
         `<h3>Declaration, initialization & hoisting differences</h3>
         <p>If <code>var</code> and <code>let</code> are not initialized at declaration, initial value is <code>undefined</code>. An initializer for a <code>const</code> variable is required; you must specify its value in the same statement in which it's declared.</p>
         <p>Variables declared with <code>let</code> and <code>const</code> are hoisted but, unlike <code>var</code>, are not initialized with a default value.</p>
@@ -301,13 +300,13 @@ const variablesAndValues = {
 };
 
 const operators = {
-  title: 'Operators',
+  name: 'Operators',
   sections: [
     {
-      sectionTitle: 'Introduction to JavaScript Operators',
-      sectionSource:
+      title: 'Introduction to JavaScript Operators',
+      source:
         '/src/markdowns/03_Operators/Introduction_to_Javascript_Operators.html',
-      sectionSummary: [
+      summary: [
         `<p>An operator allows us to <i>transform values</i> or <i>combine multiple values</i> and do all kinds of work with values.</p>`,
         `<h3>Operator precedence</h3>
         <p>Operator precedence determines <i>how operators are parsed concerning each other</i>. Operators with <i>higher precedence</i> become the operands of operators with <i>lower precedence</i>.</p>`,
@@ -320,10 +319,9 @@ const operators = {
       ],
     },
     {
-      sectionTitle: 'Expressions and operators',
-      sectionSource:
-        '/src/markdowns/03_Operators/Expressions_and_operators.html',
-      sectionSummary: [
+      title: 'Expressions and operators',
+      source: '/src/markdowns/03_Operators/Expressions_and_operators.html',
+      summary: [
         `<p>At a high level, <i>an expression is a valid unit of code that resolves to a value</i>. There are <i>two types of expressions</i>: those <u>that have side effects (such as assigning values)</u> and those <u>that purely evaluate</u>.</p>`,
         `<ul>Some of JavaScript expressions & operators:
         <li>- Primary expressions: <code>this</code>, <code>[]</code>, <code>{}</code>, <code>function</code>, <code>class</code>, <code>async function</code> etc.</li>
@@ -340,31 +338,31 @@ const operators = {
       ],
     },
     {
-      sectionTitle: 'Assignment operators',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Assignment operators',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Assignment <code>=</code>',
-          articleSource: '/src/markdowns/03_Operators/Assignment_operator.html',
-          articleSummary: [
+          title: 'Assignment <code>=</code>',
+          source: '/src/markdowns/03_Operators/Assignment_operator.html',
+          summary: [
             `<p>Assignment operator is used to <b>assign a value to a variable</b>.</p>`,
             `<p>Chaining the assignment operator is possible in order to <b>assign a single value to multiple variables</b>.</p>`,
           ],
         },
         {
-          articleTitle: 'Addition assignment <code>+=</code>',
-          articleSource:
+          title: 'Addition assignment <code>+=</code>',
+          source:
             '/src/markdowns/03_Operators/Addition_assignment_operator.html',
-          articleSummary: [
+          summary: [
             `<p>The addition assignment operator <b>adds the value of the right operand</b> to a variable and <b>assigns the result</b> to the variable. The types of the two operands determine the behavior of the addition assignment operator. Addition or concatenation is possible.</p>`,
           ],
         },
         {
-          articleTitle: 'Subtraction assignment <code>-=</code>',
-          articleSource:
+          title: 'Subtraction assignment <code>-=</code>',
+          source:
             '/src/markdowns/03_Operators/Subtraction_assignment_operator.html',
-          articleSummary: [
+          summary: [
             `<p>The subtraction assignment operator <b>subtracts the value of the right operand</b> from a variable and <b>assigns the result</b> to the variable.</p>`,
             `<p>Concatenation is not possible with <code>-=</code> operator, only <code>+</code> and <code>+=</code> operators trigger type coercion.</p>`,
           ],
@@ -372,23 +370,23 @@ const operators = {
       ],
     },
     {
-      sectionTitle: 'Increment and decrement',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Increment and decrement',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Increment <code>A++</code> or <code>++A</code>',
-          articleSource: '/src/markdowns/03_Operators/Increment_operator.html',
-          articleSummary: [
+          title: 'Increment <code>A++</code> or <code>++A</code>',
+          source: '/src/markdowns/03_Operators/Increment_operator.html',
+          summary: [
             `<p>The increment operator <i>increments (adds one to)</i> its operand and <i>returns the value</i> before or after the increment, depending on where the operator is placed.</p>`,
             `<p>If used <b>postfix</b>, with operator after operand (for example, <code>x++</code>), the increment operator increments and <b>returns the value <i>before</i> incrementing</b>.</p>`,
             `<p>If used <b>prefix</b>, with operator before operand (for example, <code>++x</code>), the increment operator increments and <b>returns the value <i>after</i> incrementing</b>.</p>`,
           ],
         },
         {
-          articleTitle: 'Decrement <code>A--</code> or <code>--A</code>',
-          articleSource: '/src/markdowns/03_Operators/Decrement_operator.html',
-          articleSummary: [
+          title: 'Decrement <code>A--</code> or <code>--A</code>',
+          source: '/src/markdowns/03_Operators/Decrement_operator.html',
+          summary: [
             `<p>The decrement operator <i>decrements (subtracts one from)</i> its operand and i>returns the value</i> before or after the decrement, depending on where the operator is placed.</p>`,
             `<p>If used <b>postfix</b>, with operator after operand (for example, <code>x--</code>), the decrement operator decrements and <b>returns the value <i>before</i> decrementing</b>.</p>`,
             `<p>If used <b>prefix</b>, with operator before operand (for example, <code>--x</code>), the decrement operator decrements and <b>returns the value <i>after</i> decrementing</b>.</p>`,
@@ -397,116 +395,112 @@ const operators = {
       ],
     },
     {
-      sectionTitle: 'Unary operators',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Unary operators',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'typeof',
-          articleSource: '/src/markdowns/03_Operators/typeof_operator.html',
-          articleSummary: [
+          title: 'typeof',
+          source: '/src/markdowns/03_Operators/typeof_operator.html',
+          summary: [
             `<p>The <code>typeof</code> operator <i>returns a string indicating the type</i> of the operand's value</p>`,
           ],
         },
         {
-          articleTitle: 'Unary plus <code>+</code>',
-          articleSource: '/src/markdowns/03_Operators/Unary_plus_operator.html',
-          articleSummary: [
+          title: 'Unary plus <code>+</code>',
+          source: '/src/markdowns/03_Operators/Unary_plus_operator.html',
+          summary: [
             `<p>The unary plus operator <code>+</code> <i>precedes its operand and evaluates to its operand but <u>attempts to convert it into a number</u>, if it isn't already</i>. If it cannot parse a particular value, it will evaluate to <code>NaN</code>.</p>`,
             `<p>Although unary negation <code>-</code> also can convert non-numbers, unary plus is the fastest and preferred way of converting something into a number, because it does not perform any other operations on the number.</p>`,
           ],
         },
         {
-          articleTitle: 'Unary negation <code>-</code>',
-          articleSource:
-            '/src/markdowns/03_Operators/Unary_negation_operator.html',
-          articleSummary: [
+          title: 'Unary negation <code>-</code>',
+          source: '/src/markdowns/03_Operators/Unary_negation_operator.html',
+          summary: [
             `<p>The unary negation operator <code>-</code> <i>precedes its operand and negates it</i>. It <i>can convert a non-number into a number</i>.</p>`,
           ],
         },
         {
-          articleTitle: 'Logical NOT <code>!</code>',
-          articleSource:
-            '/src/markdowns/03_Operators/Logical_NOT_operator.html',
-          articleSummary: [
+          title: 'Logical NOT <code>!</code>',
+          source: '/src/markdowns/03_Operators/Logical_NOT_operator.html',
+          summary: [
             `<p>The logical NOT <code>!</code> operator <i>takes truth to falsity and vice versa</i>.</p>`,
           ],
         },
       ],
     },
     {
-      sectionTitle: 'Arithmetic operators',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Arithmetic operators',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Addition <code>+</code>',
-          articleSource: '/src/markdowns/03_Operators/Addition_operator.html',
-          articleSummary: [
+          title: 'Addition <code>+</code>',
+          source: '/src/markdowns/03_Operators/Addition_operator.html',
+          summary: [
             `<p>The addition operator <code>+</code> produces the <i>sum of numeric operands</i> or <i>string concatenation</i>.</p>`,
           ],
         },
         {
-          articleTitle: 'Subtraction <code>-</code>',
-          articleSource:
-            '/src/markdowns/03_Operators/Subtraction_operator.html',
-          articleSummary: [
+          title: 'Subtraction <code>-</code>',
+          source: '/src/markdowns/03_Operators/Subtraction_operator.html',
+          summary: [
             `<p>The subtraction operator <code>-</code> subtracts the two operands, producing their difference.</p>`,
             `<p><i>Concatenation is not possible with <code>-</code> operator</i>, only <code>+</code> and <code>+=</code> operators trigger type coercion.</p>`,
           ],
         },
         {
-          articleTitle: 'Division <code>/</code>',
-          articleSource: '',
+          title: 'Division <code>/</code>',
+          source: '',
         },
         {
-          articleTitle: 'Multiplication <code>*</code>',
-          articleSource: '',
+          title: 'Multiplication <code>*</code>',
+          source: '',
         },
         {
-          articleTitle: 'Remainder <code>%</code>',
-          articleSource: '/src/markdowns/03_Operators/Remainder_operator.html',
-          articleSummary: [
+          title: 'Remainder <code>%</code>',
+          source: '/src/markdowns/03_Operators/Remainder_operator.html',
+          summary: [
             `<p>The remainder operator <code>%</code> <i>returns the remainder left over when one operand is divided by a second operand</i>.</p>`,
           ],
         },
       ],
     },
     {
-      sectionTitle: 'Equality operators',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Equality operators',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Equality <code>==</code>',
-          articleSource: '/src/markdowns/03_Operators/Equality_operator.html',
-          articleSummary: [
+          title: 'Equality <code>==</code>',
+          source: '/src/markdowns/03_Operators/Equality_operator.html',
+          summary: [
             `<p>The equality operator <code>==</code> <i>checks whether its two operands are equal, returning a Boolean result</i>.</p>`,
             `<p>Unlike the strict equality <code>===</code> operator, it attempts to <i><u>convert</u> and <u>compare</u> operands that are of different types</i>.</p>`,
             `<p>Strict equality <code>===</code> operator does not attempt type conversion. Instead, the <i>strict equality operator always considers operands of different types to be different</i>.</p>`,
           ],
         },
         {
-          articleTitle: 'Inequality <code>!=</code>',
-          articleSource: '/src/markdowns/03_Operators/Inequality_operator.html',
-          articleSummary: [
+          title: 'Inequality <code>!=</code>',
+          source: '/src/markdowns/03_Operators/Inequality_operator.html',
+          summary: [
             `<p>The inequality operator <code>!=</code> <i>checks whether its two operands are not equal, returning a Boolean result</i>.</p>`,
             `<p>Unlike the strict inequality <code>!==</code> operator, it attempts to <i><u>convert</u> and <u>compare</u> operands that are of different types</i>.</p>`,
           ],
         },
         {
-          articleTitle: 'Identity <code>===</code>',
-          articleSource: '/src/markdowns/03_Operators/Identity_operator.html',
-          articleSummary: [
+          title: 'Identity <code>===</code>',
+          source: '/src/markdowns/03_Operators/Identity_operator.html',
+          summary: [
             `<p>The strict equality operator <code>===</code> <i>checks whether its two operands are equal, returning a Boolean result</i>.</p>`,
             `<p>Strict equality <code>===</code> operator does not attempt type conversion. Instead, the <i>strict equality operator always considers operands of different types to be different</i>.</p>`,
           ],
         },
         {
-          articleTitle: 'Nonidentity <code>!==</code>',
-          articleSource:
-            '/src/markdowns/03_Operators/Nonidentity_operator.html',
-          articleSummary: [
+          title: 'Nonidentity <code>!==</code>',
+          source: '/src/markdowns/03_Operators/Nonidentity_operator.html',
+          summary: [
             `<p>The strict inequality operator <code>!==</code> <i>checks whether its two operands are not equal, returning a Boolean result</i>.</p>`,
             `<p>The strict inequality operator <i>always considers operands of different types to be different</i>.</p>`,
           ],
@@ -514,68 +508,67 @@ const operators = {
       ],
     },
     {
-      sectionTitle: 'Relational operators',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Relational operators',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Less than <code><</code>',
-          articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
-          articleSummary: [
+          title: 'Less than <code><</code>',
+          source: '/src/markdowns/03_Operators/Less_than_operator.html',
+          summary: [
             `<p>The less than <code><</code> operator returns <code>true</code> if the left operand is less than the right operand, and <code>false</code> otherwise.</p>`,
             `<p><i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.</p>`,
           ],
         },
         {
-          articleTitle: 'Greater than <code>></code>',
-          articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
-          articleSummary: [
+          title: 'Greater than <code>></code>',
+          source: '/src/markdowns/03_Operators/Less_than_operator.html',
+          summary: [
             `<p>The greater than <code>></code> operator returns <code>true</code> if the left operand is greater than the right operand, and <code>false</code> otherwise.</p>`,
             `<p><i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.</p>`,
           ],
         },
         {
-          articleTitle: 'Less than or equal <code><=</code>',
-          articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
-          articleSummary: [
+          title: 'Less than or equal <code><=</code>',
+          source: '/src/markdowns/03_Operators/Less_than_operator.html',
+          summary: [
             `<p>The less than or equal <code><=</code> operator returns <code>true</code> if the left operand is less than or equal to the right operand, and <code>false</code> otherwise.</p>`,
             `<p><i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.</p>`,
           ],
         },
         {
-          articleTitle: 'Greater than or equal <code>>=</code>',
-          articleSource: '/src/markdowns/03_Operators/Less_than_operator.html',
-          articleSummary: [
+          title: 'Greater than or equal <code>>=</code>',
+          source: '/src/markdowns/03_Operators/Less_than_operator.html',
+          summary: [
             `<p>The greater than or equal <code>>=</code> operator returns <code>true</code> if the left operand is greater than or equal to the right operand, and <code>false</code> otherwise.</p>`,
             `<p><i>Comparisons always coerce their operands to primitives</i>. This means the same object may end up having different values within one comparison expression.</p>`,
           ],
         },
         {
-          articleTitle: 'instanceof',
-          articleSource: '/src/markdowns/03_Operators/instanceof_operator.html',
-          articleSummary: [
+          title: 'instanceof',
+          source: '/src/markdowns/03_Operators/instanceof_operator.html',
+          summary: [
             `<p>The <code>instanceof</code> operator <i>tests to see if the <code>prototype</code> property of a constructor appears anywhere in the prototype chain of an object</i>. The return value is a boolean value.</p>`,
           ],
         },
         {
-          articleTitle: 'in',
-          articleSource: '/src/markdowns/03_Operators/in_operator.html',
-          articleSummary: [
+          title: 'in',
+          source: '/src/markdowns/03_Operators/in_operator.html',
+          summary: [
             `<p>The <code>in</code> operator returns <code>true</code> if the <u>specified property</u> is in the <i>specified object</i> or <i>its prototype chain</i>.</p>`,
           ],
         },
       ],
     },
     {
-      sectionTitle: 'Binary logical operators',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Binary logical operators',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Logical AND <code>&&</code>',
-          articleSource:
-            '/src/markdowns/03_Operators/Logical_AND_operator.html',
-          articleSummary: [
+          title: 'Logical AND <code>&&</code>',
+          source: '/src/markdowns/03_Operators/Logical_AND_operator.html',
+          summary: [
             `<p>The logical AND <code>&&</code> operator for a set of boolean operands will be <code>true</code> <i>only if <u>all</u> the operands are</i> <code>true</code>. Otherwise it will be <code>false</code>.</p>`,
             `<p>More generally, the operator returns the value of the first falsy operand encountered when evaluating from left to right, or the value of the last operand if they are all truthy.</p>`,
             `<p>Logical AND <code>&&</code> evaluates operands from left to right.</p>`,
@@ -586,9 +579,9 @@ const operators = {
           ],
         },
         {
-          articleTitle: 'Logical OR <code>||</code>',
-          articleSource: '/src/markdowns/03_Operators/Logical_OR_operator.html',
-          articleSummary: [
+          title: 'Logical OR <code>||</code>',
+          source: '/src/markdowns/03_Operators/Logical_OR_operator.html',
+          summary: [
             `<p>The logical OR <code>||</code> operator (logical disjunction) for a set of operands is <code>true</code> <i>only if <u>one or more</u> of its operands is</i> <code>true</code>.</p>`,
             `<h3>Operator precedence</h3>
             <p>The AND operator has a <i>higher precedence than the OR operator</i>, meaning the <code>&&</code> operator is <i>executed before the <code>||</code> operator</i>.</p>`,
@@ -597,18 +590,17 @@ const operators = {
           ],
         },
         {
-          articleTitle: 'Nullish coalescing <code>??</code>',
-          articleSource:
+          title: 'Nullish coalescing <code>??</code>',
+          source:
             '/src/markdowns/03_Operators/Nullish_coalescing_operator.html',
-          articleSummary: [
+          summary: [
             `<p>The nullish coalescing <code>??</code> operator is a logical operator that <i>returns its right-hand side operand when its left-hand side operand is <code>null</code> or <code>undefined</code>, and otherwise returns its left-hand side operand</i>.</p>`,
           ],
         },
         {
-          articleTitle:
-            'Short Circuiting with <code>&&</code> and <code>||</code>',
-          articleSource: '/src/markdowns/03_Operators/Short_Circuiting.html',
-          articleSummary: [
+          title: 'Short Circuiting with <code>&&</code> and <code>||</code>',
+          source: '/src/markdowns/03_Operators/Short_Circuiting.html',
+          summary: [
             `<p>The two Short-Circuit operators are represented with the symbol <code>&&</code> and <code>||</code>. <i>They are basically used to <u>combine expressions</u></i>.</p>`,
             `<p>Although short-circuit operators are basically used to combine expressions, <i>you can use them to <u>execute statements conditionally</u></i>.</p>`,
             `<h3>Using the <code>&&</code> operator</h3>
@@ -623,10 +615,9 @@ const operators = {
       ],
     },
     {
-      sectionTitle: 'Conditional (ternary) operator',
-      sectionSource:
-        '/src/markdowns/03_Operators/Conditional_(ternary)_operator.html',
-      sectionSummary: [
+      title: 'Conditional (ternary) operator',
+      source: '/src/markdowns/03_Operators/Conditional_(ternary)_operator.html',
+      summary: [
         `<p>The conditional (ternary) operator is the <i>only JavaScript operator that takes three operands</i>: a condition followed by a question mark <code>?</code>, then an expression to execute if the condition is truthy followed by a colon <code>:</code>, and finally the expression to execute if the condition is falsy.</p>`,
         `<p>This operator is frequently used as an alternative to an <code>if...else</code> statement.</p>`,
         `<p>The Conditional (Ternary) operator is mostly used to <i>assigns a value to a variable based on some condition</i>.</p>`,
@@ -634,10 +625,9 @@ const operators = {
       ],
     },
     {
-      sectionTitle: 'Optional Chaining operator <code>?.</code>',
-      sectionSource:
-        '/src/markdowns/03_Operators/Optional_Chaining_operator.html',
-      sectionSummary: [
+      title: 'Optional Chaining operator <code>?.</code>',
+      source: '/src/markdowns/03_Operators/Optional_Chaining_operator.html',
+      summary: [
         `<p>The optional chaining <code>?.</code> operator <i>accesses an object's property or calls a function</i>. If the object is <code>undefined</code> or <code>null</code>, <i>it returns <code>undefined</code> instead of throwing an error</i>.</p>`,
         `<h3>Optional chaining with objects & function calls</h3>
         <p>The <code>?.</code> operator is like the <code>.</code> chaining operator, except that <i>instead of causing an error if a reference is nullish (<code>null</code> or <code>undefined</code>), the expression short-circuits with a return value of <code>undefined</code>. When used with function calls, it returns <code>undefined</code> if the given function does not exist</i>.</p>`,
@@ -651,13 +641,13 @@ const operators = {
 };
 
 const conditionalStatements = {
-  title: 'Conditional statements',
+  name: 'Conditional statements',
   sections: [
     {
-      sectionTitle: 'Statements vs Expressions',
-      sectionSource:
+      title: 'Statements vs Expressions',
+      source:
         '/src/markdowns/04_Conditional_statements/Statements_vs_Expressions.html',
-      sectionSummary: [
+      summary: [
         `<p><i>Any unit of code that can be evaluated to a value is an expression</i>. Since <i>expressions produce values</i>, they can appear anywhere in a program where JavaScript expects a value, such as the arguments of a function invocation.</p>`,
         `<ul>JavaScript has the following <b>expression categories</b>:
         <li>- <i>arithmetic</i> expressions (expressions that evaluate to a numeric value)</li>
@@ -681,20 +671,20 @@ const conditionalStatements = {
       ],
     },
     {
-      sectionTitle: 'Control flow and error handling',
-      sectionSource:
+      title: 'Control flow and error handling',
+      source:
         '/src/markdowns/04_Conditional_statements/Control_flow_and_error_handling.html',
-      sectionSummary: [
+      summary: [
         `<p>JavaScript supports a compact set of statements, specifically <i>control flow statements</i>, that you can use to incorporate a great deal of interactivity in your application.</p>
         `,
         `<p>The semicolon (<code>;</code>) character is used to separate statements in JavaScript code.</p>`,
       ],
     },
     {
-      sectionTitle: 'Truthy & Falsy Values',
-      sectionSource:
+      title: 'Truthy & Falsy Values',
+      source:
         '/src/markdowns/04_Conditional_statements/Truthy_&_Falsy_Values.html',
-      sectionSummary: [
+      summary: [
         `<h3>Boolean context & Type coercion</h3>
         <p>In JavaScript, a truthy value is a value that is considered <code>true</code> when encountered in a <i>Boolean context</i>. JavaScript uses type conversion to coerce any value to a Boolean in contexts that require it, such as conditionals and loops.</p>`,
         `<p><i>JavaScript uses type coercion in Boolean contexts</i>.</p>`,
@@ -710,11 +700,10 @@ const conditionalStatements = {
       ],
     },
     {
-      sectionTitle:
-        '<code>if{...} else{...}</code>, <code>else if</code> statements',
-      sectionSource:
+      title: '<code>if{...} else{...}</code>, <code>else if</code> statements',
+      source:
         '/src/markdowns/04_Conditional_statements/if__else__if_else_statements.html',
-      sectionSummary: [
+      summary: [
         `<p>When you're writing code, <i>you don't always want to execute exactly the same code top to bottom</i>. Sometimes you have some condition that should be met for some code to be executed, and execute some other code if the condition is not met.</p>`,
         `<p><i>Conditional statements</i> are used to perform <i>different actions</i> based on <i>different conditions</i>.</p>`,
         `<ul>In JavaScript we have the following conditional statements:
@@ -729,10 +718,10 @@ const conditionalStatements = {
       ],
     },
     {
-      sectionTitle: 'The <code>switch</code> statement',
-      sectionSource:
+      title: 'The <code>switch</code> statement',
+      source:
         '/src/markdowns/04_Conditional_statements/The_Switch_Statement.html',
-      sectionSummary: [
+      summary: [
         `<p>The <code>switch</code> statement is used to perform <i>different actions</i> based on <i>different conditions</i>. Use the <code>switch</code> statement to <i>select one of many code blocks to be executed.</i></p>`,
         `<ul>This is how it works:
         <li>- The <code>switch</code> expression is <i>evaluated once</i></li>
@@ -757,13 +746,13 @@ const conditionalStatements = {
 };
 
 const loops = {
-  title: 'Loops & Iteration',
+  name: 'Loops & Iteration',
   sections: [
     {
-      sectionTitle: 'Introduction to Loops & Iteration',
-      sectionSource:
+      title: 'Introduction to Loops & Iteration',
+      source:
         '/src/markdowns/05_Loops_&_Iteration/Introduction_to_Loops_and_Iteration.html',
-      sectionSummary: [
+      summary: [
         `<p>Loops can <i>execute a block of code a number of times</i>. Loops are handy, if you want to <i>run the same code over and over again, each time with a different value</i>.</p>`,
         `<p>There are <i>many different kinds of loops</i>, but they all essentially do the same thing: they <i>repeat</i> an action some number of times.</p>`,
         `<p>The various loop mechanisms offer <i>different ways to determine the start and end points of the loop</i>.</p>`,
@@ -779,9 +768,9 @@ const loops = {
       ],
     },
     {
-      sectionTitle: '<code>for</code> statement',
-      sectionSource: '/src/markdowns/05_Loops_&_Iteration/for_statement.html',
-      sectionSummary: [
+      title: '<code>for</code> statement',
+      source: '/src/markdowns/05_Loops_&_Iteration/for_statement.html',
+      summary: [
         `<p>A <code>for</code> statement <i><u>repeats until</u> a specified condition evaluates to <code>false</code></i>.</p>`,
         `<p>The <code>for</code> statement creates a loop that consists of <i>three <u>optional</u> expressions</i>, enclosed in parentheses and separated by semicolons <code>;</code>, followed by a statement (usually a block statement) to be executed in the loop.</p>`,
         `<h3>Nested loops</h3>
@@ -792,10 +781,9 @@ const loops = {
       ],
     },
     {
-      sectionTitle: '<code>for...of</code> statement',
-      sectionSource:
-        '/src/markdowns/05_Loops_&_Iteration/for...of_statement.html',
-      sectionSummary: [
+      title: '<code>for...of</code> statement',
+      source: '/src/markdowns/05_Loops_&_Iteration/for...of_statement.html',
+      summary: [
         `<p>The <code>for...of</code> statement <i>loops through the <u>values</u> of an <u>iterable object</u></i>, including: built-in <code>String</code>, <code>Array</code>, array-like objects (e.g., <code>arguments</code> or <code>NodeList</code>), <code>TypedArray</code>, <code>Map</code>, <code>Set</code>, and user-defined iterables.</p>`,
         `<p>A <code>for...of</code> loop operates on the values sourced from an iterable one by one in <i>sequential order. Each iteration creates a new variable</i>. Reassigning the variable inside the loop body does not affect the original value in the iterable.</p>`,
         `<p>You can use destructuring in <code>for...of</code> statement.</p>`,
@@ -811,10 +799,9 @@ const loops = {
       ],
     },
     {
-      sectionTitle: '<code>for...in</code> statement',
-      sectionSource:
-        '/src/markdowns/05_Loops_&_Iteration/for...in_statement.html',
-      sectionSummary: [
+      title: '<code>for...in</code> statement',
+      source: '/src/markdowns/05_Loops_&_Iteration/for...in_statement.html',
+      summary: [
         `<p><code>for...in</code> <i>iterates over all <u>enumerable properties</u> of an object that are keyed by strings</i> (ignoring ones keyed by Symbols), including <i>inherited enumerable properties (iterates over the entire prototype chain)</i>.</p>`,
         `<p>A <code>for...in</code> loop <i><u>only</u> iterates over <u>enumerable, non-symbol properties</u></i>.</p>`,
         `<p>A <code>for...in</code> loop iterates over the properties of an object in an <i>arbitrary order</i>. Do not use <code>for...in</code> to iterate an array if the index order is important. Use a <code>for</code> loop instead.</p>`,
@@ -830,9 +817,9 @@ const loops = {
       ],
     },
     {
-      sectionTitle: '<code>while</code> statement',
-      sectionSource: '/src/markdowns/05_Loops_&_Iteration/while_statement.html',
-      sectionSummary: [
+      title: '<code>while</code> statement',
+      source: '/src/markdowns/05_Loops_&_Iteration/while_statement.html',
+      summary: [
         `<p>The <code>while</code> loop loops through a block of code <i>as long as a specified condition is <code>true</code></i>. The condition is evaluated before executing the statement.</p>`,
         `<h3>Avoid infinite loops!</h3>
         <p>Make sure the condition in a loop eventually becomes <code>false</code> — otherwise, the loop will never terminate!</p>`,
@@ -840,10 +827,10 @@ const loops = {
       ],
     },
     {
-      sectionTitle: '<code>break</code> and <code>continue</code> statements',
-      sectionSource:
+      title: '<code>break</code> and <code>continue</code> statements',
+      source:
         '/src/markdowns/05_Loops_&_Iteration/Break_&_Continue_Statements.html',
-      sectionSummary: [
+      summary: [
         `<p>The <code>break</code> statement <i>"jumps <u>out</u>"</i> of a loop.</p>`,
         `<p>The <code>continue</code> statement <i>"jumps <u>over</u>"</i> one iteration in the loop. The <code>continue</code> statement <i>breaks one iteration</i> (in the loop) if a specified condition occurs, and continues with the next iteration in the loop.</p>`,
         `<ul>In contrast to the <code>break</code> statement, <code>continue</code> does not terminate the execution of the loop entirely, but instead:
@@ -857,12 +844,12 @@ const loops = {
 };
 
 const functions = {
-  title: 'Functions',
+  name: 'Functions',
   sections: [
     {
-      sectionTitle: 'Function introduction',
-      sectionSource: '/src/markdowns/06_Functions/Function_introduction.html',
-      sectionSummary: [
+      title: 'Function introduction',
+      source: '/src/markdowns/06_Functions/Function_introduction.html',
+      summary: [
         `<p>Programs are simply <i>assigning memory, for example assigning a value to a variable</i>, and then <i>running a function for the program to do something with those variables</i>. That's all programs are, and without functions, our programs wouldn't do anything.</p>
         <p>Functions are an important concept in all programming languages.</p>
         `,
@@ -887,9 +874,9 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Higher Order Functions',
-      sectionSource: '/src/markdowns/06_Functions/Higher_Order_Functions.html',
-      sectionSummary: [
+      title: 'Higher Order Functions',
+      source: '/src/markdowns/06_Functions/Higher_Order_Functions.html',
+      summary: [
         `<p>A programming language is said to have <i><u>first-class functions</u> when functions in that language are <u>treated like any other variable</u></i>.</p>`,
         `<h3>Functions are objects</h3>
         <p>In JavaScript functions are objects. This means we can pass them around, like objects, like things that contain data. So besides just doing things for us and performing actions in our code, we can also store them as data, move them around and have some really interesting applications</p>
@@ -904,9 +891,9 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Function syntax',
-      sectionSource: '/src/markdowns/06_Functions/Function_syntax.html',
-      sectionSummary: [
+      title: 'Function syntax',
+      source: '/src/markdowns/06_Functions/Function_syntax.html',
+      summary: [
         `<h3>4 kinds of functions</h3>
         <ul>Broadly speaking, JavaScript has <i>four kinds of functions</i>:
         <li>- <i>Regular function</i>: can return anything; always runs to completion after invocation;</li>
@@ -942,10 +929,10 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Function parameters & arguments',
-      sectionSource:
+      title: 'Function parameters & arguments',
+      source:
         '/src/markdowns/06_Functions/Function_parameters_and_arguments.html',
-      sectionSummary: [
+      summary: [
         `<h3>Parameters vs arguments</h3>
         <ul>Parameters and arguments have slightly different meanings:
         <li>- a function <i>parameter</i> it's <i>declared in the bracket-enclosed list of the <u>function's definition</u></i></li>
@@ -983,10 +970,9 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Function <code>return</code> statement',
-      sectionSource:
-        '/src/markdowns/06_Functions/Function_return_statement.html',
-      sectionSummary: [
+      title: 'Function <code>return</code> statement',
+      source: '/src/markdowns/06_Functions/Function_return_statement.html',
+      summary: [
         `<p>The <code>return</code> statement <i>ends function execution</i> and <i>specifies a value to be returned to the function caller</i>. The <code>return</code> statement allows you to <i>return an arbitrary value from the function</i>.</p>
         <p>By default, if a function's execution doesn't end at a <code>return</code> statement, or if the <code>return</code> keyword doesn't have an expression after it, then the return value is <code>undefined</code>.</p>
         <p><i>One function call can only return one value</i>, but you can <i>simulate the effect of returning multiple values by returning an object or array</i> and destructuring the result.</p>
@@ -1001,9 +987,9 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Function invocation',
-      sectionSource: '/src/markdowns/06_Functions/Function_invocation.html',
-      sectionSummary: [
+      title: 'Function invocation',
+      source: '/src/markdowns/06_Functions/Function_invocation.html',
+      summary: [
         `<p><i><u>Defining</u> a function does not <u>execute</u> it.</i> Defining it names the function and specifies what to do when the function is called. <i>Calling the function actually performs the specified actions with the indicated parameters.</i></p>
         <p><i>The <code>()</code> operator invokes the function</i>: accessing a function without <code>()</code> will return the function object instead of the function result.</p>
         `,
@@ -1022,10 +1008,10 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Function invocation & <code>this</code> keyword',
-      sectionSource:
+      title: 'Function invocation & <code>this</code> keyword',
+      source:
         '/src/markdowns/06_Functions/Function_invocation_&_this_keyword.html',
-      sectionSummary: [
+      summary: [
         `<h3>What is <code>this</code> keyword?</h3>
         <p><i><code>this</code> is the object that the function is a property of.</i></p>
         <p><i>In JavaScript, the <code>this</code> keyword refers to an object: which object depends on how the function that has the <code>this</code> inside of it is being invoked (used or called).</i></p>
@@ -1069,11 +1055,11 @@ const functions = {
       ],
     },
     {
-      sectionTitle:
+      title:
         'The <code>this</code> keyword & <code>call()</code>, <code>apply()</code> and <code>bind()</code>',
-      sectionSource:
+      source:
         '/src/markdowns/06_Functions/The_this_keyword_&_call__apply__and__bind.html',
-      sectionSummary: [
+      summary: [
         `<h3>Manipulate the <code>this</code> keyword</h3>
         <p>Usually <code>this</code> refers to the current object (the calling object). With <code>call()</code>, <code>apply()</code> and <code>bind()</code> <i>you can assign a different <code>this</code> object when calling an existing function</i>.</p>
         <p> With <code>call()</code>, <code>apply()</code> and <code>bind()</code>, <i>you can write a method once, and then inherit it in another object, without having to rewrite the method for the new object</i>.</p>
@@ -1085,10 +1071,10 @@ const functions = {
       ],
     },
     {
-      sectionTitle:
+      title:
         'Self-Invoking functions / Immediately Invoked Function Expressions (IIFE)',
-      sectionSource: '/src/markdowns/06_Functions/Self-Invoked_Functions.html',
-      sectionSummary: [
+      source: '/src/markdowns/06_Functions/Self-Invoked_Functions.html',
+      summary: [
         `<p>Function expressions can be made "self-invoking". <i>A self-invoking expression is invoked (started) automatically, without being called (runs as soon as it is defined).</i></p>
         <p>Function expressions will execute automatically if the expression is followed by <code>()</code>. You have to add parentheses around the function to indicate that it is a function expression.</p>
         <p>You cannot self-invoke a function declaration.</p>
@@ -1102,9 +1088,9 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Closures',
-      sectionSource: '/src/markdowns/06_Functions/Closures.html',
-      sectionSummary: [
+      title: 'Closures',
+      source: '/src/markdowns/06_Functions/Closures.html',
+      summary: [
         `<h3>Local vs global variables</h3>
         <p>JavaScript variables can belong to the local or global scope. In a web page, <i>global variables belong to the <code>window</code> object</i>.</p>
         <p><i>Variables declared within a JavaScript function, become local to the function.</i> Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.</p>
@@ -1137,10 +1123,9 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Rest parameters for function definition',
-      sectionSource:
-        '/src/markdowns/06_Functions/Rest_parameter_and_functions.html',
-      sectionSummary: [
+      title: 'Rest parameters for function definition',
+      source: '/src/markdowns/06_Functions/Rest_parameter_and_functions.html',
+      summary: [
         `<p>The <code>rest</code> parameter syntax <i>allows a function to accept an <u>indefinite number of arguments as an array</u></i>..</p>`,
         `<h3>Don't confuse <code>rest</code> with <code>spread</code></h3>
         <p>The <code>rest</code> operator looks like the <code>spread</code> operator. With <code>spread</code> operator you add three dots (<code>...</code>), but <i>the place where you use the <code>rest</code> operator is different from the <code>spread</code> operator</i>.</p>
@@ -1161,10 +1146,10 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Spread syntax for function calls',
-      sectionSource:
+      title: 'Spread syntax for function calls',
+      source:
         '/src/markdowns/06_Functions/Spread_syntax_and_function_calls.html',
-      sectionSummary: [
+      summary: [
         `<p>Spread syntax <code>...</code> allows an <i>iterable</i>, such as an <u>array</u> or <u>string</u>, to be <i>expanded</i> in places where zero or more arguments (for <i>function calls</i>) or elements (for <i>array literals</i>) are expected. In an <i>object literal</i> spread syntax allows an <u>object expression to be expanded</u> in places where zero or more key-value pairs are expected.</p>
         <p>spread operator <code>...</code> is an operator that in the end <i>pulls out all elements of an array and gives them to you as a standalone list of elements</i>. Spread syntax can be used when all elements from an object or array need to be included in a new array or object, or should be applied one-by-one in a function call's arguments list.</p>
         <p>Only <u>iterable objects</u>, like arrays, can be spread in array and function parameters.</p>
@@ -1176,10 +1161,10 @@ const functions = {
       ],
     },
     {
-      sectionTitle: 'Destructuring parameters',
-      sectionSource:
+      title: 'Destructuring parameters',
+      source:
         '/src/markdowns/06_Functions/Destructuring_function_parameters.html',
-      sectionSummary: [
+      summary: [
         `<p>Destructuring can be applied on function parameters to <i>extract values</i> and <i>assign them to local variables</i>.</p>`,
         `<p>The <i>destructured parameter cannot be omitted (it is required)</i>, otherwise it throws an error.</p>`,
         `<p><i>You can destructure an object directly on function parameters</i> or you can destructure an object inside the function body.</p>`,
@@ -1189,13 +1174,13 @@ const functions = {
 };
 
 const arraysAndSets = {
-  title: 'Data structures: Arrays & Sets',
+  name: 'Data structures: Arrays & Sets',
   sections: [
     {
-      sectionTitle: 'Introduction to Arrays',
-      sectionSource:
+      title: 'Introduction to Arrays',
+      source:
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Introduction_to_Arrays.html',
-      sectionSummary: [
+      summary: [
         `What are "Iterables" and "Array-like Objects"?`,
         `Arrays vs Primitive Values`,
         `An array is a single object that contain multiple values stored in a list`,
@@ -1212,10 +1197,10 @@ const arraysAndSets = {
       ],
     },
     {
-      sectionTitle: 'Destructuring Arrays',
-      sectionSource:
+      title: 'Destructuring Arrays',
+      source:
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Destructuring_arrays.html',
-      sectionSummary: [
+      summary: [
         `What is destructuring?`,
         `Binding and assignment`,
         `Default values`,
@@ -1228,190 +1213,181 @@ const arraysAndSets = {
       ],
     },
     {
-      sectionTitle: 'Spread syntax & array literals',
-      sectionSource:
+      title: 'Spread syntax & array literals',
+      source:
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Spread_syntax_and_arrays.html',
-      sectionSummary: [],
+      summary: [],
     },
     {
-      sectionTitle: 'Rest Pattern in Arrays',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Rest Pattern in Arrays',
+      source: '',
+      summary: [],
     },
     {
-      sectionTitle: '<code>Array.prototype</code> Methods',
-      sectionSource: '',
-      sectionSummary: [],
+      title: '<code>Array.prototype</code> Methods',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'push()',
-          articleSource:
-            '/src/markdowns/07_Data_structures___Arrays_&_Sets/push.html',
+          title: 'push()',
+          source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/push.html',
         },
         {
-          articleTitle: 'unshift()',
-          articleSource:
+          title: 'unshift()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/unshift.html',
         },
         {
-          articleTitle: 'pop()',
-          articleSource:
-            '/src/markdowns/07_Data_structures___Arrays_&_Sets/pop.html',
+          title: 'pop()',
+          source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/pop.html',
         },
         {
-          articleTitle: 'shift()',
-          articleSource:
+          title: 'shift()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/shift.html',
         },
         {
-          articleTitle: 'splice()',
-          articleSource:
+          title: 'splice()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/splice.html',
         },
         {
-          articleTitle: 'reverse()',
-          articleSource:
+          title: 'reverse()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/reverse.html',
         },
         {
-          articleTitle: 'sort()',
-          articleSource:
-            '/src/markdowns/07_Data_structures___Arrays_&_Sets/sort.html',
+          title: 'sort()',
+          source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/sort.html',
         },
         {
-          articleTitle: 'fill()',
-          articleSource:
-            '/src/markdowns/07_Data_structures___Arrays_&_Sets/fill.html',
+          title: 'fill()',
+          source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/fill.html',
         },
         {
-          articleTitle: 'map()',
-          articleSource:
-            '/src/markdowns/07_Data_structures___Arrays_&_Sets/map.html',
+          title: 'map()',
+          source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/map.html',
         },
         {
-          articleTitle: 'filter()',
-          articleSource:
+          title: 'filter()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/filter.html',
         },
         {
-          articleTitle: 'slice()',
-          articleSource:
+          title: 'slice()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/slice.html',
         },
         {
-          articleTitle: 'concat()',
-          articleSource:
+          title: 'concat()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/concat.html',
         },
         {
-          articleTitle: 'flat()',
-          articleSource:
-            '/src/markdowns/07_Data_structures___Arrays_&_Sets/flat.html',
+          title: 'flat()',
+          source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/flat.html',
         },
         {
-          articleTitle: 'flatMap()',
-          articleSource:
+          title: 'flatMap()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/flatMap.html',
         },
         {
-          articleTitle: 'indexOf()',
-          articleSource:
+          title: 'indexOf()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/indexOf.html',
         },
         {
-          articleTitle: 'lastIndexOf()',
-          articleSource:
+          title: 'lastIndexOf()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/lastIndexOf.html',
         },
         {
-          articleTitle: 'findIndex()',
-          articleSource:
+          title: 'findIndex()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/findIndex.html',
         },
         {
-          articleTitle: 'find()',
-          articleSource:
-            '/src/markdowns/07_Data_structures___Arrays_&_Sets/find.html',
+          title: 'find()',
+          source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/find.html',
         },
         {
-          articleTitle: 'includes()',
-          articleSource:
+          title: 'includes()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/includes.html',
         },
         {
-          articleTitle: 'some()',
-          articleSource:
-            '/src/markdowns/07_Data_structures___Arrays_&_Sets/some.html',
+          title: 'some()',
+          source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/some.html',
         },
         {
-          articleTitle: 'every()',
-          articleSource:
+          title: 'every()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/every.html',
         },
         {
-          articleTitle: 'join()',
-          articleSource:
-            '/src/markdowns/07_Data_structures___Arrays_&_Sets/join.html',
+          title: 'join()',
+          source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/join.html',
         },
         {
-          articleTitle: 'reduce()',
-          articleSource:
+          title: 'reduce()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/reduce.html',
         },
         {
-          articleTitle: 'forEach()',
-          articleSource:
+          title: 'forEach()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/forEach.html',
         },
         {
-          articleTitle: 'entries()',
-          articleSource:
+          title: 'entries()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/entries.html',
         },
         {
-          articleTitle: 'Chaining Methods in JavaScript',
-          articleSource: '',
+          title: 'Chaining Methods in JavaScript',
+          source: '',
         },
       ],
     },
     {
-      sectionTitle: 'Array Static Methods',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Array Static Methods',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Array.isArray()',
-          articleSource:
+          title: 'Array.isArray()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/Array.isArray.html',
         },
         {
-          articleTitle: 'Array.from()',
-          articleSource:
+          title: 'Array.from()',
+          source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/Array.from.html',
         },
       ],
     },
     {
-      sectionTitle: 'Which array method to use?',
-      sectionSource:
+      title: 'Which array method to use?',
+      source:
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Which_array_method_to_use.html',
-      sectionSummary: [],
+      summary: [],
     },
     {
-      sectionTitle: 'Data structures - Sets',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Data structures - Sets',
+      source: '',
+      summary: [],
     },
   ],
 };
 
 const objectsAndMaps = {
-  title: 'Data structures: Objects & Maps',
+  name: 'Data structures: Objects & Maps',
   sections: [
     {
-      sectionTitle: 'Introducing JavaScript objects',
-      sectionSource: '',
-      sectionSummary: [
+      title: 'Introducing JavaScript objects',
+      source: '',
+      summary: [
         `What's an object?`,
         `Objects vs Primitive Values`,
         `Creating an object - Object literals`,
@@ -1425,26 +1401,26 @@ const objectsAndMaps = {
       ],
     },
     {
-      sectionTitle: `Object methods and the <code>this</code> keyword`,
-      sectionSource: '',
-      sectionSummary: [],
+      title: `Object methods and the <code>this</code> keyword`,
+      source: '',
+      summary: [],
     },
     {
-      sectionTitle: 'Spread syntax & object literals',
-      sectionSource:
+      title: 'Spread syntax & object literals',
+      source:
         '/src/markdowns/08_Data_structures___Objects_&_Maps/Spread_syntax_and_object_literals.html',
-      sectionSummary: [],
+      summary: [],
     },
     {
-      sectionTitle: 'Rest Pattern in Objects',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Rest Pattern in Objects',
+      source: '',
+      summary: [],
     },
     {
-      sectionTitle: 'Destructuring Objects',
-      sectionSource:
+      title: 'Destructuring Objects',
+      source:
         '/src/markdowns/08_Data_structures___Objects_&_Maps/Destructuring_objects.html',
-      sectionSummary: [
+      summary: [
         `What is destructuring?`,
         `Why to use object destructuring?`,
         `Binding and assignment`,
@@ -1458,100 +1434,100 @@ const objectsAndMaps = {
       ],
     },
     {
-      sectionTitle: '<code>Object.prototype</code> Methods',
-      sectionSource: '',
-      sectionSummary: [],
+      title: '<code>Object.prototype</code> Methods',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'toString()',
-          articleSource:
+          title: 'toString()',
+          source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.prototype.toString.html',
         },
         {
-          articleTitle: 'hasOwnProperty()',
-          articleSource:
+          title: 'hasOwnProperty()',
+          source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.prototype.hasOwnProperty.html',
         },
         {
-          articleTitle: 'isPrototypeOf()',
-          articleSource:
+          title: 'isPrototypeOf()',
+          source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.prototype.isPrototypeOf.html',
         },
       ],
     },
     {
-      sectionTitle: 'Object Static Methods',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Object Static Methods',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Object.keys()',
-          articleSource:
+          title: 'Object.keys()',
+          source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.keys.html',
         },
         {
-          articleTitle: 'Object.values()',
-          articleSource:
+          title: 'Object.values()',
+          source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.values.html',
         },
         {
-          articleTitle: 'Object.entries()',
-          articleSource:
+          title: 'Object.entries()',
+          source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.entries.html',
         },
         {
-          articleTitle: 'Object.fromEntries() vs Object.entries()',
-          articleSource:
+          title: 'Object.fromEntries() vs Object.entries()',
+          source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.fromEntries.html',
         },
         {
-          articleTitle: 'Object.assign()',
-          articleSource:
+          title: 'Object.assign()',
+          source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.assign.html',
         },
         {
-          articleTitle: 'Object.freeze()',
-          articleSource:
+          title: 'Object.freeze()',
+          source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.freeze.html',
         },
         {
-          articleTitle: 'Object.create()',
-          articleSource:
+          title: 'Object.create()',
+          source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.create.html',
         },
       ],
     },
     {
-      sectionTitle: 'Object descriptors',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Object descriptors',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Object.getOwnPropertyDescriptor()',
-          articleSource: '',
+          title: 'Object.getOwnPropertyDescriptor()',
+          source: '',
         },
         {
-          articleTitle: 'Object.defineProperty()',
-          articleSource: '',
+          title: 'Object.defineProperty()',
+          source: '',
         },
       ],
     },
     {
-      sectionTitle: 'Data structures - Maps',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Data structures - Maps',
+      source: '',
+      summary: [],
     },
   ],
 };
 
 const oop = {
-  title: 'Object-Oriented Programming (OOP)',
+  name: 'Object-Oriented Programming (OOP)',
   sections: [
     {
-      sectionTitle: 'Inspiration of JavaScript: Scheme & Java',
-      sectionSource:
+      title: 'Inspiration of JavaScript: Scheme & Java',
+      source:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Scheme_&_Java.html',
-      sectionSummary: [
+      summary: [
         `Scheme was a programming language that have closures and the idea of functions as first class citizens`,
         `In Java community, classes and classical inheritance was really, really important`,
         `JavaScript was inspired by Scheme and Java, and because of this inspiration we have this multi-paradigm language: functional and object-oriented`,
@@ -1559,10 +1535,10 @@ const oop = {
       ],
     },
     {
-      sectionTitle: 'Introduction to "traditional" OOP',
-      sectionSource:
+      title: 'Introduction to "traditional" OOP',
+      source:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Introduction_to_traditional_OOP.html',
-      sectionSummary: [
+      summary: [
         `OOP is a programming paradigm that allow us to organize code`,
         `Traditional OOP: Classes & Instances`,
         `Traditional OOP: Inheritance`,
@@ -1572,10 +1548,10 @@ const oop = {
       ],
     },
     {
-      sectionTitle: 'OOP in JavaScript: Objects prototypes',
-      sectionSource:
+      title: 'OOP in JavaScript: Objects prototypes',
+      source:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/OOP_in_JavaScript_Object_prototypes.html',
-      sectionSummary: [
+      summary: [
         `Prototypes are the mechanism by which JavaScript objects inherit features from one another`,
         `With the help of prototypes objects inherit features from another object, not copy them`,
         `With Prototypal Inheritance we're being efficient with our memory: the fact that objects can share prototypes means that you can have objects with properties that are pointing to the same place in memory`,
@@ -1589,17 +1565,17 @@ const oop = {
       ],
     },
     {
-      sectionTitle:
+      title:
         'What is the difference between <code>__proto__</code> and prototype?',
-      sectionSource:
+      source:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Difference_between_proto_and_prototype.html',
-      sectionSummary: [],
+      summary: [],
     },
     {
-      sectionTitle: 'Prototypal Inheritance: Constructor Function & Prototypes',
-      sectionSource:
+      title: 'Prototypal Inheritance: Constructor Function & Prototypes',
+      source:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Constructor_Function.html',
-      sectionSummary: [
+      summary: [
         `Factory Functions vs Constructor Function`,
         `Constructor Function create a "blueprint" for creating many objects of the same "type"`,
         `We use Constructor Function to build an object using a function`,
@@ -1612,20 +1588,20 @@ const oop = {
       ],
     },
     {
-      sectionTitle:
+      title:
         'Prototypal Inheritance: <code>Object.create()</code> & Prototypes',
-      sectionSource:
+      source:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_Object.create().html',
-      sectionSummary: [
+      summary: [
         'Setting a prototype with <code>Object.create()</code>',
         'More real inheritance than Prototypal Inheritance (Child and Parent)',
       ],
     },
     {
-      sectionTitle: 'Prototypal Inheritance: ES6 Classes & Prototypes',
-      sectionSource:
+      title: 'Prototypal Inheritance: ES6 Classes & Prototypes',
+      source:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Prototypal_Inheritance_ES6_Classes.html',
-      sectionSummary: [
+      summary: [
         `A class is not an object, it is a template for creating an object`,
         `A class encapsulate data with code (methods) to work on that data`,
         `JavaScript classes are only "syntactic sugar" over Constructor Function`,
@@ -1644,15 +1620,15 @@ const oop = {
       ],
     },
     {
-      sectionTitle: 'Prototypal Inheritance on Built-In Objects',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Prototypal Inheritance on Built-In Objects',
+      source: '',
+      summary: [],
     },
     {
-      sectionTitle: 'Object-Oriented vs Functional Programming',
-      sectionSource:
+      title: 'Object-Oriented vs Functional Programming',
+      source:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Object-oriented_vs_functional_programming.html',
-      sectionSummary: [
+      summary: [
         `Inheritance vs Composition`,
         `Inheritance problems: tight coupling, fragile base class & hierarchy`,
         `One of the drawbacks to OOP paradigm and inheritance is that it is based on the fact that things (classes) won't change in the future. We are structuring a class based on what it is`,
@@ -1664,13 +1640,13 @@ const oop = {
 };
 
 const functionalProgramming = {
-  title: 'Functional Programming (FP)',
+  name: 'Functional Programming (FP)',
   sections: [
     {
-      sectionTitle: 'Inspiration of JavaScript: Scheme & Java',
-      sectionSource:
+      title: 'Inspiration of JavaScript: Scheme & Java',
+      source:
         '/src/markdowns/09_Object_Oriented_Programming_(OOP)/Scheme_&_Java.html',
-      sectionSummary: [
+      summary: [
         `Scheme was a programming language that have closures and the idea of functions as first class citizens`,
         `In Java community, classes and classical inheritance was really, really important`,
         `JavaScript was inspired by Scheme and Java, and because of this inspiration we have this multi-paradigm language: functional and object oriented`,
@@ -1678,16 +1654,16 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'Introduction to Functional Programming',
-      sectionSource:
+      title: 'Introduction to Functional Programming',
+      source:
         '/src/markdowns/09A_Functional_Programming_(FP)/Introduction_to_FP.html',
-      sectionSummary: ['Pure functions concept'],
+      summary: ['Pure functions concept'],
     },
     {
-      sectionTitle: 'Functional Programming concepts',
-      sectionSource:
+      title: 'Functional Programming concepts',
+      source:
         '/src/markdowns/09A_Functional_Programming_(FP)/Functional_programming_concepts.html',
-      sectionSummary: [
+      summary: [
         `Pure Functions & Shared State`,
         `Pure Functions & Immutability vs Mutating State`,
         `Pure Functions & Side-Effects`,
@@ -1702,34 +1678,34 @@ const functionalProgramming = {
       ],
     },
     {
-      sectionTitle: 'More about Pure Functions',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'More about Pure Functions',
+      source: '',
+      summary: [],
     },
     {
-      sectionTitle: 'More about Functions Composition',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'More about Functions Composition',
+      source: '',
+      summary: [],
     },
   ],
 };
 
 const standardBuildInObjects = {
-  title: 'Standard Build-In Objects',
+  name: 'Standard Build-In Objects',
   sections: [
     {
-      sectionTitle: 'Introduction to Standard Build-in Objects',
-      sectionSource:
+      title: 'Introduction to Standard Build-in Objects',
+      source:
         '/src/markdowns/10_Standard_Build-In_Objects/Introduction_to_Standard_Build-in_Objects.html',
-      sectionSummary: [
+      summary: [
         `Global objects vs Global Object <code>window</code>`,
         `Standard build-in objects by category`,
       ],
     },
     {
-      sectionTitle: 'String',
-      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/String.html',
-      sectionSummary: [
+      title: 'String',
+      source: '/src/markdowns/10_Standard_Build-In_Objects/String.html',
+      summary: [
         `Creating strings as primitives: string literals & <code>String()</code> function`,
         `Creating strings as objects: <code>String()</code> constructor`,
         `<code>String()</code> function and <code>String()</code> constructor produce different results`,
@@ -1743,84 +1719,84 @@ const standardBuildInObjects = {
       ],
     },
     {
-      sectionTitle: '<code>String.prototype</code> properties & methods',
-      sectionSource: '',
-      sectionSummary: [],
+      title: '<code>String.prototype</code> properties & methods',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'length',
-          articleSource:
+          title: 'length',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.length.html',
         },
         {
-          articleTitle: 'indexOf()',
-          articleSource:
+          title: 'indexOf()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.indexOf.html',
         },
         {
-          articleTitle: 'lastIndexOf()',
-          articleSource:
+          title: 'lastIndexOf()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.lastIndexOf.html',
         },
         {
-          articleTitle: 'slice()',
-          articleSource:
+          title: 'slice()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.slice.html',
         },
         {
-          articleTitle: 'toLowerCase() & toUpperCase()',
-          articleSource:
+          title: 'toLowerCase() & toUpperCase()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.toLowerCase_&_toUpperCase.html',
         },
         {
-          articleTitle: 'trim()',
-          articleSource:
+          title: 'trim()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.trim.html',
         },
         {
-          articleTitle: 'replace()',
-          articleSource: '',
+          title: 'replace()',
+          source: '',
         },
         {
-          articleTitle: 'replaceAll()',
-          articleSource: '',
+          title: 'replaceAll()',
+          source: '',
         },
         {
-          articleTitle: 'includes()',
-          articleSource:
+          title: 'includes()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.includes.html',
         },
         {
-          articleTitle: 'startsWith() & endsWith()',
-          articleSource:
+          title: 'startsWith() & endsWith()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.startsWith_&_endsWith.html',
         },
         {
-          articleTitle: 'split()',
-          articleSource:
+          title: 'split()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.split.html',
         },
         {
-          articleTitle: 'padStart() & padEnd()',
-          articleSource:
+          title: 'padStart() & padEnd()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.padStart_&_padEnd.html',
         },
         {
-          articleTitle: 'repeat()',
-          articleSource:
+          title: 'repeat()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.repeat.html',
         },
       ],
     },
     {
-      sectionTitle: 'Regular Expressions ("RegEx")',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Regular Expressions ("RegEx")',
+      source: '',
+      summary: [],
     },
     {
-      sectionTitle: 'Number',
-      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Number.html',
-      sectionSummary: [
+      title: 'Number',
+      source: '/src/markdowns/10_Standard_Build-In_Objects/Number.html',
+      summary: [
         `Creating numbers as primitives: literal form & <code>Number()</code> function`,
         `Creating numbers as objects: <code>Number()</code> constructor`,
         `<code>Number()</code> function and <code>Number()</code> constructor produce different results`,
@@ -1830,114 +1806,107 @@ const standardBuildInObjects = {
       ],
     },
     {
-      sectionTitle: 'Number Static Methods',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Number Static Methods',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Number.parseInt()',
-          articleSource:
+          title: 'Number.parseInt()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Number.parseInt.html',
         },
         {
-          articleTitle: 'Number.parseFloat()',
-          articleSource:
+          title: 'Number.parseFloat()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Number.parseFloat.html',
         },
         {
-          articleTitle: 'Number.isNaN()',
-          articleSource:
+          title: 'Number.isNaN()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Number.isNaN.html',
         },
         {
-          articleTitle: 'Number.isFinite()',
-          articleSource:
+          title: 'Number.isFinite()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Number.isFinite.html',
         },
         {
-          articleTitle: 'Number.isInteger()',
-          articleSource:
+          title: 'Number.isInteger()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Number.isInteger.html',
         },
       ],
     },
     {
-      sectionTitle: '<code>Number.prototype</code> Methods',
-      sectionSource: '',
-      sectionSummary: [],
+      title: '<code>Number.prototype</code> Methods',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'toFixed()',
-          articleSource:
+          title: 'toFixed()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Number.prototype.toFixed.html',
         },
       ],
     },
     {
-      sectionTitle: 'Math',
-      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Math.html',
-      sectionSummary: [
+      title: 'Math',
+      source: '/src/markdowns/10_Standard_Build-In_Objects/Math.html',
+      summary: [
         `Unlike many other global objects, Math is not a constructor`,
         `All properties and methods of Math are static`,
         `Math works with the Number type, it doesn't work with BigInt`,
       ],
     },
     {
-      sectionTitle: 'Math Static Methods',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Math Static Methods',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Math.max()',
-          articleSource:
-            '/src/markdowns/10_Standard_Build-In_Objects/Math.max.html',
+          title: 'Math.max()',
+          source: '/src/markdowns/10_Standard_Build-In_Objects/Math.max.html',
         },
         {
-          articleTitle: 'Math.min()',
-          articleSource:
-            '/src/markdowns/10_Standard_Build-In_Objects/Math.min.html',
+          title: 'Math.min()',
+          source: '/src/markdowns/10_Standard_Build-In_Objects/Math.min.html',
         },
         {
-          articleTitle: 'Math.round()',
-          articleSource:
-            '/src/markdowns/10_Standard_Build-In_Objects/Math.round.html',
+          title: 'Math.round()',
+          source: '/src/markdowns/10_Standard_Build-In_Objects/Math.round.html',
         },
         {
-          articleTitle: 'Math.floor()',
-          articleSource:
-            '/src/markdowns/10_Standard_Build-In_Objects/Math.floor.html',
+          title: 'Math.floor()',
+          source: '/src/markdowns/10_Standard_Build-In_Objects/Math.floor.html',
         },
         {
-          articleTitle: 'Math.ceil()',
-          articleSource:
-            '/src/markdowns/10_Standard_Build-In_Objects/Math.ceil.html',
+          title: 'Math.ceil()',
+          source: '/src/markdowns/10_Standard_Build-In_Objects/Math.ceil.html',
         },
         {
-          articleTitle: 'Math.trunc()',
-          articleSource:
-            '/src/markdowns/10_Standard_Build-In_Objects/Math.trunc.html',
+          title: 'Math.trunc()',
+          source: '/src/markdowns/10_Standard_Build-In_Objects/Math.trunc.html',
         },
         {
-          articleTitle: 'Math.random()',
-          articleSource:
+          title: 'Math.random()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Math.random.html',
         },
         {
-          articleTitle: 'Math.abs()',
-          articleSource:
-            '/src/markdowns/10_Standard_Build-In_Objects/Math.abs.html',
+          title: 'Math.abs()',
+          source: '/src/markdowns/10_Standard_Build-In_Objects/Math.abs.html',
         },
       ],
     },
     {
-      sectionTitle: 'BigInt',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'BigInt',
+      source: '',
+      summary: [],
     },
     {
-      sectionTitle: 'Date',
-      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Date.html',
-      sectionSummary: [
+      title: 'Date',
+      source: '/src/markdowns/10_Standard_Build-In_Objects/Date.html',
+      summary: [
         `The ECMAScript epoch and timestamps: a JavaScript date is fundamentally specified as the number of milliseconds that have elapsed since the ECMAScript epoch, which is defined as January 1, 1970, UTC (equivalent to the UNIX epoch)`,
         `Date format and time zone conversions: there are several methods available to obtain a date in various formats, as well as to perform time zone conversions`,
         `The <code>Date()</code> constructor can create a Date instance or return a string representing the current time`,
@@ -1948,102 +1917,101 @@ const standardBuildInObjects = {
       ],
     },
     {
-      sectionTitle: '<code>Date.prototype</code> Methods',
-      sectionSource: '',
-      sectionSummary: [],
+      title: '<code>Date.prototype</code> Methods',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'getFullYear()',
-          articleSource:
+          title: 'getFullYear()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getFullYear.html',
         },
         {
-          articleTitle: 'getMonth()',
-          articleSource:
+          title: 'getMonth()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getMonth.html',
         },
         {
-          articleTitle: 'getDate()',
-          articleSource:
+          title: 'getDate()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getDate.html',
         },
         {
-          articleTitle: 'getDay()',
-          articleSource:
+          title: 'getDay()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getDay.html',
         },
         {
-          articleTitle: 'getHours()',
-          articleSource:
+          title: 'getHours()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getHours.html',
         },
         {
-          articleTitle: 'getMinutes()',
-          articleSource:
+          title: 'getMinutes()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getMinutes.html',
         },
         {
-          articleTitle: 'getSeconds()',
-          articleSource:
+          title: 'getSeconds()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getSeconds.html',
         },
         {
-          articleTitle: 'getTime()',
-          articleSource:
+          title: 'getTime()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getTime.html',
         },
         {
-          articleTitle: 'toISOString()',
-          articleSource:
+          title: 'toISOString()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.toISOString.html',
         },
         {
-          articleTitle: 'toLocaleString()',
-          articleSource:
+          title: 'toLocaleString()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.toLocaleString.html',
         },
         {
-          articleTitle: 'setFullYear()',
-          articleSource:
+          title: 'setFullYear()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.setFullYear.html',
         },
       ],
     },
     {
-      sectionTitle: 'Internationalization API (Intl)',
-      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Intl.html',
-      sectionSummary: [
+      title: 'Internationalization API (Intl)',
+      source: '/src/markdowns/10_Standard_Build-In_Objects/Intl.html',
+      summary: [
         `The Intl object provides access to several constructors that do language sensitive string comparison, number formatting, and date and time formatting`,
         `All Intl constructors accept locales and options arguments, for use pattern to identifying locales and determining the one they will actually use`,
         `You can use <code>navigator.language</code> read-only property for setting your locales parameter`,
       ],
     },
     {
-      sectionTitle: 'Intl.DateTimeFormat()',
-      sectionSource:
+      title: 'Intl.DateTimeFormat()',
+      source:
         '/src/markdowns/10_Standard_Build-In_Objects/Intl.DateTimeFormat.html',
-      sectionSummary: [],
+      summary: [],
     },
     {
-      sectionTitle: 'Intl.NumberFormat()',
-      sectionSource:
+      title: 'Intl.NumberFormat()',
+      source:
         '/src/markdowns/10_Standard_Build-In_Objects/Intl.NumberFormat.html',
-      sectionSummary: [],
+      summary: [],
     },
     {
-      sectionTitle: 'Error',
-      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/Error.html',
-      sectionSummary: [
+      title: 'Error',
+      source: '/src/markdowns/10_Standard_Build-In_Objects/Error.html',
+      summary: [
         `Error types`,
         `Error Constructor`,
         `Error instance properties: message, name, cause`,
       ],
     },
     {
-      sectionTitle: 'FormData',
-      sectionSource:
-        '/src/markdowns/10_Standard_Build-In_Objects/FormData.html',
-      sectionSummary: [
+      title: 'FormData',
+      source: '/src/markdowns/10_Standard_Build-In_Objects/FormData.html',
+      summary: [
         `The <code>FormData</code> interface provides a way to easily <i>construct a set of <u>key/value pairs</u> representing form <u>fields</u> and their <u>values</u>, which can then be easily sent using the <code>fetch()</code> or <code>XMLHttpRequest.send()</code> method</i>.`,
         `The <code>FormData()</code> Constructor takes as an <b>optional parameter an HTML <<span>form</span>> element</b>. When optional parameter is specified, the <code>FormData</code> object will be <i>populated with the form's current keys/values using the <u>name property</u> of each element for the keys and their submitted value for the values</i>. It will also encode file input content.`,
         `<code>FormData()</code> object has a series of instance methods that helps you append, delete, set or return keys/values from your <code>FormData()</code> object.`,
@@ -2051,33 +2019,32 @@ const standardBuildInObjects = {
       ],
       sectionArticles: [
         {
-          articleTitle: 'new FormData()',
-          articleSource: '',
+          title: 'new FormData()',
+          source: '',
         },
       ],
     },
     {
-      sectionTitle: 'JSON',
-      sectionSource: '/src/markdowns/10_Standard_Build-In_Objects/JSON.html',
-      sectionSummary: [
+      title: 'JSON',
+      source: '/src/markdowns/10_Standard_Build-In_Objects/JSON.html',
+      summary: [
         `Unlike most global objects, JSON is not a constructor`,
         `JSON is a syntax for serializing objects, arrays, numbers, strings, booleans, and null. It is based upon JavaScript syntax, but is distinct from JavaScript: most of JavaScript is not JSON`,
       ],
     },
     {
-      sectionTitle: 'JSON Static Methods',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'JSON Static Methods',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'JSON.stringify()',
-          articleSource:
+          title: 'JSON.stringify()',
+          source:
             '/src/markdowns/10_Standard_Build-In_Objects/JSON.stringify.html',
         },
         {
-          articleTitle: 'JSON.parse()',
-          articleSource:
-            '/src/markdowns/10_Standard_Build-In_Objects/JSON.parse.html',
+          title: 'JSON.parse()',
+          source: '/src/markdowns/10_Standard_Build-In_Objects/JSON.parse.html',
         },
       ],
     },
@@ -2085,13 +2052,13 @@ const standardBuildInObjects = {
 };
 
 const asynchronous = {
-  title: 'Asynchronous',
+  name: 'Asynchronous',
   sections: [
     {
-      sectionTitle: 'How the Web works: HTTP request & responses',
-      sectionSource:
+      title: 'How the Web works: HTTP request & responses',
+      source:
         '/src/markdowns/11_Asynchronous/How_the_web_works___HTTP_request_&_responses.html',
-      sectionSummary: [
+      summary: [
         `HTTP is a protocol for fetching resources`,
         `HTTP is the foundation of any data exchange on the web`,
         `HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response`,
@@ -2104,10 +2071,10 @@ const asynchronous = {
       ],
     },
     {
-      sectionTitle: 'Introduction to Asynchronous JavaScript',
-      sectionSource:
+      title: 'Introduction to Asynchronous JavaScript',
+      source:
         '/src/markdowns/11_Asynchronous/Introducing_to_Asynchronous_JavaScript.html',
-      sectionSummary: [
+      summary: [
         `JavaScript has only one threat of execution (Call Stack) and so it can only do one thing at a time. There is absolutely no multitasking happening in JavaScript itself.`,
         `Single-Thread Language problem: long-running synchronous functions that work in the Call Stack`,
         `Asynchronous functions & Web APIs`,
@@ -2124,9 +2091,9 @@ const asynchronous = {
       ],
     },
     {
-      sectionTitle: 'Promises',
-      sectionSource: '/src/markdowns/11_Asynchronous/Promises.html',
-      sectionSummary: [
+      title: 'Promises',
+      source: '/src/markdowns/11_Asynchronous/Promises.html',
+      summary: [
         `Traditionally (before promises), asynchronous tasks were designed as callbacks. This lead at the problem known as Callback Hell. A promise allows to transform the callback-based API to a promise-based one`,
         `A promise is an object returned by an asynchronous function that is used as a placeholder for the future result of that asynchronous operation`,
         `The promise object provides methods to handle the eventual success or failure of the operation`,
@@ -2135,18 +2102,18 @@ const asynchronous = {
       ],
     },
     {
-      sectionTitle: 'Building a Promise',
-      sectionSource: '/src/markdowns/11_Asynchronous/Building_a_Promise.html',
-      sectionSummary: [
+      title: 'Building a Promise',
+      source: '/src/markdowns/11_Asynchronous/Building_a_Promise.html',
+      summary: [
         `The <code>Promise()</code> constructor is primarily used to wrap functions that do not already support promises`,
         `If your task is already promise-based, you likely do not need the <code>Promise()</code> constructor`,
         `The <code>Promise()</code> constructor returns a promise object to which you can attach handlers for consuming the promise`,
       ],
     },
     {
-      sectionTitle: 'Consuming a Promise',
-      sectionSource: '/src/markdowns/11_Asynchronous/Consuming_a_Promise.html',
-      sectionSummary: [
+      title: 'Consuming a Promise',
+      source: '/src/markdowns/11_Asynchronous/Consuming_a_Promise.html',
+      summary: [
         `There is no race condition between an asynchronous operation completing and its handlers being attached`,
         `Handling Fulfilled Promise: <code>.then()</code> method (callback function with response parameter)`,
         `Handling Rejected Promise: <code>.catch()</code> method (callback function with error parameter)`,
@@ -2156,9 +2123,9 @@ const asynchronous = {
       ],
     },
     {
-      sectionTitle: 'The Fetch API',
-      sectionSource: '/src/markdowns/11_Asynchronous/Fetch_API.html',
-      sectionSummary: [
+      title: 'The Fetch API',
+      source: '/src/markdowns/11_Asynchronous/Fetch_API.html',
+      summary: [
         `The Fetch API provides an interface for fetching resources (including across the network)`,
         `For making a request and fetching a resource use the <code>fetch()</code> method`,
         `The <code>fetch()</code> method always return a promise`,
@@ -2166,11 +2133,11 @@ const asynchronous = {
       ],
     },
     {
-      sectionTitle:
+      title:
         'How to consume a promise returned by the <code>fetch()</code> method',
-      sectionSource:
+      source:
         '/src/markdowns/11_Asynchronous/How_to_consume_a_promise_returned_by_fetch_method.html',
-      sectionSummary: [
+      summary: [
         `<code>fetch()</code> will always return a promise that need to be handled by consuming it`,
         `Read the response returned by <code>fetch()</code> with: <code>Response.json()</code>, <code>Response.text()</code>, <code>Response.formData()</code>`,
         `<code>Response.json()</code>, <code>Response.text()</code>, <code>Response.formData()</code> always return a promise`,
@@ -2180,10 +2147,9 @@ const asynchronous = {
       ],
     },
     {
-      sectionTitle:
-        'Consuming promises with <code>async</code>/<code>await</code>',
-      sectionSource: '/src/markdowns/11_Asynchronous/async_&_await.html',
-      sectionSummary: [
+      title: 'Consuming promises with <code>async</code>/<code>await</code>',
+      source: '/src/markdowns/11_Asynchronous/async_&_await.html',
+      summary: [
         `<code>async</code> functions`,
         `<code>await</code> operator`,
         `The purpose of <code>async</code>/<code>await</code> is to simplify the syntax necessary to consume promise-based APIs`,
@@ -2202,83 +2168,76 @@ const asynchronous = {
       ],
     },
     {
-      sectionTitle: '<code>Promise.prototype</code> Methods',
-      sectionSource: '',
-      sectionSummary: [],
+      title: '<code>Promise.prototype</code> Methods',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'then()',
-          articleSource:
-            '/src/markdowns/11_Asynchronous/Promise.prototype.then.html',
+          title: 'then()',
+          source: '/src/markdowns/11_Asynchronous/Promise.prototype.then.html',
         },
         {
-          articleTitle: 'catch()',
-          articleSource:
-            '/src/markdowns/11_Asynchronous/Promise.prototype.catch.html',
+          title: 'catch()',
+          source: '/src/markdowns/11_Asynchronous/Promise.prototype.catch.html',
         },
         {
-          articleTitle: 'finally()',
-          articleSource:
+          title: 'finally()',
+          source:
             '/src/markdowns/11_Asynchronous/Promise.prototype.finally.html',
         },
       ],
     },
     {
-      sectionTitle: 'Promise Static Methods',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Promise Static Methods',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Promise.resolve()',
-          articleSource: '/src/markdowns/11_Asynchronous/Promise.resolve.html',
+          title: 'Promise.resolve()',
+          source: '/src/markdowns/11_Asynchronous/Promise.resolve.html',
         },
         {
-          articleTitle: 'Promise.reject()',
-          articleSource: '/src/markdowns/11_Asynchronous/Promise.reject.html',
+          title: 'Promise.reject()',
+          source: '/src/markdowns/11_Asynchronous/Promise.reject.html',
         },
         {
-          articleTitle: 'Promise.all()',
-          articleSource: '/src/markdowns/11_Asynchronous/Promise.all.html',
+          title: 'Promise.all()',
+          source: '/src/markdowns/11_Asynchronous/Promise.all.html',
         },
         {
-          articleTitle: 'Promise.allSettled()',
-          articleSource:
-            '/src/markdowns/11_Asynchronous/Promise.allSettled.html',
+          title: 'Promise.allSettled()',
+          source: '/src/markdowns/11_Asynchronous/Promise.allSettled.html',
         },
         {
-          articleTitle: 'Promise.any()',
-          articleSource: '/src/markdowns/11_Asynchronous/Promise.any.html',
+          title: 'Promise.any()',
+          source: '/src/markdowns/11_Asynchronous/Promise.any.html',
         },
         {
-          articleTitle: 'Promise.race()',
-          articleSource: '/src/markdowns/11_Asynchronous/Promise.race.html',
+          title: 'Promise.race()',
+          source: '/src/markdowns/11_Asynchronous/Promise.race.html',
         },
       ],
     },
     {
-      sectionTitle: 'Timers',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Timers',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'setTimeout()',
-          articleSource:
-            '/src/markdowns/11_Asynchronous/Timers__setTimeout.html',
+          title: 'setTimeout()',
+          source: '/src/markdowns/11_Asynchronous/Timers__setTimeout.html',
         },
         {
-          articleTitle: 'clearTimeout()',
-          articleSource:
-            '/src/markdowns/11_Asynchronous/Timers__clearTimeout.html',
+          title: 'clearTimeout()',
+          source: '/src/markdowns/11_Asynchronous/Timers__clearTimeout.html',
         },
         {
-          articleTitle: 'setInterval()',
-          articleSource:
-            '/src/markdowns/11_Asynchronous/Timers__setInterval.html',
+          title: 'setInterval()',
+          source: '/src/markdowns/11_Asynchronous/Timers__setInterval.html',
         },
         {
-          articleTitle: 'clearInterval()',
-          articleSource:
-            '/src/markdowns/11_Asynchronous/Timers__clearInterval.html',
+          title: 'clearInterval()',
+          source: '/src/markdowns/11_Asynchronous/Timers__clearInterval.html',
         },
       ],
     },
@@ -2286,24 +2245,23 @@ const asynchronous = {
 };
 
 const domManipulation = {
-  title:
-    'Web APIs <br> Document Object Model (DOM) <br> - Properties & Methods -',
+  name: 'Web APIs <br> Document Object Model (DOM) <br> - Properties & Methods -',
   sections: [
     {
-      sectionTitle: 'Introduction to Web APIs',
-      sectionSource:
+      title: 'Introduction to Web APIs',
+      source:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Introduction_to_Web_APIs.html',
-      sectionSummary: [
+      summary: [
         `An API (Application Programming Interface) is a software intermediary (interface) that allows two applications to talk to each other`,
         `In Web development, we have Web APIs that are build into the browser, and we have external Web APIs called Third Party APIs`,
         `In both cases, a Web API is an interface that allows two applications to talk to each other: JavaScript - Browser or JavaScript - Server`,
       ],
     },
     {
-      sectionTitle: 'Introduction to the Document Object Model (DOM)',
-      sectionSource:
+      title: 'Introduction to the Document Object Model (DOM)',
+      source:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Introduction_to_the_DOM.html',
-      sectionSummary: [
+      summary: [
         `The DOM defines a standard for accessing different types of documents (XML, HTML, etc.)`,
         `The DOM is built using multiple APIs that work together`,
         `When it comes to HTML document, HTML DOM API adds support for representing HTML documents to the core DOM`,
@@ -2316,19 +2274,19 @@ const domManipulation = {
       ],
     },
     {
-      sectionTitle: 'How DOM API is organized behind the scenes',
-      sectionSource:
+      title: 'How DOM API is organized behind the scenes',
+      source:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/How_the_DOM_API_is_organized_behind_the_scenes.html',
-      sectionSummary: [
+      summary: [
         `The DOM API is made up of the interfaces that define the functionality of each of the elements in HTML`,
         `The majority of the interfaces that comprise the HTML DOM API map almost one-to-one to individual HTML elements, or to a small group of elements with similar functionality`,
       ],
     },
     {
-      sectionTitle: 'DOM Node Types (Node vs Element)',
-      sectionSource:
+      title: 'DOM Node Types (Node vs Element)',
+      source:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/DOM_Node_Types_(Node_vs_Element).html',
-      sectionSummary: [
+      summary: [
         `Nodes are the objects that make up the DOM, everything in the DOM is a node`,
         `A DOM document consists of a hierarchy of nodes. Each node can have a parent and/or children`,
         `Not just HTML tags are treated as nodes objects, but also text, comments etc. Even whitespace that you have for readability reasons in an HTML document is treated as a node`,
@@ -2337,418 +2295,418 @@ const domManipulation = {
       ],
     },
     {
-      sectionTitle: 'HTML Attributes vs DOM Properties',
-      sectionSource:
+      title: 'HTML Attributes vs DOM Properties',
+      source:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTML_attributes_vs_DOM_properties.html',
-      sectionSummary: [],
+      summary: [],
     },
     {
-      sectionTitle: 'DOM Traversing & select DOM elements',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'DOM Traversing & select DOM elements',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Introduction to DOM Traversing',
-          articleSource:
+          title: 'Introduction to DOM Traversing',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Introduction_to_DOM_Traversing.html',
         },
         {
-          articleTitle: 'document.documentElement',
-          articleSource:
+          title: 'document.documentElement',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/document.documentElement.html',
         },
         {
-          articleTitle: 'document.head',
-          articleSource:
+          title: 'document.head',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/document.head.html',
         },
         {
-          articleTitle: 'document.body',
-          articleSource:
+          title: 'document.body',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/document.body.html',
         },
         {
-          articleTitle: 'document.getElementById()',
-          articleSource:
+          title: 'document.getElementById()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/document.getElementById.html',
         },
         {
-          articleTitle: 'getElementsByTagName() -> (document/element)',
-          articleSource:
+          title: 'getElementsByTagName() -> (document/element)',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/getElementsByTagName.html',
         },
         {
-          articleTitle: 'getElementsByClassName() -> (document/element)',
-          articleSource:
+          title: 'getElementsByClassName() -> (document/element)',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/getElementsByClassName.html',
         },
         {
-          articleTitle: 'querySelector() -> (document/element)',
-          articleSource:
+          title: 'querySelector() -> (document/element)',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/querySelector.html',
         },
         {
-          articleTitle: 'querySelectorAll() -> (document/element)',
-          articleSource:
+          title: 'querySelectorAll() -> (document/element)',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/querySelectorAll.html',
         },
         {
-          articleTitle: 'Element.children',
-          articleSource:
+          title: 'Element.children',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.children.html',
         },
         {
-          articleTitle: 'Node.childNodes',
-          articleSource:
+          title: 'Node.childNodes',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.childNodes.html',
         },
         {
-          articleTitle: 'Element.firstElementChild',
-          articleSource:
+          title: 'Element.firstElementChild',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.firstElementChild.html',
         },
         {
-          articleTitle: 'Element.lastElementChild',
-          articleSource:
+          title: 'Element.lastElementChild',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.lastElementChild.html',
         },
         {
-          articleTitle: 'Node.firstChild',
-          articleSource:
+          title: 'Node.firstChild',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.firstChild.html',
         },
         {
-          articleTitle: 'Node.lastChild',
-          articleSource:
+          title: 'Node.lastChild',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.lastChild.html',
         },
         {
-          articleTitle: 'Element.closest()',
-          articleSource:
+          title: 'Element.closest()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.closest.html',
         },
         {
-          articleTitle: 'Node.parentElement',
-          articleSource:
+          title: 'Node.parentElement',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.parentElement.html',
         },
         {
-          articleTitle: 'Node.parentNode',
-          articleSource:
+          title: 'Node.parentNode',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.parentNode.html',
         },
         {
-          articleTitle: 'Element.previousElementSibling',
-          articleSource:
+          title: 'Element.previousElementSibling',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.previousElementSibling.html',
         },
         {
-          articleTitle: 'Element.nextElementSibling',
-          articleSource:
+          title: 'Element.nextElementSibling',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.nextElementSibling.html',
         },
         {
-          articleTitle: 'Node.previousSibling',
-          articleSource:
+          title: 'Node.previousSibling',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.previousSibling.html',
         },
         {
-          articleTitle: 'Node.nextSibling',
-          articleSource:
+          title: 'Node.nextSibling',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.nextSibling.html',
         },
       ],
     },
     {
-      sectionTitle: 'Tips & tricks for create, insert and remove elements',
-      sectionSource:
+      title: 'Tips & tricks for create, insert and remove elements',
+      source:
         '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Tips_for_create_insert_and_remove_elements.html',
-      sectionSummary: [
+      summary: [
         `If you have a created or selected element, either because you selected it in the DOM with <code>querySelector()</code> or you created it with <code>createElement()</code> and that element is already part of the DOM, so it is already rendered, if you then insert it somewhere else in the DOM, that element is NOT COPIED or anything like that, instead the existing element is DETACHED from the place where it was and moved to the new place. This actually makes a lot of sense since objects are reference values as you learned, and the DOM objects you're working are normal objects in the end, and therefore if we do something with them and we add them somewhere else, we always work with the same object`,
         `If you want a brand new element, you have to create a brand new one with <code>document.createElement()</code>. Just keep in mind that inserting the same element multiple times will move it, because we're working with objects and not with some automatically copied things`,
         `Important (no matter how you insert elements): whenever you insert elements, you MOVE the element to that new place, if you already inserted it before. It's NOT COPIED (you can copy an element via <code>Node.cloneNode(true)</code> though)`,
       ],
     },
     {
-      sectionTitle: 'Create, insert & remove DOM elements',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Create, insert & remove DOM elements',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Element.innerHTML',
-          articleSource:
+          title: 'Element.innerHTML',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.innerHTML.html',
         },
         {
-          articleTitle: 'Element.insertAdjacentHTML()',
-          articleSource:
+          title: 'Element.insertAdjacentHTML()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.insertAdjacentHTML.html',
         },
         {
-          articleTitle: 'document.createElement()',
-          articleSource:
+          title: 'document.createElement()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/document.createElement.html',
         },
         {
-          articleTitle: 'Element.append()',
-          articleSource:
+          title: 'Element.append()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.append.html',
         },
         {
-          articleTitle: 'Node.appendChild()',
-          articleSource:
+          title: 'Node.appendChild()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.appendChild.html',
         },
         {
-          articleTitle: 'Element.prepend()',
-          articleSource:
+          title: 'Element.prepend()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.prepend.html',
         },
         {
-          articleTitle: 'Node.insertBefore()',
-          articleSource:
+          title: 'Node.insertBefore()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.insertBefore.html',
         },
         {
-          articleTitle: 'Element.before()',
-          articleSource:
+          title: 'Element.before()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.before.html',
         },
         {
-          articleTitle: 'Element.after()',
-          articleSource:
+          title: 'Element.after()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.after.html',
         },
         {
-          articleTitle: 'Element.insertAdjacentElement()',
-          articleSource:
+          title: 'Element.insertAdjacentElement()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.insertAdjacentElement.html',
         },
         {
-          articleTitle: 'Element.replaceWith()',
-          articleSource:
+          title: 'Element.replaceWith()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.replaceWith.html',
         },
         {
-          articleTitle: 'Node.replaceChild()',
-          articleSource:
+          title: 'Node.replaceChild()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.replaceChild.html',
         },
         {
-          articleTitle: 'Element.remove()',
-          articleSource:
+          title: 'Element.remove()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.remove.html',
         },
         {
-          articleTitle: 'Node.removeChild()',
-          articleSource:
+          title: 'Node.removeChild()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.removeChild.html',
         },
         {
-          articleTitle: 'Node.cloneNode()',
-          articleSource:
+          title: 'Node.cloneNode()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.cloneNode.html',
         },
       ],
     },
     {
-      sectionTitle: 'Text, Styles, Classes & Attributes',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Text, Styles, Classes & Attributes',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'HTMLElement.innerText',
-          articleSource:
+          title: 'HTMLElement.innerText',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.innerText.html',
         },
         {
-          articleTitle: 'Node.textContent',
-          articleSource:
+          title: 'Node.textContent',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.textContent.html',
         },
         {
-          articleTitle: 'Element.insertAdjacentText()',
-          articleSource:
+          title: 'Element.insertAdjacentText()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.insertAdjacentText.html',
         },
         {
-          articleTitle: 'HTMLElement.style',
-          articleSource:
+          title: 'HTMLElement.style',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.style.html',
         },
         {
-          articleTitle: 'Element.className',
-          articleSource:
+          title: 'Element.className',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.className.html',
         },
         {
-          articleTitle: 'Element.classList (add, remove, toggle, contains)',
-          articleSource:
+          title: 'Element.classList (add, remove, toggle, contains)',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.classList.html',
         },
         {
-          articleTitle: 'Element.getAttribute()',
-          articleSource:
+          title: 'Element.getAttribute()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.getAttribute.html',
         },
         {
-          articleTitle: 'Element.setAttribute()',
-          articleSource:
+          title: 'Element.setAttribute()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.setAttribute.html',
         },
         {
-          articleTitle: 'Element.attributes',
-          articleSource:
+          title: 'Element.attributes',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.attributes.html',
         },
         {
-          articleTitle: 'CSSStyleDeclaration.setProperty()',
-          articleSource: '',
+          title: 'CSSStyleDeclaration.setProperty()',
+          source: '',
         },
         {
-          articleTitle: 'HTMLDataElement.value',
-          articleSource:
+          title: 'HTMLDataElement.value',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLDataElement.value.html',
         },
         {
-          articleTitle: 'HTMLMediaElement.src',
-          articleSource:
+          title: 'HTMLMediaElement.src',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLMediaElement.src.html',
         },
         {
-          articleTitle: 'HTMLImageElement.alt',
-          articleSource:
+          title: 'HTMLImageElement.alt',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLImageElement.alt.html',
         },
         {
-          articleTitle: 'HTMLAnchorElement.href',
-          articleSource:
+          title: 'HTMLAnchorElement.href',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLAnchorElement.href.html',
         },
         {
-          articleTitle: 'HTMLElement.hidden',
-          articleSource:
+          title: 'HTMLElement.hidden',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.hidden.html',
         },
         {
-          articleTitle: 'Element.tagName',
-          articleSource:
+          title: 'Element.tagName',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.tagName.html',
         },
         {
-          articleTitle: 'HTMLElement.dataset',
-          articleSource:
+          title: 'HTMLElement.dataset',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.dataset.html',
         },
         {
-          articleTitle: 'HTMLSelectElement.disabled',
-          articleSource:
+          title: 'HTMLSelectElement.disabled',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLSelectElement.disabled.html',
         },
       ],
     },
     {
-      sectionTitle: 'Other methods & properties',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Other methods & properties',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Element.getBoundingClientRect()',
-          articleSource:
+          title: 'Element.getBoundingClientRect()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.getBoundingClientRect.html',
         },
         {
-          articleTitle: 'Element.clientHeight',
-          articleSource:
+          title: 'Element.clientHeight',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.clientHeight.html',
         },
         {
-          articleTitle: 'Element.clientWidth',
-          articleSource:
+          title: 'Element.clientWidth',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.clientWidth.html',
         },
         {
-          articleTitle: 'HTMLElement.offsetHeight',
-          articleSource:
+          title: 'HTMLElement.offsetHeight',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.offsetHeight.html',
         },
         {
-          articleTitle: 'Element.scrollTo()',
-          articleSource:
+          title: 'Element.scrollTo()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.scrollTo.html',
         },
         {
-          articleTitle: 'Element.scrollBy()',
-          articleSource:
+          title: 'Element.scrollBy()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.scrollBy.html',
         },
         {
-          articleTitle: 'Element.scrollIntoView()',
-          articleSource:
+          title: 'Element.scrollIntoView()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Element.scrollIntoView.html',
         },
         {
-          articleTitle: 'HTMLElement.blur()',
-          articleSource:
+          title: 'HTMLElement.blur()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.blur.html',
         },
         {
-          articleTitle: 'HTMLElement.focus()',
-          articleSource:
+          title: 'HTMLElement.focus()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLElement.focus.html',
         },
         {
-          articleTitle: 'Node.isEqualNode()',
-          articleSource:
+          title: 'Node.isEqualNode()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.isEqualNode.html',
         },
         {
-          articleTitle: 'Node.nodeValue',
-          articleSource:
+          title: 'Node.nodeValue',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.nodeValue.html',
         },
         {
-          articleTitle: 'Node.contains()',
-          articleSource:
+          title: 'Node.contains()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/Node.contains.html',
         },
         {
-          articleTitle: 'document.createRange().createContextualFragment()',
-          articleSource: '',
+          title: 'document.createRange().createContextualFragment()',
+          source: '',
         },
         {
-          articleTitle: 'HTMLInputElement.select()',
-          articleSource:
+          title: 'HTMLInputElement.select()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLInputElement.select.html',
         },
         {
-          articleTitle: 'HTMLTemplateElement.content',
-          articleSource:
+          title: 'HTMLTemplateElement.content',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/HTMLTemplateElement.content.html',
         },
         {
-          articleTitle: 'document.importNode()',
-          articleSource:
+          title: 'document.importNode()',
+          source:
             '/src/markdowns/12_Web_API___Document_Object_Model_(DOM)___Properties_&_Methods/document.importNode.html',
         },
       ],
     },
     {
-      sectionTitle: 'Changing Multiple Elements',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Changing Multiple Elements',
+      source: '',
+      summary: [],
     },
   ],
 };
 
 const domEvents = {
-  title: 'Web APIs <br> Document Object Model (DOM) <br> - Events -',
+  name: 'Web APIs <br> Document Object Model (DOM) <br> - Events -',
   sections: [
     {
-      sectionTitle: 'Introduction to Events',
-      sectionSource:
+      title: 'Introduction to Events',
+      source:
         '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Introduction_to_events.html',
-      sectionSummary: [
+      summary: [
         `Events are actions or occurrences that happen in the system you are programming, which the system tells you about so your code can react to them`,
         `In the case of the Web, events are fired inside the browser window, and tend to be attached to a specific item that resides in it`,
         `Web events are NOT part of the core JavaScript language — they are defined as part of the APIs built into the browser`,
@@ -2758,10 +2716,10 @@ const domEvents = {
       ],
     },
     {
-      sectionTitle: 'Event handling',
-      sectionSource:
+      title: 'Event handling',
+      source:
         '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Event_handling.html',
-      sectionSummary: [
+      summary: [
         `2 ways NOT to add events: event handler properties & inline event handlers`,
         `The recommended mechanism for register event listeners: <code>addEventListener()</code>`,
         `<code>addEventListener()</code> method allows you to add many events to the same element, without overwriting existing events`,
@@ -2771,10 +2729,10 @@ const domEvents = {
       ],
     },
     {
-      sectionTitle: 'The Event Object',
-      sectionSource:
+      title: 'The Event Object',
+      source:
         '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/The_Event_object.html',
-      sectionSummary: [
+      summary: [
         `Sometimes, inside an event handler function, you'll see a parameter specified with a name such as <code>event</code>, <code>evt</code> or <code>e</code>. This is called the Event object, and it is automatically passed to event handlers to provide extra features and information`,
         `The parameter <code>e</code>/<code>evt</code>/<code>event</code> is an Event object, and it represents the event being fired which caused your function to be executed`,
         `The parameter <code>e</code>/<code>evt</code>/<code>event</code> only exists when an event happens`,
@@ -2785,10 +2743,10 @@ const domEvents = {
       ],
     },
     {
-      sectionTitle: 'Event Propagation & Delegation',
-      sectionSource:
+      title: 'Event Propagation & Delegation',
+      source:
         '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Event_propagation_&_delegation.html',
-      sectionSummary: [
+      summary: [
         `Event propagation is a way of defining the element order when an event occurs`,
         `Event propagation: capturing phase, target phase & bubbling phase`,
         `Event bubbling and capture are terms that describe phases in how the browser handles events targeted at nested elements`,
@@ -2800,66 +2758,66 @@ const domEvents = {
       ],
     },
     {
-      sectionTitle: 'Types of Events',
-      sectionSource:
+      title: 'Types of Events',
+      source:
         '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events.html',
-      sectionSummary: [],
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'Element: <code>click</code>',
-          articleSource:
+          title: 'Element: <code>click</code>',
+          source:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___click.html',
         },
         {
-          articleTitle: 'Element: <code>blur</code>',
-          articleSource:
+          title: 'Element: <code>blur</code>',
+          source:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___blur.html',
         },
         {
-          articleTitle: 'Element: <code>wheel</code>',
-          articleSource:
+          title: 'Element: <code>wheel</code>',
+          source:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___wheel.html',
         },
         {
-          articleTitle: 'Document & Element: <code>scroll</code>',
-          articleSource:
+          title: 'Document & Element: <code>scroll</code>',
+          source:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___scroll.html',
         },
         {
-          articleTitle:
+          title:
             'Mouse Events: <code>mouseout</code>, <code>mouseover</code>, <code>mouseenter</code> & <code>mousemove</code>',
-          articleSource:
+          source:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___mouse.html',
         },
         {
-          articleTitle:
+          title:
             'Keyboard Events: <code>keyup</code>, <code>keydown</code>, <code>keypress</code>(deprecated)',
-          articleSource:
+          source:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___keyboard.html',
         },
         {
-          articleTitle: 'HTMLElement: <code>input</code>',
-          articleSource:
+          title: 'HTMLElement: <code>input</code>',
+          source:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___input.html',
         },
         {
-          articleTitle: 'HTMLElement: <code>change</code>',
-          articleSource:
+          title: 'HTMLElement: <code>change</code>',
+          source:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___change.html',
         },
         {
-          articleTitle: 'HTMLFormElement: <code>submit</code>',
-          articleSource:
+          title: 'HTMLFormElement: <code>submit</code>',
+          source:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___submit.html',
         },
         {
-          articleTitle: 'Window: <code>hashchange</code>',
-          articleSource:
+          title: 'Window: <code>hashchange</code>',
+          source:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___hashchange.html',
         },
         {
-          articleTitle: 'Window: <code>load</code>',
-          articleSource:
+          title: 'Window: <code>load</code>',
+          source:
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___load.html',
         },
       ],
@@ -2868,21 +2826,21 @@ const domEvents = {
 };
 
 const otherWebAPIs = {
-  title: 'Other Web APIs',
+  name: 'Other Web APIs',
   sections: [
     {
-      sectionTitle: 'The Intersection Observer API',
-      sectionSource:
+      title: 'The Intersection Observer API',
+      source:
         '/src/markdowns/14_Others_Web_APIs/Intersection_Observer_API.html',
-      sectionSummary: [
+      summary: [
         `The Intersection Observer API provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element, or with a top-level document's viewport`,
         `The Intersection Observer API lets code register a callback function that is executed whenever an element they wish to monitor enters or exits another element (or the viewport)`,
       ],
     },
     {
-      sectionTitle: 'Navigator',
-      sectionSource: '/src/markdowns/14_Others_Web_APIs/Navigator.html',
-      sectionSummary: [
+      title: 'Navigator',
+      source: '/src/markdowns/14_Others_Web_APIs/Navigator.html',
+      summary: [
         `The Navigator interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities`,
         `<code>navigator.language</code>`,
         `<code>navigator.languages</code>`,
@@ -2892,9 +2850,9 @@ const otherWebAPIs = {
       ],
     },
     {
-      sectionTitle: 'Storage',
-      sectionSource: '/src/markdowns/14_Others_Web_APIs/Storage.html',
-      sectionSummary: [
+      title: 'Storage',
+      source: '/src/markdowns/14_Others_Web_APIs/Storage.html',
+      summary: [
         `The Storage interface provides access to a particular domain's session or local storage`,
         `The <code>localStorage</code> read-only property of the window interface allows you to access a Storage object`,
         `<code>localStorage.setItem()</code>`,
@@ -2906,9 +2864,9 @@ const otherWebAPIs = {
       ],
     },
     {
-      sectionTitle: 'Location',
-      sectionSource: '/src/markdowns/14_Others_Web_APIs/Location.html',
-      sectionSummary: [
+      title: 'Location',
+      source: '/src/markdowns/14_Others_Web_APIs/Location.html',
+      summary: [
         `The <code>window.location</code> & <code>document.location</code> read-only properties returns a Location object, which contains information about the URL of the document and provides methods for changing that URL and loading another URL`,
         `<code>window.location.href</code>`,
         `<code>window.location.pathname</code>`,
@@ -2917,17 +2875,17 @@ const otherWebAPIs = {
       ],
     },
     {
-      sectionTitle: 'History',
-      sectionSource: '/src/markdowns/14_Others_Web_APIs/History.html',
-      sectionSummary: [
+      title: 'History',
+      source: '/src/markdowns/14_Others_Web_APIs/History.html',
+      summary: [
         `The History object allows manipulation of the browser session history`,
         `<code>window.history.pushState()</code>`,
       ],
     },
     {
-      sectionTitle: 'AbortController',
-      sectionSource: '/src/markdowns/14_Others_Web_APIs/AbortController.html',
-      sectionSummary: [
+      title: 'AbortController',
+      source: '/src/markdowns/14_Others_Web_APIs/AbortController.html',
+      summary: [
         `The <code>AbortController</code> interface represents a controller object that allows you to <i>abort one or more Web requests as and when desired</i>.`,
         `You can create a new <code>AbortController</code> object using the <code>AbortController()</code> constructor.`,
         `Instance properties & methods:
@@ -2938,37 +2896,33 @@ const otherWebAPIs = {
       ],
     },
     {
-      sectionTitle: 'window',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'window',
+      source: '',
+      summary: [],
       sectionArticles: [
         {
-          articleTitle: 'window.open()',
-          articleSource: '/src/markdowns/14_Others_Web_APIs/window.open.html',
+          title: 'window.open()',
+          source: '/src/markdowns/14_Others_Web_APIs/window.open.html',
         },
         {
-          articleTitle: 'window.pageXOffset vs window.scrollX',
-          articleSource:
-            '/src/markdowns/14_Others_Web_APIs/window.scrollX.html',
+          title: 'window.pageXOffset vs window.scrollX',
+          source: '/src/markdowns/14_Others_Web_APIs/window.scrollX.html',
         },
         {
-          articleTitle: 'window.pageYOffset vs window.scrollY',
-          articleSource:
-            '/src/markdowns/14_Others_Web_APIs/window.scrollY.html',
+          title: 'window.pageYOffset vs window.scrollY',
+          source: '/src/markdowns/14_Others_Web_APIs/window.scrollY.html',
         },
         {
-          articleTitle: 'window.scrollTo()',
-          articleSource:
-            '/src/markdowns/14_Others_Web_APIs/window.scrollTo.html',
+          title: 'window.scrollTo()',
+          source: '/src/markdowns/14_Others_Web_APIs/window.scrollTo.html',
         },
         {
-          articleTitle: 'window.innerHeight',
-          articleSource:
-            '/src/markdowns/14_Others_Web_APIs/window.innerHeight.html',
+          title: 'window.innerHeight',
+          source: '/src/markdowns/14_Others_Web_APIs/window.innerHeight.html',
         },
         {
-          articleTitle: 'window.getComputedStyle()',
-          articleSource:
+          title: 'window.getComputedStyle()',
+          source:
             '/src/markdowns/14_Others_Web_APIs/window.getComputedStyle.html',
         },
       ],
@@ -2977,13 +2931,13 @@ const otherWebAPIs = {
 };
 
 const modulesAndTooling = {
-  title: 'Modern JavaScript Development: Modules and Tooling',
+  name: 'Modern JavaScript Development: Modules and Tooling',
   sections: [
     {
-      sectionTitle: 'Introducing to JavaScript Modules',
-      sectionSource:
+      title: 'Introducing to JavaScript Modules',
+      source:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Introducing_to_JavaScript_modules.html',
-      sectionSummary: [
+      summary: [
         `Splitting Code in a Sub-optimal Way`,
         `The Module Pattern with IIFE`,
         `CommonJS & AMD Modules`,
@@ -2997,10 +2951,10 @@ const modulesAndTooling = {
       ],
     },
     {
-      sectionTitle: 'Introduction to NPM',
-      sectionSource:
+      title: 'Introduction to NPM',
+      source:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Introduction_to_NPM.html',
-      sectionSummary: [
+      summary: [
         `Project Limitations & Why We Need Tools`,
         `Setting Up a npm Project`,
         `Working with npm Packages`,
@@ -3008,25 +2962,25 @@ const modulesAndTooling = {
       ],
     },
     {
-      sectionTitle: 'Working with JavaScript Libraries',
-      sectionSource: '',
-      sectionSummary: [
+      title: 'Working with JavaScript Libraries',
+      source: '',
+      summary: [
         `What & Why`,
         `Adding Libraries`,
         `Example: Axios Library & Http Requests`,
       ],
     },
     {
-      sectionTitle: 'Bundling With Parcel and NPM Scripts',
-      sectionSource:
+      title: 'Bundling With Parcel and NPM Scripts',
+      source:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Bundling_with_Parcel_and_NPM_Scripts.html',
-      sectionSummary: [],
+      summary: [],
     },
     {
-      sectionTitle: 'Configuring Babel and Polyfilling',
-      sectionSource:
+      title: 'Configuring Babel and Polyfilling',
+      source:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Configuring_Babel_and_Polyfilling.html',
-      sectionSummary: [
+      summary: [
         `Compile your modern JavaScript code back to ES5 code with Babel`,
         `What Is "Browser Support" About?`,
         `Determining Browser Support For A JavaScript Feature`,
@@ -3037,16 +2991,16 @@ const modulesAndTooling = {
       ],
     },
     {
-      sectionTitle: 'Version control with Git',
-      sectionSource:
+      title: 'Version control with Git',
+      source:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Version_control_with_Git.html',
-      sectionSummary: [],
+      summary: [],
     },
     {
-      sectionTitle: 'Model-View-Controller (MVC) Arhitecture',
-      sectionSource:
+      title: 'Model-View-Controller (MVC) Arhitecture',
+      source:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Model_View_Controller_(MVC)_Arhitecture.html',
-      sectionSummary: [
+      summary: [
         `Why we worry about software arhitecture?`,
         `The perfect architecture (Structure, Maintainability, Expandability)`,
         `Components of any arhitecture`,
@@ -3054,27 +3008,27 @@ const modulesAndTooling = {
       ],
     },
     {
-      sectionTitle: 'Refactoring Our Code: The DRY Principle',
-      sectionSource: '',
-      sectionSummary: [],
+      title: 'Refactoring Our Code: The DRY Principle',
+      source: '',
+      summary: [],
     },
     {
-      sectionTitle: 'Prettier',
-      sectionSource:
+      title: 'Prettier',
+      source:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Prettier.html',
-      sectionSummary: [],
+      summary: [],
     },
     {
-      sectionTitle: 'Terminal commands',
-      sectionSource:
+      title: 'Terminal commands',
+      source:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Terminal_commands.html',
-      sectionSummary: [],
+      summary: [],
     },
     {
-      sectionTitle: 'Markdowns',
-      sectionSource:
+      title: 'Markdowns',
+      source:
         '/src/markdowns/15_Modern_JavaScript_Development___Modules_and_Tooling/Markdowns.html',
-      sectionSummary: [],
+      summary: [],
     },
   ],
 };
