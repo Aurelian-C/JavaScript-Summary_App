@@ -19,67 +19,30 @@ class ApplicationView {
     `;
       })
       .join('');
+
     return markupString;
   }
 
   _generateMarkupArticles(article) {
     let descriptor = '';
-    let tooltip = '';
+
     if (article.sectionArticles) {
       descriptor = article.sectionArticles
         .map(descriptor => {
           if (!descriptor.articleTitle) return;
-          // let tooltip = '';
-          if (descriptor.articleSummary) {
-            const tooltips = descriptor.articleSummary
-              .map(summary => {
-                return `<p class="tooltip_paragraph">${summary}</p>`;
-              })
-              .join('');
 
-            tooltip = `
-              <div class="tooltip">
-                ${tooltips}
-              </div>
-              `;
-          }
           return `
             <li class="card__descriptor">
-            ${
-              descriptor.articleSource
-                ? `<a class="card__descriptor-anchor" href="${descriptor.articleSource}" target="_blank">${descriptor.articleTitle}</a>`
-                : `<p class="card__descriptor-title">${descriptor.articleTitle}</p>`
-            }
-            ${tooltip}
+              <div class="card__descriptor-title" data-title="${descriptor.articleTitle}">${descriptor.articleTitle}</div>
             </li>`;
         })
         .join('');
     }
 
-    // let tooltip = '';
-    if (article.sectionSummary.length > 0) {
-      const tooltips = article.sectionSummary
-        .map(summary => {
-          return `<div class="tooltip_paragraph">${summary}</div>`;
-        })
-        .join('');
-
-      tooltip = `
-      <div class="tooltip">
-        ${tooltips}
-      </div>
-      `;
-    }
-
     return `
       <div class="card__article">
         <div class="card__article-wrapper">
-          ${
-            article.sectionSource
-              ? `<a class="card__article-anchor" href="${article.sectionSource}" target="_blank">${article.sectionTitle}</a>`
-              : `<p class="card__article-title">${article.sectionTitle}</p>`
-          }
-          ${tooltip}
+          <div class="card__article-title" data-title="${article.sectionTitle}">${article.sectionTitle}</div>
         </div>
         <ul class="card__descriptors">
           ${descriptor}

@@ -268,46 +268,49 @@ b code {
 
 /* Tooltip container */
 .tooltip {
-  visibility: hidden;
-  min-width: 50rem;
-  background-color: rgb(62, 62, 62);
+  max-width: 70vw;
+  height: 100vh;
+  background-color: rgb(43, 43, 43);
   color: #fff;
+  border: 1px solid rgb(107, 107, 107);
   border-radius: 6px;
-  padding: 5px;
-  text-indent: 20px;
-  text-align: start;
-  font-size: 1.3rem;
+  padding: 10px 25px;
+  font-size: var(--article-title--font-size);
   font-style: normal;
-  top: 110%;
+  overflow-y: scroll;
+  /* column-count: auto;
+  column-width: 25rem; */
+
+  position: fixed;
+  top: 0;
   left: 0;
-  height: fit-content;
-  opacity: 0;
+  z-index: 9999;
+  transform: translateX(-100%);
 
-  /* Position the tooltip text */
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-
-  /* Fade in tooltip */
-  /* opacity: 0; */
-  transition: opacity 0.3s;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Tooltip arrow */
-/* .tooltip__text::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-} */
+.show {
+  transform: translateX(0%);
+}
+
+.tooltip h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card__title .tooltip {
+  left: -30%;
+  min-width: 50rem;
+  text-align: left;
+}
 
 .tooltip_paragraph {
-  font-size: 1.3rem;
-  padding: 5px;
+  text-indent: 20px;
+}
+
+.tooltip_paragraph:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .tooltip_paragraph h3 {
@@ -318,39 +321,61 @@ b code {
   border-radius: 5px;
   margin: 0 0 3px 20px;
   text-indent: 0px;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 .tooltip_paragraph p,
 .tooltip_paragraph ul {
   margin-bottom: 8px;
-  line-height: 19px;
+  line-height: 23px;
   text-align: justify;
 }
 
-.tooltip_paragraph ul {
+.tooltip_paragraph li {
+  text-indent: 40px;
+}
+
+ul {
   list-style: none;
 }
 
-.tooltip_paragraph i {
-  /* color: rgb(117 255 143); */
+/* Tooltip box style marked word */
+i,
+i code {
+  color: rgb(138, 255, 0);
+  font-style: normal;
+}
+
+b,
+b code {
+  font-size: 1.5rem;
   color: rgb(255, 255, 0);
 }
 
-/* .tooltip_paragraph:not(:last-child) {
-  margin-bottom: 10px;
-} */
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover {
-  visibility: visible;
-  opacity: 1;
+/* Classes added by tooltip words lenght */
+.less__words--800 {
+  column-count: 1;
 }
 
-.card__article-title:hover + .tooltip,
-.card__article-anchor:hover + .tooltip,
-.card__descriptor-title:hover + .tooltip,
-.card__descriptor-anchor:hover + .tooltip {
-  opacity: 1;
-  visibility: visible;
+.many__words--4500 {
+  column-count: auto;
+  min-width: 70vw;
+}
+
+.container2 {
+  position: relative;
+}
+
+.fa-xmark {
+  display: block;
+  width: fit-content;
+  margin: 0 1rem 1rem auto;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .tooltip {
+    max-width: 100%;
+  }
 }

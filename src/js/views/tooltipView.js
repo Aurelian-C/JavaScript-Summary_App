@@ -1,28 +1,45 @@
 class TooltipView {
-  start() {
-    document.body.addEventListener('mouseover', function (e) {
-      const mainArticle = e.target.closest('.card__article-wrapper');
-      const subArticle = e.target.closest('.card__descriptor');
+  _containerTooltip = document.querySelector('.tooltip');
 
-      if (!mainArticle && !subArticle) return;
+  start(data) {
+    document.body.addEventListener('click', e => {
+      const cardArticle = e.target.closest('.card__article');
+      const closeButton = e.target.closest('.fa-xmark');
 
-      let tooltipContainer;
-      if (mainArticle) {
-        tooltipContainer = mainArticle.querySelector('.tooltip');
-      }
-      if (subArticle) {
-        tooltipContainer = subArticle.querySelector('.tooltip');
+      if (closeButton || !this._containerTooltip.contains(e.target)) {
+        this._containerTooltip.classList.remove('show');
       }
 
-      const bodyWidth = document.body.getBoundingClientRect().width;
-      const tooltipContainerPosition = tooltipContainer.getBoundingClientRect();
-      const tooltipContainerOffsetX =
-        tooltipContainerPosition.left + tooltipContainerPosition.width;
+      if (!cardArticle) return;
 
-      if (tooltipContainerOffsetX > bodyWidth) {
-        const moveX = tooltipContainerOffsetX + 10 - bodyWidth;
-        tooltipContainer.style.transform = `translateX(-${moveX}px)`;
+      const elementArticle = e.target.closest('.card__article-title');
+      const elementDescriptor = e.target.closest('.card__descriptor-title');
+
+      let obj = null;
+      if (elementArticle) {
+        const { title } = elementArticle.dataset;
+        obj = data.find(el => el.sectionTitle === title);
       }
+
+      if (elementDescriptor) {
+        const { title } = elementDescriptor.dataset;
+        console.log(title);
+        obj = data.find(el => el.sectionTitle === title);
+      }
+
+      if (!obj.sectionSummary) return;
+
+      const markup = obj.sectionSummary
+        .map(paragraph => `<div class="tooltip_paragraph">${paragraph}</div>`)
+        .join('');
+
+      this._containerTooltip.innerHTML =
+        '<i class="fa-solid fa-xmark"></i>' +
+        `<h2>${obj.sectionTitle}</h2>` +
+        markup +
+        `<a href=${obj.sectionSource} class="paragraph__article-anchor" target="_blank">Read more about this article!</a>`;
+
+      this._containerTooltip.classList.add('show');
     });
   }
 }

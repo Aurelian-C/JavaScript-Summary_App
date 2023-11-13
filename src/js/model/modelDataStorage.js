@@ -3097,3 +3097,5 @@ export const dataStorage = [
   otherWebAPIs,
   modulesAndTooling,
 ];
+
+export const allSections = dataStorage.map(el => el.sections).flat();
