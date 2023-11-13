@@ -23,11 +23,10 @@ class TooltipView {
 
       if (elementDescriptor) {
         const { id } = elementDescriptor.dataset;
-        console.log(title);
         obj = data.find(el => el.title === id);
       }
 
-      if (!obj.summary) return;
+      if (!obj.summary.length) return;
 
       const markup = obj.summary
         .map(paragraph => `<div class="tooltip_paragraph">${paragraph}</div>`)

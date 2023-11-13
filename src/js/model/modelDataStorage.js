@@ -3052,4 +3052,35 @@ export const dataStorage = [
   modulesAndTooling,
 ];
 
-export const allSections = dataStorage.map(el => el.sections).flat();
+const allSections = dataStorage.map(el => el.sections).flat();
+export const allArticles = allSections
+  .map(el => {
+    let subArticles;
+    if (el.sectionArticles?.length > 0) {
+      subArticles = el.sectionArticles.map(subElement => {
+        return {
+          title: subElement.title,
+          source: subElement.source,
+          summary: subElement.summary,
+        };
+      });
+    }
+
+    if (subArticles) {
+      return [
+        {
+          title: el.title,
+          source: el.source,
+          summary: el.summary,
+        },
+        ...subArticles,
+      ];
+    }
+
+    return {
+      title: el.title,
+      source: el.source,
+      summary: el.summary,
+    };
+  })
+  .flat();
