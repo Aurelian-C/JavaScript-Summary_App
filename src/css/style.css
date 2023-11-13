@@ -92,14 +92,6 @@ body {
   box-shadow: 10px 10px 25px #000000b3;
 }
 
-.card__icon {
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 2.2rem;
-}
-
 .card__title {
   font-size: var(--card-title--font-size);
   text-align: center;
@@ -128,18 +120,6 @@ body {
   text-align: center;
 }
 
-.card__article-anchor:link,
-.card__article-anchor:visited {
-  color: var(--has-content-color);
-  letter-spacing: 0.2px;
-  word-spacing: 1px;
-  cursor: pointer;
-  font-size: var(--article-title--font-size);
-  font-weight: 400;
-  text-decoration: none;
-  position: relative;
-}
-
 .card__article-title {
   letter-spacing: 0.2px;
   word-spacing: 1px;
@@ -149,8 +129,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.card__article-title::before,
-.card__article-anchor::before {
+.card__article-title::before {
   content: '';
   position: absolute;
   top: 0;
@@ -163,8 +142,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.card__article-title::after,
-.card__article-anchor::after {
+.card__article-title::after {
   content: '';
   position: absolute;
   top: 0;
@@ -178,20 +156,17 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.card__article:hover .card__article-title::before,
-.card__article:hover .card__article-anchor::before {
+.card__article:hover .card__article-title::before {
   opacity: 0.8;
   height: 100%;
 }
 
-.card__article:hover .card__article-title::after,
-.card__article:hover .card__article-anchor::after {
+.card__article:hover .card__article-title::after {
   opacity: 0.8;
   width: 100%;
 }
 
-.card__article:hover .card__article-title,
-.card__article:hover .card__article-anchor {
+.card__article:hover .card__article-title {
   padding: 0px 5px;
 }
 
@@ -207,13 +182,6 @@ body {
 .card__descriptor {
   margin-top: 3px;
   position: relative;
-}
-
-.card__descriptor-anchor:link,
-.card__descriptor-anchor:visited {
-  color: var(--has-content-color);
-  text-decoration: none;
-  font-size: var(--descriptor-title--font-size);
 }
 
 .card__descriptor-title {
@@ -239,10 +207,6 @@ body {
 
 .hidden {
   display: none;
-}
-
-a > code {
-  color: #ffb7b7;
 }
 
 code {
@@ -278,8 +242,6 @@ b code {
   font-size: var(--article-title--font-size);
   font-style: normal;
   overflow-y: scroll;
-  /* column-count: auto;
-  column-width: 25rem; */
 
   position: fixed;
   top: 0;
@@ -333,6 +295,16 @@ b code {
 
 .tooltip_paragraph li {
   text-indent: 40px;
+}
+
+.paragraph__article-anchor:link,
+.paragraph__article-anchor:visited {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.9rem;
+  color: var(--has-content-color);
+  cursor: pointer;
 }
 
 ul {

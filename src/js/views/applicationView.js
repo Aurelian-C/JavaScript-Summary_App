@@ -33,7 +33,9 @@ class ApplicationView {
 
           return `
             <li class="card__descriptor">
-              <div class="card__descriptor-title" data-id="${descriptor.title}">${descriptor.title}</div>
+              <div class="card__descriptor-title ${
+                descriptor.summary?.length && 'info__title--has-content'
+              }" data-id="${descriptor.title}">${descriptor.title}</div>
             </li>`;
         })
         .join('');
@@ -42,7 +44,9 @@ class ApplicationView {
     return `
       <div class="card__article">
         <div class="card__article-wrapper">
-          <div class="card__article-title" data-id="${article.title}">${article.title}</div>
+          <div class="card__article-title ${
+            article.summary?.length && 'info__title--has-content'
+          }" data-id="${article.title}">${article.title}</div>
         </div>
         <ul class="card__descriptors">
           ${descriptor}
