@@ -1,4 +1,4 @@
-# Array.prototype.splice()
+# `Array.prototype.splice()`
 
 The `splice()` method ==**adds**== _and/or_ ==**removes**== array elements. The `splice()` method ==mutates the original array==.
 
@@ -7,7 +7,7 @@ The `splice()` method:
 - adds and/or removes array elements;
 - mutates the original array.
 
-> **Note**: To access part of an array **without modifying** it, you can use [`Array.prototype.slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice).
+> **NOTE**: To access part of an array **without modifying** it, you can use [`Array.prototype.slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice).
 
 ## Syntax
 
@@ -22,7 +22,7 @@ array.splice(startIndex, deleteCount, item1, ....., itemN)
 
 #### ==**startIndex**== _(required)_
 
-The ==index at which start to add/remove items==. If greater than the length of the array, `startIndex` will be set to the length of the array. In this case, no element will be deleted but the method will behave as an adding function, adding as many elements as items provided. Negative value defines the position from the end of the array.
+The ==index at which start to add/remove items==. If greater than the length of the array, `startIndex` will be set to the length of the array. In this case, no element will be deleted but the method will behave as an adding function, adding as many elements as items provided. ==Negative value defines the position from the end of the array.==
 
 #### ==**deleteCount**== _(optional)_
 
@@ -61,7 +61,7 @@ fruits.splice(2, 2);
 fruits.splice(2, 1, 'Lemon', 'Kiwi');
 ```
 
-## Reference
+## References
 
-1. [splice() method - w3schools](https://www.w3schools.com/jsref/jsref_splice.asp)
-2. [Array.prototype.splice() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+1. [`splice()` method - w3schools](https://www.w3schools.com/jsref/jsref_splice.asp)
+2. [`Array.prototype.splice()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)

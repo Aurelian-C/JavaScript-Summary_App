@@ -1,8 +1,8 @@
-## Array.prototype.fill()
+## `Array.prototype.fill()`
 
 The `fill()` method ==**changes all elements** in an array to a **static value**==, from a ==start index== (default 0) to an ==end index== (default `array.length`). It ==returns the **modified array**==.
 
-> **Note**: start index and end index position can be specified. If not, all elements will be filled.
+> **NOTE**: start index and end index position can be specified. If not, all elements will be filled.
 >
 > Using `Array.prototype.fill()` on an empty array would not modify it, as the array has nothing to be modified. To use `Array.prototype.fill()` when declaring an array, make sure to assign slots to the array.
 
@@ -60,7 +60,7 @@ const arr = Array(3).fill({}); // [{}, {}, {}]
 arr[0].hi = "hi";              // [{ hi: "hi" }, { hi: "hi" }, { hi: "hi" }]
 ```
 
-## Reference
+## References
 
-1. [Array.prototype.fill() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)
-2. [fill() - w3schools](https://www.w3schools.com/jsref/jsref_fill.asp)
+1. [`Array.prototype.fill()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)
+2. [`fill()` - w3schools](https://www.w3schools.com/jsref/jsref_fill.asp)

@@ -1,8 +1,8 @@
-# Spread syntax (...) and arrays
+# Spread syntax `...` and arrays
 
 Spread syntax `...` allows an ==**iterable**==, such as an ==array== or ==string==, to be ==**expanded**== in places where zero or more arguments (for ==**function** calls==) or elements (for ==**array** literals==) are expected. In an ==**object ** literal== spread syntax allows an _object expression to be expanded_ in places where zero or more key-value pairs are expected.
 
-> **Note**: spread operator `...` is an operator that in the end pulls out all elements of an array and gives them to you as a standalone list of elements.
+> **NOTE**: spread operator `...` is an operator that in the end pulls out all elements of an array and gives them to you as a standalone list of elements.
 
 Spread syntax looks exactly like rest syntax. In a way, _spread syntax is the opposite of [rest syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)_. ==Spread syntax **"expands"** an array into its elements, while rest syntax collects multiple elements and **"condenses"** them into a single element==.
 
@@ -55,9 +55,9 @@ let lyrics = ['head', ...parts, 'and', 'toes'];
 //  ["head", "shoulders", "knees", "and", "toes"]
 ```
 
-> **Note**: spread operator `...` is an operator that in the end pulls out all elements of an array and gives them to you as a standalone list of elements.
+> **NOTE**: Spread operator `...` is an operator that in the end ==pulls out all elements of an array and gives them to you as a standalone list of elements==.
 
-> **Note**: Just like `spread` for functions argument lists, `...` can be used anywhere in the array literal, and may be used more than once.
+> **NOTE**: Just like `spread` for functions argument lists, `...` can be used ==anywhere in the array literal==, and may be used ==more than once==.
 
 ### Copy an array
 
@@ -70,7 +70,7 @@ arr2.push(4);
 //  arr remains unaffected
 ```
 
-> **Note**: Spread syntax effectively goes one level deep while copying an array. Therefore, it may be unsuitable for copying multidimensional arrays, as the following example shows. (The same is true with `Object.assign()` and spread syntax)
+> **NOTE**: Spread syntax effectively goes one level deep while copying an array. Therefore, it may be unsuitable for copying multidimensional arrays, as the following example shows. (The same is true with `Object.assign()` and spread syntax)
 >
 > ```js
 > let a = [[1], [2], [3]];
@@ -84,7 +84,7 @@ arr2.push(4);
 > //  [[], [2], [3]]
 > ```
 
-==An important thing to keep in mind is when you use the spread operator to copies items that are reference values (arrays/objects), **you are copy the reference value of that items**==. The `persons` array store in fact a bunch of address to the places in memory of the items, so `copiesPersons` is a brand new array but you are copying inside of it all these address that you have in `persons` array. So the objects inside the `copiedPersons` array are still the old objects inside `persons` array.
+==An important thing to keep in mind is when you use the spread operator to copy an array that store inside it items that are reference values (arrays/objects), **you are copy the reference value of that items**==. The `persons` array store in fact a bunch of address to the places in memory of the items, so `copiesPersons` is a brand new array but you are copying inside of it all these address that you have in `persons` array. So the objects inside the `copiedPersons` array are still the old objects inside `persons` array.
 
 ```js
 const persons = [
@@ -146,7 +146,7 @@ arr1 = [...arr2, ...arr1];
 //  arr1 is now [3, 4, 5, 0, 1, 2]
 ```
 
-> Note: Unlike `unshift()`, this creates a new `arr1`, and does not modify the original `arr1` array in-place.
+> **NOTE**: Unlike `unshift()`, this creates a new `arr1`, and does not modify the original `arr1` array in-place.
 
 ## Some considerations about spread syntax
 

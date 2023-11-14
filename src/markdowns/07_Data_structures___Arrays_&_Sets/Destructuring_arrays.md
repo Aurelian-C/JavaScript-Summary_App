@@ -41,7 +41,7 @@ console.log(`R: ${red}, G: ${green}, B: ${blue}`);
 
 In this example, we have assigned the items in the `rgb` array to three local variables: `red`, `green` and `blue` using array destructuring. Notice that each variable is mapped to the corresponding item at the same index on the `rgb` array.
 
-> **Note**: ==Destructuring arrays is a **shortcut for assign arrays items to variables**==. Is a feature that help you to split up an array into variables or constants, which you then can use throughout your code. It simply saves you the extra work of doing this manually and therefore can speed up your development process.
+> **NOTE**: ==Destructuring arrays is a **shortcut for assign arrays items to variables**==. Is a feature that help you to split up an array into variables or constants, which you then can use throughout your code. It simply saves you the extra work of doing this manually and therefore can speed up your development process.
 >
 > ```js
 > const rgb = [255, 200, 0];
@@ -169,7 +169,7 @@ if (landscape) {
 
 ## Nested Array Destructuring
 
-Just as with objects, you can also do nested destructuring with arrays. The corresponding item must be an array in order to use a nested destructuring array literal to assign items in it to local variables.
+Just as with objects, you can also do nested destructuring with arrays. ==**The corresponding item must be an array** in order to use a nested destructuring== array literal to assign items in it to local variables.
 
 ```js
 const color = ['#FF00FF', [255, 0, 255], 'rgb(255, 0, 255)'];
@@ -204,7 +204,7 @@ console.log(otherColors);
 // ['green', 'blue', 'indigo', 'violet']
 ```
 
-> Note: the **rest parameter, if used, must always appear as the last item in the destructuring** array literal otherwise an error will be thrown.
+> **NOTE**: The rest parameter, if used, must always appear as the last item in the destructuring array literal otherwise an error will be thrown.
 
 You can use array destructuring and the rest parameter syntax to create an array clone:
 

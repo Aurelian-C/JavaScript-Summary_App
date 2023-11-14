@@ -178,10 +178,17 @@ const variablesAndValues = {
         `<h3>Reference Types (Arrays, Objects, Functions)</h3>
         <p>A variable that stores a reference object only stores a pointer, so the address of that place in memory, and not the value itself.</p>`,
         `<h3>Pass by Value vs Pass by Reference</h3>
-        <p>The key difference between primitive and reference values is that when you copy a variable that holds a primitive value, which means you assign it to a new one, then the value is actually copied. When you copy a variable that holds a reference value, you copy the pointer address of that place in memory, not the value itself.`,
-        `Each object has its own reference location in memory, even is a nested object.</p>`,
+        <ul>The key difference between primitive and reference values is that when you copy a variable that holds a primitive value, which means you assign it to a new one, then the value is actually copied. When you copy a variable that holds a reference value, you copy the pointer address of that place in memory, not the value itself.
+        <li>- when you pass a primitive value to a function, you're passing a copy of the value;</li>
+        <li>- when you pass an array to a function, you're passing a reference to the array. Changes made to the array within the function affect the original array.</li>
+        <p><i>Each object has its own reference location in memory, even is a nested object.</i></p>
+        </ul>
+        `,
         `<h3>Comparing two objects for equality</h3>
-        <p>Two objects, even though they hold the same data, are two different distinct objects stored in different places, so at different addresses in memory. Because that when you compare two objects, you compare the addresses where they stored.</p>
+        <ul>Two objects, even though they hold the same data, are two different distinct objects stored in different places, so at different addresses in memory. Because that when you compare two objects, you compare the addresses where they stored:
+        <li>- with primitive values, <i>equality is based on the value itself</i>;</li>
+        <li>- with arrays (and other objects), <i>equality is based on reference, not the content</i>. Two arrays (objects) with the same content are not considered equal unless they refer to the same array (object) in memory.</li>
+        </ul>
         <p>Primitive values are the core building blocks that hold your data, objects (and arrays) are helpful for organizing and working with that data.</p>`,
         `<h3>Shallow vs Deep Objects Copy</h3>
         <p>Shallow copy is a bit-wise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.</p>
@@ -1181,19 +1188,37 @@ const arraysAndSets = {
       source:
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Introduction_to_Arrays.html',
       summary: [
-        `What are "Iterables" and "Array-like Objects"?`,
-        `Arrays vs Primitive Values`,
-        `An array is a single object that contain multiple values stored in a list`,
-        `Creating arrays`,
-        `Array constructor`,
-        `Array literal notation`,
-        `Arrays <code>length</code> property`,
-        `Arrays indices`,
-        `Accessing and modifying array items`,
-        `Accessing every item / iterating over arrays`,
-        `Arrays are reference types`,
-        `Nested / multidimensional arrays: Objects are not really located "inside" arrays. They might appear to be "inside" in code, but each object in an array is a separate value.`,
-        `Which data can you store in arrays?`,
+        `<h3>What is an array?</h3>
+        <p>Arrays are a way of <i>storing a <u>list of data</u></i> items under a single variable name. Arrays are <i>collections of data</i> which are <i>ordered</i> by an <i>index value</i>.</p>
+        <p>If we didn't have arrays, we'd have to store every data item in a separate variable. This would be much longer to write out, less efficient, and more error-prone.</p>
+        `,
+        `<h3>Creating arrays: Array literal notation & Array Constructor</h3>
+        <p>Arrays can be created with the shorthand syntax of <i>square brackets <code>[]</code></i> and items that are <i>separated by commas <code>,</code></i>. The bracket syntax is called an <i>array literal</i> or <i>array initializer</i>. It's shorter than other forms of array creation, and so is generally preferred.</p>
+        <p>Another way to create an array is with the <i>Array constructor</i>. The <i>Array constructor</i> can be used to create an array of a given length, or to create an array with specific elements in it.</p>
+        `,
+        `<h3>What kind of data you can store in an array?</h3>
+        <p>In an array we can store <i>various data types</i> — strings, numbers, objects, functions and even other arrays. <i>We can also mix data types in a single array</i> — we do not have to limit ourselves to storing only numbers in one array, and in another only strings. <i>In arrays we can store even expressions or functions calls that returns a value.</i></p>
+        `,
+        `<h3>What are "Iterables" and "Array-like Objects"?</h3>`,
+        `<h3>Arrays <code>length</code> property</h3>
+        <p>You can find out the length of an array (how many items are in it) in exactly the same way as you find out the length (in characters) of a string — by using the <code>length</code> property. <i>The <code>length</code> property is special, it always returns the <u>index of the last element plus one</u></i>.</p>
+        <p><i>You can also assign to the <code>length</code> property.</i> Writing a value that is shorter than the number of stored items truncates the array. Writing <code>0</code> empties it entirely.</p>
+        `,
+        `<h3>Accessing and modifying array items: arrays indices</h3>
+        <p><i>Items in an array are numbered, starting from zero.</i> This number is called the item's <i>index</i>. So the first item has index 0, the second has index 1, and so on. You can <i>access individual items in the array using bracket notation <code>[]</code> and supplying the item's index</i>, in the same way that you accessed the letters in a string.</p>
+        <ul>Note that an array inside an array is called a <u>multidimensional array</u>. You can access an item inside an array that is itself inside another array by <i>chaining two sets of square brackets together</i>:
+        <li><code>const random = ['tree', 795, [0, 1, 2]];</code></li>
+        <li><code>random[2][2]; //[0, 1, 2]</code></li>
+        </ul>
+        `,
+        `<h3>Nested / multidimensional arrays</h3>
+        <p>Arrays can be assigned as a property of a new or an existing object.</p>
+        <p><i>Objects are not really located "inside" arrays. They might appear to be "inside" in code, but each object in an array is a separate value.</i></p>`,
+        `<h3>Arrays are reference types: Arrays vs Primitive Values</h3>
+        <p>In programming languages, variables can hold different types of data, and these types are often categorized as either primitive types or reference types.</p>
+        <p>Primitive values are simple data types that directly store their values in the variable.</p>
+        <p>Arrays, on the other hand, are considered reference types. When you create an array and assign it to a variable, the variable doesn't directly contain the array's data. Instead, it holds a reference (memory address) to the location in memory where the array is stored.</p>
+        `,
       ],
     },
     {
@@ -1201,27 +1226,105 @@ const arraysAndSets = {
       source:
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Destructuring_arrays.html',
       summary: [
-        `What is destructuring?`,
-        `Binding and assignment`,
-        `Default values`,
-        `Skipping items`,
-        `Swapping variables`,
-        `Nested array destructuring`,
-        `Rest parameter & array destructuring`,
-        `Mixed destructuring`,
-        `Destructuring patterns with other syntaxes`,
+        `<h3>What is destructuring?</h3>
+        <p>The destructuring assignment syntax is a JavaScript expression that makes it possible to <i>unpack values from arrays, or properties from objects, into distinct variables</i>.</p>
+        <p><i>Destructuring arrays is a shortcut for assign arrays items to variables.</i> Is a feature that help you to split up an array into variables or constants, which you then can use throughout your code. It simply saves you the extra work of doing this manually and therefore can speed up your development process.</p>
+        `,
+        `<h3>Binding and assignment patterns</h3>
+        <ul>In array destructuring, you <i>use an array literal on the left-hand-side of an assignment expression</i>. Each variable name on the array literal maps to the corresponding item at the same index on the destructured array:
+        <li><code>const rgb = [255, 200, 0];</code></li>
+        <li><code>const [red, green, blue] = rgb;</code></li>
+        </ul>
+        <ul>For both object and array destructuring, there are <i>two kinds of destructuring patterns: <u>binding</u> pattern and <u>assignment</u> pattern</i>, with slightly different syntaxes:
+        <li>- Biding pattern:
+          <div><code>const rgb = [255, 200, 0];</code></div>
+          <div><code>const [red, green, blue] = rgb;</code></div>
+        <li>
+        <li>- Assignment pattern:
+          <div><code>let red, green, blue;</code></div>
+          <div><code>const rgb = [255, 200, 0];</code></div>
+          <div><code>[red, green, blue] = rgb;</code></div>
+        </li>
+        </ul>
+        `,
+        `<h3>Default values</h3>
+        <p>If the number of items in the array is more than the number of local variables passed to the destructuring array literal, then the excess items are not mapped. But if the number of local variables passed to the destructuring array literal exceed the number of items in the array, then each excess local variable will be assigned a value of <code>undefined</code>, except you specify a default value.</p>
+        <p>
+          <div><code>const rgb = [200];</code></div>
+          <div><code>const [red = 255, green, blue = 255] = rgb;</code></div>
+        </p>
+        `,
+        `<h3>Skipping items</h3>
+        <p>It is possible to skip some items you don’t want to assign to local variables and only assign the ones you are interested in.</p>
+        <p>
+          <div><code>const rgb = [200, 255, 100];</code></div>
+          <div><code>const [, , blue] = rgb;</code></div>
+        </p>
+        `,
+        `<h3>Swapping variables</h3>
+        <p>One very nice application of array destructuring is in swapping local variables.</p>
+        <p>
+          <div><code>let width = 300;</code></div>
+          <div><code>let height = 400;</code></div>
+          <div><code>[width, height] = [height, width]</code></div>
+        </p>
+        `,
+        `<h3>Nested array destructuring</h3>
+        <p>Just as with objects, you can also do nested destructuring with arrays. <i>The corresponding item must be an array in order to use a nested destructuring array literal to assign items in it to local variables.</i></p>
+        <p>
+        <div><code>const color = ['#FF00FF', [255, 0, 255], 'rgb(255, 0, 255)'];</code></div>
+        <div><code>const [hex, [red, green, blue]] = color;</code></div>
+        </p>
+        `,
+        `<h3>Rest parameter & array destructuring</h3>
+        <p>Sometimes you may want to assign some items to variables, while ensuring that the remaining items are captured (assigned to another local variable). The new <i>rest parameter</i> syntax (<code>...param</code>) added in ES6 can be used with destructuring to achieve this.</p>
+        <p>
+        <div><code>const rainbow = ['red', 'orange', 'yellow', 'indigo', 'violet'];</code></div>
+        <div><code>const [red, , orange, ...otherColors] = rainbow;</code></div>
+        </p>
+        <p>The rest parameter, if used, must always appear as the last item in the destructuring array literal otherwise an error will be thrown.</p>
+        <ul>You can use array destructuring and the rest parameter syntax to create an array clone:
+        <li><code>const rainbow = ['red', 'orange', 'yellow', 'indigo', 'violet'];</code></li>
+        <li><code>const [...rainbowClone] = rainbow;</code></li>
+        </ul>
+        `,
+        `<h3>Mixed destructuring</h3>
+        <p>There are cases when you are working with a pretty complex object/array structure and you need to assign some values from it to local variables. A good example would be an object with several deeply nested objects and arrays. In cases like this, you can use a combination of object destructuring and array destructuring to target certain parts of the complex structure as required.</p>
+        `,
+        `<h3>Destructuring patterns with other syntaxes</h3>
+        <ul>In many syntaxes where the language binds a variable for you, you can use a destructuring pattern as well. These include:
+        <li>- The looping variable of <code>for...in</code> and <code>for...of</code> loops;
+        <li>- Function parameters;
+        <li>- The <code>catch</code> binding variable.
+        </ul>
+        `,
       ],
-    },
-    {
-      title: 'Spread syntax & array literals',
-      source:
-        '/src/markdowns/07_Data_structures___Arrays_&_Sets/Spread_syntax_and_arrays.html',
-      summary: [],
     },
     {
       title: 'Rest Pattern in Arrays',
       source: '',
       summary: [],
+    },
+    {
+      title: 'Spread syntax & array literals',
+      source:
+        '/src/markdowns/07_Data_structures___Arrays_&_Sets/Spread_syntax_and_arrays.html',
+      summary: [
+        `<h3>What is spread syntax?</h3>
+      <p>Spread syntax <code>...</code> allows an <i>iterable</i>, such as an <u>array</u> or <u>string</u>, to be <i>expanded</i> in places where zero or more arguments (for function calls) or elements (for array literals) are expected. In an object literal spread syntax allows an object expression to be expanded in places where zero or more key-value pairs are expected.</p>
+      <p>Spread operator <code>...</code> is an operator that in the end <i>pulls out all elements of an array and gives them to you as a standalone list of elements</i>.</p>
+      `,
+        `<h3>Spread in array literals</h3>
+      <p>You can use spread syntax <i>anywhere in the array literal</i>, and you may be use it <i>more than once</i>.</p>
+      `,
+        `<h3>Copying an array wiht spread syntax</h3>
+      <p><i>Spread syntax effectively goes one level deep while copying an array.</i> Therefore, it may be unsuitable for copying multidimensional arrays.</p>
+      <p>An important thing to keep in mind is when you use the spread operator to copy an array that store inside it items that are reference values (arrays/objects), <i>you are copy the reference value of that items</i>.</p>
+      `,
+        `<h3>Spread syntax vs rest syntax</h3>
+      <p>Spread syntax looks exactly like rest syntax. In a way, <i>spread syntax is the opposite of rest syntax</i>. <p><i>Spread syntax <u>"expands"</u></i> an array into its elements, while <i>rest syntax <u>collects</u></i> multiple elements and "condenses" them into a single element.</p>
+      `,
+      ],
     },
     {
       title: '<code>Array.prototype</code> Methods',
@@ -1231,118 +1334,261 @@ const arraysAndSets = {
         {
           title: 'push()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/push.html',
+          summary: [
+            `<p>The <code>push()</code> method <i><u>adds</u> one or more items to the <u>end of an array</u></i> and <i>returns the new length of the array</i>.</p>
+            <p>The <code>push()</code> method <i>mutates the original array</i>.</p>
+            <ul>he <code>push()</code> method:
+            <li>- adds new items <i>to the end</i> of an array;</li>
+            <li>- <i>changes the length</i> of the array;</li>
+            <li>- <i>returns the new length;</i></li>
+            <li>- <i>mutates</i> de original array.</li>
+            </ul>
+            <p><code>Array.prototype.unshift()</code> has similar behavior to <code>push()</code>, but applied to the start of an array.</p>
+            `,
+            `<h3>Some considerations about <code>push()</code> method</h3>
+            <p>The <code>push()</code> method is a <i>mutating method</i>. <i>It changes the length and the content of <code>this</code></i>.</p>
+            <p>In case you want the value of <code>this</code> to be the same, but return a new array with elements appended to the end, you can use <code>arr.concat([element0, element1, /* ... ,*/ elementN])</code> instead.</p>`,
+          ],
         },
         {
           title: 'unshift()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/unshift.html',
+          summary: [
+            `<p>The <code>unshift()</code> method <i><u>adds</u> one or more items to the <u>beginning of an array</u></i> and <i>returns the new length of the array</i>.</p>
+          <p>The <code>unshift()</code> method <i>mutates the original array</i>.</p>
+          <ul>The <code>unshift()</code> method:
+          <li>- adds new items <i>to the beginning</i> of an array;</li>
+          <li>- <i>changes the length</i> of the array;</li>
+          <li>- <i>returns the new length;</i></li>
+          <li>- <i>mutates</i> de original array.</li>
+          </ul>
+          <p><i>If multiple items are passed as parameters</i>, they're inserted in chunk at the beginning of the object, in the exact same order they were passed as parameters.</p>
+          <p><code>Array.prototype.push()</code> has similar behavior to <code>unshift()</code>, but applied to the end of an array.</p>
+          `,
+          ],
         },
         {
           title: 'pop()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/pop.html',
+          summary: [
+            `<p>The <code>pop()</code> method <i><u>removes</u> the <u>last item</u> from an array</i> and <i>returns that item</i>.</p>
+          <p>The <code>pop()</code> method <i>mutates the original array</i>.</p>
+          <p><code>Array.prototype.shift()</code> has similar behavior to <code>pop()</code>, but applied to the first element in an array.</p>
+          `,
+            `<h3>Some considerations about <code>pop()</code> method</h3>
+          <p>The <code>pop()</code> method is a <i>mutating method. It changes the length and the content of <code>this</code></i>.</p>
+          <p>In case you want the value of <code>this</code> to be the same, but return a new array with the last element removed, you can use <code>arr.slice(0, -1)</code> instead.</p>`,
+          ],
         },
         {
           title: 'shift()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/shift.html',
+          summary: [
+            `<p>The <code>shift()</code> method <i><u>removes</u> the <u>first item</u> from an array</i> and <i>returns that removed item</i>.</p>
+          <p>The <code>shift()</code> method <i>mutates the original array</i>.</p>`,
+            `<h3>Some considerations about <code>shift()</code> method</h3>
+          <p>The <code>shift()</code> method is a <i>mutating method. It changes the length and the content of <code>this</code></i>.</p>
+          <p>In case you want the value of <code>this</code> to be the same, but return a new array with the first element removed, you can use <code>arr.slice(1)</code> instead.</p>`,
+          ],
         },
         {
           title: 'splice()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/splice.html',
+          summary: [
+            `<p>The <code>splice()</code> method <i><u>adds</u> and/or <u>removes</u> array elements</i>: <code>array.splice(startIndex, deleteCount, item1)</code></p>
+            <p>The <code>splice()</code> method <i>mutates the original array</i>.</p>
+            <p>The <code>splice()</code> method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.</p>
+            <p><i>To access part of an array <u>without modifying</u> it</i>, you can use <code>Array.prototype.slice()</code>.</p>
+            `,
+            `<h3>Parameters</h3>
+            <ul><code>startIndex</code> (required)
+              <li>The <i>index at which start to add/remove items</i>. If greater than the length of the array, <code>startIndex</code> will be set to the length of the array. In this case, no element will be deleted but the method will behave as an adding function, adding as many elements as items provided. <i>Negative value defines the position from the end of the array</i>.</li>
+            </ul>
+            <ul><code>deleteCount</code> (optional)
+              <li>An <i>integer (number)</i> indicating the number of elements in the array to remove from <code>startIndex</code>. If <code>deleteCount</code> is 0 or negative, no elements are removed.</li>
+            </ul>
+            <ul><code>item1, ..., itemN</code> (optional)
+            <li><i>The elements to add to the array</i>, beginning from <code>startIndex</code>. If you do not specify any elements, <code>splice()</code> will only remove elements from the array.</li>
+            </ul>
+            `,
+            `<h3>Return Value</h3>
+            <p>An <i>array containing the <u>removed items</u> (if any)</i>.</p>`,
+          ],
         },
         {
           title: 'reverse()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/reverse.html',
+          summary: [
+            `<p>The <code>reverse()</code> method <i>reverses the order</i> of the elements in an array and <i>returns the reference to the same array</i>. The first array element becomes the last, and the last array element becomes the first. The <code>reverse()</code> method <i>mutates the original array</i>.</p>`,
+          ],
         },
         {
           title: 'sort()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/sort.html',
+          summary: [
+            `<p>The <code>sort()</code> method <i>sorts the elements of an array</i> and <i>returns the sorted array</i>.</p>
+            <p>Without passing a <code>compareFn</code> as argument, the default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.</p>
+            <p>The <code>sort()</code> <i>mutates the original array</i>.</p>
+            `,
+            `<h3>Parameters</h3>
+            <ul><code>compareFn</code> (optional)
+            <li>Specifies a <i><u>function</u> that defines the <u>sort order</u></i>. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.</li>
+            </ul>
+            `,
+          ],
         },
         {
           title: 'fill()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/fill.html',
+          summary: [
+            `<p>The <code>fill()</code> method <i><u>changes all elements</u> in an array to a <u>static value</u></i>, from a <i>start index</i> (default 0) to an <i>end index</i> (default <code>array.length</code>): <code>array.fill(value, start, end);</code></p>
+          <p><p>The <code>fill()</code> method <i>mutates the original array</i> and <i>returns the modified array</i>.</p>`,
+            `<h3>Parameters</h3>
+          <ul>value
+          <li>Value to fill the array with. Note all elements in the array will be this exact value. If the value is an object, each slot in the array will reference that object.</li>
+          </ul>
+          <ul>start index (optional)
+          <li>Start index (inclusive), default 0.</li>
+          </ul>
+          <ul>end index (optional) 
+          <li>End index (exclusive), default <code>arr.length</code>.</li>
+          </ul>
+          `,
+            `<h3>Some considerations about <code>fill()</code> method</h3>
+          <p>The <code>fill()</code> method is a mutating method. It does not alter the length of <code>this</code>, but it will change the content of <code>this</code>.</p>`,
+          ],
         },
         {
           title: 'map()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/map.html',
+          summary: [
+            `<p>The <code>map()</code> method <i>creates a <u>new array</u> populated with the results of calling a provided function on every element in the calling array</i>.</p>
+            <ul>The <code>map()</code> method:
+              <li>- creates a <i>new array</i> from calling a function for every array element;</li>
+              <li>- calls a function <i>once</i> for each element in an array;</li>
+              <li>- <i>does not execute the function for empty elements</i>;</li>
+              <li>- does <i>not change the original array</i>.</li>
+            </ul>
+          `,
+            `<h3>Some consideration about<code>map()</code> method</h3>
+           <ul><code>map()</code> calls a provided <code>callbackFn</code> function once for each element in an array, <u>in order</u>, and <i>constructs a new array from the results. <code>callbackFn</code> is invoked only for indexes of the array which have assigned values (including <code>undefined</code>)</i>. It is not called for missing elements of the array, that is:
+            <li>- indexes that have never been set;</li>
+            <li>- indexes which have been deleted.</li>
+            </ul>
+            <ul><i>Since <code>map()</code> builds a new array, using it when you aren't using the returned array is an anti-pattern;</i> use <code>forEach</code> or <code>for...of</code> instead. You shouldn't be using <code>map()</code> if:
+            - you're not using the array it returns; and/or
+            - you're not returning a value from the callback.
+            </ul>
+            <p><code>map()</code> does not mutate the array on which it is called (although <code>callbackFn</code>, if invoked, may do so).</p>
+            `,
+          ],
         },
         {
           title: 'filter()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/filter.html',
+          summary: [
+            `<p>The <code>filter()</code> method <i>creates a <u>new array</u> with all elements that <u>pass the test</u> implemented by the provided <u>function</u></i>.</p>
+            <ul>The <code>filter()</code> method:
+            <li>- return a new array filled with elements that pass a test provided by a function;</li>
+            <li>- does not execute the function for empty elements;</li>
+            <li>- does not mutates the original array.</li>
+            </ul>
+            `,
+            `<h3>Some considerations about <code>filter()</code> method</h3>
+            <p><i><code>filter()</code> calls a provided <code>callbackFn</code> function <u>once</u> for each element in an array, and <u>constructs a new array</u> of all the values for which <code>callbackFn</code> returns a value that coerces to <code>true</code>.</i></p>
+            <p><code>callbackFn</code> is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. <i>Array elements which do not pass the <code>callbackFn</code> test are skipped and are not included in the new array.</i></p>`,
+          ],
         },
         {
           title: 'slice()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/slice.html',
+          summary: [],
         },
         {
           title: 'concat()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/concat.html',
+          summary: [],
         },
         {
           title: 'flat()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/flat.html',
+          summary: [],
         },
         {
           title: 'flatMap()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/flatMap.html',
+          summary: [],
         },
         {
           title: 'indexOf()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/indexOf.html',
+          summary: [],
         },
         {
           title: 'lastIndexOf()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/lastIndexOf.html',
+          summary: [],
         },
         {
           title: 'findIndex()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/findIndex.html',
+          summary: [],
         },
         {
           title: 'find()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/find.html',
+          summary: [],
         },
         {
           title: 'includes()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/includes.html',
+          summary: [],
         },
         {
           title: 'some()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/some.html',
+          summary: [],
         },
         {
           title: 'every()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/every.html',
+          summary: [],
         },
         {
           title: 'join()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/join.html',
+          summary: [],
         },
         {
           title: 'reduce()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/reduce.html',
+          summary: [],
         },
         {
           title: 'forEach()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/forEach.html',
+          summary: [],
         },
         {
           title: 'entries()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/entries.html',
+          summary: [],
         },
         {
           title: 'Chaining Methods in JavaScript',

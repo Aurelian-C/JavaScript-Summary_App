@@ -1,4 +1,4 @@
-# Array.prototype.map()
+# `Array.prototype.map()`
 
 The `map()` method ==creates a **new array** populated with the **results** of calling a provided **function** on every element in the calling array==.
 
@@ -38,7 +38,7 @@ Function that is ==called for every element of array==. Each time `callbackFn` e
 - ==index== - the index of the current element being processed in the array.
 - ==array== - the array `map()` was called upon.
 
-#### ==**thisArg _(optional)_
+#### `thisArg` _(optional)_
 
 Value to use as `this` when executing `callbackFn`. 
 
@@ -66,7 +66,7 @@ The range of elements processed by `map()` is set before the first invocation of
 
 The `map()` method is a copying method. It does not alter `this`.
 
-## Reference
+## References
 
-1. [Array.prototype.map() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-2. [map() - w3schools](https://www.w3schools.com/jsref/jsref_map.asp)
+1. [`Array.prototype.map()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+2. [`map()` - w3schools](https://www.w3schools.com/jsref/jsref_map.asp)

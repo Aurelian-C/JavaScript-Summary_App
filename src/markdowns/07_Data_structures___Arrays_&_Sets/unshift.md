@@ -1,4 +1,4 @@
-# Array.prototype.unshift()
+# `Array.prototype.unshift()`
 
 The `unshift()` method ==**adds**== one or more items to the ==beginning of an array== and ==returns the new length of the array==. The `unshift()` method ==mutates the original array==.
 
@@ -9,7 +9,7 @@ The `unshift()` method:
 - returns the new length;
 - mutates de original array.
 
-> **Note**: [`Array.prototype.push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) has similar behavior to `unshift()`, but applied to the end of an array.
+> **NOTE**: [`Array.prototype.push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) has similar behavior to `unshift()`, but applied to the end of an array.
 
 ## Syntax
 
@@ -23,7 +23,7 @@ array.unshift(item0, item1, /* ... ,*/ itemN);
 
 ==**itemN**== - the items to add to the front of the array.
 
-> **Note**: If multiple items are passed as parameters, they're inserted in chunk at the beginning of the object, in the exact same order they were passed as parameters.
+> **NOTE**: If multiple items are passed as parameters, they're inserted in chunk at the beginning of the object, in the exact same order they were passed as parameters.
 
 ## Return value
 

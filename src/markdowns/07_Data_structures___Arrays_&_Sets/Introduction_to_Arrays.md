@@ -91,7 +91,7 @@ shopping.length;  // 5
 
 > **Note**: Remember, array indexes are `0` based: they start at 0, not 1. This means that the `length` property will be one more than the highest index stored in the array.
 
-You can also assign to the `length` property. Writing a value that is shorter than the number of stored items truncates the array. Writing `0` empties it entirely:
+==You can also assign to the `length` property. Writing a value that is shorter than the number of stored items truncates the array. Writing `0` empties it entirely==:
 
 ```js
 let cats = ['Dusty', 'Misty', 'Twiggy'];
@@ -109,7 +109,7 @@ console.log(cats); // logs [ <3 empty items> ]
 
 ## Accessing and modifying array items
 
-Items in an array are numbered, starting from zero. This number is called the item's ==**index**==. So the first item has index 0, the second has index 1, and so on. You can access individual items in the array using bracket notation `[]` and supplying the item's index, in the same way that you accessed the letters in a string.
+==Items in an array are numbered, starting from zero.== This number is called the item's ==**index**==. So the first item has index 0, the second has index 1, and so on. ==You can access individual items in the array using bracket notation `[]` and supplying the item's index==, in the same way that you accessed the letters in a string.
 
 ```js
 const shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];
@@ -126,7 +126,7 @@ shopping[0] = 'tahini';
 console.log(shopping); // [ "tahini", "milk", "cheese", "hummus", "noodles" ]
 ```
 
-Note that an array inside an array is called a **multidimensional array**. You can access an item inside an array that is itself inside another array by **chaining** two sets of square brackets together.
+==Note that an array inside an array is called a **multidimensional array**. You can access an item inside an array that is itself inside another array by **chaining two sets of square brackets together**==.
 
 ```js
 const random = ['tree', 795, [0, 1, 2]];

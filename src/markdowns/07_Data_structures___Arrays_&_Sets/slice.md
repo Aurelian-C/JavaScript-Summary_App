@@ -1,4 +1,4 @@
-# Array.prototype.slice()
+# `Array.prototype.slice()`
 
 The `slice()` method ==returns a **shallow copy**== of ==a **portion** of an array== into a new array object selected from `startIndex` to `endIndex` (`endIndex` not included), where `startIndex` and `endIndex` represent the index of items in that array.
 
@@ -12,7 +12,7 @@ The `slice()` method:
 
 ## Syntax
 
-```
+```javascript
 array.slice()
 array.slice(startIndex)
 array.slice(startIndex, endIndex)
@@ -73,7 +73,7 @@ console.log(arr2); // [1, 2, 3]
 
 The `slice()` method is a copying method. It does not alter `this` but instead returns a shallow copy that contains some of the same elements as the ones from the original array.
 
-## Reference
+## References
 
-1. [Array.prototype.slice() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
-2. [slice() - w3schools](https://www.w3schools.com/jsref/jsref_slice_array.asp)
+1. [`Array.prototype.slice()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+2. [`slice()` - w3schools](https://www.w3schools.com/jsref/jsref_slice_array.asp)

@@ -1,4 +1,4 @@
-# Array.prototype.filter()
+# `Array.prototype.filter()`
 
 The `filter()` method ==creates a **new array** with all elements that **pass the test** implemented by the provided **function**==.
 
@@ -61,7 +61,7 @@ The range of elements processed by `filter()` is set before the first invocation
 
 The `filter()` method is a copying method. It does not alter `this` but instead returns a shallow copy that contains the same elements as the ones from the original array (with some filtered out).
 
-## Reference
+## References
 
-1. [Array.prototype.filter() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-2. [filter() - w3schools](https://www.w3schools.com/jsref/jsref_filter.asp)
+1. [`Array.prototype.filter()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+2. [`filter()` - w3schools](https://www.w3schools.com/jsref/jsref_filter.asp)

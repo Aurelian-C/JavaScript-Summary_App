@@ -1,10 +1,10 @@
-# Array.prototype.sort()
+# `Array.prototype.sort()`
 
 The `sort()` method ==sorts the elements of an array== and ==returns the sorted array==.
 
 Without passing a `compareFn` as argument, the ==**default** sort order is **ascending**, built upon **converting the elements into strings**==, then comparing their sequences of UTF-16 code units values.
 
-> **Note**: Sorting alphabetically works well for strings ("Apple" comes before "Banana"). But, sorting numbers can produce incorrect results: "25" is bigger than "100", because "2" is bigger than "1". You can fix this by providing a `compareFn` (compare function).
+> **NOTE**: Sorting alphabetically works well for strings ("Apple" comes before "Banana"). But, sorting numbers can produce incorrect results: "25" is bigger than "100", because "2" is bigger than "1". You can fix this by providing a `compareFn` (compare function).
 
 The `sort()` ==**mutates** the original array==.
 
@@ -81,7 +81,7 @@ function compareNumbers(a, b) {
 }
 ```
 
-## Reference
+## References
 
-1. [Array.prototype.sort() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-2. [sort() - w3schools](https://www.w3schools.com/jsref/jsref_sort.asp)
+1. [`Array.prototype.sort()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+2. [`sort()` - w3schools](https://www.w3schools.com/jsref/jsref_sort.asp)
