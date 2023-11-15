@@ -1748,13 +1748,24 @@ const arraysAndSets = {
           title: 'forEach()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/forEach.html',
-          summary: [],
+          summary: [
+            `<p>The <code>forEach()</code> method <i>executes a provided function once for each array element</i>. The <code>forEach()</code> method is <i>not executed for empty elements</i>.</p>`,
+            `<h3>Some considerations about <code>forEach()</code> method</h3>
+            <p><code>forEach()</code> <i>calls a provided <code>callbackFn</code> function <u>once</u> for each element</i> in an array <i>in ascending index order</i>.</p>
+            <p>Unlike <code>map()</code> or <code>reduce()</code> methods, <code>forEach()</code> <i>always returns the value <u>undefined</u> and is <u>not chainable</u></i>. The typical use case is to execute side effects at the end of a chain.</p>
+            <p><code>forEach()</code> does <i>not mutate the array</i> on which it is called (however, <code>callbackFn</code> may do so).</p>
+            <p>There is <i>no way to <u>stop</u> or <u>break</u> a <code>forEach()</code> loop other than by throwing an exception</i>. If you need such behavior, the <code>forEach()</code> method is the wrong tool.</p>
+            <p><i><code>forEach()</code> expects a <u>synchronous function</u>. <code>forEach()</code> does <u>not wait for Promises</u>.</i> Make sure you are aware of the implications while using Promises (or async functions) as <code>forEach()</code> callback.</p>
+            `,
+          ],
         },
         {
           title: 'entries()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/entries.html',
-          summary: [],
+          summary: [
+            `<p>The <code>entries()</code> method <i>returns a new <u>Array Iterator</u> object that <u>contains the key/value pairs for each index</u> in the array</i>. The <code>entries()</code> method does <i>not mutates the original array</i>.</p>`,
+          ],
         },
         {
           title: 'Chaining Methods in JavaScript',
@@ -1771,11 +1782,29 @@ const arraysAndSets = {
           title: 'Array.isArray()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/Array.isArray.html',
+          summary: [
+            `<p>The <code>Array.isArray()</code> <u>static method</u> <i>determines whether the passed value is an Array</i>: <code>Array.isArray(value)</code>.</p>
+            <p><code>Array.isArray()</code> method returns <code>true</code> if an object is an array, otherwise <code>false</code>.</p>`,
+            `<p><i>NOTE: <code>Array.isArray()</code> is a <u>static property</u> of the JavaScript <code>Array</code> object. You can only use it as <code>Array.isArray()</code>. Using <code>x.isArray()</code>, where <code>x</code> is an array will return <code>undefined</code>.</i></p>`,
+          ],
         },
         {
           title: 'Array.from()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/Array.from.html',
+          summary: [
+            `<p>The <code>Array.from()</code> <u>static method</u> <i>creates a new, <u>shallow-copied</u> Array instance from an Array-Like or Iterable object</i>: <code>Array.from('foo'); // ["f", "o", "o"]</code>.</p>`,
+            `<ul><i><code>Array.from()</code> has an <u>optional parameter</u> <code>mapFn</code>, which allows you to execute a <code>map()</code> function on each element of the array being created:</i>
+              <li><code>Array.from(arrayLike, (element, index) => { ... } )</code></li>
+              <li><code>Array.from([1, 2, 3], x => x + x); // [2, 4, 6]</code></li>
+            </ul>`,
+            `<ul><code>Array.from()</code> method returns an array from:
+              <li>- Array-Like objects (objects with a <code>length</code> property and indexed elements);</li>
+              <li>- Iterable objects.</li>
+            </ul>
+            `,
+            `<p><i>NOTE: <code>Array.from()</code> is a <u>static property</u> of the JavaScript <code>Array</code> object. You can only use it as <code>Array.from()</code>. Using <code>x.from()</code>, where <code>x</code> is an array will return <code>undefined</code>.</i></p>`,
+          ],
         },
       ],
     },
@@ -1783,12 +1812,47 @@ const arraysAndSets = {
       title: 'Which array method to use?',
       source:
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Which_array_method_to_use.html',
-      summary: [],
+      summary: [`<p></p>`],
     },
     {
       title: 'Data structures - Sets',
-      source: '',
-      summary: [],
+      source:
+        '/src/markdowns/07_Data_structures___Arrays_&_Sets/Data_structures___Sets.html',
+      summary: [
+        `<p>In JavaScript, we got <i>three major <u>iterable</u> data structures</i> you could say. We got <i>Arrays</i> but we also got <i>Sets</i> and we got <i>Maps</i>.</p>
+        <p>The Set object lets you <i>store <u>unique values</u> of any type</i>, whether primitive values or object references: <code>new Set(iterable)</code>.</p>
+        `,
+        `<ul>A JavaScript Set:
+          <li>- is a collection of unique values;</li>
+          <li>- Each value can only occur once in a Set;</li>
+          <li>- can hold any value of any data type.</li>
+        </ul>
+        `,
+        `<h3>Set methods & properties</h3>
+        <p><code>add()</code> - adds a new element to the Set</p>
+        <p><code>delete()</code> - removes an element from a Set</p>
+        <p><code>has()</code> - returns <code>true</code> if a value exists</p>
+        <p><code>clear()</code> - removes all elements from a Set</p>
+        <p><code>forEach()</code> - invokes a callback for each element</p>
+        <p><code>values()</code> - returns an Iterator with all the values in a Set</p>
+        <p><code>keys()</code> - same as <code>values()</code></p>
+        <p><code>entries()</code> - returns an Iterator with the <code>[value, value]</code> pairs from a Set</p>
+        <p><code>size</code> - returns the number elements in a Set</p>
+        `,
+        `<h3>Specialized version of Sets - WeakSet</h3>
+        <p>In a Set you can store any value of any data type (strings, numbers, objects etc.). In the case of the WeakSet you can store <i>only <u>object</u> data</i>: <code>new WeakSet(iterable)</code>.</p>
+        <p>WeakSet objects are <i>collections of <u>objects</u></i>. Just as with Sets, each object in a WeakSet may occur only once; <i>all objects in a WeakSet's collection are unique</i>.</p>
+        <ul>The main differences to the Set object are:
+          <li>- WeakSets are <i>collections of <u>objects only</u></i>. They cannot contain arbitrary values of any type, as Sets can.</li>
+          <li>- The WeakSet is <u>weak</u>, meaning references to objects in a WeakSet are held weakly. If no other references to an object stored in the WeakSet exist, those objects can be <u>garbage collected</u>.</li>
+        </ul>
+        <ul>WeakSet methods:
+          <li><code>WeakSet.prototype.add(value)</code> - appends <code>value</code> to the WeakSet object.</li>
+          <li><code>WeakSet.prototype.delete(value)</code> - removes <code>value</code> from the WeakSet. <code>WeakSet.prototype.has(value)</code> will return <code>false</code> afterwards.</li>
+          <li><code>WeakSet.prototype.has(value)</code> - returns a boolean asserting whether <code>value</code> is present in the WeakSet object or not.</li>
+        </ul>
+        `,
+      ],
     },
   ],
 };

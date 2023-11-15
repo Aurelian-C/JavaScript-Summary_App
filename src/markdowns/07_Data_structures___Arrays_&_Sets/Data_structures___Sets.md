@@ -74,13 +74,13 @@ new WeakSet(iterable);
 
 ### WeakSet methods
 
-| Method                          | Description                                                                                  |
-| ------------------------------- | -------------------------------------------------------------------------------------------- |
-| WeakSet.prototype.add(value)    | Appends `value` to the WeakSet object.                                                       |
-| WeakSet.prototype.delete(value) | Removes `value` from the WeakSet. WeakSet.prototype.has(value) will return false afterwards. |
-| WeakSet.prototype.has(value)    | Returns a boolean asserting whether `value` is present in the WeakSet object or not.         |
+| Method                            | Description                                                  |
+| --------------------------------- | ------------------------------------------------------------ |
+| `WeakSet.prototype.add(value)`    | Appends `value` to the WeakSet object.                       |
+| `WeakSet.prototype.delete(value)` | Removes `value` from the WeakSet. WeakSet.prototype.has(value) will return `false` afterwards. |
+| `WeakSet.prototype.has(value)`    | Returns a boolean asserting whether `value` is present in the WeakSet object or not. |
 
-## Reference
+## References
 
 1. [Set - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 2. [Sets - w3schools](https://www.w3schools.com/js/js_object_sets.asp)

@@ -1,8 +1,8 @@
-# Array.from()
+# `Array.from()`
 
 The `Array.from()` ==static method== creates a new, ==**shallow-copied**== Array instance from an ==**Array-Like**== or ==**Iterable**== object.
 
-> **Note**: `Array.from()` is a static property of the JavaScript Array object. You can only use it as `Array.from()`. Using `x.from()`, where `x` is an array will return `undefined`.
+> **NOTE**: `Array.from()` is a static property of the JavaScript Array object. You can only use it as `Array.from()`. Using `x.from()`, where `x` is an array will return `undefined`.
 
 `Array.from()` method returns an array from:
 
@@ -15,7 +15,7 @@ Array.from('foo'); // ["f", "o", "o"]
 Array.from([1, 2, 3], x => x + x); // [2, 4, 6]
 ```
 
-`Array.from()` has an optional parameter `mapFn`, which allows you to execute a `map()` function on each element of the array being created.
+==`Array.from()` has an **optional parameter** `mapFn`, which allows you to execute a `map()` function on each element of the array being created.==
 
 More clearly, `Array.from(obj, mapFn, thisArg)` has the same result as `Array.from(obj).map(mapFn, thisArg)`, except that it does not create an intermediate array, and `mapFn` only receives two arguments (_element_, _index_).
 
@@ -56,5 +56,5 @@ The `Array.from()` method returns:
 
 ## References
 
-1. [Array.from() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
-2. [Array.from() - w3schools](https://www.w3schools.com/jsref/jsref_from.asp)
+1. [`Array.from()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+2. [`Array.from()` - w3schools](https://www.w3schools.com/jsref/jsref_from.asp)

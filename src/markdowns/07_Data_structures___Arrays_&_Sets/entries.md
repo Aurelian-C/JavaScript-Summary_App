@@ -1,4 +1,4 @@
-# Array.prototype.entries()
+# `Array.prototype.entries()`
 
 The `entries()` method ==returns a new **Array Iterator** object that **contains the key/value pairs for each index** in the array==. The `entries()` method does ==**not mutates** the original array==.
 
@@ -65,7 +65,7 @@ for (const element of arrayEntries) {
 // [2, 'c']
 ```
 
-## Reference
+## References
 
-1. [Array.prototype.entries() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)
-2. [entries() - w3schools](https://www.w3schools.com/jsref/jsref_entries.asp)
+1. [`Array.prototype.entries()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)
+2. [`entries()` - w3schools](https://www.w3schools.com/jsref/jsref_entries.asp)

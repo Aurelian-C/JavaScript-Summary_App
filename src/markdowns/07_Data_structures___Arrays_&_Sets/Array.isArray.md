@@ -1,8 +1,8 @@
-# Array.isArray()
+# `Array.isArray()`
 
 The `Array.isArray()` ==static method== determines whether the passed value is an Array. This method returns `true` if an object is an array, otherwise `false`.
 
-> **Note**: `Array.isArray()` is a ==static property== of the JavaScript Array object. You can only use it as `Array.isArray()`. Using `x.isArray()`, where `x` is an array will return `undefined`.
+> **NOTE**: `Array.isArray()` is a ==static property== of the JavaScript Array object. You can only use it as `Array.isArray()`. Using `x.isArray()`, where `x` is an array will return `undefined`.
 
 ## Syntax
 
@@ -18,7 +18,7 @@ Array.isArray(value);
 
 `true` if the value is an Array; otherwise, `false`.
 
-## Example
+## Examples
 
 ```js
 // All following calls return true
@@ -44,7 +44,7 @@ Array.isArray(new Uint8Array(32));				//false
 Array.isArray({ __proto__: Array.prototype });	//false
 ```
 
-## Reference
+## References
 
-1. [Array.isArray() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
-2. [Array.isArray() - w3schools](https://www.w3schools.com/jsref/jsref_isarray.asp)
+1. [`Array.isArray()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
+2. [`Array.isArray()` - w3schools](https://www.w3schools.com/jsref/jsref_isarray.asp)
