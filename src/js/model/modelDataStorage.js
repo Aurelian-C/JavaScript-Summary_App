@@ -1815,7 +1815,7 @@ const arraysAndSets = {
       summary: [`<p></p>`],
     },
     {
-      title: 'Data structures - Sets',
+      title: 'Data structures - Sets & WeakSet',
       source:
         '/src/markdowns/07_Data_structures___Arrays_&_Sets/Data_structures___Sets.html',
       summary: [
