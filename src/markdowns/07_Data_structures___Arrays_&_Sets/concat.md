@@ -1,4 +1,4 @@
-# Array.prototype.concat()
+# `Array.prototype.concat()`
 
 The `concat()` method is used to ==**merge/join** two or more arrays==. This method does ==not change the existing arrays==, but instead ==returns a new array==.
 
@@ -19,9 +19,9 @@ array.concat(item0, item1, ... , itemN)
 
 ## Parameters
 
-==**itemN**== (optional) - ==**arrays**== _and/or_ ==**values**== to concatenate (merge) into a new array. 
+==**itemN**== _(optional)_ - ==**arrays**== _and/or_ ==**values**== to concatenate (merge) into a new array. 
 
-> Note: _If all `itemN` parameters are omitted, `concat()` returns a shallow copy of the existing array on which it is called_.
+> **NOTE**: _If all `itemN` parameters are omitted, `concat()` returns a shallow copy of the existing array on which it is called_.
 
 ## Return value
 
@@ -38,7 +38,7 @@ The `concat()` method does not alter `this` or any of the arrays provided as arg
 
 > **Note**: Concatenating array(s)/value(s) will leave the originals untouched. Furthermore, any operation on the new array (except operations on elements which are object references) will have no effect on the original arrays, and vice versa.
 
-## Reference
+## References
 
-1. [Array.prototype.concat() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
-2. [concat() - w3schools](https://www.w3schools.com/jsref/jsref_concat_array.asp)
+1. [`Array.prototype.concat()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
+2. [`concat()` - w3schools](https://www.w3schools.com/jsref/jsref_concat_array.asp)

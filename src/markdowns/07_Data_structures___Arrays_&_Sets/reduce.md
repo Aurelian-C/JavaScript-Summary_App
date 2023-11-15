@@ -1,8 +1,8 @@
-# Array.prototype.reduce()
+# `Array.prototype.reduce()`
 
 The `reduce()` method executes a user-supplied =="**reducer**" callback function== on each element of the array, _in order_, ==passing in the return value from the calculation on the preceding element==. The final result of running the reducer across all elements of the array is a ==single value==.
 
-> **Note**: The idea behind `reduce()` method is to ==reduce an array to a **single value**==.
+> **NOTE**: The idea behind `reduce()` method is to ==reduce an array to a **single value**==.
 
 _The first time that the callback is run there is no "return value of the previous calculation". If supplied, an initial value may be used in its place. Otherwise the array element at index 0 is used as the initial value and iteration starts from the next element (index 1 instead of index 0)_.
 
@@ -12,7 +12,7 @@ The reduce() method:
 
 - executes a ==reducer function== for array element;
 - ==returns a single value== (the function's accumulated result);
-- does not execute the function for empty array elements.
+- does not execute the function for empty array elements;
 - does ==not change the original== array.
 
 ## Syntax
@@ -37,14 +37,14 @@ reduce(function(previousValue, currentValue, currentIndex, array) { ... }, initi
 
 ## Parameters
 
-==**callbackFn**== - a "reducer" function. The function is called with the following arguments:
+==**`callbackFn`**== - a "reducer" function. The function is called with the following arguments:
 
 - ==previousValue==: the value resulting from the previous call to `callbackFn`. On first call, `initialValue` if specified, otherwise the value of `array[0]`.
 - ==currentValue==: the value of the current element. On first call, the value of `array[0]` if an `initialValue` was specified, otherwise the value of `array[1]`.
 - ==currentIndex==: the index position of `currentValue` in the array. On first call, 0 if `initialValue` was specified, otherwise 1.
 - ==array==: the array to traverse.
 
-==**initialValue**== (optional) - a value to which `previousValue` is initialized the first time the callback is called. If `initialValue` is specified, that also causes `currentValue` to be initialized to the first value in the array. If `initialValue` is not specified, `previousValue` is initialized to the first value in the array, and `currentValue` is initialized to the second value in the array.
+==**`initialValue`**== (optional) - a value to which `previousValue` is initialized the first time the callback is called. If `initialValue` is specified, that also causes `currentValue` to be initialized to the first value in the array. If `initialValue` is not specified, `previousValue` is initialized to the first value in the array, and `currentValue` is initialized to the second value in the array.
 
 ## Return value
 
@@ -62,9 +62,9 @@ The `reduce()` method itself does ==**not mutate** the array== it is used on. Ho
 - If existing elements of the array do get changed, the values passed to the callback function will be the values from the time that `reduce()` was first called on the array.
 - Array elements that are deleted _after_ the call to `reduce()` begins and before being iterated over are not visited by `reduce()`.
 
-If the array only has one element (regardless of position) and no _initialValue_ is provided, or if _initialValue_ is provided but the array is empty, the solo value will be returned without calling `callbackFn`.
+If the array only has one element (regardless of position) and no `initialValue` is provided, or if `initialValue` is provided but the array is empty, the solo value will be returned without calling `callbackFn`.
 
-If _initialValue_ is provided and the array is not empty, then the `reduce()` method will always invoke the callback function starting at index 0. If _initialValue_ is not provided then the reduce method will act differently for arrays with `length` larger than 1, equal to 1 and 0, as shown in the following example:
+If `initialValue` is provided and the array is not empty, then the `reduce()` method will always invoke the callback function starting at index 0. If `initialValue` is not provided then the reduce method will act differently for arrays with `length` larger than 1, equal to 1 and 0, as shown in the following example:
 
 ```js
 const getMax = (a, b) => Math.max(a, b);
@@ -87,7 +87,7 @@ const getMax = (a, b) => Math.max(a, b);
 
 Recursive functions like `reduce()` can be powerful but sometimes ==difficult to understand==, especially for less experienced JavaScript developers. If code becomes clearer when using other array methods, developers must weigh the readability tradeoff against the other benefits of using `reduce()`. In cases where `reduce()` is the best choice, documentation and semantic variable naming can help mitigate readability drawbacks.
 
-## Reference
+## References
 
-1. [Array.prototype.reduce() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
-2. [reduce() - w3schools](https://www.w3schools.com/jsref/jsref_reduce.asp)
+1. [`Array.prototype.reduce()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+2. [`reduce()` - w3schools](https://www.w3schools.com/jsref/jsref_reduce.asp)

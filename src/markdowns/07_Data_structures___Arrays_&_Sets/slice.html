@@ -6,7 +6,8 @@
 <style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -86,12 +87,14 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
-  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; padding-bottom: 0px !important; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
   .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
@@ -168,7 +171,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 @media screen and (max-width: 800px) {
   .typora-export-sidebar { display: none; }
 }
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
 .outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
@@ -307,7 +310,7 @@ span.cm-strikethrough { text-decoration: line-through; }
   /* for focus mode */
   --text-color5: rgba(170, 178, 180, 0.5);
   /* link color */
-  --link-color: #6FC1FF;
+  --link-color: #0091FF;
   /* table color */
   --table-border-color: #555;
   --table-thead-color: #2b2d2e;
@@ -342,7 +345,7 @@ span.cm-strikethrough { text-decoration: line-through; }
   --focus-ring-color: var(--focus-color);
   /* codeblock color */
   --code-red-color: #FF75B5;
-  --code-yellow-color: #FFB86C;
+  --code-yellow-color: #E8FF94;
   --code-cyan-color: #19f9d8;
   --code-blue-color: #6FC1FF;
   --code-purple-color: #FF75B5;
@@ -412,6 +415,7 @@ body {
 /* link */
 #write a:not([role="menuitem"]) {
   color: var(--link-color) !important;
+  text-decoration: none;
 }
 
 #write a:not([role="menuitem"]):hover {
@@ -1290,11 +1294,12 @@ footer.ty-footer {
 code {
   font-size: 0.9em;
   background-color: var(--bg-color5);
-	padding: .3em;
-  	padding-top: 0.15em;
-  	padding-bottom: 0.15em;
+  padding: .3em;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
   border: 2px solid #666;
   border-radius: 0.25rem;
+  color: var(--text-color1);
 }
 
 /* codeblock */
@@ -1568,7 +1573,7 @@ pre.md-meta-block:active {
   visibility: visible;
   opacity: 1;
   transition: 0.3s;
-  max-width: 800px;
+  max-width: 1100px !important;
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -2265,6 +2270,7 @@ mark {
     border-radius: 3px;
     padding: 1px 3px 1px 3px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    color: #000000;
 }
 
 .task-list-done {
@@ -2279,61 +2285,27 @@ kbd {
   box-shadow: 0 2px 0 #333;
 }
 
+blockquote p {
+  text-indent: 0px;
+}
+
 p {
-    text-align: justify;
-    text-indent: 30px;
+  text-align: justify;
+  text-indent: 30px;
 }
 
-blockquote > p {
-    text-indent: 0px;
+a code {
+  color: var(--link-color) !important;
 }
 
-li {
-    text-align: justify;
-}
 
-#write a:not([role="menuitem"]) {
-    text-decoration: none;
-}
-
-#write {
-    max-width: 950px;
-}
-
-@media only screen and (max-width: 850px) {
-  #write {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  #write > h1:first-child,
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  h2:after {
-    width: 160px;
-  }
-
-  p {
-    text-indent: 20px;
-  }
-}
 
 
 </style><title>slice</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='arrayprototypeslice'><span>Array.prototype.slice()</span></h1><p><span>The </span><code>slice()</code><span> method </span><mark><span>returns a </span><strong><span>shallow copy</span></strong></mark><span> of </span><mark><span>a </span><strong><span>portion</span></strong><span> of an array</span></mark><span> into a new array object selected from </span><code>startIndex</code><span> to </span><code>endIndex</code><span> (</span><code>endIndex</code><span> not included), where </span><code>startIndex</code><span> and </span><code>endIndex</code><span> represent the index of items in that array.</span></p><p><mark><span>The original array will not be modified</span></mark><span>.</span></p><p><span>The </span><code>slice()</code><span> method:</span></p><ul><li><span>returns selected elements in an array, as a new array;</span></li><li><span>selects from a given </span><em><span>start index</span></em><span>, up to a (not inclusive) given </span><em><span>end index</span></em><span>;</span></li><li><span>does not mutates the original array.</span></li></ul><h2 id='syntax'><span>Syntax</span></h2><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.51875px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">array.slice()</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">array.slice(startIndex)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">array.slice(startIndex, endIndex)</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 69px;"></div><div class="CodeMirror-gutters" style="display: none; height: 69px;"></div></div></div></pre><h2 id='parameters'><span>Parameters</span></h2><h4 id='startindex-optional'><mark><strong><span>startIndex</span></strong></mark><span> </span><em><span>(optional)</span></em></h4><p><span>Zero-based index at which to start extraction.</span></p><p><span>A negative index can be used, indicating an offset from the end of the sequence. </span><code>array.slice(-2)</code><span> extracts the last two elements in the sequence. </span></p><p><span>If </span><code>startIndex</code><span> is </span><code>undefined</code><span>, slice starts from the index </span><code>0</code><span>.</span></p><p><span>If </span><code>startIndex</code><span> is greater than the index range of the sequence, an empty array is returned.</span></p><h4 id='endindex-optional'><mark><strong><span>endIndex</span></strong></mark><span> </span><em><span>(optional)</span></em></h4><p><span>The </span><mark><span>index of the </span><strong><span>first element to exclude</span></strong><span> from the returned array</span></mark><span>. </span><code>slice()</code><span> extracts up to but not including end. For example, </span><code>array.slice(1, 4)</code><span> extracts the second element through the fourth element (elements indexed 1, 2, and 3).</span></p><p><span>A negative </span><code>endIndex</code><span> can be used, indicating an offset from the end of the sequence. </span><code>array.slice(2,-1)</code><span> extracts the third element through the second-to-last element in the sequence.</span></p><p><span>If </span><code>endIndex</code><span> is omitted, </span><code>slice()</code><span> extracts through the end of the sequence (</span><code>array.length</code><span>).</span></p><p><span>If </span><code>endIndex</code><span> is greater than the length of the sequence, </span><code>slice()</code><span> extracts through to the end of the sequence (</span><code>array.length</code><span>).</span></p><h2 id='return-value'><span>Return value</span></h2><p><span>A </span><mark><strong><span>new array</span></strong><span> containing the extracted elements</span></mark><span>.</span></p><h2 id='some-consideration-about-slice-method'><span>Some consideration about </span><code>slice()</code><span> method</span></h2><p><span>Arrays are in the end objects and therefore reference values. So if you compare an array to an array that looks totally equal to us humans, it will return </span><code>false</code><span> because it&#39;s not exactly the same object.</span></p><p><span>Also, if we store an array, store the results in another variable, the arrays will be equal because what you store in the second array is a pointer in place in memory. That&#39;s something where </span><code>slice()</code><span> can help us because it </span><mark><span>returns a brand </span><strong><span>new array</span></strong><span> based on the </span><strong><span>old array</span></strong><span>, so a brand new array is created and stored in memory based on that old array</span></mark><span>.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="js"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.51875px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">arr1</span> <span class="cm-operator">=</span> [<span class="cm-number">1</span>, <span class="cm-number">2</span>, <span class="cm-number">3</span>];</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+<div id='write'  class=''><h1 id='arrayprototypeslice'><code>Array.prototype.slice()</code></h1><p><span>The </span><code>slice()</code><span> method </span><mark><span>returns a </span><strong><span>shallow copy</span></strong></mark><span> of </span><mark><span>a </span><strong><span>portion</span></strong><span> of an array</span></mark><span> into a new array object selected from </span><code>startIndex</code><span> to </span><code>endIndex</code><span> (</span><code>endIndex</code><span> not included), where </span><code>startIndex</code><span> and </span><code>endIndex</code><span> represent the index of items in that array.</span></p><p><mark><span>The original array will not be modified</span></mark><span>.</span></p><p><span>The </span><code>slice()</code><span> method:</span></p><ul><li><p><span>returns selected elements in an array, as a new array;</span></p></li><li><p><span>selects from a given </span><em><span>start index</span></em><span>, up to a (not inclusive) given </span><em><span>end index</span></em><span>;</span></p></li><li><p><span>does not mutates the original array.</span></p></li></ul><h2 id='syntax'><span>Syntax</span></h2><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.51875px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">array</span>.<span class="cm-property">slice</span>()</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">array</span>.<span class="cm-property">slice</span>(<span class="cm-variable">startIndex</span>)</span></pre><div class="" style="position: relative;"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">array</span>.<span class="cm-property">slice</span>(<span class="cm-variable">startIndex</span>, <span class="cm-variable">endIndex</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 69px;"></div><div class="CodeMirror-gutters" style="display: none; height: 69px;"></div></div></div></pre><h2 id='parameters'><span>Parameters</span></h2><h4 id='startindex-optional'><mark><strong><span>startIndex</span></strong></mark><span> </span><em><span>(optional)</span></em></h4><p><span>Zero-based index at which to start extraction.</span></p><p><span>A negative index can be used, indicating an offset from the end of the sequence. </span><code>array.slice(-2)</code><span> extracts the last two elements in the sequence. </span></p><p><span>If </span><code>startIndex</code><span> is </span><code>undefined</code><span>, slice starts from the index </span><code>0</code><span>.</span></p><p><span>If </span><code>startIndex</code><span> is greater than the index range of the sequence, an empty array is returned.</span></p><h4 id='endindex-optional'><mark><strong><span>endIndex</span></strong></mark><span> </span><em><span>(optional)</span></em></h4><p><span>The </span><mark><span>index of the </span><strong><span>first element to exclude</span></strong><span> from the returned array</span></mark><span>. </span><code>slice()</code><span> extracts up to but not including end. For example, </span><code>array.slice(1, 4)</code><span> extracts the second element through the fourth element (elements indexed 1, 2, and 3).</span></p><p><span>A negative </span><code>endIndex</code><span> can be used, indicating an offset from the end of the sequence. </span><code>array.slice(2,-1)</code><span> extracts the third element through the second-to-last element in the sequence.</span></p><p><span>If </span><code>endIndex</code><span> is omitted, </span><code>slice()</code><span> extracts through the end of the sequence (</span><code>array.length</code><span>).</span></p><p><span>If </span><code>endIndex</code><span> is greater than the length of the sequence, </span><code>slice()</code><span> extracts through to the end of the sequence (</span><code>array.length</code><span>).</span></p><h2 id='return-value'><span>Return value</span></h2><p><span>A </span><mark><strong><span>new array</span></strong><span> containing the extracted elements</span></mark><span>.</span></p><h2 id='some-consideration-about-slice-method'><span>Some consideration about </span><code>slice()</code><span> method</span></h2><p><span>Arrays are in the end objects and therefore reference values. So if you compare an array to an array that looks totally equal to us humans, it will return </span><code>false</code><span> because it&#39;s not exactly the same object.</span></p><p><span>Also, if we store an array, store the results in another variable, the arrays will be equal because what you store in the second array is a pointer in place in memory. That&#39;s something where </span><code>slice()</code><span> can help us because it </span><mark><span>returns a brand </span><strong><span>new array</span></strong><span> based on the </span><strong><span>old array</span></strong><span>, so a brand new array is created and stored in memory based on that old array</span></mark><span>.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="js"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.51875px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">arr1</span> <span class="cm-operator">=</span> [<span class="cm-number">1</span>, <span class="cm-number">2</span>, <span class="cm-number">3</span>];</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
 </span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// WITHOUT slice()</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">arr2</span> <span class="cm-operator">=</span> <span class="cm-variable">arr1</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">arr1</span>.<span class="cm-property">push</span>(<span class="cm-number">4</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">arr1</span>); <span class="cm-comment">// [1, 2, 3, 4]</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">arr2</span>); <span class="cm-comment">// [1, 2, 3, 4]</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
-</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// WITH slice()</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">arr2</span> <span class="cm-operator">=</span> <span class="cm-variable">arr1</span>.<span class="cm-property">slice</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">arr1</span>.<span class="cm-property">push</span>(<span class="cm-number">4</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">arr1</span>); <span class="cm-comment">// [1, 2, 3, 4]</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">arr2</span>); <span class="cm-comment">// [1, 2, 3]</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 299px;"></div><div class="CodeMirror-gutters" style="display: none; height: 299px;"></div></div></div></pre><p><code>slice()</code><span> does </span><mark><strong><span>not mutates</span></strong><span> the original array</span></mark><span>. It returns a </span><mark><span>shallow copy</span></mark><span> of elements from the original array. Elements of the original array are copied into the returned array as follows:</span></p><ul><li><span>For </span><strong><span>objects</span></strong><span>, </span><code>slice()</code><span> </span><mark><span>copies </span><strong><span>object references</span></strong></mark><span> into the new array. </span><mark><span>Both the original and new array refer to the same object</span></mark><span>. If an object changes, the changes are visible to both the new and original arrays.</span></li><li><span>For </span><strong><span>strings</span></strong><span>, </span><strong><span>numbers</span></strong><span> and </span><strong><span>booleans</span></strong><span> (not </span><code>String</code><span>, </span><code>Number</code><span> and </span><code>Boolean</code><span> objects), </span><code>slice()</code><span> </span><mark><span>copies the </span><strong><span>values</span></strong></mark><span> into the new array. Changes to the string, number, or boolean in one array do not affect the other array. If a new element is added to either array, the other array is not affected.</span></li></ul><p><span>The </span><code>slice()</code><span> method is a copying method. It does not alter </span><code>this</code><span> but instead returns a shallow copy that contains some of the same elements as the ones from the original array.</span></p><h2 id='reference'><span>Reference</span></h2><ol start='' ><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice'><span>Array.prototype.slice() - MDN</span></a></li><li><a href='https://www.w3schools.com/jsref/jsref_slice_array.asp'><span>slice() - w3schools</span></a></li></ol></div></div>
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// WITH slice()</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">arr2</span> <span class="cm-operator">=</span> <span class="cm-variable">arr1</span>.<span class="cm-property">slice</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">arr1</span>.<span class="cm-property">push</span>(<span class="cm-number">4</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">arr1</span>); <span class="cm-comment">// [1, 2, 3, 4]</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">arr2</span>); <span class="cm-comment">// [1, 2, 3]</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 299px;"></div><div class="CodeMirror-gutters" style="display: none; height: 299px;"></div></div></div></pre><p><code>slice()</code><span> does </span><mark><strong><span>not mutates</span></strong><span> the original array</span></mark><span>. It returns a </span><mark><span>shallow copy</span></mark><span> of elements from the original array. Elements of the original array are copied into the returned array as follows:</span></p><ul><li><p><span>For </span><strong><span>objects</span></strong><span>, </span><code>slice()</code><span> </span><mark><span>copies </span><strong><span>object references</span></strong></mark><span> into the new array. </span><mark><span>Both the original and new array refer to the same object</span></mark><span>. If an object changes, the changes are visible to both the new and original arrays.</span></p></li><li><p><span>For </span><strong><span>strings</span></strong><span>, </span><strong><span>numbers</span></strong><span> and </span><strong><span>booleans</span></strong><span> (not </span><code>String</code><span>, </span><code>Number</code><span> and </span><code>Boolean</code><span> objects), </span><code>slice()</code><span> </span><mark><span>copies the </span><strong><span>values</span></strong></mark><span> into the new array. Changes to the string, number, or boolean in one array do not affect the other array. If a new element is added to either array, the other array is not affected.</span></p></li></ul><p><span>The </span><code>slice()</code><span> method is a copying method. It does not alter </span><code>this</code><span> but instead returns a shallow copy that contains some of the same elements as the ones from the original array.</span></p><h2 id='references'><span>References</span></h2><ol start='' ><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice'><code>Array.prototype.slice()</code><span> - MDN</span></a></p></li><li><p><a href='https://www.w3schools.com/jsref/jsref_slice_array.asp'><code>slice()</code><span> - w3schools</span></a></p></li></ol></div></div>
 </body>
 </html>

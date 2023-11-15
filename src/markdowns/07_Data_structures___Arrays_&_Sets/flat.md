@@ -1,4 +1,4 @@
-# Array.prototype.flat()
+# `Array.prototype.flat()`
 
 The `flat()` method ==creates a **new array** with **all sub-array elements concatenated into it** recursively up to the **specified depth**==.
 
@@ -41,6 +41,6 @@ arr4.flat(Infinity);
 // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
-## Reference
+## References
 
-1. [Array.prototype.flat() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
+1. [`Array.prototype.flat()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)

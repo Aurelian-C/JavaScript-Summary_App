@@ -1,8 +1,8 @@
-# Array.prototype.join()
+# `Array.prototype.join()`
 
 The `join()` method ==**creates** and **returns** a new **string** by **concatenating all of the elements in an array** (or an Array-Like object)==, ==separated by commas or a **specified separator string**==. If the array has only one item, then that item will be returned without using the separator.
 
-> **Note**: The string conversions of all array elements are joined into ==one string==.
+> **NOTE**: The string conversions of all array elements are joined into ==one string==.
 
 The `join()` method:
 
@@ -41,7 +41,7 @@ console.log([1, , 3].join());			// '1,,3'
 console.log([1, undefined, 3].join());	// '1,,3'
 ```
 
-## Reference
+## References
 
-1. [Array.prototype.join() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
-2. [join() - w3schools](https://www.w3schools.com/jsref/jsref_join.asp)
+1. [`Array.prototype.join()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+2. [`join()` - w3schools](https://www.w3schools.com/jsref/jsref_join.asp)

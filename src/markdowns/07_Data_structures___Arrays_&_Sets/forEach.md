@@ -1,4 +1,4 @@
-# Array.prototype.forEach()
+# `Array.prototype.forEach()`
 
 The `forEach()` method ==**executes** a provided **function** _once_ for each array element==. The `forEach()` method is ==not executed for empty elements==.
 
@@ -56,7 +56,7 @@ The range of elements processed by `forEach()` is set before the first invocatio
 
 `forEach()` does ==**not mutate** the array== on which it is called (however, `callbackFn` may do so).
 
-> **Note**: There is ==no way to **stop** or **break**== a `forEach()` loop ==other than by throwing an exception==. If you need such behavior, the `forEach()` method is the wrong tool. Early termination may be accomplished with:
+> **NOTE**: There is ==no way to **stop** or **break**== a `forEach()` loop ==other than by throwing an exception==. If you need such behavior, the `forEach()` method is the wrong tool. Early termination may be accomplished with:
 >
 > - A simple [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for) loop
 > - A [for...of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) / [for...in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) loops
@@ -96,7 +96,7 @@ prices.forEach(price => {
 });
 ```
 
-## Reference
+## References
 
-1. [Array.prototype.forEach() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-2. [forEach() - w3schools](https://www.w3schools.com/jsref/jsref_foreach.asp)
+1. [`Array.prototype.forEach()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+2. [`forEach()` - w3schools](https://www.w3schools.com/jsref/jsref_foreach.asp)

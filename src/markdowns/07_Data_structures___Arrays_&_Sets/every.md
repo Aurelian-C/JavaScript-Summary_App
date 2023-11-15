@@ -1,4 +1,4 @@
-# Array.prototype.every()
+# `Array.prototype.every()`
 
 The `every()` method ==tests whether **all elements** in the array **pass the test** implemented by the **provided function**==. It ==**returns a Boolean** value==.
 
@@ -59,9 +59,9 @@ If a `thisArg` parameter is provided to `every()`, it will be used as callback's
 
 The range of elements processed by `every()` is set before the first invocation of `callbackFn`. Therefore, `callbackFn` will not run on elements that are appended to the array after the call to `every()` begins. If existing elements of the array are changed, their value as passed to `callbackFn` will be the value at the time `every()` visits them. Elements that are deleted are not visited.
 
-> **Note**: Calling `every()` method on an empty array will return `true` for any condition!
+> **NOTE**: Calling `every()` method on an empty array will return `true` for any condition!
 
-## Reference
+## References
 
-1. [Array.prototype.every() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
-2. [every() - w3schools](https://www.w3schools.com/jsref/jsref_every.asp)
+1. [`Array.prototype.every()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+2. [`every()` - w3schools](https://www.w3schools.com/jsref/jsref_every.asp)

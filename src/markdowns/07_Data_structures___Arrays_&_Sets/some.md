@@ -1,14 +1,14 @@
-# Array.prototype.some()
+# `Array.prototype.some()`
 
 The `some()` method ==**tests** whether **at least one element** in the array **passes the test** implemented by the **provided function**==. It returns `true` if, in the array, it finds an element for which the provided function returns `true`; otherwise it returns `false`. It ==doesn't mutates the original array==.
 
 The `some()` method:
 
 - checks if any array elements pass a test (provided as a callback function);
-- executes the callback function once for each array element
-- if the callback function returns `true` for one of the array elements, `some()` returns `true` and stops.
-- returns `false` if the function returns `false` for all of the array elements.
-- does not execute the function for empty array elements.
+- executes the callback function once for each array element;
+- if the callback function returns `true` for one of the array elements, `some()` returns `true` and stops;
+- returns `false` if the function returns `false` for all of the array elements;
+- does not execute the function for empty array elements;
 - does not mutates the original array.
 
 ## Syntax
@@ -58,9 +58,9 @@ If a `thisArg` parameter is provided to `some()`, it will be used as the callbac
 
 The range of elements processed by `some()` is set before the first invocation of `callbackFn`. Elements which are assigned to indexes already visited, or to indexes outside the range, will not be visited by `callbackFn`. If an existing, unvisited element of the array is changed by `callbackFn`, its value passed to the visiting `callbackFn` will be the value at the time that `some()` visits that element's index. Elements that are deleted are not visited.
 
-> **Note**: Calling `some()` method on an empty array returns `false` for any condition!
+> **NOTE**: Calling `some()` method on an empty array returns `false` for any condition!
 
-## Reference
+## References
 
-1. [Array.prototype.some() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
-2. [some() - w3schools](https://www.w3schools.com/jsref/jsref_some.asp)
+1. [`Array.prototype.some()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+2. [`some()` - w3schools](https://www.w3schools.com/jsref/jsref_some.asp)

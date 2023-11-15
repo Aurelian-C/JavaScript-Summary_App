@@ -1,4 +1,4 @@
-# Array.prototype.flatMap()
+# `Array.prototype.flatMap()`
 
 The `flatMap()` method ==returns a new array== formed by applying a given ==callback function to each element of the array==, and ==then flattening the result by one level==. It is identical to a `map()` followed by a `flat()` of depth 1, but slightly more efficient than calling those two methods separately.
 
@@ -39,6 +39,6 @@ Value to use as `this` when executing `callbackFn`.
 
 A ==**new array**== with each element being the result of the callback function and flattened to a depth of 1.
 
-## Reference
+## References
 
-1. [Array.prototype.flatMap() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap)
+1. [`Array.prototype.flatMap()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap)

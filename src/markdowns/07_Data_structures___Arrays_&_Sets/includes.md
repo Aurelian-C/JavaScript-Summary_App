@@ -1,8 +1,8 @@
-# Array.prototype.includes()
+# `Array.prototype.includes()`
 
 The `includes()` method ==determines whether an array includes a certain **value** among its entries==, returning `true` or `false` as appropriate. The `includes()` method is ==**case sensitive**==.
 
-> **Note**: `includes()` is ==only useful for **primitive** values== because it also just ==checks **values**== like `indexOf()` does.
+> **NOTE**: `includes()` is ==only useful for **primitive** values==, because it also just ==checks **values**== like `indexOf()` does.
 
 The `includes()` method:
 
@@ -23,7 +23,7 @@ array.includes(searchElement, fromIndex);
 
 The ==value== to search for.
 
-> **Note**: When comparing **strings** and **characters**, `includes()` is ==case-sensitive==.
+> **NOTE**: When comparing **strings** and **characters**, `includes()` is ==case-sensitive==.
 
 #### ==**fromIndex**== _(optional)_
 
@@ -39,7 +39,7 @@ A ==boolean== value which is `true` if the value `searchElement` is found within
 
 `includes()` is similar to `array.indexOf(someElement) !== -1`, but of course `includes()` is a bit shorter and saves us for that extra comparison.
 
-## Reference
+## References
 
-1. [Array.prototype.includes() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
-2. [includes() - w3schools](https://www.w3schools.com/jsref/jsref_includes_array.asp)
+1. [`Array.prototype.includes()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+2. [`includes()` - w3schools](https://www.w3schools.com/jsref/jsref_includes_array.asp)

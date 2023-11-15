@@ -1508,75 +1508,241 @@ const arraysAndSets = {
           title: 'slice()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/slice.html',
-          summary: [],
+          summary: [
+            `<p>The <code>slice()</code> method <i>returns a <u>shallow copy</u></i> of <i>a <u>portion</u> of an array</i> into a new array object selected from <code>startIndex</code> to <code>endIndex</code> (<code>endIndex</code> not included), where <code>startIndex</code> and <code>endIndex</code> represent the index of items in that array: <code>array.slice(startIndex, endIndex)</code></p>
+            <ul>The <code>slice()</code> method:
+              <li>- returns selected elements in an array, as a new array;</li>
+              <li>- selects from a given start index, up to a (not inclusive) given end index;</li>
+              <li>- does not mutates the original array.</li>
+            </ul>
+            `,
+            `<h3>Parameters</h3>
+            <ul><code>startIndex</code> (optional)
+              <li><i>A negative index can be used</i>, indicating an offset from the end of the sequence. <code>array.slice(-2)</code> extracts the last two elements in the sequence.</li>
+              <li>If <code>startIndex</code> is greater than the index range of the sequence, an empty array is returned.</li>
+            </ul>
+            <ul><code>endIndex</code> (optional)
+              <li>The <i>index of the <u>first element to exclude</u> from the returned array</i>. <code>slice()</code> extracts up to but not including end.</li>
+              <li>If <code>endIndex</code> is omitted, <code>slice()</code> extracts through the end of the sequence (<code>array.length</code>).</li>
+            </ul>
+            `,
+            `<h3>Some consideration about <code>slice()</code> method</h3>
+            <ul><code>slice()</code> does not mutates the original array. It returns a shallow copy of elements from the original array. Elements of the original array are copied into the returned array as follows:
+              <li>- <i>For objects, <code>slice()</code> <u>copies object references</u> into the new array. Both the original and new array refer to the same object.</i> If an object changes, the changes are visible to both the new and original arrays.</li>
+              <li>- <i>For strings, numbers and booleans (not <code>String</code>, <code>Number</code> and <code>Boolean</code> objects), <code>slice()</code> <u>copies the values</u> into the new array. Changes to the string, number, or boolean in one array do not affect the other array.</i> If a new element is added to either array, the other array is not affected.</li>
+            </ul>
+            `,
+          ],
         },
         {
           title: 'concat()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/concat.html',
-          summary: [],
+          summary: [
+            `<p>The <code>concat()</code> method is used to <i>><u>merge/join</u> two or more arrays</i>: <code>array.concat(item0, item1, ... , itemN)</code></p>
+            <p>This method does <i>not change the existing arrays</i>, but instead <i>returns a new array</i>.</p>`,
+            `<h3>Parameters</h3>
+            <ul><code>itemN</code> (optional) 
+              <li>- <i>arrays</i> and/or <i>values</i> to concatenate (merge) into a new array. <i>If all <code>itemN</code> parameters are omitted, <code>concat()</code> returns a shallow copy of the existing array on which it is called.</i></li>
+            </ul>`,
+            `<h3>Some considerations about <code>concat()</code> method</h3>
+            <p>The <code>concat()</code> method <i>creates a new array</i> consisting of the elements in the object on which it is called, followed in order by, for each argument, the elements of that argument (if the argument is an array) or the argument itself (if the argument is not an array). <i>It does not recurse into <u>nested array arguments</u></i>.</p>
+            <ul>Elements of the original arrays are copied into the new array as follows:
+              <li>- <i>For objects, <code>concat()</code> <u>copies object references</u> into the new array. Both the original and new array refer to the same object.</i> If an object changes, the changes are visible to both the new and original arrays.</li>
+              <li>- <i>For strings, numbers and booleans (not <code>String</code>, <code>Number</code> and <code>Boolean</code> objects), <code>concat()</code> <u>copies the values</u> into the new array. Changes to the string, number, or boolean in one array do not affect the other array.</i> If a new element is added to either array, the other array is not affected.</li>
+          </ul>
+            `,
+          ],
         },
         {
           title: 'flat()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/flat.html',
-          summary: [],
+          summary: [
+            `<p>The <code>flat()</code> method <i>creates a <u>new array</u> with <u>all sub-array elements concatenated into it</u> recursively up to the <u>specified depth</u></i>: <code>array.flat(depth)</code></p>`,
+            `<h3>Parameters</h3>
+            <ul>depth (optional)
+              <li>The depth level specifying <i>how deep a nested array structure should be flattened</i>. Defaults to 1.</li>
+            </ul>
+            `,
+          ],
         },
         {
           title: 'flatMap()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/flatMap.html',
-          summary: [],
+          summary: [
+            `<p>The <code>flatMap()</code> method <i>returns a new array</i> formed by applying a given <i>callback function to each element of the array</i>, and <i>then flattening the result by one level</i>: <code>array.flatMap(callbackFn)</code>.</p>
+            <p><i><code>flatMap()</code> is identical to a <code>map()</code> followed by a <code>flat()</code> of depth 1</i>, but slightly more efficient than calling those two methods separately.</p>`,
+          ],
         },
         {
           title: 'indexOf()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/indexOf.html',
-          summary: [],
+          summary: [
+            `<p>The <code>indexOf()</code> method <i>returns the <u>first index</u></i> at which a given element can be found in the array, or <code>-1</code> if it is not present: <code>array.indexOf(searchElement, fromIndex)</code></p>
+            <p>By default the search starts at the first element and ends at the last (searches from left to right). Negative start values counts from the last element (but still searches from left to right).</p>
+            `,
+            `<h3>Some considerations about <code>indexOf()</code> method</h3>
+            <p><code>indexOf()</code> compares <code>searchElement</code> to elements of the array using <i>strict equality</i> (the same method used by the <code>===</code> or triple-equals operator).</p>
+            <p><code>indexOf()</code> <i>works fine for <u>primitive</u></i> values, but <i>not for <u>reference</u></i> values. If you want to <i>search for an index in an array that have reference values items</i> (Objects, Arrays), use <code>Array.prototype.findIndex()</code> method.</p>
+            `,
+          ],
         },
         {
           title: 'lastIndexOf()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/lastIndexOf.html',
-          summary: [],
+          summary: [
+            `<p>The <code>lastIndexOf()</code> method <i>returns the <u>last index</u></i> at which a given element can be found in the array, or <code>-1</code> if it is not present. The array is searched backwards, starting at <code>fromIndex</code>: <code>array.lastIndexOf(searchElement, fromIndex)</code></p>
+            <p>By default the search starts at the last element and ends at the first. Negative start values counts from the last element (but still searches from right to left).</p>
+            `,
+            `<h3>Some considerations about <code>lastIndexOf()</code> method</h3>
+            <p><code>lastIndexOf()</code> compares <code>searchElement</code> to elements of the array using <i>strict equality</i> (the same method used by the <code>===</code> or triple-equals operator).</p>
+            <p><code>lastIndexOf()</code> <i>works fine for <u>primitive</u></i> values, but <i>not for <u>reference</u></i> values.</p>
+            `,
+          ],
         },
         {
           title: 'findIndex()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/findIndex.html',
-          summary: [],
+          summary: [
+            `<p>The <code>findIndex()</code> method <i>returns the <u>index of the first element</u></i> in the array that satisfies the provided <i>testing function</i>. Otherwise, it returns <code>-1</code>, indicating that no element passed the test.</p>
+            <ul>The <code>findIndex()</code> method:
+              <li>- <i>executes a function for each array element</i>;</li>
+              <li>- <i>does not execute the function for empty array elements</i>;</li>
+              <li>- <i>returns the index (position) of the first element that passes a test</i>;</li>
+              <li>- returns <code>-1</code> if no match is found;</li>
+              <li>- does <i>not mutates the original array</i>.</li>
+            </ul>
+            <p>The callback function (test function) povided to <code>findIndex()</code> <i>must return a truthy value</i> to indicate a matching element has been found. The index of this element is then returned by <code>findIndex()</code>.</p>
+            <p>NOTE: If you want to <u>returns the value</u> of an array element and <u>not the index</u>, instead of <code>findIndex()</code> use <code>Array.prototype.find()</code> method.</p>
+            `,
+            `<h3>Some considerations about <code>findIndex()</code> method</h3>
+            <p>The <code>findIndex()</code> method <i>executes the <code>callbackFn</code> function <u>once</u> for every index in the array</i> until it finds the one where <code>callbackFn</code> returns a truthy value. If such an element is found, <code>findIndex()</code> immediately returns the <u>element's index</u>. If <code>callbackFn</code> never returns a truthy value (or the array's <code>length</code> is 0), <code>findIndex()</code> returns <code>-1</code>.</p>
+            <p><i><code>callbackFn</code> is invoked for <u>every</u> index of the array</i>, not just those with assigned values.</p>
+            `,
+          ],
         },
         {
           title: 'find()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/find.html',
-          summary: [],
+          summary: [
+            `<p>The <code>find()</code> method <i>returns the <u>first element</u></i> in the provided array that satisfies the provided <i>testing function</i>. If no values satisfy the testing function, <code>undefined</code> is returned.</p>
+          <ul>The <code>find()</code> method:
+          <li>- <i>returns the value of the first element that passes a test</i>;</li>
+          <li>- <i>executes a function for each array element</i>;</li>
+          <li>- <i>does not execute the function for empty elements</i>;</li>
+          <li>- returns <code>undefined</code> if no elements are found;</li>
+          <li>- does <i>not mutates the original array</i>.</li>
+          </ul>
+          <p>IMPORTANT: One important thing about <code>find()</code>, it <i>returns the <u>same object</u> as you have in the array</i>, it does <i><u>not copy</u> it</i> or anything like that. So <code>find()</code> does not create a copy of the element that return.</p>
+          `,
+            `<h3>Some considerations about <code>find()</code> method</h3>
+          <p>The <code>find()</code> method <i>executes the <code>callbackFn</code> function <u>once</u> for each index of the array</i>, until the <code>callbackFn</code> returns a truthy value. If so, <code>find()</code> immediately returns the value of that element. Otherwise, <code>find()</code> returns <code>undefined</code>.</p>
+          <p><code>callbackFn</code> is <i>invoked for every index of the array, not just those with assigned values</i>. This means it may be less efficient for sparse arrays, compared to methods that only visit assigned values.</p>
+          <p>The <code>find()</code> method does <i>not mutate the array</i> on which it is called, but the function provided to <code>callbackFn</code> can.</p>
+          `,
+            `<h3>Tips</h3>
+          <p>- If you need the <i><u>index</u> of the found element</i> in the array, use <code>findIndex()</code>.</p>
+          <p>- If you need to find the <i><u>index</u> of a value</i>, use <code>indexOf()</code> (it's similar to <code>findIndex()</code>, but checks each element for equality with the value, instead of using a testing function).</p>
+          <p>- If you need to find <i>if a <u>value exists</u> in an array</i>, use <code>includes()</code>. Again, it checks each element for equality with the value, instead of using a testing function.</p>
+          <p>- If you need to <i>find if any <u>element</u> satisfies the provided testing function</i>, use <code>some()</code>.</p>
+          `,
+          ],
         },
         {
           title: 'includes()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/includes.html',
-          summary: [],
+          summary: [
+            `<p>The <code>includes()</code> method <i>determines whether an array includes a certain <u>value</u> among its entries</i>, returning <code>true</code> or <code>false</code> as appropriate: <code>array.includes(searchElement, fromIndex)</code>.</p>
+            <p>The <code>includes()</code> method is <i>case sensitive</i>.</p>
+          <p>NOTE: <code>includes()</code> is <i>only useful for <u>primitive</u> values</i>, because it also just <i>checks <u>values</u></i> like <code>indexOf()</code> does.</p>
+          <ul>The <code>includes()</code> method:
+          <li>- returns <code>true</code> if an array contains a specified value;</li>
+          <li>- returns <code>false</code> if the value is not found;</li>
+          <li>- is case sensitive.</li>
+          </ul>
+          `,
+            `<h3>Some considerations about <code>includes()</code> method</h3>
+          <p><code>includes()</code> is a great choice if you're not interested in the index and also not interested in the value, but just <i>want to know whether an element is part of the array or not</i>.</p>
+          <p><i><code>includes()</code> is similar to <code>array.indexOf(someElement) !== -1</code></i>, but of course <code>includes()</code> is a bit shorter and saves us for that extra comparison.</p>`,
+          ],
         },
         {
           title: 'some()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/some.html',
-          summary: [],
+          summary: [
+            `<p>The <code>some()</code> method <i>tests whether <u>at least one element</u> in the array <u>passes the test</u> implemented by the <u>provided function</u></i>. It returns <code>true</code> if, in the array, it finds an element for which the provided function returns <code>true</code>; otherwise it returns <code>false</code>. It <i>doesn't mutates the original array</i>.</p>
+          <ul>The <code>some()</code> method:
+          <li>- checks <i>if any array elements pass a test (provided as a callback function)</i>;</li>
+          <li>- executes the callback function once for each array element;</li>
+          <li>- if the callback function returns <code>true</code> for one of the array elements, <code>some()</code> returns <code>true</code> and stops;</li>
+          <li>- returns <code>false</code> if the function returns <code>false</code> for all of the array elements;</li>
+          <li>- <i>does not execute the function for empty array elements</i>;</li>
+          <li>- does not mutates the original array.</li>
+          </ul>
+          <p>NOTE: Calling <code>some()</code> method on an empty array returns <code>false</code> for any condition!</p>
+          `,
+          ],
         },
         {
           title: 'every()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/every.html',
-          summary: [],
+          summary: [
+            `<p>The <code>every()</code> method <i>tests whether <u>all elements</u> in the array <u>pass the test</u> implemented by the <u>provided function</u></i>. It <i>returns a Boolean value</i>.</p>
+          <ul>The <code>every()</code> method:
+          <li>- executes a function for each array element;</li>
+          <li>- does not execute the function for empty elements;</li>
+          <li>- returns <code>true</code> if the function returns <code>true</code> for all elements;</li>
+          <li>- returns <code>false</code> if the function returns <code>false</code> for one element;</li>
+          <li>- does not mutates the original array.</li>
+          </ul>
+          <p>NOTE: Calling <code>every()</code> method on an empty array will return <code>true</code> for any condition!</p>
+          `,
+          ],
         },
         {
           title: 'join()',
           source: '/src/markdowns/07_Data_structures___Arrays_&_Sets/join.html',
-          summary: [],
+          summary: [
+            `<p>The <code>join()</code> method <i>creates and <u>returns a new string</u> by concatenating all of the elements in an array (or an Array-Like object), separated by commas (<code>,</code>) or a <u>specified separator string</u></i>. If the array has only one item, then that item will be returned without using the separator.</p>
+          <p>NOTE: The string conversions of all array elements are joined into <i>one string</i>.</p>
+          <ul>The <code>join()</code> method:
+          <li>- returns an array as a string;</li>
+          <li>- does not mutates the original array;</li>
+          <li>- any separator can be specified. The default is comma <code>,</code>.</li>
+          </ul>`,
+            `<h3>Some considerations about <code>join()</code> method</h3>
+          <p><i>The string conversions of all array elements are joined into <u>one string</u>.</i> If an element is <code>undefined</code>, <code>null</code>, it is converted to an empty string instead of the string "null" or "undefined".</p>
+          <p>The <code>join()</code> method is accessed internally by <code>Array.prototype.toString()</code> with no arguments. Overriding <code>join()</code> of an array instance will override its <code>toString()</code> behavior as well.</p>
+          <p>When used on sparse arrays, the <code>join()</code> method iterates empty slots as if they have the value <code>undefined</code>.</p>`,
+          ],
         },
         {
           title: 'reduce()',
           source:
             '/src/markdowns/07_Data_structures___Arrays_&_Sets/reduce.html',
-          summary: [],
+          summary: [
+            `<p>The <code>reduce()</code> method executes a user-supplied <i>"reducer" callback function</i> on each element of the array, <u>in order</u>, <i>passing in the return value from the calculation on the preceding element</i>. The final result of running the reducer across all elements of the array is a <i>single value</i>.</p>
+            <p>The idea behind <code>reduce()</code> method is to <i>reduce an array to a <u>single value</u></i>.</p>
+            <ul>The reduce() method:
+            <li>- executes a <i>reducer function</i> for array element;</li>
+            <li>- <i>returns a single value</i> (the function's accumulated result);</li>
+            <li>- does not execute the function for empty array elements;</li>
+            <li>- does <i>not change the original</i> array.<li>
+            </ul>
+            `,
+            `<h3>Some considerations about the <code>reduce()</code> method</h3>
+            <p>The <code>reduce()</code> method takes two arguments: a <i>callback function</i> and an optional <i>initial value</i>. If an initial value is provided, <code>reduce()</code> calls the "reducer" callback function on each element in the array, in order. If no initial value is provided, <code>reduce()</code> calls the callback function on each element in the array after the first element.</p>
+            <p>The <code>reduce()</code> method itself does not mutate the array it is used on. However, it is possible for code inside the callback function to mutate the array.</p>
+            <p>The first time that the callback is run there is no "return value of the previous calculation". If supplied, an initial value may be used in its place. Otherwise the array element at index 0 is used as the initial value and iteration starts from the next element (index 1 instead of index 0).</p>
+            <p>The reducer walks through the array element-by-element, at each step adding the current array value to the result from the previous step — until there are no more elements to add.</p>
+            `,
+          ],
         },
         {
           title: 'forEach()',
