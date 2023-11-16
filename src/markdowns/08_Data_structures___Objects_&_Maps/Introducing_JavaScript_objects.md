@@ -19,14 +19,14 @@ Like all JavaScript variables, both the object name (which could be a normal var
 
 An object property name can be any valid JavaScript string, or anything that can be converted to a string, including the empty string. However, any property name that is not a valid JavaScript identifier (for example, a property name that has a space or a hyphen, or that starts with a number) can only be accessed using the square bracket notation. This notation is also very useful when property names are to be dynamically determined (when the property name is not determined until runtime).
 
-> **Note**: ==all keys in the square bracket notation are **converted to string**== unless they're Symbols, since JavaScript object property names (keys) can only be strings or Symbols.
+> **NOTE**: ==All keys in the square bracket notation are **converted to string**== unless they're Symbols, since JavaScript object property names (keys) can only be strings or Symbols.
 
 ## Creating an object - _Object literals_
 
 As with many things in JavaScript, creating an object often begins with ==**defining** and **initializing** a variable==.
 
 ```js
-//Syntax
+// Syntax
 const objectName = {
   member1Name: member1Value,
   member2Name: member2Value,
@@ -49,10 +49,10 @@ const person = {
 };
 ```
 
-> Note: An object like above is referred to as an ==**object literal**== — we've literally written out the object contents as we've come to create it. This is in contrast to ==**objects instantiated from classes**==. It is very common to create an object using an object literal when you want to transfer a series of structured, related data items in some manner, for example sending a request to the server to be put into a database. Sending a single object is much more efficient than sending several items individually, and it is easier to work with than an array, when you want to identify individual items by name.
+> **NOTE**: An object like above is referred to as an ==**object literal**== — we've literally written out the object contents as we've come to create it. This is in contrast to ==**objects instantiated from classes**==. It is very common to create an object using an object literal when you want to transfer a series of structured, related data items in some manner, for example sending a request to the server to be put into a database. Sending a single object is much more efficient than sending several items individually, and it is easier to work with than an array, when you want to identify individual items by name.
 
-> Note: You are probably wondering what `this` is. The `this` keyword above refers to the current object the code is being written inside — so in this case `this` is equivalent to `person`. So why not just write `person` instead?
-> Well, when you only have to create a single object literal, `this` is not so useful. But if you create more than one, `this` enables you to use the same method definition for every object you create. =='this' isn't hugely useful when you are writing out **object literals** by hand, but it will be essential when we start using **constructors** to create more than one object from a single object definition==.
+> **NOTE**: You are probably wondering what `this` is. The `this` keyword above refers to the current object the code is being written inside — so in this case `this` is equivalent to `person`. So why not just write `person` instead?
+> Well, when you only have to create a single object literal, `this` is not so useful. But if you create more than one, `this` enables you to use the same method definition for every object you create. ==`this` isn't hugely useful when you are writing out **object literals** by hand, but it will be essential when we start using **Constructors** to create more than one object from a single object definition==.
 
 An object is made up of multiple members, each of which has a ==name== (e.g. `name` and `age` above), and a ==value== (e.g. `['Bob', 'Smith']` and `32`). Each ==**name/value pair**== must be separated by a comma (`:`), and the name and value in each case are separated by a colon (`,`).
 
@@ -120,11 +120,11 @@ The `createPerson` function creates and returns a new object each time we call i
 
 > Note that `createPerson()` takes a parameter `name` to set the value of the `name` property, but the value of the `introduceSelf()` method will be the same for all objects created using this function. This is a very common pattern for creating objects. You can see here how being able to use `this` in the definition of `introduceSelf()` enables us to use the same code for every object we create.
 
-This works fine but is a bit long-winded: we have to create an empty object, initialize it, and return it. ==A better way is to use a **constructor**. A constructor is just a function called using the **'new'** keyword==. When you call a constructor, it will:
+This works fine but is a bit long-winded: we have to create an empty object, initialize it, and return it. ==A better way is to use a **Constructor**. A Constructor is just a function called using the **'new'** keyword==. When you call a Constructor, it will:
 
 - create a new object
-- bind `this` to the new object, so you can refer to `this` in your constructor code
-- run the code in the constructor
+- bind `this` to the new object, so you can refer to `this` in your Constructor code
+- run the code in the Constructor
 - return the new object.
 
 ==Constructors, by convention, start with a **capital letter**== and are named for the type of object they create. So we could rewrite our example like this:
@@ -189,7 +189,7 @@ const myDataValue = '1.75m';
 person[myDataName] = myDataValue;
 ```
 
-> Note: Adding a property to an object using the method above isn't possible with dot notation, which can only accept a literal member name, not a variable value pointing to a name.
+> **NOTE**: Adding a property to an object using the method above isn't possible with dot notation, which can only accept a literal member name, not a variable value pointing to a name.
 
 ## Modifying an object
 
@@ -211,7 +211,7 @@ person.farewell = function () {
 
 ### ES6 enhanced object literals (_properties shorthand syntax_ & _computed properties_)
 
-When we are adding object properties we cand use ==properties **shorthand syntax**== and ==**computed** properties==.
+When we are adding object properties we can use ==properties **shorthand syntax**== and ==**computed** properties==.
 
 ```js
 const item1 = 'Closet';

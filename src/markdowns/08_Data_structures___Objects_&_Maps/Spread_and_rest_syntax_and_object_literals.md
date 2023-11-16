@@ -1,8 +1,8 @@
-# Spread syntax (...) and objects
+# Spread & rest syntax (`...`) & objects literals
 
 Spread syntax `...` allows an ==**iterable**==, such as an ==array== or ==string==, to be ==**expanded**== in places where zero or more arguments (for ==**function** calls==) or elements (for ==**array** literals==) are expected. In an ==**object ** literal== spread syntax allows an _object expression to be expanded_ in places where zero or more key-value pairs are expected.
 
->  **Note**: spread operator `...` is an operator that in the end pulls out all properties of an object to be copied in other object.
+>  **NOTE**: spread operator `...` is an operator that in the end pulls out all properties of an object to be copied in other object.
 
 Spread syntax looks exactly like rest syntax. In a way, _spread syntax is the opposite of [rest syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)_. ==Spread syntax **"expands"** object properties into a new object, while rest syntax collects multiple properties and **"condenses"** them into a single object==.
 
@@ -61,7 +61,7 @@ const clonedObj = { ...obj1 }; // { foo: "bar", x: 42 }
 const mergedObj = { ...obj1, ...obj2 }; // { foo: "baz", x: 42, y: 13 }
 ```
 
-> **Note**: `Object.assign()` triggers `setters`, whereas spread syntax doesn't.
+> **NOTE**: `Object.assign()` triggers `setters`, whereas spread syntax doesn't.
 
 Note that you cannot replace or mimic the `Object.assign()` function:
 
@@ -122,4 +122,4 @@ const obj = { ...array }; // { 0: 1, 1: 2, 2: 3 }
 
 1. [Spread syntax (...) - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 1. [ES6 Spread Operator - w3schools](https://www.w3schools.com/react/react_es6_spread.asp)
-1. [How to Use the Spread Operator (…) in JavaScript - medium.com](https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab)
+1. [How to Use the Spread Operator (`…`) in JavaScript - medium.com](https://medium.com/coding-at-dawn/how-to-use-the-spread-operator-in-javascript-b9e4a8b06fab)

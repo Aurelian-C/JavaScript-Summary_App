@@ -1,8 +1,8 @@
-# Object.prototype.isPrototypeOf()
+# `Object.prototype.isPrototypeOf()`
 
 The `isPrototypeOf()` method ==checks if an object exists in another object's prototype chain==.
 
-> **Note:** `isPrototypeOf()` differs from the [`instanceof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) operator. In the expression `object instanceof AFunction`, `object`'s prototype chain is checked against `AFunction.prototype`, not against `AFunction` itself.
+> **NOTE:** `isPrototypeOf()` differs from the [`instanceof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) operator. In the expression `object instanceof AFunction`, `object`'s prototype chain is checked against `AFunction.prototype`, not against `AFunction` itself.
 
 ## Syntax
 
@@ -101,4 +101,4 @@ if (Foo.isFoo(baz)) {
 
 ## References
 
-1. [Object.prototype.isPrototypeOf() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf)
+1. [`Object.prototype.isPrototypeOf()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf)

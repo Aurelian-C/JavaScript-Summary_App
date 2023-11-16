@@ -1,8 +1,8 @@
-# Object.prototype.hasOwnProperty()
+# `Object.prototype.hasOwnProperty()`
 
 The `hasOwnProperty()` method ==**returns a boolean** indicating whether the object has the specified property as its own property (as opposed to inheriting it)==.
 
-> **Note:** ==[`Object.hasOwn()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn) is recommended over `hasOwnProperty()`, in browsers where it is supported==.
+> **NOTE:** ==[`Object.hasOwn()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn) is recommended over `hasOwnProperty()`, in browsers where it is supported==.
 
 ## Syntax
 
@@ -111,4 +111,4 @@ example.hasOwnProperty('hasOwnProperty');   // returns false
 
 ## References
 
-1. [Object.prototype.hasOwnProperty() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
+1. [`Object.prototype.hasOwnProperty()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)

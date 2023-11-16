@@ -1231,6 +1231,7 @@ const arraysAndSets = {
         <p><i>Destructuring arrays is a shortcut for assign arrays items to variables.</i> Is a feature that help you to split up an array into variables or constants, which you then can use throughout your code. It simply saves you the extra work of doing this manually and therefore can speed up your development process.</p>
         `,
         `<h3>Binding and assignment patterns</h3>
+        <p>Destructuring syntax can be used for <i>variable declaration (also call binding)</i> or <i>variable assignment</i>. You can also handle nested structures by using nested destructuring syntax.</p>
         <ul>In array destructuring, you <i>use an array literal on the left-hand-side of an assignment expression</i>. Each variable name on the array literal maps to the corresponding item at the same index on the destructured array:
         <li><code>const rgb = [255, 200, 0];</code></li>
         <li><code>const [red, green, blue] = rgb;</code></li>
@@ -1317,7 +1318,7 @@ const arraysAndSets = {
         `<h3>Spread in array literals</h3>
       <p>You can use spread syntax <i>anywhere in the array literal</i>, and you may be use it <i>more than once</i>.</p>
       `,
-        `<h3>Copying an array wiht spread syntax</h3>
+        `<h3>Copying an array with spread syntax</h3>
       <p><i>Spread syntax effectively goes one level deep while copying an array.</i> Therefore, it may be unsuitable for copying multidimensional arrays.</p>
       <p>An important thing to keep in mind is when you use the spread operator to copy an array that store inside it items that are reference values (arrays/objects), <i>you are copy the reference value of that items</i>.</p>
       `,
@@ -1862,51 +1863,120 @@ const objectsAndMaps = {
   sections: [
     {
       title: 'Introducing JavaScript objects',
-      source: '',
+      source:
+        '/src/markdowns/08_Data_structures___Objects_&_Maps/Introducing_JavaScript_objects.html',
       summary: [
-        `What's an object?`,
-        `Objects vs Primitive Values`,
-        `Creating an object - Object literals`,
-        `Creating an object - Constructors`,
-        `Accesing object's properties <code>.</code> vs <code>[]</code> notation`,
-        `Special key names & square bracket property access`,
-        `Dynamic property access & setting properties dynamically`,
-        `Adding, modifying & deleting properties`,
-        `Shorthand property syntax`,
-        `Nesting objects: Objects are not really nested. An object can appears "nested" in another object but "nesting" is an inaccurate way to think about how objects behave. When the code executes, there is no such thing as a "nested" object. You are really looking at two different objects because every single object is different, even it is nested inside another object.`,
+        `<p><i>In JavaScript, most things are objects</i>, from core JavaScript features like arrays to the browser APIs built on top of JavaScript. You can even <i>create your own objects to <u>encapsulate related functions and variables</u> into efficient packages and act as handy <u>data containers</u></i>. The object-based nature of JavaScript is important to understand if you want to go further with your knowledge of the language.</p>`,
+        `<h3>What's an object?</h3>
+        <p>An object is a <i><u>collection</u> of related <u>data</u> and/or <u>functionality</u></i>. These usually consist of several variables and functions (which are called <i>properties</i> and <i>methods</i> when they are inside objects).</p>
+        `,
+        `<h3>Creating an object</h3>
+        <ul>We have two ways to create an object:
+          <li>- Object literals</li>
+          <li>- Constructors</li>
+        </ul>
+        `,
+        `<h3>Objects and properties</h3>
+        <p>A JavaScript object has properties associated with it. <i>A property of an object can be explained as <u>a variable that is attached to the object</u></i>. Object properties are basically the same as ordinary JavaScript variables, except for the attachment to objects. <i>The properties of an object define the <u>characteristics of the object</u></i>.</p>`,
+        `<h3>Properties: key/value pair</h3>
+        <p>An object is made up of multiple members, each of which has a <i>name (key)</i> and a <i>value</i>. Each key/value pair must be separated by a comma (<code>:</code>), and the key and value in each case are separated by a colon (<code>,</code>).</p>
+        <p>The value of an object member can be pretty much anything.</p>
+        `,
+        `<h3>Accesing object's properties <code>.</code> vs <code>[]</code> notation</h3>
+        <ul>You access the properties of an object with a <code>.</code> (dot) or <code>[]</code> (square bracket) notation:
+          <li><code>objectName.propertyName</code></li>
+          <li><code>objectName['propertyName']</code></li>
+        </ul>
+        <p>Square bracket notation looks very similar to how you access the items in an array, and it is basically the same thing — <i>instead of using an index number to select an item, you are using the name associated with each member's value</i>. It is no wonder that objects are sometimes called <u>associative arrays</u> — they map strings to values in the same way that arrays map numbers to values.</p>
+        <ul>If you have object properties that contains another object, to access these items you just need to chain the extra step onto the end with another dot or square bracket:
+          <li><code>objectName.propertyName..propertyName</code></li>
+          <li><code>objectName['propertyName']['propertyName']</code></li>
+        </ul>
+        `,
+        `<h3>Dynamic property access & setting properties dynamically</h3>
+        <p>One useful aspect of bracket notation is that it can be used to set <i>not only member values dynamically, but member names too</i>.</p>
+        `,
+        `<h3>Special key names & square bracket property access</h3>
+        <p>Like all JavaScript variables, both the object name (which could be a normal variable) and <i>property name are <u>case sensitive</u></i>.</p>
+        <p><i>An object property name can be any valid JavaScript string</i>, or anything that can be converted to a string, including the empty string. However, <i>any property name that is not a valid JavaScript identifier (for example, a property name that has a space or a hyphen, or that starts with a number) can only be accessed using the square bracket notation</i>.</p>
+        `,
+        `<h3>Nested objects</h3>
+        <p><i>Objects are not really nested.</i> An object can appears "nested" in another object but <i>"nesting" is an inaccurate way to think about how objects behave. When the code executes, there is no such thing as a "nested" object.</i> You are really looking at two different objects because every single object is different, even it is nested inside another object.</p>`,
       ],
     },
     {
-      title: `Object methods and the <code>this</code> keyword`,
-      source: '',
-      summary: [],
-    },
-    {
-      title: 'Spread syntax & object literals',
+      title: 'Spread & rest syntax & object literals',
       source:
-        '/src/markdowns/08_Data_structures___Objects_&_Maps/Spread_syntax_and_object_literals.html',
-      summary: [],
-    },
-    {
-      title: 'Rest Pattern in Objects',
-      source: '',
-      summary: [],
+        '/src/markdowns/08_Data_structures___Objects_&_Maps/Spread_and_rest_syntax_and_object_literals.html',
+      summary: [
+        `<h3>What is spread syntax?</h3>
+      <p>Spread syntax <code>...</code> allows an <i>iterable</i>, such as an <u>array</u> or <u>string</u>, to be <i>expanded</i> in places where zero or more arguments (for function calls) or elements (for array literals) are expected. In an object literal spread syntax allows an object expression to be expanded in places where zero or more key-value pairs are expected.</p>
+      <p>Spread operator <code>...</code> is an operator that in the end <i>pulls out all properties of an object to be copied in other object</i>.</p>
+      `,
+        `<h3>Spread syntax vs rest syntax</h3>
+      <p>Spread syntax looks exactly like rest syntax. In a way, <i>spread syntax is the opposite of rest syntax</i>. <p><i>Spread syntax <u>"expands"</u></i> object properties into a new object, while <i>rest syntax <u>collects</u></i> multiple properties and "condenses" them into a single object.</p>
+      `,
+      ],
     },
     {
       title: 'Destructuring Objects',
       source:
         '/src/markdowns/08_Data_structures___Objects_&_Maps/Destructuring_objects.html',
       summary: [
-        `What is destructuring?`,
-        `Why to use object destructuring?`,
-        `Binding and assignment`,
-        `Default values`,
-        `Using different variable names`,
-        `Nested object destructuring`,
-        `Extracting a dynamic name property`,
-        `Rest parameter & object destructuring`,
-        `Mixed destructuring`,
-        `Destructuring patterns with other syntaxes`,
+        `<h3>What is destructuring?</h3>
+        <p>The destructuring assignment syntax is a JavaScript expression that makes it possible to <i>unpack values from arrays, or properties from objects, into distinct variables</i>.</p>`,
+        `<h3>Why to use object destructuring?</h3>
+        <p><i>Destructuring objects is a shortcut for assign properties from objects to variables.</i> Is a feature that help you to split up an object into variables or constants, which you then can use throughout your code. It simply saves you the extra work of doing this manually and therefore can speed up your development process.</p>
+        `,
+        `<h3>Binding and assignment</h3>
+        <p>Destructuring syntax can be used for <i>variable declaration (also call binding)</i> or <i>variable assignment</i>. You can also handle nested structures by using nested destructuring syntax.</p>
+        <ul>For both object and array destructuring, there are <i>two kinds of destructuring patterns: <u>binding</u> pattern and <u>assignment</u> pattern</i>, with slightly different syntaxes:
+         <li>- Biding pattern:
+            <div><code>const obj = { a: 1, b: { c: 2 } };</code></div>
+            <div><code>const { a, b } = obj;</code></div>
+          <li>
+         <li>- Assignment pattern:
+           <div><code>let a, b;</code></div>
+            <div><code>const obj = { a: 1, b: { c: 2 } };</code></div>
+            <div><code>({ a, b } = obj);</code></div>
+          </li>
+        </ul>
+        <p>NOTE: The parentheses <code>( ... )</code> around the assignment statement are required when using object literal destructuring assignment without a declaration.</p>
+        `,
+        `<h3>Default values</h3>
+        <ul>Trying to assign a variable corresponding to a key that does not exist on the destructured object will cause the value <code>undefined</code> to be assigned instead. You can pass default values that will be assigned to such variables instead of <code>undefined</code>
+          <li><code>const person = { name: 'John Doe', country: 'Canada' };</code></li>
+          <li><code>const { name, country, age = 25 } = person;</code></li>
+        </ul>
+        `,
+        `<h3>Using different variable names</h3>
+        <ul>You can assign to a different variable name using this syntax: <code>[object_key]:[variable_name]</code>. You can also pass default values using the syntax: <code>[object_key]:[variable_name] = [default_value]</code>:
+          <li><code>const person = { name: 'John Doe', country: 'Canada' };</code></li>
+          <li><code>const { name: fullname, country: place, age: years = 25 } = person;</code></li>
+        </ul>
+        `,
+        `<h3>Nested object destructuring</h3>
+        <p>When using nested object destructuring, be careful to <i>avoid using an empty nested object literal. Though it is valid syntax, it actually does no assignment.</i> For example, the following destructuring does absolutely no assignment: <code>const { scores: {} } = student</code>.</p>
+        `,
+        `<h3>Extracting a dynamic name property</h3>
+        <p>You can extract to variables properties with a dynamic name (the property name is known at runtime): <code>const { [propName]: identifier } = expression</code>.</p>
+        <p><code>propName</code> expression should evaluate to a property name (usually a string), and the <code>identifier</code> should indicate the variable name created after the destructuring. The second <code>expression</code> should evaluate to the object you'd like to destructure.</p>
+        `,
+        `<h3>Rest parameter & object destructuring (Rest object after destructuring)</h3>
+        <p>The <code>rest</code> syntax is useful to collect the remaining properties after the destructuring: <code>const { identifier, ...rest } = expression</code></p>
+        <p>Where <code>identifier</code> is the name of the property to access and <code>expression</code> should evaluate to an object.</p>
+        <p>After the destructuring, the variable <code>identifier</code> contains the property value. <code>rest</code> variable is a plain object with the remaining properties.</p>
+        `,
+        `<h3>Mixed destructuring</h3>
+        <p>There are cases when you are working with a pretty complex object/array structure and you need to assign some values from it to local variables. A good example would be an object with several deeply nested objects and arrays. In cases like this, you can use a combination of object destructuring and array destructuring to target certain parts of the complex structure as required.</p>
+        `,
+        `<h3>Destructuring patterns with other syntaxes</h3>
+        <ul>In many syntaxes where the language binds a variable for you, you can use a destructuring pattern as well. These include:
+          <li>- The looping variable of <code>for...in</code> and <code>for...of</code> loops;
+          <li>- Function parameters;
+          <li>- The <code>catch</code> binding variable.
+        </ul>
+        `,
       ],
     },
     {
@@ -1915,19 +1985,23 @@ const objectsAndMaps = {
       summary: [],
       sectionArticles: [
         {
-          title: 'toString()',
-          source:
-            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.prototype.toString.html',
-        },
-        {
           title: 'hasOwnProperty()',
           source:
-            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.prototype.hasOwnProperty.html',
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_prototype_hasOwnProperty.html',
+          summary: [
+            `<p>The <code>hasOwnProperty()</code> method <i><u>returns a boolean</u> indicating whether the object has the specified property as its own property (as opposed to inheriting it)</i>: <code>hasOwnProperty(prop)</code></p>
+            <p>The <code>hasOwnProperty()</code> method returns <code>true</code> if the specified property is a direct property of the object — even if the value is <code>null</code> or <code>undefined</code>. The method returns <code>false</code> if the property is inherited, or has not been declared at all.</p>
+            <p>The method can be called on <u>most</u> JavaScript objects, because most objects descend from <code>Object</code>, and hence inherit its methods.</p>
+            `,
+          ],
         },
         {
           title: 'isPrototypeOf()',
           source:
-            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.prototype.isPrototypeOf.html',
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_prototype_isPrototypeOf.html',
+          summary: [
+            `<p>The <code>isPrototypeOf()</code> method <i>checks if an object exists in another object's prototype chain</i>: <code>isPrototypeOf(object)</code>.</p>`,
+          ],
         },
       ],
     },
@@ -1939,37 +2013,44 @@ const objectsAndMaps = {
         {
           title: 'Object.keys()',
           source:
-            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.keys.html',
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_keys.html',
+          summary: [],
         },
         {
           title: 'Object.values()',
           source:
-            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.values.html',
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_values.html',
+          summary: [],
         },
         {
           title: 'Object.entries()',
           source:
-            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.entries.html',
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_entries.html',
+          summary: [],
         },
         {
           title: 'Object.fromEntries() vs Object.entries()',
           source:
-            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.fromEntries.html',
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_fromEntries.html',
+          summary: [],
         },
         {
           title: 'Object.assign()',
           source:
-            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.assign.html',
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_assign.html',
+          summary: [],
         },
         {
           title: 'Object.freeze()',
           source:
-            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.freeze.html',
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_freeze.html',
+          summary: [],
         },
         {
           title: 'Object.create()',
           source:
-            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object.create.html',
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_create.html',
+          summary: [],
         },
       ],
     },
