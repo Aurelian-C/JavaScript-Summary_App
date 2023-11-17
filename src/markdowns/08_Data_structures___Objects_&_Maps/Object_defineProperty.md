@@ -1,6 +1,6 @@
-# Object.defineProperty()
+# `Object.defineProperty()`
 
-The static method `Object.defineProperty()` defines a new property directly on an object, or modifies an existing property on an object, and returns the object.
+The static method `Object.defineProperty()` ==**defines** a new property directly on an object, or **modifies** an existing property on an object, and **returns the object**==.
 
 ## Syntax
 
@@ -40,7 +40,7 @@ A data descriptor also has the following optional keys:
 
 An accessor descriptor also has the following optional keys:
 
-==**get**=== - a function which serves as a getter for the property, or `undefined` if there is no getter. When the property is accessed, this function is called without arguments and with this set to the object through which the property is accessed (this may not be the object on which the property is defined due to inheritance). The return value will be used as the value of the property. Defaults to `undefined`.
+==**get**== - a function which serves as a getter for the property, or `undefined` if there is no getter. When the property is accessed, this function is called without arguments and with this set to the object through which the property is accessed (this may not be the object on which the property is defined due to inheritance). The return value will be used as the value of the property. Defaults to `undefined`.
 
 ==**set**== - a function which serves as a setter for the property, or `undefined` if there is no setter. When the property is assigned, this function is called with one argument (the value being assigned to the property) and with this set to the object through which the property is assigned. Defaults to `undefined`.
 
@@ -50,7 +50,7 @@ If a descriptor has neither of `value`, `writable`, `get` and `set` keys, it is 
 
 ### Creating a property
 
-When the property specified doesn't exist in the object, Object.defineProperty() creates a new property as described. Fields may be omitted from the descriptor, and default values for those fields are inputted.
+When the property specified doesn't exist in the object, `Object.defineProperty()` creates a new property as described. Fields may be omitted from the descriptor, and default values for those fields are inputted.
 
 ```js
 const o = {}; // Creates a new object
@@ -66,6 +66,6 @@ Object.defineProperty(o, 'a', {
 // 'a' property exists in the o object and its value is 37
 ```
 
-## Reference
+## References
 
-1. [Object.defineProperty() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+1. [`Object.defineProperty()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)

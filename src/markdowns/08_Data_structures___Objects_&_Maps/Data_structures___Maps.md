@@ -96,7 +96,7 @@ A WeakMap is a ==**collection of key/value** pairs whose **keys must be objects*
 
 WeakMap allows associating data to objects in a way that doesn't prevent the key objects from being collected, even if the values reference the keys. However, a WeakMap doesn't allow observing the liveness of its keys, which is why it doesn't allow enumeration; if a WeakMap exposed any method to obtain a list of its keys, the list would depend on the state of garbage collection, introducing non-determinism. If you want to have a list of keys, you should use a Map rather than a WeakMap.
 
-> **Note**: ==Keys of WeakMaps are of the type **Object only**==. Primitive data types as keys are not allowed.
+> **NOTE**: ==Keys of WeakMaps are of the type **Object only**==. Primitive data types as keys are not allowed.
 
 ### Syntax
 
@@ -118,7 +118,7 @@ new WeakMap(iterable);
 | WeakMap.prototype.has(key)        | Returns a Boolean asserting whether a value has been associated to the `key` in the WeakMap object or not. |
 | WeakMap.prototype.set(key, value) | Sets the `value` for the `key` in the WeakMap object. Returns the WeakMap object.                          |
 
-## Reference
+## References
 
 1. [Map - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 2. [Maps - w3schools](https://www.w3schools.com/js/js_object_maps.asp)

@@ -20,7 +20,7 @@ The object whose enumerable own property values are to be returned.
 
 An array containing the given object's own enumerable property values.
 
-## ExampleS
+## Examples
 
 ```js
 const obj = { foo: 'bar', baz: 42 };

@@ -1,4 +1,4 @@
-# Object.fromEntries()
+# `Object.fromEntries()`
 
 The `Object.fromEntries()` method ==transforms a list of key-value pairs into an object==.
 
@@ -61,4 +61,4 @@ console.log(object2);// { a: 2, b: 4, c: 6 }
 
 ## References
 
-1. [Object.fromEntries() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries)
+1. [`Object.fromEntries()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries)

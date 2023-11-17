@@ -2,7 +2,7 @@
 
 The `Object.keys()` method ==**returns an array** of a given object's **own enumerable property names**, iterated in the same order that a normal loop would==.
 
-> **Note**: The `Object.keys()` method returns an Array Iterator object with the keys of an object.
+> **NOTE**: The `Object.keys()` method returns an Array Iterator object with the keys of an object.
 
 This method does not change the original object.
 
@@ -24,7 +24,7 @@ An ==**array of strings**== that represent all the enumerable properties of the 
 
 ## Examples
 
-Object.keys() ==returns an array whose elements are strings corresponding to the enumerable properties found directly upon object==. The ordering of the properties is the same as that given by looping over the properties of the object manually.
+`Object.keys()` ==returns an array whose elements are strings corresponding to the enumerable properties found directly upon object==. The ordering of the properties is the same as that given by looping over the properties of the object manually.
 
 ```js
 // Simple array

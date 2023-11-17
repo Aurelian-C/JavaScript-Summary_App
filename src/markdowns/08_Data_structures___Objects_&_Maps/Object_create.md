@@ -1,4 +1,4 @@
-# Object.create()
+# `Object.create()`
 
 The `Object.create()` method ==**creates a new object**, using an existing object as the prototype of the newly created object==.
 
@@ -25,4 +25,4 @@ A new object with the specified prototype object and properties. A [`TypeError`]
 
 ## References
 
-1. [Object.create() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
+1. [`Object.create()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)

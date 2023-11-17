@@ -2014,43 +2014,84 @@ const objectsAndMaps = {
           title: 'Object.keys()',
           source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_keys.html',
-          summary: [],
+          summary: [
+            `<p>The <code>Object.keys()</code> method <i><u>returns an array</u> of a given object's <u>own enumerable property names</u></i>, iterated in the same order that a normal loop would: <code>Object.keys(obj)</code>.</p>
+            <p>The <code>Object.keys()</code> method returns an <i><u>Array Iterator object</u> with the keys of an object</i>. In other words, the <code>Object.keys()</code> method returns an <i>array of strings</i> that represent all the enumerable properties of the given object.</p>
+            `,
+            `<p>If you want <u>all properties</u> — including non-enumerables — see <code>Object.getOwnPropertyNames()</code>.</p>`,
+          ],
         },
         {
           title: 'Object.values()',
           source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_values.html',
-          summary: [],
+          summary: [
+            `<p>The <code>Object.values()</code> method <i>returns an array</i> of a given object's <i>own enumerable property <u>values</u></i>, in the same order as that provided by a <code>for...in</code> loop. (The only difference is that a <code>for...in</code> loop enumerates properties in the prototype chain as well).</p>
+            <p><code>Object.values()</code> returns an array whose elements are the enumerable property values found on the object. The ordering of the properties is the same as that given by looping over the property values of the object manually.</p>
+            `,
+          ],
         },
         {
           title: 'Object.entries()',
           source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_entries.html',
-          summary: [],
+          summary: [
+            `<p>The <code>Object.entries()</code> method <i>returns an array</i> of a given object's own enumerable <i>string-keyed property</i> <code>[key, value]</code> pairs. This is the same as iterating with a <code>for...in</code> loop, except that a <code>for...in</code> loop enumerates properties in the prototype chain as well</p>
+            <p>NOTE: <code>Object.entries()</code> returns an array whose elements are arrays corresponding to the enumerable string-keyed property <code>[key, value]</code> pairs found directly upon object.</p>
+            `,
+          ],
         },
         {
-          title: 'Object.fromEntries() vs Object.entries()',
+          title: 'Object.fromEntries()',
           source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_fromEntries.html',
-          summary: [],
+          summary: [
+            `<p>The <code>Object.fromEntries()</code> method <i>transforms a list of key-value pairs into an object</i>.</p>
+            <p>The <code>Object.fromEntries()</code> method <i>takes a list of key-value pairs and returns a new object whose properties are given by those entries</i>.</p>
+            <p><i><code>Object.fromEntries()</code> performs the reverse of <code>Object.entries()</code>.</i></p>
+            `,
+          ],
         },
         {
           title: 'Object.assign()',
           source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_assign.html',
-          summary: [],
+          summary: [
+            `<p>The <code>Object.assign()</code> method <i><u>copies all enumerable own properties</u> from one or more <u>source objects</u> to a <u>target object</u>. It returns the modified target object</i>: <code>Object.assign(target, ...sources)</code>.</p>`,
+            `<h3>Parameters</h3>
+            <ul><code>target</code>
+              <li>The target object — what to apply the sources properties to, which is returned after it is modified.</li>
+            </ul>
+            <ul><code>sources</code>
+              <li>The source object(s) — objects containing the properties you want to apply.</li>
+            </ul>
+            `,
+            `<h3>Return value</h3>
+            <p>The target object.</p>`,
+            `<h3>Description</h3>
+            <p><i>Properties in the target object are <u>overwritten</u> by properties in the sources if they have the <u>same key</u>. Later sources properties overwrite earlier ones.</i></p>
+            <p>The <code>Object.assign()</code> method <i>only copies <u>enumerable</u> and <u>own</u> properties</i> from a source object to a target object.</p>
+            `,
+          ],
         },
         {
           title: 'Object.freeze()',
           source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_freeze.html',
-          summary: [],
+          summary: [
+            `<p>The <code>Object.freeze()</code> method <i>freezes an object. Freezing an object prevents extensions and makes existing properties non-writable and non-configurable</i>.</p>
+          <p><i>A frozen object can no longer be changed</i>: new properties cannot be added, existing properties cannot be removed, their enumerability, configurability, writability, or value cannot be changed, and the object's prototype cannot be re-assigned.</p>
+          <p><i><code>freeze()</code> returns the same object that was passed in</i>. It does not create a frozen copy.</p>
+          <p>Freezing an object is the highest integrity level that JavaScript provides.</p>`,
+          ],
         },
         {
           title: 'Object.create()',
           source:
             '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_create.html',
-          summary: [],
+          summary: [
+            `<p>The <code>Object.create()</code> method <i><u>creates a new object</u>, using an existing object as the prototype of the newly created object</i>.</p>`,
+          ],
         },
       ],
     },
@@ -2061,18 +2102,32 @@ const objectsAndMaps = {
       sectionArticles: [
         {
           title: 'Object.getOwnPropertyDescriptor()',
-          source: '',
+          source:
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_getOwnPropertyDescriptor.md.html',
+          summary: [
+            `<p>The <code>Object.getOwnPropertyDescriptor()</code> method <i><u>returns an object</u> describing the <u>configuration of a specific property</u> on a given object</i> (that is, one directly present on an object and not in the object's prototype chain). <i>The object returned is mutable but mutating it has no effect on the original property's configuration</i>.</p>`,
+          ],
         },
         {
           title: 'Object.defineProperty()',
-          source: '',
+          source:
+            '/src/markdowns/08_Data_structures___Objects_&_Maps/Object_defineProperty.html',
+          summary: [
+            `<p>The static method <code>Object.defineProperty()</code> <i><u>defines</u> a new property directly on an object, or <u>modifies</u> an existing property on an object, and returns the object</i>.</p>`,
+          ],
         },
       ],
     },
     {
-      title: 'Data structures - Maps',
-      source: '',
-      summary: [],
+      title: 'Data structures - Maps & WeakMap',
+      source:
+        '/src/markdowns/08_Data_structures___Objects_&_Maps/Data_structures___Maps.html',
+      summary: [
+        `<p>The Map object holds <i>key-value pairs</i> and remembers the original insertion order of the keys. <i>Any value (both objects and primitive values) may be used as either a key or a value</i>.</p>`,
+        `<h3>Specialized version of Maps - WeakMap</h3>
+        <p>A WeakMap is a <i><u>collection of key/value</u> pairs whose <u>keys must be objects</u></i>, with values of any arbitrary JavaScript type, and which <i>does <u>not create strong references</u> to its keys</i>. That is, an object's presence as a key in a WeakMap does <i>not prevent the object from being <u>garbage collected</u></i>. Once an object used as a key has been collected, its corresponding values in any WeakMap become candidates for garbage collection as well — as long as they aren't strongly referred to elsewhere.</p>
+        `,
+      ],
     },
   ],
 };

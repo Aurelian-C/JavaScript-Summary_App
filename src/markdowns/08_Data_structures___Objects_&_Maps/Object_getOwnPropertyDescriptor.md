@@ -1,4 +1,4 @@
-# Object.getOwnPropertyDescriptor()
+# `Object.getOwnPropertyDescriptor()`
 
 The `Object.getOwnPropertyDescriptor()` method ==**returns an object** describing the **configuration of a specific property** on a given object== (that is, one directly present on an object and not in the object's prototype chain). ==The object returned is mutable but mutating it has no effect on the original property's configuration==.
 
@@ -44,6 +44,6 @@ const b = Object.getOwnPropertyDescriptor(a, 'bar');
 // }
 ```
 
-## Reference
+## References
 
-1. [Object.getOwnPropertyDescriptor() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor)
+1. [`Object.getOwnPropertyDescriptor()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor)

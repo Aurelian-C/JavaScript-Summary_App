@@ -8,7 +8,7 @@ The order of the array returned by `Object.entries()` is the same as that provid
 Object.entries(obj).sort((a, b) => b[0].localeCompare(a[0]));
 ```
 
-> **Note**: `Object.entries()` returns an array whose elements are arrays corresponding to the enumerable string-keyed property `[key, value]` pairs found directly upon object. The ordering of the properties is the same as that given by looping over the property values of the object manually.
+> **NOTE**: `Object.entries()` returns an array whose elements are arrays corresponding to the enumerable string-keyed property `[key, value]` pairs found directly upon object. The ordering of the properties is the same as that given by looping over the property values of the object manually.
 
 ## Syntax
 
