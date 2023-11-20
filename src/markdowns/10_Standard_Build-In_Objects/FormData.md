@@ -2,7 +2,7 @@
 
 The **`FormData`** interface provides a way to easily ==construct a set of **key/value** pairs representing form **fields** and their **values**, which can then be easily sent using the `fetch()` or `XMLHttpRequest.send()` method==.
 
-An object implementing `FormData` can directly be used in a `for...of`structure, instead of `entries()`: 
+An object implementing `FormData` can directly be used in a `for...of` structure, instead of `entries()`: 
 
 ````js
 for (var p of myFormData) 

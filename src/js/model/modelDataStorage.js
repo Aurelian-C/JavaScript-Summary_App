@@ -2310,23 +2310,60 @@ const standardBuildInObjects = {
       source:
         '/src/markdowns/10_Standard_Build-In_Objects/Introduction_to_Standard_Build-in_Objects.html',
       summary: [
-        `Global objects vs Global Object <code>window</code>`,
-        `Standard build-in objects by category`,
+        `<h3>Standard build-in objects vs Global <code>window</code> Object</h3>
+        <ul>Standard build-in objects:
+          <li>JavaScript provides a set of standard built-in objects that serve various purposes. These objects are available globally and can be used in any part of your code. <i>These objects are part of the JavaScript language</i> specification and are <i>available in all JavaScript environments, not just in web browsers</i>.</li>
+        </ul>
+        <ul>Global <code>window</code> object:
+          <li>In a <u>web browser environment</u>, such as when JavaScript is used in the context of a web page, there is a global object called <code>window</code>. <i>The <code>window</code> object represents the browser window</i> and <i>serves as the global object for JavaScript in the browser environment</i>. It contains properties and methods that are specific to the browser environment.</li>
+          <li>NOTE: It's important to note that not all <u>JavaScript environments</u> have a <code>window</code> object. While the <i><code>window</code> object is specific to browsers</i>, similar global objects may exist in other JavaScript environments (e.g., <code>global</code> in Node.js).</li>
+        </ul>
+        <p>In summary, <i>standard built-in objects are part of the core JavaScript language</i> and provide fundamental functionality, while the <i>global <code>window</code> object is specific to web browsers</i> and provides access to browser-related features.</p>
+        `,
       ],
     },
     {
       title: 'String',
       source: '/src/markdowns/10_Standard_Build-In_Objects/String.html',
       summary: [
-        `Creating strings as primitives: string literals & <code>String()</code> function`,
-        `Creating strings as objects: <code>String()</code> constructor`,
-        `<code>String()</code> function and <code>String()</code> constructor produce different results`,
-        `Character access: You can treat the string as an array-like object, where individual characters correspond to a numerical index`,
-        `Comparing strings: strings case-sensitively!`,
-        `String primitives vs String objects: in contexts where a method is to be invoked on a primitive string or a property lookup occurs, JavaScript will automatically wrap the string primitive and call the method or perform the property lookup on the wrapper object instead`,
-        `String coercion: template literals, <code>String()</code> function, <code>+</code> operator`,
-        `Long literal strings`,
-        `Template literals (Template strings)`,
+        `<p>The <code>String</code> object is <i>used to represent and manipulate a <u>sequence of characters</u></i>.</p>
+        <p>Strings are useful for holding data that can be represented in text form. Some of the most-used operations on strings are to check their <code>length</code>, to build and concatenate them using the <code>+</code> and <code>+=</code> string operators, checking for the existence or location of substrings with the <code>indexOf()</code> method, or extracting substrings with the <code>substring()</code> method.</p>
+        `,
+        `<h3>Creating strings</h3> 
+        <ul>Strings can be created as:
+        <li>- <i>primitives</i>, from string literals;</li>
+        <li>- <i>objects</i>, using <code>String()</code> constructor.</li>
+        </ul>
+        <p>NOTE: <i><u>String function</u> and <u>String constructor</u> produce different results</i>: <code>new String()</code> creates a new <code>String</code> object. When called instead as a function like <code>String()</code>, it performs type conversion to a primitive string.</p>
+        <p>WARNING: You should rarely find yourself using <code>String</code> as a constructor.</p>
+        `,
+        `<h3>Character access</h3>
+        <p><i>You can treat the string as an <u>array-like object</u></i>, where individual characters correspond to a numerical index.</p>
+        <p>NOTE: <i>Strings are zero-indexed</i>: The index of a string's first character is 0, and the index of a string's last character is the length of the string minus 1.</p>
+        `,
+        `<h3>Comparing strings</h3>
+        <p>All comparison operators, including <code>===</code> and <code>==</code>, compare strings <i>case-sensitively</i>.</p>`,
+        `<h3>String primitives vs String objects</h3>
+        <p>Note that JavaScript distinguishes between <code>String</code> objects and primitive string values.</p>
+        <p>String literals (denoted by double or single quotes) and strings returned from <code>String</code> calls in a non-constructor context (that is, called without using the <code>new</code> keyword) are primitive strings. <i>In contexts where a method is to be invoked on a primitive string or a property lookup occurs, JavaScript will automatically wrap the string primitive and call the method or perform the property lookup on the wrapper object instead.</i></p>`,
+        `<h3>String coercion</h3>
+        <ul>There are several ways to coerce to a string:
+          <li>- template literals;</li>
+          <li>- <code>String()</code> function;</li>
+          <li>- <code>+</code> operator.</li>
+        </ul>
+        `,
+        `<h3>Long literal strings</h3>
+        <p>Sometimes, your code will include strings which are very long. Rather than having lines that go on endlessly, or wrap at the whim of your editor, you may wish to specifically <i>break the string into multiple lines in the source code without affecting the actual string contents</i>.</p>
+        <p><i>You can use the <code>+</code> operator to append multiple strings together.</i></p>
+        `,
+        `<h3>Template literals (Template strings)</h3>
+        <ul>Template literals are literals delimited with backtick characters, allowing for:
+          <li>- <i>multi-line strings</i>;</li>
+          <li>- <i>string interpolation</i> with embedded expressions;</li>
+          <li>- special constructs called <i>tagged templates</i>.</li>
+        </ul>
+        `,
         `Template literals and Tagged Templates`,
       ],
     },
@@ -2409,12 +2446,29 @@ const standardBuildInObjects = {
       title: 'Number',
       source: '/src/markdowns/10_Standard_Build-In_Objects/Number.html',
       summary: [
-        `Creating numbers as primitives: literal form & <code>Number()</code> function`,
-        `Creating numbers as objects: <code>Number()</code> constructor`,
-        `<code>Number()</code> function and <code>Number()</code> constructor produce different results`,
-        `Number primitives vs Number objects: in contexts where a method is to be invoked on a primitive number or a property lookup occurs, JavaScript will automatically wrap the number primitive and call the method or perform the property lookup on the wrapper object instead`,
-        `Number encoding: there are some limits to the stored number's magnitude and precision. Integers can only be represented without loss of precision in the range -253 + 1 to 253 - 1`,
-        `Number coercion: Addition operator <code>+</code> & <code>Number()</code> function`,
+        `<p>The <code>Number</code> object is a <i>primitive wrapper object</i> used to represent and manipulate numbers like 37 or -9.25.</p>
+        <p>The <i><code>Number</code> constructor</i> contains constants and methods for working with numbers. Values of other types can be converted to numbers using the <i><code>Number()</code> function</i>.</p>
+        `,
+        `<h3>Creating numbers</h3>
+        <ul>Numbers can be created as:
+          <li>- <i>primitives</i>, most commonly expressed in literal forms;</li>
+          <li>- <i>objects</i>, using <code>Number()</code> constructor.</li>
+        </ul>
+        <p>NOTE: <i><u>Number function</u> and <u>Number constructor</u> produce different results</i>: <code>new Number()</code> creates a new <code>Number</code> object. When called instead as a function like <code>Number()</code>, it performs type conversion to a primitive number. If <code>Number()</code> can't convert a parameter to a number, will return <code>NaN</code>.</p>
+        <p>WARNING: You should rarely find yourself using <code>Number</code> as a constructor.</p>
+        `,
+        `<h3>Number primitives vs Number objects</h3>
+        <p>Note that JavaScript distinguishes between <code>Number</code> objects and primitive number values.</p>
+        <p>Number literal forms and numbers returned from <code>Number</code> calls in a non-constructor context (that is, called without using the <code>new</code> keyword) are primitive numbers. <i>In contexts where a method is to be invoked on a primitive number or a property lookup occurs, JavaScript will automatically wrap the primitive number and call the method or perform the property lookup on the wrapper object instead.</i></p>`,
+        `<h3>Number encoding</h3>
+        <p>The JavaScript <code>Number</code> type is a double-precision 64-bit binary format IEEE 754 value, like <code>double</code> in Java or C#. This means it can represent fractional values, but <i>there are some limits to the stored number's magnitude and precision</i>. Integers can only be represented without loss of precision in the range -253 + 1 to 253 - 1.</p>`,
+        `<h3>Number coercion</h3>
+        <ul>There are several ways to coerce to a number:
+          <li>- Addition operator <code>+</code>;</li>
+          <li>- <code>Number()</code> function.</li>
+        </ul>
+        <p><code>Number.parseFloat()</code> and <code>Number.parseInt()</code> are similar to <code>Number()</code> but only convert strings, and have slightly different parsing rules. For example, <code>parseInt()</code> doesn't recognize the decimal point, and <code>parseFloat()</code> doesn't recognize the <code>0x</code> prefix.</p>
+        `,
       ],
     },
     {
@@ -2465,9 +2519,10 @@ const standardBuildInObjects = {
       title: 'Math',
       source: '/src/markdowns/10_Standard_Build-In_Objects/Math.html',
       summary: [
-        `Unlike many other global objects, Math is not a constructor`,
-        `All properties and methods of Math are static`,
-        `Math works with the Number type, it doesn't work with BigInt`,
+        `<p><code>Math</code> is a built-in object that has properties and methods for mathematical constants and functions. <i>It's not a function object.</i></p>
+        <p>Unlike many other global objects, <i><code>Math</code> is not a constructor. All properties and methods of <code>Math</code> are static</i>.</p>
+        <p><code>Math</code> works with the <code>Number</code> type, it doesn't work with <code>BigInt</code>.</p>
+        `,
       ],
     },
     {
@@ -2519,13 +2574,20 @@ const standardBuildInObjects = {
       title: 'Date',
       source: '/src/markdowns/10_Standard_Build-In_Objects/Date.html',
       summary: [
-        `The ECMAScript epoch and timestamps: a JavaScript date is fundamentally specified as the number of milliseconds that have elapsed since the ECMAScript epoch, which is defined as January 1, 1970, UTC (equivalent to the UNIX epoch)`,
-        `Date format and time zone conversions: there are several methods available to obtain a date in various formats, as well as to perform time zone conversions`,
-        `The <code>Date()</code> constructor can create a Date instance or return a string representing the current time`,
-        `When <code>Date()</code> is called as a constructor (with the <code>new</code> keyword), returns a new Date object`,
-        `When <code>Date()</code> is called as a function, returns a string representation of the current date and time`,
-        `Date constructor static method: <code>Date.now()</code>`,
-        `<code>Date.now()</code> returns the numeric value corresponding to the current time — the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored`,
+        `<p>The <code>Date</code> object represent a single moment in time in a platform-independent format. <i><code>Date</code> object contain a <code>Number</code> that represents milliseconds since 1 January 1970 UTC.</i></p>`,
+        `<h3>The ECMAScript epoch and timestamps</h3>
+        <p>A JavaScript date is fundamentally specified as the number of milliseconds that have elapsed since the ECMAScript epoch, which is defined as January 1, 1970, UTC (equivalent to the UNIX epoch).</p>`,
+        `<h3>Date format and time zone conversions</h3>
+        <p>There are several methods available to obtain a <i>date in various formats</i>, as well as to <i>perform time zone conversions</i>.</p>`,
+        `<h3><code>Date()</code> constructor vs <code>Date()</code> function</h3>
+        <ul><code>Date()</code> can be called with or without <code>new</code> keyword, but with different effects:
+          <li>- when <i><code>Date()</code> is called as a constructor</i> (with the <code>new</code> keyword), returns a new <code>Date</code> object.</li>
+          <li>- when <i><code>Date()</code> is called as a function</i>, returns a string representation of the current date and time. Any arguments given in a <code>Date()</code> function call (without the <code>new</code> keyword) are ignored.</li>
+        </ul>
+        `,
+        `<h3><code>Date()</code> static method: <code>Date.now()</code></h3>
+        <p><code>Date.now()</code> static method on <code>Date()</code> object <i>returns the numeric value corresponding to the current time</i> — the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored.</p>
+        `,
       ],
     },
     {
@@ -2594,40 +2656,62 @@ const standardBuildInObjects = {
       title: 'Internationalization API (Intl)',
       source: '/src/markdowns/10_Standard_Build-In_Objects/Intl.html',
       summary: [
-        `The Intl object provides access to several constructors that do language sensitive string comparison, number formatting, and date and time formatting`,
-        `All Intl constructors accept locales and options arguments, for use pattern to identifying locales and determining the one they will actually use`,
-        `You can use <code>navigator.language</code> read-only property for setting your locales parameter`,
+        `<p>The <code>Intl</code> object is the namespace for the ECMAScript Internationalization API, which provides <i>language sensitive string comparison</i>, <i>number formatting</i>, and <i>date and time formatting</i>. The <code>Intl</code> object provides access to several constructors, as well as functionality common to the internationalization constructors and other language sensitive functions.</p>`,
+        `<h3>Locale identification and negotiation</h3>
+        <p>The internationalization constructors use a common <i>pattern for identifying locales and determining the one they will actually use: they all accept <code>locales</code> and <code>options</code> arguments</i>, and negotiate the requested locale(s) against the locales they support using an algorithm specified in the <code>options.localeMatcher</code> property.</p>`,
+        `<h3><code>locales</code> and <code>options</code> arguments</h3>
+        <p>The <code>locales</code> argument is used to <i>determine the locale used in a given operation</i>.</p>
+        <p>The <code>options</code> argument must be <i>an object with properties that vary between constructors and functions</i>. If the <code>options</code> argument is not provided or is <code>undefined</code>, default values are used for all properties.</p>
+        <p>NOTE: You can use <code>navigator.language</code> read-only property for setting your locales parameter.</p>
+        `,
+      ],
+      sectionArticles: [
+        {
+          title: 'Intl.DateTimeFormat()',
+          source:
+            '/src/markdowns/10_Standard_Build-In_Objects/Intl.DateTimeFormat.html',
+          summary: [],
+        },
+        {
+          title: 'Intl.NumberFormat()',
+          source:
+            '/src/markdowns/10_Standard_Build-In_Objects/Intl.NumberFormat.html',
+          summary: [],
+        },
       ],
     },
-    {
-      title: 'Intl.DateTimeFormat()',
-      source:
-        '/src/markdowns/10_Standard_Build-In_Objects/Intl.DateTimeFormat.html',
-      summary: [],
-    },
-    {
-      title: 'Intl.NumberFormat()',
-      source:
-        '/src/markdowns/10_Standard_Build-In_Objects/Intl.NumberFormat.html',
-      summary: [],
-    },
+
     {
       title: 'Error',
       source: '/src/markdowns/10_Standard_Build-In_Objects/Error.html',
       summary: [
-        `Error types`,
-        `Error Constructor`,
-        `Error instance properties: message, name, cause`,
+        `<p><code>Error</code> objects are <i>thrown when runtime errors occur</i>. The <code>Error</code> object can also be <i>used as a base object for user-defined exceptions</i>.</p>
+        <p>The <code>Error</code> object <i>provides error information</i> when an error occurs.</p>`,
+        `<h3>Error Constructor</h3>
+        <p>The <code>Error()</code> constructor creates a new <code>Error</code> object.</p>
+        <p>NOTE: <code>Error()</code> can be called with or without <code>new</code>. Both create a new <code>Error</code> instance.</p>
+        `,
+        `<h3>Error instance properties</h3>
+        <p>- <code>message</code>: error message. For user-created <codeError</code> objects, this is the string provided as the constructor's first argument.</p>
+        <p>- <code>name</code>: error name. This is determined by the constructor function.</p>
+        <p>- <code>cause</code>: Error cause indicating the reason why the current error is thrown — usually another caught error. For user-created <codeError</code> objects, this is the value provided as the <code>cause</code> property of the constructor's second argument.</p>
+        `,
       ],
     },
     {
       title: 'FormData',
       source: '/src/markdowns/10_Standard_Build-In_Objects/FormData.html',
       summary: [
-        `The <code>FormData</code> interface provides a way to easily <i>construct a set of <u>key/value pairs</u> representing form <u>fields</u> and their <u>values</u>, which can then be easily sent using the <code>fetch()</code> or <code>XMLHttpRequest.send()</code> method</i>.`,
-        `The <code>FormData()</code> Constructor takes as an <b>optional parameter an HTML <<span>form</span>> element</b>. When optional parameter is specified, the <code>FormData</code> object will be <i>populated with the form's current keys/values using the <u>name property</u> of each element for the keys and their submitted value for the values</i>. It will also encode file input content.`,
-        `<code>FormData()</code> object has a series of instance methods that helps you append, delete, set or return keys/values from your <code>FormData()</code> object.`,
-        `You can easily extract all the data that is inside a <code>FormData</code> into an JavaScript object with the help of spread operator & <code>Object.fromEntries</code>.`,
+        `<p>The <code>FormData</code> interface provides a way to easily <i>construct a set of <u>key/value pairs</u> representing form <u>fields</u> and their <u>values</u>, which can then be easily sent using the <code>fetch()</code> or <code>XMLHttpRequest.send()</code> method</i>: <code>const formData = new FormData(form)</code></p>`,
+        `<h3>Parameters</h3>
+        <ul><code>form</code> (optional)
+          <li>The <code>FormData()</code> constructor takes as an <i>optional parameter an HTML <<span>form</span>> element</i>. When optional parameter is specified, the <code>FormData</code> object will be <i>populated with the form's current keys/values using the <u>name property</u> of each element for the keys and their submitted value for the values</i>. It will also encode file input content.</li>
+        </ul>
+        `,
+        `<h3>Instance methods</h3>
+        <p><code>FormData()</code> object has a series of instance methods that helps you append, delete, set or return keys/values from your <code>FormData()</code> object.</p>`,
+        `<h3>Extracting form data</h3>
+        <p><i>You can easily extract all the data that is inside a <code>FormData</code> into an JavaScript object with the help of spread operator & <code>Object.fromEntries</code>.</i></p>`,
       ],
       sectionArticles: [
         {
@@ -2640,8 +2724,17 @@ const standardBuildInObjects = {
       title: 'JSON',
       source: '/src/markdowns/10_Standard_Build-In_Objects/JSON.html',
       summary: [
-        `Unlike most global objects, JSON is not a constructor`,
-        `JSON is a syntax for serializing objects, arrays, numbers, strings, booleans, and null. It is based upon JavaScript syntax, but is distinct from JavaScript: most of JavaScript is not JSON`,
+        `<p><i>JSON is a syntax for <u>serializing</u> objects, arrays, numbers, strings, booleans, and <code>null</code>.</i> It is <i>based upon JavaScript syntax, but is distinct from JavaScript</i>: most of JavaScript is not JSON.</p>
+        <p>The <code>JSON</code> object contains methods for <u>parsing</u> JavaScript Object Notation (JSON) and <u>converting</u> values to JSON. It can't be called or constructed.</p>
+        <p>Unlike most global objects, JSON is not a constructor. <i>All properties and methods of <code>JSON</code> are static</i> (just like the <code>Math</code> object).</p>`,
+        `<h3>Static methods</h3>
+        <ul><code>JSON.parse()</code>
+          <li><i>Parse a piece of string text as JSON</i>, optionally transforming the produced value and its properties, and return the value.</li>
+        </ul>
+        <ul><code>JSON.stringify()</code>
+          <li><i>Return a JSON string corresponding to the specified value</i>, optionally including only certain properties or replacing property values in a user-defined manner.</li>
+        </ul>
+        `,
       ],
     },
     {

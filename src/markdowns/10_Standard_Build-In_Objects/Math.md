@@ -1,4 +1,4 @@
-# Math
+# `Math` build-in object
 
 ==`Math` is a built-in object that has properties and methods for mathematical constants and functions. It's not a function object==.
 
@@ -6,7 +6,9 @@
 
 ## Description
 
-==Unlike many other global objects, `Math` is not a constructor==. All properties and methods of `Math` are static. You refer to the constant pi as `Math.PI` and you call the sine function as `Math.sin(x)`, where `x` is the method's argument. Constants are defined with the full precision of real numbers in JavaScript.
+==Unlike many other global objects, `Math` is not a constructor==.
+
+==All properties and methods of `Math` are static.== You refer to the constant pi as `Math.PI` and you call the sine function as `Math.sin(x)`, where `x` is the method's argument. Constants are defined with the full precision of real numbers in JavaScript.
 
 ## References
 

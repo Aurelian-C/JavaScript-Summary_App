@@ -1,4 +1,4 @@
-# Date
+# `Date` build-in object
 
 The `Date` object represent a single moment in time in a platform-independent format. ==`Date` object contain a `Number` that represents milliseconds since 1 January 1970 UTC==.
 
@@ -6,17 +6,17 @@ The `Date` object represent a single moment in time in a platform-independent fo
 
 ==A JavaScript date is fundamentally specified as the number of milliseconds that have elapsed since the [ECMAScript epoch](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-time-values-and-time-range), which is defined as January 1, 1970, UTC (equivalent to the [UNIX epoch](https://en.wikipedia.org/wiki/Unix_time))==.
 
-> **Note:** It's important to keep in mind that while the time value at the heart of a Date object is UTC, the basic methods to fetch the date and time or its components all work in the local (i.e. host system) time zone and offset.
+> **NOTE**: It's important to keep in mind that while the time value at the heart of a `Date` object is UTC, the basic methods to fetch the date and time or its components all work in the local (i.e. host system) time zone and offset.
 
 It should be noted that the maximum `Date` is not of the same value as the maximum safe integer (`Number.MAX_SAFE_INTEGER` is 9,007,199,254,740,991). Instead, it is defined in ECMA-262 that a maximum of ±100,000,000 (one hundred million) days relative to January 1, 1970 UTC (that is, April 20, 271821 BCE ~ September 13, 275760 CE) can be represented by the standard `Date` object (equivalent to ±8,640,000,000,000,000 milliseconds).
 
 ## Date format and time zone conversions
 
-==There are several methods available to **obtain a date in various formats**, as well as to **perform time zone conversions**==. Particularly useful are the functions that output the date and time in Coordinated Universal Time (UTC), the global standard time defined by the World Time Standard. (This time is historically known as *Greenwich Mean Time*, as UTC lies along the meridian that includes London—and nearby Greenwich—in the United Kingdom.) ==The user's device provides the local time==.
+==There are several methods available to **obtain a date in various formats**, as well as to **perform time zone conversions**==. Particularly useful are the functions that output the date and time in Coordinated Universal Time (UTC), the global standard time defined by the World Time Standard. (This time is historically known as *Greenwich Mean Time*, as UTC lies along the meridian that includes London — and nearby Greenwich — in the United Kingdom.) ==The user's device provides the local time==.
 
 In addition to methods to read and alter individual components of the local date and time (such as [`getDay()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay) and [`setHours()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours)), there are also versions of the same methods that read and manipulate the date and time using UTC (such as [`getUTCDay()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCDay) and [`setUTCHours()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours)).
 
-## `Date()` Constructor
+## `Date()` Constructor vs `Date` function
 
 ==The `Date()` constructor can create a `Date` instance _or_ return a string representing the current time==.
 
@@ -24,7 +24,7 @@ In addition to methods to read and alter individual components of the local date
 
 ==When `Date()` is _called as a constructor_ (with the `new` keyword), returns a new `Date` object==.
 
-> **Note:** `Date()` can be called with or without [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new), but with different effects.
+> **NOTE:** `Date()` can be called with or without [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new), but with different effects.
 
 ### Syntax
 
@@ -167,5 +167,5 @@ const seconds = Math.floor(Date.now() / 1000);
 
 1. [Date - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 2. [Date - w3schools](https://www.w3schools.com/jsref/jsref_obj_date.asp)
-3. [Date() constructor - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date)
-4. [Date.now() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now)
+3. [`Date()` constructor - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date)
+4. [`Date.now()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now)

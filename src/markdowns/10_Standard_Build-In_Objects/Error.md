@@ -1,4 +1,4 @@
-# Error
+# `Error` build-in object
 
 ==`Error` objects are **thrown when runtime errors occur**. The `Error` object can also be **used as a base object for user-defined exceptions**==.
 
@@ -21,7 +21,7 @@ Besides the generic `Error` constructor, there are other core error constructors
 
 ## `Error()` constructor
 
-The `Error()` constructor creates a new error object.
+The `Error()` constructor creates a new `Error` object.
 
 ### Syntax
 
@@ -35,7 +35,7 @@ Error(message)
 Error(message, options)
 ```
 
-> **Note:** `Error()` can be called with or without [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new). Both create a new `Error` instance.
+> **NOTE:** `Error()` can be called with or without [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new). Both create a new `Error` instance.
 
 ### Parameters
 
@@ -87,8 +87,8 @@ try {
 }
 ```
 
-## Reference
+## References
 
 1. [Error - w3schools](https://www.w3schools.com/jsref/jsref_obj_error.asp)
 1. [Error - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
-1. [Error() constructor - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/Error)
+1. [`Error()` constructor - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/Error)

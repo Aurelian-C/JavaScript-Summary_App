@@ -1,10 +1,20 @@
 # Introduction to Standard Build-in Objects
 
-## Global objects vs Global Object (`window`)
+## Standard build-in objects vs Global `window` object
 
-==The term "global objects" (or standard built-in objects) here is not to be confused with the global object `window`. Here, "global objects" refer to **objects in the global scope**==.
+#### Standard build-in objects:
 
-The global object itself ([`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window)) can be accessed using the [`this`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) operator in the global scope. In fact, the global scope consists of the properties of the global object, including inherited properties, if any. Other objects in the global scope are either [created by the user script](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#creating_new_objects) or provided by the host application. The host objects available in browser contexts are documented in the [API reference](https://developer.mozilla.org/en-US/docs/Web/API).
+==**JavaScript provides a set of standard built-in objects** that serve various purposes. These objects are available globally and can be used in any part of your code. **These objects are part of the JavaScript language specification** and are **available in all JavaScript environments, not just in web browsers**.==
+
+#### Global `window` object:
+
+==In a **web browser environment**, such as when JavaScript is used in the context of a web page, there is a global object called `window`. **The `window` object represents the browser window** and **serves as the global object for JavaScript in the browser environment**. It contains properties and methods that are specific to the browser environment.==
+
+For example, properties like `window.location` provide information about the current URL, and methods like `window.alert()` display an alert dialog. ==While **the `window` object is specific to browsers**, similar global objects may exist in other JavaScript environments (e.g., `global` in Node.js).==
+
+> **NOTE**: It's important to note that not all JavaScript environments have a `window` object. For instance, in server-side JavaScript (e.g., Node.js), there is no `window` object, but there is a `global` object.
+
+In summary, standard built-in **objects are part of the core JavaScript language** and provide fundamental functionality, while **the global `window` object is specific to web browsers** and provides access to browser-related features.
 
 ## Some standard build-in objects by category
 

@@ -2,7 +2,7 @@
 
 ==The `Number` object is a [primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript) used to represent and manipulate numbers like `37` or `-9.25`==.
 
-The `Number` constructor contains constants and methods for working with numbers. Values of other types can be converted to numbers using the `Number()` function.
+The **`Number` constructor** contains constants and methods for working with numbers. Values of other types can be converted to numbers using the **`Number()` function**.
 
 ## Creating numbers
 
@@ -14,7 +14,7 @@ const number2 = -42.5;
 const number3 = Number(51);
 const number4 = Number('51');
 
-const number5 = new String(23); // Number with new returns a number wrapper object
+const number5 = new Number(23); // Number with new returns a number wrapper object
 
 console.log(typeof number1); // "number"
 console.log(typeof number2); // "number"
@@ -23,9 +23,9 @@ console.log(typeof number4); // "number"
 console.log(typeof number5); // "object"
 ```
 
-> _Number function_ and _Number constructor_ produce different results: when `Number` is called as a constructor (with `new`), it creates a [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) object, which is **not** a primitive. For example, `typeof new Number(42) === "object"`, and `new Number(42) !== 42` (although `new Number(42) == 42`). When called instead as a function like `Number()`, it performs type conversion to a [primitive number](https://developer.mozilla.org/en-US/docs/Glossary/Number). If `Number()` can't convert a parameter to a number, will return `NaN`.
+> **NOTE**: _Number function_ and _Number constructor_ produce different results: when `Number` is called as a constructor (with `new`), it creates a [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) object, which is **not** a primitive. For example, `typeof new Number(42) === "object"`, and `new Number(42) !== 42` (although `new Number(42) == 42`). When called instead as a function like `Number()`, it performs type conversion to a [primitive number](https://developer.mozilla.org/en-US/docs/Glossary/Number). If `Number()` can't convert a parameter to a number, will return `NaN`.
 
-> **Warning:** You should rarely find yourself using `Number` as a constructor.
+> **WARNING:** You should rarely find yourself using `Number` as a constructor.
 
 Numbers are most commonly expressed in literal forms:
 
@@ -63,7 +63,7 @@ Many built-in operations that expect numbers first coerce their arguments to num
 - [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined) turns into [`NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN).
 - [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null) turns into `0`.
 - `true` turns into `1`; `false` turns into `0`.
-- Strings are converted by parsing them as if they contain a number literal . Parsing failure results in `NaN`. There are some minor differences compared to an actual number literal:
+- Strings are converted by parsing them as if they contain a number literal. Parsing failure results in `NaN`. There are some minor differences compared to an actual number literal:
   - Leading and trailing whitespace/line terminators are ignored.
   - A leading `0` digit does not cause the number to become a octal literal (or get rejected in strict mode).
   - `+` and `-` are allowed at the start of the string to indicate its sign. (In actual code, they "look like" part of the literal, but are actually separate unary operators.) However, the sign can only appear once, and must not be followed by whitespace.
@@ -83,6 +83,6 @@ Many built-in operations that expect numbers first coerce their arguments to num
 ## References
 
 1. [Number - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-2. [Number() constructor - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number)
+2. [`Number()` constructor - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number)
 3. [How numbers are encoded in JavaScript - 2ality.com](https://2ality.com/2012/04/number-encoding.html)
 4. [Dealing with float precision in Javascript - stackoverflow.com](https://stackoverflow.com/questions/11695618/dealing-with-float-precision-in-javascript)

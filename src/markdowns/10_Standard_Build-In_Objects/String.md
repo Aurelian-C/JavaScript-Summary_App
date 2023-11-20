@@ -2,7 +2,7 @@
 
 ==The `String` object is used to represent and manipulate a **sequence of characters**==.
 
-==Strings are useful for holding data that can be represented in **text form**==. Some of the most-used operations on strings are to check their [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), to build and concatenate them using the [+ and += string operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators), checking for the existence or location of substrings with the [`indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf) method, or extracting substrings with the [`substring()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring) method.
+==Strings are useful for holding data that can be represented in **text form**==. Some of the most-used operations on strings are to check their [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), to build and concatenate them using the [`+` and `+=` string operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators), checking for the existence or location of substrings with the [`indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf) method, or extracting substrings with the [`substring()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring) method.
 
 ## Creating strings
 
@@ -21,7 +21,7 @@ console.log(typeof string3); // "string"
 console.log(typeof string4); // "object"
 ```
 
->_String function_ and _String constructor_ produce different results: `new String()` creates a new `String` object. When called instead as a function like `String()`, it performs type conversion to a [primitive string](https://developer.mozilla.org/en-US/docs/Glossary/String), which is usually more useful.
+>**NOTE**: _String function_ and _String constructor_ produce different results: `new String()` creates a new `String` object. When called instead as a function like `String()`, it performs type conversion to a [primitive string](https://developer.mozilla.org/en-US/docs/Glossary/String), which is usually more useful.
 >
 >```js
 >const strPrim1 = String(1);		// Coerced into the string primitive "1"
@@ -40,11 +40,11 @@ String primitives and string objects share many behaviors, but have other import
 'cat'[1] // gives value "a"
 ```
 
-> **Note**: Strings are zero-indexed: The index of a string's first character is `0`, and the index of a string's last character is the length of the string minus 1.
+> **NOTE**: Strings are zero-indexed: The index of a string's first character is `0`, and the index of a string's last character is the length of the string minus 1.
 
 ## Comparing strings
 
-All comparison operators, including [`===`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality) and [`==`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality), compare ==strings case-sensitively==. A common way to compare strings case-insensitively is to convert both to the same case (upper or lower) before comparing them:
+All comparison operators, including [`===`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality) and [`==`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality), compare strings ==case-sensitively==. A common way to compare strings case-insensitively is to convert both to the same case (upper or lower) before comparing them:
 
 ```js
 function areEqualCaseInsensitive(str1, str2) {
@@ -70,21 +70,21 @@ console.log(typeof strPrim3); // "string"
 console.log(typeof strObj); // "object"
 ```
 
-> **Warning:** You should rarely find yourself using `String` as a constructor.
+> **WARNING:** You should rarely find yourself using `String` as a constructor.
 
 ## String coercion
 
-Many built-in operations that expect strings first coerce their arguments to strings. There are several ways to coerce to a string:
+Many built-in operations that expect strings first coerce their arguments to strings. ==There are several ways to coerce to a string:==
 
-- [Template literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals): ``${x}`` does a string coercion
-- The [`String()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/String) function: `String(x)` uses the same algorithm to convert `x`, except that [Symbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) don't throw a [`TypeError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError), but return `"Symbol(description)"`, where `description` is the [description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/description) of the Symbol.
-- Using the [`+` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition): `"" + x` coerces its operand to a *primitive* instead of a *string*, and, for some objects, has entirely different behaviors from normal string coercion.
+- ==**[Template literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)**==: ``${x}`` does a string coercion
+- ==The **[`String()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/String) function**==: `String(x)` uses the same algorithm to convert `x`, except that [Symbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) don't throw a [`TypeError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError), but return `"Symbol(description)"`, where `description` is the [description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/description) of the Symbol.
+- ==Using the **[`+` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition)**==: `"" + x` coerces its operand to a *primitive* instead of a *string*, and, for some objects, has entirely different behaviors from normal string coercion.
 
 ## Long literal strings
 
-Sometimes, your code will include strings which are very long. Rather than having lines that go on endlessly, or wrap at the whim of your editor, you may wish to specifically break the string into multiple lines in the source code without affecting the actual string contents.
+Sometimes, your code will include strings which are very long. Rather than having lines that go on endlessly, or wrap at the whim of your editor, you may wish to _specifically break the string into multiple lines in the source code without affecting the actual string contents_.
 
-You can use the [`+`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition) operator to append multiple strings together, like this:
+==You can use the [`+`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition) operator to append multiple strings together==, like this:
 
 ```js
 const longString = "This is a very long string which needs " +
@@ -250,5 +250,5 @@ t3Closure({ name: "MDN", age: 30 }); // "I'm MDN. I'm almost 30 years old."
 ## References
 
 1. [String - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-2. [String() constructor - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/String)
+2. [`String()` constructor - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/String)
 3. [Template literals (Template strings) - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)

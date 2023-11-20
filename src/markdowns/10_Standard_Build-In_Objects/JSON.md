@@ -4,7 +4,7 @@ The `JSON` object contains methods for ==**parsing** [JavaScript Object Notation
 
 ## Description
 
-Unlike most global objects, `JSON` is not a constructor. You cannot use it with a [`new` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) or invoke the `JSON` object as a function. All properties and methods of `JSON` are static (just like the [`Math`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) object).
+==Unlike most global objects, `JSON` is not a constructor.== You cannot use it with a [`new` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) or invoke the `JSON` object as a function. All properties and methods of `JSON` are static (just like the [`Math`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) object).
 
 ### JavaScript and JSON differences
 

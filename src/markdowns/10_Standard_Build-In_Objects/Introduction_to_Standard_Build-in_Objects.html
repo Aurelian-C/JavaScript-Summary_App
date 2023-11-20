@@ -6,7 +6,8 @@
 <style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -86,12 +87,14 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
-  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; padding-bottom: 0px !important; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
   .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
@@ -168,7 +171,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 @media screen and (max-width: 800px) {
   .typora-export-sidebar { display: none; }
 }
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
 .outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
@@ -226,7 +229,7 @@ mjx-container { break-inside: avoid; }
   /* for focus mode */
   --text-color5: rgba(170, 178, 180, 0.5);
   /* link color */
-  --link-color: #6FC1FF;
+  --link-color: #0091FF;
   /* table color */
   --table-border-color: #555;
   --table-thead-color: #2b2d2e;
@@ -261,7 +264,7 @@ mjx-container { break-inside: avoid; }
   --focus-ring-color: var(--focus-color);
   /* codeblock color */
   --code-red-color: #FF75B5;
-  --code-yellow-color: #FFB86C;
+  --code-yellow-color: #E8FF94;
   --code-cyan-color: #19f9d8;
   --code-blue-color: #6FC1FF;
   --code-purple-color: #FF75B5;
@@ -331,6 +334,7 @@ body {
 /* link */
 #write a:not([role="menuitem"]) {
   color: var(--link-color) !important;
+  text-decoration: none;
 }
 
 #write a:not([role="menuitem"]):hover {
@@ -1209,16 +1213,12 @@ footer.ty-footer {
 code {
   font-size: 0.9em;
   background-color: var(--bg-color5);
-	padding: .3em;
-  	padding-top: 0.15em;
-  	padding-bottom: 0.15em;
+  padding: .3em;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
   border: 2px solid #666;
   border-radius: 0.25rem;
-  color: var(--text-color1);	
-}
-
-a code {
-  color: var(--link-color) !important;
+  color: var(--text-color1);
 }
 
 /* codeblock */
@@ -1492,9 +1492,7 @@ pre.md-meta-block:active {
   visibility: visible;
   opacity: 1;
   transition: 0.3s;
-  max-width: 800px;
-  padding-left: 70px;
-  padding-right: 70px;
+  max-width: 1100px !important;
 }
 
 .typora-sourceview-on #write {
@@ -2189,6 +2187,7 @@ mark {
     border-radius: 3px;
     padding: 1px 3px 1px 3px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    color: #000000;
 }
 
 .task-list-done {
@@ -2203,59 +2202,25 @@ kbd {
   box-shadow: 0 2px 0 #333;
 }
 
+blockquote p {
+  text-indent: 0px;
+}
+
 p {
-    text-align: justify;
-    text-indent: 30px;
+  text-align: justify;
+  text-indent: 30px;
 }
 
-blockquote > p {
-    text-indent: 0px;
+a code {
+  color: var(--link-color) !important;
 }
 
-li {
-    text-align: justify;
-}
 
-#write a:not([role="menuitem"]) {
-    text-decoration: none;
-}
-
-#write {
-    max-width: 950px;
-}
-
-@media only screen and (max-width: 850px) {
-  #write {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  #write > h1:first-child,
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  h2:after {
-    width: 160px;
-  }
-
-  p {
-    text-indent: 20px;
-  }
-}
 
 
 </style><title>Introduction_to_Standard_Build-in_Objects</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='introduction-to-standard-build-in-objects'><span>Introduction to Standard Build-in Objects</span></h1><h2 id='global-objects-vs-global-object-window'><span>Global objects vs Global Object (</span><code>window</code><span>)</span></h2><p><mark><span>The term &quot;global objects&quot; (or standard built-in objects) here is not to be confused with the global object </span><code>window</code><span>. Here, &quot;global objects&quot; refer to </span><strong><span>objects in the global scope</span></strong></mark><span>.</span></p><p><span>The global object itself (</span><a href='https://developer.mozilla.org/en-US/docs/Web/API/Window'><code>window</code></a><span>) can be accessed using the </span><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this'><code>this</code></a><span> operator in the global scope. In fact, the global scope consists of the properties of the global object, including inherited properties, if any. Other objects in the global scope are either </span><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#creating_new_objects'><span>created by the user script</span></a><span> or provided by the host application. The host objects available in browser contexts are documented in the </span><a href='https://developer.mozilla.org/en-US/docs/Web/API'><span>API reference</span></a><span>.</span></p><h2 id='some-standard-build-in-objects-by-category'><span>Some standard build-in objects by category</span></h2><h3 id='value-properties'><span>Value properties</span></h3><p><span>These global properties return a simple value. They have no properties or methods:</span></p><ul><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN'><span>NaN</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined'><span>undefined</span></a></li></ul><h3 id='function-properties'><span>Function properties</span></h3><p><span>These global functions — functions which are called globally, rather than on an object — directly return their results to the caller:</span></p><ul><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isFinite'><span>isFinite()</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN'><span>isNaN()</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat'><span>parseFloat()</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt'><span>parseInt()</span></a></li></ul><h3 id='fundamental-objects'><span>Fundamental objects</span></h3><p><span>These are the fundamental, basic objects upon which all other objects are based. This includes general objects, booleans, functions, and symbols:</span></p><ul><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object'><span>Object</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function'><span>Function</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean'><span>Boolean</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol'><span>Symbol</span></a></li></ul><h3 id='error-objects'><span>Error objects</span></h3><p><span>Error objects are a special type of fundamental object. They include the basic </span><code>Error</code><span> type, as well as several specialized error types:</span></p><ul><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error'><span>Error</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError'><span>ReferenceError</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError'><span>SyntaxError</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError'><span>TypeError</span></a></li></ul><h3 id='numbers-and-dates'><span>Numbers and dates</span></h3><p><span>These are the base objects representing numbers, dates, and mathematical calculations:</span></p><ul><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number'><span>Number</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt'><span>BigInt</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math'><span>Math</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date'><span>Date</span></a></li></ul><h3 id='text-processing'><span>Text processing</span></h3><p><span>These objects represent strings and support manipulating them:</span></p><ul><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String'><span>String</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp'><span>RegExp</span></a></li></ul><h3 id='indexed-collections'><span>Indexed collections</span></h3><p><span>These objects represent collections of data which are ordered by an index value. This includes (typed) arrays and array-like constructs:</span></p><ul><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array'><span>Array</span></a></li></ul><h3 id='keyed-collections'><span>Keyed collections</span></h3><p><span>These objects represent collections which use keys. The iterable collections (</span><code>Map</code><span> and </span><code>Set</code><span>) contain elements which are easily iterated in the order of insertion:</span></p><ul><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map'><span>Map</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set'><span>Set</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap'><span>WeakMap</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet'><span>WeakSet</span></a></li></ul><h3 id='structured-data'><span>Structured data</span></h3><p><span>These objects represent and interact with structured data buffers and data coded using JavaScript Object Notation (JSON):</span></p><ul><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON'><span>JSON</span></a></li></ul><h3 id='control-abstraction-objects'><span>Control abstraction objects</span></h3><p><span>Control abstractions can help to structure code, especially async code (without using deeply nested callbacks, for example):</span></p><ul><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise'><span>Promise</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction'><span>AsyncFunction</span></a></li></ul><h3 id='internationalization'><span>Internationalization</span></h3><p><span>Additions to the ECMAScript core for language-sensitive functionalities.</span></p><ul><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl'><span>Intl</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat'><span>Intl.DateTimeFormat</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat'><span>Intl.NumberFormat</span></a></li><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale'><span>Intl.Locale</span></a></li></ul><h2 id='references'><span>References</span></h2><ol start='' ><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects'><span>Standard built-in objects - MDN</span></a></li></ol></div></div>
+<div id='write'  class=''><h1 id='introduction-to-standard-build-in-objects'><span>Introduction to Standard Build-in Objects</span></h1><h2 id='standard-build-in-objects-vs-global-window-object'><span>Standard build-in objects vs Global </span><code>window</code><span> object</span></h2><h4 id='standard-build-in-objects'><span>Standard build-in objects:</span></h4><p><mark><strong><span>JavaScript provides a set of standard built-in objects</span></strong><span> that serve various purposes. These objects are available globally and can be used in any part of your code. </span><strong><span>These objects are part of the JavaScript language specification</span></strong><span> and are </span><strong><span>available in all JavaScript environments, not just in web browsers</span></strong><span>.</span></mark></p><h4 id='global-window-object'><span>Global </span><code>window</code><span> object:</span></h4><p><mark><span>In a </span><strong><span>web browser environment</span></strong><span>, such as when JavaScript is used in the context of a web page, there is a global object called </span><code>window</code><span>. </span><strong><span>The </span><code>window</code><span> object represents the browser window</span></strong><span> and </span><strong><span>serves as the global object for JavaScript in the browser environment</span></strong><span>. It contains properties and methods that are specific to the browser environment.</span></mark></p><p><span>For example, properties like </span><code>window.location</code><span> provide information about the current URL, and methods like </span><code>window.alert()</code><span> display an alert dialog. </span><mark><span>While </span><strong><span>the </span><code>window</code><span> object is specific to browsers</span></strong><span>, similar global objects may exist in other JavaScript environments (e.g., </span><code>global</code><span> in Node.js).</span></mark></p><blockquote><p><strong><span>NOTE</span></strong><span>: It&#39;s important to note that not all JavaScript environments have a </span><code>window</code><span> object. For instance, in server-side JavaScript (e.g., Node.js), there is no </span><code>window</code><span> object, but there is a </span><code>global</code><span> object.</span></p></blockquote><p><span>In summary, standard built-in </span><strong><span>objects are part of the core JavaScript language</span></strong><span> and provide fundamental functionality, while </span><strong><span>the global </span><code>window</code><span> object is specific to web browsers</span></strong><span> and provides access to browser-related features.</span></p><h2 id='some-standard-build-in-objects-by-category'><span>Some standard build-in objects by category</span></h2><h3 id='value-properties'><span>Value properties</span></h3><p><span>These global properties return a simple value. They have no properties or methods:</span></p><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN'><span>NaN</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined'><span>undefined</span></a></p></li></ul><h3 id='function-properties'><span>Function properties</span></h3><p><span>These global functions — functions which are called globally, rather than on an object — directly return their results to the caller:</span></p><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isFinite'><span>isFinite()</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN'><span>isNaN()</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat'><span>parseFloat()</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt'><span>parseInt()</span></a></p></li></ul><h3 id='fundamental-objects'><span>Fundamental objects</span></h3><p><span>These are the fundamental, basic objects upon which all other objects are based. This includes general objects, booleans, functions, and symbols:</span></p><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object'><span>Object</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function'><span>Function</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean'><span>Boolean</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol'><span>Symbol</span></a></p></li></ul><h3 id='error-objects'><span>Error objects</span></h3><p><span>Error objects are a special type of fundamental object. They include the basic </span><code>Error</code><span> type, as well as several specialized error types:</span></p><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error'><span>Error</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError'><span>ReferenceError</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError'><span>SyntaxError</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError'><span>TypeError</span></a></p></li></ul><h3 id='numbers-and-dates'><span>Numbers and dates</span></h3><p><span>These are the base objects representing numbers, dates, and mathematical calculations:</span></p><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number'><span>Number</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt'><span>BigInt</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math'><span>Math</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date'><span>Date</span></a></p></li></ul><h3 id='text-processing'><span>Text processing</span></h3><p><span>These objects represent strings and support manipulating them:</span></p><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String'><span>String</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp'><span>RegExp</span></a></p></li></ul><h3 id='indexed-collections'><span>Indexed collections</span></h3><p><span>These objects represent collections of data which are ordered by an index value. This includes (typed) arrays and array-like constructs:</span></p><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array'><span>Array</span></a></p></li></ul><h3 id='keyed-collections'><span>Keyed collections</span></h3><p><span>These objects represent collections which use keys. The iterable collections (</span><code>Map</code><span> and </span><code>Set</code><span>) contain elements which are easily iterated in the order of insertion:</span></p><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map'><span>Map</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set'><span>Set</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap'><span>WeakMap</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet'><span>WeakSet</span></a></p></li></ul><h3 id='structured-data'><span>Structured data</span></h3><p><span>These objects represent and interact with structured data buffers and data coded using JavaScript Object Notation (JSON):</span></p><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON'><span>JSON</span></a></p></li></ul><h3 id='control-abstraction-objects'><span>Control abstraction objects</span></h3><p><span>Control abstractions can help to structure code, especially async code (without using deeply nested callbacks, for example):</span></p><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise'><span>Promise</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction'><span>AsyncFunction</span></a></p></li></ul><h3 id='internationalization'><span>Internationalization</span></h3><p><span>Additions to the ECMAScript core for language-sensitive functionalities.</span></p><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl'><span>Intl</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat'><span>Intl.DateTimeFormat</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat'><span>Intl.NumberFormat</span></a></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale'><span>Intl.Locale</span></a></p></li></ul><h2 id='references'><span>References</span></h2><ol start='' ><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects'><span>Standard built-in objects - MDN</span></a></p></li></ol></div></div>
 </body>
 </html>
