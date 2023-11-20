@@ -35,7 +35,7 @@ class ApplicationView {
             <li class="card__descriptor">
               <div class="card__descriptor-title ${
                 descriptor.summary?.length && 'info__title--has-content'
-              }" data-id="${descriptor.title}">${descriptor.title}</div>
+              }" data-id="${descriptor.id}">${descriptor.title}</div>
             </li>`;
         })
         .join('');
@@ -46,7 +46,7 @@ class ApplicationView {
         <div class="card__article-wrapper">
           <div class="card__article-title ${
             article.summary?.length && 'info__title--has-content'
-          }" data-id="${article.title}">${article.title}</div>
+          }" data-id="${article.id}">${article.title}</div>
         </div>
         <ul class="card__descriptors">
           ${descriptor}

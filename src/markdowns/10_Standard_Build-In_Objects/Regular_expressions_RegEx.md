@@ -1,4 +1,8 @@
-# Regular expressions
+# Regular expressions ("RegEx")
+
+Regular Expressions, often abbreviated as RegEx or RegExp, ==**is a sequence of characters that forms a search patterns used for matching character combinations in strings**. In JavaScript, **regular expressions are objects that provide a powerful and flexible way to search, match, and manipulate text**.== They are implemented through the `RegExp` constructor and support a wide range of pattern-matching capabilities.
+
+Regular expressions are a ==powerful tool for string manipulation and searching==. They are widely used in JavaScript and many other programming languages for tasks such as form validation, text processing, and data extraction.
 
 ## References
 

@@ -1,4 +1,4 @@
-# String.prototype.indexOf()
+# `String.prototype.indexOf()`
 
 The `indexOf()` method, given one argument: ==a substring to search for==, searches the entire calling string, and ==returns the index of the first occurrence of the specified substring==. Given a second argument: a number, the method returns the first occurrence of the specified substring at an index greater than or equal to the specified number.
 
@@ -104,5 +104,5 @@ console.log(count); // 4
 
 ## References
 
-1. [String.prototype.indexOf() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
-2. [String indexOf() - w3schools](https://www.w3schools.com/jsref/jsref_indexof.asp)
+1. [`String.prototype.indexOf()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
+2. [String `indexOf()` - w3schools](https://www.w3schools.com/jsref/jsref_indexof.asp)
