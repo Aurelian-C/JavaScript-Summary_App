@@ -1,15 +1,15 @@
-# String.prototype.padStart() & String.prototype.padEnd()
+# `String.prototype.padStart()` & `String.prototype.padEnd()`
 
 The `padStart()`/`padEnd()` method ==pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length==. In the case of `padStart()` the padding is applied from the _start_ of the current string, for `padEnd()` the padding is applied from the _end_ of the current string.
 
 ## Syntax
 
 ```js
-str.padStart(targetLength)
-str.padStart(targetLength, padString)
+string.padStart(targetLength);
+string.padStart(targetLength, padString);
 
-str.padEnd(targetLength)
-str.padEnd(targetLength, padString)
+string.padEnd(targetLength);
+string.padEnd(targetLength, padString);
 ```
 
 ## Parameters
@@ -49,5 +49,5 @@ Using `padEnd`:
 
 ## References
 
-1. [String.prototype.padStart() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
-2. [String.prototype.padEnd() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd)
+1. [`String.prototype.padStart()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
+2. [`String.prototype.padEnd()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd)

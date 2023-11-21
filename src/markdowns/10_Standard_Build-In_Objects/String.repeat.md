@@ -1,17 +1,17 @@
-# String.prototype.repeat()
+# `String.prototype.repeat()`
 
 The `repeat()` method ==constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together==.
 
 The `repeat()` method:
 
-- returns a string with a number of copies of a string
-- returns a new string
-- does not change the original string
+- returns a string with a number of copies of a string;
+- returns a new string;
+- does not change the original string.
 
 ## Syntax
 
 ```js
-str.repeat(count)
+string.repeat(count)
 ```
 
 ## Parameters
@@ -42,5 +42,5 @@ A new string containing the specified number of copies of the given string.
 
 ## References
 
-1. [String.prototype.repeat() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
-2. [String repeat() - w3schools](https://www.w3schools.com/jsref/jsref_repeat.asp)
+1. [`String.prototype.repeat()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
+2. [String `repeat()` - w3schools](https://www.w3schools.com/jsref/jsref_repeat.asp)

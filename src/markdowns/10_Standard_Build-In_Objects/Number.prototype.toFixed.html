@@ -6,7 +6,8 @@
 <style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -86,12 +87,14 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
-  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; padding-bottom: 0px !important; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
   .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
@@ -168,7 +171,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 @media screen and (max-width: 800px) {
   .typora-export-sidebar { display: none; }
 }
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
 .outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
@@ -307,7 +310,7 @@ span.cm-strikethrough { text-decoration: line-through; }
   /* for focus mode */
   --text-color5: rgba(170, 178, 180, 0.5);
   /* link color */
-  --link-color: #0091ff;
+  --link-color: #0091FF;
   /* table color */
   --table-border-color: #555;
   --table-thead-color: #2b2d2e;
@@ -342,7 +345,7 @@ span.cm-strikethrough { text-decoration: line-through; }
   --focus-ring-color: var(--focus-color);
   /* codeblock color */
   --code-red-color: #FF75B5;
-  --code-yellow-color: #e8ff94;
+  --code-yellow-color: #E8FF94;
   --code-cyan-color: #19f9d8;
   --code-blue-color: #6FC1FF;
   --code-purple-color: #FF75B5;
@@ -412,6 +415,7 @@ body {
 /* link */
 #write a:not([role="menuitem"]) {
   color: var(--link-color) !important;
+  text-decoration: none;
 }
 
 #write a:not([role="menuitem"]):hover {
@@ -1290,16 +1294,12 @@ footer.ty-footer {
 code {
   font-size: 0.9em;
   background-color: var(--bg-color5);
-	padding: .3em;
-  	padding-top: 0.15em;
-  	padding-bottom: 0.15em;
+  padding: .3em;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
   border: 2px solid #666;
   border-radius: 0.25rem;
-  color: var(--text-color1);	
-}
-
-a code {
-  color: var(--link-color) !important;
+  color: var(--text-color1);
 }
 
 /* codeblock */
@@ -1573,9 +1573,7 @@ pre.md-meta-block:active {
   visibility: visible;
   opacity: 1;
   transition: 0.3s;
-  max-width: 800px;
-  padding-left: 70px;
-  padding-right: 70px;
+  max-width: 1100px !important;
 }
 
 .typora-sourceview-on #write {
@@ -2270,6 +2268,7 @@ mark {
     border-radius: 3px;
     padding: 1px 3px 1px 3px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    color: #000000;
 }
 
 .task-list-done {
@@ -2284,60 +2283,26 @@ kbd {
   box-shadow: 0 2px 0 #333;
 }
 
+blockquote p {
+  text-indent: 0px;
+}
+
 p {
-    text-align: justify;
-    text-indent: 30px;
+  text-align: justify;
+  text-indent: 30px;
 }
 
-blockquote > p {
-    text-indent: 0px;
+a code {
+  color: var(--link-color) !important;
 }
 
-li {
-    text-align: justify;
-}
 
-#write a:not([role="menuitem"]) {
-    text-decoration: none;
-}
-
-#write {
-    max-width: 950px;
-}
-
-@media only screen and (max-width: 850px) {
-  #write {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  #write > h1:first-child,
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  h2:after {
-    width: 160px;
-  }
-
-  p {
-    text-indent: 20px;
-  }
-}
 
 
 </style><title>Number.prototype.toFixed</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='numberprototypetofixed'><span>Number.prototype.toFixed()</span></h1><p><span>The </span><code>toFixed()</code><span> method </span><mark><span>formats a number using fixed-point notation</span></mark><span>.</span></p><p><span>The </span><code>toFixed()</code><span> method:</span></p><ul><li><span>converts a number to a string</span></li><li><span>rounds the string to a specified number of decimals</span></li><li><span>if the number of decimals are higher than in the number, zeros are added</span></li></ul><h2 id='syntax'><span>Syntax</span></h2><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="js"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.51875px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">number</span>.<span class="cm-property">toFixed</span>()</span></pre></div><div class="" style="position: relative;"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">number</span>.<span class="cm-property">toFixed</span>(<span class="cm-variable">digits</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre><h2 id='parameters'><span>Parameters</span></h2><h4 id='digits-optional'><code>digits</code><span> </span><em><span>(optional)</span></em></h4><p><mark><span>The number of digits to appear after the decimal point</span></mark><span>; this may be a value between </span><code>0</code><span> and </span><code>20</code><span>, inclusive, and implementations may optionally support a larger range of values. If this argument is omitted, it is treated as </span><code>0</code><span>.</span></p><h2 id='return-value'><span>Return value</span></h2><p><mark><span>A string</span></mark><span> representing the given number using fixed-point notation.</span></p><h3 id='exceptions'><span>Exceptions</span></h3><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError'><code>RangeError</code></a></p><p><span>If </span><code>digits</code><span> is too small or too large. Values between </span><code>0</code><span> and </span><code>100</code><span>, inclusive, will not cause a </span><code>RangeError</code><span>. Implementations are allowed to support larger and smaller values as chosen.</span></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError'><code>TypeError</code></a></p><p><span>If this method is invoked on an object that is not a </span><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number'><code>Number</code></a><span>.</span></p><h2 id='description'><span>Description</span></h2><p><code>toFixed()</code><span> returns a string representation that does not use exponential notation and has exactly </span><code>digits</code><span> digits after the decimal place. The number is rounded if necessary, and the fractional part is padded with zeros if necessary so that it has the specified length. If the absolute value of string representation is greater or equal to </span><code>1e+21</code><span>, this method calls </span><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString'><code>Number.prototype.toString()</code></a><span> and returns a string in exponential notation.</span></p></li></ul><h2 id='examples'><span>Examples</span></h2><pre class="md-fences md-end-block ty-contain-cm modeLoaded md-focus" spellcheck="false" lang="js" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap CodeMirror-focused" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 401.156px; left: 355.138px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="" style="position: relative;"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">numObj</span> <span class="cm-operator">=</span> <span class="cm-number">12345.6789</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
-</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">numObj</span>.<span class="cm-property">toFixed</span>() &nbsp; &nbsp; &nbsp; <span class="cm-comment">// Returns '12346': rounding, no fractional part</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">numObj</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Returns '12345.7': it rounds up</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">numObj</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">6</span>) &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Returns '12345.678900': additional zeros</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">(<span class="cm-number">1.23e+20</span>).<span class="cm-property">toFixed</span>(<span class="cm-number">2</span>) &nbsp;<span class="cm-comment">// Returns '123000000000000000000.00'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">(<span class="cm-number">1.23e-10</span>).<span class="cm-property">toFixed</span>(<span class="cm-number">2</span>) &nbsp;<span class="cm-comment">// Returns '0.00'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-number">2.34</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Returns '2.3'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-number">2.35</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Returns '2.4': it rounds up</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-number">2.55</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Returns '2.5': it rounds down as it can't</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment">// be represented exactly by a float and the</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment">// closest representable float is lower</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-number">2.449999999999999999</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) <span class="cm-comment">// Returns '2.5': it rounds up as it less</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment">// than NUMBER.EPSILON away from 2.45 and therefore</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment">// cannot be distinguished</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-operator">-</span><span class="cm-number">2.34</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) &nbsp; &nbsp; &nbsp; <span class="cm-comment">// Returns '-2.3': due to operator precedence,</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment">// negative number literals don't return a string…</span></span></pre><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">(<span class="cm-operator">-</span><span class="cm-number">2.34</span>).<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) &nbsp; &nbsp; <span class="cm-comment">// Returns '-2.3'</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 415px;"></div><div class="CodeMirror-gutters" style="display: none; height: 415px;"></div></div></div></pre><h2 id='references'><span>References</span></h2><ol start='' ><li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed'><span>Number.prototype.toFixed() - MDN</span></a></li><li><a href='https://www.w3schools.com/jsref/jsref_tofixed.asp'><span>toFixed() - w3schools</span></a></li></ol></div></div>
+<div id='write'  class=''><h1 id='numberprototypetofixed'><code>Number.prototype.toFixed()</code></h1><p><span>The </span><code>toFixed()</code><span> method </span><mark><span>formats a number using fixed-point notation</span></mark><span>.</span></p><p><span>The </span><code>toFixed()</code><span> method:</span></p><ul><li><p><span>converts a number to a string;</span></p></li><li><p><span>rounds the string to a specified number of decimals;</span></p></li><li><p><span>if the number of decimals are higher than in the number, zeros are added.</span></p></li></ul><h2 id='syntax'><span>Syntax</span></h2><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="js"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.51875px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">number</span>.<span class="cm-property">toFixed</span>();</span></pre></div><div class="" style="position: relative;"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">number</span>.<span class="cm-property">toFixed</span>(<span class="cm-variable">digits</span>);</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre><h2 id='parameters'><span>Parameters</span></h2><h4 id='digits-optional'><code>digits</code><span> </span><em><span>(optional)</span></em></h4><p><mark><span>The number of digits to appear after the decimal point</span></mark><span>; this may be a value between </span><code>0</code><span> and </span><code>20</code><span>, inclusive, and implementations may optionally support a larger range of values. If this argument is omitted, it is treated as </span><code>0</code><span>.</span></p><h2 id='return-value'><span>Return value</span></h2><p><mark><span>A string</span></mark><span> representing the given number using fixed-point notation.</span></p><h3 id='exceptions'><span>Exceptions</span></h3><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError'><code>RangeError</code></a></p><p><span>If </span><code>digits</code><span> is too small or too large. Values between </span><code>0</code><span> and </span><code>100</code><span>, inclusive, will not cause a </span><code>RangeError</code><span>. Implementations are allowed to support larger and smaller values as chosen.</span></p></li><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError'><code>TypeError</code></a></p><p><span>If this method is invoked on an object that is not a </span><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number'><code>Number</code></a><span>.</span></p><h2 id='description'><span>Description</span></h2><p><code>toFixed()</code><span> </span><mark><span>returns a string</span></mark><span> representation that does not use exponential notation and has exactly </span><code>digits</code><span> digits after the decimal place. </span><mark><span>The number is rounded if necessary, and the fractional part is padded with zeros if necessary so that it has the specified length.</span></mark><span> If the absolute value of string representation is greater or equal to </span><code>1e+21</code><span>, this method calls </span><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString'><code>Number.prototype.toString()</code></a><span> and returns a string in exponential notation.</span></p></li></ul><h2 id='examples'><span>Examples</span></h2><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="js" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.51875px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">numObj</span> <span class="cm-operator">=</span> <span class="cm-number">12345.6789</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">numObj</span>.<span class="cm-property">toFixed</span>() &nbsp; &nbsp; &nbsp; <span class="cm-comment">// Returns '12346': rounding, no fractional part</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">numObj</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Returns '12345.7': it rounds up</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">numObj</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">6</span>) &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Returns '12345.678900': additional zeros</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">(<span class="cm-number">1.23e+20</span>).<span class="cm-property">toFixed</span>(<span class="cm-number">2</span>) &nbsp;<span class="cm-comment">// Returns '123000000000000000000.00'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">(<span class="cm-number">1.23e-10</span>).<span class="cm-property">toFixed</span>(<span class="cm-number">2</span>) &nbsp;<span class="cm-comment">// Returns '0.00'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-number">2.34</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Returns '2.3'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-number">2.35</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Returns '2.4': it rounds up</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-number">2.55</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Returns '2.5': it rounds down as it can't</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment">// be represented exactly by a float and the</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment">// closest representable float is lower</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-number">2.449999999999999999</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) <span class="cm-comment">// Returns '2.5': it rounds up as it less</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment">// than NUMBER.EPSILON away from 2.45 and therefore</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment">// cannot be distinguished</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-operator">-</span><span class="cm-number">2.34</span>.<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) &nbsp; &nbsp; &nbsp; <span class="cm-comment">// Returns '-2.3': due to operator precedence,</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment">// negative number literals don't return a string…</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">(<span class="cm-operator">-</span><span class="cm-number">2.34</span>).<span class="cm-property">toFixed</span>(<span class="cm-number">1</span>) &nbsp; &nbsp; <span class="cm-comment">// Returns '-2.3'</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 415px;"></div><div class="CodeMirror-gutters" style="display: none; height: 415px;"></div></div></div></pre><h2 id='references'><span>References</span></h2><ol start='' ><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed'><code>Number.prototype.toFixed()</code><span> - MDN</span></a></p></li><li><p><a href='https://www.w3schools.com/jsref/jsref_tofixed.asp'><code>toFixed()</code><span> - w3schools</span></a></p></li></ol></div></div>
 </body>
 </html>

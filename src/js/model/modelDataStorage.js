@@ -2674,14 +2674,21 @@ const standardBuildInObjects = {
           id: 'string-prototype-padStart-padEnd',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.padStart_&_padEnd.html',
-          summary: [],
+          summary: [
+            `<ul>The <code>padStart()</code>/<code>padEnd()</code> method <i>pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length</i>. In the case of <code>padStart()</code> the padding is applied from the <u>start</u> of the current string, for <code>padEnd()</code> the padding is applied from the <u>end</u> of the current string:
+              <li>- <code>string.padStart(targetLength, padString)</code>;</li>
+              <li>- <code>string.padEnd(targetLength, padString)</code>.</li>
+            </ul>`,
+          ],
         },
         {
           title: 'repeat()',
-          id: 's',
+          id: 'string-prototype-repeat',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.repeat.html',
-          summary: [],
+          summary: [
+            `<p>The <code>repeat()</code> method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together: <code>string.repeat(count)</code>.</p>`,
+          ],
         },
       ],
     },
@@ -2738,30 +2745,60 @@ const standardBuildInObjects = {
           id: 'number-parseint()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Number.parseInt.html',
+          summary: [
+            `<p>The <code>Number.parseInt()</code> method <i>parses a string</i> argument and <i>returns an integer</i> of the specified radix or base: <code>Number.parseInt(string, radix)</code>.</p>
+            <p><i>If the first character cannot be converted, <code>NaN</code> is returned.</i> Leading and trailing spaces are ignored. Only the first integer found is returned.</p>
+            <ul>The <code>Number.parseInt()</code> method:
+              <li>- parses a value as a string and returns the first integer;</li>
+              <li>- a <code>radix</code> parameter specifies the number system to use: 2 = binary, 8 = octal, 10 = decimal, 16 = hexadecimal;</li>
+              <li>- if <code>radix</code> is omitted, JavaScript assumes <code>radix</code> 10. If the value begins with "0x", JavaScript assumes <code>radix</code> 16.</li>
+            </ul>
+            `,
+          ],
         },
         {
           title: 'Number.parseFloat()',
           id: 'number-parsefloat()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Number.parseFloat.html',
+          summary: [
+            `<p>The <code>Number.parseFloat()</code> method <i>parses a string</i> and <i>returns a floating point number</i>: <code>Number.parseFloat(string)</code>.</p>
+          <p><i>If a number cannot be parsed from the string, it returns <code>NaN</code>.</i> Leading and trailing spaces are ignored. Only the first number found is returned.</p>
+          `,
+          ],
         },
         {
           title: 'Number.isNaN()',
           id: 'number-isnan()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Number.isNaN.html',
+          summary: [
+            `<p>The <code>Number.isNaN()</code> method determines whether the passed value is <code>NaN</code> and its type is <code>Number</code>: <code>Number.isNaN(value)</code>.</p>
+            <p>This method returns <code>true</code> if the given value is a number with value <code>NaN</code>. Otherwise, returns <code>false</code>.</p>
+            `,
+          ],
         },
         {
           title: 'Number.isFinite()',
           id: 'number-isfinite()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Number.isFinite.html',
+          summary: [
+            `<p>The <code>Number.isFinite()</code> method determines whether the passed value is a finite number: <code>Number.isFinite(value)</code>.</p>
+            <p>The boolean value <code>true</code> if the given value is a finite number. Otherwise <code>false</code>.</p>
+            `,
+          ],
         },
         {
           title: 'Number.isInteger()',
           id: 'number-isinteger()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Number.isInteger.html',
+          summary: [
+            `<p>The <code>Number.isInteger()</code> method determines whether the passed value is an integer number: <code>Number.isInteger(value)</code>.</p>
+          <p>The boolean value <code>true</code> if the given value is an integer number. Otherwise <code>false</code>.</p>
+          `,
+          ],
         },
       ],
     },
@@ -2776,6 +2813,21 @@ const standardBuildInObjects = {
           id: 'number-prototype-tofixed()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Number.prototype.toFixed.html',
+          summary: [
+            `<p>The <code>toFixed()</code> method <i>formats a number using fixed-point notation</i>: <code>number.toFixed(digits)</code>.</p>
+            <ul>The <code>toFixed()</code> method:
+            <li>- converts a number to a string;</li>
+            <li>- rounds the string to a specified number of decimals;</li>
+            <li>- if the number of decimals are higher than in the number, zeros are added.</li>
+            </ul>`,
+            `<h3>Parameters</h3>
+            <ul><code>digits</code> (optional)
+              <li><i>The number of digits to appear after the decimal point</i>; this may be a value between <code>0</code> and <code>20</code>, inclusive, and implementations may optionally support a larger range of values. If this argument is omitted, it is treated as <code>0</code>.</li>
+            </ul>
+              `,
+            `<h3>Return value</h3>
+            <p><i>A string</i> representing the given number using fixed-point notation.</p>`,
+          ],
         },
       ],
     },

@@ -1,4 +1,4 @@
-# Number.parseFloat()
+# `Number.parseFloat()`
 
 The `Number.parseFloat()` method ==**parses an argument** and **returns a floating point number**. If a number cannot be parsed from the argument, it returns [`NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)==.
 
@@ -24,9 +24,9 @@ The value to parse, [coerced to a string](https://developer.mozilla.org/en-US/do
 
 A floating point number parsed from the given `string` _or_ `NaN` when the first non-whitespace character cannot be converted to a number.
 
-> **Note**: If the first character cannot be converted, `NaN` is returned. Leading and trailing spaces are ignored. Only the first number found is returned.
+> **NOTE**: ==If the first character cannot be converted, `NaN` is returned.== Leading and trailing spaces are ignored. Only the first number found is returned.
 
 ## References
 
-1. [Number.parseFloat() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat)
-1. [parseFloat() - w3schools](https://www.w3schools.com/jsref/jsref_parsefloat.asp)
+1. [`Number.parseFloat()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat)
+1. [`parseFloat()` - w3schools](https://www.w3schools.com/jsref/jsref_parsefloat.asp)

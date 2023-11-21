@@ -1,12 +1,12 @@
-# Number.parseInt()
+# `Number.parseInt()`
 
 The `Number.parseInt()` method ==**parses a string** argument and **returns an integer** of the specified radix or base==.
 
 The `Number.parseInt()` method:
 
-- parses a value as a string and returns the first integer
-- a `radix` parameter specifies the number system to use: 2 = binary, 8 = octal, 10 = decimal, 16 = hexadecimal
-- if `radix` is omitted, JavaScript assumes `radix` 10. If the value begins with "0x", JavaScript assumes `radix` 16
+- parses a value as a string and returns the first integer;
+- a `radix` parameter specifies the number system to use: 2 = binary, 8 = octal, 10 = decimal, 16 = hexadecimal;
+- if `radix` is omitted, JavaScript assumes `radix` 10. If the value begins with "0x", JavaScript assumes `radix` 16.
 
 `Number.parseInt()` method has the same functionality as the global [`parseInt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) function:
 
@@ -35,9 +35,9 @@ Number.parseInt(string, radix)
 
 ==An integer parsed from the given `string`==. If the `radix` is smaller than `2` or bigger than `36`, or the first non-whitespace character cannot be converted to a number, [`NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN) is returned.
 
-> **Note**: If the first character cannot be converted, `NaN` is returned. Leading and trailing spaces are ignored. Only the first integer found is returned.
+> **NOTE**: ==If the first character cannot be converted, `NaN` is returned.== Leading and trailing spaces are ignored. Only the first integer found is returned.
 
 ## References
 
-1. [Number.parseInt() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt)
-1. [parseInt() - w3schools](https://www.w3schools.com/jsref/jsref_parseint.asp)
+1. [`Number.parseInt()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt)
+1. [`parseInt()` - w3schools](https://www.w3schools.com/jsref/jsref_parseint.asp)

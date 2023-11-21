@@ -1,4 +1,4 @@
-# Number.isInteger()
+# `Number.isInteger()`
 
 The `Number.isInteger()` method ==determines whether the passed value is an integer==.
 
@@ -26,5 +26,5 @@ Note that some number literals, while looking like non-integers, actually repres
 
 ## References
 
-1. [Number.isInteger() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger)
-1. [isInteger() - w3schools](https://www.w3schools.com/jsref/jsref_isinteger.asp)
+1. [`Number.isInteger()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger)
+1. [`isInteger()` - w3schools](https://www.w3schools.com/jsref/jsref_isinteger.asp)

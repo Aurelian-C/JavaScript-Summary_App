@@ -1,18 +1,18 @@
-# Number.prototype.toFixed()
+# `Number.prototype.toFixed()`
 
 The `toFixed()` method ==formats a number using fixed-point notation==.
 
 The `toFixed()` method:
 
-- converts a number to a string
-- rounds the string to a specified number of decimals
-- if the number of decimals are higher than in the number, zeros are added
+- converts a number to a string;
+- rounds the string to a specified number of decimals;
+- if the number of decimals are higher than in the number, zeros are added.
 
 ## Syntax
 
 ```js
-number.toFixed()
-number.toFixed(digits)
+number.toFixed();
+number.toFixed(digits);
 ```
 
 ## Parameters
@@ -37,7 +37,7 @@ number.toFixed(digits)
 
   ## Description
 
-  `toFixed()` returns a string representation that does not use exponential notation and has exactly `digits` digits after the decimal place. The number is rounded if necessary, and the fractional part is padded with zeros if necessary so that it has the specified length. If the absolute value of string representation is greater or equal to `1e+21`, this method calls [`Number.prototype.toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString) and returns a string in exponential notation.
+  `toFixed()` ==returns a string== representation that does not use exponential notation and has exactly `digits` digits after the decimal place. ==The number is rounded if necessary, and the fractional part is padded with zeros if necessary so that it has the specified length.== If the absolute value of string representation is greater or equal to `1e+21`, this method calls [`Number.prototype.toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString) and returns a string in exponential notation.
 
 ## Examples
 
@@ -64,5 +64,5 @@ numObj.toFixed(6)      // Returns '12345.678900': additional zeros
 
 ## References
 
-1. [Number.prototype.toFixed() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
-1. [toFixed() - w3schools](https://www.w3schools.com/jsref/jsref_tofixed.asp)
+1. [`Number.prototype.toFixed()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
+1. [`toFixed()` - w3schools](https://www.w3schools.com/jsref/jsref_tofixed.asp)
