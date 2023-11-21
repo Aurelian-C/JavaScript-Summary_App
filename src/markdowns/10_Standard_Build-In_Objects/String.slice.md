@@ -1,20 +1,20 @@
-# String.prototype.slice()
+# `String.prototype.slice()`
 
-The `slice()` method ==extracts a **section of a string** and returns it as a new string, without modifying the original string==.
+The `slice()` method ==**extracts a section of a string** and returns it as a new string, without modifying the original string==.
 
 The `slice()` method:
 
-- extracts a part of a string
-- returns the extracted part in a new string
-- does not change the original string
-- the start and end parameters specifies the part of the string to extract (the first position is 0, the second is 1, ...)
-- a negative number selects from the end of the string
+- extracts a part of a string;
+- returns the extracted part in a new string;
+- does not change the original string;
+- the start and end parameters specifies the part of the string to extract (the first position is 0, the second is 1, ...);
+- a negative number selects from the end of the string.
 
 ## Syntax
 
 ```js
-slice(indexStart)
-slice(indexStart, indexEnd)
+string.slice(indexStart)
+string.slice(indexStart, indexEnd)
 ```
 
 ## Parameters
@@ -66,5 +66,5 @@ str.slice(4, -1); // 'morning is upon us'
 
 ## References
 
-1. [String.prototype.slice() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
-2. [String slice() - w3schools](https://www.w3schools.com/jsref/jsref_slice_string.asp)
+1. [`String.prototype.slice()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+2. [String `slice()` - w3schools](https://www.w3schools.com/jsref/jsref_slice_string.asp)

@@ -1,19 +1,19 @@
-# String.prototype.lastIndexOf()
+# `String.prototype.lastIndexOf()`
 
 The `lastIndexOf()` method, given one argument: a ==substring to search for==, searches the entire calling string, and ==returns the index of the last occurrence of the specified substring==. Given a second argument: a number, the method returns the last occurrence of the specified substring at an index less than or equal to the specified number.
 
 The `lastIndexOf()` method:
 
-- returns the index (position) of the last occurrence of a specified value in a string
-- searches the string from the end to the beginning
-- returns `-1` if the value is not found
-- is case sensitive
+- returns the index (position) of the last occurrence of a specified value in a string;
+- searches the string from the end to the beginning;
+- returns `-1` if the value is not found;
+- is case sensitive.
 
 ## Syntax
 
 ```js
-lastIndexOf(searchString)
-lastIndexOf(searchString, position)
+string.lastIndexOf(searchString)
+string.lastIndexOf(searchString, position)
 ```
 
 ## Parameters
@@ -36,7 +36,7 @@ The method returns the index of the last occurrence of the specified substring a
 
 ## Description
 
-==Strings are zero-indexed==: The index of a string's first character is `0`, and the index of a string's last character is the length of the string minus 1.
+==Strings are zero-indexed==: the index of a string's first character is `0`, and the index of a string's last character is the length of the string minus 1.
 
 ```js
 'canal'.lastIndexOf('a');     // returns 3
@@ -68,5 +68,5 @@ console.log(anyString.lastIndexOf('Brave')); // 7
 
 ## References
 
-1. [String.prototype.lastIndexOf() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf)
-2. [String lastIndexOf() - w3schools](https://www.w3schools.com/jsref/jsref_lastindexof.asp)
+1. [`String.prototype.lastIndexOf()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf)
+2. [String `lastIndexOf()` - w3schools](https://www.w3schools.com/jsref/jsref_lastindexof.asp)

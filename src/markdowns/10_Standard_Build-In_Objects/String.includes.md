@@ -1,18 +1,18 @@
-# String.prototype.includes()
+# `String.prototype.includes()`
 
-The `includes()` method ==performs a case-sensitive search to determine whether one string may be found within another string==, returning `true` or `false` as appropriate.
+The `includes()` method ==performs a **case-sensitive search** to determine whether one string may be found within another string==, returning `true` or `false` as appropriate.
 
 The `includes()` method:
 
-- lets you determine whether or not a string includes another string
-- is case sensitive
-- returns `true` if a string contains a specified string, otherwise return `false`
+- lets you determine whether or not a string includes another string;
+- is case sensitive;
+- returns `true` if a string contains a specified string, otherwise return `false`.
 
 ## Syntax
 
 ```js
-str.includes(searchString)
-str.includes(searchString, startPosition)
+string.includes(searchString)
+string.includes(searchString, startPosition)
 ```
 
 ## Parameters
@@ -44,5 +44,5 @@ console.log(str.includes("")); // true
 
 ## References
 
-1. [String.prototype.includes() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
-2. [String includes() - w3schools](https://www.w3schools.com/jsref/jsref_includes.asp)
+1. [`String.prototype.includes()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+2. [String `includes()` - w3schools](https://www.w3schools.com/jsref/jsref_includes.asp)

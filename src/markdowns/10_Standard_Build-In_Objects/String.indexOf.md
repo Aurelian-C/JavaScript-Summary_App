@@ -11,8 +11,8 @@ The `indexOf()` method:
 ## Syntax
 
 ```js
-indexOf(searchString)
-indexOf(searchString, startPosition)
+string.indexOf(searchString)
+string.indexOf(searchString, startPosition)
 ```
 
 ## Parameters

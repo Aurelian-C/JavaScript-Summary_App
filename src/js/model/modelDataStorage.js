@@ -2541,7 +2541,7 @@ const standardBuildInObjects = {
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.indexOf.html',
           summary: [
-            `<p>The <code>indexOf()</code> method, given one argument: <i>a substring to search for</i>, searches the entire calling string, and <i>returns the index of the first occurrence of the specified substring</i>. Given a second argument: a number, the method returns the first occurrence of the specified substring at an index greater than or equal to the specified number: <code>indexOf(searchString, startPosition)</code>.
+            `<p>The <code>indexOf()</code> method, given one argument: <i>a substring to search for</i>, searches the entire calling string, and <i>returns the index of the first occurrence of the specified substring</i>. Given a second argument: a number, the method returns the first occurrence of the specified substring at an index greater than or equal to the specified number: <code>string.indexOf(searchString, startPosition)</code>.
             </p>
             <p>The <code>indexOf()</code> method is <i>case sensitive</i>. For example, the following expression returns <code>-1</code>: <code>'Blue Whale'.indexOf('blue')</code>.</p>
             `,
@@ -2552,61 +2552,122 @@ const standardBuildInObjects = {
           id: 'string-prototype-lastIndexOf()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.lastIndexOf.html',
-          summary: [],
+          summary: [
+            `<p>The <code>lastIndexOf()</code> method, given one argument: a <i>substring to search for</i>, searches the entire calling string, and <i>returns the index of the last occurrence</i> of the specified substring. Given a second argument: a number, the method returns the last occurrence of the specified substring at an index less than or equal to the specified number: <code>string.lastIndexOf(searchString, position)</code>.</p>
+          <ul>The <code>lastIndexOf()</code> method:
+            <li>- <i>returns the index</i> (position) of the last occurrence of a specified value in a string;</li>
+            <li>- searches the string from the end to the beginning;</li>
+            <li>- <i>returns <code>-1</code> if the value is not found</i>;</li>
+            <li>- is <i>case sensitive</i>. For example, the following expression returns <code>-1</code>: <code>'Blue Whale'.lastIndexOf('blue')</code>.</li>
+          </ul>
+          `,
+          ],
         },
         {
           title: 'slice()',
           id: 'string-prototype-slice()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.slice.html',
-          summary: [],
+          summary: [
+            `<p>The <code>slice()</code> method <i>extracts a section of a string</i> and <i>returns it as a new string</i>, without modifying the original string: <code>string.slice(indexStart, indexEnd)</code>.</p>
+          <ul>The <code>slice()</code> method:
+            <li>- extracts a part of a string;</li>
+            <li>- returns the extracted part in a new string;</li>
+            <li>- does not change the original string;</li>
+            <li>- the start and end parameters specifies the part of the string to extract (the first position is 0, the second is 1, ...);</li>
+            <li>- <i>a negative number selects from the end of the string.</i></li>
+          </ul>`,
+          ],
         },
         {
           title: 'toLowerCase() & toUpperCase()',
           id: 'string-prototype-toLowerCase-toUpperCase',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.toLowerCase_&_toUpperCase.html',
-          summary: [],
+          summary: [
+            `<p>The <code>toLowerCase()</code> method <i>returns the calling string value converted to lower case</i>. On the other hand, the <code>toUpperCase()</code> method returns the calling string value converted to uppercase. The both methods does not change the original string.</p>
+          <p>NOTE: If the value used to attach <code>toLowerCase()</code> or <code>toUpperCase()</code> isn't a string, it will be <i>converted automatically to a string</i>.</p>
+          `,
+          ],
         },
         {
           title: 'trim()',
           id: 'string-prototype-trim()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.trim.html',
-          summary: [],
+          summary: [
+            `<p>The <code>trim()</code> method <i>removes whitespace</i> from both sides of a string and returns a new string, without modifying the original string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).</p>
+          <p>To return a new string with whitespace trimmed from just one end, use <code>trimStart()</code> or <code>trimEnd()</code>.</p>`,
+          ],
         },
         {
           title: 'replace()',
           id: 'string-prototype-replace()',
-          source: '',
-          summary: [],
+          source:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.replace.html',
+          summary: [
+            `<p><i>The <code>replace()</code> method returns a new string with one, some, or all matches of a <code>pattern</code> replaced by a <code>replacement</code>:</i> <code>string.replace(pattern, replacement).</code></p>
+          <p>The <i><code>pattern</code> can be a string or a <code>RegExp</code></i>, and the <i><code>replacement</code> can be a string or a function called for each match. If <code>pattern</code> is a string, only the first occurrence will be replaced.</i> The original string is left unchanged.</p>
+          <p>NOTE: To replace all instances, use a regular expression with the <code>g</code> modifier set, or use <code>replaceAll()</code> method instead. A <code>Regexp</code> with the <code>g</code> flag is the only case where <code>replace()</code> replaces more than once.</p>
+          `,
+          ],
         },
         {
           title: 'replaceAll()',
           id: 'string-prototype-replaceAll()',
-          source: '',
-          summary: [],
+          source:
+            '/src/markdowns/10_Standard_Build-In_Objects/String.replaceAll.html',
+          summary: [
+            `<p>The <code>replaceAll()</code> method <i>returns a new string</i> with all matches of a <code>pattern</code> replaced by a <code>replacement</code>. The <code>pattern</code> can be a string or a <code>RegExp</code>, and the <code>replacement</code> can be a string or a function to be called for each match: <code>string.replaceAll(pattern, replacement)</code>.</p>
+            <p><i>Unlike <code>replace()</code>, this method would replace all occurrences of a string, not just the first one.</i> This is especially useful if the string is not statically known, as calling the <code>RegExp()</code> constructor without escaping special characters may unintentionally change its semantics.</p>
+            `,
+          ],
         },
         {
           title: 'includes()',
           id: 'string-prototype-includes()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.includes.html',
-          summary: [],
+          summary: [
+            `<p>The <code>includes()</code> method <i>performs a <u>case-sensitive search</u> to determine whether one string may be found within another string</i>, returning <code>true</code> or <code>false</code> as appropriate: <code>string.includes(searchString, startPosition)</code></p>`,
+          ],
         },
         {
           title: 'startsWith() & endsWith()',
           id: 'string-prototype-startsWith-endsWith',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.startsWith_&_endsWith.html',
-          summary: [],
+          summary: [
+            `<ul>The <code>startsWith()</code>/<code>endsWith()</code> methods <i>determines whether a string begins/ends with the characters of a specified string</i>, returning <code>true</code> or <code>false</code> as appropriate:
+              <li>- <code>string.startsWith(searchString, startPosition)</code>;</li>
+              <li>- <code>string.endsWith(searchString, endPosition)</code>.</li>
+            </ul>
+            <p>Both methods are <i>case-sensitive</i>.</p>
+            `,
+          ],
         },
         {
           title: 'split()',
           id: 'string-prototype-split()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/String.split.html',
-          summary: [],
+          summary: [
+            `<p>The <code>split()</code> method takes a <i>pattern</i> and <i>divides a string into an ordered list of substrings</i> by searching for the pattern, puts these substrings into an array, and returns the array: <code>string.split(separator, limit)</code>.</p>
+          <ul>The <code>split()</code> method:
+            <li>- splits a string into an array of substrings;</li>
+            <li>- returns the new array of strings;</li>
+            <li>- does not change the original string;</li>
+            <li>- if <code>" "</code> is used as separator, the string is split between words.</li>
+          </ul>
+          `,
+            `<h3>Parameters</h3>
+          <ul><code>separator</code> (optional) 
+            <li><i>The pattern describing where each split should occur.</i> Can be a <u>string</u> or an object with a <code>Symbol.split</code> method — the typical example being a <u>regular expression</u>. If undefined, the original target string is returned wrapped in an array.</li>
+          </ul>
+          <ul><code>limit</code> (optional)
+            <li><i>A non-negative integer specifying a limit on the number of substrings to be included in the array.</i></li>
+          </ul>`,
+          ],
         },
         {
           title: 'padStart() & padEnd()',

@@ -1,27 +1,27 @@
-# String.prototype.startsWith() & String.prototype.endsWith()
+# `String.prototype.startsWith()` & `String.prototype.endsWith()`
 
 The `startsWith()`/`endsWith()` methods ==determines whether a string begins/ends with the characters of a specified string==, returning `true` or `false` as appropriate.
 
 The `startsWith()` method:
 
-- lets you determine whether or not a string _begins_ with another string
-- is case-sensitive
-- returns `true` if a string _starts_ with a specified string, otherwise it returns `false`
+- lets you determine whether or not a string _begins_ with another string;
+- is ==case-sensitive==;
+- returns `true` if a string _starts_ with a specified string, otherwise it returns `false`.
 
 The `endsWith()` method:
 
-- lets you determine whether or not a string _ends_ with another string
-- is case-sensitive
-- returns `true` if a string _ends_ with a specified string, otherwise it returns `false`
+- lets you determine whether or not a string _ends_ with another string;
+- is ==case-sensitive==;
+- returns `true` if a string _ends_ with a specified string, otherwise it returns `false`.
 
 ## Syntax
 
 ```js
-str.startsWith(searchString)
-str.startsWith(searchString, startPosition)
+string.startsWith(searchString);
+string.startsWith(searchString, startPosition);
 
-str.endsWith(searchString)
-str.endsWith(searchString, endPosition)
+string.endsWith(searchString);
+string.endsWith(searchString, endPosition);
 ```
 
 ## Parameters
@@ -80,7 +80,7 @@ str.endsWith("to be", 19);	// true
 
 ## References
 
-1. [String.prototype.startsWith() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
-2. [String startsWith() - w3schools](https://www.w3schools.com/jsref/jsref_startswith.asp)
-3. [String.prototype.endsWith() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith)
-4. [String endsWith() - w3schools](https://www.w3schools.com/jsref/jsref_endswith.asp)
+1. [`String.prototype.startsWith()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
+2. [String `startsWith()` - w3schools](https://www.w3schools.com/jsref/jsref_startswith.asp)
+3. [`String.prototype.endsWith()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith)
+4. [String `endsWith()` - w3schools](https://www.w3schools.com/jsref/jsref_endswith.asp)

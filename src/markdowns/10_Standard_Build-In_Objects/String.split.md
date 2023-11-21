@@ -1,27 +1,27 @@
-# String.prototype.split()
+# `String.prototype.split()`
 
-The `split()` method ==takes a pattern and divides a string into an ordered list of substrings by searching for the pattern, puts these substrings into an array, and returns the array==.
+The `split()` method ==takes a **pattern** and **divides a string into an ordered list of substrings** by searching for the pattern, puts these substrings into an array, and returns the array==.
 
 The `split()` method:
 
-- splits a string into an array of substrings
-- returns the new array of strings
-- does not change the original string
-- if (" ") is used as separator, the string is split between words.
+- splits a string into an array of substrings;
+- returns the new array of strings;
+- does not change the original string;
+- if `" "` is used as separator, the string is split between words.
 
 ## Syntax
 
 ```js
-str.split()
-str.split(separator)
-str.split(separator, limit)
+string.split()
+string.split(separator)
+string.split(separator, limit)
 ```
 
 ## Parameters
 
 #### `separator` _(optional)_
 
-==The pattern describing where each split should occur==. Can be a string or an object with a [`Symbol.split`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/split) method — the typical example being a [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp). If undefined, the original target string is returned wrapped in an array.
+==The pattern describing where each split should occur==. Can be a **string** or an **object with a [`Symbol.split`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/split) method** — the typical example being a [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp). If undefined, the original target string is returned wrapped in an array.
 
 #### `limit` _(optional)_
 
@@ -40,9 +40,9 @@ If `separator` is a non-empty string, the target string is split by all matches 
 
 If `separator` is an empty string (`""`), `str` is converted to an array of each of its UTF-16 "characters", without empty strings on either ends of the resulting string.
 
-> **Note:** `"".split("")` is therefore the only way to produce an empty array when a string is passed as `separator`.
+> **NOTE:** `"".split("")` is therefore the only way to produce an empty array when a string is passed as `separator`.
 
-If `separator` is a regexp that matches empty strings, whether the match is split by UTF-16 code units or Unicode codepoints depends on if the [`u`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode) flag is set.
+If `separator` is a `Regexp` that matches empty strings, whether the match is split by UTF-16 code units or Unicode codepoints depends on if the [`u`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode) flag is set.
 
 ```js
 "😄😄".split(/(?:)/); // [ "\ud83d", "\ude04", "\ud83d", "\ude04" ]
@@ -86,5 +86,5 @@ console.log(splits) // ["Hello", "World.", "How"]
 
 ## References
 
-1. [String.prototype.split() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
-2. [String split() - w3schools](https://www.w3schools.com/jsref/jsref_split.asp)
+1. [`String.prototype.split()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+2. [String `split()` - w3schools](https://www.w3schools.com/jsref/jsref_split.asp)
