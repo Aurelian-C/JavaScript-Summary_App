@@ -1,6 +1,6 @@
-# Math.max()
+# `Math.max()`
 
-The `Math.max()` function ==returns the largest of the numbers given as input parameters, or -[`Infinity`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity) if there are no parameters==.
+The `Math.max()` function ==**returns the largest of the numbers** given as input parameters, or [`-Infinity`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity) if there are no parameters==.
 
 ## Syntax
 
@@ -23,9 +23,9 @@ The largest of the given numbers. Returns [`NaN`](https://developer.mozilla.org/
 
 ## Description
 
-Because `max()` is a static method of `Math`, you always use it as `Math.max()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
+Because ==`max()` is a static method of `Math`==, you always use it as `Math.max()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-[`Math.max.length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length) is 2, which weakly signals that it's designed to handle at least two parameters.
+[`Math.max.length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length) is 2, which weakly signals that ==it's designed to handle at least two parameters==.
 
 ## Examples
 
@@ -63,5 +63,5 @@ const max = Math.max(...arr);
 
 ## References
 
-1. [Math.max() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
-1. [Math.max() - w3schools](https://www.w3schools.com/jsref/jsref_max.asp)
+1. [`Math.max()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
+1. [`Math.max()` - w3schools](https://www.w3schools.com/jsref/jsref_max.asp)

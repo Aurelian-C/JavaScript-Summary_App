@@ -1,4 +1,4 @@
-# Math.floor()
+# `Math.floor()`
 
 The `Math.floor()` function ==**always rounds down** and **returns the largest integer less than or equal to a given number**==.
 
@@ -20,7 +20,7 @@ The largest integer smaller than or equal to `x`. It's the same value as [`-Math
 
 ## Description
 
-Because `floor()` is a static method of `Math`, you always use it as `Math.floor()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
+Because ==`floor()` is a static method of `Math`==, you always use it as `Math.floor()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
 ## Examples
 
@@ -38,5 +38,5 @@ Math.floor(Infinity); // Infinity
 
 ## References
 
-1. [Math.floor() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
-1. [Math.floor() - w3schools](https://www.w3schools.com/jsref/jsref_floor.asp)
+1. [`Math.floor()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
+1. [`Math.floor()` - w3schools](https://www.w3schools.com/jsref/jsref_floor.asp)

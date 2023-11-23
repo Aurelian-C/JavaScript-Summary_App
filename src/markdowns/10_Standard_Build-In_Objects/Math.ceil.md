@@ -1,4 +1,4 @@
-# Math.ceil()
+# `Math.ceil()`
 
 The `Math.ceil()` function ==**always rounds up** and **returns the smaller integer greater than or equal to a given number**==.
 
@@ -20,7 +20,7 @@ The smallest integer greater than or equal to `x`. It's the same value as [`-Mat
 
 ## Description
 
-Because `ceil()` is a static method of `Math`, you always use it as `Math.ceil()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
+Because ==`ceil()` is a static method of `Math`==, you always use it as `Math.ceil()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
 ## Examples
 
@@ -39,5 +39,5 @@ Math.ceil(Infinity); // Infinity
 
 ## References
 
-1. [Math.ceil() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil)
-1. [Math.ceil() - w3schools](https://www.w3schools.com/jsref/jsref_ceil.asp)
+1. [`Math.ceil()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil)
+1. [`Math.ceil()` - w3schools](https://www.w3schools.com/jsref/jsref_ceil.asp)

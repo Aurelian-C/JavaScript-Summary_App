@@ -1,8 +1,8 @@
-# Math.random()
+# `Math.random()`
 
-The `Math.random()` function returns a floating-point, pseudo-random number that's greater than or equal to 0 and less than 1, with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
+The `Math.random()` function ==returns a floating-point, pseudo-random number that's greater than or equal to 0 and less than 1==, with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
 
-> **Note:** `Math.random()` *does not* provide cryptographically secure random numbers. Do not use them for anything related to security. Use the Web Crypto API instead, and more precisely the [`window.crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues) method.
+> **NOTE**: ==`Math.random()` *does not* provide cryptographically secure random numbers.== Do not use them for anything related to security. Use the Web Crypto API instead, and more precisely the [`window.crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues) method.
 
 ## Syntax
 
@@ -38,7 +38,7 @@ function getRandomInt(min, max) {
 }
 ```
 
-> **Note:** It might be tempting to use [`Math.round()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round) to accomplish that, but doing so would cause your random numbers to follow a non-uniform distribution, which may not be acceptable for your needs.
+> **NOTE**: It might be tempting to use [`Math.round()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round) to accomplish that, but doing so would cause your random numbers to follow a non-uniform distribution, which may not be acceptable for your needs.
 
 ### Getting a random integer between two values, inclusive
 
@@ -54,5 +54,5 @@ function getRandomIntInclusive(min, max) {
 
 ## References
 
-1. [Math.random() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
-1. [Math.random() - w3schools](https://www.w3schools.com/jsref/jsref_random.asp)
+1. [`Math.random()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+1. [`Math.random()` - w3schools](https://www.w3schools.com/jsref/jsref_random.asp)

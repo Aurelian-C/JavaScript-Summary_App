@@ -1,4 +1,4 @@
-# Math.round()
+# `Math.round()`
 
 The `Math.round()` function ==returns the value of a number **rounded to the nearest integer**==. For example, `2.49` will be rounded down `2`, and `2.5` will be rounded up `3`.
 
@@ -22,11 +22,11 @@ The value of `x` rounded to the nearest integer.
 
 If the fractional portion of the argument is greater than 0.5, the argument is rounded to the integer with the next higher absolute value. If it is less than 0.5, the argument is rounded to the integer with the lower absolute value. If the fractional portion is exactly 0.5, the argument is rounded to the next integer in the direction of +∞.
 
-> **Note:** This differs from many languages' `round()` functions, which often round half-increments *away from zero*, giving a different result in the case of negative numbers with a fractional part of exactly 0.5.
+> **NOTE**: This differs from many languages' `round()` functions, which often round half-increments *away from zero*, giving a different result in the case of negative numbers with a fractional part of exactly 0.5.
 
 `Math.round(x)` is not exactly the same as [`Math.floor(x + 0.5)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor). When `x` is -0, or -0.5 ≤ x < 0, `Math.round(x)` returns -0, while `Math.floor(x + 0.5)` returns 0. However, neglecting that difference and potential precision errors, `Math.round(x)` and `Math.floor(x + 0.5)` are generally equivalent.
 
-Because `round()` is a static method of `Math`, you always use it as `Math.round()`, rather than as a method of a `Math` object you created (`Math` has no constructor).
+Because ==`round()` is a static method of `Math`==, you always use it as `Math.round()`, rather than as a method of a `Math` object you created (`Math` has no constructor).
 
 ## Examples
 
@@ -44,5 +44,5 @@ Math.round(Infinity); // Infinity
 
 ## References
 
-1. [Math.round() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
-1. [Math.round() - w3schools](https://www.w3schools.com/jsref/jsref_round.asp)
+1. [`Math.round()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
+1. [`Math.round()` - w3schools](https://www.w3schools.com/jsref/jsref_round.asp)

@@ -1,4 +1,4 @@
-# Math.min()
+# `Math.min()`
 
 The `Math.min()` function ==returns the smallest of the numbers given as input parameters, or [`Infinity`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity) if there are no parameters==.
 
@@ -23,9 +23,9 @@ The smallest of the given numbers. Returns [`NaN`](https://developer.mozilla.org
 
 ## Description
 
-Because `min()` is a static method of `Math`, you always use it as `Math.min()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
+Because ==`min()` is a static method of `Math`==, you always use it as `Math.min()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-[`Math.min.length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length) is 2, which weakly signals that it's designed to handle at least two parameters.
+[`Math.min.length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length) is 2, which weakly signals that ==it's designed to handle at least two parameters==.
 
 ## Examples
 
@@ -37,5 +37,5 @@ const z = Math.min(x, y); // -20
 
 ## References
 
-1. [Math.min() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
-1. [Math.min() - w3schools](https://www.w3schools.com/jsref/jsref_min.asp)
+1. [`Math.min()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
+1. [`Math.min()` - w3schools](https://www.w3schools.com/jsref/jsref_min.asp)

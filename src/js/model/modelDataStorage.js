@@ -2852,42 +2852,83 @@ const standardBuildInObjects = {
           title: 'Math.max()',
           id: 'math-max()',
           source: '/src/markdowns/10_Standard_Build-In_Objects/Math.max.html',
+          summary: [
+            `<p>The <code>Math.max()</code> function <i>returns the largest of the numbers</i> given as input parameters, or <code>-Infinity</code> if there are no parameters: <code>Math.max(value0, value1, …, valueN).</code></p>
+            <p>Because <i><code>max()</code> is a static method of <code>Math</code></i>, you always use it as <code>Math.max()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+            <p><code>Math.max.length</code> is 2, which weakly signals that <i>it's designed to handle at least two parameters</i>.</p>
+            `,
+          ],
         },
         {
           title: 'Math.min()',
           id: 'math-min()',
           source: '/src/markdowns/10_Standard_Build-In_Objects/Math.min.html',
+          summary: [
+            `<p>The <code>Math.min()</code> function <i>returns the smallest of the numbers</i> given as input parameters, or <code>Infinity</code> if there are no parameters: <code>Math.min(value0, value1, …, valueN).</code></p>
+            <p>Because <i><code>min()</code> is a static method of <code>Math</code></i>, you always use it as <code>Math.min()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+            <p><code>Math.min.length</code> is 2, which weakly signals that <i>it's designed to handle at least two parameters</i>.</p>
+            `,
+          ],
         },
         {
           title: 'Math.round()',
           id: 'math-round()',
           source: '/src/markdowns/10_Standard_Build-In_Objects/Math.round.html',
+          summary: [
+            `<ul>The <code>Math.round()</code> function <i>returns the value of a number <u>rounded to the nearest integer</u></i>. For example, 2.49 will be rounded down 2, and 2.5 will be rounded up 3:
+              <li>- <code>Math.round(number)</code>.</li>
+            </ul>
+            <p>If the fractional portion of the argument is greater than 0.5, the argument is rounded to the integer with the next higher absolute value. If it is less than 0.5, the argument is rounded to the integer with the lower absolute value. If the fractional portion is exactly 0.5, the argument is rounded to the next integer in the direction of +∞.</p>
+            <p>Because <i><code>round()</code> is a static method of <code>Math</code></i>, you always use it as <code>Math.round()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>`,
+          ],
         },
         {
           title: 'Math.floor()',
           id: 'math-floor()',
           source: '/src/markdowns/10_Standard_Build-In_Objects/Math.floor.html',
+          summary: [
+            `<p>The <code>Math.floor()</code> function <i><u>always rounds down</u> and returns the largest integer less than or equal to a given number</i>: <code>Math.floor(number)</code></p>
+            <p>Because <i><code>floor()</code> is a static method of <code>Math</code></i>, you always use it as <code>Math.floor()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>`,
+          ],
         },
         {
           title: 'Math.ceil()',
           id: 'math-ceil()',
           source: '/src/markdowns/10_Standard_Build-In_Objects/Math.ceil.html',
+          summary: [
+            `<p>The <code>Math.ceil()</code> function <i><u>always rounds up</u> and returns the smaller integer greater than or equal to a given number</i>: <code>Math.ceil(number)</code></p>
+            <p>Because <i><code>ceil()</code> is a static method of <code>Math</code></i>, you always use it as <code>Math.ceil()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>`,
+          ],
         },
         {
           title: 'Math.trunc()',
           id: 'math-trunc()',
           source: '/src/markdowns/10_Standard_Build-In_Objects/Math.trunc.html',
+          summary: [
+            `<p>The <code>Math.trunc()</code> function <i><u>returns the integer part of a number</u> by removing any fractional digits</i>: <code>Math.trunc(number)</code>.</p>
+            <p>Unlike the other three <code>Math</code> methods: <code>Math.floor()</code>, <code>Math.ceil()</code> and <code>Math.round()</code>, the way <code>Math.trunc()</code> works is very simple. It <i>truncates (cuts off) the dot and the digits to the right of it, no matter whether the argument is a positive or negative number</i>.</p>
+            <p>Because <i><code>trunc()</code> is a static method of <code>Math</code></i>, you always use it as <code>Math.trunc()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>`,
+          ],
         },
         {
           title: 'Math.random()',
           id: 'math-random()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Math.random.html',
+          summary: [
+            `<p>The <code>Math.random()</code> function <i>returns a floating-point, pseudo-random number that's greater than or equal to 0 and less than 1</i>, with approximately uniform distribution over that range — which you can then scale to your desired range: <code>Math.random()</code>.</p>
+            <p>NOTE: <i><code>Math.random()</code> does not provide cryptographically secure random numbers.</i> Do not use them for anything related to security. Use the Web Crypto API instead, and more precisely the <code>window.crypto.getRandomValues()</code> method.</p>
+            <p>Because <i><code>random()</code> is a static method of <code>Math</code></i>, you always use it as <code>Math.random()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>`,
+          ],
         },
         {
           title: 'Math.abs()',
           id: 'math-abs()',
           source: '/src/markdowns/10_Standard_Build-In_Objects/Math.abs.html',
+          summary: [
+            `<p>The <code>Math.abs()</code> function <i>returns the <u>absolute value</u> of a number</i>: <code>Math.abs(number)</code>.</p>
+            <p>Because <i><code>abs()</code> is a static method of <code>Math</code></i>, you always use it as <code>Math.abs()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>`,
+          ],
         },
       ],
     },
