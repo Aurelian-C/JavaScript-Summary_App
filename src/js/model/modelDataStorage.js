@@ -3174,13 +3174,6 @@ const standardBuildInObjects = {
         `<h3>Extracting form data</h3>
         <p><i>You can easily extract all the data that is inside a <code>FormData</code> into an JavaScript object with the help of spread operator & <code>Object.fromEntries</code>.</i></p>`,
       ],
-      sectionArticles: [
-        {
-          title: 'new FormData()',
-          id: 'new-formdata()',
-          source: '',
-        },
-      ],
     },
     {
       title: 'JSON',
@@ -3211,11 +3204,36 @@ const standardBuildInObjects = {
           id: 'json-stringify()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/JSON.stringify.html',
+          summary: [
+            `<p>The <code>JSON.stringify()</code> method <i>converts a <u>JavaScript value</u> to a <u>JSON string</u></i>, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified: <code>JSON.stringify(value, replacer, space)</code>.</p>`,
+            `<h3>Parameters</h3>
+            <ul><code>value</code>:
+              <li>The <u>value</u> to convert to a JSON string.</li>
+            </ul>
+            <ul><code>replacer</code> (optional):
+              <li>A <u>function</u> that alters the behavior of the stringification process,or an <u>array of strings or numbers</u> naming properties of code>value</code> that should be included in the output.</li>
+            </ul>
+            <ul><code>space</code> (optional):
+              <li>A <u>string</u> or <u>number</u> that's used to insert white space (including indentation, line break characters, etc.) into the output JSON string for readability purposes.</li>
+            </ul>
+            `,
+          ],
         },
         {
           title: 'JSON.parse()',
           id: 'json-parse()',
           source: '/src/markdowns/10_Standard_Build-In_Objects/JSON.parse.html',
+          summary: [
+            `<p>The <code>JSON.parse()</code> method <i>parses a JSON string, constructing the JavaScript value or object described by the string</i>. An optional <u>reviver function</u> can be provided to perform a transformation on the resulting object before it is returned: <code>JSON.parse(text, reviver)</code>.</p>`,
+            `<h3>Parameters</h3>
+            <ul><code>text</code>:
+              <li>The <u>string</u> to parse as JSON.</li>
+            </ul>
+            <ul><code>reviver</code> (optional):
+              <li>If a <u>function</u>, this prescribes how each value originally produced by parsing is transformed before being returned.</li>
+            </ul>
+            `,
+          ],
         },
       ],
     },

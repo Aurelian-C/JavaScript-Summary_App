@@ -1,6 +1,6 @@
 # `JSON.parse()`
 
-The `JSON.parse()` method ==parses a JSON string, constructing the JavaScript value or object described by the string==. An optional *reviver* function can be provided to perform a transformation on the resulting object before it is returned.
+The `JSON.parse()` method ==parses a JSON string, constructing the JavaScript value or object described by the string==. An optional **reviver function** can be provided to perform a transformation on the resulting object before it is returned.
 
 ## Syntax
 
@@ -13,14 +13,14 @@ JSON.parse(text, reviver)
 
 #### `text`
 
-The string to parse as JSON. See the [`JSON`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) object for a description of JSON syntax.
+==The **string** to parse as JSON.== See the [`JSON`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) object for a description of JSON syntax.
 
 #### `reviver` _(optional)_
 
-If a function, this prescribes how each value originally produced by parsing is transformed before being returned. Non-callable values are ignored. The function is called with the following arguments:
+==If a **function**, this prescribes how each value originally produced by parsing is transformed before being returned.== Non-callable values are ignored. The function is called with the following arguments:
 
-- `key` - the key associated with the value
-- `value` - the value produced by parsing
+- `key` - the key associated with the value;
+- `value` - the value produced by parsing.
 
 ## Return value
 

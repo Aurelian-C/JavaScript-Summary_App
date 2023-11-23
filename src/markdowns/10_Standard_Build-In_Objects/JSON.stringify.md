@@ -14,18 +14,18 @@ JSON.stringify(value, replacer, space)
 
 #### `value`
 
-The value to convert to a JSON string.
+==The **value** to convert to a JSON string.==
 
 #### `replacer` _(optional)_
 
-A function that alters the behavior of the stringification process, or an array of strings or numbers naming properties of `value` that should be included in the output:
+==A **function** that alters the behavior of the stringification process, or an **array of strings or numbers** naming properties of `value` that should be included in the output==:
 
 - if `replacer` is an array, all elements that are not strings or numbers (can be either primitives or wrapper objects), including [`Symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) values, are completely ignored
 - if `replacer` is anything other than a function or an array (e.g. [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null) or not provided), all properties of the object are included in the resulting JSON string.
 
 #### `space` _(optional)_
 
-A string or number that's used to insert white space (including indentation, line break characters, etc.) into the output JSON string for readability purposes:
+==A **string** or **number** that's used to insert white space (including indentation, line break characters, etc.) into the output JSON string for readability purposes==:
 
 - if this is a number, it indicates the number of space characters to be used as indentation, clamped to 10 (that is, any number greater than `10` is treated as if it were `10`). Values less than 1 indicate that no space should be used
 - if this is a string, the string (or the first 10 characters of the string, if it's longer than that) is inserted before every nested object or array. 
@@ -33,7 +33,7 @@ A string or number that's used to insert white space (including indentation, lin
 
 ## Return value
 
-A JSON string representing the given value, or `undefined`. 
+A ==JSON string== representing the given value, or `undefined`. 
 
 A [`TypeError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError) is thrown if one of the following is true: 
 
