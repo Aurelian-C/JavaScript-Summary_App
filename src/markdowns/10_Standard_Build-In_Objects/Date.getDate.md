@@ -1,6 +1,6 @@
-# Date.prototype.getDate()
+# `Date.prototype.getDate()`
 
-The `getDate()` method ==returns the **day of the month (1 to 31)** for the specified date _according to local time_==.
+The `getDate()` method ==returns the **day of the month (1 to 31)** for the specified date **according to local time**==.
 
 ## Syntax
 
@@ -14,5 +14,5 @@ new Date().getDate()
 
 ## References
 
-1. [Date.prototype.getDate() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate)
-1. [Date getDate() - w3schools](https://www.w3schools.com/jsref/jsref_getdate.asp)
+1. [`Date.prototype.getDate()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate)
+1. [Date `getDate()` - w3schools](https://www.w3schools.com/jsref/jsref_getdate.asp)

@@ -1,4 +1,4 @@
-# Date.prototype.getTime()
+# `Date.prototype.getTime()`
 
 The `getTime()` method ==returns the **number of milliseconds** since the 1 January 1970 00:00:00 (ECMAScript epoch)==. You can use this method to help assign a date and time to another `Date` object.
 
@@ -36,5 +36,5 @@ In Firefox, you can also enable `privacy.resistFingerprinting`, the precision wi
 
 ## References
 
-1. [Date.prototype.getTime() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
-1. [Date getTime() - w3schools](https://www.w3schools.com/jsref/jsref_gettime.asp)
+1. [`Date.prototype.getTime()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
+1. [Date `getTime()` - w3schools](https://www.w3schools.com/jsref/jsref_gettime.asp)

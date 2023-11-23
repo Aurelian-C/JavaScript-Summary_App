@@ -1,6 +1,6 @@
-# Date.prototype.getMinutes()
+# `Date.prototype.getMinutes()`
 
-The `getMinutes()` method ==returns the **minutes (0 to 59)** in the specified date _according to local time_==.
+The `getMinutes()` method ==returns the **minutes (0 to 59)** in the specified date **according to local time**==.
 
 ## Syntax
 
@@ -14,5 +14,5 @@ new Date().getMinutes()
 
 ## References
 
-1. [Date.prototype.getMinutes() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes)
-1. [Date getMinutes() - w3schools](https://www.w3schools.com/jsref/jsref_getminutes.asp)
+1. [`Date.prototype.getMinutes()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes)
+1. [Date `getMinutes()` - w3schools](https://www.w3schools.com/jsref/jsref_getminutes.asp)

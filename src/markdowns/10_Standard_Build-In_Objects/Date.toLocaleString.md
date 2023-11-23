@@ -1,6 +1,8 @@
-# Date.prototype.toLocaleString()
+# `Date.prototype.toLocaleString()`
 
-The `toLocaleString()` method ==**returns a** `Date` **object as a string**, _using locale settings_==. The default language depends on the locale setup on your computer. 
+The `toLocaleString()` method ==**returns a** `Date` **object as a string**, using **locale settings**==.
+
+==The **default** language depends on the **locale setup on your computer**.==
 
 In implementations with [`Intl.DateTimeFormat` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) support, this method simply calls `Intl.DateTimeFormat`.
 
@@ -18,7 +20,9 @@ The `locales` and `options` arguments ==**customize** the behavior of the functi
 
 #### `locales` _(optional)_
 
- A ==string with a [BCP 47 language tag](http://www.lingoes.net/en/translator/langcode.htm)==, or an array of such strings. This parameter tags corresponds to the `locales` parameter of the `Intl.DateTimeFormat()` constructor.
+ ==A **string** with a [BCP 47 language tag](http://www.lingoes.net/en/translator/langcode.htm), _or_ an **array of such strings**.== 
+
+==This parameter tags corresponds to the `locales` parameter of the `Intl.DateTimeFormat()` constructor:==
 
 | Tag     | Description        |
 | ------- | ------------------ |
@@ -29,7 +33,7 @@ The `locales` and `options` arguments ==**customize** the behavior of the functi
 
 #### `options` _(optional)_
 
-An ==object== *adjusting the output format*. 
+An ==**object** *adjusting the output format*==.
 
 | Key            | Value                                                 |
 | -------------- | ----------------------------------------------------- |
@@ -45,13 +49,13 @@ An ==object== *adjusting the output format*.
 | `timeZoneName` | `"long"` `"short"`                                    |
 | ...            | ...                                                   |
 
-> **Note**: This parameter keys/values pair correspond exactly to the `Intl.DateTimeFormat()` constructor `options` parameter.
+> **NOTE**: ==This parameter keys/values pair correspond exactly to the `Intl.DateTimeFormat()` constructor `options` parameter.==
 
 ## Return value
 
 A ==string== representing the given date according to language-specific conventions. 
 
-> **Note**: In implementations with `Intl.DateTimeFormat`, this is equivalent to:
+> **NOTE**: In implementations with `Intl.DateTimeFormat`, this is equivalent to:
 >
 > ```js
 > new Intl.DateTimeFormat(locales, options).format(date);
@@ -59,7 +63,7 @@ A ==string== representing the given date according to language-specific conventi
 
 ## Examples
 
-In basic use without specifying a locale, a formatted string in the default locale and with default options is returned:
+In basic use _without specifying a locale_, a formatted string in the default locale and with default options is returned:
 
 ```js
 const date = new Date(2012, 11, 12);
@@ -94,8 +98,8 @@ const options = {
 date.toLocaleString('de-DE', options) // → "Donnerstag, 20. Dezember 2012"
 ```
 
-## Reference
+## References
 
-1. [Date.prototype.toLocaleString() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString)
-1. [Date toLocaleString() - w3schools](https://www.w3schools.com/jsref/jsref_tolocalestring.asp)
+1. [`Date.prototype.toLocaleString()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString)
+1. [Date `toLocaleString()` - w3schools](https://www.w3schools.com/jsref/jsref_tolocalestring.asp)
 1. [ISO Language Code Table](http://www.lingoes.net/en/translator/langcode.htm)

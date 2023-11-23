@@ -1,6 +1,6 @@
-# Date.prototype.getHours()
+# `Date.prototype.getHours()`
 
-The `getHours()` method ==returns the **hour (0 to 23)** for the specified date, _according to local time_==.
+The `getHours()` method ==returns the **hour (0 to 23)** for the specified date, **according to local time**==.
 
 ## Syntax
 
@@ -14,5 +14,5 @@ new Date().getHours()
 
 ## References
 
-1. [Date.prototype.getHours() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours)
-1. [Date getHours() - w3schools](https://www.w3schools.com/jsref/jsref_gethours.asp)
+1. [`Date.prototype.getHours()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours)
+1. [Date `getHours()` - w3schools](https://www.w3schools.com/jsref/jsref_gethours.asp)

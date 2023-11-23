@@ -1,6 +1,6 @@
-# Date.prototype.setFullYear()
+# `Date.prototype.setFullYear()`
 
-The `setFullYear()` method ==sets the **full year** for a specified date _according to local time_. Returns new timestamp==. `setFullYear()` can also set month and day.
+The `setFullYear()` method ==sets the **full year** for a specified date **according to local time**. Returns new **timestamp**==. `setFullYear()` can also set month and day.
 
 ## Syntax
 
@@ -30,9 +30,9 @@ An integer between 1 and 31 representing the day of the month. If you specify th
 
 ## Description
 
-If you do not specify the `monthValue` and `dateValue` parameters, the values returned from the [`getMonth()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth) and [`getDate()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate) methods are used.
+==If you do not specify the `monthValue` and `dateValue` parameters, the values returned from the [`getMonth()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth) and [`getDate()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate) methods are used.==
 
-If a parameter you specify is outside of the expected range, `setFullYear()` attempts to update the other parameters and the date information in the `Date` object accordingly. For example, if you specify 15 for `monthValue`, the year is incremented by 1 (`yearValue + 1`), and 3 is used for the month.
+==If _a parameter you specify is outside of the expected range_, `setFullYear()` attempts to update the other parameters and the date information in the `Date` object accordingly.== For example, if you specify 15 for `monthValue`, the year is incremented by 1 (`yearValue + 1`), and 3 is used for the month.
 
 ## Examples
 
@@ -44,5 +44,5 @@ date..setFullYear(2020, 10, 3);
 
 ## References
 
-1. [Date.prototype.setFullYear() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear)
-1. [Date setFullYear() - w3schools](https://www.w3schools.com/jsref/jsref_setfullyear.asp)
+1. [`Date.prototype.setFullYear()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear)
+1. [Date `setFullYear()` - w3schools](https://www.w3schools.com/jsref/jsref_setfullyear.asp)

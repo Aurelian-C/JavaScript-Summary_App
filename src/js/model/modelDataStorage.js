@@ -2981,66 +2981,120 @@ const standardBuildInObjects = {
           id: 'date-prototype-getfullyear()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getFullYear.html',
+          summary: [
+            `<p>The <code>getFullYear()</code> method <i>returns the <u>full year (4 digits)</u> of the specified date <u>according to local time</u></i>: <code>new Date().getFullYear()</code>.</p>
+            <p>Use this method instead of the <code>getYear()</code> method.</p>`,
+          ],
         },
         {
           title: 'getMonth()',
           id: 'date-prototype-getmonth()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getMonth.html',
+          summary: [
+            `<p>The <code>getMonth()</code> method <i>returns the <u>month (0 to 11)</u> in the specified date <u>according to local time</u>, as a <u>zero-based value</u></i> (where zero indicates the first month of the year): <code>new Date().getMonth()</code>.</p>`,
+          ],
         },
         {
           title: 'getDate()',
           id: 'date-prototype-getdate()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getDate.html',
+          summary: [
+            `<p>The <code>getDate()</code> method <i>returns the <u>day of the month (1 to 31)</u> for the specified date <u>according to local time</u></i>: <code>new Date().getDate()</code>.</p>`,
+          ],
         },
         {
           title: 'getDay()',
           id: 'date-prototype-getday()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getDay.html',
+          summary: [
+            `<p>The <code>getDay()</code> method <i>returns the <u>day of the week (0 to 6)</u> for the specified date <u>according to local time</u>, where 0 represents Sunday</i>: <code>new Date().getDay()</code>.</p>
+          <p>For the <u>day of the month</u>, see <code>Date.prototype.getDate()</code>.</p>`,
+          ],
         },
         {
           title: 'getHours()',
           id: 'date-prototype-gethours()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getHours.html',
+          summary: [
+            `<p>The <code>getHours()</code> method <i>returns the <u>hour (0 to 23)</u> for the specified date, <u>according to local time</u></i>: <code>new Date().getHours()</code>.</p>`,
+          ],
         },
         {
           title: 'getMinutes()',
           id: 'date-prototype-getminutes()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getMinutes.html',
+          summary: [
+            `<p>The <code>getMinutes()</code> method <i>returns the <u>minutes (0 to 59)</u> in the specified date <u>according to local time</u></i>: <code>new Date().getMinutes()</code>.</p>`,
+          ],
         },
         {
           title: 'getSeconds()',
           id: 'date-prototype-getseconds()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getSeconds.html',
+          summary: [
+            `<p><p>The <code>getMinutes()</code> method <i>returns the <u>seconds (0 to 59)</u> in the specified date <u>according to local time</u></i>: <code>new Date().getSeconds()</code>.</p></p>`,
+          ],
         },
         {
           title: 'getTime()',
           id: 'date-prototype-gettime()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.getTime.html',
+          summary: [
+            `<p>The <code>getTime()</code> method <i>returns the <u>number of milliseconds</u> since the 1 January 1970 00:00:00 (ECMAScript epoch)</i>: <code>new Date().getTime()</code>.</p>
+          <p>You can use this method to help assign a date and time to another <code>Date</code> object.</p>`,
+            `<h3>Reduced time precision</h3>
+          <p>To offer protection against timing attacks and fingerprinting, <i>the precision of <code>new Date().getTime()</code> might get rounded depending on browser settings</i>.</p>`,
+          ],
         },
         {
           title: 'toISOString()',
           id: 'date-prototype-toisostring()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.toISOString.html',
+          summary: [
+            `<p>The <code>toISOString()</code> method <i>returns a <u>date object as a string</u>, using the <u>ISO standard</u></i>: <code>new Date().toISOString()</code>.</p>
+            <p>The standard is called ISO-8601 and the format is: <code>YYYY-MM-DDTHH:mm:ss.sssZ</code>.</p>`,
+          ],
         },
         {
           title: 'toLocaleString()',
           id: 'date-prototype-tolocalestring()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.toLocaleString.html',
+          summary: [
+            `<p>The <code>toLocaleString()</code> method <i>returns a <code>Date</code> object as a string, using <u>locale settings</u></i>: <code>new Date().toLocaleString(locales, options)</code>.</p>
+          <p><i>The <u>default</u> language depends on the <u>locale setup on your computer</u>.</i></p>
+          <p>In implementations with <code>Intl.DateTimeFormat</code> API support, this method simply calls <code>Intl.DateTimeFormat</code>.</p>`,
+            `<h3>Parameters</h3>
+          <p>The <code>locales</code> and <code>options</code> arguments <i><u>customize</u> the behavior of the function</i> and let applications specify the language whose formatting conventions should be used.</p>
+          <ul><code>locales</code> (optional):
+            <li>- a <i>string</i> with a BCP 47 language tag, or an <i>array of such strings</i>.</li>
+          </ul>
+          <ul><code>options</code> (optional):
+            <li>- an <i>object</i> adjusting the output format.</li>
+          </ul>
+          `,
+          ],
         },
         {
           title: 'setFullYear()',
           id: 'date-prototype-setfullyear()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Date.setFullYear.html',
+          summary: [
+            `<p>The <code>setFullYear()</code> method <i>sets the <u>full year</u> for a specified date <u>according to local time</u>. Returns new <u>timestamp</u></i>: <code>new Date().setFullYear(yearValue, monthValue, dateValue)</code>.</p>`,
+            `<h3>Description</h3>  
+          <p><i><code>setFullYear()</code> can also set month and day.</i> If you do not specify the <code>monthValue</code> and <code>dateValue</code> parameters, the values returned from the <code>getMonth()</code> and <code>getDate()</code> methods are used.</p>
+          <p>If <i>a parameter you specify is outside of the expected range</i>, <code>setFullYear()</code> attempts to update the other parameters and the date information in the <code>Date</code> object accordingly.</p>
+          `,
+          ],
         },
       ],
     },
@@ -3064,14 +3118,24 @@ const standardBuildInObjects = {
           id: 'intl-datetimeformat()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Intl.DateTimeFormat.html',
-          summary: [],
+          summary: [
+            `<p>The <code>Intl.DateTimeFormat</code> object <i>enables language-sensitive <u>date</u> and <u>time</u> formatting</i>: <code>new Intl.DateTimeFormat(locales, options)</code>.</p>
+            <p>NOTE: <i><code>Intl.DateTimeFormat()</code> can be called with or without <code>new</code>.</i> Both create a new <code>Intl.DateTimeFormat</code> instance. However, there's a special behavior when it's called without <code>new</code> and the <code>this</code> value is another <code>Intl.DateTimeFormat</code> instance.</p>
+            <p>In basic use <u>without specifying a locale</u>, <code>Intl.DateTimeFormat</code> uses the <u>default locale</u> and <u>default options</u>.</p>
+            `,
+          ],
         },
         {
           title: 'Intl.NumberFormat()',
           id: 'intl-numberformat()',
           source:
             '/src/markdowns/10_Standard_Build-In_Objects/Intl.NumberFormat.html',
-          summary: [],
+          summary: [
+            `<p>The <code>Intl.NumberFormat</code> object <i>enables language-sensitive <u>number formatting</u></i>.</p>
+            <p>NOTE: <i><code>Intl.NumberFormat()</code> can be called with or without <code>new</code>.</i> Both create a new <code>Intl.NumberFormat</code> instance. However, there's a special behavior when it's called without <code>new</code> and the <code>this</code> value is another <code>Intl.NumberFormat</code> instance.</p>
+            <p>In basic use <u>without specifying a locale</u>, a formatted string in the <u>default locale</u> and with <u>default options</u> is returned.</p>
+            `,
+          ],
         },
       ],
     },

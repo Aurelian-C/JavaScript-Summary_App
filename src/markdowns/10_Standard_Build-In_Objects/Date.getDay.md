@@ -1,4 +1,4 @@
-# Date.prototype.getDay()
+# `Date.prototype.getDay()`
 
 The `getDay()` method ==returns the **day of the week (0 to 6)** for the specified date _according to local time_, where 0 represents Sunday==. For the day of the month, see [`Date.prototype.getDate()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate).
 
@@ -14,5 +14,5 @@ new Date().getDay()
 
 ## References
 
-1. [Date.prototype.getDay() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay)
-1. [Date getDay() - w3schools](https://www.w3schools.com/jsref/jsref_getday.asp)
+1. [`Date.prototype.getDay()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay)
+1. [Date `getDay()` - w3schools](https://www.w3schools.com/jsref/jsref_getday.asp)

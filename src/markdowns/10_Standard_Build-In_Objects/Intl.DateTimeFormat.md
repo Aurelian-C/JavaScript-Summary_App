@@ -1,4 +1,4 @@
-# Intl.DateTimeFormat
+# `Intl.DateTimeFormat`
 
 The `Intl.DateTimeFormat` object ==enables language-sensitive **_date_ and _time_ formatting**==.
 
@@ -14,7 +14,7 @@ Intl.DateTimeFormat(locales)
 Intl.DateTimeFormat(locales, options)
 ```
 
-> **Note:** `Intl.DateTimeFormat()` can be called with or without [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new). Both create a new `Intl.DateTimeFormat` instance. However, there's a special behavior when it's called without `new` and the `this` value is another `Intl.DateTimeFormat` instance.
+> **NOTE**: ==`Intl.DateTimeFormat()` can be called with or without [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new).== Both create a new `Intl.DateTimeFormat` instance. However, there's a special behavior when it's called without `new` and the `this` value is another `Intl.DateTimeFormat` instance.
 
 ## Parameters
 
@@ -50,7 +50,7 @@ A new `Intl.DateTimeFormat` object.
 
 ### Using `DateTimeFormat`
 
-In basic use without specifying a locale, `DateTimeFormat` uses the default locale and default options.
+==In basic use **without specifying a locale**, `DateTimeFormat` uses the **default locale** and **default options**:==
 
 ```js
 const date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));

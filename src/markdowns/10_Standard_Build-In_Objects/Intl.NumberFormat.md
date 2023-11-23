@@ -1,4 +1,4 @@
-# Intl.NumberFormat()
+# `Intl.NumberFormat()`
 
 The `Intl.NumberFormat` object ==enables language-sensitive **number formatting**==.
 
@@ -14,7 +14,7 @@ Intl.NumberFormat(locales)
 Intl.NumberFormat(locales, options)
 ```
 
-> **Note:** `Intl.NumberFormat()` can be called with or without [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new). Both create a new `Intl.NumberFormat` instance. However, there's a special behavior when it's called without `new` and the `this` value is another `Intl.NumberFormat` instance.
+> **NOTE**: ==`Intl.NumberFormat()` can be called with or without [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new).== Both create a new `Intl.NumberFormat` instance. However, there's a special behavior when it's called without `new` and the `this` value is another `Intl.NumberFormat` instance.
 
 ## Parameters
 
@@ -43,7 +43,7 @@ A new `Intl.NumberFormat` object.
 
 ### Basic usage
 
-In basic use without specifying a locale, a formatted string in the default locale and with default options is returned.
+==In basic use **without specifying a locale**, a formatted string in the **default locale** and with **default options** is returned.==
 
 ```js
 const amount = 3500;

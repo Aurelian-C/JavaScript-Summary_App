@@ -1,6 +1,6 @@
-# Date.prototype.getFullYear()
+# `Date.prototype.getFullYear()`
 
-The `getFullYear()` method ==returns the **full year (4 digits)** of the specified date _according to local time_==. Use this method instead of the [`getYear()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getYear) method.
+The `getFullYear()` method ==returns the **full year (4 digits)** of the specified date **according to local time**==. Use this method instead of the [`getYear()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getYear) method.
 
 ## Syntax
 
@@ -18,5 +18,5 @@ new Date().getFullYear()
 
 ## References
 
-1. [Date.prototype.getFullYear() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear)
-1. [Date getFullYear() - w3schools](https://www.w3schools.com/jsref/jsref_getfullyear.asp)
+1. [`Date.prototype.getFullYear()` - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear)
+1. [Date `getFullYear()` - w3schools](https://www.w3schools.com/jsref/jsref_getfullyear.asp)
