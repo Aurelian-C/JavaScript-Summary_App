@@ -1,5 +1,17 @@
 # Introduction to JavaScript Runtime
 
+## What is JavaScript Runtime?
+
+JavaScript runtime refers to ==**the environment in which JavaScript code is executed**. It consists of the **JavaScript engine** and the **runtime libraries**. The **JavaScript engine is responsible for interpreting and executing the code**, while the **runtime libraries provide additional functionality that is not inherent to the language itself**==.
+
+==In web development, browsers act as JavaScript runtimes.== Each browser has its own JavaScript engine (e.g., V8 in Chrome, SpiderMonkey in Firefox, JavaScriptCore in Safari) that interprets and executes JavaScript code. These engines are designed to optimize the performance of JavaScript in a browser environment.
+
+==Outside of the browser, there are other environments where JavaScript can run. For example, Node.js is a server-side JavaScript runtime that allows developers to run JavaScript on the server.== Node.js uses the V8 JavaScript engine, the same engine that Chrome uses.
+
+In summary, ==a JavaScript runtime is the environment that provides the necessary components for executing JavaScript code==, including the JavaScript engine and runtime libraries. It can be a web browser, a server-side environment like Node.js, or other specialized environments.
+
+## JavaScript Runtime in the browser
+
 JavaScript is a ==**single threaded programming language**==. This means it has ==only _one_ Call Stack== and ==only _one_ Memory Heap==. As expected, ==it executes code _in order_== and ==must finish executing a line of code before moving onto the next one==. If a line of code takes a really, really long time, well, things are going to be really slow for our program. This is where JavaScript Runtime comes in.
 
 ==**The heart of any JavaScript Runtime is always a JavaScript Engine**. Without the JavaScript Engine, there is no JavaScript Runtime, and there is no JavaScript at all. However, **JavaScript Engine alone is not enough**, because being single threaded (synchronous), if you have code that takes a long, long time to execute, your application will be very, very slow. In order to your application work properly, we also need a JavaScript Runtime that gave access to the Web APIs (ex. DOM, Timers, Fetch API etc.)==.
