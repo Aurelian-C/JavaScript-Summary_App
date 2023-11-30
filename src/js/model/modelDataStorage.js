@@ -50,6 +50,12 @@ const browserEngineAndRuntime = {
       source:
         '/src/markdowns/01_Browser_Engine_&_Runtime/Browsers_Runtime.html',
       summary: [
+        `<h3>What is JavaScript Runtime?</h3>
+        <p>JavaScript runtime refers to <i>the environment in which JavaScript code is executed. It consists of the <u>JavaScript engine</u> and the <u>runtime libraries</u>. The JavaScript engine is responsible for interpreting and executing the code, while the runtime libraries provide additional functionality that is not inherent to the language itself</i>.</p>
+        <p><i>In web development, browsers act as JavaScript runtimes.</i> Each browser has its own JavaScript engine (e.g., V8 in Chrome, SpiderMonkey in Firefox, JavaScriptCore in Safari) that interprets and executes JavaScript code. These engines are designed to optimize the performance of JavaScript in a browser environment.</p>
+        <p><i>Outside of the browser, there are other environments where JavaScript can run. For example, Node.js is a server-side JavaScript runtime that allows developers to run JavaScript on the server.</i> Node.js uses the V8 JavaScript engine, the same engine that Chrome uses.</p>
+        <p>In summary, <i>a JavaScript runtime is the environment that provides the necessary components for executing JavaScript code</i>, including the JavaScript engine and runtime libraries. It can be a web browser, a server-side environment like Node.js, or other specialized environments.</p>
+        `,
         `<h3>JavaScript Runtime & asynchronous code</h3>
         <p>The heart of any JavaScript Runtime is always a JavaScript Engine. Without the JavaScript Engine, there is no JavaScript Runtime, and there is no JavaScript at all. However, JavaScript Engine alone is not enough, because being single threaded (synchronous), if you have code that takes a long, long time to execute, your application will be very, very slow. In order to your application work properly, we also need a JavaScript Runtime that gave access to the Web APIs (ex. DOM, Timers, Fetch API etc.) and implicit to asynchronous code.</p>`,
         `<h3>Browsers comes in with a JavaScript Engine and a JavaScript Runtime</h3>
