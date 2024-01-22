@@ -3327,10 +3327,38 @@ const asynchronous = {
       id: 'the-fetch-api',
       source: '/src/markdowns/11_Asynchronous/Fetch_API.html',
       summary: [
-        `The Fetch API provides an interface for fetching resources (including across the network)`,
-        `For making a request and fetching a resource use the <code>fetch()</code> method`,
-        `The <code>fetch()</code> method always return a promise`,
-        `The promise returned from <code>fetch()</code> won't reject on HTTP error status even if the response is an HTTP 404 or 500`,
+        `<p>The Fetch API provides <i>an interface for <u>fetching resources</u> (including across the network)</i>. It is a more powerful and flexible <i>replacement for <code>XMLHttpRequest</code></i>.</p>
+        <p>The Fetch API is <i>completely <code>Promise</code>-based</i>.</p>
+        `,
+        `<h3>Concepts and usage</h3>
+        <p>For making a request and fetching a resource, use the <i><code>fetch()</code> method</i>.</p>
+        <ul>The <code>fetch()</code> method takes two parameters:
+          <li>- <i>the path to the resource</i> you want to fetch (this parameters is <u>mandatory</u>);</li>
+          <li>- <u>optionally</u> second parameters, <i>an <code>init</code> <u>object</u></i> that allows you to control a number of different settings.</li>
+        </ul>
+        <p>The <code>fetch()</code> method <i>always returns a <code>Promise</code> that resolves to the <code>Response</code> to that request</i> — as soon as the server responds with headers — even if the server response is an HTTP error status.</p>
+        <p><i>The promise returned from <code>fetch()</code> won't reject on HTTP error status even if the response is an HTTP <code>404</code> or <code>500</code>.</i> Instead, it will resolve normally (with <code>ok</code> status set to <code>false</code>), and it will <i>only reject on network failure or if anything prevented the request from completing</i>.</p>
+        `,
+        `<h3>Syntax</h3>
+        <ul>
+          <li>- <code>fetch(resource)</code></li>
+          <li>- <code>fetch(resource, options)</code></li>
+        </ul>
+        `,
+        `<h3><code>resource</code> parameter</h3>
+        <p>This defines the resource that you wish to fetch.</p>
+        `,
+        `<h3><code>options</code> parameter</h3>
+        <p>An <i>object</i> containing any <u>custom settings</u> that you want to apply to the request.</p>
+        <ul>Some of the possible options are:
+          <li>- <i><code>method</code></i>: the request method, e.g., <code>GET</code>, <code>POST</code>. The default is <code>GET</code>.</li>
+          <li>- <i><code>headers</code></i>: any headers you want to add to your request, contained within a <code>Headers</code> object or an object literal with <code>String</code> values. Note that some names are forbidden.</li>
+          <li>- <i><code>body</code></i>: any body that you want to add to your request. Note that a request using the <code>GET</code> or <code>HEAD</code> method cannot have a body.</li>
+        </ul>
+        `,
+        `<h3>Return value</h3>
+        <p><i>A <code>Promise</code></i> that resolves to a <code>Response</code> object or a <code>TypeError</code>.</p>
+        `,
       ],
     },
     {
