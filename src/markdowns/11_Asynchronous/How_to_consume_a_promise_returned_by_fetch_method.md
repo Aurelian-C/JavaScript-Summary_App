@@ -1,6 +1,6 @@
-# How to consume a promise returned by the `fetch()` method
+# How to consume a Promise returned by the `fetch()` method
 
-The global **`fetch()`** method starts the process of fetching a resource from the network, returning a promise which is fulfilled once the response is available. The promise resolves to the [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object representing the response to your request.
+The global `fetch()` method starts the process of fetching a resource from the network, **returning a Promise** which is fulfilled once the response is available. The Promise resolves to the [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object representing the response to your request.
 
 ## Making a HTTP request
 
@@ -24,7 +24,7 @@ Here we are:
 
 1. Calling the `fetch()` method, and assigning the return value to the `fetchPromise` variable
 2. Immediately after, logging the `fetchPromise` variable. This should output something like: `Promise { <state>: "pending" }`, telling us that we have a `Promise` object, and it has a `state` whose value is `"pending"`. The `"pending"` state means that the fetch operation is still going on
-3. Passing a handler function into the Promise's `then()` method. When (and if) the fetch operation succeeds, the promise will call our handler, passing in a `Response` object, which contains the server's response
+3. Passing a handler function into the Promise's `then()` method. When (and if) the fetch operation succeeds, the Promise will call our handler, passing in a `Response` object, which contains the server's response
 4. Logging a message that we have started the request
 
 The complete output should be something like:
@@ -37,13 +37,13 @@ Received response: 200
 
 Note that `Started request…` is logged before we receive the response. Unlike a synchronous function, `fetch()` returns while the request is still going on, enabling our program to stay responsive. The response shows the `200` (OK) [status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status), meaning that our request succeeded.
 
-==Instead of adding event handlers to the `Promise` object, like we use to do with [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object, we're passing a handler into the `then()` method of the returned promise==.
+==Instead of adding event handlers to the `Promise` object, like we use to do with [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object, we're passing a handler into the `then()` method of the returned Promise==.
 
 ## Read the `Response` returned by `fetch()` with the help of [`Response.json()`](https://developer.mozilla.org/en-US/docs/Web/API/Response/json) method
 
 ==With the `fetch()` method, once you get a `Response` object, you need to call another function to get the **response data**==. In this case, we want to get the response data as JSON, so we would call the [`json()`](https://developer.mozilla.org/en-US/docs/Web/API/Response/json) method of the `Response` object. It turns out that `json()` is also asynchronous. So this is a case where we have to call two successive asynchronous functions.
 
-> **Note**: The **`json()`** method of the `Response` interface takes a `Response` stream and reads it to completion. ==It **returns a promise** which resolves with the result of parsing the body text as [`JSON`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)==.
+> **NOTE**: The **`json()`** method of the `Response` interface takes a `Response` stream and reads it to completion. ==It **returns a Promise** which resolves with the result of parsing the body text as [`JSON`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)==.
 
 ==We need also to check that the server accepted and was able to handle the request, before we try to read it. We'll do this by checking the status code in the response and throwing an error if it wasn't "OK"==:
 
@@ -90,16 +90,16 @@ fetchPromise
 
 You can use `throw` to rethrow an exception after you catch it. The rethrown exception propagates up to the enclosing function or to the top level so that the user sees it.
 
-## Combining multiple promises with `Promise.all` or `Promise.any`
+## Combining multiple Promises with `Promise.all` or `Promise.any`
 
-The promise chain is what you need when your operation consists of several asynchronous functions, and you need each one to complete before starting the next one. But there are other ways you might need to combine asynchronous function calls, and the `Promise` API provides some helpers for them.
+The Promise chain is what you need when your operation consists of several asynchronous functions, and you need each one to complete before starting the next one. But there are other ways you might need to combine asynchronous function calls, and the `Promise` API provides some helpers for them.
 
-Sometimes, you need all the promises to be fulfilled, but they don't depend on each other. In a case like that, it's much more efficient to start them all off together, then be notified when they have all fulfilled. The [`Promise.all()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) method is what you need here. It takes an array of promises and returns a single promise.
+Sometimes, you need all the Promises to be fulfilled, but they don't depend on each other. In a case like that, it's much more efficient to start them all off together, then be notified when they have all fulfilled. The [`Promise.all()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) method is what you need here. It takes an array of Promises and returns a single Promise.
 
-The promise returned by `Promise.all()` is:
+The Promise returned by `Promise.all()` is:
 
-- fulfilled when and if *all* the promises in the array are fulfilled. In this case, the `then()` handler is called with an array of all the responses, in the same order that the promises were passed into `all()`.
-- rejected when and if *any* of the promises in the array are rejected. In this case, the `catch()` handler is called with the error thrown by the promise that rejected.
+- fulfilled when and if *all* the Promises in the array are fulfilled. In this case, the `then()` handler is called with an array of all the responses, in the same order that the Promises were passed into `all()`.
+- rejected when and if *any* of the Promises in the array are rejected. In this case, the `catch()` handler is called with the error thrown by the Promise that rejected.
 
 ```js
 const fetchPromise1 = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
@@ -151,7 +151,7 @@ Then we can expect the `catch()` handler to run, and we should see something lik
 Failed to fetch: TypeError: Failed to fetch
 ```
 
-Sometimes, you might need any one of a set of promises to be fulfilled, and don't care which one. In that case, you want [`Promise.any()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any). This is like `Promise.all()`, except that it is fulfilled as soon as any of the array of promises is fulfilled, or rejected if all of them are rejected:
+Sometimes, you might need any one of a set of Promises to be fulfilled, and don't care which one. In that case, you want [`Promise.any()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any). This is like `Promise.all()`, except that it is fulfilled as soon as any of the array of Promises is fulfilled, or rejected if all of them are rejected:
 
 ```js
 const fetchPromise1 = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
@@ -169,7 +169,7 @@ Promise.any([fetchPromise1, fetchPromise2, fetchPromise3])
 
 Note that in this case we can't predict which fetch request will complete first.
 
-These are just two of the extra `Promise` functions for combining multiple promises. To learn about the rest, see the [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) reference documentation.
+These are just two of the extra `Promise` functions for combining multiple Promises. To learn about the rest, see the [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) reference documentation.
 
 ## References
 

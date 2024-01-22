@@ -3373,9 +3373,22 @@ const asynchronous = {
       id: 'building-a-promise',
       source: '/src/markdowns/11_Asynchronous/Building_a_Promise.html',
       summary: [
-        `The <code>Promise()</code> constructor is primarily used to wrap functions that do not already support promises`,
-        `If your task is already promise-based, you likely do not need the <code>Promise()</code> constructor`,
-        `The <code>Promise()</code> constructor returns a promise object to which you can attach handlers for consuming the promise`,
+        `<p>We build a Promise with the help of a <code>Promise()</code> constructor. <i>The <code>Promise()</code> constructor is primarily used to wrap functions that do not already support Promises</i>.</p>
+        <p>NOTE: If your task is already promise-based, you likely do not need the <code>Promise()</code> constructor. A Promise can be created from scratch using its constructor. This should be needed only to wrap old APIs.</p>
+        <p>In an ideal world, all asynchronous functions would already return Promises. Unfortunately, some APIs still expect success and/or failure callbacks to be passed in the old way. The most obvious example is the <code>setTimeout()</code> function.</p>
+        <p>Basically, the <code>Promise()</code> constructor takes an executor function that lets us <i>resolve or reject a Promise <u>manually</u></i>. <code>Promise.resolve()</code> and <code>Promise.reject()</code> are shortcuts to manually create an already resolved or rejected Promise.</p>
+        <p><i>The <code>Promise()</code> constructor returns a <u>Promise object</u> to which you can <u>attach handlers for consuming the Promise</u></i>.</p>
+        `,
+        `<h3>Why do we need to build a Promise?</h3>
+        <ul>The Promise constructor in JavaScript is used to create and return a new Promise object. Promises are a way to handle asynchronous operations, providing a more structured and readable way to work with asynchronous code compared to traditional callback-based approaches. Here are some reasons why the Promise constructor is useful:
+          <li>1. Asynchronous Operations: Promises are commonly used for handling asynchronous operations, such as fetching data from a server, reading a file, or making AJAX requests. <i>The Promise constructor allows you to create a Promise that represents the eventual <u>completion</u> or <u>failure</u> of an asynchronous operation.</i></li>
+          <li>2. Readability and Maintainability: <i>Promises provide a more readable and maintainable way to write asynchronous code compared to deeply nested callbacks.</i> The chaining of <code>.then()</code> and <code>.catch()</code> methods allows for a more linear and structured code flow, making it easier to understand and maintain.</li>
+          <li>3. Error Handling: <i>The Promise constructor allows you to handle errors more effectively through the <code>.catch()</code> method.</i> This makes it easier to centralize error handling for asynchronous operations, resulting in cleaner and more maintainable code.</li>
+          <li>4. Composition: Promises support composition, meaning <i>you can chain multiple asynchronous operations together using the <code>.then()</code> method</i>. This enables you to create more modular and reusable code by breaking down complex asynchronous tasks into smaller, manageable pieces.</li>
+          <li>5. Avoiding Callback Hell: The Promise pattern helps mitigate the "Callback Hell" or "Pyramid of Doom" problem, which can occur when dealing with multiple nested callbacks. With promises, you can flatten the structure of your asynchronous code, making it more readable and maintainable.</li>
+          <li>6. Easier Refactoring: Promises provide a foundation for working with asynchronous code in a way that is easier to refactor. If you need to change the order of asynchronous operations or add additional steps, you can do so more seamlessly using promises.</li>
+        </ul>
+        `,
       ],
     },
     {
@@ -3383,12 +3396,29 @@ const asynchronous = {
       id: 'consuming-a-promise',
       source: '/src/markdowns/11_Asynchronous/Consuming_a_Promise.html',
       summary: [
-        `There is no race condition between an asynchronous operation completing and its handlers being attached`,
-        `Handling Fulfilled Promise: <code>.then()</code> method (callback function with response parameter)`,
-        `Handling Rejected Promise: <code>.catch()</code> method (callback function with error parameter)`,
-        `Chaining Multiple Promises: <code>.then()</code>, <code>.catch()</code> and <code>.finally()</code> methods are used to associate further action with a promise that becomes settled. These methods return promises, so they can be chained`,
-        `Always return the result of a promise, otherwise <code>.then()</code> method won't catch the result of the previous promise`,
-        `<code>.finally()</code> method (callback function)`,
+        `<p>After you build a Promise, you need to consume it. The state of a pending can either be <i><u>fulfilled</u> with a value</i> or <i><u>rejected</u> with a reason (error)</i>. When either of these options occur, the associated handlers queued up by a Promise's <code>.then()</code> method are called.</p>`,
+        `<h3>Chaining Multiple Promises</h3>
+        <p>One of the great things about using Promises is chaining.</p>
+        <p>The methods <code>.then()</code>, <code>.catch()</code> and <code>.finally()</code> are used to associate further action with a Promise that becomes settled. <i>These methods return promises, so they can be chained</i>.</p>
+        <p>With <code>.then()</code> and <code>.catch()</code> methods is possible to <i>chain Promises with precise control over <u>how and where errors are handled</u></i>. Promises allow you to mimic normal synchronous code's <code>try/catch</code> behavior.</p>
+        <p>There is no race condition between an asynchronous operation completing and its handlers being attached: like synchronous code, <i>chaining will result in a sequence that runs in serial</i>.</p>
+        `,
+        `<h3>Handling Fulfilled Promise</h3>
+        <p>You handle fuldilled Promises with <code>.then()</code> method (callback function with response parameter). Each <code>.then()</code> returns a newly generated Promise object, which can optionally be used for chaining.</p>
+        <p><i>Always return the result of a Promise, otherwise <code>.then()</code> method won't catch the result of the previous Promise.</i></p>
+        `,
+        `<h3>Handling Rejected Promise</h3>
+        <p>You handle rejected Promises with <code>.catch()</code> method (callback function with error parameter).</p>
+        <p>It's recommend ending all Promise chains with a <code>.catch()</code> method.</p>
+        <p>It's possible to <u>chain after a failure</u>, i.e. a <code>.catch()</code>, which is useful to accomplish new actions even after an action failed in the chain.</p>
+        `,
+        `<h3>Avoid nesting chains</h3>
+        <p>Simple Promise chains are best <i>kept flat without nesting</i>, as nesting can be a result of careless composition.</p>`,
+        `<h3>Always return the result of a Promise</h3>
+        <p>Is very important that <i>always return the result of a Promise</i>, otherwise callbacks won't catch the result of a previous Promise.</p>
+        <p>If the previous handler started a Promise but did not return it, there's no way to track its settlement anymore, and the Promise is said to be "floating". Therefore, as a rule of thumb, whenever your operation encounters a Promise, return it and defer its handling to the next <code>.then()</code> handler.</p>
+        `,
+        `<h3><code>.finally()</code> method (callback function)</h3>`,
       ],
     },
     {
@@ -3432,21 +3462,30 @@ const asynchronous = {
     },
     {
       title:
-        'How to consume a promise returned by the <code>fetch()</code> method',
+        'How to consume a Promise returned by the <code>fetch()</code> method',
       id: 'how-to-consume-a-promise-returned-by-the-fetch-method',
       source:
         '/src/markdowns/11_Asynchronous/How_to_consume_a_promise_returned_by_fetch_method.html',
       summary: [
-        `<code>fetch()</code> will always return a promise that need to be handled by consuming it`,
-        `Read the response returned by <code>fetch()</code> with: <code>Response.json()</code>, <code>Response.text()</code>, <code>Response.formData()</code>`,
-        `<code>Response.json()</code>, <code>Response.text()</code>, <code>Response.formData()</code> always return a promise`,
-        `Throwing Custom Errors Manually: the Error Object & <code>throw new Error()</code>`,
-        `Rethrowing an error`,
-        `Combining multiple promises with <code>Promise.all</code> or <code>Promise.any</code> and consume them`,
+        `<p>The global <code>fetch()</code> method starts the process of fetching a resource from the network, <i>returning a Promise</i> which is fulfilled once the response is available. The Promise resolves to the <code>Response</code> object representing the response to your request.</p>
+        <p><i>The <code>fetch()</code> function will always return a Promise that need to be handled by consuming it.</i> Instead of adding event handlers to the <code>Promise</code> object, like we use to do with <code>XMLHttpRequest</code> object, we're passing a handler into the <code>.then()</code> method of the returned Promise.</p>
+        `,
+        `<h3>The <code>fetch()</code> function & <code>Response</code> object</h3>
+        <p>With the <code>fetch()</code> method, once you get a <code>Response</code> object, you need to call another function to get the response data.</p>
+        <p>Read the response returned by <code>fetch()</code> with: <code>Response.json()</code>, <code>Response.text()</code>, <code>Response.formData()</code></p>
+        <p><code>Response.json()</code>, <code>Response.text()</code>, <code>Response.formData()</code> always return a Promise.</p>
+        `,
+        `<h3>Throwing Custom Errors Manually: the Error Object & <code>throw new Error()</code></h3>
+        <p>The <code>throw</code> statement throws a user-defined exception. Execution of the current function will stop (the statements after <code>throw</code> won't be executed), and control will be passed to the first <code>catch()</code> block in the call stack. If no <code>catch()</code> block exists among caller functions, the program will terminate.</p>
+        `,
+        `<h3>Rethrowing an error</h3>
+        <p>You can use <code>throw</code> to rethrow an exception after you catch it. The rethrown exception propagates up to the enclosing function or to the top level so that the user sees it.</p>
+        `,
+        `<h3>Combining multiple promises with <code>Promise.all</code> or <code>Promise.any</code> and consume them</h3>`,
       ],
     },
     {
-      title: 'Consuming promises with <code>async</code>/<code>await</code>',
+      title: 'Consuming Promises with <code>async</code>/<code>await</code>',
       id: 'consuming-promises-with-async-await',
       source: '/src/markdowns/11_Asynchronous/async_&_await.html',
       summary: [
