@@ -1,6 +1,6 @@
-# How the web works: HTTP request and responses
+# How the web works: HTTP Request and HTTP Responses
 
-==Whenever we try to access a web server, the web browser (simply called _client_) sends a **request** to the web server (simply called _server_), and the server will then send back a **response**, and that response contains the web page or the data that we requested==. This process works the exact same way no matter if we're accessing an entire web page or just some data from a web API. This whole process actually has a name and it's called the ==**Client-Server Model** _or_ **Request-Response Model**==.
+==Whenever we try to access a web server, the web browser (simply called _client_) sends a **request** to the web server (simply called _server_), and the server will then send back a **response**, and that response contains the web page or the data that we requested==. This process works the exact same way no matter if we're accessing an entire web page or just some data from an API. This whole process actually has a name and it's called the ==**Client-Server Model** _or_ **Request-Response Model**==.
 
 ![asynchronous_request](../../img/asynchronous_request.jpg)
 
@@ -41,14 +41,21 @@ The first step that happens when we access any web server is that the web browse
 
 ### 3. HTTP Messages
 
-HTTP messages are how data is exchanged between a server and a client. There are two types of messages: *requests* sent by the client to trigger an action on the server, and *responses*, the answer from the server. HTTP messages are composed of textual information encoded in ASCII. Web developers rarely craft these textual HTTP messages themselves: software, a Web browser, proxy, or Web server, perform this action. They provide HTTP messages through config files (for proxies or servers), APIs (for browsers), or other interfaces.
+==HTTP messages are how data is exchanged between a server and a client.==
+
+There are **two types of messages**:
+
+- **requests** sent by the client to trigger an action on the server, and
+- **responses**, the answer from the server.
+
+HTTP messages are composed of textual information encoded in ASCII. Web developers rarely craft these textual HTTP messages themselves: software, a web browser, proxy, or web server, perform this action. They provide HTTP messages through config files (for proxies or servers), APIs (for browsers), or other interfaces.
 
 HTTP requests and responses share similar structure and are composed of:
 
-1. A *start-line* describing the requests to be implemented, or its status of whether successful or a failure. This start-line is always a single line.
-2. An optional set of *HTTP headers* specifying the request, or describing the body included in the message.
+1. A **start-line** describing the requests to be implemented, or its status of whether successful or a failure. This start-line is always a single line.
+2. An optional set of **HTTP headers** specifying the request, or describing the body included in the message.
 3. A blank line indicating all meta-information for the request has been sent.
-4. An optional *body* containing data associated with the request (like content of an HTML form), or the document associated with a response. The presence of the body and its size is specified by the start-line and HTTP headers.
+4. An _optional_ **body** containing data associated with the request (like content of an HTML form), or the document associated with a response. The presence of the body and its size is specified by the start-line and HTTP headers.
 
 #### 3.1 HTTP Request
 
@@ -59,21 +66,18 @@ But anyway, after TCP/IP socket connection is established, now it's time to fina
 HTTP Requests consist of the following elements:
 
 1. `Start-line`
-   - An [HTTP method](https://developer.mozilla.org/en-US/docs/web/HTTP/Methods), usually a verb like [`GET`](https://developer.mozilla.org/en-US/docs/web/HTTP/Methods/GET), [`POST`](https://developer.mozilla.org/en-US/docs/web/HTTP/Methods/POST), or a noun like [`OPTIONS`](https://developer.mozilla.org/en-US/docs/web/HTTP/Methods/OPTIONS) or [`HEAD`](https://developer.mozilla.org/en-US/docs/web/HTTP/Methods/HEAD), that _defines the operation the client wants to perform_. Typically, a client wants to fetch a resource (using `GET`) or post the value of an [HTML form](https://developer.mozilla.org/en-US/docs/Learn/Forms) (using `POST`), though more operations may be needed in other cases, So you'll see that _an HTTP request to a server is not only for getting data, but we can also send data_
-   - The *request target*, usually a [URL](https://developer.mozilla.org/en-US/docs/Glossary/URL) or the absolute path of the protocol. An absolute path, ultimately followed by a `?` and query string. This is the most common form, known as the *origin form*, and is used with `GET`, `POST`, `HEAD`, and `OPTIONS` methods
-   - The *HTTP version*, which defines the structure of the remaining message, acting as an indicator of the expected version to use for the response
-
+   - ==An **[HTTP method](https://developer.mozilla.org/en-US/docs/web/HTTP/Methods)**==, usually a verb like [`GET`](https://developer.mozilla.org/en-US/docs/web/HTTP/Methods/GET), [`POST`](https://developer.mozilla.org/en-US/docs/web/HTTP/Methods/POST), or a noun like [`OPTIONS`](https://developer.mozilla.org/en-US/docs/web/HTTP/Methods/OPTIONS) or [`HEAD`](https://developer.mozilla.org/en-US/docs/web/HTTP/Methods/HEAD), that ==defines the operation the client wants to perform==. Typically, a client wants to fetch a resource (using `GET`) or post the value of an [HTML form](https://developer.mozilla.org/en-US/docs/Learn/Forms) (using `POST`), though more operations may be needed in other cases, So you'll see that ==an HTTP request to a server is not only for getting data, but we can also send data==
+   - ==The **request target**, usually a **[URL](https://developer.mozilla.org/en-US/docs/Glossary/URL)** or the absolute path of the protocol.== An absolute path, ultimately followed by a `?` and query string. This is the most common form, known as the *origin form*, and is used with `GET`, `POST`, `HEAD`, and `OPTIONS` methods
+   - ==The **HTTP version**==, which defines the structure of the remaining message, acting as an indicator of the expected version to use for the response
 2. `Headers`
-   - Optional, [HTTP headers](https://developer.mozilla.org/en-US/docs/web/HTTP/Headers) that convey additional information for the servers
-   - HTTP headers from a request follow the same basic structure of an HTTP header: a case-insensitive string followed by a colon (`':'`) and a value whose structure depends upon the header. The whole header, including the value, consists of one single line, which can be quite long. Many different headers can appear in requests
-
+   - ==_Optional_, **[HTTP headers](https://developer.mozilla.org/en-US/docs/web/HTTP/Headers)** that convey additional information for the servers==. HTTP headers from a request follow the same basic structure of an HTTP header: a case-insensitive string followed by a colon (`':'`) and a value whose structure depends upon the header. The whole header, including the value, consists of one single line, which can be quite long. Many different headers can appear in requests
 3. `Body`
-   - The final part of the request is its body. Not all requests have one: requests fetching resources, like `GET`, `HEAD`, `DELETE`, or `OPTIONS`, usually don't need one. Some requests send data to the server in order to update it: as often the case with `POST` requests (containing HTML form data)
+   - ==The final part of the request is its **body**. _Not all requests have one_: requests fetching resources, like `GET`, `HEAD`, `DELETE`, or `OPTIONS`, usually don't need one.== Some requests send data to the server in order to update it: as often the case with `POST` requests (containing HTML form data)
    - Bodies can be broadly divided into two categories:
      - Single-resource bodies, consisting of one single file, defined by the two headers: [`Content-Type`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) and [`Content-Length`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Length)
      - [Multiple-resource bodies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types#multipartform-data), consisting of a multipart body, each containing a different bit of information. This is typically associated with [HTML Forms](https://developer.mozilla.org/en-US/docs/Learn/Forms)
 
-> **Note**: I want to mention that there's also HTTPS, and the main difference between HTTP and HTTPS is that HTTPS is encrypted using TLS or SSL, which are other protocols, but I'm not gonna bore you with these. But besides that, the logic behind HTTP requests and HTTP responses still applies to HTTPS.
+> **NOTE**: I want to mention that there's also HTTPS, and the main difference between HTTP and HTTPS is that HTTPS is encrypted using TLS or SSL, which are other protocols, but I'm not gonna bore you with these. But besides that, the logic behind HTTP requests and HTTP responses still applies to HTTPS.
 
 So our HTTP request is formed and now it hits the server, which will then be working on it until it has our web page or data ready to send back, and once it's ready it will send it back using an **HTTP response**.
 
@@ -83,22 +87,20 @@ So our HTTP request is formed and now it hits the server, which will then be wor
 
 Responses consist of the following elements:
 
-1. Start line (also called the *status line*)
+1. `Start-line` (also called the *status line*)
    - The version of the HTTP protocol they follow
-   - A [status code](https://developer.mozilla.org/en-US/docs/web/HTTP/Status), indicating if the request was successful or not, and why. Common status codes are [`200`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200), [`404`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404) or [`302`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302)
-   - A *status text*. A brief, purely informational, textual description of the status code to help a human understand the HTTP message. A typical status line looks like: `HTTP/1.1 404 Not Found`
+   - ==A **[status code](https://developer.mozilla.org/en-US/docs/web/HTTP/Status)**, indicating if the request was successful or not, and why.== Common status codes are [`200`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200), [`404`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404) or [`302`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302)
+   - ==A **status text**. A brief, purely informational, textual description of the status code to help a human understand the HTTP message.== A typical status line looks like: `HTTP/1.1 404 Not Found`
 2. `Headers`
-   - [HTTP headers](https://developer.mozilla.org/en-US/docs/web/HTTP/Headers), like those for requests. 
-   - HTTP headers for responses follow the same structure as any other header: a case-insensitive string followed by a colon (`':'`) and a value whose structure depends upon the type of the header. The whole header, including its value, presents as a single line. Many different headers can appear in responses
+   - ==**[HTTP headers](https://developer.mozilla.org/en-US/docs/web/HTTP/Headers)**, like those for requests.== HTTP headers for responses follow the same structure as any other header: a case-insensitive string followed by a colon (`':'`) and a value whose structure depends upon the type of the header. The whole header, including its value, presents as a single line. Many different headers can appear in responses
 3. `Body`
-   - Optionally, a body containing the fetched resource.
-   - Not all responses have a body: responses with a status code that sufficiently answers the request without the need for corresponding payload (like [`201`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201) **`Created`** or [`204`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/204) **`No Content`**) usually don't.
+   - ==_Optionally_, a **body** containing the fetched resource. _Not all responses have a body_: responses with a status code that sufficiently answers the request without the need for corresponding payload (like [`201`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201) **`Created`** or [`204`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/204) **`No Content`**) usually don't.==
 
-> **Note**: As you see, The _HTTP response_ message actually looks quite similar to the _HTTP request_.
+> **NOTE**: As you see, The _HTTP response_ message actually looks quite similar to the _HTTP request_.
 
 ## APIs based on HTTP
 
-The most commonly used API based on HTTP is the [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/web/API/XMLHttpRequest) API, which can be used to exchange data between a [user agent](https://developer.mozilla.org/en-US/docs/Glossary/User_agent) and a server. The modern [`Fetch API`](https://developer.mozilla.org/en-US/docs/web/API/Fetch_API) provides the same features with a more powerful and flexible feature set.
+The most commonly used API based on HTTP is the ==[`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/web/API/XMLHttpRequest) API==, which can be used to exchange data between a [user agent](https://developer.mozilla.org/en-US/docs/Glossary/User_agent) and a server. The modern ==[`Fetch API`](https://developer.mozilla.org/en-US/docs/web/API/Fetch_API)== provides the same features with a more powerful and flexible feature set.
 
 ## References
 

@@ -2,9 +2,9 @@
 
 JavaScript is a ==**single-threaded** language== and, at the same time, also ==non-blocking, **asynchronous** and concurrent==.
 
-==JavaScript is a single-threaded programming language which means **only one thing can happen at a time**. That is, the JavaScript Engine can only process one statement at a time in a single thread. _While the single-threaded languages simplify writing code because you don’t have to worry about the concurrency issues, this also means you can’t perform long operations such as network access without blocking the main thread_==. Imagine requesting some data from an API; depending upon the situation, the server might take some time to process the request while blocking the main thread making the web page unresponsive.
+==JavaScript is a single-threaded programming language which means **only one thing can happen at a time**. That is, the **JavaScript Engine can only process one statement at a time** in a single thread. _While the single-threaded languages simplify writing code because you don’t have to worry about the concurrency issues, this also means you can’t perform long operations such as network access without blocking the main thread_==. Imagine requesting some data from an API; depending upon the situation, the server might take some time to process the request while blocking the main thread making the web page unresponsive.
 
-That’s where asynchronous JavaScript comes into play. Using asynchronous JavaScript (such as callbacks or Promises), you can perform long network requests without blocking the main thread. _Asynchronous programming is a technique that enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished. Once that task has finished, your program is presented with the result_.
+That’s where asynchronous JavaScript comes into play. Using asynchronous JavaScript (such as **callbacks** or **Promises**), you can perform long network requests without blocking the main thread. _Asynchronous programming is a technique that enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished. Once that task has finished, your program is presented with the result_.
 
 ## Single-Thread Language
 
@@ -24,7 +24,7 @@ console.log(greeting); // "Hello, my name is John!"
 
 Here, `makeGreeting()` is a ==**synchronous function**== _because the caller has to wait for the function to finish its work and return a value before the caller can continue_.
 
-> **Note**: JavaScript has only **one threat of execution** and so it can **only do one thing at a time**. There is absolutely no multitasking happening in JavaScript itself.
+> **NOTE**: JavaScript has only **one threat of execution** and so it can **only do one thing at a time**. There is absolutely no multitasking happening in JavaScript itself.
 
 ## Single-Thread Language problem: long-running synchronous functions that work in the Call Stack
 
@@ -48,17 +48,17 @@ console.log('3. Finish');
 // 3. Finish
 ```
 
-What we should note here is that the browser effectively steps through the program one line at a time, in the order we wrote it, and at each point it waits for the line to finish its work, before going on to the next line. It has to do this, because each line depends on the work that was done in the preceding lines. _You'll find that while our `for` loop is running, our program is completely unresponsive: the user can't type anything, or click anything, or do anything else. This is the basic problem with long-running synchronous functions_. What we would like here is a way that our program can:
+What we should note here is that the browser effectively steps through the program _one line at a time, in the order we wrote it_, and at each point it waits for the line to finish its work, before going on to the next line. It has to do this, because each line depends on the work that was done in the preceding lines. _You'll find that while our `for` loop is running, our program is completely unresponsive: the user can't type anything, or click anything, or do anything else. This is the basic problem with long-running synchronous functions_. What we would like here is a way that our program can:
 
-- start a long-running operation by calling a function
-- have the function start the operation and return right away, so our program can still be responsive to other events
+- start a long-running operation by calling a function;
+- have the function start the operation and return right away, so our program can still be responsive to other events;
 - be notified with the result of the operation, when it eventually completes.
 
 ==That's what an **asynchronous function** offers us. Asynchronous programming is a technique that enables your program to start a potentially **long-running task**, and then rather than having to wait until that task has finished, to be able to continue to be **responsive to other events while the long-running task runs**. Once the task is completed, your program is presented with the result==.
 
 ## Asynchronous functions & Web APIs
 
-==Browsers provide to JavaScript language Web APIs, so JavaScript can use asynchronous functions.== When you run some JavaScript code in a browser, the JavaScript Engine starts to parse the code. Each line is executed and popped on and off the Call Stack. But, what happen when the JavaScript Engine meet a Web APIs function? ==Web APIs are not something JavaScript Engine recognizes, so the JavaScript Engine knows to pass Web APIs functions to the browser for handle them==. When the browser has finished running its Web APIs functions, it puts what is needed to be ran by JavaScript into the Callback Queue. The Callback Queue can't be ran until the Call Stack is completely empty. So, the Event Loop is constantly checking the Call Stack to see if it is empty, so that it can add anything in the Callback Queue back into the Call Stack. And finally, once it is back in the Call Stack, it is ran and then popped off the stack.
+==**Browsers** provide to JavaScript language **Web APIs**, so JavaScript can use asynchronous functions.== When you run some JavaScript code in a browser, the JavaScript Engine starts to parse the code. Each line is executed and popped on and off the Call Stack. But, what happen when the JavaScript Engine meet a Web APIs function? ==Web APIs are not something JavaScript Engine recognizes, so the JavaScript Engine knows to pass Web APIs functions to the browser for handle them==. When the browser has finished running its Web APIs functions, it puts what is needed to be ran by JavaScript into the Callback Queue. The Callback Queue can't be ran until the Call Stack is completely empty. So, the Event Loop is constantly checking the Call Stack to see if it is empty, so that it can add anything in the Callback Queue back into the Call Stack. And finally, once it is back in the Call Stack, it is ran and then popped off the stack.
 
 ```js
 let number;
@@ -146,7 +146,7 @@ When we nest callbacks like this, it can also get very hard to handle errors: of
 
 ==**A**==synchronous ==**J**==avaScript ==**A**==nd ==**X**==ML, while ==not a technology in itself (is not a programming language)==, is a term coined in 2005 by Jesse James Garrett, that describes a "new" approach to using a combination of existing technologies together, including [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) or [XHTML](https://developer.mozilla.org/en-US/docs/Glossary/XHTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), [XML](https://developer.mozilla.org/en-US/docs/Web/XML), [XSLT](https://developer.mozilla.org/en-US/docs/Web/XSLT), and most importantly the [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object. When these technologies are combined in the AJAX model, web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page. This makes the application faster and more responsive to user actions.
 
-In a nutshell, AJAX is the use of the `XMLHttpRequest` object to communicate with servers. It can send and receive information in various formats, including JSON, XML, HTML, and text files. AJAX's most appealing characteristic is its "asynchronous" nature, which means it can communicate with the server, exchange data, and update the page without having to refresh the page.
+==In a nutshell, AJAX is the use of the `XMLHttpRequest` object to communicate with servers.== ==It can send and receive information in various formats, including JSON, XML, HTML, and text files.== AJAX's most appealing characteristic is its "asynchronous" nature, which means it can communicate with the server, exchange data, and update the page without having to refresh the page.
 
 The two major features of AJAX allow you to do the following:
 
@@ -157,31 +157,31 @@ The two major features of AJAX allow you to do the following:
 
 Modern Browsers can use [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) instead of the `XMLHttpRequest` Object. The Fetch API interface allows web browser to make HTTP requests to web servers. If you use the `XMLHttpRequest` Object, Fetch API can do the same in a simpler way. Fetch API is a modern, promise-based replacement for `XMLHttpRequest`.
 
->**Note**: AJAX is a misleading name. AJAX applications might use XML to transport data, but it is equally common to transport data as plain text or [JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON) text. JSON is preferred over XML nowadays because of its many advantages such as being a part of JavaScript, thus being lighter in size. Both JSON and XML are used for packaging information in the AJAX model.
+>**NOTE**: ==AJAX is a misleading name. AJAX applications might use XML to transport data, but it is equally common to transport data as plain text or **[JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON) text**.== JSON is preferred over XML nowadays because of its many advantages such as being a part of JavaScript, thus being lighter in size. Both JSON and XML are used for packaging information in the AJAX model.
 >
->![async](D:\Websites\Projects\Cioloca Aurelian__Javascript Resume\src\img\asynchronous_api-format.jpg)
+>![async](../../img/asynchronous_api-format.jpg)
 
 ### What is JSON?
 
-JSON stands for ==**J**==ava==**S**==cript ==**O**==bject ==**N**==otation. JSON is a ==**text format** for storing and transporting data==.
+JSON stands for ==**J**==ava==**S**==cript ==**O**==bject ==**N**==otation. JSON is a ==**text format** for _storing and transporting data_==.
 
-> **Note**: The JSON syntax is derived from JavaScript object notation, but the JSON format is text only. Code for reading and generating JSON exists in many programming languages.
+> **NOTE**: The JSON syntax is derived from JavaScript Object Notation, but the JSON format is text only. Code for reading and generating JSON exists in many programming languages.
 
 #### Why use JSON instead XML?
 
-==The JSON format is syntactically similar to the code for creating JavaScript objects. Because of this, a JavaScript program can easily convert JSON data into JavaScript objects==. Since the format is text only, JSON data can easily be sent between computers, and used by any programming language.
+==**The JSON format is syntactically similar to the code for creating JavaScript objects.** Because of this, a JavaScript program can easily convert JSON data into JavaScript objects==. Since the format is text only, JSON data can easily be sent between computers, and used by any programming language.
 
-When storing data, the data has to be a certain format, and regardless of where you choose to store it, *text* is always one of the legal formats. JSON makes it possible to store JavaScript objects as text.
+==When storing data, the data has to be a certain format, and regardless of where you choose to store it, *text* is always one of the legal formats. JSON makes it possible to **store JavaScript objects as text**.==
 
 JavaScript has a built in function for converting JSON strings into JavaScript objects: [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 
-JavaScript also has a built in function for converting an object into a JSON string: [`JSON.stringify()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+JavaScript also has a built-in function for converting an object into a JSON string: [`JSON.stringify()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
 
 ## The core of AJAX: XMLHttpRequest API
 
 ==`XMLHttpRequest` (XHR) objects are used to interact with servers==. You can retrieve data from a URL without having to do a full page refresh. This enables a web page to update just part of a page without disrupting what the user is doing. `XMLHttpRequest` is used heavily in AJAX programming.
 
-> **Note:** The constructor `XMLHttpRequest` isn't limited to only XML documents. It starts with "XML" because when it was created the main format that was originally used for asynchronous data exchange was XML.
+> **NOTE:** The constructor `XMLHttpRequest` isn't limited to only XML documents. It starts with "XML" because when it was created the main format that was originally used for asynchronous data exchange was XML.
 
 To make an HTTP request to the server with JavaScript, you need an instance of an object with the necessary functionality. This is where `XMLHttpRequest()` constructor comes in.
 
@@ -193,7 +193,7 @@ To send an HTTP request, first you need create an `XMLHttpRequest` object:
 const httpRequest = new XMLHttpRequest();
 ```
 
-> **Note**: The `XMLHttpRequest()` constructor initializes an `XMLHttpRequest`. It must be called before any other method calls.
+> **NOTE**: The `XMLHttpRequest()` constructor initializes an `XMLHttpRequest`. It must be called before any other method calls.
 
 After you create an `XMLHttpRequest` object, you need to actually make the request, by calling the [`open()`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/open) and [`send()`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/send) methods of the HTTP request object:
 
@@ -280,8 +280,8 @@ If no value is specified for the body, a default value of `null` is used.
 1. [Introducing asynchronous JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
 2. [AJAX - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
 3. [AJAX Introduction - w3schools](https://www.w3schools.com/js/js_ajax_intro.asp)
-4. [XMLHttpRequest - MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
-5. [Using XMLHttpRequest - MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+4. [`XMLHttpRequest` - MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
+5. [Using `XMLHttpRequest` - MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
 6. [`XMLHttpRequest.open()` - MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/open)
 7. [`XMLHttpRequest.send()` - MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/send)
 8. [HTTP request methods - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)

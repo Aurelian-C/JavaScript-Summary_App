@@ -3250,20 +3250,42 @@ const asynchronous = {
   name: 'Asynchronous',
   sections: [
     {
-      title: 'How the Web works: HTTP request & responses',
+      title: 'How the Web works: HTTP Request & HTTP Responses',
       id: 'how-the-web-works-http-request-responses',
       source:
         '/src/markdowns/11_Asynchronous/How_the_web_works___HTTP_request_&_responses.html',
       summary: [
-        `HTTP is a protocol for fetching resources`,
-        `HTTP is the foundation of any data exchange on the web`,
-        `HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response`,
-        `Domain Name Server (DNS)`,
-        `TCP/IP socket connection`,
-        `HTTP Messages: Request & Response`,
-        `HTTP Request: HTTP method, request target, request headers, body`,
-        `HTTP Response: HTTP status code, status message, headers, body`,
-        `APIs based on HTTP: XMLHttpRequest & Fetch API`,
+        `<p>Whenever we try to access a web server, the web browser (simply called client) sends a <u>request</u> to the web server (simply called server), and the server will then send back a <u>response</u>, and that response contains the web page or the data that we requested. This process works the exact same way no matter if we're accessing an entire web page or just some data from an API. This whole process actually has a name and it's called the <i>Client-Server Model</i> or <i>Request-Response Model</i>.</p>
+        <p><i>HTTP is a protocol for <u>fetching resources</u>.</i> HTTP is the foundation of any data exchange on the web.</p>
+        <p>HTTP is a <i>stateless protocol</i>, meaning that the server does not keep any data (state) between two requests.</p>
+        <p>HTTP is a <i>communication protocol</i> and a communication protocol is simply a system of rules that allows two or more parties to communicate. Now in the case of HTTP, it's just <i>a protocol that allows web browsers (client) and web servers (server) to communicate</i>, and that works by sending requests and response messages from client to server and back. The messages sent by the client, usually a web browser, are called <u>requests</u> and the messages sent by the server as an answer are called <u>responses</u>.</p>
+        `,
+        `<h3>HTTP flow: what happens when we access a web server?</h3>
+        <ul>When a web browser (client) wants to communicate with a web server (server), it performs the following steps:
+          <li>- Open a <i>TCP connection</i>;</li>
+          <li>- Send an <i>HTTP message</i>;</li>
+          <li>- Read the <i>response sent by the server</i>;</li>
+          <li>- Close or reuse the connection for further requests.</li>
+        </ul>
+        `,
+        `<h3>Components of any request - response</h3>
+        <p>Every <i>URL</i> gets an HTTP or HTTPS, which is for the protocol that will be used on the connection. Then we have the <i>Domain Name Server (DNS)</i>. After this we have to so-called <i>resource (endpoint)</i> that we want to access.</p>
+        `,
+        `<h3>HTTP Messages: Request & Response</h3>
+        <p>HTTP messages are how data is exchanged between a server and a client.</p>
+        <ul>There are <i>two types of messages</i>:
+          <li>- <i>requests</i> sent by the client to trigger an action on the server, and</li>
+          <li>- <i>responses</i>, the answer from the server.</li>
+        </ul>
+        <ul>HTTP Requests and HTTP Responses share similar structure and are composed of:
+          <li>- HTTP Request: HTTP method, HTTP request headers (optional), HTTP request body (optional);</li>
+          <li>- HTTP Response: HTTP status code, HTTP status code + HTTP status message, HTTP headers (like those for HTTP Requests), HTTP body (optionally, a body containing the fetched resource).</li>
+        </ul>
+        <p>NOTE: As you see, The HTTP Response message actually looks quite similar to the HTTP Request.</p>
+        `,
+        `<h3>APIs based on HTTP: XMLHttpRequest & Fetch API</h3>
+        <p>The most commonly used API based on HTTP is the <i>XMLHttpRequest API</i>, which can be used to exchange data between a user agent and a server. The modern <i>Fetch API</i> provides the same features with a more powerful and flexible feature set.</p>
+        `,
       ],
     },
     {
@@ -3272,19 +3294,50 @@ const asynchronous = {
       source:
         '/src/markdowns/11_Asynchronous/Introducing_to_Asynchronous_JavaScript.html',
       summary: [
-        `JavaScript has only one threat of execution (Call Stack) and so it can only do one thing at a time. There is absolutely no multitasking happening in JavaScript itself.`,
-        `Single-Thread Language problem: long-running synchronous functions that work in the Call Stack`,
-        `Asynchronous functions & Web APIs`,
-        `Synchronous vs Asynchronous functions`,
-        `Early Asynchronous Programming & Event Handlers: early asynchronous APIs XMLHttpRequest used events for asynchronous programming`,
-        `Early Asynchronous Programming & Chaining Callbacks: Callback Hell`,
-        `Early Asynchronous Programming: AJAX`,
-        `AJAX is not a programming language`,
-        `AJAX use a combination of existing technologies together to communicate with servers`,
-        `The XMLHttpRequest API is the core of AJAX`,
-        `XML vs JSON`,
-        `Useful JavaScript methods for JSON format: <code>JSON.parse()</code> & <code>JSON.stringify()</code>`,
-        `XMLHttpRequests Chaining Requests: Welcome to Callback Hell`,
+        `<h3>JavaScript - a single-thread language</h3>
+        <p>JavaScript is a <i>single-threaded language</i> and, at the same time, also <i>non-blocking</i>, <i>asynchronous</i> and <i>concurrent</i>.</p>
+        <p>JavaScript has only <i>one threat of execution (Call Stack)</i> and so it can only do one thing at a time. <i>There is absolutely no multitasking happening in <u>JavaScript itself</u>.</i></p>
+        <p>In a single-thread language like JavaScript, browser steps through the code <i>one line at a time</i>, in the order we wrote it. At each point, <i>the browser waits for each line of code to finish its work before going on to the next line</i>. It has to do this because each line depends on the work done in the preceding lines. That makes this a <i>synchronous program</i>.</p>
+        `,
+        `<h3>Single-Thread Language problem: long-running synchronous functions that work in the Call Stack</h3>
+        <p>While the single-threaded languages simplify writing code because you don't have to worry about the concurrency issues, this also means <i>you can't perform long operations such as network access without blocking the main thread</i>.</p>
+        `,
+        `<h3>Synchronous vs Asynchronous functions</h3>
+        <p>What if a synchronous function takes a long time? That's where asynchronous JavaScript comes into play. <i>Using asynchronous JavaScript (such as <u>callbacks</u> or <u>Promises</u>), you can perform long network requests without blocking the main thread.</i></p>
+        <p>The problem with long-running synchronous functions is that is blocking the main thread, which make asynchronous programming a necessity.</p>
+        <p>Asynchronous function offers us a technique that enables your program to start a potentially long-running task, and then rather than having to wait until that task has finished, to be able to continue to be responsive to other events while the long-running task runs. Once the task is completed, your program is presented with the result.</p>`,
+        `<h3>Asynchronous functions & Web APIs</h3>
+        <p><i><u>Browsers</u> provide to JavaScript language <u>Web APIs</u></i>, so JavaScript can use asynchronous functions.</p>
+        `,
+        `<h3>Synchronous vs Asynchronous Programming</h3>
+        <p>- in <i>synchronous</i> programming, tasks are executed one after another. Each task waits for any previous task to be completed and is executed only then;</p>
+        <p>- in <i>asynchronous</i> programming, when one task is executed, you can switch to a different task without waiting for the previous one to be completed.</p>
+        `,
+        `<h3>Early Asynchronous Programming & Event Handlers</h3>
+        <p>Early asynchronous APIs XMLHttpRequest used events for asynchronous programming.</p>
+        <p>Event handlers are a form of asynchronous programming: you provide a function (the event handler) that will be called, not right away, but whenever the event happens. If "the event" is "the asynchronous operation has completed", then that event could be used to notify the caller about the result of an asynchronous function call.</p>
+        <p>The XMLHttpRequest API enables you to make HTTP requests to a remote server using JavaScript. Since this can take a long time it's an asynchronous API, and you get notified about the progress and eventual completion of a request by attaching event listeners to the <code>XMLHttpRequest</code> object.</p>
+        `,
+        `<h3>Early Asynchronous Programming & Chaining Callbacks: Callback Hell</h3>
+        <p>An event handler is a particular type of callback. A callback is just a function that's passed into another function, with the expectation that the callback will be called at the appropriate time. However, callback-based code can get hard to understand when the callback itself has to call functions that accept a callback. This is a common situation if you need to perform some operation that breaks down into a series of asynchronous functions.</p>
+        <p>Because we have to call callbacks inside callbacks, we get a deeply nested functions, which is much harder to read and debug. This is sometimes called "callback hell" or the "pyramid of doom" (because the indentation looks like a pyramid on its side).</p>
+        `,
+        `<h3>Early Asynchronous Programming: AJAX</h3>
+        <p>Asynchronous JavaScript And XML (AJAX) is not a programming language.</p>
+        <p>AJAX use a combination of existing technologies together to communicate with servers. In a nutshell, AJAX is the use of the <code>XMLHttpRequest</code> object to communicate with servers. It can send and receive information in various formats, including JSON, XML, HTML, and text files. The XMLHttpRequest API is the core of AJAX.</p>
+        <p><i>AJAX is a misleading name. AJAX applications might use XML to transport data, but it is equally common to transport data as plain text or JSON text.</i> JSON is preferred over XML nowadays because of its many advantages such as being a part of JavaScript, thus being lighter in size. Both JSON and XML are used for packaging information in the AJAX model.</p>
+        <p>NOTE: <i>Modern browsers can use Fetch API instead of the XMLHttpRequest API.</i> The Fetch API interface allows web browser to make HTTP requests to web servers. If you use the XMLHttpRequest API, Fetch API can do the same in a simpler way. Fetch API is a modern, promise-based replacement for XMLHttpRequest.</p>
+        `,
+        `<h3>What is JSON?</h3>
+        <p>JSON stands for JavaScript Object Notation. JSON is a <i>text format</i> for <i>storing and transporting data</i>.</p>
+        <p><i>The JSON format is syntactically similar to the code for creating JavaScript objects.</i> Because of this, a JavaScript program can easily convert JSON data into JavaScript objects. Since the format is text only, JSON data can easily be sent between computers, and used by any programming language.</p>
+        <p>When storing data, the data has to be a certain format, and regardless of where you choose to store it, text is always one of the legal formats. JSON makes it possible to <i>store JavaScript objects as text</i>.</p>
+        <ul>Useful JavaScript methods for JSON format:
+          <li>- <code>JSON.parse()</code>: converting JSON strings into JavaScript objects.</li>
+          <li>- <code>JSON.stringify()</code>: built-in function for converting an object into a JSON string.</li>
+        </ul>
+        `,
+        ``,
       ],
     },
     {
@@ -3292,11 +3345,27 @@ const asynchronous = {
       id: 'promises',
       source: '/src/markdowns/11_Asynchronous/Promises.html',
       summary: [
-        `Traditionally (before promises), asynchronous tasks were designed as callbacks. This lead at the problem known as Callback Hell. A promise allows to transform the callback-based API to a promise-based one`,
-        `A promise is an object returned by an asynchronous function that is used as a placeholder for the future result of that asynchronous operation`,
-        `The promise object provides methods to handle the eventual success or failure of the operation`,
-        `The promise lifecycle: pending -> settled (fulfilled / rejected)`,
-        `Build & consume promises`,
+        `<p>Traditionally (before promises), asynchronous tasks were designed as callbacks. This lead at the problem known as Callback Hell. <i>A promise allows to transform the callback-based API to a promise-based one.</i></p>
+        <p>Promises are <i>the foundation of asynchronous programming in modern JavaScript</i>.</p>`,
+        `<h3>What is a Promise?</h3>
+        <p>A <code>Promise</code> is <i>an <u>object</u> returned by an asynchronous function</i> that is used as a placeholder for the future result of that asynchronous operation. This <code>Promise</code> object <i>represents the current state of the asynchronous operation</i>.</p>
+        <p>At the time the <code>Promise</code> object is returned to the caller, the asynchronous operation often isn't finished, but <i>the <code>Promise</code> object provides methods to handle the eventual success or failure of the asynchronous operation.</i></p>`,
+        `<h3>Promises vs Callback Hell</h3>
+        <p><i>Essentially, a <code>Promise</code> is a returned object to which you attach callbacks, instead of passing callbacks into a function.</i></p>
+        <p>With Promises we no longer need to rely on events and callbacks passed into asynchronous functions to handle asynchronous results. Instead of nesting callbacks, we can <i><u>chain Promises</u> for a sequence of asynchronous operations</i>, escaping callback hell.</p>
+        `,
+        `<h3>The Promise lifecycle</h3>
+        <p>Since Promises work with asynchronous operations, Promises are <i>time sensitive</i>, so they <i>change over time</i>, and so Promises can be in <i>different states</i> and this is what they call the cycle of a Promise.</p>
+        <ul>The Promise lifecycle: pending -> settled (fulfilled / rejected):
+          <li>In the very beginning, we say that a Promise is <i>pending</i> and this is before any value resulting from the asynchronous task is available. Now, during the pending time, the asynchronous task is still doing its work in the background. When the asynchronous task finishes, we say that the Promise is <i>settled</i> and there are <u>two different types of settled</u>: <i>fulfilled</i> and <i>rejected</i>. <i>Once settled, a Promise can not be resettled.</i> The immutability of a settled Promise is an important feature. <i>A Promise is only settled once</i> and so from there, the state will remain unchanged forever, so the Promise was either fulfilled or rejected, but it's impossible to change that state.</li>
+        </ul>
+        <p>A <i>fulfilled Promise</i> is a Promise that has <i>successfully resulted in a value</i>. On the other hand, a <i>rejected Promise</i> means that there has been an <i>error during the asynchronous task</i>.</p>
+        <p>These two different states (fulfilled and rejected) are very important to understand because when we use Promises in our code, we will be able to <u>handle these different states</u> in order to do something as a result of either a successful Promise or a rejected one.</p>
+        `,
+        `<h3>Build & consume Promises</h3>
+        <p>These different states (fulfilled and rejected) are relevant and useful when we use a Promise to get a result, which is called to <u>consume a promise</u>. So we consume a Promise when we already have a Promise, for example, the Promise that was returned from the <code>fetch()</code> function. But in order for a Promise to exist in the first place, it must first be built, so it must be created.</p>
+        <p>In the case of the Fetch API, it's the <code>fetch()</code> function that builds the Promise and returns it for us to consume, so in this case, we don't have to build the Promise ourselves in order to consume it. Now, most of the time we will actually just consume Promises, which is also the easier and more useful part, but sometimes we also need to build a Promise and to not just consume it.</p>
+        `,
       ],
     },
     {
