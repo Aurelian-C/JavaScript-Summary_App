@@ -3489,21 +3489,36 @@ const asynchronous = {
       id: 'consuming-promises-with-async-await',
       source: '/src/markdowns/11_Asynchronous/async_&_await.html',
       summary: [
-        `<code>async</code> functions`,
-        `<code>await</code> operator`,
-        `The purpose of <code>async</code>/<code>await</code> is to simplify the syntax necessary to consume promise-based APIs`,
-        `<code>async</code>/<code>await</code> enables you to write code that uses asynchronous functions but looks like synchronous code`,
-        `<code>async</code>/<code>await</code> help you to avoid the need to explicitly configure promise chains, like you used to do with <code>.then()</code> and <code>.catch()</code>`,
-        `Just like a promise chain, <code>await</code> forces asynchronous operations to be completed in series. This is necessary if the result of the next operation depends on the result of the last one, but if that's not the case then something like <code>Promise.all</code> will be more performant`,
-        `<code>async</code> functions always return a promise. If the return value of an <code>async</code> function is not explicitly a promise, it will be implicitly wrapped in a promise`,
-        `You can only use <code>await</code> inside an <code>async</code> function, unless your code is in a JavaScript module`,
-        `You can use multiple <code>await</code> in an <code>async</code> function`,
-        `Store <code>await</code> promises results in variables`,
-        `Error Handling in <code>async</code> Functions: <code>try{...} catch(error){...}</code>`,
-        `Rethrowing an error when you have multiple <code>async</code> functions`,
-        `Returning values from <code>async</code> functions`,
-        `<code>async</code>/<code>await</code> is only syntactic sugar over "Raw Promises"`,
-        `Top-Level <code>await</code> (ES2022)`,
+        `<p>The purpose of <code>async</code>/<code>await</code> is to <i>simplify the syntax necessary to consume promise-based APIs</i>.</p>
+        <p><code>async</code>/<code>await</code> help you to <i>avoid the need to explicitly configure Promise chains</i>, like you used to do with <code>.then()</code> and <code>.catch()</code>.</p>
+        <p><code>async</code>/<code>await</code> enables you to <i>write code that uses asynchronous functions but looks like synchronous code</i>.</p>
+        <p><code>async</code>/<code>await</code> is only syntactic sugar over "Raw Promises".</p>
+        `,
+        `<h3><code>async</code> functions</h3>
+        <p>The <code>async</code> keyword gives you a simpler way to work with asynchronous promise-based code. Adding <code>async</code> at the start of a function makes it an async function.</p>
+        <p><i><code>async</code> functions always return a Promise. If the return value of an <code>async</code> function is not explicitly a Promise, it will be implicitly wrapped in a Promise.</i></p>
+        <p>The body of an async function can be thought of as being split by zero or more await expressions. Top-level code, up to and including the first await expression (if there is one), is run synchronously. In this way, <i>an async function without an await expression will run synchronously</i>. If there is an await expression inside the function body, however, the async function will always complete asynchronously.</p>
+        `,
+        `<h3><code>await</code> operator</h3>
+        <p><i>Inside an <code>async</code> function, you can use the <code>await</code> keyword before a call to a function that returns a Promise.</i> This makes the code wait at that point until the Promise is settled, at which point the fulfilled value of the Promise is treated as a return value, or the rejected value is thrown.</p>
+        <p><i>Just like a Promise chain, <code>await</code> forces asynchronous operations to be completed in series.</i> This is necessary if the result of the next operation depends on the result of the last one, but if that's not the case then something like <code>Promise.all</code> will be more performant.</p>
+        <p><i>You can only use <code>await</code> inside an <code>async</code> function, unless your code is in a JavaScript module.</i> Because <code>await</code> is only valid inside async functions and modules, which themselves are asynchronous and return Promises, <i>the <code>await</code> expression never blocks the main thread and only defers execution of code that actually depends on the result</i>, i.e. anything after the <code>await</code> expression.</p>
+        <p>You can <i>use multiple <code>await</code> in an <code>async</code> function</i> and you can <i>store <code>await</code> Promises results in variables</i>.</p>
+        `,
+        `<h3>Error Handling in <code>async</code> functions</h3>
+        <p>We can even use a <code>try{...} catch(error){...}</code> block for error handling, exactly as we would if the code were synchronous.</p>
+        `,
+        `<h3>Rethrowing an error when you have multiple <code>async</code> functions</h3>
+        <p>You can use <code>throw</code> to rethrow an exception after you catch it. <i>The rethrown exception propagates up to the enclosing function or to the top level so that the user sees it.</i></p>
+        `,
+        `<h3>Returning values from <code>async</code> functions</h3>`,
+        `<h3>Top-Level <code>await</code> (ES2022)</h3>
+        <p>You can use the <code>await</code> keyword on its own (outside of an async function) within a JavaScript module. This means modules, with child modules that use <code>await</code>, wait for the child module to execute before they themselves run, all while not blocking other child modules from loading.</p>
+        `,
+        `<h3>Conclusion</h3>
+        <p>Promises are the foundation of asynchronous programming in modern JavaScript. They make it <i>easier to express and reason about sequences of asynchronous operations without deeply nested callbacks</i>, and they <i>support a style of error handling that is similar to the synchronous <code>try...catch</code> statement</i>.</p>
+        <p>The <code>async</code> and <code>await</code> keywords make it easier to build an operation from a series of consecutive asynchronous function calls, <i>avoiding the need to create explicit Promise chains</i>, and <i>allowing you to write code that looks just like synchronous code</i>.</p>
+        `,
       ],
     },
     {

@@ -8,7 +8,7 @@ async function myFunction() {
 }
 ```
 
-Inside an `async` function, you can use the [`await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await) keyword before a call to a function that returns a promise. This makes the code wait at that point until the promise is settled, at which point the fulfilled value of the promise is treated as a return value, or the rejected value is thrown.
+==**Inside an `async` function**, you can **use the [`await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await) keyword before a call to a function that returns a Promise**. This makes the code wait at that point until the Promise is settled, at which point the fulfilled value of the Promise is treated as a return value, or the rejected value is thrown.==
 
 ==This enables you to write code that uses asynchronous functions but looks like synchronous code==:
 
@@ -36,15 +36,15 @@ fetchProducts();
 
 ## Error Handling
 
-We can even use a `try...catch` block for error handling, exactly as we would if the code were synchronous.
+We can even use a **`try...catch`** block for error handling, exactly as we would if the code were synchronous.
 
 ## Rethrow an error
 
-You can use `throw` to rethrow an exception after you catch it. The rethrown exception propagates up to the enclosing function or to the top level so that the user sees it.
+You can use `throw` to rethrow an exception after you catch it. ==The rethrown exception propagates up to the enclosing function or to the top level so that the user sees it.==
 
-## `async`/`await` always return a promise
+## `async`/`await` always return a Promise
 
-Note though that async functions always return a promise, so you can't do something like:
+Note though that ==async functions always return a Promise==, so you can't do something like:
 
 ```js
 async function fetchProducts() {
@@ -88,7 +88,7 @@ promise.then((data) => console.log(data[0].name));
 
 ##  You can only use `await` inside an `async` function
 
-Also, note that you can only use `await` inside an `async` function, unless your code is in a [JavaScript module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules). That means you can't do this in a normal script:
+Also, note that ==you can only use `await` inside an `async` function, unless your code is in a **[JavaScript module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)**.== That means you can't do this in a normal script:
 
 ```js
 try {
@@ -105,21 +105,21 @@ catch(error) {
 }
 ```
 
-You'll probably use `async` functions a lot where you might otherwise use promise chains, and they make working with promises much more intuitive.
+You'll probably use `async` functions a lot where you might otherwise use Promise chains, and they make working with Promises much more intuitive.
 
-==Keep in mind that just like a promise chain, `await` forces asynchronous operations to be completed in series. This is necessary if the result of the next operation depends on the result of the last one, but if that's not the case then something like `Promise.all()` will be more performant==.
+==Keep in mind that just like a Promise chain, **`await` forces asynchronous operations to be completed in series**. This is necessary if the result of the next operation depends on the result of the last one, but if that's not the case then something like `Promise.all()` will be more performant==.
 
 ## More about `async` functions
 
-An async function is a function declared with the `async` keyword, and the `await` keyword is permitted within it. ==The `async` and `await` keywords enable asynchronous, promise-based behavior to be written in a cleaner style, _avoiding the need to explicitly configure promise chains_==.
+An async function is a function declared with the `async` keyword, and the `await` keyword is permitted within it. ==The `async` and `await` keywords enable asynchronous, promise-based behavior to be written in a cleaner style, _avoiding the need to explicitly configure Promise chains_==.
 
 Async functions may also be defined [as expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/async_function).
 
-==Async functions can contain zero or more [`await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await) expressions. Await expressions make promise-returning functions behave as though they're synchronous by suspending execution until the returned promise is fulfilled or rejected==. The resolved value of the promise is treated as the return value of the await expression. Use of `async` and `await` enables the use of ordinary `try` / `catch` blocks around asynchronous code.
+==Async functions can contain zero or more [`await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await) expressions. Await expressions make Promise-returning functions behave as though they're synchronous by suspending execution until the returned Promise is fulfilled or rejected==. The resolved value of the Promise is treated as the return value of the await expression. Use of `async` and `await` enables the use of ordinary `try` / `catch` blocks around asynchronous code.
 
->**Note**: The purpose of `async`/`await` is to simplify the syntax necessary to consume promise-based APIs.
+>**NOTE**: The purpose of `async`/`await` is to simplify the syntax necessary to consume promise-based APIs.
 
-==**Async functions always return a promise. If the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise**==. For example, consider the following code:
+==**Async functions always return a Promise. If the return value of an async function is not explicitly a Promise, it will be implicitly wrapped in a Promise**==. For example, consider the following code:
 
 ```js
 async function foo() {
@@ -135,7 +135,7 @@ function foo() {
 }
 ```
 
-_The body of an async function can be thought of as being split by zero or more await expressions. Top-level code, up to and including the first await expression (if there is one), is run synchronously_. In this way, ==an async function without an await expression will run synchronously==. If there is an await expression inside the function body, however, the async function will always complete asynchronously.
+==The body of an async function can be thought of as being split by zero or more await expressions. Top-level code, up to and including the first await expression (if there is one), is run synchronously. In this way, ==**an async function without an await expression will run synchronously**. If there is an await expression inside the function body, however, the async function will always complete asynchronously.==
 
 For example:
 
@@ -155,17 +155,17 @@ function foo() {
 
 ## More about `await` operator
 
-==The `await` operator is used to wait for a promise and get its fulfillment value==. It can only be used inside an async function or a [JavaScript module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
+==The `await` operator is used to wait for a Promise and get its fulfillment value==. It can only be used inside an async function or a [JavaScript module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
 
-> **Note:** The `await` keyword is only valid inside async functions within regular JavaScript code. If you use it outside of an async function's body, you will get a [`SyntaxError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError).
+> **NOTE:** The `await` keyword is only valid inside async functions within regular JavaScript code. If you use it outside of an async function's body, you will get a [`SyntaxError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError).
 >
 > `await` can be used on its own with JavaScript modules.
 
-==**The** `await` **expression is usually used to unwrap promises by passing a promise as the** `expression`. This causes async function execution to pause until the promise is settled (that is, fulfilled or rejected), and to resume execution of the async function after fulfillment. When resumed, the value of the `await` expression is that of the fulfilled promise==. If the promise is rejected, the `await` expression throws the rejected value.
+==**The** `await` **expression is usually used to unwrap Promises by passing a Promise as the** `expression`. This causes async function execution to pause until the Promise is settled (that is, fulfilled or rejected), and to resume execution of the async function after fulfillment. When resumed, the value of the `await` expression is that of the fulfilled Promise==. If the Promise is rejected, the `await` expression throws the rejected value.
 
-The `expression` is resolved in the same way as [`Promise.resolve()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve). This means [thenable objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#thenables) are supported, and ==if `expression` is not a promise, it's implicitly wrapped in a `Promise` and then resolved. Even when `expression` is not a promise, the async function execution still pauses until the next tick, due to the implicit promise wrapping and unwrapping==. In the meantime, the caller of the async function resumes execution.
+The `expression` is resolved in the same way as [`Promise.resolve()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve). This means [thenable objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#thenables) are supported, and ==if `expression` is not a Promise, it's implicitly wrapped in a `Promise` and then resolved. Even when `expression` is not a Promise, the async function execution still pauses until the next tick, due to the implicit Promise wrapping and unwrapping==. In the meantime, the caller of the async function resumes execution.
 
-Because `await` is only valid inside async functions and modules, which themselves are asynchronous and return promises, the `await` expression never blocks the main thread and only defers execution of code that actually depends on the result, i.e. anything after the `await` expression.
+Because `await` is only valid inside async functions and modules, which themselves are asynchronous and return Promises, ==the `await` expression never blocks the main thread and only defers execution of code that actually depends on the result==, i.e. anything after the `await` expression.
 
 ## Top level `await`
 
@@ -182,7 +182,7 @@ export default await colors;
 
 Promises are the foundation of asynchronous programming in modern JavaScript. They make it easier to express and reason about sequences of asynchronous operations without deeply nested callbacks, and they support a style of error handling that is similar to the synchronous `try...catch` statement.
 
-==The `async` and `await` keywords make it easier to build an operation from a series of consecutive asynchronous function calls, avoiding the need to create explicit promise chains, and allowing you to write code that looks just like synchronous code==.
+==The `async` and `await` keywords make it easier to build an operation from a series of consecutive asynchronous function calls, avoiding the need to create explicit Promise chains, and allowing you to write code that looks just like synchronous code==.
 
 ## References
 
