@@ -4277,6 +4277,11 @@ const domEvents = {
             '/src/markdowns/13_Web_API___Document_Object_Model_(DOM)___Events/Types_of_events___submit.html',
         },
         {
+          title: 'HTMLInputElement: <code>invalid</code>',
+          id: 'event-invalid',
+          source: '',
+        },
+        {
           title: 'Window: <code>hashchange</code>',
           id: 'event-hashchange',
           source:
